@@ -47,7 +47,18 @@ tags: [时变信道, 双色散, 信道跟踪, 水声信道]
 - [[signal-processing-fundamentals]] — 自适应滤波和时频分析是关键工具
 - [[mobile-communication]] — 移动通信中也存在时变信道，但程度远轻于水声
 
+## 实验结论（fd=10Hz ICI 极限量化）
+
+> 2026-04-12 更新：模块 07 doppler_rate 修正后首次量化 fd=10Hz 下的系统 ICI 极限。
+
+fd=10Hz (doppler_rate=8.33e-4) + oracle alpha 补偿后：
+- **oracle BER 在高 SNR 非单调反弹**：10dB=0.73% → 15dB=3.28% → 20dB=3.65%
+- 说明即使信道完美已知，ICI 残余也无法被均衡器消除
+- BEM(DCT) 在 5dB 达到最优点（1.15%），之后随 SNR 升高反而恶化
+- **结论：fd=10Hz 是当前系统架构（BEM+LMMSE-IC）的硬天花板，改善需要更根本的方法（如 OTFS DD 域处理）**
+
 ## 来源
 
 - Zotero 论文库分析 (2026-04-12)
 - [[uwacomm]] — 模块 07 实现了 BEM(CE/DCT)/DD-BEM/T-SBL/SAGE/Kalman 时变信道估计，模块 10 实现了两级分离多普勒估计与 spline/CFO/ICI 补偿
+- [[uwacomm]] — fd=10Hz ICI 极限量化数据 (2026-04-12)

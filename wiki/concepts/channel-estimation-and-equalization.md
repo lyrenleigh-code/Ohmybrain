@@ -52,7 +52,17 @@ tags: [信道估计, 均衡, 多普勒, 叠加导频, 接收机]
 - [[ofdm-and-otfs]] — OFDM 系统中的信道估计有特殊结构
 - [[mathematical-optimization]] — 优化方法用于导频设计和估计器设计
 
+## 实验结论（模块 07 基线, doppler_rate=fd/fc）
+
+> 2026-04-12 更新：模块 07 测试从 doppler_rate=0 修正为 doppler_rate=fd/fc (fc=12kHz)，加入 oracle alpha 补偿后测试估计+均衡能力。
+
+- **fd<=5Hz oracle 补偿有效**：加入真实 Doppler 后低 SNR 下降，但 5dB+ 高 SNR 基本不变
+- **DD-BEM 高 SNR 地板效应**：fd=5Hz@20dB 出现 0.26% 残余 BER，疑似多普勒残余导致判决误差传播
+- **fd=10Hz 确认 ICI 极限**：oracle 在高 SNR 非单调反弹（0.73%→3.28%→3.65%），是系统级极限
+- **BEM(DCT) 在有真实 Doppler 条件下仍然最优**，全面优于 CE-BEM 和 DD-BEM
+
 ## 来源
 
 - Zotero 论文库分析 (2026-04-12)
 - [[uwacomm]] — 模块 07 实现了 15+ 种估计算法（LS/MMSE/OMP/SBL/GAMP/AMP/VAMP/Turbo-VAMP/BEM/DD-BEM/Kalman 等）和 10+ 种均衡器（TDE/FDE/OTFS 三类）
+- [[uwacomm]] — 模块 07 doppler_rate 修正后新基线 (2026-04-12)
