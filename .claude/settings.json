@@ -2,22 +2,22 @@
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": "Write|Edit|Create",
+        "matcher": "Edit|Write",
         "hooks": [
           {
             "type": "command",
-            "command": "python3 scripts/check_raw_write.py $TOOL_INPUT_PATH"
+            "command": "bash .claude/hooks/protect-raw.sh"
           }
         ]
       }
     ],
     "PostToolUse": [
       {
-        "matcher": "Write|Edit|Create",
+        "matcher": "Edit|Write",
         "hooks": [
           {
             "type": "command",
-            "command": "python3 scripts/lint_wiki.py --quick"
+            "command": "bash .claude/hooks/wiki-post-edit.sh"
           }
         ]
       }
@@ -27,7 +27,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 scripts/check_index_log_sync.py"
+            "command": "bash .claude/hooks/check-stop.sh"
           }
         ]
       }

@@ -31,13 +31,16 @@ desktop.ini
 *~
 
 # === Obsidian ===
-# 排除运行时状态，保留配置和模板
+# 排除运行时状态和插件二进制，保留配置和模板
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/graph.json
 .obsidian/cache
-.obsidian/plugins/*/data.json
+.obsidian/plugins/
 .trash/
+
+# === Git 嵌套仓库 ===
+raw/repos/
 
 # === Python ===
 __pycache__/

@@ -4,6 +4,12 @@
 
 ---
 
+## [2026-04-12] create | 系统架构总览
+
+创建 `architecture/system-overview.md`，文档化六层结构、双闭环（知识+开发）、Harness 机制和工具链架构图。同步升级工程体系：新增 specs/plans/tasks/evals/ 目录、.claude/rules/ 路径规则、.claude/skills/ 技能定义、bash hooks、CI workflow。
+
+---
+
 ## [2026-04-12] ingest | UWAcomm 水声通信仿真平台
 
 对 `raw/repos/UWAcomm` 项目执行 ingest，创建了 2 个新 wiki 页面并更新了 6 个概念页：

@@ -1,93 +1,81 @@
-# CLAUDE.md — my-brain 操作手册
+# CLAUDE.md
 
-## 仓库地图
+## 仓库定位
 
-| 目录 | 用途 |
+本仓库同时承载三个职能：
+1. **LLM Wiki** — `wiki/` 下的持久知识层
+2. **原始资料库** — `raw/` 下的只读资料
+3. **工程交付** — `specs/` → `plans/` → `src/` → `tests/` → `evals/` 的开发闭环
+
+## 不可违反的规则
+
+- 不得修改 `raw/` 下的文件，除非用户明确要求
+- 优先更新 `wiki/` 而非在对话中重复分析
+- 每个代码任务从 `specs/active/` 的 spec 开始
+- 非平凡实现必须先有 `plans/` 下的计划
+- 代码变更必须附带测试，或说明为何不需要测试
+- 知识变更必须同步更新 `wiki/index.md` 和 `wiki/log.md`
+- 交付物不完整时不要停止
+
+## 目录地图
+
+| 目录 | 职责 |
 |------|------|
-| `raw/` | 原始资料，只读，不得修改 |
-| `wiki/` | 知识沉淀层，所有推理从这里读 |
-| `workflows/` | 操作流程文档 |
+| `raw/` | 只读原始资料（论文、文章、视频转录、代码仓库等） |
+| `wiki/` | 策展后的知识层（概念、实体、架构、模块、决策、摘要） |
+| `specs/active/` | 当前任务的需求 spec |
+| `specs/archive/` | 已完成的 spec |
+| `plans/` | 实现计划 |
+| `tasks/` | 任务追踪 |
+| `src/` | 源代码 |
+| `tests/` | 自动化测试 |
+| `evals/` | Agent 和工作流评测 |
 | `scripts/` | 自动化脚本 |
+| `workflows/` | 操作流程文档 |
+| `.claude/skills/` | 可复用工作流定义 |
+| `.claude/rules/` | 路径特定规则 |
+| `.claude/hooks/` | 确定性行为强制执行 |
 
-## 工具链架构
+## 两个闭环
+
+### 知识闭环
 
 ```
-原始资料来源              收集 & 管理              沉淀 & 执行
-──────────────           ──────────────           ──────────────
-论文 / PDF          →    Zotero               →   raw/papers/
-网页文章            →    Readwise Reader      →   raw/articles/
-YouTube 视频        →    Firecrawl (MCP)      →   raw/videos/
-本地视频 / 录像     →    Whisper (本地)       →   raw/videos/
-播客 / 音频         →    Whisper / VOMO AI    →   raw/podcasts/
-书籍笔记            →    Readwise / 手动      →   raw/books/
-课程讲义            →    手动                 →   raw/courses/
-社交媒体长帖        →    Firecrawl / 手动     →   raw/threads/
-代码仓库 / 项目     →    GitHub               →   raw/repos/
-对话 / 会议 / 思考  →    手动                 →   raw/notes/
-图片 / 附件         →    手动                 →   raw/assets/
-                              │
-                              ▼
-                         Claude Code
-                        (ingest / harness)
-                              │
-                              ▼
-                           wiki/
-                              │
-                    ┌─────────┴─────────┐
-               Obsidian             GitHub
-              (可视化)             (同步 / CI)
+raw/ → ingest → wiki/ → query → promote → wiki/
 ```
 
-## 各工具职责边界
+1. 新资料放入 `raw/`
+2. 执行 `/ingest-source` 生成 wiki 页面
+3. 查询时优先读 `wiki/`，不足时回 `raw/`
+4. 高价值结论通过 `/promote-answer` 写回 `wiki/`
 
-| 工具 | 只做这一件事 |
-|------|-------------|
-| Zotero | 管论文原件和 metadata |
-| Readwise Reader | 清洗文章/书籍，产出带高亮的 markdown |
-| Whisper | 本地音视频转录，隐私安全 |
-| Firecrawl | YouTube / 网页转 markdown，接入 Claude Code (MCP) |
-| VOMO AI | 快速在线音视频转结构化 markdown |
-| Claude Code | 执行 ingest / promote / lint / 编程 |
-| Obsidian | 浏览和可视化 wiki |
-| GitHub | 多设备同步和 CI 自动化检查 |
+### 开发闭环
 
-**交接点统一为 markdown 文件，所有工具通过 raw/ 目录交接。**
+```
+spec → plan → implement → test → validate → archive
+```
 
-## raw/ 目录结构
+1. 在 `specs/active/` 建 spec（目标、范围、验收标准）
+2. 执行 `/plan-task` 生成 `plans/` 下的实现计划
+3. 执行 `/implement-task` 修改 `src/`、`tests/`
+4. 运行测试验证
+5. 如架构或行为变更，同步更新 `wiki/`
+6. spec 移入 `specs/archive/`
 
-| 目录 | 内容 | 来源工具 | 文件格式 |
-|------|------|---------|---------|
-| `raw/papers/` | 学术论文、技术报告 | Zotero | `.pdf`, `.md` |
-| `raw/articles/` | 网页文章、博客 | Readwise Reader | `.md` |
-| `raw/videos/` | 视频转录文本（不存原件） | Firecrawl / Whisper / VOMO AI | `.md` |
-| `raw/podcasts/` | 播客转录文本（不存原件） | Whisper / VOMO AI | `.md` |
-| `raw/books/` | 书籍笔记、章节摘要 | Readwise / 手动 | `.md` |
-| `raw/courses/` | 课程讲义、学习笔记 | 手动 | `.md` |
-| `raw/notes/` | 对话记录、会议笔记、个人思考 | 手动 | `.md` |
-| `raw/threads/` | 社交媒体长帖、推文串 | Firecrawl / 手动 | `.md` |
-| `raw/repos/` | 代码仓库、项目资料 | GitHub / 本地 | 项目目录 |
-| `raw/assets/` | 图片、图表、附件 | 手动 | `.png`, `.jpg`, `.csv` |
+## 常用命令
 
-**通用命名规范：** `YYYY-MM-DD-简短标题.md`
+| 命令 | 用途 |
+|------|------|
+| `python3 scripts/lint_wiki.py` | Wiki 结构检查 |
+| `python3 scripts/sync_index.py` | 同步 index 页面计数 |
+| `python3 scripts/validate_task.py` | 任务完成验证 |
+| `python3 scripts/transcribe.py <文件>` | Whisper 音视频转录 |
+| `python3 scripts/scrape.py <URL>` | Firecrawl 网页抓取 |
 
-## 核心规则
+## 完成标准
 
-1. **raw/ 目录只读**：任何情况下不得修改或删除 raw/ 下的文件。
-2. **更新 wiki 必须同步更新 index**：每次新增或修改 wiki/ 下的文件，必须同步更新 wiki/index.md。
-3. **所有变更必须记入 log**：每次操作结束前，在 wiki/log.md 末尾追加一条记录，格式为 `- YYYY-MM-DD: [操作描述]`。
-4. **优先读 wiki**：回答问题时优先从 wiki/ 读取，不足时才回到 raw/ 补充证据。
-5. **高价值回答要 promote**：如果一次对话产生了重要结论，必须将其写回 wiki/，不能只停留在聊天记录里。
-
-## 命名约定
-
-- raw 资料文件名：`YYYY-MM-DD-简短标题.md`
-- wiki 页面文件名：全部小写，用连字符分隔，例如 `harness-engineering.md`
-- source-summaries：与 raw 文件名对应，例如 `paper-attention-is-all-you-need.md`
-- 概念页标题格式：`# 概念名称`
-- log 条目格式：`- YYYY-MM-DD: [操作]`
-
-## 禁止行为
-
-- 不得直接修改 raw/ 下任何文件
-- 不得在没有更新 index.md 和 log.md 的情况下结束任务
-- 不得凭记忆回答可以从 wiki 验证的问题
+一个任务只有满足以下全部条件才算完成：
+- 请求的文件已更新
+- 相关测试通过
+- wiki 已同步更新（如需要）
+- 最终回复明确说明了变更内容

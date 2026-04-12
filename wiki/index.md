@@ -1,7 +1,7 @@
 # Wiki Index
 
 > 最后更新：2026-04-12
-> 页面总数：24
+> 页面总数：25
 
 ## Concepts（概念页）
 
@@ -26,6 +26,10 @@
 - [[firecrawl]] — Firecrawl，网页抓取工具，YouTube 视频转 markdown 的首选方案
 - [[github]] — GitHub，多设备同步和自动化检查的基础设施
 - [[uwacomm]] — UWAcomm，MATLAB 全栈水声通信算法仿真平台，覆盖 6 种通信体制
+
+## Architecture（架构页）
+
+- [[system-overview]] — 系统架构总览，六层结构、双闭环（知识+开发）、Harness 机制、工具链
 
 ## Topics（专题页）
 
