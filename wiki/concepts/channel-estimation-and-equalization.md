@@ -55,3 +55,4 @@ tags: [信道估计, 均衡, 多普勒, 叠加导频, 接收机]
 ## 来源
 
 - Zotero 论文库分析 (2026-04-12)
+- [[uwacomm]] — 模块 07 实现了 15+ 种估计算法（LS/MMSE/OMP/SBL/GAMP/AMP/VAMP/Turbo-VAMP/BEM/DD-BEM/Kalman 等）和 10+ 种均衡器（TDE/FDE/OTFS 三类）

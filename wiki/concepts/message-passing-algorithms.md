@@ -59,3 +59,4 @@ tags: [消息传递, 因子图, AMP, Turbo, EP, 近似推断]
 ## 来源
 
 - Zotero 论文库分析 (2026-04-12)
+- [[uwacomm]] — 模块 07/12 实现了 AMP/VAMP/Turbo-VAMP/Turbo-AMP/GAMP 信道估计和 MP 消息传递 OTFS 均衡，模块 12 实现了 Turbo 迭代均衡调度

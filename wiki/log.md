@@ -4,6 +4,24 @@
 
 ---
 
+## [2026-04-12] ingest | UWAcomm 水声通信仿真平台
+
+对 `raw/repos/UWAcomm` 项目执行 ingest，创建了 2 个新 wiki 页面并更新了 6 个概念页：
+
+- **1 个 source-summary 页**：`source-summaries/uwacomm.md` — 项目摘要，含 6 种通信体制性能对比、13 个模块职责、关键技术和端到端信号流
+- **1 个实体页**：`entities/uwacomm.md` — 项目实体页，含完整模块架构、性能数据和技术特色
+- **更新 6 个概念页**（在来源部分追加 UWAcomm 实现信息）：
+  - `concepts/underwater-acoustic-communication.md` — 核心实现项目
+  - `concepts/channel-estimation-and-equalization.md` — 15+ 种估计算法 + 10+ 种均衡器
+  - `concepts/ofdm-and-otfs.md` — OFDM/OTFS/SC-FDE 多载波变换
+  - `concepts/message-passing-algorithms.md` — AMP/VAMP/Turbo-VAMP/MP 消息传递算法
+  - `concepts/mimo-and-array-processing.md` — ULA 阵列接收处理
+  - `concepts/time-varying-channel.md` — BEM/DD-BEM/Kalman 时变估计 + 多普勒补偿
+
+更新了 `index.md`（页面总数 22 → 24）。
+
+---
+
 ## [2026-04-12] create | Zotero 重组方案
 
 基于研究地图生成 Zotero 文件夹重组方案 `explorations/zotero-reorganization.md`，将 64 个文件夹精简为 17 个（10 个研究方向 + 7 个功能性文件夹）。

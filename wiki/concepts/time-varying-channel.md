@@ -50,3 +50,4 @@ tags: [时变信道, 双色散, 信道跟踪, 水声信道]
 ## 来源
 
 - Zotero 论文库分析 (2026-04-12)
+- [[uwacomm]] — 模块 07 实现了 BEM(CE/DCT)/DD-BEM/T-SBL/SAGE/Kalman 时变信道估计，模块 10 实现了两级分离多普勒估计与 spline/CFO/ICI 补偿

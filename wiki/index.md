@@ -1,7 +1,7 @@
 # Wiki Index
 
 > 最后更新：2026-04-12
-> 页面总数：22
+> 页面总数：24
 
 ## Concepts（概念页）
 
@@ -25,6 +25,7 @@
 - [[whisper]] — Whisper，OpenAI 开源语音识别模型，本地视频转录工具
 - [[firecrawl]] — Firecrawl，网页抓取工具，YouTube 视频转 markdown 的首选方案
 - [[github]] — GitHub，多设备同步和自动化检查的基础设施
+- [[uwacomm]] — UWAcomm，MATLAB 全栈水声通信算法仿真平台，覆盖 6 种通信体制
 
 ## Topics（专题页）
 
@@ -43,3 +44,4 @@
 - [[my-brain-setup-plan]] — my-brain 系统搭建计划，harness + LLM wiki 一体化的三阶段方案
 - [[toolchain]] — 工具链指南，围绕 harness + LLM wiki 系统的完整工具链架构
 - [[zotero-library-catalog]] — Zotero 论文库结构化清单，5660 篇论文按 64 个文件夹分类
+- [[uwacomm|source-summary]] — UWAcomm 项目摘要，186 个 MATLAB 函数、13 个模块、6 种通信体制
