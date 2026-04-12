@@ -50,3 +50,4 @@ venv/
 *.key
 *.pem
 credentials.*
+.mcp.json
