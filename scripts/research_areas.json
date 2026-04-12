@@ -1,0 +1,60 @@
+{
+  "水声通信系统": [
+    "A-UWAComms",
+    "Acoustic&Sonar",
+    "JASA",
+    "IEEE JOE",
+    "UWA Signal Processing"
+  ],
+  "信道估计与均衡": [
+    "ChannelEstimation",
+    "Equalization",
+    "doppler",
+    "Superimposed Pilot"
+  ],
+  "消息传递与因子图": [
+    "MessagePassing",
+    "MessagePassing&FatorGraph",
+    "FactorGraphs",
+    "AMP",
+    "AMP_Introduction",
+    "Turbo",
+    "IRC-MIMO-AMP",
+    "EP",
+    "GMM-AMP"
+  ],
+  "OFDM与OTFS调制": [
+    "OTFS",
+    "MIMO-OTFS",
+    "Hign-Rate",
+    "QAM Signal"
+  ],
+  "MIMO与阵列处理": [
+    "Array&MIMO"
+  ],
+  "时变信道处理": [
+    "TimeVaryingSPorComm",
+    "TV＆UWA",
+    "ƵÂʹÀí"
+  ],
+  "移动通信": [
+    "MobileCommunication",
+    "WirelessComms",
+    "Comms"
+  ],
+  "信号处理基础": [
+    "SignalProcessing",
+    "IEEE TSP",
+    "IEEE SPL",
+    "SP Magazine",
+    "IEEE JSTSP"
+  ],
+  "数学与优化": [
+    "Mathematics",
+    "Basic&Tool",
+    "MATLAB"
+  ],
+  "机器学习方法": [
+    "Machine Learning"
+  ]
+}

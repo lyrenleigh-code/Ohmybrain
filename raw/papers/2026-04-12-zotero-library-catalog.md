@@ -1,0 +1,2697 @@
+# Zotero 论文库结构化清单
+
+> 生成日期：2026-04-12
+> 总条目数：5660（清理后）
+> 文件夹数：64
+> 未归类条目：986
+
+## JASA（754 篇）
+
+- **4D magnetic resonance imaging atlas construction using temporally aligned audio waveforms in speech** — Xing, Fangxu; Jin, Riwei; Gilbert, Imani R. 等 (2021) *Journal of the Acoustical Society of America*
+- **A Bayesian approach for the separation of the acoustic and the correlated aerodynamic wall pressure fluctuations** — Dinsenmeyer, Alice; Leclere, Quentin; Antoni, Jerome 等 (2021) *The Journal of the Acoustical Society of America*
+- **A Bayesian approach to eliminate correlated noise using an independent reference-Application to supersonic jet noise extraction** — Aujogue, Nicolas; Leclere, Quentin; Antoni, Jerome 等 (2021) *The Journal of the Acoustical Society of America*
+- **A basic investigation into the optimization of cylindrical tubes used as acoustic stethoscopes for auscultation in COVID-19 diagnosisa)** — Jiang, Chuanyang; Zhao, Jiaqi; Huang, Bin 等 (2021) *Journal of the Acoustical Society of America*
+- **A causal and talker-independent speaker separation/dereverberation deep learning algorithm: Cost associated with conversion to real-time capable operation** — Healy, Eric W.; Taherian, Hassan; Johnson, Eric M. 等 (2021) *Journal of the Acoustical Society of America*
+- **A changepoint prefilter for sound event detection in long-term bioacoustic recordings** — Juodakis, Julius; Marsland, Stephen; Priyadarshani, Nirosha (2021) *The Journal of the Acoustical Society of America*
+- **A crew of listeners with no more than "slight" hearing loss who exhibit binaural deficits also exhibit reduced amounts of binaural interference** — Bernstein, Leslie R.; Trahiotis, Constantine (2021) *The Journal of the Acoustical Society of America*
+- **A cylindrical expansion of the audio sound for a steerable parametric array loudspeaker** — Zhong, Jiaxin; Kirby, Ray; Karimi, Mahmoud 等 (2021) *The Journal of the Acoustical Society of America*
+- **A deep learning approach for the fast generation of acoustic hologramsa)** — Lin, Qin; Wang, Jiaqian; Cai, Feiyan 等 (2021) *Journal of the Acoustical Society of America*
+- **A deep neural-network classifier for photograph-based estimation of hearing protection attenuation and fita)** — Smalt, Christoper J.; Ciccarelli, Gregory A.; Rodriguez, Aaron R. 等 (2021) *Journal of the Acoustical Society of America*
+- **A fast computational model for near- and far-field noise prediction due to offshore pile driving** — Peng, Yaxi; Tsouvalas, Apostolos; Stampoultzoglou, Tasos 等 (2021) *Journal of the Acoustical Society of America*
+- **A feature-based data association method for multiple acoustic source localization in a distributed microphone array** — Dang, Xudong; Zhu, Hongyan (2021) *Journal of the Acoustical Society of America*
+- **A free field recovery technique based on the boundary element method and three-dimensional scanning measurements** — Luo, Zhong-Wei; Comesana, Daniel Fernandez; Zheng, Chang-Jun 等 (2021) *Journal of the Acoustical Society of America*
+- **A high frequency, power, and efficiency diaphragm acoustic-to-electric transducer for thermoacoustic engines and refrigerators** — Steiner, Thomas W.; Antonelli, Keith B.; Archibald, Geoffrey D. S. 等 (2021) *Journal of the Acoustical Society of America*
+- **A history of jet noise research at the National Aeronautics and Space Administrationa)** — Henderson, Brenda S.; Huff, Dennis L. (2021) *Journal of the Acoustical Society of America*
+- **A landmark article on nonlinear time-domain modeling in musical acoustics** — Scavone, Gary; Smith, Julius O. (2021) *Journal of the Acoustical Society of America*
+- **A light-weight periodic plate with embedded acoustic black holes and bandgaps for broadband sound radiation reduction** — Tang, Liling; Gao, Nansha; Xu, Jiali 等 (2021) *Journal of the Acoustical Society of America*
+- **A matched-field processing approach to ranging surface vessels using a single hydrophone and measured replica fields** — Lo, Kam W. (2021) *Journal of the Acoustical Society of America*
+- **A method for realistic, conversational signal-to-noise ratio estimation** — Mansour, Naim; Marschall, Marton; May, Tobias 等 (2021) *Journal of the Acoustical Society of America*
+- **A multimodel deep learning algorithm to detect North Atlantic right whale up-calls** — Ibrahim, Ali K.; Zhuang, Hanqi; Cherubin, Laurent M. 等 (2021) *Journal of the Acoustical Society of America*
+- **A necessary condition for double-decay envelopes in stringed instruments** — Woodhouse, Jim (2021) *Journal of the Acoustical Society of America*
+- **A one-dimensional flow model enhanced by machine learning for simulation of vocal fold vibration** — Li, Zheng; Chen, Ye; Chang, Siyuan 等 (2021) *Journal of the Acoustical Society of America*
+- **A performance comparison between m-sequences and linear frequency-modulated sweeps for the estimation of travel-time with a moving source** — Gemba, Kay L.; Vazquez, Heriberto J.; Fialkowski, Joseph 等 (2021) *The Journal of the Acoustical Society of America*
+- **A piezoelectric micro-cantilever acoustic vector sensor designed considering fluid-structure interaction** — Kim, Junsoo; Yang, Seongkwan; Oh, Keunha 等 (2021) *Journal of the Acoustical Society of America*
+- **A porous medium model for mud** — Chotiros, Nicholas P. (2021) *Journal of the Acoustical Society of America*
+- **A practical method of estimating the time-varying degree of vowel nasalization from acoustic features** — Carignan, Christopher (2021) *Journal of the Acoustical Society of America*
+- **A preliminary study on two-dimensional grid-free compressive beamforming for arbitrary planar array geometries** — Chu, Zhigang; Liu, Yanli; Yang, Yang 等 (2021) *Journal of the Acoustical Society of America*
+- **A recursive approach for aeroacoustic phased array measurements in wind tunnels** — Ji, Jianchao; Wang, Cong; Wang, Liang 等 (2021) *Journal of the Acoustical Society of America*
+- **A review on B/A measurement methods with a clinical perspective** — Panfilova, Anastasiia; van Sloun, Ruud J. G.; Wijkstra, Hessel 等 (2021) *Journal of the Acoustical Society of America*
+- **A rigorous approach to optimal profile design for acoustic black holes** — Stottrup, Benjamin B.; Sorokin, Sergey; Cornean, Horia D. (2021) *Journal of the Acoustical Society of America*
+- **A semi-analytical model for the modal density of periodic mediums based on the symplectic method** — Ma, Yongbin; Deng, Zichen (2021) *Journal of the Acoustical Society of America*
+- **A series approximation to the Kirchhoff integral for Gaussian and exponential roughness covariance functions** — Olson, Derek R. (2021) *Journal of the Acoustical Society of America*
+- **A statistical approach for analyzing and modeling multibeam echosounder backscatter, including the influence of high-amplitude scatterers** — Fonseca, Luciano; Lurton, Xavier; Fezzani, Ridha 等 (2021) *Journal of the Acoustical Society of America*
+- **A study on tracheoesophageal phonation based on a collapsible channel model** — da Costa Tourinho, Andre Miazaki; da Silva, Andrey Ricardo; Medina dos Santos, Luiz Roberto 等 (2021) *Journal of the Acoustical Society of America*
+- **A subjective and objective evaluation of a codec for the electrical stimulation patterns of cochlear implants** — Hinrichs, Reemt; Gajecki, Tom; Ostermann, Joern 等 (2021) *Journal of the Acoustical Society of America*
+- **A tale of two curves and their influence on rocket and supersonic jet noise research (L)** — Gee, Kent L. (2021) *Journal of the Acoustical Society of America*
+- **A temporal-spectral generative adversarial network based end-to-end packet loss concealment for wideband speech transmission** — Wang, Jie; Guan, Yuansheng; Zheng, Chengshi 等 (2021) *The Journal of the Acoustical Society of America*
+- **A three-dimensional finite difference model for ocean acoustic propagation and benchmarking for topographic effects** — Liu, Wei; Zhang, Lilun; Wang, Wenke 等 (2021) *Journal of the Acoustical Society of America*
+- **A war of coefficients or a meaningless wrangle over practical unessentials?** — Balint, Jamilla; Vorlaender, Michael (2021) *Journal of the Acoustical Society of America*
+- **A wideband tonpilz transducer with a transverse through-hole in the radiating head** — He, Xiping; Zhu, Xingmin; Wu, Zihao 等 (2021) *The Journal of the Acoustical Society of America*
+- **ACOUSTICAL NEWS** — Moran, Elaine (2021) *The Journal of the Acoustical Society of America*
+- **ACOUSTICAL STANDARDS NEWS** — Blair-DeLeon, Nancy A.; Struck, Christopher J. (2021) *Journal of the Acoustical Society of America*
+- **Absolute pitch is disrupted by a memory illusiona)** — Deutsch, Diana; Edelstein, Miren; Dooley, Kevin 等 (2021) *Journal of the Acoustical Society of America*
+- **Accelerating frequency-domain numerical methods for weakly nonlinear focused ultrasound using nested meshes** — Groth, Samuel P.; Gelat, Pierre; Haqshenas, Seyyed R. 等 (2021) *Journal of the Acoustical Society of America*
+- **Access to semantic cues does not lead to perceptual restoration of interrupted speech in cochlear-implant users** — Jaekel, Brittany N.; Weinstein, Sarah; Newman, Rochelle S. 等 (2021) *Journal of the Acoustical Society of America*
+- **Accuracy and cue use in word segmentation for cochlear-implant listeners and normal-hearing listeners presented vocoded speech** — Heffner, Christopher C.; Jaekel, Brittany N.; Newman, Rochelle S. 等 (2021) *Journal of the Acoustical Society of America*
+- **Achieving a flat, wideband frequency response of a loudspeaker unit by numerical optimization with requirements on its directivity** — Nielsen, Daniel G.; Agerkvist, Finn T.; Jensen, Jakob S. (2021) *Journal of the Acoustical Society of America*
+- **Acoustic analysis of crabeater seal (Lobodon carcinophaga) vocalizations in the Southern Kerguelen Plateau region of East Antarctica** — Nagaraj, Harsha; Owen, Kylie; Lea, Mary-Anne 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustic and speaker variation in Dutch /n/ and /m/ as a function of phonetic context and syllabic position** — Smorenburg, Laura; Heeren, Willemijn (2021) *Journal of the Acoustical Society of America*
+- **Acoustic and thermoacoustic properties of an additive manufactured lattice structure** — Di Giulio, Elio; Auriemma, Fabio; Napolitano, Marialuisa 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustic backscattering observations from non-spherical gas bubbles with ka between 0.03 and 4.4** — Padilla, Alexandra M.; Weber, Thomas C. (2021) *Journal of the Acoustical Society of America*
+- **Acoustic characterisation of string instruments by internal cavity measurements** — Gough, Colin (2021) *The Journal of the Acoustical Society of America*
+- **Acoustic characteristics of looped-tube thermoacoustic refrigerators with external and in-built acoustic drivers: A comparative study** — Chen, Geng; Xu, Jingyuan (2021) *Journal of the Acoustical Society of America*
+- **Acoustic characteristics of microperforated plate with variable cross-sectional holes** — Jiang, Congshuang; Li, Xianhui; Xiao, Weimin 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustic detection range and population density of Cuvier's beaked whales estimated from near-surface hydrophones** — Barlow, Jay; Fregosi, Selene; Thomas, Len 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustic differences between Chilean and Salvadoran Spanish /s** — Bolyanatz, Mariska; Brogan, Franny D. (2021) *Journal of the Acoustical Society of America*
+- **Acoustic effects of non-transparent and transparent face coveringsa)** — Atcherson, Samuel R.; McDowell, B. Renee; Howard, Morgan P. (2021) *Journal of the Acoustical Society of America*
+- **Acoustic imaging using unknown random sources** — Prunty, Aaron C.; Snieder, Roel K.; Sens-Schoenfelder, Christoph (2021) *Journal of the Acoustical Society of America*
+- **Acoustic measurement and statistical characterization of direct-printed, variable-porosity aluminum foamsa)** — Konarski, Stephanie G.; Rohde, Charles A.; Gotoh, Ryohei 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustic metrics to assess humpback whale song unit structure from the Atlantic sector of the Southern oceana)** — Schall, Elena; Roca, Irene; Van Opzeeland, Ilse (2021) *Journal of the Acoustical Society of America*
+- **Acoustic modes of rapidly rotating ellipsoids subject to centrifugal gravity** — Vidal, Jeremie; Cebron, David (2021) *Journal of the Acoustical Society of America*
+- **Acoustic propagation in gassy intertidal marine sediments: An experimental study** — Leighton, Timothy G.; Dogan, Hakan; Fox, Paul 等 (2021) *The Journal of the Acoustical Society of America*
+- **Acoustic radiation force and torque on spheroidal particles in an ideal cylindrical chambera)** — Leao-Neto, Jose P.; Hoyos, Mauricio; Aider, Jean-Luc 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustic radiation from a cylindrical shell with a voided soft elastic coating** — Sharma, Gyani Shankar; Marsick, Adrien; Maxit, Laurent 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustic radiation torque on a compressible spheroid** — Jerome, Thomas S.; Ilinskii, Yurii A.; Zabolotskaya, Evgenia A. 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustic scattering by a finite-length elastic elliptical cylinder in a plane wave** — Li, Shuyuan; Shi, Jingyao; Gao, Yuqi 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustic streaming induced by MHz-frequency ultrasound extends the volume limit of cell suspension culturea)** — Oyama, Taigo; Imashiro, Chikahiro; Kuriyama, Takuma 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustic time-dependent energy and instantaneous power from planar radiators via a generalized radiation impulse response approach** — Stepanishen, Peter R. (2021) *Journal of the Acoustical Society of America*
+- **Acoustic time-dependent energy from force excited fluid loaded elastic shell/panel structures via a generalized modal radiation impulse response approach** — Stepanishen, Peter R. (2021) *Journal of the Acoustical Society of America*
+- **Acoustic tracking of fin whales: Habitat use and movement patterns within a Canadian Pacific fjord system** — Hendricks, Benjamin; Keen, Eric M.; Shine, Chenoah 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustic trapping based on surface displacement of resonance modes** — Hammarstrom, Bjorn; Skov, Nils R.; Olofsson, Karl 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustical intensity probe based on a polyvinylidene fluoride bimorph** — Wang, Ning; Pan, Jie; Matthews, David (2021) *Journal of the Acoustical Society of America*
+- **Acoustical modeling of the saxophone mouthpiece as a transfer matrixa)** — Wang, Song; Maestre, Esteban; Scavone, Gary (2021) *Journal of the Acoustical Society of America*
+- **Acoustical properties of 3D printed thermoplastics** — Antoniou, Anastasia; Evripidou, Nikolas; Giannakou, Marinos 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustics Apps: Interactive simulations for digital teaching and learning of acoustics** — Moheit, Lennart; Schmid, Johannes D.; Schmid, Jonas M. 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustics modelling of open-cell foam materials from microstructure and constitutive properties** — Semeniuk, B. P.; Lundberg, E.; Goeransson, P. (2021) *Journal of the Acoustical Society of America*
+- **Acoustofluidic device for acoustic capture of Bacillus anthracis spore analogues at low concentrationa)** — Plazonic, Filip; Fisher, Adam; Carugo, Dario 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustofluidic dynamic interfacial tensiometry** — Farooq, Umar; Liu, Yuanting; Li, Pengqi 等 (2021) *Journal of the Acoustical Society of America*
+- **Acoustophoresis in polymer-based microfluidic devices: Modeling and experimental validation** — Lickert, Fabian; Ohlin, Mathias; Bruus, Henrik 等 (2021) *Journal of the Acoustical Society of America*
+- **Active acoustic cloaking and illusions of sound-hard bodies using the boundary element method** — Lin, Cikai; Liu, Daipei; Eggler, Daniel 等 (2021) *Journal of the Acoustical Society of America*
+- **Adaptive array invariant in range-dependent environments with variable bathymetry** — Byun, Gihoon; Song, H. C.; Cho, Chomgun (2021) *Journal of the Acoustical Society of America*
+- **Additive manufacturing of channeled acoustic topological insulatorsa)** — Kliewer, Emily; Darabi, Amir; Leamy, Michael J. (2021) *Journal of the Acoustical Society of America*
+- **Additivity of segregation cues in simulated cocktail-party listening** — Rodriguez, Briana; Lee, Jungmee; Lutfi, Robert (2021) *Journal of the Acoustical Society of America*
+- **Adult perception of stop consonant voicing in American-English-learning toddlers: Voice onset time and secondary cuesa)** — Hitchcock, Elaine R.; Koenig, Laura L. (2021) *Journal of the Acoustical Society of America*
+- **Adults with cochlear implants can use prosody to determine the clausal structure of spoken sentences** — Amichetti, Nicole M.; Neukam, Jonathan; Kinney, Alexander J. 等 (2021) *Journal of the Acoustical Society of America*
+- **Aeroacoustic differences between the Japanese fricatives c and c** — Yoshinaga, Tsukasa; Maekawa, Kikuo; Iida, Akiyoshi (2021) *Journal of the Acoustical Society of America*
+- **Aeroacoustic prediction for cooling fan using convolution quadrature boundary element method** — Gu, Xinzhong; Yao, Jia (2021) *The Journal of the Acoustical Society of America*
+- **Aircraft noise-Auralization-based assessment of weather-dependent effects on loudness and sharpness** — Dreier, Christian; Vorlaender, Michael (2021) *Journal of the Acoustical Society of America*
+- **Aliasing-free broadband direction of arrival estimation using a frequency-difference technique** — Yang, Long; Wang, Yong; Yang, Yixin (2021) *Journal of the Acoustical Society of America*
+- **Allan Pierce and adiabatic normal modes** — Lynch, James F. (2021) *Journal of the Acoustical Society of America*
+- **Ambient noise under stably covered ice** — Sheng, Xueli; Dong, Chaoping; Guo, Longxiang 等 (2021) *Journal of the Acoustical Society of America*
+- **Amplitude modulated wind farm noise relationship with annoyance: A year-long field study** — Hansen, Kristy L.; Phuc, Nguyen; Micic, Gorica 等 (2021) *Journal of the Acoustical Society of America*
+- **An acoustic investigation of non-uniformly structured porous coated cylinders in uniform flow** — Arcondoulis, Elias J. G.; Geyer, Thomas F.; Liu, Yu (2021) *Journal of the Acoustical Society of America*
+- **An acoustic scattering model for stratification interfaces** — Weidner, Elizabeth; Weber, Thomas C. (2021) *Journal of the Acoustical Society of America*
+- **An active impulsive noise control algorithm with a post-adaptive filter and variable step size** — Li, Shanjun; Jin, Guoyong; Chen, Yukun 等 (2021) *The Journal of the Acoustical Society of America*
+- **An analytical method to convert between speech recognition thresholds and percentage-correct scores for speech-in-noise tests** — Smits, Cas; De Sousa, Karina C.; Swanepoel, De Wet (2021) *Journal of the Acoustical Society of America*
+- **An arbitrary high-order discontinuous Galerkin method with local time-stepping for linear acoustic wave propagation** — Wang, Huiqing; Cosnefroy, Matthias; Hornikx, Maarten (2021) *Journal of the Acoustical Society of America*
+- **An azimuthal Fourier domain formulation of the Ffowcs Williams and Hawkings equation** — Chen, Zhibo; Towne, Aaron (2021) *Journal of the Acoustical Society of America*
+- **An effectively causal deep learning algorithm to increase intelligibility in untrained noises for hearing-impaired listeners** — Healy, Eric W.; Tan, Ke; Johnson, Eric M. 等 (2021) *Journal of the Acoustical Society of America*
+- **An empirical model for wind-generated ocean noise** — Hildebrand, John A.; Frasier, Kaitlin E.; Baumann-Pickering, Simone 等 (2021) *Journal of the Acoustical Society of America*
+- **An entirely reverse-engineered finite element model of a classical guitar in comparison with experimental dataa)** — Brauchler, Alexander; Ziegler, Pascal; Eberhard, Peter (2021) *Journal of the Acoustical Society of America*
+- **An equivalent circuit based electro-vibro-acoustic model of a cylindrical transducer array** — Sim, Min-Jung; Jeong, Weui-Bong; Hong, Chinsuk (2021) *Journal of the Acoustical Society of America*
+- **An evaluation framework for research platforms to advance cochlear implant/hearing aid technology: A case study with CCi-MOBILE** — Shekar, Ram C. M. C.; Hansen, John H. L. (2021) *Journal of the Acoustical Society of America*
+- **An examination of dose uncertainty and dose distribution effects on community noise attitudinal survey outcomes** — Horonjeff, Richard D. (2021) *Journal of the Acoustical Society of America*
+- **An experimental study on transfer function estimation using acoustic modelling and singular value decomposition** — Zhu, Qiaoxi; Qiu, Xiaojun; Coleman, Philip 等 (2021) *Journal of the Acoustical Society of America*
+- **An extended view for acoustofluidic particle manipulation: Scenarios for actuation modes and device resonance phenomenon for bulk-acoustic-wave devicesa)** — Ozer, M. Bulent; Cetin, Barbaros (2021) *Journal of the Acoustical Society of America*
+- **An extra-broadband compact sound-absorbing structure composing of double-layer resonator with multiple perforations** — Guo, Jingwen; Fang, Yi; Qu, Renhao 等 (2021) *Journal of the Acoustical Society of America*
+- **An integrated underwater soundscape analysis in the Bering Strait region** — McKenna, Megan F.; Southall, Brandon L.; Chou, Emily 等 (2021) *The Journal of the Acoustical Society of America*
+- **An intrusive method for estimating speech intelligibility from noisy and distorted signals** — Mamun, Nursadul; Zilany, Muhammad S. A.; Hansen, John H. L. 等 (2021) *The Journal of the Acoustical Society of America*
+- **An investigation of maximum particle velocity as a universal invariant-Defined by a statistical measure of failure or plastic energy loss for acoustofluidic applicationsa)** — Singh, Arik; Zhang, Naiqing; Friend, James (2021) *Journal of the Acoustical Society of America*
+- **An investigation on noise attenuation by acoustic liner constructed by Helmholtz resonators with extended necks** — Guo, Jingwen; Fang, Yi; Jiang, Ziyan 等 (2021) *Journal of the Acoustical Society of America*
+- **An iterative approach to optimize loudspeaker placement for multi-zone sound field reproduction** — Zhu, Min; Zhao, Sipei (2021) *Journal of the Acoustical Society of America*
+- **An objective measure of quality for time-scale modification of audio** — Roberts, Timothy; Paliwal, Kuldip K. (2021) *Journal of the Acoustical Society of America*
+- **Analysing spectral changes over time to identify articulatory impairments in dysarthria** — Slis, A.; Leveque, N.; Fougeron, C. 等 (2021) *Journal of the Acoustical Society of America*
+- **Analysis and modeling of dialect information in Ao, a low resource language** — Tzudir, Moakala; Sarmah, Priyankoo; Prasanna, S. R. Mahadeva (2021) *Journal of the Acoustical Society of America*
+- **Analysis of a passive radio frequency excited acoustic transducer** — Hu, Lejun; Thompson, Charles; Remillard, Grace 等 (2021) *Journal of the Acoustical Society of America*
+- **Analysis of correlation between window duration for kurtosis computation and accuracy of noise-induced hearing loss prediction** — Tian, Yu; Ding, Wenxi; Zhang, Meibian 等 (2021) *Journal of the Acoustical Society of America*
+- **Analysis of phase response of fiber Fabry-Perot cavity microphones** — Cheng, Jin; Ren, Baokai; Zhao, Longjiang 等 (2021) *Journal of the Acoustical Society of America*
+- **Analysis of supersonic jet turbulence, fine-scale noise, and shock-associated noise from characteristic, bi-conic, faceted, and fluidic injection nozzlesa)** — Patel, Trushant K.; Miller, Steven A. E. (2021) *Journal of the Acoustical Society of America*
+- **Analysis of total harmonic distortion of miniature loudspeakers used in mobile phones considering nonlinear acoustic damping** — Huang, Jie; Feng, Xuelei; Chen, Simiao 等 (2021) *Journal of the Acoustical Society of America*
+- **Analytical solution based on spatial distortion for a time-harmonic Green's function in a transverse isotropic viscoelastic solid** — Royston, Thomas J. (2021) *Journal of the Acoustical Society of America*
+- **Analytical, computational, and experimental study of thermoviscous acoustic damping in perforated micro-electro-mechanical systems with flexible diaphragm** — Naderyan, Vahid; Raspet, Richard; Hickey, Craig (2021) *Journal of the Acoustical Society of America*
+- **Analyzing the vocal tract characteristics for out-of-breath speech** — Sahoo, Sibasis; Dandapat, Samarendra (2021) *Journal of the Acoustical Society of America*
+- **Angle-dependent sound absorption estimation using a compact microphone array** — Alkmim, Mansour; Cuenca, Jacques; De Ryck, Laurent 等 (2021) *Journal of the Acoustical Society of America*
+- **Annoyance, perception, and physiological effects of wind turbine infrasound** — Maijala, Panu P.; Kurki, Ilmari; Vainio, Lari 等 (2021) *Journal of the Acoustical Society of America*
+- **Application to visualize simultaneous vibrations of plates and ribs in a violina)** — Limon, Dana S.; Renteria, Jatziri H.; Torres, Jesus A. (2021) *Journal of the Acoustical Society of America*
+- **Approaches to mathematical modeling of context effects in sentence recognition** — Smits, Cas; Zekveld, Adriana A. (2021) *Journal of the Acoustical Society of America*
+- **Are source-filter interactions detectable in classical singing during vowel glides?** — Echternach, Matthias; Herbst, Christian T.; Koeberlein, Marie 等 (2021) *Journal of the Acoustical Society of America*
+- **Arrival time and angle fluctuations of sea-surface forward scattering** — Mousavi, Seyed Mohammad Reza; Karimi, Mahmood (2021) *Journal of the Acoustical Society of America*
+- **Articulatory compensation for low-pass filtered formant-altered auditory feedback** — Uezu, Yasufumi; Hiroya, Sadao; Mochida, Takemi (2021) *Journal of the Acoustical Society of America*
+- **Artificial intelligence enabled preliminary diagnosis for COVID-19 from voice cues and questionnairesa)** — Shimon, Carmi; Shafat, Gabi; Dangoor, Inbal 等 (2021) *Journal of the Acoustical Society of America*
+- **Assessing community noise annoyance: A review of two decades of the international technical specification ISO/TS 15666:2003** — Clark, Charlotte; Gjestland, Truls; Lavia, Lisa 等 (2021) *Journal of the Acoustical Society of America*
+- **Assessing room acoustic listening expertise** — von Berg, Markus; Steffens, Jochen; Weinzierl, Stefan 等 (2021) *Journal of the Acoustical Society of America*
+- **Assessment of qualitative and quantitative S-0 guided wave tomography of sharp thickness loss defects in the isotropic membrane regime** — Cailly, William; Walaszek, Henri; Brzuchacz, Sebastien 等 (2021) *Journal of the Acoustical Society of America*
+- **Atmospheric sound propagation in a moving fluid above an impedance plane: Application of the semi-analytic finite element method** — Kirby, Ray (2021) *Journal of the Acoustical Society of America*
+- **Attenuation of Rayleigh waves due to surface roughness** — Sarris, Georgios; Haslinger, Stewart G.; Huthwaite, Peter 等 (2021) *Journal of the Acoustical Society of America*
+- **Audiometric assessment of hearing loss sustained during military service** — Lowe, David A.; Moore, Brian C. J. (2021) *Journal of the Acoustical Society of America*
+- **Auditory feedback experience in the development of phonetic production: Evidence from preschoolers with cochlear implants and their normal-hearing peers** — Cychosz, Margaret; Munson, Benjamin; Newman, Rochelle S. 等 (2021) *The Journal of the Acoustical Society of America*
+- **Auditory masking in killer whales (Orcinus orca): Critical ratios for tonal signals in Gaussian noise** — Branstetter, Brian K.; Felice, Michael; Robeck, Todd (2021) *Journal of the Acoustical Society of America*
+- **Auditory memory for random time patterns in cochlear implant listeners** — Kang, HiJee; Macherey, Olivier; Roman, Stephane 等 (2021) *The Journal of the Acoustical Society of America*
+- **Auditory perception stability evaluation comparing binaural and loudspeaker Ambisonic presentations of dynamic virtual concert auralizations** — Thery, David; Katz, Brian F. G. (2021) *Journal of the Acoustical Society of America*
+- **Auditory salience using natural scenes: An online study** — Kothinti, Sandeep Reddy; Huang, Nicholas; Elhilali, Mounya (2021) *Journal of the Acoustical Society of America*
+- **Auditory-visual interactions in egocentric distance perception: Ventriloquism effect and aftereffecta)** — Hladek, L'ubos; Seitz, Aaron R.; Kopco, Norbert (2021) *Journal of the Acoustical Society of America*
+- **Automated partial differential equation identification** — Liu, Ruixian; Bianco, Michael J.; Gerstoft, Peter (2021) *Journal of the Acoustical Society of America*
+- **Automated two-dimensional localization of underwater acoustic transient impulses using vector sensor image processing (vector sensor localization)** — Thode, Aaron M.; Conrad, Alexander S.; Ozanich, Emma 等 (2021) *Journal of the Acoustical Society of America*
+- **Automatic detection and classification of baleen whale social calls using convolutional neural networksa)** — Rasmussen, Jeppe Have; Sirovic, Ana (2021) *Journal of the Acoustical Society of America*
+- **Automatic estimation of the sound emergence of wind turbine noise with nonnegative matrix factorization** — Gloaguen, Jean-Remy; Ecotiere, David; Gauvreau, Benoit 等 (2021) *Journal of the Acoustical Society of America*
+- **Automatic responses to musical intervals: Contrasts in acoustic roughness predict affective priming in Western listeners** — Armitage, James; Lahdelma, Imre; Eerola, Tuomas (2021) *Journal of the Acoustical Society of America*
+- **Automatic source localization and spectra generation from sparse beamforming maps** — Goudarzi, A.; Spehr, C.; Herbold, S. (2021) *The Journal of the Acoustical Society of America*
+- **Autonomous learning and interpretation of channel multipath scattering using braid manifolds in underwater acoustic communicationsa)** — McCarthy, Ryan A.; Gupta, Ananya Sen; Kemerling, Madison (2021) *Journal of the Acoustical Society of America*
+- **Bat biosonar signals** — Simmons, James A.; Auger, Gregory J. (2021) *Journal of the Acoustical Society of America*
+- **BeamLearning: An end-to-end deep learning approach for the angular localization of sound sources using raw multichannel acoustic pressure dataa)** — Pujol, Hadrien; Bavu, Eric; Garcia, Alexandre (2021) *Journal of the Acoustical Society of America*
+- **Benefits of triple acoustic beamforming during speech-on-speech masking and sound localization for bilateral cochlear-implant usersa)** — Yun, David; Jennings, Todd R.; Kidd, Gerald 等 (2021) *Journal of the Acoustical Society of America*
+- **Binaural rendering from microphone array signals of arbitrary geometry** — Iijima, Naoto; Koyama, Shoichi; Saruwatari, Hiroshi (2021) *The Journal of the Acoustical Society of America*
+- **Blade-vortex interaction detection and extraction under deep neural network-based scale feature model** — Wang, Lu; Hu, Xiaoqing; Liu, Xiaorui 等 (2021) *Journal of the Acoustical Society of America*
+- **Born approximation of acoustic radiation force and torque on inhomogeneous objects** — Jerome, Thomas S.; Hamilton, Mark F. (2021) *Journal of the Acoustical Society of America*
+- **Bounding the number of calling animals with passive acoustics and reliable locations** — Spiesberger, John L.; Berchok, Catherine; Iyer, Pranav 等 (2021) *Journal of the Acoustical Society of America*
+- **Brass instruments as a cascade of two-port networks: Transfer functions, chain parameters, and power efficiency in theory and practicea)** — Kausel, Wilfried; Mayer, Alexander; Beauchamp, James W. (2021) *Journal of the Acoustical Society of America*
+- **Broad omnidirectional acoustic band gaps in a three-dimensional phononic crystal composed of face-centered cubic Helmholtz resonator network** — Bicer, Ahmet; Korozlu, Nurettin; Kaya, Olgun A. 等 (2021) *Journal of the Acoustical Society of America*
+- **Broadband shock-associated noise modelling for high-area-ratio under-expanded jetsa)** — Gryazev, V.; Kalyan, A.; Markesteijn, A. P. 等 (2021) *Journal of the Acoustical Society of America*
+- **Broadband square cloak in elastic wave metamaterial plate with active control** — Ning, Li; Wang, Yi-Ze; Wang, Yue-Sheng (2021) *Journal of the Acoustical Society of America*
+- **Bulk calibration method of micro-electromechanical system (MEMS) microphones** — Chan, Martin; Baker, Christian; Simmons, Daniel 等 (2021) *Journal of the Acoustical Society of America*
+- **Calculation of reflection and transmission coefficients for waves in multilayered piezoelectric structures using the mixed variable method** — Zhang, Yanhui; Gao, Qiang (2021) *Journal of the Acoustical Society of America*
+- **Calibration methods and facilities for vector receivers using a laser Doppler vibrometer in the frequency range 20 Hz to 10 kHz** — Jia, Guanghui; Chen, Yi; Wang, Shiquan 等 (2021) *Journal of the Acoustical Society of America*
+- **Calibration of sound power sources: Current status and new developments** — Brezas, Spyros; Wittstock, Volker (2021) *Journal of the Acoustical Society of America*
+- **Call repertoire and inferred ecotype presence of killer whales (Orcinus orca) recorded in the southeastern Chukchi Sea** — Madrigal, Brijonnay C.; Crance, Jessica L.; Berchok, Catherine L. 等 (2021) *Journal of the Acoustical Society of America*
+- **Changes in the soundscape of Girona during the COVID lockdowna)** — Alsina-Pages, Rosa Ma; Bergada, Pau; Martinez-Suquia, Carme (2021) *Journal of the Acoustical Society of America*
+- **Characteristics of thermospheric infrasound predicted using ray tracing and weakly non-linear waveform analyses** — Blom, Philip; Waxler, Roger (2021) *Journal of the Acoustical Society of America*
+- **Characterization and comparison of echolocation clicks of white-beaked dolphins (Lagenorhynchus albirostris) off the Northumberland coast, UK** — Yang, Liangliang; Sharpe, Matt; Temple, Andrew J. 等 (2021) *Journal of the Acoustical Society of America*
+- **Characterization of Falcon 9 launch vehicle noise from far-field measurementsa)** — Mathews, Logan T.; Gee, Kent L.; Hart, Grant W. (2021) *Journal of the Acoustical Society of America*
+- **Characterization of acoustic sources in a corrugated pipe flow with linear stochastic estimation** — Galeron, Gaetan; Amielh, Muriel; Mattei, Pierre-Olivier (2021) *Journal of the Acoustical Society of America*
+- **Characterization of an underwater metamaterial made of aluminum honeycomb panels at low frequencies** — Cushing, Colby W.; Wilson, Preston S.; Haberman, Michael R. 等 (2021) *Journal of the Acoustical Society of America*
+- **Characterization of open woodwind toneholes by the tube reversed method** — Garcia Mayen, H.; Kergomard, J.; Vergez, C. 等 (2021) *The Journal of the Acoustical Society of America*
+- **Characterization of sphere-plane contact loss nonlinearity inside a cylindrical container using nonlinear ultrasound resonance spectroscopy** — Lin, Kevin Yi-Wei; Prather, Wayne E.; Mobley, Joel (2021) *The Journal of the Acoustical Society of America*
+- **Characterization of the acoustic output of single marine-seismic airguns and clusters: The Svein Vaage dataset** — Prior, Mark K.; Ainslie, Michael A.; Halvorsen, Michele B. 等 (2021) *Journal of the Acoustical Society of America*
+- **Characterization of topographic effects on sonic boom reflection by resolution of the Euler equations** — Emmanuelli, Ariane; Dragna, Didier; Ollivier, Sebastien 等 (2021) *Journal of the Acoustical Society of America*
+- **Characterizing underwater noise during rain at the northeast Pacific continental margin** — Schwock, Felix; Abadi, Shima (2021) *Journal of the Acoustical Society of America*
+- **Circuit model for thermoviscous propagation in annular waveguides** — Ricci, Yuri; La Torraca, Paolo; Larcher, Luca (2021) *Journal of the Acoustical Society of America*
+- **Classification of broadband target spectra in the mesopelagic using physics-informed machine learning** — Cotter, Emma; Bassett, Christopher; Lavery, Andone (2021) *Journal of the Acoustical Society of America*
+- **Classifying the emotional speech content of participants in group meetings using convolutional long short-term memory networka)** — Morgan, Mallory M.; Bhattacharya, Indrani; Radke, Richard J. 等 (2021) *Journal of the Acoustical Society of America*
+- **Click evoked middle ear muscle reflex: Spectral and temporal aspectsa)** — Boothalingam, Sriram; Goodman, Shawn S. (2021) *Journal of the Acoustical Society of America*
+- **Closed-aperture unbounded acoustics experimentation using multidimensional deconvolution** — Li, Xun; Becker, Theodor; Ravasi, Matteo 等 (2021) *Journal of the Acoustical Society of America*
+- **Clustering analysis of a yearlong record of ambient sound on the Chukchi Shelf in the 40 Hz to 4 kHz frequency range** — Ballard, Megan S.; Sagers, Jason D. (2021) *Journal of the Acoustical Society of America*
+- **Comments on "Influences of low-frequency energy and testing environment on annoyance responses to supersonic aircraft noise when heard indoors" J. Acoust. Soc. Am. 148(1), 414-429 (2020)** — Vos, Joos (2021) *Journal of the Acoustical Society of America*
+- **Comparing acoustic analyses of speech data collected remotely** — Zhang, Cong; Jepson, Kathleen; Lohfink, Georg 等 (2021) *Journal of the Acoustical Society of America*
+- **Comparison of heuristics and metaheuristics for topology optimisation in acoustic porous materials** — Ramamoorthy, Vivek T.; Ozcan, Ender; Parkes, Andrew J. 等 (2021) *Journal of the Acoustical Society of America*
+- **Complexity of vocal tract shaping in glossectomy patients and typical speakers: A principal component analysis** — Hagedorn, Christina; Kim, Jangwon; Sinha, Uttam 等 (2021) *The Journal of the Acoustical Society of America*
+- **Computation of the noise radiated by a hot supersonic jet deflected in a flame trench** — Langenais, A.; Vuillot, F.; Troyes, J. 等 (2021) *Journal of the Acoustical Society of America*
+- **Computational localization of attack regions through a direct observation of the audio waveform** — Lartillot, Olivier; Nymoen, Kristian; Camara, Guilherme Schmidt 等 (2021) *Journal of the Acoustical Society of America*
+- **Computational simulations of respiratory-laryngeal interactions and their effects on lung volume termination during phonation: Considerations for hyperfunctional voice disorders** — Desjardins, Maude; Verdolini Abbott, Katherine; Zhang, Zhaoyan (2021) *Journal of the Acoustical Society of America*
+- **Computational study on aeroacoustic fields of a transitional supersonic jeta)** — Nonomura, Taku; Ozawa, Yuta; Abe, Yoshiaki 等 (2021) *Journal of the Acoustical Society of America*
+- **Conditional Wasserstein generative adversarial networks applied to acoustic metamaterial design** — Lai, Peter; Amirkulova, Feruza; Gerstoft, Peter (2021) *Journal of the Acoustical Society of America*
+- **Consonant voicing in the Buckeye corpus** — Fulop, Sean A.; Scott, Hannah J. M. (2021) *Journal of the Acoustical Society of America*
+- **Consonantal F-0 perturbation in American English involves multiple mechanisms** — Xu, Yi; Xu, Anqi (2021) *Journal of the Acoustical Society of America*
+- **Constrained optimal filter design for multi-channel active noise control via convex optimization** — Zhuang, Yongjie; Liu, Yangfan (2021) *Journal of the Acoustical Society of America*
+- **Contralateral proximal interference** — Reeves, Adam; Seluakumaran, Kumar; Scharf, Bertram (2021) *Journal of the Acoustical Society of America*
+- **Contrast agent shell properties effects on heat deposition in bubble enhanced high intensity focused ultrasound** — Gnanaskandan, Aswin; Hsiao, Chao-Tsung; Chahine, Georges (2021) *Journal of the Acoustical Society of America*
+- **Contributions of gravity waves in the ocean to T-phase excitation by earthquakes** — Godin, Oleg A. (2021) *Journal of the Acoustical Society of America*
+- **ConvNets for counting: Object detection of transient phenomena in steelpan drumsa)** — Hawley, Scott H.; Morrison, Andrew C. (2021) *Journal of the Acoustical Society of America*
+- **Conversational distance adaptation in noise and its effect on signal-to-noise ratio in realistic listening environments** — Weisser, Adam; Miles, Kelly; Richardson, Michael J. 等 (2021) *Journal of the Acoustical Society of America*
+- **Convex compressive beamforming with nonconvex sparse regularization** — Yang, Yixin; Du, Zhaohui; Wang, Yong 等 (2021) *Journal of the Acoustical Society of America*
+- **Convolutional neural networks for estimating transport parameters of fibrous materials based on micro-computerized tomography images** — Jeon, Ju Hyun; Chemali, Elias; Yang, Sung Soo 等 (2021) *Journal of the Acoustical Society of America*
+- **Coupled numerical simulations of the structure and acoustics of a violin body** — Yokoyama, Masao (2021) *Journal of the Acoustical Society of America*
+- **Coupled-mode field computations for media with locally reacting irregular boundaries** — Ivansson, Sven M. (2021) *The Journal of the Acoustical Society of America*
+- **Cross-frequency weights in normal and impaired hearing: Stimulus factors, stimulus dimensions, and associations with speech recognition** — Roverud, Elin; Dubno, Judy R.; Richards, Virginia M. 等 (2021) *The Journal of the Acoustical Society of America*
+- **Cryptic vocal behavior of foraging humpback whales on feeding grounds in West Greenland** — Videsen, Simone K. A.; Simon, Malene; Johnson, Mark 等 (2021) *Journal of the Acoustical Society of America*
+- **Data assimilation of flow-acoustic resonance** — Wang, Peng; He, Chuangxin; Deng, Zhiwen 等 (2021) *Journal of the Acoustical Society of America*
+- **Data augmentation for the classification of North Atlantic right whales upcallsa)** — Padovese, Bruno; Frazao, Fabio; Kirsebom, Oliver S. 等 (2021) *Journal of the Acoustical Society of America*
+- **Decentralized estimation of ocean current field using underwater acoustic sensor networks** — Chen, Hao; Chen, Huifang; Zhang, Ying 等 (2021) *Journal of the Acoustical Society of America*
+- **Deep embedded clustering of coral reef bioacousticsa)** — Ozanich, Emma; Thode, Aaron; Gerstoft, Peter 等 (2021) *Journal of the Acoustical Society of America*
+- **Deep learning applied to lung ultrasound videos for scoring COVID-19 patients: A multicenter studya)** — Mento, Federico; Perrone, Tiziano; Fiengo, Anna 等 (2021) *Journal of the Acoustical Society of America*
+- **Deep learning assisted sound source localization using two orthogonal first-order differential microphone arraysa)** — Liu, Nian; Chen, Huawei; Songgong, Kunkun 等 (2021) *Journal of the Acoustical Society of America*
+- **Deep learning based speaker separation and dereverberation can generalize across different languages to improve intelligibility** — Healy, Eric W.; Johnson, Eric M.; Delfarah, Masood 等 (2021) *Journal of the Acoustical Society of America*
+- **Deep learning-based direction-of-arrival estimation for multiple speech sources using a small scale arraya)** — Zhang, Min; Pan, Xiang; Shen, Yining 等 (2021) *Journal of the Acoustical Society of America*
+- **Deep learning-based high-frequency source depth estimation using a single sensor** — Yoon, Seunghyun; Yang, Haesang; Seong, Woojae (2021) *Journal of the Acoustical Society of America*
+- **Deep learning-based stereophonic acoustic echo suppression without decorrelation** — Cheng, Linjuan; Peng, Renhua; Li, Andong 等 (2021) *Journal of the Acoustical Society of America*
+- **Deep ocean long range underwater navigation (vol 147, pg 2365, 2020)** — Mikhalevsky, Peter N.; Sperry, Brian J.; Woolfe, Katherine F. 等 (2021) *Journal of the Acoustical Society of America*
+- **Deep perceptual embeddings for unlabelled animal sound eventsa)** — Morfi, Veronica; Lachlan, Robert F.; Stowell, Dan (2021) *Journal of the Acoustical Society of America*
+- **Deep transfer learning for underwater direction of arrival using one vector sensora)** — Cao, Huaigang; Wang, Wenbo; Su, Lin 等 (2021) *Journal of the Acoustical Society of America*
+- **Denoising click-evoked otoacoustic emission signals by optimal shrinkage** — Liu, Tzu-Chi; Liu, Yi-Wen; Wu, Hau-Tieng (2021) *Journal of the Acoustical Society of America*
+- **Dependence of lung ultrasound vertical artifacts on frequency, bandwidth, focus and angle of incidence: An in vitro study** — Mento, Federico; Demi, Libertario (2021) *Journal of the Acoustical Society of America*
+- **Dependence of the internal geometry for the calculation of the Helmholtz frequency in an axisymmetrical acoustic resonator** — Valiere, Jean-Christophe; Prax, Christian (2021) *Journal of the Acoustical Society of America*
+- **Deriving acoustic properties for perfluoropentane droplets with viscoelastic cellulose nanofiber shell via numerical simulations** — Song, Xue; Loskutova, Ksenia; Chen, Hongjian 等 (2021) *The Journal of the Acoustical Society of America*
+- **Description of the first acoustic recording of spinner dolphins (Stenella longirostris) from the northern straits of Malacca, Malaysia (L)** — Bono, Saliza; Kimura, Satoko S.; Kuit, Sui Hyang 等 (2021) *Journal of the Acoustical Society of America*
+- **Design of ultrasonic standing wave levitation support for three-dimensional printed filaments** — Wu, Huaying; Zhu, Jingjun; Wang, Xuan 等 (2021) *Journal of the Acoustical Society of America*
+- **Detecting pulmonary nodules by using ultrasound multiple scattering** — Roshankhah, Roshan; Blackwell, John; Ali, Mir H. 等 (2021) *Journal of the Acoustical Society of America*
+- **Detecting, classifying, and counting blue whale calls with Siamese neural networksa)** — Zhong, Ming; Torterotot, Maelle; Branch, Trevor A. 等 (2021) *Journal of the Acoustical Society of America*
+- **Detection of envelope modulation and direction of arrival estimation of multiple noise sources with an acoustic vector sensor** — Stinco, Pietro; Tesei, Alessandra; Dreo, Richard 等 (2021) *Journal of the Acoustical Society of America*
+- **Development of an 80-word clinical version of the modified rhyme test (MRT80)** — Brungart, Douglas S.; Makashay, Matthew J.; Sheffield, Benjamin M. (2021) *Journal of the Acoustical Society of America*
+- **Development of an ultrasonic nonlinear frequency compounding method with applications in tissue thermometry** — Hornsby, Tyler; Shaswary, Elyas; Tavakkoli, Jahangir (2021) *Journal of the Acoustical Society of America*
+- **Development of an ultrasound level meter for use in occupational safety and health** — Wachtler, Moritz; Rust, Marvin; Wolff, Andrea 等 (2021) *Journal of the Acoustical Society of America*
+- **Development of binaural temporal fine structure sensitivity in children** — Flanagan, Sheila A.; Moore, Brian C. J.; Wilson, Angela M. 等 (2021) *Journal of the Acoustical Society of America*
+- **Diagnostic ultrasound imaging of the lung: A simulation approach based on propagation and reverberation in the human body** — Ostras, Oleksii; Soulioti, Danai Eleni; Pinton, Gianmarco (2021) *Journal of the Acoustical Society of America*
+- **Dichotic listening performance and effort as a function of spectral resolution and interaural symmetry** — DeRoy Milvae, Kristina; Kuchinsky, Stefanie E.; Stakhovskaya, Olga A. 等 (2021) *The Journal of the Acoustical Society of America*
+- **Diffuse energy transport and coda-wave interferometry for resonant transmission between reverberant structures** — Weaver, Richard L.; Lee, SangMin (2021) *Journal of the Acoustical Society of America*
+- **Direct discrete complex image method for sound field evaluation above a non-locally reacting layer** — Eser, Martin; Gurbuz, Caglar; Brandao, Eric 等 (2021) *Journal of the Acoustical Society of America*
+- **Directional infrasound sensing using acoustic metamaterials** — Rouse, Jerry W.; Bowman, Daniel; Walsh, Timothy F. (2021) *Journal of the Acoustical Society of America*
+- **Dissipative time-domain one-dimensional model for viscothermal acoustic propagation in wind instruments** — Thibault, Alexis; Chabassier, Juliette (2021) *Journal of the Acoustical Society of America*
+- **Distance vs time. Acoustic and articulatory consequences of reduced vowel duration in Polish** — Strycharczuk, Patrycja; Cavar, Malgorzata; Coretta, Stefano (2021) *Journal of the Acoustical Society of America*
+- **Distinctions between single and twin impinging jet dynamicsa)** — Stahl, Spencer L.; Prasad, Chitrarth; Gaitonde, Datta V. (2021) *Journal of the Acoustical Society of America*
+- **Do I have a hearing loss?** — Yost, William A. (2021) *The Journal of the Acoustical Society of America*
+- **Do echolocating toothed whales direct their acoustic gaze on- or off-target in a static detection task?** — Beedholm, Kristian; Malinka, Chloe; Ladegaard, Michael 等 (2021) *Journal of the Acoustical Society of America*
+- **Do you have COVID-19? An artificial intelligence-based screening tool for COVID-19 using acoustic parameters** — Vahedian-azimi, Amir; Keramatfar, Abdalsamad; Asiaee, Maral 等 (2021) *Journal of the Acoustical Society of America*
+- **Double-pass consistency for amplitude- and frequency-modulation detection in normal-hearing listeners** — Attia, Sarah; King, Andrew; Varnet, Leo 等 (2021) *Journal of the Acoustical Society of America*
+- **Double-strand breaks in genome-sized DNA caused by megahertz ultrasound** — Ma, Yue; Ishihara, Kazuya; Yoshida, Kenji 等 (2021) *Journal of the Acoustical Society of America*
+- **Dutch listeners' perception of English lexical stress: A cue-weighting approach** — Tremblay, Annie; Broersma, Mirjam; Zeng, Yuyu 等 (2021) *Journal of the Acoustical Society of America*
+- **Dynamic properties of floating floor system and its influence on heavy-weight impact sound in residential buildings** — Kim, Ju-Hyung; Park, Hong-Gun; Han, Hee-Kab 等 (2021) *Journal of the Acoustical Society of America*
+- **Dynamical motion of a pair of microparticles at the acoustic pressure nodal plane under the combined effect of axial primary radiation and interparticle forcesa)** — Hoque, S. Z.; Nath, A.; Sen, A. K. (2021) *Journal of the Acoustical Society of America*
+- **Echolocation click parameters of short-finned pilot whales (Globicephala macrorhynchus) in the wild** — Pedersen, M. B.; Tonnesen, P.; Malinka, C. E. 等 (2021) *Journal of the Acoustical Society of America*
+- **Echolocation variability of franciscana dolphins (Pontoporia blainvillei) between estuarine and open-sea habitats, with insights into foraging patterns** — Paitach, Renan L.; Amundin, Mats; Teixeira, Gabriel 等 (2021) *Journal of the Acoustical Society of America*
+- **Effect of acoustically-induced elastic softening on sound absorption coefficient of hollow glass beads with inner closed cavities** — Tsuruha, Takumasa; Otani, Makoto; Takano, Yasushi (2021) *Journal of the Acoustical Society of America*
+- **Effect of reading passage length on quantitative acoustic speech assessment in Czech-speaking individuals with Parkinson's disease treated with subthalamic nucleus deep brain stimulation** — Kryze, Petr; Tykalova, Tereza; Ruzicka, Evzen 等 (2021) *Journal of the Acoustical Society of America*
+- **Effect of voice support level and spectrum on conversational speech** — Rapp, Mary; Cabrera, Densil; Yadav, Manuj (2021) *Journal of the Acoustical Society of America*
+- **Effect of wavy trachea walls on the oscillation onset pressure of silicone vocal folds** — Haesner, Patrick; Prescher, Andreas; Birkholz, Peter (2021) *Journal of the Acoustical Society of America*
+- **Effects of Pacific Summer Water layer variations and ice cover on Beaufort Sea underwater sound ductinga)** — Duda, Timothy F.; Zhang, Weifeng Gordon; Lin, Ying-Tsong (2021) *Journal of the Acoustical Society of America*
+- **Effects of a secondary high amplitude stimulus on the impedance of perforated plates** — Burgmayer, Ralf; Bake, Friedrich; Enghardt, Lars (2021) *Journal of the Acoustical Society of America*
+- **Effects of cricothyroid and thyroarytenoid interaction on voice control: Muscle activity, vocal fold biomechanics, flow, and acoustics** — Movahhedi, Mohammadreza; Geng, Biao; Xue, Qian 等 (2021) *Journal of the Acoustical Society of America*
+- **Effects of interaural decoherence on sensitivity to interaural level differences across frequency** — Brown, Andrew D.; Tollin, Daniel J. (2021) *Journal of the Acoustical Society of America*
+- **Effects of multiaxial pre-stress on Lamb and shear horizontal guided waves** — Abderahmane, Abdellahi; Lhemery, Alain; Daniel, Laurent (2021) *Journal of the Acoustical Society of America*
+- **Effects of multiple early diffuse reflections on spatial percepts** — Visentin, Chiara; Pellegatti, Matteo; Prodi, Nicola (2021) *Journal of the Acoustical Society of America*
+- **Effects of syllable stress in adaptation to altered auditory feedback in vowels** — Bakst, Sarah; Niziolek, Caroline A. (2021) *Journal of the Acoustical Society of America*
+- **Effects of task and language nativeness on the Lombard effect and on its onset and offset timing** — Villegas, Julian; Perkins, Jeremy; Wilson, Ian (2021) *Journal of the Acoustical Society of America*
+- **Effects of temporal fine structure preservation on spatial hearing in bilateral cochlear implant users** — Fischer, T.; Schmid, C.; Kompis, M. 等 (2021) *Journal of the Acoustical Society of America*
+- **Eigenfrequency optimisation of free violin plates** — Gonzalez, Sebastian; Salvi, Davide; Antonacci, Fabio 等 (2021) *Journal of the Acoustical Society of America*
+- **Electric-to-acoustic pickup processing for string instruments: An experimental study of the guitar with a hexaphonic pickupa)** — Rau, Mark; Abel, Jonathan S.; James, Doug 等 (2021) *Journal of the Acoustical Society of America*
+- **Electro-mechanical coupling diode of elastic wave in nonlinear piezoelectric metamaterials** — Li, Zhen-Ni; Wang, Yi-Ze; Wang, Yue-Sheng (2021) *Journal of the Acoustical Society of America*
+- **Energy flow analysis of equivalent fluid models for porous media** — Kim, Ho Yong; Kang, Yeon June (2021) *Journal of the Acoustical Society of America*
+- **Engineering three-dimensional labyrinthine fractal acoustic metamaterials with low-frequency multi-band sound suppression** — Man, Xianfeng; Xia, Baizhan; Luo, Zhen 等 (2021) *Journal of the Acoustical Society of America*
+- **Enhancing low-frequency water-column acoustic reflections in marine multichannel seismic data for seismic oceanography** — Zou, Zheguang; Zhang, Likun (2021) *The Journal of the Acoustical Society of America*
+- **Environmentally adaptive automated recognition of underwater mines with synthetic aperture sonar imagerya)** — Brandes, T. Scott; Ballard, Brett; Ramakrishnan, Sowmya 等 (2021) *Journal of the Acoustical Society of America*
+- **Equivalence between angular spectrum-based and multipole expansion-based formulas of the acoustic radiation force and torquea)** — Gong, Zhixiong; Baudoin, Michael (2021) *Journal of the Acoustical Society of America*
+- **Erratum: Acoustic time-dependent energy from force excited fluid loaded elastic shell/panel structures via a generalized modal radiation impulse response approach J. Acoust. Soc. Am. 149(4), 2865-2876 (2021)** — Stepanishen, Peter R. (2021) *The Journal of the Acoustical Society of America*
+- **Estimating acoustic cue rates in bowhead whales, Balaena mysticetus, during their fall migration through the Alaskan Beaufort Sea** — Blackwell, Susanna B.; Thode, Aaron M.; Conrad, Alexander S. 等 (2021) *Journal of the Acoustical Society of America*
+- **Estimating minke whale relative abundance in the North Atlantic using passive acoustic sensors** — Kiehbadroudinezhad, Shahideh; Martin, S. Bruce; Flemming, Joanna Mills (2021) *Journal of the Acoustical Society of America*
+- **Estimating target strength and physical characteristics of gas-bearing mesopelagic fish from wideband in situ echoes using a viscous-elastic scattering model** — Khodabandeloo, Babak; Agersted, Mette Dalgaard; Klevjer, Thor 等 (2021) *Journal of the Acoustical Society of America*
+- **Estimating target strength of estuarine pelagic fish assemblages using fisheries survey data** — Stevens, Justin R.; Jech, J. Michael; Zydlewski, Gayle B. 等 (2021) *Journal of the Acoustical Society of America*
+- **Estimation of locally reacting surface impedance at modal frequencies using an eigenvalue approximation technique** — Prinn, Albert G.; Walther, Andreas; Habets, Emanuel A. P. (2021) *Journal of the Acoustical Society of America*
+- **European starlings (sturnus vulgaris) discriminate rhythms by rate, not temporal patterns** — Samuels, Brendon; Grahn, Jessica; Henry, Molly J. 等 (2021) *Journal of the Acoustical Society of America*
+- **Evaluation method for acoustic underwater propulsion systemsa)** — Kong, Deqing; Qian, Yuan; Kurosawa, Minoru Kuribayashi 等 (2021) *Journal of the Acoustical Society of America*
+- **Evaluation of aspiration problems in L2 English pronunciation employing machine learninga)** — Piotrowska, Magdalena; Czyzewski, Andrzej; Ciszewski, Tomasz 等 (2021) *Journal of the Acoustical Society of America*
+- **Evaluation of numerical predictions of sonic boom level variability due to atmospheric turbulence** — Stout, Trevor A.; Sparrow, Victor W.; Blanc-Benon, Philippe (2021) *Journal of the Acoustical Society of America*
+- **Evidence for non-Rayleigh characteristics in ship underwater acoustic signatures** — Trevorrow, Mark V. (2021) *Journal of the Acoustical Society of America*
+- **Evidence for nonlinear reflections in shock-containing noise near high-performance military aircrafta)** — Vaughn, Aaron B.; Leete, Kevin M.; Gee, Kent L. 等 (2021) *Journal of the Acoustical Society of America*
+- **Evolution equation for nonlinear Lucassen waves, with application to a threshold phenomenon** — Simon, Blake E.; Cormack, John M.; Hamilton, Mark F. (2021) *Journal of the Acoustical Society of America*
+- **Examining vocal attractiveness through articulatory working space** — Stehr, Daniel A.; Hickok, Gregory; Ferguson, Sarah Hargus 等 (2021) *Journal of the Acoustical Society of America*
+- **Experimental analysis of non-periodic sound regimes in flute-like musical instruments** — Terrien, Soizic; Vergez, Christophe; de la Cuadra, Patricio 等 (2021) *Journal of the Acoustical Society of America*
+- **Experimental analysis of the acoustic field of an ultrasonic pulse induced by a fluidic switch** — Buehling, Benjamin; Strangfeld, Christoph; Maack, Stefan 等 (2021) *Journal of the Acoustical Society of America*
+- **Experimental and numerical investigation of standing-wave thermoacoustic instability under transcritical temperature conditions** — Martinez, Ariana; Migliorino, Mario Tindaro; Scalo, Carlo 等 (2021) *Journal of the Acoustical Society of America*
+- **Experimental characterization of vertical-axis wind turbine noise (vol 137, EL111, 2015)** — Pearson, C. E.; Graham, W. R. (2021) *Journal of the Acoustical Society of America*
+- **Experimental evaluation of pseudo-sound in a parametric array** — Song, Jiyoung; Jung, Donghwan; Kim, J. S. 等 (2021) *The Journal of the Acoustical Society of America*
+- **Experimental investigation of dynamic lingual organ pipes with blown open tongue<br>** — Rucz, Peter; Angster, Judit; Miklos, Andras (2021) *Journal of the Acoustical Society of America*
+- **Experimental investigation of low Reynolds number rotor noise** — Gojon, Romain; Jardin, Thierry; Parisot-Dupuis, Helene (2021) *Journal of the Acoustical Society of America*
+- **Experimental investigation of oscillating flow characteristics at the exit of a stacked mesh grid regenerator** — Ramadan, Islam A.; Bailliet, Helene; Valiere, Jean-Christophe (2021) *Journal of the Acoustical Society of America*
+- **Experimental realization of an active non-reciprocal metamaterial using an eigen-structure assignment control strategy** — Zhou, H.; Baz, A. (2021) *Journal of the Acoustical Society of America*
+- **Experimental study of vocal-ventricular fold oscillations in voice production** — Matsumoto, Takuma; Kanaya, Mayuka; Ishimura, Kazuyoshi 等 (2021) *Journal of the Acoustical Society of America*
+- **Experimental study on effects of plate angle on acoustic waves from supersonic impinging jets** — Akamine, Masahito; Okamoto, Koji; Teramoto, Susumu 等 (2021) *The Journal of the Acoustical Society of America*
+- **Explainable machine learning determines effects on the sound absorption coefficient measured in the impedance tubea)** — Stender, Merten; Adams, Christian; Wedler, Mathies 等 (2021) *Journal of the Acoustical Society of America*
+- **Exploration of room acoustics coupling in Hagia Sophia of Istanbul for its different states** — Su Gul, Zuhre (2021) *Journal of the Acoustical Society of America*
+- **Exponential spectro-temporal modulation generation** — Stavropoulos, Trevor A.; Isarangura, Sittiprapa; Hoover, Eric C. 等 (2021) *Journal of the Acoustical Society of America*
+- **Extreme anisotropy and dispersion engineering in locally resonant acoustic metamaterialsa)** — Yves, Simon; Alu, Andrea (2021) *Journal of the Acoustical Society of America*
+- **Face masks and speaking style affect audio-visual word recognition and memory of native and non-native speecha)** — Smiljanic, Rajka; Keerstock, Sandie; Meemann, Kirsten 等 (2021) *Journal of the Acoustical Society of America*
+- **Fast compressive beamforming with a modified fast iterative shrinkage-thresholding algorithm** — Wang, Shuo; Chi, Cheng; Jin, Shenglong 等 (2021) *Journal of the Acoustical Society of America*
+- **Fast multipole accelerated boundary element methods for room acoustics** — Gumerov, Nail A.; Duraiswami, Ramani (2021) *Journal of the Acoustical Society of America*
+- **Fast time-domain solution of a nonlinear three-dimensional cochlear model using the fast Fourier transform** — Murakami, Yasuki (2021) *Journal of the Acoustical Society of America*
+- **Feit's seminal article on radiation of sound by a vibrating plate** — Pierce, Allan D.; Garrelick, Joel M. (2021) *Journal of the Acoustical Society of America*
+- **Finite element modeling of the effects of velopharyngeal opening on vocal tract reactance in female voice** — Vampola, Tomas; Horacek, Jaromir; Laukkanen, Anne-Maria (2021) *Journal of the Acoustical Society of America*
+- **First characterization of vocalizations and passive acoustic monitoring of the vulnerable African manatee (Trichechus senegalensis)** — Rycyk, Athena M.; Factheu, Clinton; Ramos, Eric A. 等 (2021) *Journal of the Acoustical Society of America*
+- **Fixed gain multichannel active noise control with disturbance dependent objectives and iterative solution** — Berkhoff, Arthur P. (2021) *Journal of the Acoustical Society of America*
+- **Fluid focusing and viscosity allow high gain and stability of the cochlear response** — Sisto, Renata; Belardinelli, Daniele; Moleti, Arturo (2021) *Journal of the Acoustical Society of America*
+- **Fluid-structure-acoustic interactions in an ex vivo porcine phonation model** — Semmler, Marion; Berry, David A.; Schuetzenberger, Anne 等 (2021) *Journal of the Acoustical Society of America*
+- **Forward masking of amplitude modulation across ears and its tuning in the modulation domain** — Fullgrabe, Christian; Sek, Aleksander; Moore, Brian C. J. (2021) *Journal of the Acoustical Society of America*
+- **Frequency-difference autoproduct cross-term analysis and cancellation for improved ambiguity surface robustness** — Geroski, David J.; Worthmann, Brian M. (2021) *Journal of the Acoustical Society of America*
+- **Fundamental frequency range and other acoustic factors that might contribute to the clear-speech benefita)** — Han, Heekyung J.; Munson, Benjamin; Schlauch, Robert S. (2021) *Journal of the Acoustical Society of America*
+- **Further simulations of the effect of cochlear-implant pre-processing and head movement on interaural level differences** — Archer-Boyd, Alan W.; Carlyon, Robert P. (2021) *Journal of the Acoustical Society of America*
+- **Gaussian processes for sound field reconstruction** — Caviedes-Nozal, Diego; Riis, Nicolai A. B.; Heuchel, Franz M. 等 (2021) *Journal of the Acoustical Society of America*
+- **General adaptation to accented English: Speech intelligibility unaffected by perceived source of non-native accent** — Melguy, Yevgeniy Vasilyevich; Johnson, Keith (2021) *Journal of the Acoustical Society of America*
+- **Generalized Radon transform approach to target motion parameter estimation using a stationary underwater vector hydrophone** — Sun, Dajun; Lu, Mingyang; Mei, Jidan 等 (2021) *Journal of the Acoustical Society of America*
+- **Generalized intensity vector and energy density in the spherical harmonic domain: Theory and applications** — Herzog, Adrian; Habets, Emanuel A. P. (2021) *Journal of the Acoustical Society of America*
+- **Generalized radiation modes and microphone arrays for close-talking** — Kaizuka, Tsutomu; Terauchi, Shuzo (2021) *Journal of the Acoustical Society of America*
+- **Generating coherence-constrained multisensor signals using balanced mixing and spectrally smooth filters** — Mirabilii, Daniele; Schlecht, Sebastian J.; Habets, Emanuel A. P. (2021) *Journal of the Acoustical Society of America*
+- **Generative adversarial networks for the design of acoustic metamaterialsa)** — Gurbuz, Caglar; Kronowetter, Felix; Dietz, Christoph 等 (2021) *Journal of the Acoustical Society of America*
+- **Glimpsing keywords across sentences in noise: A microstructural analysis of acoustic, lexical, and listener factors** — Fogerty, Daniel; Ahlstrom, Jayne B.; Dubno, Judy R. (2021) *Journal of the Acoustical Society of America*
+- **Global numerical simulation of fluid-structure-acoustic interaction in a single-reed instrumenta)** — Yoshinaga, Tsukasa; Yokoyama, Hiroshi; Shoji, Tetsuro 等 (2021) *Journal of the Acoustical Society of America*
+- **Gradual decay and sudden death of short-term memory for pitch** — Mathias, Samuel R.; Varghese, Leonard; Micheyl, Christophe 等 (2021) *Journal of the Acoustical Society of America*
+- **Gridless three-dimensional compressive beamforming with the Sliding Frank-Wolfe algorithm** — Chardon, Gilles; Boureau, Ulysse (2021) *Journal of the Acoustical Society of America*
+- **Guided ecological momentary assessment in real and virtual sound environments** — Mansour, Naim; Westermann, Adam; Marschall, Marton 等 (2021) *The Journal of the Acoustical Society of America*
+- **High frequency hearing impairment and cardiovascular disease in Canada: Results from the Canadian Health Measures Survey** — Michaud, David S.; Marro, Leonora; McNamee, James P. (2021) *Journal of the Acoustical Society of America*
+- **High-amplitude time reversal focusing of airborne ultrasound to generate a focused nonlinear difference frequency** — Wallace, Carla B.; Anderson, Brian E. (2021) *Journal of the Acoustical Society of America*
+- **High-resolution spherical directivity of live speech from a multiple-capture transfer function method** — Leishman, Timothy W.; Bellows, Samuel D.; Pincock, Claire M. 等 (2021) *Journal of the Acoustical Society of America*
+- **High-resolution temporal weighting of interaural time differences in speech** — Baltzell, Lucas S.; Best, Virginia (2021) *Journal of the Acoustical Society of America*
+- **Highlighting interlanguage phoneme differences based on similarity matrices and convolutional neural networka)** — Korvel, Grazina; Treigys, Povilas; Kostek, Bozena (2021) *Journal of the Acoustical Society of America*
+- **Hipposideros pinna motion patterns as an inspiration for dynamic biomimetic sensing (vol 145, pg 1699, 2019)** — Qiu, Peiwen; Yin, Xiaoyan; Mueller, Rolf (2021) *Journal of the Acoustical Society of America*
+- **Holey-structured tungsten metamaterials for broadband ultrasonic sub-wavelength imaging in water** — Astolfi, Lorenzo; Hutchins, David A.; Thomas, Peter J. 等 (2021) *Journal of the Acoustical Society of America*
+- **Holographic extraction of plane waves from an ultrasound beam for acoustic characterization of an absorbing layer of finite dimensions** — Nikolaev, Dmitry A.; Tsysar, Sergey A.; Khokhlova, Vera A. 等 (2021) *Journal of the Acoustical Society of America*
+- **Homogenization of periodic 1-3 piezocomposite using wave propagation: Toward an experimental method** — Bale, Antoine; Rouffaud, Remi; Levassort, Franck 等 (2021) *Journal of the Acoustical Society of America*
+- **How could operational underwater sound from future offshore wind turbines impact marine life?** — Stober, Uwe; Thomsen, Frank (2021) *Journal of the Acoustical Society of America*
+- **How pronunciation distance impacts word recognition in children and adults** — Bent, Tessa; Holt, Rachael F.; Van Engen, Kristin J. 等 (2021) *Journal of the Acoustical Society of America*
+- **How reliable are online speech intelligibility studies with known listener cohorts?** — Cooke, Martin; Garcia Lecumberri, Maria Luisa (2021) *Journal of the Acoustical Society of America*
+- **Humans attend to signal duration but not temporal structure for sound detection: Steady-state versus pulse-train signals** — Wright, Beverly A.; Dai, Huanping (2021) *Journal of the Acoustical Society of America*
+- **Hybrid analytical-numerical optimization design methodology of acoustic metamaterials for sound insulation** — Vazquez Torre, Javier Hernan; Brunskog, Jonas; Cutanda Henriquez, Vicente 等 (2021) *The Journal of the Acoustical Society of America*
+- **Identification of sloshing noises using convolutional neural network** — Siva Teja, Golla; Saurav Vara Prasad, Chennuri; Venkatesham, B. 等 (2021) *The Journal of the Acoustical Society of America*
+- **Identification of the infrasound signals emitted by explosive eruption of Mt. Shinmoedake by three-dimensional ray tracing** — Saito, Hiroaki; Yamamoto, Tetsuo; Nakajima, Kensuke 等 (2021) *Journal of the Acoustical Society of America*
+- **Identifying the Russian voiceless non-palatalized fricatives /f/, /s/, and /ʃ/ from acoustic cues using machine learning** — Ulrich, Natalja; Allassonniere-Tang, Marc; Pellegrino, Francois 等 (2021) *The Journal of the Acoustical Society of America*
+- **Impact of data augmentation on supervised learning for a moving mid-frequency source** — Castro-Correa, J. A.; Badiey, M.; Neilsen, T. B. 等 (2021) *Journal of the Acoustical Society of America*
+- **Impact of imperfect corrugated interface in piezoelectric-piezomagnetic composites on reflection and refraction of plane waves** — Ray, Anusree; Singh, Abhishek K. (2021) *Journal of the Acoustical Society of America*
+- **Impact of non-individualised head related transfer functions on speech-in-noise performances within a synthesised virtual environment** — Cuevas-Rodriguez, Maria; Gonzalez-Toledo, Daniel; Reyes-Lecuona, Arcadio 等 (2021) *Journal of the Acoustical Society of America*
+- **Impacts of channel fluctuations on least-squares channel estimation in underwater acoustic communications** — Guo, Zheng; Song, Aijun; Towliat, Mohammad 等 (2021) *Journal of the Acoustical Society of America*
+- **Improved accuracy for radiation damping in coupled finite element/equivalent source computations** — Fahnline, John B. (2021) *Journal of the Acoustical Society of America*
+- **Improved multimodal formulation of the wave propagation in a 3D waveguide with varying cross-section and curvature** — Guennoc, Thomas; Doc, Jean-Baptiste; Felix, Simon (2021) *Journal of the Acoustical Society of America*
+- **In situ characterization of laser-generated melt pools using synchronized ultrasound and high-speed X-ray imaginga)** — Gillespie, Jared; Yeoh, Wei Yi; Zhao, Cang 等 (2021) *Journal of the Acoustical Society of America*
+- **In vivo assessment of pulmonary fibrosis and edema in rodents using the backscatter coefficient and envelope statisticsa)** — Lye, Theresa H.; Roshankhah, Roshan; Karbalaeisadegh, Yasamin 等 (2021) *Journal of the Acoustical Society of America*
+- **In-air and underwater sounds of hooded seals during the breeding season in the Gulf of St. Lawrence** — Frouin-Mouy, Heldise C.; Hammill, Mike O. (2021) *Journal of the Acoustical Society of America*
+- **Incorporating direct metal laser sintered complex shaped Ti-6Al-4V components in ultrasonic surgical devices** — Cleary, Rebecca; Li, Xuan; Lucas, Margaret (2021) *Journal of the Acoustical Society of America*
+- **Increasing piezoelectric effect in radially polarized soft PZT cylinders by pressure treating and its practical applications (vol 147, pg 4145, 2020)** — Aronov, Boris S.; Aikins, Eric K.; Brown, David A. (2021) *Journal of the Acoustical Society of America*
+- **Individual acoustic differences in female black-capped chickadee (poecile atricapillus) fee-bee songs** — Montenegro, Carolina; Sahu, Prateek K.; Sturdy, Christopher B. (2021) *Journal of the Acoustical Society of America*
+- **Individual differences in speech intelligibility at a cocktail party: A modeling perspective** — Lavandier, Mathieu; Mason, Christine R.; Baltzell, Lucas S. 等 (2021) *Journal of the Acoustical Society of America*
+- **Individual differences in the ability to access spatial information in lag-clicks** — Tirado, Carlos; Gerdfeldter, Billy; Nilsson, Mats E. (2021) *Journal of the Acoustical Society of America*
+- **Indoors audio classification with structure image method for simulating multi-room acoustics** — Shalev, Erez; Cohen, Israel; Lvov, Dmitri (2021) *Journal of the Acoustical Society of America*
+- **Inferring pore radius and density from ultrasonic attenuation using physics-based modeling** — White, R. D.; Yousefian, O.; Banks, H. T. 等 (2021) *Journal of the Acoustical Society of America*
+- **Influence of envelope fluctuation on the lateralization of interaurally delayed low-frequency stimuli** — Encke, Joerg; Dietz, Mathias (2021) *Journal of the Acoustical Society of America*
+- **Influence of geometry on acoustic end-corrections of slits in microslit absorbers** — Aulitto, Alessia; Hirschberg, Avraham; Lopez Arteaga, Ines (2021) *Journal of the Acoustical Society of America*
+- **Influence of residual stress and texture on the resonances of polycrystalline metals** — Kube, Christopher M.; Gillespie, Jared; Cherry, Matthew (2021) *The Journal of the Acoustical Society of America*
+- **Influence of seabed on very low frequency sound recorded during passage of merchant ships on the New England shelf** — Knobles, D. P.; Wilson, Preston S.; Neilsen, Tracianne B. 等 (2021) *Journal of the Acoustical Society of America*
+- **Influence of the temperature on the opto-acoustophoretic effect** — Dumy, Gabriel; Hoyos, Mauricio; Aider, Jean-Luc (2021) *Journal of the Acoustical Society of America*
+- **Influences of length and position of drive-stacks on the transmitting-voltage-response of the broadband Tonpilz transducer** — Ji, Bocheng; Hong, Lianjin; Lan, Yu (2021) *Journal of the Acoustical Society of America*
+- **Informational masking in the modulation domaina)** — Conroy, Christopher; Kidd, Gerald (2021) *Journal of the Acoustical Society of America*
+- **Informational masking with speech-on-speech intelligibility: Pupil response and time-course of learning** — Versfeld, Niek J.; Lie, Sisi; Kramer, Sophia E. 等 (2021) *Journal of the Acoustical Society of America*
+- **Insertion loss of regular finite cylinder arrays with porous layers between the rows** — Jana, D. P.; Qiu, Xiaojun (2021) *Journal of the Acoustical Society of America*
+- **Intelligibility and recall of sentences spoken by adult and child talkers wearing face masksa)** — Truong, Thanh Lan; Weber, Andrea (2021) *Journal of the Acoustical Society of America*
+- **Intelligibility of dysphonic speech in auralized classrooms** — Bottalico, Pasquale; Murgia, Silvia; Puglisi, Giuseppina Emma 等 (2021) *Journal of the Acoustical Society of America*
+- **Intelligibility prediction for speech mixed with white Gaussian noise at low signal-to-noise ratios** — Graetzer, Simone; Hopkins, Carl (2021) *Journal of the Acoustical Society of America*
+- **Introduction to the special issue on lung ultrasound** — Demi, Libertario; Muller, Marie (2021) *Journal of the Acoustical Society of America*
+- **Introduction to the special issue on machine learning in acoustics** — Michalopoulou, Zoi-Heleni; Gerstoft, Peter; Kostek, Bozena 等 (2021) *Journal of the Acoustical Society of America*
+- **Inverse modeling and joint state-parameter estimation with a noise mapping meta-model** — Lesieur, Antoine; Mallet, Vivien; Aumond, Pierre 等 (2021) *Journal of the Acoustical Society of America*
+- **Inversion of surficial sediment thickness from under-ice acoustic transmission measurementa)** — Chotiros, Nicholas P.; Hope, Gaute; Storheim, Espen 等 (2021) *Journal of the Acoustical Society of America*
+- **Investigating age, hearing loss, and background noise effects on speaker-targeted head and eye movements in three-way conversations** — Lu, Hao; McKinney, Martin F.; Zhang, Tao 等 (2021) *Journal of the Acoustical Society of America*
+- **Investigating phoneme-dependencies of spherical voice directivity patternsa)** — Porschmann, Christoph; Arend, Johannes M. (2021) *Journal of the Acoustical Society of America*
+- **Investigating training-test data splitting strategies for automated segmentation and scoring of COVID-19 lung ultrasound images** — Roshankhah, Roshan; Karbalaeisadegh, Yasamin; Greer, Hastings 等 (2021) *Journal of the Acoustical Society of America*
+- **Investigation of resonance strategies of high pitch singing sopranos using dynamic three-dimensional magnetic resonance imaging** — Koeberlein, Marie; Birkholz, Peter; Burdumy, Michael 等 (2021) *Journal of the Acoustical Society of America*
+- **Investigation of vortical and near-acoustic fields in three-stream jets** — Adam, Andres; Xiong, Juntao; Papamoschou, Dimitri (2021) *Journal of the Acoustical Society of America*
+- **Iterative channel estimation-based soft successive interference cancellation for multiuser underwater acoustic communications** — Yin, Jing-wei; Zhu, Guang-jun; Han, Xiao 等 (2021) *Journal of the Acoustical Society of America*
+- **Laboratory seismic measurements for layer-specific description of fluid mud and for linking seismic velocities to rheological properties** — Ma, Xu; Kirichek, Alex; Shakeel, Ahmad 等 (2021) *Journal of the Acoustical Society of America*
+- **Large-aperture experimental characterization of the acoustic field generated by a hovering unmanned aerial vehicle** — Callanan, Jesse; Iqbal, Rayhaan; Adlakha, Revant 等 (2021) *Journal of the Acoustical Society of America*
+- **Laser ultrasonics in a multilayer structure: Plane wave synthesis and inverse problem for nondestructive evaluation of adhesive bondings** — Hode, R.; Raetz, S.; Chigarev, N. 等 (2021) *Journal of the Acoustical Society of America*
+- **Laser ultrasonics in a multilayer structure: Semi-analytic model and simulated examples** — Hode, R.; Ducousso, M.; Cuvillier, N. 等 (2021) *Journal of the Acoustical Society of America*
+- **Learning location and seabed type from a moving mid-frequency sourcea)** — Neilsen, T. B.; Escobar-Amado, C. D.; Acree, M. C. 等 (2021) *Journal of the Acoustical Society of America*
+- **Learning spectro-temporal representations of complex sounds with parameterized neural networksa)** — Riad, Rachid; Karadayi, Julien; Bachoud-Levi, Anne-Catherine 等 (2021) *Journal of the Acoustical Society of America*
+- **Lens mediated scattering of sound by sound with finite aperture beams** — Dimant, Yair; Roger-Eitan, Iris; Gleizer, Anna (2021) *Journal of the Acoustical Society of America*
+- **Lexical and syntactic gemination in Italian consonants-Does a geminate Italian consonant consist of a repeated or a strengthened consonant?** — Di Benedetto, Maria-Gabriella; Shattuck-Hufnagel, Stefanie; De Nardis, Luca 等 (2021) *Journal of the Acoustical Society of America*
+- **Linearly-implicit schemes for collisions in musical acoustics based on energy quadratisationa)** — Ducceschi, Michele; Bilbao, Stefan; Willemsen, Silvin 等 (2021) *Journal of the Acoustical Society of America*
+- **Localization of a distant ship using a guide ship and a vertical array** — Song, H. C.; Byun, Gihoon (2021) *Journal of the Acoustical Society of America*
+- **Localization of tones in a room by moving listeners** — Macaulay, Eric J.; Hartmann, William M. (2021) *Journal of the Acoustical Society of America*
+- **Long-term scalogram integrated with an iterative data augmentation scheme for acoustic scene classificationa)** — Chen, Hangting; Liu, Zuozhen; Liu, Zongming 等 (2021) *Journal of the Acoustical Society of America*
+- **Longitudinal wave attenuation in polycrystals with elongated grains: 3D numerical and analytical modeling** — Huang, M.; Sha, G.; Huthwaite, P. 等 (2021) *Journal of the Acoustical Society of America*
+- **Loudness and short-term annoyance of sonic boom signatures at low levels** — Toepken, Stephan; van de Par, Steven (2021) *Journal of the Acoustical Society of America*
+- **Low-frequency multi-order acoustic absorber based on spiral metasurface** — Kong, Deqiang; Huang, Sibo; Li, Dongting 等 (2021) *Journal of the Acoustical Society of America*
+- **Low-frequency ocean ambient noise on the Chukchi Shelf in the changing Arctic(a))** — Bonnel, Julien; Kinda, G. Bazile; P. Zitterbart, Daniel (2021) *Journal of the Acoustical Society of America*
+- **Low-noise optical measurement of sound using midfringe locked interferometer with differential detection** — Ishikawa, Kenji; Shiraki, Yoshifumi; Moriya, Takehiro 等 (2021) *Journal of the Acoustical Society of America*
+- **Low-passed outer hair cell response and apical-basal transition in a nonlinear transmission-line cochlear model** — Sisto, Renata; Moleti, Arturo (2021) *Journal of the Acoustical Society of America*
+- **Lung mass density prediction using machine learning based on ultrasound surface wave elastography and pulmonary function testinga)** — Zhou, Boran; Bartholmai, Brian J.; Kalra, Sanjay 等 (2021) *Journal of the Acoustical Society of America*
+- **Maa's equation for the number of normal modes of sound waves in rectangular rooms** — Xiang, Ning (2021) *Journal of the Acoustical Society of America*
+- **Machine-learning of long-range sound propagation through simulated atmospheric turbulence** — Hart, Carl R.; Wilson, D. Keith; Pettit, Chris L. 等 (2021) *The Journal of the Acoustical Society of America*
+- **Mandarin tone recognition training with cochlear implant simulation: Amplitude envelope enhancement and cue weighting** — Kim, Seeon; Chou, Hsiao-Hsiuan; Luo, Xin (2021) *Journal of the Acoustical Society of America*
+- **Masking release at 4 kHz in harbor porpoises (Phocoena phocoena) associated with sinusoidal amplitude-modulated masking noise** — Kastelein, Ronald A.; Helder-Hoek, Lean; Covi, Jennifer 等 (2021) *Journal of the Acoustical Society of America*
+- **Matrix analysis for fast learning of neural networks with application to the classification of acoustic spectraa)** — Paul, Vlad S.; Nelson, Philip A. (2021) *Journal of the Acoustical Society of America*
+- **Maximizing mechanical stress in small urinary stones during burst wave lithotripsy** — Sapozhnikov, Oleg A.; Maxwell, Adam D.; Bailey, Michael R. (2021) *Journal of the Acoustical Society of America*
+- **Mean absorption estimation from room impulse responses using virtually supervised learninga)** — Foy, Cedric; Deleforge, Antoine; Di Carlo, Diego (2021) *Journal of the Acoustical Society of America*
+- **Mean acoustic fields exerted on a subwavelength axisymmetric particlea)** — Lima, Everton B.; Silva, Glauber T. (2021) *Journal of the Acoustical Society of America*
+- **Measurement of echo reduction for passive-material samples using sparse Bayesian learning and least squares estimation** — Ma, Xiaochen; Li, Jianlong; Huang, Yongqiang 等 (2021) *Journal of the Acoustical Society of America*
+- **Measurement of the ultrasound attenuation and dispersion in 3D-printed photopolymer materials from 1 to 3.5 MHz** — Bakaric, Marina; Miloro, Piero; Javaherian, Ashkan 等 (2021) *Journal of the Acoustical Society of America*
+- **Measurements of open-water arctic ocean noise directionality and transport velocity** — Thode, Aaron M.; Norman, Robert G.; Conrad, Alexander S. 等 (2021) *Journal of the Acoustical Society of America*
+- **Measurements of the correlation of the frequency-difference autoproduct with acoustic and predicted-autoproduct fields in the deep oceana)** — Geroski, David J.; Dzieciuch, Matthew A.; Dowling, David R. (2021) *Journal of the Acoustical Society of America*
+- **Measuring elastic moduli and loss tangent using a free-free resonant bar method** — Pemberton-Pigott, Nigel; Watson, Conor; Haub, David (2021) *Journal of the Acoustical Society of America*
+- **Mel frequency cepstral coefficient temporal feature integration for classifying squeak and rattle noisea)** — Abeysinghe, Asith; Fard, Mohammad; Jazar, Reza 等 (2021) *Journal of the Acoustical Society of America*
+- **Meta-learning-aided orthogonal frequency division multiplexing for underwater acoustic communicationsa)** — Zhang, Yonglin; Wang, Haibin; Li, Chao 等 (2021) *Journal of the Acoustical Society of America*
+- **Metal additively manufactured phononic materials as ultrasonic filters in nonlinear ultrasound measurementsa)** — Smith, Elizabeth J.; Matlack, Kathryn H. (2021) *Journal of the Acoustical Society of America*
+- **Modal analysis of free archtop guitar top plates** — Salvi, Davide; Gonzalez, Sebastian; Antonacci, Fabio 等 (2021) *Journal of the Acoustical Society of America*
+- **Mode separation with one hydrophone in shallow water: A sparse Bayesian learning approach based on phase speed** — Niu, Haiqiang; Gerstoft, Peter; Zhang, Renhe 等 (2021) *Journal of the Acoustical Society of America*
+- **Model reduction in acoustic inversion by artificial neural network** — Koponen, Janne; Lahivaara, Timo; Kaipio, Jari 等 (2021) *Journal of the Acoustical Society of America*
+- **Model-based convolutional neural network approach to underwater source-range estimation** — Chen, R.; Schmidt, H. (2021) *Journal of the Acoustical Society of America*
+- **Model-based localization of deep-diving cetaceans using towed line array acoustic data** — Barkley, Yvonne M.; Nosal, Eva-Marie; Oleson, Erin M. (2021) *Journal of the Acoustical Society of America*
+- **Modeling acoustic metamaterials based on reused buttons using data fitting with neural networka)** — Ciaburro, Giuseppe; Iannace, Gino (2021) *Journal of the Acoustical Society of America*
+- **Modeling individual noise-induced hearing loss risk with proxy measurements of external-ear amplification** — Grinn, Sarah K.; Le Prell, Colleen G. (2021) *Journal of the Acoustical Society of America*
+- **Modeling of wave fields generated by ultrasonic transducers using a quasi-Monte Carlo method** — Zhang, Shuzeng; Huang, Yunatian; Li, Xiongbing 等 (2021) *Journal of the Acoustical Society of America*
+- **Modeling potential masking of echolocating sperm whales exposed to continuous 1-2 kHz naval sonar** — von Benda-Beckmann, A. M.; Isojunno, S.; Zandvliet, M. 等 (2021) *Journal of the Acoustical Society of America*
+- **Modeling propagation in shallow water with the range-dependent sea surfaces and fluid seabeds using the equivalent source method** — He, Tengjiao; Mo, Shiqi; Guo, Wei 等 (2021) *Journal of the Acoustical Society of America*
+- **Modeling the effects of age and hearing loss on concurrent vowel scores** — Settibhaktini, Harshavardhan; Heinz, Michael G.; Chintanpalli, Ananthakrishna (2021) *Journal of the Acoustical Society of America*
+- **Modeling the effects of dynamic range compression on signals in noise** — Corey, Ryan M.; Singer, Andrew C. (2021) *Journal of the Acoustical Society of America*
+- **Modeling the thermal behavior of an acoustically driven gas bubble** — Zhou, Guangzhao (2021) *Journal of the Acoustical Society of America*
+- **Modeling three-dimensional underwater acoustic propagation over multi-layered fluid seabeds using the equivalent source method** — He, Tengjiao; Mo, Shiqi; Fang, Erzheng 等 (2021) *Journal of the Acoustical Society of America*
+- **Modelling and measurement of laser-generated focused ultrasound: Can interventional transducers achieve therapeutic effects?** — Aytac-Kipergil, Esra; Desjardins, Adrien E.; Treeby, Bradley E. 等 (2021) *Journal of the Acoustical Society of America*
+- **Modelling binaural unmasking and the intelligibility of speech in noise and reverberation for normal-hearing and hearing-impaired listeners** — Vicente, Thibault; Buchholz, Jorg M.; Lavandier, Mathieu (2021) *Journal of the Acoustical Society of America*
+- **Modelling laser ultrasound waveforms: The effect of varying pulse duration and material properties** — Rajagopal, Srinath; Cox, Ben T. (2021) *Journal of the Acoustical Society of America*
+- **Modelling microprosodic effects can lead to an audible improvement in articulatory synthesis** — Krug, Paul Konstantin; Gerazov, Branislav; van Niekerk, Daniel R. 等 (2021) *Journal of the Acoustical Society of America*
+- **Modification of frequency-domain active noise control algorithm without secondary path modeling** — Chen, Kai; Niu, Feng; Zou, Haishan 等 (2021) *Journal of the Acoustical Society of America*
+- **Modulation masking and fine structure shape neural envelope coding to predict speech intelligibility across diverse listening conditions** — Viswanathan, Vibha; Bharadwaj, Hari M.; Shinn-Cunningham, Barbara G. 等 (2021) *The Journal of the Acoustical Society of America*
+- **Monitoring changes in human activity during the COVID-19 shutdown in Las Vegas using infrasound microbarometersa)** — Bird, Elijah J.; Bowman, Daniel C.; Seastrand, Douglas R. 等 (2021) *Journal of the Acoustical Society of America*
+- **More than just methods: Data and insights guide vowel acoustics research** — Clopper, Cynthia G.; McCullough, Elizabeth A. (2021) *Journal of the Acoustical Society of America*
+- **Mouse middle-ear forward and reverse acoustics** — Motallebzadeh, Hamid; Puria, Sunil (2021) *Journal of the Acoustical Society of America*
+- **Multi-sensor integration for an assessment of underwater radiated noise from common vessels in San Francisco Bay** — Cope, Samantha; Hines, Ellen; Bland, Roger 等 (2021) *Journal of the Acoustical Society of America*
+- **Multiband asymmetric sound absorber enabled by ultrasparse Mie resonators** — Shao, Chen; Liu, Chen; Ma, Chengrong 等 (2021) *Journal of the Acoustical Society of America*
+- **Multichannel deconvolution of vibrational signals: A state-space inverse filtering approach** — Candy, J. V.; Fisher, K. A.; Markowicz, B. A. 等 (2021) *Journal of the Acoustical Society of America*
+- **Multispectral and multiangle measurements of acoustic seabed backscatter acquired with a tilted calibrated echosounder** — Fezzani, Ridha; Berger, Laurent; le Bouffant, Naig 等 (2021) *Journal of the Acoustical Society of America*
+- **Multitask convolutional neural network for acoustic localization of a transiting broadband source using a hydrophone arraya)** — Ferguson, Eric L. (2021) *Journal of the Acoustical Society of America*
+- **Narrowband multi-source direction-of-arrival estimation in the spherical harmonic domain** — Hafezi, Sina; Moore, Alastair H.; Naylor, Patrick A. (2021) *Journal of the Acoustical Society of America*
+- **Native listeners rely on rhythmic cues when deciding on the nativeness of speech** — Pellegrino, Elise; Schwab, Sandra; Dellwo, Volker (2021) *Journal of the Acoustical Society of America*
+- **Near real-time detection of low-frequency baleen whale calls from an autonomous surface vehicle: Implementation, evaluation, and remaining challenges** — Baumgartner, Mark F.; Ball, Keenan; Partan, Jim 等 (2021) *Journal of the Acoustical Society of America*
+- **Nearly 40 years of domination by electret microphones** — Busch-Vishniac, Ilene J.; Elko, Gary W. (2021) *Journal of the Acoustical Society of America*
+- **Noise characteristics of the Kirby Morgan 37 surface-supplied diving helmet under simulated diving conditions** — Langston, Tye; Singh, Shane; Hunt, Jeffrey (2021) *Journal of the Acoustical Society of America*
+- **Noise measurements as a proxy to evaluating the response to recommendations in times of crisis: An update analysis of the transition to the second wave of the CoViD-19 pandemic in Central Stockholm, Sweden** — Rumpler, Romain; Venkataraman, Siddharth; Goransson, Peter (2021) *Journal of the Acoustical Society of America*
+- **Noise of underwater explosions in the North Sea. A comparison of experimental data and model predictions** — Salomons, E. M.; Binnerts, B.; Betke, K. 等 (2021) *Journal of the Acoustical Society of America*
+- **Noise thresholds in harmonic series maskersa)** — Labuschagne, Ilse B.; Ciocca, Valter (2021) *Journal of the Acoustical Society of America*
+- **Nonlinear control of boundary impedance in an acoustic waveguide** — Vered, Yoav; Bucher, Izhak (2021) *Journal of the Acoustical Society of America*
+- **Nonlinear crosstalk in broadband multi-channel echosounders** — Khodabandeloo, Babak; Ona, Egil; Macaulay, Gavin J. 等 (2021) *Journal of the Acoustical Society of America*
+- **Nonlinear ultrasonic technique for the characterization of microstructure in additive materialsa)** — Bellotti, Aurelio; Kim, Jin-Yeon; Bishop, Joseph E. 等 (2021) *Journal of the Acoustical Society of America*
+- **Nonplanar metasurface for perfect absorption of sound waves** — Kim, Jiwan; Jeon, Wonju (2021) *Journal of the Acoustical Society of America*
+- **Normal mode energy estimation based on reconstructing the incoherent beamformed outputs from a horizontal array** — Zhai, Duo; Li, Fenghua; Zhang, Bo 等 (2021) *Journal of the Acoustical Society of America*
+- **North Sea soundscapes from a fish perspective: Directional patterns in particle motion and masking potential from anthropogenic noise** — Rogers, Peter; Debusschere, Elisabeth; Haan, Dick de 等 (2021) *Journal of the Acoustical Society of America*
+- **Notes on Rayleigh's hypothesis and the extended boundary condition method** — Rother, Tom; Hawkins, Stuart C. (2021) *Journal of the Acoustical Society of America*
+- **Numerical investigation of the earplug contribution to the low-frequency objective occlusion effect induced by bone-conducted stimulation** — Carillo, Kevin; Doutres, Olivier; Sgard, Franck (2021) *The Journal of the Acoustical Society of America*
+- **Numerical investigation of the trapped modes in the presence of non-potential flow** — Ma, Congcong; Ramadan, Islam; Ben Tahar, Mabrouk (2021) *Journal of the Acoustical Society of America*
+- **Numerical investigation of wave steepening and shock coalescence near a cold Mach 3 jet** — Pineau, Pierre; Bogey, Christophe (2021) *Journal of the Acoustical Society of America*
+- **Numerical investigations of anisotropic structures of red blood cell aggregates on ultrasonic backscattering** — Chinchilla, Lenin; Armstrong, Curtis; Mehri, Rym 等 (2021) *Journal of the Acoustical Society of America*
+- **Numerical simulations of perforated plate liners: Analysis of the visco-thermal dissipation mechanisms** — Billard, R.; Tissot, G.; Gabard, G. 等 (2021) *Journal of the Acoustical Society of America*
+- **Numerical solution of Rothenberg's equation of the glottal airflow rate as a function of the glottal area using backward differentiation (L)** — Lucero, Jorge C. (2021) *Journal of the Acoustical Society of America*
+- **Numerical study of bulk acoustofluidic devices driven by thin-film transducers and whole-system resonance modes** — Steckel, Andre G.; Bruus, Henrik (2021) *Journal of the Acoustical Society of America*
+- **Numerical study of the coupling layer between transducer and chip in acoustofluidic devicesa)** — Bode, William Naundrup; Bruus, Henrik (2021) *Journal of the Acoustical Society of America*
+- **Numerical study on lung ultrasound B-line formation as a function of imaging frequency and alveolar geometriesa)** — Peschiera, Emanuele; Mento, Federico; Demi, Libertario (2021) *Journal of the Acoustical Society of America*
+- **Numerical-modeling-based investigation of sound transmission and reception in the short-finned pilot whale (Globicephala macrorhynchus)** — Song, Zhongchang; Zhang, Jinhu; Ou, Wenzhan 等 (2021) *Journal of the Acoustical Society of America*
+- **Observations of acoustic noise bursts accompanying nonlinear internal gravity waves on the continental shelf off New Jersey** — Katsnelson, Boris G.; Godin, Oleg A.; Zhang, Qianchu (2021) *Journal of the Acoustical Society of America*
+- **Observations of sound-speed fluctuations in the Beaufort Sea from summer 2016 to summer 2017a)** — Kucukosmanoglu, Murat; Colosi, John A.; Worcester, Peter F. 等 (2021) *Journal of the Acoustical Society of America*
+- **Older adult recognition error patterns when listening to interrupted speech and speech in steady-state noise** — Smith, Kimberly G.; Fogerty, Daniel (2021) *Journal of the Acoustical Society of America*
+- **On calibration of piezoelectric sensors with laser doppler vibrometer** — Ghaffari, H. O.; Mok, U.; Pec, Matej (2021) *The Journal of the Acoustical Society of America*
+- **On causality and aural impulse responses synthesized using the inverse discrete Fourier transform** — Norgaard, Kren Monrad; Allen, Jont B.; Neely, Stephen T. (2021) *Journal of the Acoustical Society of America*
+- **On compressional wave attenuation in muddy marine sediments** — Holland, Charles W.; Dosso, Stan E. (2021) *Journal of the Acoustical Society of America*
+- **On microphone array beamforming and insights into the underlying signal models in the short-time-Fourier-transform domain** — Pan, Chao; Chen, Jingdong; Shi, Guangming 等 (2021) *Journal of the Acoustical Society of America*
+- **On musical interval perception for complex tones at very high frequencies** — Gockel, Hedwig E.; Carlyon, Robert P. (2021) *Journal of the Acoustical Society of America*
+- **On sound propagation along an infinite rectangular duct-like structure with a finite slot opening and its modelling** — Chu, S. H. K.; Tang, S. K. (2021) *Journal of the Acoustical Society of America*
+- **On the compromise between noise reduction and speech/noise spatial information preservation in binaural speech enhancement** — Leng, Xin; Chen, Jingdong; Benesty, Jacob (2021) *Journal of the Acoustical Society of America*
+- **On the efficient modeling of generic source directivity in Gaussian beam tracing** — Bian, Haoyu; Fattah, Ryu; Zhong, Siyang 等 (2021) *Journal of the Acoustical Society of America*
+- **On the length scale and Strouhal numbers for sound transmission across coupled duct cavities at low Mach number** — Tang, S. K.; Tang, Yijia (2021) *Journal of the Acoustical Society of America*
+- **On the sound fields of oblate and prolate hemispheroids in infinite baffles for directivity control** — Mellow, Tim; Karkkainen, Leo (2021) *Journal of the Acoustical Society of America*
+- **On training targets for deep learning approaches to clean speech magnitude spectrum estimation** — Nicolson, Aaron; Paliwal, Kuldip K. (2021) *Journal of the Acoustical Society of America*
+- **Ontogenetic development of hearing sensitivity to airborne sound in the female red-eared slider, Trachemys scripta elegans** — Wang, Jichao; Li, Handong; Wang, Tongliang 等 (2021) *Journal of the Acoustical Society of America*
+- **Optical phase contrast imaging for absolute, quantitative measurements of ultrasonic fields with frequencies up to 20 MHz** — Goldfain, Aaron M.; Yung, Christopher S.; Briggman, Kimberly A. 等 (2021) *Journal of the Acoustical Society of America*
+- **Optical theorems and symmetry relations in scattering problems** — Apresyan, L. A. (2021) *Journal of the Acoustical Society of America*
+- **Optimal environmental estimation with ocean ambient noise** — Gebbie, John; Siderius, Martin (2021) *Journal of the Acoustical Society of America*
+- **Ordinal scaling of temporal audio descriptors and perceptual significance of attack temporal centroid in timbre spaces** — Kazazis, Savvas; Depalle, Philippe; McAdams, Stephen (2021) *Journal of the Acoustical Society of America*
+- **Ordinal scaling of timbre-related spectral audio descriptors** — Kazazis, Savvas; Depalle, Philippe; McAdams, Stephen (2021) *Journal of the Acoustical Society of America*
+- **Overlapped speech detection using phase features** — Baghel, Shikha; Prasanna, S. R. Mahadeva; Guha, Prithwijit (2021) *Journal of the Acoustical Society of America*
+- **P- and S-wave simulation using a Cole-Cole model to incorporate thermoelastic attenuation and dispersion** — Carcione, Jose M.; Picotti, Stefano; Ba, Jing (2021) *Journal of the Acoustical Society of America*
+- **Palate shape influence depends on the segment: Articulatory and acoustic variability in American English // and /s** — Bakst, Sarah (2021) *Journal of the Acoustical Society of America*
+- **Parameterizing spectral contrast effects in vowel categorization using noise contexts** — Stilp, Christian E. (2021) *Journal of the Acoustical Society of America*
+- **Parametric acoustic array lensed by a gradient-index phononic crystal** — Cervenka, Milan; Bednarik, Michal (2021) *Journal of the Acoustical Society of America*
+- **Parametric spatial post-filtering utilising high-order circular harmonics with applications to underwater sound-field visualisation** — Bountourakis, Vasileios; McCormack, Leo; Winberg, Mathias 等 (2021) *Journal of the Acoustical Society of America*
+- **Parametrization of the vocal tract area function using a subset selection approach (L)** — Lucero, Jorge C. (2021) *Journal of the Acoustical Society of America*
+- **Parity-Time symmetric system based on the thermoacoustic effect** — Poignand, Gaelle; Olivier, Come; Penelet, Guillaume (2021) *Journal of the Acoustical Society of America*
+- **Partial compensation for coarticulatory vowel nasalization across concatenative and neural text-to-speech** — Zellou, Georgia; Cohn, Michelle; Block, Aleese (2021) *Journal of the Acoustical Society of America*
+- **Passive acoustic characterization of sub-seasonal sound speed variations in a coastal ocean** — Tan, Tsu Wei; Godin, Oleg A. (2021) *Journal of the Acoustical Society of America*
+- **Passive underwater acoustic identification tags using multi-layered shells** — Satish, Aprameya; Sabra, Karim G. (2021) *Journal of the Acoustical Society of America*
+- **Perception of English and Catalan vowels by English and Catalan listeners: A study of reciprocal cross-linguistic similarity** — Cebrian, Juli (2021) *Journal of the Acoustical Society of America*
+- **Perception of gender in children's voices** — Barreda, Santiago; Assmann, Peter F. (2021) *Journal of the Acoustical Society of America*
+- **Perception of the acoustic environment during COVID-19 lockdown in Argentina** — Maggi, Ana L.; Muratore, Jimena; Gaetan, Sara 等 (2021) *Journal of the Acoustical Society of America*
+- **Perception of violin soundpost tightness through playing and listening tests** — Fu, Lei; Fritz, Claudia; Scavone, Gary (2021) *Journal of the Acoustical Society of America*
+- **Perceptual analysis of directional late reverberation** — Alary, Benoit; Masse, Pierre; Schlecht, Sebastian J. 等 (2021) *Journal of the Acoustical Society of America*
+- **Perceptual equivalence of the Liljencrants-Fant and linear-filter glottal flow models** — Perrotin, Olivier; Feugere, Lionel; D'Alessandro, Christophe (2021) *Journal of the Acoustical Society of America*
+- **Perceptual implications of different Ambisonics-based methods for binaural reverberation** — Engel, Isaac; Henry, Craig; Amengual Gari, Sebastia V. 等 (2021) *Journal of the Acoustical Society of America*
+- **Perceptual roughness of spatially assigned sparse noise for rendering reverberation** — Meyer-Kahlen, Nils; Schlecht, Sebastian J.; Lokki, Tapio (2021) *Journal of the Acoustical Society of America*
+- **Perceptual similarity between piano notes: Simulations with a template-based perception model** — Vecchi, Alejandro Osses; Kohlrausch, Armin (2021) *Journal of the Acoustical Society of America*
+- **Periodic acoustic pulse generation by mode locked thermoacoustic oscillator** — Hirayama, Y.; Biwa, T.; Delage, R. (2021) *The Journal of the Acoustical Society of America*
+- **Phase shift approach for engineering desired radiation force: Acoustic pulling force examplea)** — Fan, Xu-Dong; Zhang, Likun (2021) *Journal of the Acoustical Society of America*
+- **Physics of phonation offset: Towards understanding relative fundamental frequency observations** — Serry, Mohamed A.; Stepp, Cara E.; Peterso, Sean D. (2021) *Journal of the Acoustical Society of America*
+- **Physics-based characterization of soft marine sediments using vector sensorsa)** — Godin, Oleg A.; Deal, Thomas J.; Dong, Hefeng (2021) *Journal of the Acoustical Society of America*
+- **Plane nonlinear shear wave propagation in transversely isotropic soft solids** — Cormack, John M. (2021) *Journal of the Acoustical Society of America*
+- **Plate-type acoustic metamaterials with strip masses** — Langfeldt, Felix; Gleine, Wolfgang (2021) *Journal of the Acoustical Society of America*
+- **Polarization of ocean acoustic normal modes** — Bonnel, Julien; Flamant, Julien; Dall'Osto, David R. 等 (2021) *Journal of the Acoustical Society of America*
+- **Polyphonic training set synthesis improves self-supervised urban sound classification** — Gontier, Felix; Lostanlen, Vincent; Lagrange, Mathieu 等 (2021) *Journal of the Acoustical Society of America*
+- **Pre-low raising in Cantonese and Thai: Effects of speech rate and vowel quantitya)** — Lee, Albert; Prom-on, Santitham; Xu, Yi (2021) *Journal of the Acoustical Society of America*
+- **Predicting and classifying Japanese singleton and geminate consonants using logarithmic duration** — Amano, Shigeaki; Kondo, Mariko; Yamakawa, Kimiko (2021) *The Journal of the Acoustical Society of America*
+- **Prediction of three-dimensional scattering by pressure-release sinusoidal surfaces** — Welton, P. J. (2021) *Journal of the Acoustical Society of America*
+- **Prediction uncertainty of wind-generated noise spectra from wind speed** — Zhang, Ying; Yang, Qiulong; Yang, Kunde (2021) *Journal of the Acoustical Society of America*
+- **Preliminary assessment of ship detection and trajectory evaluation using distributed acoustic sensing on an optical fiber telecom cable** — Rivet, Diane; de Cacqueray, Benoit; Sladen, Anthony 等 (2021) *Journal of the Acoustical Society of America*
+- **Probabilistic focalization for shallow water localization** — Meyer, Florian; Gemba, Kay L. (2021) *Journal of the Acoustical Society of America*
+- **Probability of detection of electric vehicles with and without added warning sounds** — Roan, Michael J.; Neurauter, Luke; Song, Miao 等 (2021) *Journal of the Acoustical Society of America*
+- **Propagation of leaky Rayleigh waves along a curved fluid-solid interface** — Li, Shan; Song, Yongfeng; Turner, Joseph A. 等 (2021) *Journal of the Acoustical Society of America*
+- **Prosodic focus marking in clefts and syntactically unmarked equivalents: Prosody-syntax trade-off or additive effects?** — Arnhold, Anja (2021) *Journal of the Acoustical Society of America*
+- **Proximity resonances of water-entrained air bubbles near acoustically reflecting boundaries** — van 't Wout, Elwin; Feuillade, Christopher (2021) *Journal of the Acoustical Society of America*
+- **Psychoacoustic analysis of contra-rotating propeller noise for unmanned aerial vehicles** — Torija, Antonio J.; Chaitanya, Paruchuri; Li, Zhengguang (2021) *Journal of the Acoustical Society of America*
+- **Psychometric function for speech-in-noise tests accounts for word-recognition deficits in older listeners** — Ross, Bernhard; Dobri, Simon; Schumann, Annette (2021) *Journal of the Acoustical Society of America*
+- **Psychophysiological responses to potentially annoying heating, ventilation, and air conditioning noise during mentally demanding work** — Love, Jordan; Sung, Weonchan; Francis, Alexander L. (2021) *Journal of the Acoustical Society of America*
+- **Pump-probe localization technique of varying solid contacts** — Terzi, M.; Chehami, L.; Farin, M. 等 (2021) *Journal of the Acoustical Society of America*
+- **Quantitative assessment of parallel acoustofluidic devicea)** — Dezfuli, Mehrshad Rezadoost; Shahidian, Azadeh; Ghassemi, Majid (2021) *Journal of the Acoustical Society of America*
+- **REVIEWS OF ACOUSTICAL PATENTS** — Fulop, Sean A. (2021) *The Journal of the Acoustical Society of America*
+- **Random versus regular square lattice experimental comparison for a subwavelength resonant metasurface** — Lott, Martin; Roux, Philippe (2021) *Journal of the Acoustical Society of America*
+- **Range-coherent matched field processing for low signal-to-noise ratio localization** — Akins, F. Hunter; Kuperman, W. A. (2021) *Journal of the Acoustical Society of America*
+- **Rapid measurement of the local pressure amplitude in microchannel acoustophoresis using motile cellsa)** — Kim, Minji; Barnkob, Rune; Meacham, J. Mark (2021) *Journal of the Acoustical Society of America*
+- **Reading aloud in clear speech reduces sentence recognition memory and recall for native and non-native talkersa)** — Keerstock, Sandie; Smiljanic, Rajka (2021) *Journal of the Acoustical Society of America*
+- **Real-time supersonic jet noise predictions from near-field sensors with a wavepacket model** — Kleine, Vitor G.; Sasaki, Kenzo; Gavelieri, Andre V. G. 等 (2021) *Journal of the Acoustical Society of America*
+- **Recommended snapshot length for acoustic point-transect surveys of intermittently available Cuvier's beaked whales** — Barlow, Jay; Trickey, Jennifer S.; Schorr, Gregory S. 等 (2021) *Journal of the Acoustical Society of America*
+- **Reconstruction of shear wave speed in tissue-mimicking phantoms from aliased pulse-echo imaging of high-frequency wavefields** — Dayavansha, E. G. Sunethra; Gross, Gary J.; Ehrman, Matthew C. 等 (2021) *Journal of the Acoustical Society of America*
+- **Reconstruction of time-dependent forces acting on a vibrating structure from pressure measurements** — Hu, Long; Bi, Chuan-Xing; Zhang, Yong-Bin 等 (2021) *Journal of the Acoustical Society of America*
+- **Recovery from forward masking in cochlear implant listeners: Effects of age and the electrode-neuron interface** — Jahn, Kelly N.; DeVries, Lindsay; Arenberg, Julie G. (2021) *Journal of the Acoustical Society of America*
+- **Recurrent networks for direction-of-arrival identification of an acoustic source in a shallow water channel using a vector sensora)** — Whitaker, Steven; Barnard, Andrew; Anderson, George D. 等 (2021) *Journal of the Acoustical Society of America*
+- **Reducing interaural tonotopic mismatch preserves binaural unmasking in cochlear implant simulations of single-sided deafness** — Sagi, Elad; Azadpour, Mahan; Neukam, Jonathan 等 (2021) *The Journal of the Acoustical Society of America*
+- **Reduction of roadway noise in a coastal city underwater soundscape during COVID-19 confinementa)** — Leon-Lopez, Braulio; Romero-Vivas, Eduardo; Viloria-Gomora, Lorena (2021) *Journal of the Acoustical Society of America*
+- **Reflections on "Parametric acoustic array," source of virtual-array sonars** — Foote, Kenneth G. (2021) *Journal of the Acoustical Society of America*
+- **Regime change in the recorder: Using Navier-Stokes modeling to design a better instrument** — Thacker, J. W.; Giordano, N. (2021) *Journal of the Acoustical Society of America*
+- **Regulation of laryngeal resistance and maximum power transfer with semi-occluded airway vocalization** — Titze, Ingo R. (2021) *Journal of the Acoustical Society of America*
+- **Reinforcement learning applied to metamaterial designa)** — Shah, Tristan; Zhuo, Linwei; Lai, Peter 等 (2021) *Journal of the Acoustical Society of America*
+- **Remote acoustic detection and characterization of fish schooling behavior** — Benoit-Bird, Kelly J.; Waluk, Chad M. (2021) *Journal of the Acoustical Society of America*
+- **Remote sociophonetic data collection: Vowels and nasalization over video conferencing appsa)** — Freeman, Valerie; De Decker, Paul (2021) *Journal of the Acoustical Society of America*
+- **Repetition detection and rapid auditory learning for stochastic tone clouds** — Agus, Trevor R.; Pressnitzer, Daniel (2021) *Journal of the Acoustical Society of America*
+- **Resolution dependence of rough surface scattering using a power law roughness spectrum** — Olson, Derek R.; Lyons, Anthony P. (2021) *Journal of the Acoustical Society of America*
+- **Resolvent-based modeling of turbulent jet noise** — Pickering, Ethan; Towne, Aaron; Jordan, Peter 等 (2021) *Journal of the Acoustical Society of America*
+- **Respiration mask waveguide optimisation for maximised speech intelligibility** — Kolesnik, Kirill; Bryan, David; Harley, William 等 (2021) *Journal of the Acoustical Society of America*
+- **Response patterns to vowel formant perturbations in children** — Cheung, Stephanie T.; Thompson, Kristen; Chen, Joyce L. 等 (2021) *The Journal of the Acoustical Society of America*
+- **Response to "Comment on 'Recent World Health Organization regulatory recommendations are not supported by existing evidence' " J. Acoust. Soc. Am. 148, 3397-3398 (2020)** — Gjestland, Truls (2021) *Journal of the Acoustical Society of America*
+- **Responses to government-imposed restrictions: The sound of Australia's church bells one year after the onset of COVID-19a)** — Parker, Murray; Spennenmann, Dirk H. R. (2021) *Journal of the Acoustical Society of America*
+- **Reverse engineering of a recording mix with differentiable digital signal processinga)** — Colonel, Joseph T.; Reiss, Joshua (2021) *Journal of the Acoustical Society of America*
+- **Robust North Atlantic right whale detection using deep learning models for denoisinga)** — Vickers, William; Milner, Ben; Risch, Denise 等 (2021) *Journal of the Acoustical Society of America*
+- **Robust long-range source localization in the deep ocean using phase-only matched autoproduct processinga)** — Geroski, David J.; Dowling, David R. (2021) *Journal of the Acoustical Society of America*
+- **Role of semantic context and talker variability in speech perception of cochlear-implant users and normal-hearing listeners** — O'Neill, Erin R.; Parke, Morgan N.; Kreft, Heather A. 等 (2021) *Journal of the Acoustical Society of America*
+- **Scaleable production of microbubbles using an ultrasound-modulated microfluidic devicea** — Carugo, Dario; Browning, Richard J.; Iranmanesh, Ida 等 (2021) *Journal of the Acoustical Society of America*
+- **Scattering of low-frequency acoustic waves from a moving source by the sea surface** — Bennaceur, Iannis; Cristol, Xavier (2021) *Journal of the Acoustical Society of America*
+- **School-age children benefit from voice gender cue differences for the perception of speech in competing speech** — Nagels, Leanne; Gaudrain, Etienne; Vickers, Deborah 等 (2021) *Journal of the Acoustical Society of America*
+- **Seabed classification from merchant ship-radiated noise using a physics-based ensemble of deep learning algorithms** — Escobar-Amado, Christian D.; Neilsen, Tracianne B.; Castro-Correa, Jhon A. 等 (2021) *Journal of the Acoustical Society of America*
+- **Seabed type and source parameters predictions using ship spectrograms in convolutional neural networksa)** — Van Komen, David F.; Neilsen, Tracianne B.; Mortenson, Daniel B. 等 (2021) *Journal of the Acoustical Society of America*
+- **Seal bomb explosion sound source characterization** — Wiggins, Sean M.; Krumpel, Anna; Dorman, LeRoy M. 等 (2021) *The Journal of the Acoustical Society of America*
+- **Segregation of competing speech in adults and children with normal hearing and in children with cochlear implants** — Liu, Ji-Sheng; Liu, Yang-Wenyi; Yu, Ya-Feng 等 (2021) *Journal of the Acoustical Society of America*
+- **Self and mutual radiation impedances between translated spheroids. Application to parallel disks** — Bensoam, Joel; Aussal, Matthieu (2021) *The Journal of the Acoustical Society of America*
+- **Self-reported occupational noise exposure and cardiovascular disease in Canada: Results from the Canadian Health Measures Survey** — Michaud, David S.; Marro, Leonora; McNamee, James P. (2021) *Journal of the Acoustical Society of America*
+- **Semi-occluded vocal tract exercises in healthy young adults: Articulatory, acoustic, and aerodynamic measurements during phonation at threshold** — Lulich, Steven M.; Patel, Rita R. (2021) *Journal of the Acoustical Society of America*
+- **Seminal article about model-based space-time array processing** — Gupta, Ananya Sen (2021) *Journal of the Acoustical Society of America*
+- **Sensitivity analysis of acoustic eigenfrequencies by using a boundary element method** — Zheng, Changjun; Zhao, Wenchang; Gao, Haifeng 等 (2021) *Journal of the Acoustical Society of America*
+- **Sensitivity analysis of pinna morphology on head-related transfer functions simulated via a parametric pinna model** — Stitt, Peter; Katz, Brian F. G. (2021) *Journal of the Acoustical Society of America*
+- **Sensitivity and specificity of a method for diagnosis of military noise-induced hearing loss** — Moore, Brian C. J.; von Gablenz, Petra (2021) *Journal of the Acoustical Society of America*
+- **Sensitivity of an infinite-strip-shaped polyvinylidene fluoride film in an underwater plane sound field** — Pan, Jie; Wang, Ning; Matthews, David (2021) *Journal of the Acoustical Society of America*
+- **Sensitivity of mixed layer duct propagation to deterministic ocean features** — Colosi, John A.; Zinicola-Lapin, William (2021) *Journal of the Acoustical Society of America*
+- **Separating overlapping echolocation: An updated method for estimating the number of echolocating animals in high background noise levels** — Hamilton, Rebecca A.; Starkhammar, Josefin; Gazda, Stefanie K. 等 (2021) *Journal of the Acoustical Society of America*
+- **Separation of nonstationary sound fields based on the time-domain equivalent source method with single layer pressure-velocity measurements** — Zhang, Xiao-Zheng; Bi, Chuan-Xing; Zhang, Yong-Bin 等 (2021) *Journal of the Acoustical Society of America*
+- **Sequential sparse Bayesian learning for time-varying direction of arrival** — Park, Yongsung; Meyer, Florian; Gerstoft, Peter (2021) *Journal of the Acoustical Society of America*
+- **Sequential structured volumetric ultrasound holography for self-positioning using monaural recording** — Mukai, Honoka; Hasegawa, Keisuke; Nara, Takaaki (2021) *Journal of the Acoustical Society of America*
+- **Shape optimization of acoustic horns for improved directivity control and radiation efficiency based on the multimodal method** — Dong, Hao; Gao, Hao; Feng, Xuelei 等 (2021) *Journal of the Acoustical Society of America*
+- **Shear wave dispersion analysis of incompressible waveguides** — Roy, Tuhin; Guddati, Murthy N. (2021) *Journal of the Acoustical Society of America*
+- **Shear wave speeds in nearly-incompressible fibrous materials with two fiber families** — Hou, Zuoxian; Bayly, Philip V.; Okamoto, Ruth J. (2021) *Journal of the Acoustical Society of America*
+- **Shear waves and sound attenuation in underwater waveguides** — Godin, Oleg A. (2021) *Journal of the Acoustical Society of America*
+- **Shear waves in a nonlinear relaxing media: A three-dimensional perspective** — Saccomandi, Giuseppe; Vianello, Maurizio S. (2021) *Journal of the Acoustical Society of America*
+- **Signatures of microstreaming patterns induced by non-spherically oscillating bubblesa)** — Regnault, Gabriel; Mauger, Cyril; Blanc-Benon, Philippe 等 (2021) *Journal of the Acoustical Society of America*
+- **Simulated auditory fiber myelination heterogeneity desynchronizes population responses to electrical stimulation limiting inter-aural timing difference representation** — Resnick, Jesse M.; Rubinstein, Jay T. (2021) *Journal of the Acoustical Society of America*
+- **Simulation of airfoil surface pressure due to incident turbulence using realizations of uncorrelated wall plane waves** — Karimi, M.; Croaker, P.; Skvortsov, A. 等 (2021) *Journal of the Acoustical Society of America*
+- **Simulation of mallet percussion instruments by a coupled modal vibroacoustic finite element modela)** — Rucz, Peter; Ulveczki, Mihaly Adam; Angster, Judit 等 (2021) *Journal of the Acoustical Society of America*
+- **Simulation of pulsed ultrasonic diffraction in viscous fluids using transmission line matrix method** — Alia, Ahlem; Tsuchiya, Takao (2021) *Journal of the Acoustical Society of America*
+- **Simulation of the objective occlusion effect induced by bone-conducted stimulation using a three-dimensional finite-element model of a human head** — Xu, Huiyang; Sgard, Franck; Carillo, Kevin 等 (2021) *Journal of the Acoustical Society of America*
+- **Simultaneous measurements of acoustic emission and sonochemical luminescence for monitoring ultrasonic cavitation** — Kwon, Ohbin; Pahk, Ki Joo; Choi, Min Joo (2021) *Journal of the Acoustical Society of America*
+- **Smartphone-based single-channel speech enhancement application for hearing aids** — Shankar, Nikhil; Bhat, Gautam Shreedhar; Panahi, Issa M. S. 等 (2021) *Journal of the Acoustical Society of America*
+- **Solving one-dimensional acoustic systems using the impedance translation theorem and equivalent circuits: A graduate level homework assignment** — Anderson, Brian E.; Sommerfeldt, Scott D. (2021) *Journal of the Acoustical Society of America*
+- **Solving time-independent inhomogeneous optoacoustic wave equation numerically with a modified Green's function approach** — Saha, Ratan K. (2021) *Journal of the Acoustical Society of America*
+- **Sound absorption by a metasurface comprising hard spheres in a soft medium** — Skvortsov, Alex; Sharma, Gyani Shankar; MacGillivray, Ian 等 (2021) *Journal of the Acoustical Society of America*
+- **Sound pressure and particle motion components of the snaps produced by two snapping shrimp species (Alpheus heterochaelis and Alpheus angulosus)** — Song, Zhongchang; Salas, Andria K.; Montie, Eric W. 等 (2021) *Journal of the Acoustical Society of America*
+- **Sound propagation through elevated, heated jets in cooler cross-flow: An experimental study** — Leav, O.; Cazzolato, B.; Howard, C. (2021) *Journal of the Acoustical Society of America*
+- **Sound source localization based on multi-task learning and image translation network** — Wu, Yifan; Ayyalasomayajula, Roshan; Bianco, Michael J. 等 (2021) *Journal of the Acoustical Society of America*
+- **Sound source localization using multiple circular microphone arrays based on harmonic analysis** — Han, Xinyu; Wu, Ming; Han, Zerui 等 (2021) *Journal of the Acoustical Society of America*
+- **Sound tuning in asymmetrically braced guitars** — Mores, Robert (2021) *Journal of the Acoustical Society of America*
+- **Source level and vocalizing depth estimation of two blue whale subspecies in the western Indian Ocean from single sensor observations** — Bouffaut, Lea; Landro, Martin; Potter, John R. (2021) *Journal of the Acoustical Society of America*
+- **Sparse planar arrays for azimuth and elevation using experimental data** — Nannuru, Santosh; Gerstoft, Peter; Ping, Guoli 等 (2021) *Journal of the Acoustical Society of America*
+- **Spatial alignment between faces and voices improves selective attention to audio-visual speech** — Fleming, Justin T.; Maddox, Ross K.; Shinn-Cunningham, Barbara G. (2021) *Journal of the Acoustical Society of America*
+- **Spatial reconstruction of the sound field in a room in the modal frequency range using Bayesian inference** — Schmid, Jonas M.; Fernandez-Grande, Efren; Hahmann, Manuel 等 (2021) *Journal of the Acoustical Society of America*
+- **Spatial release from masking in reverberation for school-age children** — Peng, Z. Ellen; Pausch, Florian; Fels, Janina (2021) *Journal of the Acoustical Society of America*
+- **Spatially variant autofocus for circular synthetic aperture sonar** — Marston, Timothy; Kennedy, Jermaine (2021) *Journal of the Acoustical Society of America*
+- **Spectral contrast reduction in Australian English /l/-final rimes** — Szalay, Tunde; Benders, Titia; Cox, Felicity 等 (2021) *Journal of the Acoustical Society of America*
+- **Spectral envelope position and shape in sustained musical instrument soundsa)** — Siedenburg, Kai; Jacobsen, Simon; Reuter, Christoph (2021) *Journal of the Acoustical Society of America*
+- **Spectral interleaving by singing humpback whales: Signs of sonar** — Mercado, Eduardo (2021) *Journal of the Acoustical Society of America*
+- **Specular reflection contributions to dynamic radiation forces on highly reflecting spheres (L)** — Marston, Philip L.; Daniel, Timothy D.; Fortuner, Auberry R. (2021) *Journal of the Acoustical Society of America*
+- **Specular-reflection contributions to static and dynamic radiation forces on circular cylinders** — Marston, Philip L.; Daniel, Timothy D.; Fortuner, Auberry R. 等 (2021) *Journal of the Acoustical Society of America*
+- **Speech and noise levels measured in occupied K-12 classrooms** — Wang, Lily M.; Brill, Laura C. (2021) *Journal of the Acoustical Society of America*
+- **Speech categorization is better described by induced rather than evoked neural activity** — Mahmud, Md Sultan; Yeasin, Mohammed; Bidelman, Gavin M. (2021) *Journal of the Acoustical Society of America*
+- **Speech compensation responses and sensorimotor adaptation to formant feedback perturbations** — Raharjo, Inez; Kothare, Hardik; Nagarajan, Srikantan S. 等 (2021) *Journal of the Acoustical Society of America*
+- **Speech emotion recognition based on transfer learning from the FaceNet framework(a))** — Liu, Shuhua; Zhang, Mengyu; Fang, Ming 等 (2021) *Journal of the Acoustical Society of America*
+- **Speech induced binaural beats: Electrophysiological assessment of binaural interaction** — Schroeer, Andreas; Corona-Strauss, Farah I.; Ozdamar, Ozcan 等 (2021) *Journal of the Acoustical Society of America*
+- **Speech intelligibility for various head orientations of a listener in an automobile using the speech transmission index** — Liang, Linda; Yu, Le; Zhao, Tong 等 (2021) *Journal of the Acoustical Society of America*
+- **Speech intelligibility in a realistic virtual sound environment** — Mansour, Naim; Marschall, Marton; May, Tobias 等 (2021) *Journal of the Acoustical Society of America*
+- **Speech quality estimation with deep lattice networksa)** — Chinen, Michael; Skoglund, Jan; Hines, Andrew (2021) *Journal of the Acoustical Society of America*
+- **Speech recognition as a function of the number of channels for an array with large inter-electrode distances** — Berg, Katelyn A.; Noble, Jack H.; Dawant, Benoit M. 等 (2021) *Journal of the Acoustical Society of America*
+- **Spherical expansions of sound radiation from a finite line source with reduced error** — Poletti, Mark (2021) *Journal of the Acoustical Society of America*
+- **Spherical harmonic decomposition of a sound field based on observations along the equator of a rigid spherical scatterer** — Ahrens, Jens; Helmholz, Hannes; Alon, David Lou 等 (2021) *Journal of the Acoustical Society of America*
+- **Spherical oscillations of encapsulated microbubbles: Effect of shell compressibility and anisotropy** — Chabouh, Georges; Dollet, Benjamin; Quilliet, Catherine 等 (2021) *Journal of the Acoustical Society of America*
+- **Spherical sector harmonics representation of sound fields using a microphone array over spherical sector** — Kumari, Deepika; Kumar, Lalan (2021) *Journal of the Acoustical Society of America*
+- **Spray characteristics of an ultrasonic microdroplet generator with a continuously variable operating frequencya)** — Shan, Li; Cui, Mingyang; Meacham, J. Mark (2021) *Journal of the Acoustical Society of America*
+- **State-space modeling of sound source directivity: An experimental study of the violin and the clarineta)** — Maestre, Esteban; Scavone, Gary P.; Smith, Julius O. (2021) *Journal of the Acoustical Society of America*
+- **Statistical analysis and modeling of underwater wind noise at the northeast pacific continental margin** — Schwock, Felix; Abadi, Shima (2021) *Journal of the Acoustical Society of America*
+- **Statistical modeling of ultrasound signals related to the packing factor of wave scattering phenomena for structural characterization** — Destrempes, Francois; Cloutier, Guy (2021) *Journal of the Acoustical Society of America*
+- **Status and future of modeling of musical instruments: Introduction to the JASA special issue** — Giordano, Nicholas; Chatziioannou, Vasileios (2021) *The Journal of the Acoustical Society of America*
+- **Steady active control of noise radiation from highly heated supersonic jets** — Prasad, Chitrarth; Morris, Philip J. (2021) *Journal of the Acoustical Society of America*
+- **Study of a thermoacoustic-Stirling engine connected to a piston-crank-flywheel assembly** — Penelet, Guillaume; Watanabe, Takumaru; Biwa, Tetsushi (2021) *Journal of the Acoustical Society of America*
+- **Sub-optimal construction of an auditory profile from temporally distributed spectral information** — Richards, Virginia M.; Tisby, Mariel Kazuko; Suzuki-Gill, Eli N. 等 (2021) *Journal of the Acoustical Society of America*
+- **Substrate vibrations and their potential effects upon fishes and invertebrates** — Hawkins, Anthony D.; Hazelwood, Richard A.; Popper, Arthur N. 等 (2021) *Journal of the Acoustical Society of America*
+- **Substrate-borne vibration and sound production by the land hermit crab Coenobita compressus during social interactions** — Roberts, Louise (2021) *Journal of the Acoustical Society of America*
+- **Supersonic jet noise source distributions** — Breen, Nicholas P.; Ahuja, K. K. (2021) *Journal of the Acoustical Society of America*
+- **Surface Love-type waves propagating through viscoelastic functionally graded media** — Krpensky, A.; Bednarik, M. (2021) *Journal of the Acoustical Society of America*
+- **Synthesis of musical instrument directivities with a single common loudspeaker (L)** — Hara, Ryoko; Iwami, Takahiro; Kashiwazaki, Hiroshi 等 (2021) *Journal of the Acoustical Society of America*
+- **Synthetic adaptive matched field processing for moving source with a horizontal line array** — Li, Fenghua; Zhu, Feilong; Zhang, Yanjun 等 (2021) *Journal of the Acoustical Society of America*
+- **Tapering of the interventricular septum can affect ultrasound shear wave elastography: An in vitro and in silico study** — Sabbadini, A.; Caenen, A.; Keijzer, L. B. H. 等 (2021) *Journal of the Acoustical Society of America*
+- **Temperature-driven seasonal and longer term changes in spatially averaged deep ocean ambient sound at frequencies 63-125 Hz** — Ainslie, Michael A.; Andrew, Rex K.; Howe, Bruce M. 等 (2021) *Journal of the Acoustical Society of America*
+- **Temporal cues to onset voicing contrasts in Australian English-speaking children** — Millasseau, Julien; Bruggeman, Laurence; Yuen, Ivan 等 (2021) *Journal of the Acoustical Society of America*
+- **Temporal fine structure influences voicing confusions for consonant identification in multi-talker babble** — Viswanathan, Vibha; Shinn-Cunningham, Barbara G.; Heinz, Michael G. (2021) *The Journal of the Acoustical Society of America*
+- **Temporal integration of monaural and dichotic frequency modulation** — Palandrani, Katherine N.; Hoover, Eric C.; Stavropoulos, Trevor 等 (2021) *Journal of the Acoustical Society of America*
+- **The acoustic realization of language-specific phonological categories despite dynamic cross-linguistic influence in bilingual and trilingual speech** — Amengual, Mark (2021) *Journal of the Acoustical Society of America*
+- **The acoustical properties of tetraethyl orthosilicate based granular silica aerogels** — Begum, H.; Horoshenkov, K. V.; Conte, M. 等 (2021) *Journal of the Acoustical Society of America*
+- **The bassoon tonehole lattice: Links between the open and closed holes and the radiated sound spectrum** — Petersen, Erik Alan; Colinot, Tom; Silva, Fabrice 等 (2021) *Journal of the Acoustical Society of America*
+- **The cafeteria study: Effects of facial masks, hearing protection, and real-world noise on speech recognition** — Barrett, Mary E.; Gordon-Salant, Sandra; Brungart, Douglas S. (2021) *Journal of the Acoustical Society of America*
+- **The contrast between clear and plain speaking style for Mandarin tones** — Tupper, Paul; Leung, Keith W.; Wang, Yue 等 (2021) *Journal of the Acoustical Society of America*
+- **The contribution of spectral processing to the acquisition of phonological sensitivity by adolescent cochlear implant users and normal-hearing controlsa)** — Nittrouer, Susan; Lowenstein, Joanna H.; Sinex, Donal G. (2021) *Journal of the Acoustical Society of America*
+- **The differential effects of vowel and onset consonant lengthening on speech segmentation: Evidence from Taiwanese Southern Min** — Ou, Shu-chen; Guo, Zhe-chen (2021) *Journal of the Acoustical Society of America*
+- **The dynamics of auditory stream segregation: Effects of sudden changes in frequency, level, or modulationa)** — Rajasingam, Saima L.; Summers, Robert J.; Roberts, Brian (2021) *Journal of the Acoustical Society of America*
+- **The effect of Mandarin listeners' musical and pitch aptitude on perceptual learning of Cantonese level-tones** — Qin, Zhen; Zhang, Caicai; Wang, William Shi-yuan (2021) *Journal of the Acoustical Society of America*
+- **The effect of broadband elicitor laterality on psychoacoustic gain reduction across signal frequency** — Salloom, William B.; Strickland, Elizabeth A. (2021) *Journal of the Acoustical Society of America*
+- **The effect of f(o) fall, downstep, and secondary cues in perceiving Japanese lexical accent** — Sugiyama, Yukiko; Hui, C. T. Justine; Arai, Takayuki (2021) *Journal of the Acoustical Society of America*
+- **The effective medium for a cylinder with cylindrical inclusions** — Fawcett, John A. (2021) *The Journal of the Acoustical Society of America*
+- **The effects of lexical content, acoustic and linguistic variability, and vocoding on voice cue perception** — Koelewijn, Thomas; Gaudrain, Etienne; Tamati, Terrin 等 (2021) *Journal of the Acoustical Society of America*
+- **The effects of native prosodic system and segmental context on Cantonese tone perception by Mandarin and Japanese listeners** — Zhu, Min; Chen, Xiaoxiang; Yang, Yuxiao (2021) *Journal of the Acoustical Society of America*
+- **The evolution of drum modes with strike intensity: Analysis and synthesis using the discrete cosine transforma)** — Kirby, Tim; Sandler, Mark (2021) *Journal of the Acoustical Society of America*
+- **The impact of face masks on the recall of spoken sentencesa)** — Truong, Thanh Lan; Beck, Sara D.; Weber, Andrea (2021) *Journal of the Acoustical Society of America*
+- **The impact of multiple concurrent factors on the length of the ultrasound pulmonary vertical artifacts as illustrated through the experimental and numerical analysis of simple models** — Demi, Marcello (2021) *Journal of the Acoustical Society of America*
+- **The impact of room location on time reversal focusing amplitudes** — Patchett, Brian D.; Anderson, Brian E.; Kingsley, Adam D. (2021) *Journal of the Acoustical Society of America*
+- **The influence of envelope shape on the lateralization of amplitude-modulated, low-frequency sound** — Haywood, Nicholas R.; Undurraga, Jaime A.; McAlpine, David (2021) *Journal of the Acoustical Society of America*
+- **The influence of lexical characteristics and talker accent on the recognition of English words by native speakers of Korean** — Choi, Min-Kyoung; Holliday, Jeffrey J.; Munson, Benjamin (2021) *Journal of the Acoustical Society of America*
+- **The influence of otitis media with effusion on middle-ear impedance estimated from wideband acoustic immittance measurements** — Merchant, Gabrielle R.; Neely, Stephen T. (2021) *Journal of the Acoustical Society of America*
+- **The learning effect of an active-learning room-acoustics coursework** — Hioka, Yusuke; Kingan, Michael; Dodd, George (2021) *Journal of the Acoustical Society of America*
+- **The mechanical potential of ultrasound on nervous tissue** — O'Reilly, Meaghan A.; Hynynen, Kullervo (2021) *Journal of the Acoustical Society of America*
+- **The mechanisms of harmonic sound generation during phonation: A multi-modal measurement-based approach** — Lodermeyer, Alexander; Bagheri, Eman; Kniesburges, Stefan 等 (2021) *Journal of the Acoustical Society of America*
+- **The near field, Westervelt far field, and inverse-law far field of the audio sound generated by parametric array loudspeakers** — Zhong, Jiaxin; Kirby, Ray; Qiu, Xiaojun (2021) *Journal of the Acoustical Society of America*
+- **The offset auditory brainstem response in bottlenose dolphins (Tursiops truncatus): Evidence for multiple underlying processes** — Mulsow, Jason; Finneran, James J.; Houser, Dorian S. 等 (2021) *Journal of the Acoustical Society of America*
+- **The peak height insertion gain (PHIG) method for quantifying acoustic feedback in hearing aids** — Alexander, Joshua M.; Schmig, Stephanie; Wagner, Randall P. 等 (2021) *The Journal of the Acoustical Society of America*
+- **The performance of time reversal in elastic chaotic cavities as a function of volume and geometric shape of the cavity** — Simpson, Paige E.; Anderson, Brian E. (2021) *Journal of the Acoustical Society of America*
+- **The relation of velopharyngeal coupling area to the identification of stop versus nasal consonants in North American English based on speech generated by acoustically driven vocal tract modulations** — Story, Brad H.; Bunton, Kate (2021) *Journal of the Acoustical Society of America*
+- **The relationship between ipsilateral cochlear gain reduction and speech-in-noise recognition at positive and negative signal-to-noise ratios** — DeRoy Milvae, Kristina; Alexander, Joshua M.; Strickland, Elizabeth A. (2021) *Journal of the Acoustical Society of America*
+- **The response of common carp (Cyprinus carpio) to insonified bubble curtains** — Martin, Nicholas Flores; Leighton, Timothy G.; White, Paul R. 等 (2021) *Journal of the Acoustical Society of America*
+- **The role of early and late reflections on perception of source orientation** — Steffens, Henning; van de Par, Steven; Ewert, Stephan D. (2021) *Journal of the Acoustical Society of America*
+- **The spectrogram, method of reassignment, and frequency-domain beamforming** — Averbuch, Gil (2021) *Journal of the Acoustical Society of America*
+- **The summating potential in human electrocochleography: Gaussian models and Fourier analysis** — Hancock, Kenneth E.; O'Brien, Bennett; Santarelli, Rosamaria 等 (2021) *The Journal of the Acoustical Society of America*
+- **The voice of COVID-19: Acoustic correlates of infection in sustained vowels** — Bartl-Pokorny, Katrin D.; Pokorny, Florian B.; Batliner, Anton 等 (2021) *The Journal of the Acoustical Society of America*
+- **Theoretical analysis of a contactless transportation system for cylindrical objects based on ultrasonic levitation** — Liu, Yuanyuan; Eser, Martin; Sun, Xiaodong 等 (2021) *Journal of the Acoustical Society of America*
+- **Theoretical and experimental analyses of acoustic characteristics of fine-grain powder considering longitudinal vibration and boundary layer viscositya)** — Sakamoto, Shuichi; Takakura, Rikuya; Suzuki, Ryusuke 等 (2021) *Journal of the Acoustical Society of America*
+- **Theoretical explanation of uneven frequency response of time-domain acoustic contrast control method** — Hu, Meiling; Lu, Jing (2021) *Journal of the Acoustical Society of America*
+- **Theoretical model of membrane acoustic absorber with compact magnet** — Zhao, Junjuan; Li, Xianhui; Zhu, Liying 等 (2021) *Journal of the Acoustical Society of America*
+- **Theory and numerical simulation for a cylindrical array by broadband constant beam pattern approach** — Huang, Dehua (2021) *Journal of the Acoustical Society of America*
+- **Theory and simulation of electroosmotic suppression of acoustic streaming** — Winckelmann, Bjorn G.; Bruus, Henrik (2021) *Journal of the Acoustical Society of America*
+- **Theory of pressure acoustics with thermoviscous boundary layers and streaming in elastic cavities** — Joergensen, Jonas Helboe; Bruus, Henrik (2021) *Journal of the Acoustical Society of America*
+- **Thermoviscous-acoustic metamaterials to damp acoustic modes in complex shape geometries at low frequencies** — Kone, Tenon Charly; Lopez, Mael; Ghinet, Sebastian 等 (2021) *The Journal of the Acoustical Society of America*
+- **Three psychophysical metrics of auditory temporal integration in macaques** — Mackey, Chase; Tarabillo, Alejandro; Ramachandran, Ramnarayan (2021) *Journal of the Acoustical Society of America*
+- **Three-dimensional modeling of T-wave generation and propagation from a South Mid-Atlantic Ridge earthquake** — Lecoulant, Jean; Oliveira, Tiago C. A.; Lin, Ying-Tsong (2021) *The Journal of the Acoustical Society of America*
+- **Three-dimensional numerical analysis as a tool for optimization of acoustophoretic separation in polymeric chipsa)** — de los Reyes, Elena; Acosta, Victor; Carreras, Pilar 等 (2021) *Journal of the Acoustical Society of America*
+- **Three-dimensional numerical analysis of acoustic energy absorption and generation in an air-jet instrument based on Howe's energy corollary** — Tabata, Ryoya; Matsuda, Rei; Koiwaya, Toshiaki 等 (2021) *Journal of the Acoustical Society of America*
+- **Three-dimensional spiral motion of microparticles by a binary-phase logarithmic-spiral zone platea)** — Xia, Xiangxiang; Li, Yongchuan; Cai, Feiyan 等 (2021) *Journal of the Acoustical Society of America*
+- **Three-dimensional tuning of idiophone bar modes via finite element analysisa)** — Beaton, Douglas; Scavone, Gary (2021) *Journal of the Acoustical Society of America*
+- **Three-dimensional vibration patterns of alto saxophone reeds measured on different mouthpieces under mimicked realistic playing conditions** — Ukshini, Enis; Dirckx, Joris J. J. (2021) *The Journal of the Acoustical Society of America*
+- **Three-dimensional-printed replica models of bone for experimentally decoupling trabecular bone properties contribution to ultrasound propagation parameters** — Athanasios, Tsirigotis; Konstantinos, Apostolopoulos; Despoina, Deligianni (2021) *Journal of the Acoustical Society of America*
+- **Time reversal focusing in the audible range using a tunable sonic crystal** — Sol Gomez, Valeria; Spiousas, Ignacio; Eguia, Manuel C. (2021) *Journal of the Acoustical Society of America*
+- **Time-delayed interactions on acoustically driven bubbly screens** — Fan, Yuzhe; Li, Haisen; Fuster, Daniel (2021) *Journal of the Acoustical Society of America*
+- **Time-frequency representation with variant array of frequency-domain Prony estimators** — Ando, Shigeru (2021) *The Journal of the Acoustical Society of America*
+- **Toward a physical model of the clavichord** — Jiolat, Jean-Theo; d'Alessandro, Christophe; Le Carrou, Jean-Loic 等 (2021) *Journal of the Acoustical Society of America*
+- **Toward inclusion of atmospheric effects in the aircraft community noise predictions** — Fuerkaiti, Yunusi; Casalino, Damiano; Avallone, Francesco 等 (2021) *Journal of the Acoustical Society of America*
+- **Tracking time differences of arrivals of multiple sound sources in the presence of clutter and missed detections** — Gruden, Pina; Nosal, Eva-Marie; Oleson, Erin (2021) *Journal of the Acoustical Society of America*
+- **Training non-native vowel perception: In quiet or noise** — Mi, Lin; Tao, Sha; Wang, Wenjing 等 (2021) *Journal of the Acoustical Society of America*
+- **Transfer learning for denoising the echolocation clicks of finless porpoise (Neophocaena phocaenoides sunameri) using deep convolutional autoencoders** — Yang, Wuyi; Chang, Wenlei; Song, Zhongchang 等 (2021) *Journal of the Acoustical Society of America*
+- **Transient level-set topology optimization of a planar acoustic lens working with short-duration pulsea)** — Hyun, Jaeyub; Kim, H. Alicia (2021) *Journal of the Acoustical Society of America*
+- **Transient recovery problem in acoustics: A multichannel model-based deconvolution approach** — Candy, J. V.; Case, J. E.; Fisher, K. A. 等 (2021) *Journal of the Acoustical Society of America*
+- **Translating jet noise measurements to near-field level maps with nearest neighbor bilinear smoothing interpolation** — Mobley, Frank S.; Wall, Alan T.; Campbell, Stephen C. (2021) *Journal of the Acoustical Society of America*
+- **Transmission loss of plates with embedded multi-scale and tuned acoustic black holes** — Xiong, Yu; Smith, Edward C.; Conlon, Stephen C. (2021) *The Journal of the Acoustical Society of America*
+- **Trends in low-frequency underwater noise off the Oregon coast and impacts of COVID-19 pandemica)** — Dahl, Peter H.; Dall'Osto, David R.; Harrington, Michael J. (2021) *Journal of the Acoustical Society of America*
+- **Tri-modality cavitation mapping in shock wave lithotripsy** — Li, Mucong; Sankin, Georgy; Tri, Vu 等 (2021) *Journal of the Acoustical Society of America*
+- **Tunable network sound absorber based on additive manufacturinga)** — Zhao, Tianyu; Chen, Yi; Zhang, Kai 等 (2021) *Journal of the Acoustical Society of America*
+- **Tuning of bending and torsional modes of bars used in mallet percussion instruments** — Soares, Filipe; Antunes, Jose; Debut, Vincent (2021) *Journal of the Acoustical Society of America*
+- **Ultra-sparse metamaterials absorber for broadband low-frequency sound with free ventilation** — Shao, Chen; Xiong, Wei; Long, Houyou 等 (2021) *Journal of the Acoustical Society of America*
+- **Ultra-wide operation band of the high-frequency underwater acoustic transducer realized by two-layer 1-3 piezoelectric composite** — Ji, Bocheng; Hong, Lianjin; Lan, Yu (2021) *Journal of the Acoustical Society of America*
+- **Ultrasonic assessment of osseointegration phenomena at the bone-implant interface using convolutional neural network** — Kwak, Yunsang; Nguyen, Vu-Hieu; Heriveaux, Yoann 等 (2021) *Journal of the Acoustical Society of America*
+- **Ultrasound based noninvasive real-time cell proliferation process monitoring** — Keskinoglu, Cemil; Aydin, Ahmet (2021) *Journal of the Acoustical Society of America*
+- **Ultrasound in situ characterization of hybrid additively manufactured Ti6Al4V** — Sotelo, Luz D.; Karunakaran, Rakesh; Pratt, Cody S. 等 (2021) *Journal of the Acoustical Society of America*
+- **Understanding Acoustics: An Experimentalist's View of Sound and Vibration, Second Edition** — Anderson, Brian E. (2021) *Journal of the Acoustical Society of America*
+- **Underwater channel estimation exploiting multipath feature morphology** — McCarthy, R. A.; Sen Gupta, A. (2021) *Journal of the Acoustical Society of America*
+- **Underwater soundscape description from cyclostationarity point of view** — Ollivier, Benjamin; Shute, Pierre; Kinda, G. Bazile (2021) *The Journal of the Acoustical Society of America*
+- **Underwater ultra-low frequency seismic source** — Morozov, Andrey K. (2021) *Journal of the Acoustical Society of America*
+- **Unsupervised analysis of background noise sources in active officesa)** — De Salvio, Domenico; D'Orazio, Dario; Garai, Massimo (2021) *Journal of the Acoustical Society of America*
+- **Unsupervised repetition enables rapid perceptual learning** — Montazeri, Vahid; Kapolowicz, Michelle R.; Assmann, Peter F. (2021) *Journal of the Acoustical Society of America*
+- **Urban noise distributions and the influence of geometric spreading on skewnessa)** — Wilson, D. Keith; Kamrath, Matthew J.; Haedrich, Caitlin E. 等 (2021) *Journal of the Acoustical Society of America*
+- **Use of multipath time-delay ratio for source depth estimation with a vertical line array in deep water** — Li, Hui; Xu, Zhezhen; Yang, Kunde 等 (2021) *Journal of the Acoustical Society of America*
+- **Use of the auditory brainstem response for assessment of cochlear synaptopathy in humans** — Bramhall, Naomi F. (2021) *Journal of the Acoustical Society of America*
+- **Use of the filtered-x least-mean-squares algorithm to adapt personal sound zones in a car cabin** — Vindrola, Lucas; Melon, Manuel; Chamard, Jean-Christophe 等 (2021) *The Journal of the Acoustical Society of America*
+- **Using anisotropic and narrowband ambient noise for continuous measurements of relative clock drift between independent acoustic recorders** — Tenorio-Halle, Ludovic; Thode, Aaron M.; Swartz, Steven L. 等 (2021) *Journal of the Acoustical Society of America*
+- **Using context to train time-domain echolocation click detectorsa)** — Roch, Marie A.; Lindeneau, Scott; Aurora, Gurisht Singh 等 (2021) *Journal of the Acoustical Society of America*
+- **Using deep learning for acoustic event classification: The case of natural disasters** — Ekpezu, Akon O.; Wiafe, Isaac; Katsriku, Ferdinand 等 (2021) *Journal of the Acoustical Society of America*
+- **Using machine learning to automate ultrasound-based classification of butt-fused joints in medium-density polyethylene gas pipes** — Alavijeh, Maryam Shafiei; Scott, Ryan; Seviaryn, Fedar 等 (2021) *Journal of the Acoustical Society of America*
+- **Using rectified linear unit and swish based artificial neural networks to describe noise transfer in a full vehicle context** — Tsokaktsidis, Dimitrios Ernst; Nau, Clemens; Maeder, Marcus 等 (2021) *Journal of the Acoustical Society of America*
+- **Validating a psychoacoustic model of voice quality** — Kreiman, Jody; Lee, Yoonjeong; Garellek, Marc 等 (2021) *Journal of the Acoustical Society of America*
+- **Validation of a finite element modelling approach for mitigated and unmitigated pile driving noise prognosis** — von Pein, Jonas; Lippert, Stephan; von Estorff, Otto (2021) *Journal of the Acoustical Society of America*
+- **Validation of the Iowa Test of Consonant Perception** — Geller, Jason; Holmes, Ann; Schwalje, Adam 等 (2021) *The Journal of the Acoustical Society of America*
+- **Variations of stress field and stone fracture produced at different lateral locations in a shockwave lithotripter field** — Xiang, Gaoming; Ma, Xiaojian; Liang, Cosima 等 (2021) *Journal of the Acoustical Society of America*
+- **Varifocal optical lens using ultrasonic vibration and thixotropic gel** — Sakata, Daiko; Iwase, Takahiro; Onaka, Jessica 等 (2021) *Journal of the Acoustical Society of America*
+- **Vertical and slanted sound propagation in the near-ground atmosphere: Amplitude and phase fluctuations** — Kamrath, Matthew J.; Ostashev, Vladimir E.; Wilson, D. Keith 等 (2021) *Journal of the Acoustical Society of America*
+- **Vertical and slanted sound propagation in the near-ground atmosphere: Coherence and distributions** — Ostashev, Vladimir E.; Kamrath, Matthew J.; Wilson, D. Keith 等 (2021) *Journal of the Acoustical Society of America*
+- **Vertical cavity capacitive transducer** — Yaralioglu, Goksen G.; Ergun, A. Sanli; Bozkurt, Ayhan (2021) *Journal of the Acoustical Society of America*
+- **Vibro-acoustic modeling, numerical and experimental study of the resonator and its contribution to the timbre of Sarasvati veena, a South Indian stringed instrumenta)** — Chauhan, Chandrashekhar; Singru, P. M.; Vathsan, Radhika (2021) *Journal of the Acoustical Society of America*
+- **Visual feedback of the tongue influences speech adaptation to a physical modification of the oral cavity** — Barbier, Guillaume; Merzouki, Ryme; Bal, Mathilde 等 (2021) *Journal of the Acoustical Society of America*
+- **Visual geometry Group-UNet: Deep learning ultrasonic image reconstruction for curved partsa)** — Mei, Yujian; Jin, Haoran; Yu, Bei 等 (2021) *Journal of the Acoustical Society of America*
+- **Vocal drum sounds in human beatboxing: An acoustic and articulatory exploration using electromagnetic articulography** — Paroni, Annalisa; Henrich Bernardoni, Nathalie; Savariaux, Christophe 等 (2021) *Journal of the Acoustical Society of America*
+- **Vocal fold dynamics in a synthetic self-oscillating model: Contact pressure and dissipated-energy dose** — Motie-Shirazi, Mohsen; Zanartu, Matias; Peterson, Sean D. 等 (2021) *Journal of the Acoustical Society of America*
+- **Vocal fold dynamics in a synthetic self-oscillating model: Intraglottal aerodynamic pressure and energy** — Motie-Shirazi, Mohsen; Zanartu, Matias; Peterson, Sean D. 等 (2021) *Journal of the Acoustical Society of America*
+- **Vocal fold kinematics and relative fundamental frequency as a function of obstruent type and speaker age** — Park, Yeonggwang; Wang, Feng; Diaz-Cadiz, Manuel 等 (2021) *Journal of the Acoustical Society of America*
+- **Vocal fold vibration mode changes due to cricothyroid and thyroarytenoid muscle interaction in a three-dimensional model of the canine larynx** — Geng, Biao; Movahhedi, Mohammadreza; Xue, Qian 等 (2021) *Journal of the Acoustical Society of America*
+- **Vocal tract adjustments to minimize vocal fold contact pressure during phonation** — Zhang, Zhaoyan (2021) *The Journal of the Acoustical Society of America*
+- **Wave transmission and vibration response in periodically stiffened plates using a free wave approach** — Jeon, Jisu; Ih, Jeong-Guon; Brunskog, Jonas (2021) *Journal of the Acoustical Society of America*
+- **Waveguide for air-coupled ultrasonic phased-arrays with propagation time compensation and plug-in assembly** — Rutsch, Matthias; Unger, Alexander; Allevato, Gianni 等 (2021) *The Journal of the Acoustical Society of America*
+- **Whistles of the pantropical spotted dolphin (Stenella attenuata) in Santos Basin, western South Atlantic Ocean** — Pires, Clara R.; Rossi-Santos, Marcos R.; Paro, Alexandre D. 等 (2021) *Journal of the Acoustical Society of America*
+- **Younger and older adults show non-linear, stimulus-dependent performance during early stages of auditory training for non-native English** — Bieber, Rebecca E.; Tinnemore, Anna R.; Yeni-Komshian, Grace 等 (2021) *Journal of the Acoustical Society of America*
+
+## A-UWAComms（260 篇）
+
+- **A Blind Side Information Detection method for Partial Transmitted Sequence Peak-to-Average Power Reduction Scheme in OFDM Underwater Acoustic Communication System** — Xing, Siyu; Qiao, Gang; Ma, Lu %J IEEE Access (2018)
+- **A Closed-Form Spectral Analysis of GFDM in Underwater Communication Systems** — Hilariotacuri, Alexander (2019)
+- **A Differential Multiple Single Carrier Modulation Scheme for Underwater Acoustic Communications and Its Actual Evaluation Results** — Yoshii, Rintaro; Tsukamoto, Yoshiki; Takahashi, Takuya 等 (2019)
+- **A Dynamic Time Warping Based Wake-Up Signal Detection Method for Underwater Acoustic Communication Networks** — Lu Ma; Cheng Fan; Wei Sun 等 (2018)
+- **A High-precision Underwater Acoustic Communication Signal Modeling Method Based on VirTEX Algorithm** — Wang, Chao; Xiong, Shengjun (2018)
+- **A New Pulse Modulation Method for Underwater Acoustic Communication Combined with Multiple Pulse Characteristics** — Zhang, Luwei; Wang, Jiawei; Tao, Jianfeng 等 (2018)
+- **A Novel LDPC-BICM-ID Scheme with Rotated Mapping QAM in Underwater Acoustic Communication** — Zhu, Yongjia; He, Yuyao; Yao, Rugui 等 (2019)
+- **A Novel Spatial CCK Modulation Design for Underwater Acoustic Communications** — Jing, Lianyou; Wang, Han; He, Chengbing 等 (2019) *IEEE Transactions on Vehicular Technology*
+- **A Proposed Chirp Synchronisation Algorithm Based on the Fractional Fourier Transform for Underwater Acoustic Communication** — Sidorkina, Ju A.; Dyabirov, R. M.; Shakhtarin, B. I. 等 (2019)
+- **A Time-reversal based CP-free OFDM system for underwater acoustic communication** — Wang, Xin; Shen, Xiaohong; Ma, Shilei (2019)
+- **Adaptive Linear Turbo Equalization Over Doubly Selective Channels** — Choi, Jun Won; Riedl, Thomas J.; Kim, Kyeongyeon 等 (2011) *IEEE Journal of Oceanic Engineering*
+- **Adaptive Modulation for Underwater Acoustic OFDM Communication** — Suchi Barua; Yue Rong; Sven Nordholm 等 (2019)
+- **Ambiguities in underwater acoustic communications terminology and measurement procedures** — van Walree, Paul; Green, Dale; Otnes, Roald (2018)
+- **An Overview of Underwater Time-Reversal Communication** — Song, Hee Chun %J IEEE Journal of Oceanic Engineering (2016) *IEEE Journal of Oceanic Engineering*
+- **Analysis of Underwater Acoustic Communication System Using Equalization Technique for ISI Reduction** — Pranitha, B.; Anjaneyulu, L. %J Procedia Computer Science (2020)
+- **Anti-Multipath Orthogonal Chirp Division Multiplexing for Underwater Acoustic Communication** — Zhu, Peibin; Xu, Xiaomei; Tu, Xingbin 等 (2020) *IEEE Access*
+- **Autocorrelation based modulation recognition of PSK signals for OFDM in underwater acoustics communication** — Jiang-Qiao, Li; Anwar, Sheraz; Xiao-Liang, Zhang 等 (2018)
+- **Autonomous Surface Vehicles as Positioning and Communications Satellites for the Marine Operational Environment—Step toward Internet of Underwater Things** — Vasilijević, Antonio; Nađ, Đula; Mišković, Nikola (2018)
+- **BER of Dual-Hop Underwater Acoustic Communication Using Vector Sensors** — Rawat, Manishika; Lall, Brejesh (2018)
+- **Bidirectional Equalization for Long-Range Underwater Acoustic Communication in BLAC18** — Kim, Hyeonsu; Choi, Kang-Hoon; Choi, Jee Woong 等 (2019)
+- **Bidirectional equalization for underwater acoustic communication** — Song, H. C. (2012) *J Acoust Soc Am*
+- **Bio-inspired cooperative diversity link in underwater optical wireless communication** — Chakravartula, Venkatesh; Samiappan, Dhanalakshmi (2019) *Optics & Laser Technology*
+- **Bit-error rate based Doppler estimation for shallow water acoustic OFDM communication** — Li, Bin; Zheng, Siyuan; Tong, F. (2019) *Ocean Engineering*
+- **Blind deconvolution based equalizer for underwater acoustic communications** — Siddiqui, Salman I.; Dong, Hefeng %J Applied Acoustics (2019)
+- **Boat noise in an estuarine soundscape - A potential risk on the acoustic communication and reproduction of soniferous fish in the May River, South Carolina** — Smott, S.; Monczak, A.; Miller, M. E. 等 (2018) *Mar Pollut Bull*
+- **Capacity of Dual Hop Underwater Acoustic Communication Using Vector Sensors** — Manishika Rawat; Brejesh Lall; Seshan Srirangarajan (2018)
+- **Channel prediction based temporal multiple sparse bayesian learning for channel estimation in fast time-varying underwater acoustic OFDM communications** — Qiao, Gang; Song, Qingjun; Ma, Lu 等 (2020) *Signal Processing*
+- **Chirp-rate quasi-orthogonality based DSSS-CDMA system for underwater acoustic channel** — Yuan, Fei; Jia, Zhen-yu; Cheng, En (2020) *Applied Acoustics*
+- **Coherent high-speed acoustic communication inside a commercial atlantic salmon pen** — Rudander, Jacob; Husøy, Thor; van Walree, Paul 等 (2020)
+- **Comparison of jamming methods for underwater acoustic DSSS communication systems** — Ma, Lu; Fan, Cheng; Sun, Wei 等 (2018)
+- **Covert underwater communication by camouflaging sea piling sounds** — Liu, Songzuo; Wang, Mengjia; Ma, Tianlong 等 (2018) *Applied Acoustics*
+- **Cross-ice acoustic communication by ice-mounted geophones: An initial experimental demonstration** — Han, Xiao; Yin, Jing-wei; Chen, Wenjian 等 (2019)
+- **Data Muling Approach for Long-Range Broadband Underwater Communications** — Teixeira, Filipe B.; Moreira, Nuno F. F.; Campos, Rui 等 (2019)
+- **Deep learning based underwater acoustic OFDM communications** — Zhang, Youwen; Li, Junxuan; Zakharov, Yuriy 等 (2019) *Applied Acoustics*
+- **Development of underwater beacon for Arctic through-ice communication via satellite** — Skinner, E. D.; Kim, S. L.; Hinders, M. K. %J Cold Regions Science 等 (2019)
+- **Digital underwater communication with chaos** — Bai, Chao; Ren, Hai-Peng; Baptista, Murilo S. 等 (2019) *Communications in Nonlinear Science and Numerical Simulation*
+- **Direct adaptive equalization based on fast sparse recursive least squares algorithms for multiple-input multiple-output underwater acoustic communications** — Qin, Z.; Tao, J.; Wang, X. 等 (2019) *J Acoust Soc Am*
+- **Direct-adaptation based bidirectional turbo equalization for underwater acoustic communications: Algorithm and undersea experimental results** — Xi, J.; Yan, S.; Xu, L. (2018) *J Acoust Soc Am*
+- **Doppler scale estimation for varied speed mobile frequency-hopped binary frequency-shift keying underwater acoustic communication** — Qiao, G.; Zhao, Y.; Liu, S. 等 (2019) *J Acoust Soc Am*
+- **Eigendecomposition-Based Partial FFT Demodulation for Differential OFDM in Underwater Acoustic Communications** — Han, Jing; Zhang, Lingling; Zhang, Qunfei 等 (2018) *IEEE Transactions on Vehicular Technology*
+- **Equalization of OSDM over time-varying channels based on diagonal-block-banded matrix enhancement** — Han, Jing; Wang, Yujie; Gong, Zehui 等 (2020) *Signal Processing*
+- **Experimental and numerical study on underwater radiated noise of AUV** — Yu, Changli; Wang, Renzhi; Zhang, Xingming 等 (2020) *Ocean Engineering*
+- **Experimental study of Acoustic Communication over Deep-sea Vertical Channel** — Xiong Shengjun; Zhou Lisheng; Zhu Xiaohui 等 (2018)
+- **Exploiting time varying sparsity for underwater acoustic communication via dynamic compressed sensing** — Jiang, W.; Zheng, S.; Zhou, Y. 等 (2018) *J Acoust Soc Am*
+- **FH-CSK Receiver with Fractional Fourier Transform for Covert Underwater Acoustic Communication** — Geun-hyeok Lee; Ki-man Kim; Tae-woong Kang 等 (2018)
+- **Frame Detection and Synchronization for a SIMO Receiver in presence of Doppler Shift for Underwater Acoustic Communications** — Imbert, Stéphane; Ansel, Guillaume; Laot, Christophe (2019)
+- **Frequency-Domain Turbo Equalization With Iterative Channel Estimation for MIMO Underwater Acoustic Communications** — Chen, Zhenrui; Wang, Jintao; Zheng, Yahong Rosa (2017) *IEEE Journal of Oceanic Engineering*
+- **Frequency-Domain Turbo Equalization with Soft Successive Interference Cancellation for Single Carrier MIMO Underwater Acoustic Communications** — Zhang, Jian; Zheng, Yahong Rosa (2011) *IEEE Transactions on Wireless Communications*
+- **Frequency–Time Domain Turbo Equalization for Underwater Acoustic Communications** — Xi, Junyi; Yan, Shefeng; Xu, Lijun 等 (2019) *IEEE Journal of Oceanic Engineering*
+- **Gibbs-Sampler-Based Semiblind Equalizer in Underwater Acoustic Communications** — Jun, Ling; Jian, Li (2012) *IEEE Journal of Oceanic Engineering*
+- **High Spectral-Efficiency Noncoherent Underwater Acoustic Communication for Seafloor Observation Network** — Yao, Yan; Wu, Yanbo; Zhu, Min 等 (2019)
+- **Hybrid Carrier Modulation with Time-Domain Windows and Iterative Equalization over Underwater Acoustic Channels** — Wang, Kun; Sha, Xuejun; Li, Yong (2013) *IEEE Communications Letters*
+- **Impact of persistent bubbles on underwater acoustic communication** — Chua, Gabriel; Chitre, Mandar; Deane, Grant (2018)
+- **Index modulated OFDM for underwater acoustic communications** — Wen, Miaowen; Xiang, Cheng; Yang, Liuqing 等 (2016) *IEEE Communications Magazine*
+- **Iterative Channel Estimation and Turbo Equalization for Multiple-Input Multiple-Output Underwater Acoustic Communications** — Zengli Yang; Yahong Rosa Zheng (2016) *IEEE Journal of Oceanic Engineering*
+- **Iterative Per-Vector Equalization for Orthogonal Signal-Division Multiplexing Over Time-Varying Underwater Acoustic Channels** — Han, Jing; Chepuri, Sundeep Prabhakar; Zhang, Qunfei 等 (2019) *IEEE Journal of Oceanic Engineering*
+- **Iterative Sparse Channel Estimation and Data Detection for Underwater Acoustic Communications Using Partial Interval Demodulation** — Arunkumar, K. P.; Murthy, Chandra R. (2018) *IEEE Transactions on Signal Processing*
+- **Iterative matching-based parameter estimation for time-scale underwater acoustic multipath echo** — Huang, Shuxia; Fang, Shiliang; Han, Ning (2020) *Applied Acoustics*
+- **Joint Doppler Scale Estimation and Timing Synchronization in Underwater Acoustic Communications** — Ling, Zhiqiang; Xie, Lei; Chen, Huifang (2019)
+- **Joint channel and Doppler estimation for OSDM underwater acoustic communications** — Han, Jing; Chepuri, Sundeep Prabhakar; Leus, Geert (2020) *Signal Processing*
+- **Low Complexity Equalization of Orthogonal Chirp Division Multiplexing in Doubly-Selective Channels** — Wang, X.; Jiang, Z.; Shen, X. H. (2020) *Sensors (Basel)*
+- **Low-Cost Underwater Wireless Communication System Development Using Piezo-Ceramic Transducer** — Shaharear, Md Ragib; Prayash, HA Shakhawat Hossen; Islam, Md Farhanul 等 (2019)
+- **Maximal Ratio Combining for Long-Range Underwater Acoustic Communication in East Sea** — Kim, Hyeonsu; Kim, Sunhyo; Choi, Kang-Hoon 等 (2018)
+- **Mean Doppler Compensation for SIMO Turbo Equalization in Underwater Acoustic Communications** — Wang, Zhenduo; Xie, Zhe; Zhou, Wu 等 (2019)
+- **Mobile underwater acoustic communication with constantly changing Doppler effect** — Han, Xiao; Ge, Wei; Yin, Jingwei 等 (2018)
+- **Modulation Identification of Underwater Acoustic Communications Signals Based on Generative Adversarial Networks** — Yao, Xiaohui; Yang, Honghui; Li, Yiqing (2019)
+- **Modulation Recognition of Underwater Acoustic Signals Using Deep Hybrid Neural Networks** — Zhang, Weilong; Yang, Xinghai; Leng, Changli 等 (2022) *IEEE Transactions on Wireless Communications*
+- **Modulation classification of underwater acoustic communication signals based on deep learning** — Li-Da, Ding; Shi-Lian, Wang; Wei, Zhang (2018)
+- **Multi-Receiver Modulation Classification for Non-Cooperative Underwater Acoustic Communications** — Zhang, Lan; Feng, Wei; Xu, Xiaomei 等 (2018)
+- **Multiple-input multiple-output technique for underwater acoustic communication system** — Schmidt, Jan H.; Schmidt, Aleksander M.; Kochańska, Iwona (2018)
+- **Multiuser acoustic communications with mobile users** — Cho, S. E.; Song, H. C.; Hodgkiss, W. S. (2013) *J Acoust Soc Am*
+- **Novel concept of bionic Morse coding for mimicry covert underwater communication** — Bilal, Muhammad; Liu, Songzuo; Qiao, Gang 等 (2020)
+- **OFDM for Underwater Acoustic Communications** — Zhou, Shengli; Wang, Zhaohui (2014)
+- **OFDM-Based Underwater Acoustic Communication System Designing for Under-Ice and Cold-Water Applications** — Rodionov, Aleksandr; Unru, Petr; Statsenko, Lyubov 等 (2018)
+- **Optimization of some acoustic parameters intended for the wireless communication in seawater** — Khelladi, Hassina; Mograne, Mohamed Abderrahmane (2019) *Applied Acoustics*
+- **Orthogonal Angle Domain Subspace Projection-Based Receiver Algorithm for Underwater Acoustic Communication** — Zeng, Rong; Wang, Yujie %J IEEE Communications Letters (2018)
+- **Overlay Networking to ensure seamless communication in Underwater Wireless Sensor Networks** — Rehash Rushmi Pavitra, A.; Srie Vidhya Janani, E. (2019) *Computer Communications*
+- **Performance Analysis and Optimal Design of Multichannel Equalizer for Underwater Acoustic Communications** — Milutin Pajovic; James C. Preisig (2015) *IEEE Journal of Oceanic Engineering*
+- **Performance analysis of an improved modal dispersion compensation receiver for low-frequency and long-range shallow water communication experiment** — Zhang, Dianlun; Xiao, Shuang; Cui, Hongyu 等 (2020) *Applied Acoustics*
+- **Preamble design with HFMs for underwater acoustic communications** — Xin, Mengying; Li, Wei; Wang, Xin 等 (2018)
+- **Prefix-Free Frequency Domain Equalization for Underwater Acoustic Single Carrier Transmissions** — Tu, Xingbin; Song, Aijun; Xu, Xiaomei (2018) *IEEE Access*
+- **Progressive Inter-Carrier Interference Equalization for OFDM Transmission Over Time-Varying Underwater Acoustic Channels** — Huang, Jianzhong; Zhou, Shengli; Huang, Jie 等 (2011) *IEEE Journal of Selected Topics in Signal Processing*
+- **Reinforcement Learning-Based Adaptive Modulation and Coding for Efficient Underwater Communications** — Su, Wei; Lin, Jiamin; Chen, Keyu 等 (2019) *IEEE Access*
+- **Research on Carrier Frequency Estimation of Underwater Acoustic Communication Signals** — Xiao, Mei; Xin, Zhang; Yizhou, Ge 等 (2018)
+- **Research on Synchronization Technology for OFDM Underwater Acoustic Communication System** — Zhang, De; Fan, Maojun; Zha, Wenzhong 等 (2019)
+- **Research on mobile spread spectrum underwater acoustic communication** — Du, Pengyu; Xiong, Shengjun; Wang, Chao (2019)
+- **Robust Detection for Doppler in Under Water Acoustic Communications** — Kim, Yongcheol; Ahn, Jongmin; Lee, Hojun 等 (2019)
+- **Robust Equalization of Mobile Underwater Acoustic Channels** — Pelekanakis, Konstantinos; Chitre, Mandar (2015) *IEEE Journal of Oceanic Engineering*
+- **Robust MIMO Underwater Acoustic Communications Using Turbo Block Decision-Feedback Equalization** — Tao, Jun; Zheng, Yahong Rosa; Xiao, Chengshan 等 (2010) *IEEE Journal of Oceanic Engineering*
+- **STLFM Signal Based Adaptive Synchronization for Underwater Acoustic Communications** — Yuan, Fei; Jia, Zhenyu; Li, Jianghui 等 (2019) *IEEE Access*
+- **Selective Dynamic Coded Cooperative Communications for Multi-Hop Underwater Acoustic Sensor Networks** — Chen, Yougan; Jin, Xiaoting; Wan, Lei 等 (2019) *IEEE Access*
+- **Short data record filtering for adaptive underwater acoustic communications** — Gannon, Adam; Balakrishnan, Sarankumar; Sklivanitis, George 等 (2018)
+- **Soft-Decision Feedback Turbo Equalization for LDPC-Coded MIMO Underwater Acoustic Communications** — Rafati, Amirhossein; Lou, Huang; Xiao, Chengshan (2014) *IEEE Journal of Oceanic Engineering*
+- **Sparse Channel Estimation and Equalization for OFDM-Based Underwater Cooperative Systems With Amplify-and-Forward Relaying** — Panayirci, Erdal; Senol, Habib; Uysal, Murat 等 (2016) *IEEE Transactions on Signal Processing*
+- **Sparse waveform design for secure lpd/lpi underwater acoustic communications** — Sklivanitis, George; Ashdown, Jonathan; Tountas, Konstantinos 等 (2018)
+- **Survey on high reliability wireless communication for underwater sensor networks** — Li, Shaonan; Qu, Wenyu; Liu, Chunfeng 等 (2019)
+- **The Effect of Acoustic-Shell Coupling on Near-End Self-Interference Signal of In-Band Full-Duplex Underwater Acoustic Communication Modem** — Gang Qiao; Yunjiang Zhao; Songzuo Liu 等 (2020)
+- **The challenges of building mobile underwater wireless networks for aquatic applications** — Cui, Jun Hong; Kong, Jiejun; Gerla, Mario 等 (2006)
+- **Time Varying Doppler-Shift Compensation for OFDM-Based Shallow Underwater Acoustic Communication Systems** — Abdelkareem, A. E.; Sharif, B. S.; Tsimenidis, C. C. 等 (2011)
+- **Time-Frequency Domain Turbo Equalization for Single-Carrier Underwater Acoustic Communications** — He, Chengbing; Jing, Lianyou; Xi, Rui 等 (2019) *IEEE Access*
+- **Towards robust high speed underwater acoustic communications using chirp multiplexing** — Shi, Jiacheng; Demirors, Emrecan; Melodia, Tommaso (2018)
+- **Tuning the demodulation frequency based on a normalized trajectory model for mobile underwater acoustic communications** — Ahmad, Abdel-Mehsen; Barbeau, Michel; Garcia‐Alfaro, Joaquin 等 (2019) *Transactions on Emerging Telecommunications Technologies*
+- **Turbo Equalization for Single-Carrier Underwater Acoustic Communications** — Zheng, Yahong Rosa; Wu, Jingxian; Xiao, Chengshan %J IEEE Communications Magazine (2015)
+- **Underwater Acoustic Communication Using Multiple-Input–Multiple-Output Doppler-Resilient Orthogonal Signal Division Multiplexing** — Ebihara, Tadashi; Ogasawara, Hanako; Leus, Geert %J IEEE Journal of Oceanic Engineering (2019)
+- **Underwater Acoustic Communication Using Vector Sensor in KOREX-17** — Kim, Sunhyo; Kim, Hyeonsu; Choi, Kang-Hoon 等 (2018)
+- **Underwater Acoustic Digital Signal Processing and Communication Systems** — Istepanian, Robert S. /Stojanovic (2002)
+- **High-rate underwater acoustic communication system for SHINKAI6500** — SHIMURA, Takuya; Yukihiro, KIDA; DEGUCHI, Mitsuyasu (2018)
+- **Equalizer for high data rate transmission in underwater communications** — Geller, B.; Broissier, J.M.; Capellano, V. (1994)
+- **Exploiting Space–Time–Frequency Diversity With MIMO–OFDM for Underwater Acoustic Communications** — Pelekanakis, Konstantinos; Baggeroer, Arthur B. (2011) *IEEE Journal of Oceanic Engineering*
+- **High-frequency acoustic communications achieving high bandwidth efficiency** — Song, H. C.; Hodgkiss, W. S.; Kuperman, W. A. 等 (2009) *The Journal of the Acoustical Society of America*
+- **How best to utilize bandwidth in underwater acoustic communication?** — Song, Hee-Chun (2013)
+- **MIMO-OFDM for High-Rate Underwater Acoustic Communications** — Li, Baosheng; Huang, Jie; Zhou, Shengli 等 (2009) *IEEE Journal of Oceanic Engineering*
+- **Performance analysis of turbo-coded MIMO–OFDM system for underwater communication** — Iruthayanathan, Nelson; Vishvaksenan, K.S.; Rajendran, V. 等 (2015) *Computers & Electrical Engineering*
+- **Time Reversal Receivers for High Data Rate Acoustic Multiple-Input–Multiple-Output Communication** — Song, Aijun; Badiey, Mohsen; McDonald, Vincent Keyko 等 (2011) *IEEE Journal of Oceanic Engineering*
+- **Very-High-Frequency Single-Input–Multiple-Output Acoustic Communication in Shallow Water** — Rudander, Jacob; van Walree, Paul A.; Husøy, Thor 等 (2019) *IEEE Journal of Oceanic Engineering*
+- **Compressed sensing** — Donoho, D.L. (2006) *IEEE Transactions on Information Theory*
+- **Signal processing for underwater acoustic communications** — Singer, Andrew C.; Nelson, Jill K.; Kozat, Suleyman S. (2009) *IEEE Communications Magazine*
+- **Sparse Channel Estimation for Multicarrier Underwater Acoustic Communication: From Subspace Methods to Compressed Sensing** — Berger, Christian R.; Zhou, Shengli; Preisig, James C. 等 (2010) *IEEE Transactions on Signal Processing*
+- **State-of-the-Art Underwater Acoustic Communication Modems: Classifications, Analyses and Design Challenges** — Zia, Muhammad Yousuf Irfan; Poncela, Javier; Otero, Pablo (2020) *Wireless Personal Communications*
+- **Underwater Acoustic Communications and Networking: Recent Advances and Future Challenges** — Chitre, Mandar; Shahabudeen, Shiraz; Stojanovic, Milica (2008) *Marine Technology Society Journal*
+- **Underwater acoustic communication by passive-phase conjugation: theory and experimental results** — Rouseff, D.; Jackson, D.R.; Fox, W.L.J. 等 (2001) *IEEE Journal of Oceanic Engineering*
+- **Clustered Adaptation for Estimation of Time-Varying Underwater Acoustic Channels** — Wang, Zhaohui; Zhou, Shengli; Preisig, James C. 等 (2012) *IEEE Transactions on Signal Processing*
+- **Efficient Multicarrier Communication for Highly Spread Underwater Acoustic Channels** — Hwang, Sung-Jun; Schniter, Philip (2008) *IEEE Journal on Selected Areas in Communications*
+- **Impact of Time-Varying Underwater Acoustic Channels on the Performance of Routing Protocols** — Tomasi, Beatrice; Toso, Giovanni; Casari, Paolo 等 (2013) *IEEE Journal of Oceanic Engineering*
+- **Iterative estimation of doubly selective underwater acoustic channel using basis expansion models** — Yu, Hua; Song, Aijun; Badiey, Mohsen 等 (2015) *Ad Hoc Networks*
+- **Time-Domain Oversampled OFDM Communication in Doubly-Selective Underwater Acoustic Channels** — Peng, Bo; Rossi, Pierluigi Salvo; Dong, Hefeng 等 (2015) *IEEE Communications Letters*
+- **Time-Frequency Characterization and Receiver Waveform Design for Shallow Water Environments** — Zhang, Jun Jason; Papandreou-Suppappola, Antonia; Gottin, Bertrand 等 (2009) *IEEE Transactions on Signal Processing*
+- **Underwater Acoustic Communication With an Orthogonal Signal Division Multiplexing Scheme in Doubly Spread Channels** — Ebihara, Tadashi; Mizutani, Koichi (2014) *IEEE Journal of Oceanic Engineering*
+- **Underwater communications in time-varying sparse channels using passive-phase conjugation** — Zhang, Guosong; Dong, Hefeng (2013) *Applied Acoustics*
+- **Discrete Time-Frequency Characterizations of Dispersive Linear Time-Varying Systems** — Jiang, Ye; Papandreou-Suppappola, Antonia (2007) *IEEE Transactions on Signal Processing*
+- **Underwater Acoustic Communications: Long-Term Test of Turbo Equalization in Shallow Water** — Otnes, R.; Eggen, T. H. (2008) *IEEE Journal of Oceanic Engineering*
+- **Editorial Underwater Acoustic Communications: Where We Stand and What Is Next?** — Song, Aijun; Stojanovic, Milica; Chitre, Mandar %J IEEE Journal of Oceanic Engineering (2019)
+- **A Kalman-based Doppler tracking algorithm for underwater acoustic spread spectrum communications** — Sun, Dajun; Hong, Xiaoping; Cui, Hongyu (2022) *Applied Acoustics*
+- **A Single-Carrier Turbo-Coded System for Underwater Communications** — Karasalo, Ilkka; Öberg, Tommy; Nilsson, Bernt 等 (2013) *IEEE Journal of Oceanic Engineering*
+- **A family of sparse group Lasso RLS algorithms with adaptive regularization parameters for adaptive decision feedback equalizer in the underwater acoustic communication system** — Liu, Lu; Sun, Dajun; Zhang, Youwen (2017) *Physical Communication*
+- **A robust iterative receiver for single carrier underwater acoustic communications under impulsive noise** — Huang, Fupeng; Zhang, Youwen; Guo, Qinghua 等 (2023) *Applied Acoustics*
+- **A-OMP: An Adaptive OMP Algorithm for Underwater Acoustic OFDM Channel Estimation** — Wang, Zhizhan; Li, Yuzhou; Wang, Chengcai 等 (2021) *IEEE Wireless Communications Letters*
+- **AUV-Assisted Subsea Exploration Method in 6G Enabled Deep Ocean Based on a Cooperative Pac-Men Mechanism** — Zhang, Jie; Han, Guangjie; Sha, Jianfa 等 (2022) *IEEE Transactions on Intelligent Transportation Systems*
+- **Acoustic characterization of the seabed with a single-element time-reversal mirror** — Godin, Oleg A.; Uzhansky, Ernst M.; Tan, Tsuwei 等 (2023) *Applied Acoustics*
+- **Acoustic pulse compression using passive phase-conjugate processing** — Dowling, David R. (1994) *The Journal of the Acoustical Society of America*
+- **Acoustic telemetry - An overview** — Baggeroer, A. (1984) *IEEE Journal of Oceanic Engineering*
+- **Adaptive Modulation and Coding for Underwater Acoustic OFDM** — Wan, Lei; Zhou, Hao; Xu, Xiaoka 等 (2015) *IEEE Journal of Oceanic Engineering*
+- **Adaptive OFDM Modulation for Underwater Acoustic Communications: Design Considerations and Experimental Results** — Radosevic, Andreja; Ahmed, Rameez; Duman, Tolga M. 等 (2014) *IEEE Journal of Oceanic Engineering*
+- **Adaptive multichannel combining and equalization for underwater acoustic communications** — Stojanovic, M.; Catipovic, J.; Proakis, J. G. (1993) *The Journal of the Acoustical Society of America*
+- **Algorithms for joint channel estimation and data recovery-application to equalization in underwater communications** — Feder, M.; Catipovic, J.A. (1991) *IEEE Journal of Oceanic Engineering*
+- **An Improved BICM-ID Receiver for the Time-Varying Underwater Acoustic Communications with DDPSK Modulation** — Cui, Hongyu; Liu, Changxin; Hong, Xiaoping 等 (2020)
+- **An Iterative Equalization and Decoding Approach for Underwater Acoustic Communication** — Sifferlen, James F.; Song, H. C.; Hodgkiss, William S. 等 (2008) *IEEE Journal of Oceanic Engineering*
+- **An initial demonstration of underwater acoustic communication using time reversal** — Edelmann, G.F.; Akal, T.; Hodgkiss, W.S. 等 (2002) *IEEE Journal of Oceanic Engineering*
+- **An iterative subblock-based receiver for SC-FDE systems in time-varying underwater acoustic channels** — Tong, Wentao; Ge, Wei; Han, Xiao 等 (2023) *Applied Acoustics*
+- **Analytical method of parameter determination for OFDM system over measurement-based underwater acoustic channel modeling** — Ha, Do Viet; Duc, Nguyen Van (2020) *Physical Communication*
+- **BEM Adaptive filtering for SI cancellation in full-duplex underwater acoustic systems** — Shen, Lu; Zakharov, Yuriy; Shi, Long 等 (2022) *Signal Processing*
+- **Basis expansion model for underwater acoustic channels?** — Qu, Fengzhong; Yang, Liuqing (2008)
+- **Bayesian Iterative Channel Estimation and Turbo Equalization for Multiple-Input–Multiple-Output Underwater Acoustic Communications** — Qin, Xiangzhao; Qu, Fengzhong; Zheng, Yahong Rosa (2021) *IEEE Journal of Oceanic Engineering*
+- **Challenges and Security Issues in Underwater Wireless Sensor Networks** — Yang, Guang; Dai, Lie; Si, Guannan 等 (2019) *Procedia Computer Science*
+- **Channel estimation for underwater acoustic OFDM communications via temporal sparse Bayesian learning** — Feng, Xiao; Wang, Junfeng; Sun, Haixin 等 (2023) *Signal Processing*
+- **Chaotic modulations and performance analysis for digital underwater acoustic communications** — Shu, Xiujun; Wang, Haibin; Yang, Xiaoxia 等 (2016) *Applied Acoustics*
+- **Circular Superposition Spread-Spectrum Transmission for Multiple-Input Multiple-Output Underwater Acoustic Communications** — Qin, Xiangzhao; Qu, Fengzhong; Zheng, Yahong Rosa (2019) *IEEE Communications Letters*
+- **Circular Time Shift Modulation for robust underwater acoustic communications in doubly spread channels** — Qi, Zhuoran; Pompili, Dario (2023) *Computer Communications*
+- **Closed-Form Expression for BER of CP-OFDM Systems Over an Underwater Acoustic Channel With Statistical Characterization** — Liu, Xinyu; Qiao, Gang; Qing, Xin 等 (2022) *IEEE Communications Letters*
+- **Communication over Doppler spread channels. II. Receiver characterization and practical results** — Eggen, T.H.; Preisig, J.C.; Baggeroer, A.B. (2001) *IEEE Journal of Oceanic Engineering*
+- **Communication over Doppler spread channels. Part I: Channel and receiver presentation** — Eggen, T.H.; Baggeroer, A.B.; Preisig, J.C. (2000) *IEEE Journal of Oceanic Engineering*
+- **Correlation-based decision-feedback equalizer for underwater acoustic communications** — Yang, T.C. (2005) *IEEE Journal of Oceanic Engineering*
+- **Differences between passive-phase conjugation and decision-feedback equalizer for underwater acoustic communications** — Yang, T.C. (2004) *IEEE Journal of Oceanic Engineering*
+- **Directional bionic underwater communication method using a parametric acoustic array and recursive filtering** — Wang, Cheng; Zhu, Guangping; Tang, Shengyu 等 (2022) *Applied Acoustics*
+- **Doppler Estimation Based on Dual-HFM Signal and Speed Spectrum Scanning** — Wei, Runyu; Ma, Xiaochuan; Zhao, Shiduo 等 (2020) *IEEE Signal Processing Letters*
+- **Double-differential coded M-ary direct sequence spread spectrum for mobile underwater acoustic communication system** — Yang, Guang; Zhou, Feng; Lou, Yi 等 (2021) *Applied Acoustics*
+- **Ecologically Friendly Full-Duplex Data Transmission Scheme for Underwater Acoustic Sensor Networks** — Qian, Yujie; Su, Hao; Han, Guangjie 等 (2021) *IEEE Internet of Things Journal*
+- **Efficient interpolation based OMP for sparse channel estimation in underwater acoustic OFDM** — Ma, Lu; Li, Tao; Liu, Songzuo 等 (2021) *Applied Acoustics*
+- **Enhanced channel estimation and symbol detection for high speed multi-input multi-output underwater acoustic communications** — Ling, Jun; Yardibi, Tarik; Su, Xiang 等 (2009) *The Journal of the Acoustical Society of America*
+- **Error Rate Improvement in Underwater MIMO Communications Using Sparse Partial Response Equalization** — Roy, Subhadeep; Duman, Tolga M.; McDonald, Vincent Keyko (2009) *IEEE Journal of Oceanic Engineering*
+- **Estimation and interpolation of underwater low frequency ambient noise spectrum using artificial neural networks** — Ramji, S.; Latha, G.; Ramakrishnan, S. (2009) *Applied Acoustics*
+- **Estimation and tracking of rapidly time-varying broadband acoustic communication channels** (2005)
+- **Experimental Estimation of the Ranging Accuracy Using Underwater Acoustic Modems in the Frequency Band of 12 kHz** — Rodionov, A.Yu.; Kulik, S.Yu.; Dubrovin, F.S. 等 (2020)
+- **Experimental Evaluation of JANUS Fast Modes in Very High Acoustic Frequency Bands** — Li, Jinfeng; Zheng, Yahong Rosa (2023) *IEEE Journal of Oceanic Engineering*
+- **Experimental demonstration of differential OFDM underwater acoustic communication with acoustic vector sensor** — Wang, Chi; Yin, Jingwei; Huang, Defeng 等 (2015) *Applied Acoustics*
+- **Experimental demonstration of phase-coherent underwater acoustic communications using a compact array** — He, Chengbing; Zhang, Qunfei; Yan, Zhenhua 等 (2017) *Ocean Engineering*
+- **Experimental demonstration of single carrier underwater acoustic communication using a vector sensor** — Han, Xiao; Yin, Jing-wei; Yu, Ge 等 (2015) *Applied Acoustics*
+- **Exploiting Spatial–Temporal Joint Sparsity for Underwater Acoustic Multiple-Input–Multiple-Output Communications** — Zhou, Yuehai; Tong, Feng; Song, Aijun 等 (2021) *IEEE Journal of Oceanic Engineering*
+- **Filterbank Multicarrier Communications for Underwater Acoustic Channels** — Amini, Pooyan; Chen, Rong-Rong; Farhang-Boroujeny, Behrouz (2015) *IEEE Journal of Oceanic Engineering*
+- **Frequency domain direct adaptive turbo equalization based on block least mean square for underwater acoustic communications** — Jing, Lianyou; Zheng, Tonghui; He, Chengbing 等 (2022) *Applied Acoustics*
+- **Frequency domain direct adaptive turbo equalization based on block normalized minimum-SER for underwater acoustic communications** — Zheng, Tonghui; Jing, Lianyou; Long, Chao 等 (2023) *Applied Acoustics*
+- **Frequency reversal-based inter-carrier interference mitigation for underwater acoustic OFDM communications** — Nie, Xingyang; Wang, Biao; Tao, Shifei (2022) *Applied Acoustics*
+- **Frequency-Domain Decision Feedback Equalization for Single-Carrier Transmissions in Fast Time-Varying Underwater Acoustic Channels** — Tu, Xingbin; Xu, Xiaomei; Song, Aijun (2021) *IEEE Journal of Oceanic Engineering*
+- **Hamming Distance Optimized Underwater Acoustic OTFS-IM Systems** — Guo, Xiaopeng; Wang, Biao; Zhu, Yunan 等 (2023) *Entropy*
+- **Hardware Implementation of High-Order PSK Modulation for MIMO Acoustic Modem Using Microcontrollers** — Xue, Yukang; Zheng, Yahong Rosa (2021)
+- **High-Frequency Acoustic Estimation of Time-Varying Underwater Sparse Channels Using Multiple Sources and Receivers Operated Simultaneously** — Kaddouri, Samar; Beaujean, Pierre-Philippe J.; Bouvet, Pierre-Jean (2018) *IEEE Access*
+- **High-Rate Communication for Underwater Acoustic Channels Using Multiple Transmitters and Space–Time Coding: Receiver Structures and Experimental Results** — Roy, Subhadeep; Duman, Tolga M.; McDonald, Vincent 等 (2007) *IEEE Journal of Oceanic Engineering*
+- **High-rate underwater acoustic communication at over 600 kbps \times km for vertical uplink data transmission on a full-depth lander system** — Shimura, Takuya; Kida, Yukihiro; Deguchi, Mitsuyasu 等 (2021)
+- **High-speed underwater acoustic communication for multi-agent supervised autonomy** — Jarrot, Arnaud; Gelman, Andriy; Choi, Gloria 等 (2021)
+- **Hybrid Carrier Communication with Partial FFT Demodulation over Underwater Acoustic Channels** — Li, Yong; Sha, Xuejun; Wang, Kun (2013) *IEEE Communications Letters*
+- **Hybrid Carrier Underwater Acoustic Communication Based on Joint Time-Frequency Domain Equalization** — Yin, Jingwei; Ge, Wei; Han, Xiao 等 (2019) *IEEE Access*
+- **Impact of ocean variability on coherent underwater acoustic communications during the Kauai experiment (KauaiEx)** — Song, Aijun; Badiey, Mohsen; Song, H. C. 等 (2008) *The Journal of the Acoustical Society of America*
+- **Improvement of Time-Reversal Communications Using Adaptive Channel Equalizers** — Song, H.C.; Hodgkiss, W.S.; Kuperman, W.A. 等 (2006) *IEEE Journal of Oceanic Engineering*
+- **Impulsive Noise Mitigation in Underwater Acoustic OFDM Systems** — Kuai, Xiaoyan; Sun, Haixin; Zhou, Shengli 等 (2016) *IEEE Transactions on Vehicular Technology*
+- **Iterative Carrier Frequency Offset and Channel Estimation for Underwater Acoustic OFDM Systems** — Kang, Taehyuk; Iltis, Ronald A. (2008) *IEEE Journal on Selected Areas in Communications*
+- **Iterative Receiver in Time-Frequency Domain for Underwater Acoustic Communications** — Zhao, Liang; Ge, Jianhua (2012) *Procedia Engineering*
+- **Iterative turbo receiver design for superposition coding based downlink underwater acoustic OFDM communication system** — Qiao, Gang; Liu, Xinyu; Ma, Lu 等 (2021) *Physical Communication*
+- **Joint CFO, Gridless Channel Estimation and Data Detection for Underwater Acoustic OFDM Systems** — Wan, Lei; Zhu, Jiang; Cheng, En 等 (2022) *IEEE Journal of Oceanic Engineering*
+- **Joint Channel and Impulsive Noise Estimation in Underwater Acoustic OFDM Systems** — Chen, Peng; Rong, Yue; Nordholm, Sven 等 (2017) *IEEE Transactions on Vehicular Technology*
+- **Joint Energy and Correlation Detection Assisted Non-Coherent OFDM-DCSK System for Underwater Acoustic Communications** — Cai, Xiangming; Xu, Weikai; Wang, Lin 等 (2022) *IEEE Transactions on Communications*
+- **Joint blind frequency-domain equalization and decoding for rateless underwater acoustic communication** — Liu, Zhiyong; Ke, Miao; Tan, Zhoumei (2022) *Applied Acoustics*
+- **Joint message-passing-based accurate bidirectional channel estimation and generalized-approximation-message-passing-based low-complexity perfect equalization with underwater moving transceivers** — Wang, Liang; Qiao, Peiyue; Liang, Junyan 等 (2022) *Applied Acoustics*
+- **Joint passive-phase conjugation with adaptive multichannel combining for coherent underwater acoustic communications** — Zhang, Guosong; Dong, Hefeng (2012) *Applied Acoustics*
+- **Joint time-frequency domain equalization of MSK signal over underwater acoustic channel** — Han, Ruigang; Jia, Ning; Huang, Jianchun 等 (2022) *Applied Acoustics*
+- **Localization Algorithm for Underwater Sensor Network: A Review** — Luo, Junhai; Yang, Yang; Wang, Zhiyan 等 (2021) *IEEE Internet of Things Journal*
+- **Long-Range Underwater Acoustic Navigation and Communication System** — Rodionov, Aleksandr; Unru, Petr; Golov, Aleksandr (2020)
+- **Long-range multi-carrier acoustic communications in shallow water based on iterative sparse channel estimation** — Kang, Taehyuk; Song, H. C.; Hodgkiss, W. S. 等 (2010) *The Journal of the Acoustical Society of America*
+- **MIMO-OFDM Over a 10km Acoustic Link: An Experimental Study at the Suruga Bay, Japan** — Li, Zhengnan; Ventosa, Alicia Bel; Cuji, Diego A. 等 (2022)
+- **Model-based learning of underwater acoustic communication performance for marine robots** — Kontoudis, George P.; Krauss, Stephen; Stilwell, Daniel J. (2021) *Robotics and Autonomous Systems*
+- **Multi-array iterative receiver for underwater acoustic OFDM communications with EXIT chart evaluation** — Zhang, Lan; Xu, Xiaomei; Feng, Wei 等 (2016) *Applied Acoustics*
+- **Multiband OFDM for Covert Acoustic Communications** — Leus, Geert; van Walree, Paul A. (2008) *IEEE Journal on Selected Areas in Communications*
+- **Multicarrier Acoustic Communications in Multiuser and Interference-Limited Regimes** — Li, Zhengnan; Stojanovic, Milica (2023) *IEEE Journal of Oceanic Engineering*
+- **Multicarrier Communication Over Underwater Acoustic Channels With Nonuniform Doppler Shifts** — Li, Baosheng; Zhou, Shengli; Stojanovic, Milica 等 (2008) *IEEE Journal of Oceanic Engineering*
+- **Multichannel equalization by decision-directed passive phase conjugation: experimental results** — Flynn, J.A.; Ritcey, J.A.; Rouseff, D. 等 (2004) *IEEE Journal of Oceanic Engineering*
+- **Multichannel processing of broad-band multiuser communication signals in shallow water acoustic channels** — Stojanovic, M.; Zvonar, Z. (1996) *IEEE Journal of Oceanic Engineering*
+- **Multiple-input-multiple-output coherent time reversal communications in a shallow-water acoustic channel** — Song, H.C.; Roux, P.; Hodgkiss, W.S. 等 (2006) *IEEE Journal of Oceanic Engineering*
+- **Multiuser Communications Using Passive Time Reversal** — Song, H. C.; Hodgkiss, W. S.; Kuperman, W. A. 等 (2007) *IEEE Journal of Oceanic Engineering*
+- **Neglected infrastructures for 6G—Underwater communications: How mature are they?** — Dao, Nhu-Ngoc; Tu, Ngo Hoang; Thanh, Tran Thien 等 (2023) *Journal of Network and Computer Applications*
+- **Orthogonal time chirp space modulation based upon fractional Fourier transform** — Miao, Hongxia; Peng, Mugen (2023) *Signal Processing*
+- **Parametric Replay-Based Simulation of Underwater Acoustic Communication Channels** — Socheleau, Francois-Xavier; Laot, Christophe; Passerieux, Jean-Michel (2015) *IEEE Journal of Oceanic Engineering*
+- **Passive Time Reversal Acoustic Communications Through Shallow-Water Internal Waves** — Song, Aijun; Badiey, Mohsen; Newhall, Arthur E. 等 (2010) *IEEE Journal of Oceanic Engineering*
+- **Performance limitations in underwater acoustic telemetry** — Catipovic, J.A. (1990) *IEEE Journal of Oceanic Engineering*
+- **Phase conjugation in the ocean: Experimental demonstration of an acoustic time-reversal mirror** — Kuperman, W. A.; Hodgkiss, William S.; Song, Hee Chun 等 (1998) *The Journal of the Acoustical Society of America*
+- **Phase conjugation in underwater acoustics** — Jackson, Darrell R.; Dowling, David R. (1991) *The Journal of the Acoustical Society of America*
+- **Phase-coherent digital communications for underwater acoustic channels** — Stojanovic, M.; Catipovic, J.A.; Proakis, J.G. (1994) *IEEE Journal of Oceanic Engineering*
+- **Research on Distributed Compressed Sensing With Dynamic Block Sparsity for Underwater Acoustic Channel Estimation** — Zhou, Yuehai; Chen, Dongsheng; Tong, Feng 等 (2023) *IEEE Internet of Things Journal*
+- **Residual Doppler Effect Analysis of the FBMC/OQAM Communication System in Underwater Acoustic Channel** — Qiao, Gang; Liu, Xinyu; Ma, Lu 等 (2021) *IEEE Communications Letters*
+- **Self-interference channel modeling for in-band full-duplex underwater acoustic modem** — Zhao, Yunjiang; Qiao, Gang; Liu, Songzuo 等 (2021) *Applied Acoustics*
+- **Signal Transmission Using Underwater Acoustic Vector Transducers** — Chen, Chen; Abdi, Ali (2013) *IEEE Transactions on Signal Processing*
+- **Single-carrier with index modulation for underwater acoustic communications** — Shi, Wentao; He, Chengbing; Dang, Qianqian 等 (2021) *Applied Acoustics*
+- **Space–Frequency Block Coding for Underwater Acoustic Communications** — Zorita, Eduard Valera; Stojanovic, Milica (2015) *IEEE Journal of Oceanic Engineering*
+- **Sparsity-Aware Adaptive Turbo Equalization for Underwater Acoustic Communications in the Mariana Trench** — Xi, Junyi; Yan, Shefeng; Xu, Lijun 等 (2021) *IEEE Journal of Oceanic Engineering*
+- **Statistical Modeling and Performance Analysis of Cooperative Communication in Frequency-Selective Underwater Acoustic Channel Using Vector Sensor** — Rawat, Manishika; Lall, Brejesh; Srirangarajan, Seshan (2021) *IEEE Sensors Journal*
+- **Statistical analysis of time-varying channel for underwater acoustic communication and network** — Yan, Honglu; Ma, Tianlong; Pan, Chenyu 等 (2021)
+- **Successive Interference Cancellation for Underwater Acoustic Communications** — Cho, Steve E.; Song, Hee Chun; Hodgkiss, William S. (2011) *IEEE Journal of Oceanic Engineering*
+- **Surface wave focusing and acoustic communications in the surf zone** — Preisig, James C.; Deane, Grant B. (2004) *The Journal of the Acoustical Society of America*
+- **The JANUS underwater communications standard** — Potter, John; Alves, João; Green, Dale 等 (2014)
+- **The state of the art in underwater acoustic telemetry** — Kilfoyle, D.B.; Baggeroer, A.B. (2000) *IEEE Journal of Oceanic Engineering*
+- **Time reversal communication using vertical particle velocity and pressure signals in shallow water** — Kim, Sunhyo; Kim, Hyeonsu; Jung, Seom-kyu 等 (2019) *Ad Hoc Networks*
+- **Time-reversal mirrors** — Fink, M (1993) *Journal of Physics D: Applied Physics*
+- **Underwater Acoustic Channel Tracking with Cluster Variation Learning for Acoustic Mobile OFDM Communication** — Li, Wei; Zhan, Weicheng; Lin, Bang 等 (2022) *Applied Acoustics*
+- **Underwater Acoustic Communication Channel Modeling Using Reservoir Computing** — Onasami, Oluwaseyi; Feng, Ming; Xu, Hao 等 (2022) *IEEE Access*
+- **Underwater acoustic communication to an unmanned underwater vehicle with a compact vector sensor array** — Han, Xiao; Yin, Jingwei; Tian, Yanan 等 (2019) *Ocean Engineering*
+- **Underwater acoustic communications using time reversal** — Edelmann, G.F.; Song, H.C.; Kim, S. 等 (2005) *IEEE Journal of Oceanic Engineering*
+- **Wideband Ultrasonic Acoustic Underwater Channels: Measurements and Characterization** — López-Fernández, Jesús; Fernández-Plazaola, Unai; Paris, José F. 等 (2020) *IEEE Transactions on Vehicular Technology*
+- **OTFS underwater acoustic communications based on passive time reversal** — Jing, Lianyou; Zhang, Namin; He, Chengbing 等 (2022) *Applied Acoustics*
+- **An iterative receiver for time-domain oversampled OFDM system over time-varying underwater acoustic channels** — Peng, Bo; Dong, Hefeng (2021) *Applied Acoustics*
+- **Cross-correlation quasi-gradient Doppler estimation for underwater acoustic OFDM mobile communications** — Li, Bin; Tong, Feng; Li, Jiang-hui 等 (2022) *Applied Acoustics*
+- **Exploiting Rapidly Time-Varying Sparsity for Underwater Acoustic Communication** — Jiang, Weihua; Tong, Feng; Zhu, Zhengliang (2022) *IEEE Transactions on Vehicular Technology*
+- **Belief-Propagation-Based Low-Complexity Channel Estimation and Detection for Underwater Acoustic Communications With Moving Transceivers** — Yang, Guang; Guo, Qinghua; Qin, Zhengchang 等 (2022) *IEEE Journal of Oceanic Engineering*
+- **Underwater acoustic communication channels: Propagation models and statistical characterization** — Stojanovic, Milica; Preisig, James (2009) *IEEE Communications Magazine*
+- **Joint Message-Passing-Based Bidirectional Channel Estimation and Equalization With Superimposed Training for Underwater Acoustic Communications** — Yang, Guang; Guo, Qinghua; Ding, Hanxue 等 (2021) *IEEE Journal of Oceanic Engineering*
+- **A Software-Defined Underwater Acoustic Modem for Everyone: Design and Evaluation** — Campagnaro, Filippo; Francescon, Roberto; Coccolo, Emanuele 等 (2023) *IEEE Internet of Things Magazine*
+- **Differentially coherent detection: Lower complexity, higher capacity?** — Aval, Yashar; Wilson, Sarah Kate; Stojanovic, Milica (2016)
+- **Experimental Evaluation of a Real-Time FPGA Platform for Multichannel Coherent Acoustic Communication** — Rudander, Jacob; Husøy, Thor; van Walree, Paul A. 等 (2023) *IEEE Journal of Oceanic Engineering*
+- **Full-duplex underwater acoustic communications via self-interference cancellation in space** — Hsieh, Yung-Ting; Qi, Zhuoran; Pompili, Dario (2023) *Journal of Communications and Networks*
+- **Joint Channel Estimation and Decoding for Underwater Acoustic Communication With a Short Pilot Sequence** — Qin, Xiangzhao; Diamant, Roee (2023) *IEEE Journal of Oceanic Engineering*
+- **Long-range underwater acoustic channel estimation** — Jiang, Weihua; Diamant, Roee (2023) *IEEE Transactions on Wireless Communications*
+- **Model-Based Thompson Sampling for Frequency and Rate Selection in Underwater Acoustic Communications** — Tong, Jingwen; Fu, Liqun; Han, Zhu (2023) *IEEE Transactions on Wireless Communications*
+- **On capacity of a class of acoustic channels** — Aval, Yashar; Wilson, Sarah Kate; Stojanovic, Milica (2014)
+
+## IEEE TSP（229 篇）
+
+- **A Comparative Study of Gamma Markov Chains for Temporal Non-Negative Matrix Factorization** — Filstroff, Louis; Gouvert, Olivier; Fevotte, Cedric 等 (2021) *IEEE Transactions on Signal Processing*
+- **A Depth-First Iterative Algorithm for the Conjugate Pair Fast Fourier Transform** — Becoulet, Alexandre; Verguet, Amandine (2021) *IEEE Transactions on Signal Processing*
+- **A General Framework for Constrained Convex Quaternion Optimization** — Flamant, Julien; Miron, Sebastian; Brie, David (2022) *IEEE Transactions on Signal Processing*
+- **A Low-Cost Algorithm for Adaptive Sampling and Censoring in Diffusion Networks** — Tiglea, Daniel G.; Candido, Renato; Silva, Magno T. M. (2021) *IEEE Transactions on Signal Processing*
+- **A Multi-Taper S-Transform Method for Spectral Estimation of Stationary Processes** — Huang, Zifeng; Xu, You-Lin (2021) *IEEE Transactions on Signal Processing*
+- **A Novel Wave Decomposition for Oscillatory Signals** — RuedaSabater, Cristina; Rodriguez-Collado, Alejandro; Larriba, Yolanda (2021) *IEEE Transactions on Signal Processing*
+- **A Quasi-Coherent Detection Framework for Mobile Multi-Agent Networks** — Gu, Kai; Wang, Yunlong; Shen, Yuan (2021) *IEEE Transactions on Signal Processing*
+- **A Riemannian Framework for Low-Rank Structured Elliptical Models** — Bouchard, Florent; Breloy, Arnaud; Ginolhac, Guillaume 等 (2021) *IEEE Transactions on Signal Processing*
+- **A Stochastic Model for Characterizing Fluctuations in Chemical Sensing** — Grover, Abhishek; Lall, Brejesh (2021) *IEEE Transactions on Signal Processing*
+- **A Unified Framework for Multistatic Passive Radar Target Detection Under Uncalibrated Receivers** — Zaimbashi, Amir (2021) *IEEE Transactions on Signal Processing*
+- **A Variational Bayesian Inference-Inspired Unrolled Deep Network for MIMO Detection** — Wan, Qian; Fang, Jun; Huang, Yinsen 等 (2022) *IEEE Transactions on Signal Processing*
+- **Accelerated Structured Alternating Projections for Robust Spectrally Sparse Signal Recovery** — Cai, HanQin; Cai, Jian-Feng; Wang, Tianming 等 (2021) *IEEE Transactions on Signal Processing*
+- **Accelerating Optimal Experimental Design for Robust Synchronization of Uncertain Kuramoto Oscillator Model Using Machine Learning** — Woo, Hyun-Myung; Hong, Youngjoon; Kwon, Bongsuk 等 (2021) *IEEE Transactions on Signal Processing*
+- **Adaptive Filters With Robust Augmented Space Linear Model: A Weighted $k$-NN Method** — Zhang, Qiangqiang; Feng, Wei; Iu, Herbert H. C. 等 (2021) *IEEE Transactions on Signal Processing*
+- **Adaptive Graph-Constrained Group Testing** — Sihag, Saurabh; Tajer, Ali; Mitra, Urbashi (2022) *IEEE Transactions on Signal Processing*
+- **Adaptive IQ Mismatch Compensation in Time-Domain Using Frequency-Domain Observations** — Nayebi, Elina; Dayal, Pranav; Song, Kee-Bong (2021) *IEEE Transactions on Signal Processing*
+- **Adaptive Kernel Kalman Filter** — Sun, Mengwei; Davies, Mike E.; Proudler, Ian Keith 等 (2023) *IEEE Transactions on Signal Processing*
+- **Adaptive Radar Detection and Classification Algorithms for Multiple Coherent Signals** — Han, Sudan; Yan, Linjie; Zhang, Yuxuan 等 (2021) *IEEE Transactions on Signal Processing*
+- **Adaptive Radar Detection in Low-Rank Heterogeneous Clutter via Invariance Theory** — Rong, Yao; Aubry, Augusto; De Maio, Antonio 等 (2021) *IEEE Transactions on Signal Processing*
+- **Adaptive Sparse Array Beamformer Design by Regularized Complementary Antenna Switching** — Wang, Xiangrong; Greco, Maria Sabrina; Gini, Fulvio (2021) *IEEE Transactions on Signal Processing*
+- **Adaptive Superresolution in Deconvolution of Sparse Peaks** — Koulouri, Alexandra; Heins, Pia; Burger, Martin (2021) *IEEE Transactions on Signal Processing*
+- **Allpass Feedback Delay Networks** — Schlecht, Sebastian J. (2021) *IEEE Transactions on Signal Processing*
+- **An ESPRIT-Based Supervised Channel Estimation Method Using Tensor Train Decomposition for mmWave 3-D MIMO-OFDM Systems** — Gong, Xiao; Chen, Wei; Sun, Lei 等 (2023) *IEEE Transactions on Signal Processing*
+- **An Efficient Forecasting Approach to Reduce Boundary Effects in Real-Time Time-Frequency Analysis** — Meynard, Adrien; Wu, Hau-Tieng (2021) *IEEE Transactions on Signal Processing*
+- **An Efficient Power Allocation Strategy for Maneuvering Target Tracking in Cognitive MIMO Radar** — Zhang, Haowei; Liu, Weijian; Zong, Binfeng 等 (2021) *IEEE Transactions on Signal Processing*
+- **An Improved Convergence Analysis for Decentralized Online Stochastic Non-Convex Optimization** — Xin, Ran; Khan, Usman A.; Kar, Soummya (2021) *IEEE Transactions on Signal Processing*
+- **An Iterative Implementation-Based Approach for Joint Source Localization and Association Under Multipath Propagation Environments** — Liu, Yuan; Tan, Zhi-Wei; Khong, Andy W. H. 等 (2023) *IEEE Transactions on Signal Processing*
+- **Analysis of Propagation Delay Effects on Bearings-Only Fusion of Heterogeneous Sensors** — Arulampalam, Sanjeev; Ristic, Branko; Kirubarajan, Thia (2021) *IEEE Transactions on Signal Processing*
+- **Analysis of Reassignment Operators Used in Synchrosqueezing Transforms: With an Application to Instantaneous Frequency Estimation** — Meignen, Sylvain; Singh, Neha (2022) *IEEE Transactions on Signal Processing*
+- **Approximate Message Passing With Unitary Transformation for Robust Bilinear Recovery** — Yuan, Zhengdao; Guo, Qinghua; Luo, Man (2021) *IEEE Transactions on Signal Processing*
+- **Asymptotically Optimal Sampling Policy for Quickest Change Detection With Observation-Switching Cost** — Lau, Tze Siong; Tay, Wee Peng (2021) *IEEE Transactions on Signal Processing*
+- **Asynchrony Increases Efficiency: Time Encoding of Videos and Low-Rank Signals** — Adam, Karen; Scholefield, Adam; Vetterli, Martin (2022) *IEEE Transactions on Signal Processing*
+- **Band-Stop Smoothing Filter Design** — Roonizi, Arman Kheirati; Jutten, Christian (2021) *IEEE Transactions on Signal Processing*
+- **Bayesian Reconstruction of Fourier Pairs** — Tobar, Felipe; Araya-Hernandez, Lerko; Huijse, Pablo 等 (2021) *IEEE Transactions on Signal Processing*
+- **Bayesian Sparse Blind Deconvolution Using MCMC Methods Based on Normal-Inverse-Gamma Prior** — Civek, Burak C.; Ertin, Emre (2022) *IEEE Transactions on Signal Processing*
+- **Beyond Procrustes: Balancing-Free Gradient Descent for Asymmetric Low-Rank Matrix Sensing** — Ma, Cong; Li, Yuanxin; Chi, Yuejie (2021) *IEEE Transactions on Signal Processing*
+- **BiLiMO: Bit-Limited MIMO Radar via Task-Based Quantization** — Xi, Feng; Shlezinger, Nir; C. Eldar, Yonina (2021) *IEEE Transactions on Signal Processing*
+- **Bias-Compensated Sign Algorithm for Noisy Inputs and Its Step-Size Optimization** — Ni, Jingen; Gao, Ye; Chen, Xu 等 (2021) *IEEE Transactions on Signal Processing*
+- **Bilateral Spectrum Weighted Total Variation for Noisy-Image Super-Resolution and Image Denoising** — Sun, Kaicong; Simon, Sven (2021) *IEEE Transactions on Signal Processing*
+- **Bilinear Channel Estimation for MIMO OFDM: Lower Bounds and Training Sequence Optimization** — Elnakeeb, Amr; Mitra, Urbashi (2021) *IEEE Transactions on Signal Processing*
+- **Binary MIMO Detection via Homotopy Optimization and Its Deep Adaptation** — Shao, Mingjie; Ma, Wing-Kin (2021) *IEEE Transactions on Signal Processing*
+- **Blind Direction-of-Arrival Estimation in Acoustic Vector-Sensor Arrays via Tensor Decomposition and Kullback-Leibler Divergence Covariance Fitting** — Weiss, Amir (2021) *IEEE Transactions on Signal Processing*
+- **Blind Localization of Early Room Reflections Using Phase Aligned Spatial Correlation** — Shlomo, Tom; Rafaely, Boaz (2021) *IEEE Transactions on Signal Processing*
+- **CPGD: Cadzow Plug-and-Play Gradient Descent for Generalised FRI** — Simeoni, Matthieu; Besson, Adrien; Hurley, Paul 等 (2021) *IEEE Transactions on Signal Processing*
+- **Cascaded Spline-Based Models for Complex Nonlinear Systems: Methods and Applications** — Pascual Campo, Pablo; Anttila, Lauri; Korpi, Dani 等 (2021) *IEEE Transactions on Signal Processing*
+- **Centralized Cooperative Sensor Fusion for Dynamic Sensor Network With Limited Field-of-View via Labeled Multi-Bernoulli Filter** — Gostar, Amirali Khodadadian; Rathnayake, Tharindu; Tennakoon, Ruwan 等 (2021) *IEEE Transactions on Signal Processing*
+- **Channel Estimation for Massive MIMO: An Information Geometry Approach** — Yang, Jiyuan; Lu, An-An; Chen, Yan 等 (2022) *IEEE Transactions on Signal Processing*
+- **Comments on “Energy-Efficient Beamforming Design for MU-MISO Mixed RF/VLC Heterogeneous Wireless Networks”** — Pham, Thanh V.; Pham, Anh T. (2021) *IEEE Transactions on Signal Processing*
+- **Comments on “Localization of Near-Field Sources Based on Linear Prediction and Oblique Projection Operator”** — Friedlander, Benjamin (2021) *IEEE Transactions on Signal Processing*
+- **Community Detection and Matrix Completion With Social and Item Similarity Graphs** — Zhang, Qiaosheng; Tan, Vincent Y. F.; Suh, Changho (2021) *IEEE Transactions on Signal Processing*
+- **Complex Parameter Rao, Wald, Gradient, and Durbin Tests for Multichannel Signal Detection** — Sun, Mengru; Liu, Weijian; Liu, Jun 等 (2022) *IEEE Transactions on Signal Processing*
+- **Compressed Gradient Methods With Hessian-Aided Error Compensation** — Khirirat, Sarit; Magnusson, Sindri; Johansson, Mikael (2021) *IEEE Transactions on Signal Processing*
+- **Compressed Streaming Importance Sampling for Efficient Representations of Localization Distributions** — Bedi, Amrit Singh; Koppel, Alec; Sadler, Brian M. 等 (2019)
+- **Constrained Radar Waveform Design for Range Profiling** — Tang, Bo; Liu, Jun; Wang, Hai 等 (2021) *IEEE Transactions on Signal Processing*
+- **Construction of Golay Complementary Matrices and Its Applications to MIMO Omnidirectional Transmission** — Li, Fengjie; Jiang, Yi; Du, Cheng 等 (2021) *IEEE Transactions on Signal Processing*
+- **Convolutional Neural Network-Aided Tree-Based Bit-Flipping Framework for Polar Decoder Using Imitation Learning** — Teng, Chieh-Fang; Wu, An-Yeu (2021) *IEEE Transactions on Signal Processing*
+- **Cooperative Field Prediction and Smoothing via Covariance Intersection** — Li, Zhuo; You, Keyou; Song, Shiji (2021) *IEEE Transactions on Signal Processing*
+- **Corrections to “Set Squeezing Procedure for Quadratically Perturbed Chance-Constrained Programming”** — He, Xin; Wu, Yik-Chung (2021) *IEEE Transactions on Signal Processing*
+- **Cramér-Rao Bound for Estimation After Model Selection and Its Application to Sparse Vector Estimation** — Meir, Elad; Routtenberg, Tirza (2021) *IEEE Transactions on Signal Processing*
+- **Cyclostationary Processes With Evolving Periods and Amplitudes** — Das, Soumya; Genton, Marc G. (2021) *IEEE Transactions on Signal Processing*
+- **Data-Driven Representations for Testing Independence: Modeling, Analysis and Connection With Mutual Information Estimation** — Gonzalez, Mauricio; Silva, Jorge; Videla, Miguel 等 (2022) *IEEE Transactions on Signal Processing*
+- **Decentralized Blockchain-Based Dynamic Spectrum Acquisition for Wireless Downlink Communications** — Jiang, Miao; Li, Yiqing; Zhang, Qi 等 (2021) *IEEE Transactions on Signal Processing*
+- **Decentralized Learning With Lazy and Approximate Dual Gradients** — Liu, Yanli; Sun, Yuejiao; Yin, Wotao (2021) *IEEE Transactions on Signal Processing*
+- **Decentralized Online Convex Optimization With Event-Triggered Communications** — Cao, Xuanyu; Basar, Tamer (2021) *IEEE Transactions on Signal Processing*
+- **Deep Learning Model-Aware Regulatization With Applications to Inverse Problems** — Amjad, Jaweria; Lyu, Zhaoyan; Rodrigues, Miguel R. D. (2021) *IEEE Transactions on Signal Processing*
+- **Design of Asymmetric Shift Operators for Efficient Decentralized Subspace Projection** — Mollaebrahim, Siavash; Beferull-Lozano, Baltasar (2021) *IEEE Transactions on Signal Processing*
+- **Detection of the Number of Signals by Signal Subspace Matching** — Wax, Mati; Adler, Amir (2021) *IEEE Transactions on Signal Processing*
+- **Digraph Signal Processing With Generalized Boundary Conditions** — Seifert, Bastian; Puschel, Markus (2021) *IEEE Transactions on Signal Processing*
+- **Direction-of-Arrival Estimation for Large Antenna Arrays With Hybrid Analog and Digital Architectures** — Zhang, Ruoyu; Shim, Byonghyo; Wu, Wen (2022) *IEEE Transactions on Signal Processing*
+- **Directionally Weighted Wave Field Estimation Exploiting Prior Information on Source Direction** — Ueno, Natsuki; Koyama, Shoichi; Saruwatari, Hiroshi (2021) *IEEE Transactions on Signal Processing*
+- **Discrete Signal Processing with Set Functions** — Puschel, Markus; Wendler, Chris (2021) *IEEE Transactions on Signal Processing*
+- **Discrete Time $q$-Lag Maximum Likelihood FIR Smoothing and Iterative Recursive Algorithm** — Zhao, Shunyi; Wang, Jinfu; Shmaliy, Yuriy S. 等 (2021) *IEEE Transactions on Signal Processing*
+- **Distributed Auxiliary Particle Filtering With Diffusion Strategy for Target Tracking: A Dynamic Event-Triggered Approach** — Song, Weihao; Wang, Zidong; Wang, Jianan 等 (2021) *IEEE Transactions on Signal Processing*
+- **Distributed Learning in Non-Convex Environments— Part II: Polynomial Escape From Saddle-Points** — Vlaski, Stefan; Sayed, Ali H. (2021) *IEEE Transactions on Signal Processing*
+- **Distributed Learning in Non-Convex Environments—Part I: Agreement at a Linear Rate** — Vlaski, Stefan; Sayed, Ali H. (2021) *IEEE Transactions on Signal Processing*
+- **Distributed Multi-View Sparse Vector Recovery** — Tian, Zhuojun; Zhang, Zhaoyang; Hanzo, Lajos (2023) *IEEE Transactions on Signal Processing*
+- **Distributed Nonlinear Polynomial Graph Filter and Its Output Graph Spectrum: Filter Analysis and Design** — Xiao, Zhenlong; Fang, He; Wang, Xianbin (2021) *IEEE Transactions on Signal Processing*
+- **Dynamic Independent Component/Vector Analysis: Time-Variant Linear Mixtures Separable by Time-Invariant Beamformers** — Koldovsky, Zbynek; Kautsky, Vaclav; Tichavsky, Petr 等 (2021) *IEEE Transactions on Signal Processing*
+- **Dynamic Online Learning via Frank-Wolfe Algorithm** — Kalhan, Deepak S.; Singh Bedi, Amrit; Koppel, Alec 等 (2021) *IEEE Transactions on Signal Processing*
+- **Dynamic Regret Bound for Moving Target Tracking Based on Online Time-of-Arrival Measurements** — Pun, Yuen-Man; So, Anthony Man-Cho (2020)
+- **Efficient Sensor Placement for Signal Reconstruction Based on Recursive Methods** — Li, Bangjun; Liu, Haoran; Wang, Ruzhu (2021) *IEEE Transactions on Signal Processing*
+- **Eigenvalue Decomposition of a Parahermitian Matrix: Extraction of Analytic Eigenvalues** — Weiss, Stephan; Proudler, Ian; Coutts, Fraser (2021) *IEEE Transactions on Signal Processing*
+- **Energy Efficiency and Spectral Efficiency Tradeoff in RIS-Aided Multiuser MIMO Uplink Transmission** — You, Li; Xiong, Jiayuan; Ng, Derrick Wing Kwan 等 (2021) *IEEE Transactions on Signal Processing*
+- **Estimating and Tracking Wireless Channels Under Carrier and Sampling Frequency Offsets** — Pärlin, Karel; Riihonen, Taneli; Le Nir, Vincent 等 (2023) *IEEE Transactions on Signal Processing*
+- **Expectation Propagation-Based Sampling Decoding: Enhancement and Optimization** — Wang, Zheng; Lyu, Shanxiang; Xia, Yili 等 (2021) *IEEE Transactions on Signal Processing*
+- **Exploiting Relevance for Online Decision-Making in High-Dimensions** — Turgay, Eralp; Bulucu, Cem; Tekin, Cem (2021) *IEEE Transactions on Signal Processing*
+- **Extended Target Tracking With a Lidar Sensor Using Random Matrices and a Virtual Measurement Model** — Hoher, Patrick; Wirtensohn, Stefan; Baur, Tim 等 (2022) *IEEE Transactions on Signal Processing*
+- **Fast Graph Filters for Decentralized Subspace Projection** — Romero, Daniel; Mollaebrahim, Siavash; Beferull-Lozano, Baltasar 等 (2021) *IEEE Transactions on Signal Processing*
+- **Fast Signal Recovery From Quadratic Measurements** — Moscoso, Miguel; Novikov, Alexei; Papanicolaou, George 等 (2021) *IEEE Transactions on Signal Processing*
+- **Filtering in Pairwise Markov Model With Student's t Non-Stationary Noise With Application to Target Tracking** — Zhang, Guanghua; Lan, Jian; Le, Zhang 等 (2021) *IEEE Transactions on Signal Processing*
+- **Fixed-Point Maximum Total Complex Correntropy Algorithm for Adaptive Filter** — Qian, Guobing; Mei, Jiaojiao; Iu, Herbert H. C. 等 (2021) *IEEE Transactions on Signal Processing*
+- **Frequency Domain Analysis and Equalization for Molecular Communication** — Huang, Yu; Ji, Fei; Wei, Zhuangkun 等 (2021) *IEEE Transactions on Signal Processing*
+- **Frequency Estimation for Zero-Padded Signal Based on the Amplitude Ratio of Two DFT Samples** — Zhang, Yixiong; Xie, Yangming; Li, Xin 等 (2021) *IEEE Transactions on Signal Processing*
+- **Functional Bayesian Filter** — Li, Kan; Principe, Jose C. (2022) *IEEE Transactions on Signal Processing*
+- **General Cauchy Conjugate Gradient Algorithms Based on Multiple Random Fourier Features** — Zhang, Haonan; Yang, Bo; Wang, Lin 等 (2021) *IEEE Transactions on Signal Processing*
+- **Generalized Multiplexed Waveform Design Framework for Cost-Optimized MIMO Radar** — Hammes, Christian; M. R, Bhavani Shankar; Ottersten, Bjorn (2021) *IEEE Transactions on Signal Processing*
+- **Geometric Multimodal Learning Based on Local Signal Expansion for Joint Diagonalization** — Behmanesh, Maysam; Adibi, Peyman; Chanussot, Jocelyn 等 (2021) *IEEE Transactions on Signal Processing*
+- **Globally Convergent Gradient Projection Type Algorithms for a Class of Robust Hypothesis Testings** — Ma, Ting; Song, Enbin; Shi, Qingjiang (2021) *IEEE Transactions on Signal Processing*
+- **Grade Prediction From Multi-Valued Click-Stream Traces via Bayesian-Regularized Deep Neural Networks** — Ng, Kelvin H. R.; Tatinati, S.; Khong, Andy W. H. (2021) *IEEE Transactions on Signal Processing*
+- **Gradual Federated Learning With Simulated Annealing** — Nguyen, Luong Trung; Kim, Junhan; Shim, Byonghyo (2021) *IEEE Transactions on Signal Processing*
+- **Graph Signal Processing Over a Probability Space of Shift Operators** — Ji, Feng; Tay, Wee Peng; Ortega, Antonio (2023) *IEEE Transactions on Signal Processing*
+- **Graph Signal Sampling Under Stochastic Priors** — Hara, Junya; Tanaka, Yuichi; Eldar, Yonina C. (2023) *IEEE Transactions on Signal Processing*
+- **Graphical Inference in Linear-Gaussian State-Space Models** — Elvira, Víctor; Chouzenoux, Émilie (2022) *IEEE Transactions on Signal Processing*
+- **Graphon Filters: Graph Signal Processing in the Limit** — Morency, Matthew W.; Leus, Geert (2021) *IEEE Transactions on Signal Processing*
+- **Gridless DOA Estimation and Root-MUSIC for Non-Uniform Linear Arrays** — Wagner, Mark; Park, Yongsung; Gerstoft, Peter (2021) *IEEE Transactions on Signal Processing*
+- **High-Speed User-Centric Beampattern Synthesis via Frequency Diverse Array** — Wu, Xuehan; Shao, Huaizong; Lin, Jingran 等 (2021) *IEEE Transactions on Signal Processing*
+- **Identifying Latent Stochastic Differential Equations** — Hasan, Ali; M. Pereira, Joao; Farsiu, Sina 等 (2022) *IEEE Transactions on Signal Processing*
+- **Impact of Covariance Mismatched Training Samples on Constant False Alarm Rate Detectors** — Besson, Olivier (2021) *IEEE Transactions on Signal Processing*
+- **Importance Gaussian Quadrature** — Elvira, Victor; Martino, Luca; Closas, Pau (2021) *IEEE Transactions on Signal Processing*
+- **Incoherence is Sufficient for Statistical RIP of Unit Norm Tight Frames: Constructions and Properties** — Sasmal, Pradip; Murthy, Chandra R. (2021) *IEEE Transactions on Signal Processing*
+- **Innovative and Additive Outlier Robust Kalman Filtering With a Robust Particle Filter** — Fisch, Alexander T. M.; Eckley, Idris A.; Fearnhead, Paul (2022) *IEEE Transactions on Signal Processing*
+- **Joint Dimension Assignment and Compression for Deterministic Parameter Vector Estimation in Distributed Multisensor Networks** — Zhang, Linxia; Niu, Dunbiao; Ma, Ting 等 (2021) *IEEE Transactions on Signal Processing*
+- **Joint Radar and Communications for Frequency-Hopped MIMO Systems** — Baxter, William; Aboutanios, Elias; Hassanien, Aboulnasr (2022) *IEEE Transactions on Signal Processing*
+- **Learned Factor Graphs for Inference From Stationary Time Sequences** — Shlezinger, Nir; Farsad, Nariman; Eldar, Yonina C. 等 (2022) *IEEE Transactions on Signal Processing*
+- **Learning Gaussian Graphical Models With Ordered Weighted $\ell _1$ Regularization** — Mazza-Anthony, Cody; Mazoure, Bogdan; Coates, Mark (2021) *IEEE Transactions on Signal Processing*
+- **Learning Strategies for Radar Clutter Classification** — Addabbo, Pia; Han, Sudan; Orlando, Danilo 等 (2021) *IEEE Transactions on Signal Processing*
+- **Learning to Demodulate From Few Pilots via Offline and Online Meta-Learning** — Park, Sangwoo; Jang, Hyeryung; Simeone, Osvaldo 等 (2021) *IEEE Transactions on Signal Processing*
+- **Low Mutual Coupling Sparse Array Design Using ULA Fitting** — Shi, Wanlu; Li, Yingsong; Vorobyov, Sergiy A. (2021)
+- **Low-Rank Matrix Recovery With Scaled Subgradient Methods: Fast and Robust Convergence Without the Condition Number** — Tong, Tian; Ma, Cong; Chi, Yuejie (2021) *IEEE Transactions on Signal Processing*
+- **MAP Ratio Test Detector for Radar System** — Guruacharya, Sudarshan; Chalise, Batu K.; Himed, Braham (2021) *IEEE Transactions on Signal Processing*
+- **Majorization-Minimization on the Stiefel Manifold With Application to Robust Sparse PCA** — Breloy, Arnaud; Kumar, Sandeep; Sun, Ying 等 (2021) *IEEE Transactions on Signal Processing*
+- **Matched and Mismatched Estimation of Kronecker Product of Linearly Structured Scatter Matrices Under Elliptical Distributions** — Meriaux, Bruno; Ren, Chengfang; Breloy, Arnaud 等 (2021) *IEEE Transactions on Signal Processing*
+- **Mathematical Theory of Atomic Norm Denoising in Blind Two-Dimensional Super-Resolution** — Suliman, Mohamed A.; Dai, Wei (2021) *IEEE Transactions on Signal Processing*
+- **Matrix-Monotonic Optimization $-$ Part I: Single-Variable Optimization** — Xing, Chengwen; Wang, Shuai; Chen, Sheng 等 (2021) *IEEE Transactions on Signal Processing*
+- **Maximizing the Partial Decode-and-Forward Rate in the Gaussian MIMO Relay Channel** — Hellings, Christoph; Gest, Patrick; Wiegart, Thomas 等 (2021) *IEEE Transactions on Signal Processing*
+- **Maximum Likelihood Time Synchronization for Zero-Padded OFDM** — Roshandeh, Koosha Pourtahmasi; Mohammadkarimi, Mostafa; Ardakani, Masoud (2021) *IEEE Transactions on Signal Processing*
+- **Measurement Bounds for Compressed Sensing in Sensor Networks With Missing Data** — Joseph, Geethu; Varshney, Pramod K. (2021) *IEEE Transactions on Signal Processing*
+- **Memory-Constrained No-Regret Learning in Adversarial Multi-Armed Bandits** — Xu, Xiao; Zhao, Qing (2021) *IEEE Transactions on Signal Processing*
+- **Minimax Robust Detection: Classic Results and Recent Advances** — Faus, Michael; Zoubir, Abdelhak; Poor, H. Vincent (2021) *IEEE Transactions on Signal Processing*
+- **Minimum-Degree Distributed Graph Filter Design** — Ding, Kemi; Wu, Junfeng; Xie, Lihua (2021) *IEEE Transactions on Signal Processing*
+- **Mixture of Inference Networks for VAE-Based Audio-Visual Speech Enhancement** — Sadeghi, Mostafa; Alameda-Pineda, Xavier (2021) *IEEE Transactions on Signal Processing*
+- **Multiple Importance Sampling for Symbol Error Rate Estimation of Maximum-Likelihood Detectors in MIMO Channels** — Elvira, Victor; Santamaria, Ignacio (2021) *IEEE Transactions on Signal Processing*
+- **Multiuser Full-Duplex Two-Way Communications via Intelligent Reflecting Surface** — Peng, Zhangjie; Zhang, Zhenkun; Pan, Cunhua 等 (2021) *IEEE Transactions on Signal Processing*
+- **Network Topology Inference From Heterogeneous Incomplete Graph Signals** — Yang, Xiao; Sheng, Min; Yuan, Yanli 等 (2021) *IEEE Transactions on Signal Processing*
+- **Neural Estimators for Conditional Mutual Information Using Nearest Neighbors Sampling** — Molavipour, Sina; Bassi, German; Skoglund, Mikael (2021) *IEEE Transactions on Signal Processing*
+- **Non-Bayesian Estimation Framework for Signal Recovery on Graphs** — Routtenberg, Tirza (2021) *IEEE Transactions on Signal Processing*
+- **Nonparametric Compositional Stochastic Optimization for Risk-Sensitive Kernel Learning** — Bedi, Amrit Singh; Koppel, Alec; Rajawat, Ketan 等 (2021) *IEEE Transactions on Signal Processing*
+- **Novel Recovery Algorithms for Block Sparse Signals With Known and Unknown Borders** — Haghighatpanah, Neda; Gohary, Ramy H. (2022) *IEEE Transactions on Signal Processing*
+- **Null Space Component Analysis of One-Shot Single-Channel Source Separation Problem** — Hwang, Wen-Liang; Ho, Jinn (2021) *IEEE Transactions on Signal Processing*
+- **Octonion Short-Time Fourier Transform for Time-Frequency Representation and Its Applications** — Gao, Wen-Biao; Li, Bing-Zhao (2021) *IEEE Transactions on Signal Processing*
+- **On Accurate Source Enumeration: A New Bayesian Information Criterion** — Ke, Xiaochuan; Zhao, Yuan; Huang, Lei (2021) *IEEE Transactions on Signal Processing*
+- **On the Adversarial Robustness of Hypothesis Testing** — Jin, Yulu; Lai, Lifeng (2021) *IEEE Transactions on Signal Processing*
+- **On the Correlation Concentration of Discrete Prolate Spheroidal Sequences** — Said, Karim; Beex, Louis (2022) *IEEE Transactions on Signal Processing*
+- **On the Minimum \mathcal K-Divergence Estimator** — Sorek, Yair; Todros, Koby (2022) *IEEE Transactions on Signal Processing*
+- **On the Solvability of the Peak Value Problem for Bandlimited Signals With Applications** — Boche, Holger; Monich, Ullrich J. (2021) *IEEE Transactions on Signal Processing*
+- **Online Deep Neural Networks for MmWave Massive MIMO Channel Estimation With Arbitrary Array Geometry** — Zheng, Xuanyu; Lau, Vincent K. N. (2021) *IEEE Transactions on Signal Processing*
+- **Online Topology Identification From Vector Autoregressive Time Series** — Zaman, Bakht; Ramos, Luis Miguel Lopez; Romero, Daniel 等 (2021) *IEEE Transactions on Signal Processing*
+- **Optimal Opponent Stealth Trajectory Planning Based on an Efficient Optimization Technique** — Aubry, Augusto; Braca, Paolo; d'Afflisio, Enrica 等 (2021) *IEEE Transactions on Signal Processing*
+- **Optimal Restricted Isometry Condition of Normalized Sampling Matrices for Exact Sparse Recovery With Orthogonal Least Squares** — Kim, Junhan; Wang, Jian; Shim, Byonghyo (2021) *IEEE Transactions on Signal Processing*
+- **Optimal Sampling of a Bandlimited Noisy Multiple Output Channel** — Solodky, Gaston; Feder, Meir (2021) *IEEE Transactions on Signal Processing*
+- **Optimality Conditions of Performance-Guaranteed Power Minimization in MIMO Networks: A Distributed Algorithm and Its Feasibility** — Xiong, Guojun; Kim, Taejoon; Love, David J. 等 (2021) *IEEE Transactions on Signal Processing*
+- **Outage-Constrained Robust Beamforming for Intelligent Reflecting Surface Aided Wireless Communication** — Zhao, Ming-Min; Liu, An; Zhang, Rui (2021) *IEEE Transactions on Signal Processing*
+- **PRIMA++: A Probabilistic Framework for User Choice Modelling With Small Data** — Li, Qingming; Chen, Zhanjiang; Zhao, H. Vicky (2021) *IEEE Transactions on Signal Processing*
+- **Parameterized Resampling Time-Frequency Transform** — Li, Tianqi; He, Qingbo; Peng, Zhike (2022) *IEEE Transactions on Signal Processing*
+- **Particle Filtering for Nonlinear/Non-Gaussian Systems With Energy Harvesting Sensors Subject to Randomly Occurring Sensor Saturations** — Song, Weihao; Wang, Zidong; Wang, Jianan 等 (2021) *IEEE Transactions on Signal Processing*
+- **Phase Retrieval for Partially Coherent Observations** — Kornprobst, Jonas; Paulus, Alexander; Knapp, Josef 等 (2021) *IEEE Transactions on Signal Processing*
+- **Polar-Coded Spatial Modulation** — Dai, Jincheng; Niu, Kai; Si, Zhongwei 等 (2021) *IEEE Transactions on Signal Processing*
+- **Polynomial GSVD Beamforming for Two-User Frequency-Selective MIMO Channels** — Hassan, Diyari; Redif, Soydan; McWhirter, John G. 等 (2021) *IEEE Transactions on Signal Processing*
+- **Power Allocation for Coexisting Multicarrier Radar and Communication Systems in Cluttered Environments** — Wang, Fangzhou; Li, Hongbin (2021) *IEEE Transactions on Signal Processing*
+- **Privacy-Preserving Distributed Projection LMS for Linear Multitask Networks** — Wang, Chengcheng; Tay, Wee Peng; Wei, Ye 等 (2021) *IEEE Transactions on Signal Processing*
+- **Privacy-preserving source separation for distributed data using independent component analysis** — Imtiaz, Hafiz; Silva, Rogers; Baker, Bradley 等 (2016)
+- **Probability of Resolution of Partially Relaxed Deterministic Maximum Likelihood: An Asymptotic Approach** — Schenck, David; Mestre, Xavier; Pesavento, Marius (2021) *IEEE Transactions on Signal Processing*
+- **Projection-Based QLP Algorithm for Efficiently Computing Low-Rank Approximation of Matrices** — Kaloorazi, Maboud F.; Chen, Jie (2021) *IEEE Transactions on Signal Processing*
+- **Protocol-Based Tobit Kalman Filter Under Integral Measurements and Probabilistic Sensor Failures** — Geng, Hang; Wang, Zidong; Zou, Lei 等 (2021) *IEEE Transactions on Signal Processing*
+- **Quantization for Communication-Efficient Change-Point Detection Over Networks** — Jiao, Yuchen; Xu, Xingyu; Gu, Yuantao (2022) *IEEE Transactions on Signal Processing*
+- **Quantizer Design to Exploit Common Information in Layered and Scalable Coding** — Salehifar, Mehdi; Nanjundaswamy, Tejaswi; Rose, Kenneth (2021) *IEEE Transactions on Signal Processing*
+- **Quickest Change Detection of Time Inconsistent Anticipatory Agents. Human-Sensor and Cyber-Physical Systems** — Krishnamurthy, Vikram (2021) *IEEE Transactions on Signal Processing*
+- **RE-MIMO: Recurrent and Permutation Equivariant Neural MIMO Detection** — Pratik, Kumar; Rao, Bhaskar D.; Welling, Max (2021) *IEEE Transactions on Signal Processing*
+- **Random Matrix Based Extended Target Tracking With Orientation: A New Model and Inference** — Tuncer, Barkin; Ozkan, Emre (2021) *IEEE Transactions on Signal Processing*
+- **Randomized Stepped Frequency Radars Exploiting Block Sparsity of Extended Targets: A Theoretical Analysis** — Wang, Lei; Huang, Tianyao; Liu, Yimin (2021) *IEEE Transactions on Signal Processing*
+- **Reconfigurable Intelligent Surface Aided Constant-Envelope Wireless Power Transfer** — Yang, Huiyuan; Yuan, Xiaojun; Fang, Jun 等 (2021) *IEEE Transactions on Signal Processing*
+- **Reconstructing Point Sets From Distance Distributions** — Huang, Shuai; Dokmanic, Ivan (2021) *IEEE Transactions on Signal Processing*
+- **Reduced-Rank L1-Norm Principal-Component Analysis With Performance Guarantees** — Kamrani, Hossein; Asli, Alireza Zolghadr; Markopoulos, Panos P. 等 (2021) *IEEE Transactions on Signal Processing*
+- **Regularized Local Basis Function Approach to Identification of Nonstationary Processes** — Gancza, Artur; Niedzwiecki, Maciej; Ciolek, Marcin (2021) *IEEE Transactions on Signal Processing*
+- **Ridge-Aware Weighted Sparse Time-Frequency Representation** — Tong, Chaowei; Wang, Shibin; Selesnick, Ivan 等 (2021) *IEEE Transactions on Signal Processing*
+- **Robust Non-Linear Matrix Factorization for Dictionary Learning, Denoising, and Clustering** — Fan, Jicong; Yang, Chengrun; Udell, Madeleine (2021) *IEEE Transactions on Signal Processing*
+- **Robust Power Allocation for Resource-Aware Multi-Target Tracking With Colocated MIMO Radars** — Yuan, Ye; Yi, Wei; Hoseinnezhad, Reza 等 (2021) *IEEE Transactions on Signal Processing*
+- **Robust Recovery of Jointly-Sparse Signals Using Minimax Concave Loss Function** — Suzuki, Kyohei; Yukawa, Masahiro (2021) *IEEE Transactions on Signal Processing*
+- **Robust Subspace Tracking With Missing Data and Outliers: Novel Algorithm With Convergence Guarantee** — Thanh, Le Trung; Dung, Nguyen Viet; Trung, Nguyen Linh 等 (2021) *IEEE Transactions on Signal Processing*
+- **Robust Variational-Based Kalman Filter for Outlier Rejection With Correlated Measurements** — Li, Haoqing; Medina, Daniel; Vila-Valls, Jordi 等 (2021) *IEEE Transactions on Signal Processing*
+- **S$^2$H Domain Processing for Acoustic Source Localization and Beamforming Using Microphone Array on Spherical Sector** — Kumari, Deepika; Kumar, Lalan (2021) *IEEE Transactions on Signal Processing*
+- **SR2CNN: Zero-Shot Learning for Signal Recognition** — Dong, Yihong; Jiang, Xiaohan; Zhou, Huaji 等 (2021) *IEEE Transactions on Signal Processing*
+- **SVM-Based Channel Estimation and Data Detection for One-Bit Massive MIMO Systems** — Nguyen, Ly V.; Swindlehurst, A. Lee; Nguyen, Duy H. N. (2021) *IEEE Transactions on Signal Processing*
+- **Scalable Detection and Tracking of Extended Objects** — Meyer, Florian; Williams, Jason L. (2020)
+- **Semi-Blind Joint Channel and Symbol Estimation for IRS-Assisted MIMO Systems** — de Araújo, Gilderlan T.; de Almeida, André L. F.; Boyer, Rémy 等 (2023) *IEEE Transactions on Signal Processing*
+- **Sequential Inference Methods for Non-Homogeneous Poisson Processes With State-Space Prior** — Li, Chenhao; Godsill, Simon (2021) *IEEE Transactions on Signal Processing*
+- **Set Squeezing Procedure for Quadratically Perturbed Chance-Constrained Programming** — He, Xin; Wu, Yik-Chung (2021) *IEEE Transactions on Signal Processing*
+- **Shallow Underwater Acoustic Massive MIMO Communications** — Wu, Wenqian; Gao, Xiqi; Sun, Chen 等 (2021) *IEEE Transactions on Signal Processing*
+- **Shrinking the eigenvalues of M-estimators of covariance matrix** — Ollila, Esa; Palomar, Daniel P.; Pascal, Frederic (2020) *IEEE Transactions on Signal Processing*
+- **Signal Processing Methods to Enhance the Energy Efficiency of In-Memory Computing Architectures** — Sakr, Charbel; Shanbhag, Naresh R. (2021) *IEEE Transactions on Signal Processing*
+- **Signal Source Distribution Approximation to Speedup Scalar Quantizer Design** — Anavangot, Vijay; Kumar, Animesh (2021) *IEEE Transactions on Signal Processing*
+- **Solving High-Order Portfolios via Successive Convex Approximation Algorithms** — Zhou, Rui; Palomar, Daniel P. (2021) *IEEE Transactions on Signal Processing*
+- **Source Localization with Feedback Beamforming** — Karo, Itay Yehezkel; Dvorkind, Tsvi G.; Cohen, Israel (2021) *IEEE Transactions on Signal Processing*
+- **Sparse Bayesian Estimation of Parameters in Linear-Gaussian State-Space Models** — Cox, Benjamin; Elvira, Víctor (2023) *IEEE Transactions on Signal Processing*
+- **Sparse Phase Retrieval Via PhaseLiftOff** — Xia, Yu; Xu, Zhiqiang (2021) *IEEE Transactions on Signal Processing*
+- **Sparse Symmetric Linear Arrays With Low Redundancy and a Contiguous Sum Co-Array** — Rajamaki, Robin; Koivunen, Visa (2021) *IEEE Transactions on Signal Processing*
+- **Sparse-Group Lasso for Graph Learning From Multi-Attribute Data** — Tugnait, Jitendra K. (2021) *IEEE Transactions on Signal Processing*
+- **Spectrally Sparse Signal Recovery via Hankel Matrix Completion With Prior Information** — Zhang, Xu; Liu, Yulong; Cui, Wei (2021) *IEEE Transactions on Signal Processing*
+- **Spectrally-Agile Waveform Design for Wideband MIMO Radar Transmit Beampattern Synthesis via Majorization-ADMM** — Fan, Wen; Liang, Junli; Lu, Guangshan 等 (2021) *IEEE Transactions on Signal Processing*
+- **Statistical Inference for the Expected Utility Portfolio in High Dimensions** — Bodnar, Taras; Dmytriv, Solomiia; Okhrin, Yarema 等 (2021) *IEEE Transactions on Signal Processing*
+- **Stochastic Gradient-Based Distributed Bayesian Estimation in Cooperative Sensor Networks** — Cadena, Jose; Ray, Priyadip; Chen, Hao 等 (2021) *IEEE Transactions on Signal Processing*
+- **Subspace-Based Estimation of Rapidly Varying Mobile Channels for OFDM Systems** — Senol, Habib; Tepedelenlioglu, Cihan (2021) *IEEE Transactions on Signal Processing*
+- **Subspace-Constrained Array Response Estimation in the Presence of Model Errors** — Wax, Mati; Adler, Amir (2021) *IEEE Transactions on Signal Processing*
+- **Supervised Learning and Canonical Decomposition of Multivariate Functions** — Kargas, Nikos; Sidiropoulos, Nicholas D. (2021) *IEEE Transactions on Signal Processing*
+- **Target Detection Using Quantized Cloud MIMO Radar Measurements** — Wang, Zhen; He, Qian; Blum, Rick S. (2022) *IEEE Transactions on Signal Processing*
+- **Target Localization Geometry Gain in Distributed MIMO Radar** — Sadeghi, Mohammad; Behnia, Fereidoon; Amiri, Rouhollah 等 (2021) *IEEE Transactions on Signal Processing*
+- **Task Offloading for Large-Scale Asynchronous Mobile Edge Computing: An Index Policy Approach** — Xu, Yizhen; Cheng, Peng; Chen, Zhuo 等 (2021) *IEEE Transactions on Signal Processing*
+- **Template Adaptation of 2D Quasi-Periodic Data Using a Soft-Assign Localized Correspondence Matrix** — Karisik, Filip; Baumert, Mathias (2021) *IEEE Transactions on Signal Processing*
+- **Tensor RNN With Bayesian Nonparametric Mixture for Radar HRRP Modeling and Target Recognition** — Chen, Wenchao; Chen, Bo; Peng, Xiaojun 等 (2021) *IEEE Transactions on Signal Processing*
+- **Tensor Wiener Filter** — Chang, Shih Yu; Wu, Hsiao-Chun (2022) *IEEE Transactions on Signal Processing*
+- **Tensor-Based Sparse Bayesian Learning With Intra-Dimension Correlation** — Song, Yuhui; Gong, Zijun; Chen, Yuanzhu 等 (2023) *IEEE Transactions on Signal Processing*
+- **The Impact of Multipath Information on Time-of-Arrival Estimation** — Gifford, Wesley M.; Dardari, Davide; Win, Moe Z. (2022) *IEEE Transactions on Signal Processing*
+- **The Interference Channel Revisited: Aligning Interference by Adjusting Antenna Separation** — Leshem, Amir; Erez, Uri (2021) *IEEE Transactions on Signal Processing*
+- **The JM-Filter to Detect Specific Frequency in Monitored Signal** — Jaber, Marwan A.; Massicotte, Daniel (2021) *IEEE Transactions on Signal Processing*
+- **The Restless Hidden Markov Bandit With Linear Rewards and Side Information** — Yemini, Michal; Leshem, Amir; Somekh-Baruch, Anelia (2021) *IEEE Transactions on Signal Processing*
+- **The Wasserstein-Fourier Distance for Stationary Time Series** — Cazelles, Elsa; Robert, Arnaud; Tobar, Felipe (2021) *IEEE Transactions on Signal Processing*
+- **Theory and Design of Joint Time-Vertex Nonsubsampled Filter Banks** — Jiang, Junzheng; Feng, Hairong; Tay, David B. 等 (2021) *IEEE Transactions on Signal Processing*
+- **Time Encoding of Bandlimited Signals: Reconstruction by Pseudo-Inversion and Time-Varying Multiplierless FIR Filtering** — Thao, Nguyen T.; Rzepka, Dominik (2021) *IEEE Transactions on Signal Processing*
+- **UVeQFed: Universal Vector Quantization for Federated Learning** — Shlezinger, Nir; Chen, Mingzhe; Eldar, Yonina C. 等 (2021) *IEEE Transactions on Signal Processing*
+- **Unsupervised Phase Retrieval Using Deep Approximate MMSE Estimation** — Chen, Mingqin; Lin, Peikang; Quan, Yuhui 等 (2022) *IEEE Transactions on Signal Processing*
+- **Uplink Sensing in Perceptive Mobile Networks With Asynchronous Transceivers** — Ni, Zhitong; Zhang, J. Andrew; Huang, Xiaojing 等 (2021) *IEEE Transactions on Signal Processing*
+- **Waveform Design for Collocated MIMO Radar With High-Mix-Low-Resolution ADCs** — Cheng, Ziyang; Shi, Shengnan; Tang, Lingyun 等 (2021) *IEEE Transactions on Signal Processing*
+- **Wirtinger Flow Meets Constant Modulus Algorithm: Revisiting Signal Recovery for Grant-Free Access** — Feres, Carlos; Ding, Zhi (2021) *IEEE Transactions on Signal Processing*
+- **Zeroth-Order Diffusion Adaptive Filter Over Networks** — Zhang, Mengfei; Jin, Danqi; Chen, Jie 等 (2021) *IEEE Transactions on Signal Processing*
+- **mmWave Channel Estimation via Compressive Covariance Estimation: Role of Sparsity and Intra-Vector Correlation** — Prasanna, Dheeraj; Murthy, Chandra R. (2021) *IEEE Transactions on Signal Processing*
+- **Joint ML/MAP Estimation of the Frequency and Phase of a Single Sinusoid With Wiener Carrier Phase Noise** — Wang, Qian; Quan, Zhi; Bi, Suzhi 等 (2022) *IEEE Transactions on Signal Processing*
+- **Streaming Solutions for Time-Varying Optimization Problems** — Hamam, Tomer H.; Romberg, Justin (2022) *IEEE Transactions on Signal Processing*
+- **Data Transmission Over Linear Time-Varying Channels** — Kaplan, Alihan; Pohl, Volker; Lee, Dae Gwan (2022) *IEEE Transactions on Signal Processing*
+- **Orthogonal Delay Scale Space Modulation: A New Technique for Wideband Time-Varying Channels** — K. P., Arunkumar; Murthy, Chandra R. (2022) *IEEE Transactions on Signal Processing*
+
+## 水声通信——我的阅读记录（226 篇）
+
+- **Equalizer for high data rate transmission in underwater communications** — Geller, B.; Broissier, J.M.; Capellano, V. (1994)
+- **Exploiting Space–Time–Frequency Diversity With MIMO–OFDM for Underwater Acoustic Communications** — Pelekanakis, Konstantinos; Baggeroer, Arthur B. (2011) *IEEE Journal of Oceanic Engineering*
+- **High-frequency acoustic communications achieving high bandwidth efficiency** — Song, H. C.; Hodgkiss, W. S.; Kuperman, W. A. 等 (2009) *The Journal of the Acoustical Society of America*
+- **How best to utilize bandwidth in underwater acoustic communication?** — Song, Hee-Chun (2013)
+- **MIMO-OFDM for High-Rate Underwater Acoustic Communications** — Li, Baosheng; Huang, Jie; Zhou, Shengli 等 (2009) *IEEE Journal of Oceanic Engineering*
+- **Performance analysis of turbo-coded MIMO–OFDM system for underwater communication** — Iruthayanathan, Nelson; Vishvaksenan, K.S.; Rajendran, V. 等 (2015) *Computers & Electrical Engineering*
+- **Time Reversal Receivers for High Data Rate Acoustic Multiple-Input–Multiple-Output Communication** — Song, Aijun; Badiey, Mohsen; McDonald, Vincent Keyko 等 (2011) *IEEE Journal of Oceanic Engineering*
+- **Very-High-Frequency Single-Input–Multiple-Output Acoustic Communication in Shallow Water** — Rudander, Jacob; van Walree, Paul A.; Husøy, Thor 等 (2019) *IEEE Journal of Oceanic Engineering*
+- **Compressed sensing** — Donoho, D.L. (2006) *IEEE Transactions on Information Theory*
+- **Signal processing for underwater acoustic communications** — Singer, Andrew C.; Nelson, Jill K.; Kozat, Suleyman S. (2009) *IEEE Communications Magazine*
+- **Sparse Channel Estimation for Multicarrier Underwater Acoustic Communication: From Subspace Methods to Compressed Sensing** — Berger, Christian R.; Zhou, Shengli; Preisig, James C. 等 (2010) *IEEE Transactions on Signal Processing*
+- **State-of-the-Art Underwater Acoustic Communication Modems: Classifications, Analyses and Design Challenges** — Zia, Muhammad Yousuf Irfan; Poncela, Javier; Otero, Pablo (2020) *Wireless Personal Communications*
+- **Underwater Acoustic Communications and Networking: Recent Advances and Future Challenges** — Chitre, Mandar; Shahabudeen, Shiraz; Stojanovic, Milica (2008) *Marine Technology Society Journal*
+- **Underwater acoustic communication by passive-phase conjugation: theory and experimental results** — Rouseff, D.; Jackson, D.R.; Fox, W.L.J. 等 (2001) *IEEE Journal of Oceanic Engineering*
+- **Clustered Adaptation for Estimation of Time-Varying Underwater Acoustic Channels** — Wang, Zhaohui; Zhou, Shengli; Preisig, James C. 等 (2012) *IEEE Transactions on Signal Processing*
+- **Efficient Multicarrier Communication for Highly Spread Underwater Acoustic Channels** — Hwang, Sung-Jun; Schniter, Philip (2008) *IEEE Journal on Selected Areas in Communications*
+- **Impact of Time-Varying Underwater Acoustic Channels on the Performance of Routing Protocols** — Tomasi, Beatrice; Toso, Giovanni; Casari, Paolo 等 (2013) *IEEE Journal of Oceanic Engineering*
+- **Iterative estimation of doubly selective underwater acoustic channel using basis expansion models** — Yu, Hua; Song, Aijun; Badiey, Mohsen 等 (2015) *Ad Hoc Networks*
+- **Time-Domain Oversampled OFDM Communication in Doubly-Selective Underwater Acoustic Channels** — Peng, Bo; Rossi, Pierluigi Salvo; Dong, Hefeng 等 (2015) *IEEE Communications Letters*
+- **Time-Frequency Characterization and Receiver Waveform Design for Shallow Water Environments** — Zhang, Jun Jason; Papandreou-Suppappola, Antonia; Gottin, Bertrand 等 (2009) *IEEE Transactions on Signal Processing*
+- **Underwater Acoustic Communication With an Orthogonal Signal Division Multiplexing Scheme in Doubly Spread Channels** — Ebihara, Tadashi; Mizutani, Koichi (2014) *IEEE Journal of Oceanic Engineering*
+- **Underwater communications in time-varying sparse channels using passive-phase conjugation** — Zhang, Guosong; Dong, Hefeng (2013) *Applied Acoustics*
+- **Discrete Time-Frequency Characterizations of Dispersive Linear Time-Varying Systems** — Jiang, Ye; Papandreou-Suppappola, Antonia (2007) *IEEE Transactions on Signal Processing*
+- **Editorial Underwater Acoustic Communications: Where We Stand and What Is Next?** — Song, Aijun; Stojanovic, Milica; Chitre, Mandar %J IEEE Journal of Oceanic Engineering (2019)
+- **A Kalman-based Doppler tracking algorithm for underwater acoustic spread spectrum communications** — Sun, Dajun; Hong, Xiaoping; Cui, Hongyu (2022) *Applied Acoustics*
+- **A Single-Carrier Turbo-Coded System for Underwater Communications** — Karasalo, Ilkka; Öberg, Tommy; Nilsson, Bernt 等 (2013) *IEEE Journal of Oceanic Engineering*
+- **A family of sparse group Lasso RLS algorithms with adaptive regularization parameters for adaptive decision feedback equalizer in the underwater acoustic communication system** — Liu, Lu; Sun, Dajun; Zhang, Youwen (2017) *Physical Communication*
+- **A robust iterative receiver for single carrier underwater acoustic communications under impulsive noise** — Huang, Fupeng; Zhang, Youwen; Guo, Qinghua 等 (2023) *Applied Acoustics*
+- **A-OMP: An Adaptive OMP Algorithm for Underwater Acoustic OFDM Channel Estimation** — Wang, Zhizhan; Li, Yuzhou; Wang, Chengcai 等 (2021) *IEEE Wireless Communications Letters*
+- **AUV-Assisted Subsea Exploration Method in 6G Enabled Deep Ocean Based on a Cooperative Pac-Men Mechanism** — Zhang, Jie; Han, Guangjie; Sha, Jianfa 等 (2022) *IEEE Transactions on Intelligent Transportation Systems*
+- **Acoustic characterization of the seabed with a single-element time-reversal mirror** — Godin, Oleg A.; Uzhansky, Ernst M.; Tan, Tsuwei 等 (2023) *Applied Acoustics*
+- **Acoustic pulse compression using passive phase-conjugate processing** — Dowling, David R. (1994) *The Journal of the Acoustical Society of America*
+- **Acoustic telemetry - An overview** — Baggeroer, A. (1984) *IEEE Journal of Oceanic Engineering*
+- **Adaptive Modulation and Coding for Underwater Acoustic OFDM** — Wan, Lei; Zhou, Hao; Xu, Xiaoka 等 (2015) *IEEE Journal of Oceanic Engineering*
+- **Adaptive OFDM Modulation for Underwater Acoustic Communications: Design Considerations and Experimental Results** — Radosevic, Andreja; Ahmed, Rameez; Duman, Tolga M. 等 (2014) *IEEE Journal of Oceanic Engineering*
+- **Adaptive multichannel combining and equalization for underwater acoustic communications** — Stojanovic, M.; Catipovic, J.; Proakis, J. G. (1993) *The Journal of the Acoustical Society of America*
+- **Algorithms for joint channel estimation and data recovery-application to equalization in underwater communications** — Feder, M.; Catipovic, J.A. (1991) *IEEE Journal of Oceanic Engineering*
+- **An Improved BICM-ID Receiver for the Time-Varying Underwater Acoustic Communications with DDPSK Modulation** — Cui, Hongyu; Liu, Changxin; Hong, Xiaoping 等 (2020)
+- **An Iterative Equalization and Decoding Approach for Underwater Acoustic Communication** — Sifferlen, James F.; Song, H. C.; Hodgkiss, William S. 等 (2008) *IEEE Journal of Oceanic Engineering*
+- **An initial demonstration of underwater acoustic communication using time reversal** — Edelmann, G.F.; Akal, T.; Hodgkiss, W.S. 等 (2002) *IEEE Journal of Oceanic Engineering*
+- **An iterative subblock-based receiver for SC-FDE systems in time-varying underwater acoustic channels** — Tong, Wentao; Ge, Wei; Han, Xiao 等 (2023) *Applied Acoustics*
+- **Analytical method of parameter determination for OFDM system over measurement-based underwater acoustic channel modeling** — Ha, Do Viet; Duc, Nguyen Van (2020) *Physical Communication*
+- **BEM Adaptive filtering for SI cancellation in full-duplex underwater acoustic systems** — Shen, Lu; Zakharov, Yuriy; Shi, Long 等 (2022) *Signal Processing*
+- **Basis expansion model for underwater acoustic channels?** — Qu, Fengzhong; Yang, Liuqing (2008)
+- **Bayesian Iterative Channel Estimation and Turbo Equalization for Multiple-Input–Multiple-Output Underwater Acoustic Communications** — Qin, Xiangzhao; Qu, Fengzhong; Zheng, Yahong Rosa (2021) *IEEE Journal of Oceanic Engineering*
+- **Challenges and Security Issues in Underwater Wireless Sensor Networks** — Yang, Guang; Dai, Lie; Si, Guannan 等 (2019) *Procedia Computer Science*
+- **Channel estimation for underwater acoustic OFDM communications via temporal sparse Bayesian learning** — Feng, Xiao; Wang, Junfeng; Sun, Haixin 等 (2023) *Signal Processing*
+- **Chaotic modulations and performance analysis for digital underwater acoustic communications** — Shu, Xiujun; Wang, Haibin; Yang, Xiaoxia 等 (2016) *Applied Acoustics*
+- **Circular Superposition Spread-Spectrum Transmission for Multiple-Input Multiple-Output Underwater Acoustic Communications** — Qin, Xiangzhao; Qu, Fengzhong; Zheng, Yahong Rosa (2019) *IEEE Communications Letters*
+- **Circular Time Shift Modulation for robust underwater acoustic communications in doubly spread channels** — Qi, Zhuoran; Pompili, Dario (2023) *Computer Communications*
+- **Closed-Form Expression for BER of CP-OFDM Systems Over an Underwater Acoustic Channel With Statistical Characterization** — Liu, Xinyu; Qiao, Gang; Qing, Xin 等 (2022) *IEEE Communications Letters*
+- **Communication over Doppler spread channels. II. Receiver characterization and practical results** — Eggen, T.H.; Preisig, J.C.; Baggeroer, A.B. (2001) *IEEE Journal of Oceanic Engineering*
+- **Communication over Doppler spread channels. Part I: Channel and receiver presentation** — Eggen, T.H.; Baggeroer, A.B.; Preisig, J.C. (2000) *IEEE Journal of Oceanic Engineering*
+- **Correlation-based decision-feedback equalizer for underwater acoustic communications** — Yang, T.C. (2005) *IEEE Journal of Oceanic Engineering*
+- **Differences between passive-phase conjugation and decision-feedback equalizer for underwater acoustic communications** — Yang, T.C. (2004) *IEEE Journal of Oceanic Engineering*
+- **Directional bionic underwater communication method using a parametric acoustic array and recursive filtering** — Wang, Cheng; Zhu, Guangping; Tang, Shengyu 等 (2022) *Applied Acoustics*
+- **Doppler Estimation Based on Dual-HFM Signal and Speed Spectrum Scanning** — Wei, Runyu; Ma, Xiaochuan; Zhao, Shiduo 等 (2020) *IEEE Signal Processing Letters*
+- **Double-differential coded M-ary direct sequence spread spectrum for mobile underwater acoustic communication system** — Yang, Guang; Zhou, Feng; Lou, Yi 等 (2021) *Applied Acoustics*
+- **Ecologically Friendly Full-Duplex Data Transmission Scheme for Underwater Acoustic Sensor Networks** — Qian, Yujie; Su, Hao; Han, Guangjie 等 (2021) *IEEE Internet of Things Journal*
+- **Efficient interpolation based OMP for sparse channel estimation in underwater acoustic OFDM** — Ma, Lu; Li, Tao; Liu, Songzuo 等 (2021) *Applied Acoustics*
+- **Enhanced channel estimation and symbol detection for high speed multi-input multi-output underwater acoustic communications** — Ling, Jun; Yardibi, Tarik; Su, Xiang 等 (2009) *The Journal of the Acoustical Society of America*
+- **Error Rate Improvement in Underwater MIMO Communications Using Sparse Partial Response Equalization** — Roy, Subhadeep; Duman, Tolga M.; McDonald, Vincent Keyko (2009) *IEEE Journal of Oceanic Engineering*
+- **Estimation and interpolation of underwater low frequency ambient noise spectrum using artificial neural networks** — Ramji, S.; Latha, G.; Ramakrishnan, S. (2009) *Applied Acoustics*
+- **Estimation and tracking of rapidly time-varying broadband acoustic communication channels** (2005)
+- **Experimental Estimation of the Ranging Accuracy Using Underwater Acoustic Modems in the Frequency Band of 12 kHz** — Rodionov, A.Yu.; Kulik, S.Yu.; Dubrovin, F.S. 等 (2020)
+- **Experimental Evaluation of JANUS Fast Modes in Very High Acoustic Frequency Bands** — Li, Jinfeng; Zheng, Yahong Rosa (2023) *IEEE Journal of Oceanic Engineering*
+- **Experimental demonstration of differential OFDM underwater acoustic communication with acoustic vector sensor** — Wang, Chi; Yin, Jingwei; Huang, Defeng 等 (2015) *Applied Acoustics*
+- **Experimental demonstration of phase-coherent underwater acoustic communications using a compact array** — He, Chengbing; Zhang, Qunfei; Yan, Zhenhua 等 (2017) *Ocean Engineering*
+- **Experimental demonstration of single carrier underwater acoustic communication using a vector sensor** — Han, Xiao; Yin, Jing-wei; Yu, Ge 等 (2015) *Applied Acoustics*
+- **Exploiting Spatial–Temporal Joint Sparsity for Underwater Acoustic Multiple-Input–Multiple-Output Communications** — Zhou, Yuehai; Tong, Feng; Song, Aijun 等 (2021) *IEEE Journal of Oceanic Engineering*
+- **Filterbank Multicarrier Communications for Underwater Acoustic Channels** — Amini, Pooyan; Chen, Rong-Rong; Farhang-Boroujeny, Behrouz (2015) *IEEE Journal of Oceanic Engineering*
+- **Frequency domain direct adaptive turbo equalization based on block least mean square for underwater acoustic communications** — Jing, Lianyou; Zheng, Tonghui; He, Chengbing 等 (2022) *Applied Acoustics*
+- **Frequency domain direct adaptive turbo equalization based on block normalized minimum-SER for underwater acoustic communications** — Zheng, Tonghui; Jing, Lianyou; Long, Chao 等 (2023) *Applied Acoustics*
+- **Frequency reversal-based inter-carrier interference mitigation for underwater acoustic OFDM communications** — Nie, Xingyang; Wang, Biao; Tao, Shifei (2022) *Applied Acoustics*
+- **Frequency-Domain Decision Feedback Equalization for Single-Carrier Transmissions in Fast Time-Varying Underwater Acoustic Channels** — Tu, Xingbin; Xu, Xiaomei; Song, Aijun (2021) *IEEE Journal of Oceanic Engineering*
+- **Hamming Distance Optimized Underwater Acoustic OTFS-IM Systems** — Guo, Xiaopeng; Wang, Biao; Zhu, Yunan 等 (2023) *Entropy*
+- **Hardware Implementation of High-Order PSK Modulation for MIMO Acoustic Modem Using Microcontrollers** — Xue, Yukang; Zheng, Yahong Rosa (2021)
+- **High-Frequency Acoustic Estimation of Time-Varying Underwater Sparse Channels Using Multiple Sources and Receivers Operated Simultaneously** — Kaddouri, Samar; Beaujean, Pierre-Philippe J.; Bouvet, Pierre-Jean (2018) *IEEE Access*
+- **High-Rate Communication for Underwater Acoustic Channels Using Multiple Transmitters and Space–Time Coding: Receiver Structures and Experimental Results** — Roy, Subhadeep; Duman, Tolga M.; McDonald, Vincent 等 (2007) *IEEE Journal of Oceanic Engineering*
+- **High-rate underwater acoustic communication at over 600 kbps \times km for vertical uplink data transmission on a full-depth lander system** — Shimura, Takuya; Kida, Yukihiro; Deguchi, Mitsuyasu 等 (2021)
+- **High-speed underwater acoustic communication for multi-agent supervised autonomy** — Jarrot, Arnaud; Gelman, Andriy; Choi, Gloria 等 (2021)
+- **Hybrid Carrier Communication with Partial FFT Demodulation over Underwater Acoustic Channels** — Li, Yong; Sha, Xuejun; Wang, Kun (2013) *IEEE Communications Letters*
+- **Hybrid Carrier Underwater Acoustic Communication Based on Joint Time-Frequency Domain Equalization** — Yin, Jingwei; Ge, Wei; Han, Xiao 等 (2019) *IEEE Access*
+- **Impact of ocean variability on coherent underwater acoustic communications during the Kauai experiment (KauaiEx)** — Song, Aijun; Badiey, Mohsen; Song, H. C. 等 (2008) *The Journal of the Acoustical Society of America*
+- **Improvement of Time-Reversal Communications Using Adaptive Channel Equalizers** — Song, H.C.; Hodgkiss, W.S.; Kuperman, W.A. 等 (2006) *IEEE Journal of Oceanic Engineering*
+- **Impulsive Noise Mitigation in Underwater Acoustic OFDM Systems** — Kuai, Xiaoyan; Sun, Haixin; Zhou, Shengli 等 (2016) *IEEE Transactions on Vehicular Technology*
+- **Iterative Carrier Frequency Offset and Channel Estimation for Underwater Acoustic OFDM Systems** — Kang, Taehyuk; Iltis, Ronald A. (2008) *IEEE Journal on Selected Areas in Communications*
+- **Iterative Receiver in Time-Frequency Domain for Underwater Acoustic Communications** — Zhao, Liang; Ge, Jianhua (2012) *Procedia Engineering*
+- **Iterative turbo receiver design for superposition coding based downlink underwater acoustic OFDM communication system** — Qiao, Gang; Liu, Xinyu; Ma, Lu 等 (2021) *Physical Communication*
+- **Joint CFO, Gridless Channel Estimation and Data Detection for Underwater Acoustic OFDM Systems** — Wan, Lei; Zhu, Jiang; Cheng, En 等 (2022) *IEEE Journal of Oceanic Engineering*
+- **Joint Channel and Impulsive Noise Estimation in Underwater Acoustic OFDM Systems** — Chen, Peng; Rong, Yue; Nordholm, Sven 等 (2017) *IEEE Transactions on Vehicular Technology*
+- **Joint Energy and Correlation Detection Assisted Non-Coherent OFDM-DCSK System for Underwater Acoustic Communications** — Cai, Xiangming; Xu, Weikai; Wang, Lin 等 (2022) *IEEE Transactions on Communications*
+- **Joint blind frequency-domain equalization and decoding for rateless underwater acoustic communication** — Liu, Zhiyong; Ke, Miao; Tan, Zhoumei (2022) *Applied Acoustics*
+- **Joint message-passing-based accurate bidirectional channel estimation and generalized-approximation-message-passing-based low-complexity perfect equalization with underwater moving transceivers** — Wang, Liang; Qiao, Peiyue; Liang, Junyan 等 (2022) *Applied Acoustics*
+- **Joint passive-phase conjugation with adaptive multichannel combining for coherent underwater acoustic communications** — Zhang, Guosong; Dong, Hefeng (2012) *Applied Acoustics*
+- **Joint time-frequency domain equalization of MSK signal over underwater acoustic channel** — Han, Ruigang; Jia, Ning; Huang, Jianchun 等 (2022) *Applied Acoustics*
+- **Localization Algorithm for Underwater Sensor Network: A Review** — Luo, Junhai; Yang, Yang; Wang, Zhiyan 等 (2021) *IEEE Internet of Things Journal*
+- **Long-Range Underwater Acoustic Navigation and Communication System** — Rodionov, Aleksandr; Unru, Petr; Golov, Aleksandr (2020)
+- **Long-range multi-carrier acoustic communications in shallow water based on iterative sparse channel estimation** — Kang, Taehyuk; Song, H. C.; Hodgkiss, W. S. 等 (2010) *The Journal of the Acoustical Society of America*
+- **MIMO-OFDM Over a 10km Acoustic Link: An Experimental Study at the Suruga Bay, Japan** — Li, Zhengnan; Ventosa, Alicia Bel; Cuji, Diego A. 等 (2022)
+- **Model-based learning of underwater acoustic communication performance for marine robots** — Kontoudis, George P.; Krauss, Stephen; Stilwell, Daniel J. (2021) *Robotics and Autonomous Systems*
+- **Multi-array iterative receiver for underwater acoustic OFDM communications with EXIT chart evaluation** — Zhang, Lan; Xu, Xiaomei; Feng, Wei 等 (2016) *Applied Acoustics*
+- **Multiband OFDM for Covert Acoustic Communications** — Leus, Geert; van Walree, Paul A. (2008) *IEEE Journal on Selected Areas in Communications*
+- **Multicarrier Acoustic Communications in Multiuser and Interference-Limited Regimes** — Li, Zhengnan; Stojanovic, Milica (2023) *IEEE Journal of Oceanic Engineering*
+- **Multicarrier Communication Over Underwater Acoustic Channels With Nonuniform Doppler Shifts** — Li, Baosheng; Zhou, Shengli; Stojanovic, Milica 等 (2008) *IEEE Journal of Oceanic Engineering*
+- **Multichannel equalization by decision-directed passive phase conjugation: experimental results** — Flynn, J.A.; Ritcey, J.A.; Rouseff, D. 等 (2004) *IEEE Journal of Oceanic Engineering*
+- **Multichannel processing of broad-band multiuser communication signals in shallow water acoustic channels** — Stojanovic, M.; Zvonar, Z. (1996) *IEEE Journal of Oceanic Engineering*
+- **Multiple-input-multiple-output coherent time reversal communications in a shallow-water acoustic channel** — Song, H.C.; Roux, P.; Hodgkiss, W.S. 等 (2006) *IEEE Journal of Oceanic Engineering*
+- **Multiuser Communications Using Passive Time Reversal** — Song, H. C.; Hodgkiss, W. S.; Kuperman, W. A. 等 (2007) *IEEE Journal of Oceanic Engineering*
+- **Neglected infrastructures for 6G—Underwater communications: How mature are they?** — Dao, Nhu-Ngoc; Tu, Ngo Hoang; Thanh, Tran Thien 等 (2023) *Journal of Network and Computer Applications*
+- **Orthogonal time chirp space modulation based upon fractional Fourier transform** — Miao, Hongxia; Peng, Mugen (2023) *Signal Processing*
+- **Parametric Replay-Based Simulation of Underwater Acoustic Communication Channels** — Socheleau, Francois-Xavier; Laot, Christophe; Passerieux, Jean-Michel (2015) *IEEE Journal of Oceanic Engineering*
+- **Passive Time Reversal Acoustic Communications Through Shallow-Water Internal Waves** — Song, Aijun; Badiey, Mohsen; Newhall, Arthur E. 等 (2010) *IEEE Journal of Oceanic Engineering*
+- **Performance limitations in underwater acoustic telemetry** — Catipovic, J.A. (1990) *IEEE Journal of Oceanic Engineering*
+- **Phase conjugation in the ocean: Experimental demonstration of an acoustic time-reversal mirror** — Kuperman, W. A.; Hodgkiss, William S.; Song, Hee Chun 等 (1998) *The Journal of the Acoustical Society of America*
+- **Phase conjugation in underwater acoustics** — Jackson, Darrell R.; Dowling, David R. (1991) *The Journal of the Acoustical Society of America*
+- **Phase-coherent digital communications for underwater acoustic channels** — Stojanovic, M.; Catipovic, J.A.; Proakis, J.G. (1994) *IEEE Journal of Oceanic Engineering*
+- **Research on Distributed Compressed Sensing With Dynamic Block Sparsity for Underwater Acoustic Channel Estimation** — Zhou, Yuehai; Chen, Dongsheng; Tong, Feng 等 (2023) *IEEE Internet of Things Journal*
+- **Residual Doppler Effect Analysis of the FBMC/OQAM Communication System in Underwater Acoustic Channel** — Qiao, Gang; Liu, Xinyu; Ma, Lu 等 (2021) *IEEE Communications Letters*
+- **Self-interference channel modeling for in-band full-duplex underwater acoustic modem** — Zhao, Yunjiang; Qiao, Gang; Liu, Songzuo 等 (2021) *Applied Acoustics*
+- **Signal Transmission Using Underwater Acoustic Vector Transducers** — Chen, Chen; Abdi, Ali (2013) *IEEE Transactions on Signal Processing*
+- **Single-carrier with index modulation for underwater acoustic communications** — Shi, Wentao; He, Chengbing; Dang, Qianqian 等 (2021) *Applied Acoustics*
+- **Space–Frequency Block Coding for Underwater Acoustic Communications** — Zorita, Eduard Valera; Stojanovic, Milica (2015) *IEEE Journal of Oceanic Engineering*
+- **Sparsity-Aware Adaptive Turbo Equalization for Underwater Acoustic Communications in the Mariana Trench** — Xi, Junyi; Yan, Shefeng; Xu, Lijun 等 (2021) *IEEE Journal of Oceanic Engineering*
+- **Statistical Modeling and Performance Analysis of Cooperative Communication in Frequency-Selective Underwater Acoustic Channel Using Vector Sensor** — Rawat, Manishika; Lall, Brejesh; Srirangarajan, Seshan (2021) *IEEE Sensors Journal*
+- **Statistical analysis of time-varying channel for underwater acoustic communication and network** — Yan, Honglu; Ma, Tianlong; Pan, Chenyu 等 (2021)
+- **Successive Interference Cancellation for Underwater Acoustic Communications** — Cho, Steve E.; Song, Hee Chun; Hodgkiss, William S. (2011) *IEEE Journal of Oceanic Engineering*
+- **Surface wave focusing and acoustic communications in the surf zone** — Preisig, James C.; Deane, Grant B. (2004) *The Journal of the Acoustical Society of America*
+- **The JANUS underwater communications standard** — Potter, John; Alves, João; Green, Dale 等 (2014)
+- **The state of the art in underwater acoustic telemetry** — Kilfoyle, D.B.; Baggeroer, A.B. (2000) *IEEE Journal of Oceanic Engineering*
+- **Time reversal communication using vertical particle velocity and pressure signals in shallow water** — Kim, Sunhyo; Kim, Hyeonsu; Jung, Seom-kyu 等 (2019) *Ad Hoc Networks*
+- **Time-reversal mirrors** — Fink, M (1993) *Journal of Physics D: Applied Physics*
+- **Underwater Acoustic Channel Tracking with Cluster Variation Learning for Acoustic Mobile OFDM Communication** — Li, Wei; Zhan, Weicheng; Lin, Bang 等 (2022) *Applied Acoustics*
+- **Underwater Acoustic Communication Channel Modeling Using Reservoir Computing** — Onasami, Oluwaseyi; Feng, Ming; Xu, Hao 等 (2022) *IEEE Access*
+- **Underwater acoustic communication to an unmanned underwater vehicle with a compact vector sensor array** — Han, Xiao; Yin, Jingwei; Tian, Yanan 等 (2019) *Ocean Engineering*
+- **Underwater acoustic communications using time reversal** — Edelmann, G.F.; Song, H.C.; Kim, S. 等 (2005) *IEEE Journal of Oceanic Engineering*
+- **Wideband Ultrasonic Acoustic Underwater Channels: Measurements and Characterization** — López-Fernández, Jesús; Fernández-Plazaola, Unai; Paris, José F. 等 (2020) *IEEE Transactions on Vehicular Technology*
+- **OTFS underwater acoustic communications based on passive time reversal** — Jing, Lianyou; Zhang, Namin; He, Chengbing 等 (2022) *Applied Acoustics*
+- **An iterative receiver for time-domain oversampled OFDM system over time-varying underwater acoustic channels** — Peng, Bo; Dong, Hefeng (2021) *Applied Acoustics*
+- **Cross-correlation quasi-gradient Doppler estimation for underwater acoustic OFDM mobile communications** — Li, Bin; Tong, Feng; Li, Jiang-hui 等 (2022) *Applied Acoustics*
+- **Exploiting Rapidly Time-Varying Sparsity for Underwater Acoustic Communication** — Jiang, Weihua; Tong, Feng; Zhu, Zhengliang (2022) *IEEE Transactions on Vehicular Technology*
+- **Orthogonal Delay Scale Space Modulation: A New Technique for Wideband Time-Varying Channels** — K. P., Arunkumar; Murthy, Chandra R. (2022) *IEEE Transactions on Signal Processing*
+- **Belief-Propagation-Based Low-Complexity Channel Estimation and Detection for Underwater Acoustic Communications With Moving Transceivers** — Yang, Guang; Guo, Qinghua; Qin, Zhengchang 等 (2022) *IEEE Journal of Oceanic Engineering*
+- **Underwater acoustic communication channels: Propagation models and statistical characterization** — Stojanovic, Milica; Preisig, James (2009) *IEEE Communications Magazine*
+- **Joint Message-Passing-Based Bidirectional Channel Estimation and Equalization With Superimposed Training for Underwater Acoustic Communications** — Yang, Guang; Guo, Qinghua; Ding, Hanxue 等 (2021) *IEEE Journal of Oceanic Engineering*
+- **A Bayesian analysis of simple mixture problems** — Bernardo, JM; Girón, FJ (1988) *Bayesian statistics*
+- **A New Vector Sensor Receiver for Underwater Acoustic Communication** — Abdi, Ali; Guo, Huaihai; Sutthiwan, Patchara (2007)
+- **A Trust Update Mechanism Based on Reinforcement Learning in Underwater Acoustic Sensor Networks** — He, Yu; Han, Guangjie; Jiang, Jinfang 等 (2022) *IEEE Transactions on Mobile Computing*
+- **A joint estimation algorithm for single-input multiple-output underwater acoustic communications** — Tong, Wentao; Ge, Wei; Han, Xiao 等 (2024) *Signal Processing*
+- **ACT: an Acoustic Communications Testbed** — Cuji, Diego A.; Li, Zhengnan; Stojanovic, Milica (2022)
+- **Acoustic channel simulator** — Qarabaqi, Parastoo; Stojanovic, Milica (2013)
+- **Acoustic communication and navigation in the new Arctic — A model case for environmental adaptation** — Schmidt, Henrik; Schneider, Toby (2016)
+- **Acoustic communication performance of the WHOI Micro-Modem in sea trials of the Nereus vehicle to 11,000 m depth** — Singh, Sandipa; Webster, Sarah E.; Freitag, Lee 等 (2009)
+- **Acoustic vector-sensor array processing** — Nehorai, A.; Paldi, E. (1994) *IEEE Transactions on Signal Processing*
+- **Acoustic vector-sensor correlations in ambient noise** — Hawkes, M.; Nehorai, A. (2001) *IEEE Journal of Oceanic Engineering*
+- **Adaptive clustering routing protocol for underwater sensor networks** — Sun, Yao; Zheng, Maochun; Han, Xiao 等 (2022) *Ad Hoc Networks*
+- **Adaptive time-reversal mirror** — Kim, J. S.; Song, H. C.; Kuperman, W. A. (2001) *The Journal of the Acoustical Society of America*
+- **An underwater first contact method using JANUS** — Otnes, Roald (2022)
+- **Application of compressive sensing to sparse channel estimation** — Berger, Christian R.; Wang, Zhaohui; Huang, Jianzhong 等 (2010) *IEEE Communications Magazine*
+- **Baseband signal processing with UnetStack** — Chitre, Mandar; Bhatnagar, Rohit; Ignatius, Manu 等 (2014)
+- **Capacity calculations for rapidly fading communications channels** — Leinhos, H.A. (1996) *IEEE Journal of Oceanic Engineering*
+- **DESERT Underwater: An NS-Miracle-based framework to design, simulate, emulate and realize test-beds for underwater network protocols** — Masiero, Riccardo; Azad, Saiful; Favaro, Federico 等 (2012)
+- **Data Rate Performance of Mobile Multiuser MIMO Underwater Acoustic Communication Systems** — Pottier, Antony; Bouvet, Pierre-Jean; Tomasi, Beatrice 等 (2024) *IEEE Journal of Oceanic Engineering*
+- **Deep reinforcement learning-based adaptive modulation for underwater acoustic communication with outdated channel state information** — Zhang, Yuzhi; Zhu, Jingru; Wang, Haiyan 等 (2022) *Remote Sensing*
+- **Design and Deployment of a Wireless Sensor Network for the Mar Menor Coastal Observation System** — Albaladejo Pérez, Cristina; Soto Valles, Fulgencio; Torres Sánchez, Roque 等 (2017) *IEEE Journal of Oceanic Engineering*
+- **Design and Performance Analysis of Underwater Acoustic Networks** — Stefanov, Andrej; Stojanovic, Milica (2011) *IEEE Journal on Selected Areas in Communications*
+- **Detection, Synchronization, and Doppler Scale Estimation with Multicarrier Waveforms in Underwater Acoustic Communication** — Mason, Sean F.; Berger, Christian R.; Zhou, Shengli 等 (2008) *IEEE Journal on Selected Areas in Communications*
+- **Efficient use of bandwidth for underwater acoustic communication** — Song, H. C.; Hodgkiss, W. S. (2013) *The Journal of the Acoustical Society of America*
+- **Evolution of Seaweb underwater acoustic networking** — Rice, J.; Creber, B.; Fletcher, C. 等 (2000)
+- **Experimental demonstration of multiuser communication in deep water using time reversal** — Shimura, T; Ochi, H; Song, H C (2013) *J. Acoust. Soc. Am.*
+- **Fast estimation of sparse doubly spread acoustic channels** — Zeng, Wen-Jun; Xu, Wen (2012) *The Journal of the Acoustical Society of America*
+- **Frequency-Domain Oversampling for Zero-Padded OFDM in Underwater Acoustic Communications** — Wang, Zhaohui; Zhou, Shengli; Giannakis, Georgios B. 等 (2012) *IEEE Journal of Oceanic Engineering*
+- **High data rate acoustic telemetry for moving ROVs in a fading multipath shallow water environment** — Catipovic, J.A.; Freitag, L.E. (1990)
+- **Impact of source depth on coherent underwater acoustic communications** — Song, Aijun; Badiey, Mohsen; Song, H. C. 等 (2010) *The Journal of the Acoustical Society of America*
+- **Improving channel estimation for rapidly time-varying correlated underwater acoustic channels by tracking the signal subspace** — Huang, S.H.; Yang, T.C.; Tsao, Jenho (2015) *Ad Hoc Networks*
+- **Iterative LMMSE-SIC Detector for DSE-Aware Underwater Acoustic OTFS Systems** — Wang, Xuehan; Shi, Xu; Wang, Jintao 等 (2024) *IEEE Transactions on Vehicular Technology*
+- **Joint Equalization and Self-Interference Cancellation for Underwater Acoustic In-Band Full-Duplex Communication** — Towliat, Mohammad; Guo, Zheng; Cimini, Leonard J. 等 (2024) *IEEE Journal of Oceanic Engineering*
+- **Kauai Acomms MURI 2008 (KAM08) Experiment Trip Report** — Hodgkiss, W; Song, H; Badiey, Mohsen 等 (2008)
+- **Low complexity soft-input soft-output block decision feedback equalization** — Wu, Jingxian; Zheng, Yahong R. (2008) *IEEE Journal on Selected Areas in Communications*
+- **Low-Complexity Equalization of Orthogonal Signal-Division Multiplexing in Doubly-Selective Channels** — Han, Jing; Zhang, Lingling; Zhang, Qunfei 等 (2019) *IEEE Transactions on Signal Processing*
+- **Low-complexity equalization of OFDM in doubly selective channels** — Schniter, P. (2004) *IEEE Transactions on Signal Processing*
+- **Measurement of acoustic particle motion in shallow water and its application to geoacoustic inversion** — Dall'Osto, David R.; Choi, Jee Woong; Dahl, Peter H. (2016) *The Journal of the Acoustical Society of America*
+- **Message-passing algorithms for compressed sensing** — Donoho, David L; Maleki, Arian; Montanari, Andrea (2009) *Proceedings of the National Academy of Sciences*
+- **Mitigation of Intercarrier Interference for OFDM Over Time-Varying Underwater Acoustic Channels** — Tu, Kai; Fertonani, Dario; Duman, Tolga M. 等 (2011) *IEEE Journal of Oceanic Engineering*
+- **Multiple focusing with adaptive time-reversal mirror** — Kim, J. S.; Shin, K. C. (2004) *The Journal of the Acoustical Society of America*
+- **On Bayesian Channel Estimation and FFT-Based Symbol Detection in MIMO Underwater Acoustic Communications** — Ling, Jun; Tan, Xing; Yardibi, Tarik 等 (2014) *IEEE Journal of Oceanic Engineering*
+- **On the Doppler Bias of Hyperbolic Frequency Modulation Matched Filter Time of Arrival Estimates** — Murray, John J. (2019) *IEEE Journal of Oceanic Engineering*
+- **On the comparison between OFDM and single carrier modulation with a DFE using a frequency-domain feedforward filter** — Benvenuto, N.; Tomasin, S. (2002) *IEEE Transactions on Communications*
+- **On the relationship between capacity and distance in an underwater acoustic communication channel** — Stojanovic, Milica (2006)
+- **Overview of networking protocols for underwater wireless communications** — Pompili, Dario; Akyildiz, Ian F. (2009) *IEEE Communications Magazine*
+- **Parameterized Cancellation of Partial-Band Partial-Block-Duration Interference for Underwater Acoustic OFDM** — Wang, Zhaohui; Zhou, Shengli; Catipovic, Josko 等 (2012) *IEEE Transactions on Signal Processing*
+- **Partial FFT Demodulation: A Detection Method for Highly Doppler Distorted OFDM Systems** — Yerramalli, Srinivas; Stojanovic, Milica; Mitra, Urbashi (2012) *IEEE Transactions on Signal Processing*
+- **Performance analysis of adaptive equalization for coherent acoustic communications in the time-varying ocean environment** — Preisig, James C. (2005) *The Journal of the Acoustical Society of America*
+- **Performance of high-rate adaptive equalization on a shallow water acoustic channel** — Stojanovic, M.; Proakis, J. G.; Catipovic, J. A. (1996) *The Journal of the Acoustical Society of America*
+- **Properties of the acoustic intensity vector field in a shallow water waveguide** — Dall’Osto, David R.; Dahl, Peter H.; Woong Choi, Jee (2012) *The Journal of the Acoustical Society of America*
+- **Properties of underwater acoustic communication channels in shallow water** — Yang, T. C. (2012) *The Journal of the Acoustical Society of America*
+- **Reduced-complexity spatial and temporal processing of underwater acoustic communication signals** — Stojanovic, M.; Catipovic, J. A.; Proakis, J. G. (1995) *The Journal of the Acoustical Society of America*
+- **Relating the performance of time-reversal-based underwater acoustic communications in different shallow water environments** — Yang, T. C. (2011) *The Journal of the Acoustical Society of America*
+- **Software-Defined Underwater Acoustic Modems: Historical Review and the NILUS Approach** — Dol, Henry S.; Casari, Paolo; van der Zwan, Timo 等 (2017) *IEEE Journal of Oceanic Engineering*
+- **Stochastic Dynamic Programming for Network Resource Allocation** — Zheng, Yahong Rosa (2017)
+- **Super Permutation Frequency-Shift-Keyed Underwater Acoustic Communication** — Lidström, Viktor (2024) *IEEE Journal of Oceanic Engineering*
+- **Temporal Correlation and Message-Passing-Based Sparse Bayesian Learning Channel Estimation for Underwater Acoustic Communications** — Yin, Jingwei; Zhu, Guangjun; Han, Xiao 等 (2024) *IEEE Journal of Oceanic Engineering*
+- **The DESERT underwater framework v2: Improved capabilities and extension tools** — Campagnaro, Filippo; Francescon, Roberto; Guerra, Federico 等 (2016)
+- **The LOON in 2014: Test bed description** — Alves, João; Potter, John; Guerrini, Piero 等 (2014)
+- **The SUNSET framework for simulation, emulation and at-sea testing of underwater wireless sensor networks** — Petrioli, Chiara; Petroccia, Roberto; Potter, John R. 等 (2015) *Ad Hoc Networks*
+- **Throughput of Networks With Large Propagation Delays** — Chitre, Mandar; Motani, Mehul; Shahabudeen, Shiraz (2012) *IEEE Journal of Oceanic Engineering*
+- **Transmit Beamforming for Underwater Acoustic OFDM Systems** — Cuji, Diego A.; Stojanovic, Milica (2024) *IEEE Journal of Oceanic Engineering*
+- **Underwater Acoustic Communication Channel Capacity: A Simulation Study** — Hayward, Thomas J. (2004)
+- **Underwater Distributed Antenna Systems: Design Opportunities and Challenges** — Wang, Zhaohui; Zhou, Shengli; Wang, Zhengdao (2018) *IEEE Communications Magazine*
+- **Underwater Wireless Communications: Challenges and Progress** — Zheng, Yahong Rosa (2011)
+- **Underwater Wireless Communications: Overview and Recent Progress** — Zheng, Yahong Rosa (2018)
+- **Underwater acoustic sensor networks: research challenges** — Akyildiz, Ian F.; Pompili, Dario; Melodia, Tommaso (2005) *Ad Hoc Networks*
+- **Vector sensors and vector sensor line arrays: Comments on optimal array gain and detection** — D’Spain, Gerald L.; Luby, James C.; Wilson, Gary R. 等 (2006) *The Journal of the Acoustical Society of America*
+- **Vector-Approximate-Message-Passing-Based Channel Estimation for MIMO-OFDM Underwater Acoustic Communications** — Chen, Wenxuan; Tao, Jun; Ma, Lu 等 (2024) *IEEE Journal of Oceanic Engineering*
+- **Wideband and directional channel characterization** — Molisch, Andreas F (2011)
+- **A Software-Defined Underwater Acoustic Modem for Everyone: Design and Evaluation** — Campagnaro, Filippo; Francescon, Roberto; Coccolo, Emanuele 等 (2023) *IEEE Internet of Things Magazine*
+- **Differentially coherent detection: Lower complexity, higher capacity?** — Aval, Yashar; Wilson, Sarah Kate; Stojanovic, Milica (2016)
+- **Experimental Evaluation of a Real-Time FPGA Platform for Multichannel Coherent Acoustic Communication** — Rudander, Jacob; Husøy, Thor; van Walree, Paul A. 等 (2023) *IEEE Journal of Oceanic Engineering*
+- **Full-duplex underwater acoustic communications via self-interference cancellation in space** — Hsieh, Yung-Ting; Qi, Zhuoran; Pompili, Dario (2023) *Journal of Communications and Networks*
+- **Joint Channel Estimation and Decoding for Underwater Acoustic Communication With a Short Pilot Sequence** — Qin, Xiangzhao; Diamant, Roee (2023) *IEEE Journal of Oceanic Engineering*
+- **Long-range underwater acoustic channel estimation** — Jiang, Weihua; Diamant, Roee (2023) *IEEE Transactions on Wireless Communications*
+- **Model-Based Thompson Sampling for Frequency and Rate Selection in Underwater Acoustic Communications** — Tong, Jingwen; Fu, Liqun; Han, Zhu (2023) *IEEE Transactions on Wireless Communications*
+- **On capacity of a class of acoustic channels** — Aval, Yashar; Wilson, Sarah Kate; Stojanovic, Milica (2014)
+- **Seismo-Acoustic Sensing on the Beaufort Sea in the 2021 Sea Ice Dynamics Experiment (SIDEx)** — Fischell, Erin M.; Fitzgerald, Caileigh; Manganini, Kevin 等 (2024) *IEEE Journal of Oceanic Engineering*
+- **Bayesian learning for sparse signal reconstruction** — Wipf, D.P.; Rao, B.D. (2003)
+- **Joint Approximately Sparse Channel Estimation and Data Detection in OFDM Systems Using Sparse Bayesian Learning** — Prasad, Ranjitha; Murthy, Chandra R.; Rao, Bhaskar D. (2014) *IEEE Transactions on Signal Processing*
+
+## doppler（180 篇）
+
+- **A Channel Phase Error Compensation Method for Space Borne Array SAR Based on Antenna Pattern and Doppler Correlation Coefficient** — Pan, J.; Wang, S.; Li, D. J. 等 (2019) *Journal of Electronics & Information Technology*
+- **A Code Doppler Compensation Algorithm in Acquisition for High Dynamic Spread Spectrum Signals** — Guo, Y. C.; Guo, J. M.; Lv, P. 等 (2016) *2016 Ieee International Conference on Signal Processing, Communications and Computing (Icspcc)*
+- **A Doppler Frequency Compensation Algorithm Based on M-Sequence** — Su, X.; Wang, Y. Y.; Bai, P. 等 (2011) *Information-an International Interdisciplinary Journal*
+- **A Doppler Range Compensation for Step-Frequency Continuous-Wave Radar for Detecting Small UAV** — Pieraccini, M.; Miccinesi, L.; Rojhani, N. (2019) *Sensors*
+- **A Frequency Synchronization Scheme for Time Varying Doppler-shift Compensation using the Direct Return Signal** — Nakamura, K.; Tajima, K.; Hieda, M. (2016) *2016 Ieee Mtt-S International Microwave Symposium (Ims)*
+- **A Hybrid Radar-Camera Sensing System With Phase Compensation for Random Body Movement Cancellation in Doppler Vital Sign Detection** — Gu, C. Z.; Wang, G. C.; Li, Y. R. 等 (2013) *Ieee Transactions on Microwave Theory and Techniques*
+- **A Low Complexity Algorithm for Code Doppler Compensation Using FFT-Based Parallel Acquisition Architecture** — Tang, P.; Li, X. M.; Wang, S. 等 (2018) *China Satellite Navigation Conference (Csnc) 2018 Proceedings, Vol Iii*
+- **A Low-IF Tag-Based Motion Compensation Technique for Mobile Doppler Radar Life Signs Monitoring** — Rahman, A.; Yavari, E.; Singh, A. 等 (2015) *Ieee Transactions on Microwave Theory and Techniques*
+- **A New Modulation Technique for Doppler Compensation in Frequency-Dispersive Channels** — Dean, T.; Chowdhury, M.; Goldsmith, A. (2017) *2017 Ieee 28th Annual International Symposium on Personal, Indoor, and Mobile Radio Communications (Pimrc)*
+- **A Novel Approach to Doppler Compensation and Estimation for Multiple Targets in Mimo Radar with Unitary Waveform Matrix Scheduling** — Qureshi, T. R.; Zoltowski, M. D.; Calderbank, R. (2012) *2012 Ieee International Conference on Acoustics, Speech and Signal Processing (Icassp)*
+- **A Novel Doppler Frequency Shift Compensation Algorithm for OFDM Underwater Acoustic Communication System** — Li, M.; Zhou, L.; Zhang, Y. D. (2013) *2013 25th Chinese Control and Decision Conference (Ccdc)*
+- **A Time-Varying Filter for Doppler Compensation Applied to Underwater Acoustic OFDM** — Roudsari, H. M.; Bousquet, J. F. (2019) *Sensors*
+- **A Transceiver Architecture for Ultrasonic OFDM with Adaptive Doppler Compensation** — MinhHai, T.; Rie, S.; Taisuki, S. 等 (2015) *Oceans 2015 - Mts/Ieee Washington*
+- **A frequency offset compensation scheme for the received signal under the influence of Rician fading channels with a direct component shifted by Doppler effect** — Asahara, T.; Kojima, T.; Miyake, M. (2002) *Electronics and Communications in Japan Part I-Communications*
+- **A simple antenna combining framework for doppler compensation in mobile OFDM systems** — Serbetli, S. (2008) *2008 Ieee International Conference on Acoustics, Speech and Signal Processing, Vols 1-12*
+- **Acoustic Doppler Compensation using Feedforward Retiming for Underwater Coherent Transmission** — Liu, X.; Bousquet, J. F. (2015) *Oceans 2015 - Mts/Ieee Washington*
+- **Adaptive Angle-Doppler Compensation in Airborne Phased Radar for Planar Array** — Jia, F. D.; He, Z. S.; Li, J. 等 (2016) *Proceedings of 2016 Ieee 13th International Conference on Signal Processing (Icsp 2016)*
+- **Adaptive Compensation of Motional Disturbances for Laser Doppler Vibrometer** — Kim, J. K.; Chang, T. G.; Kim, H. S. 等 (2004) *Iecon 2004: 30th Annual Conference of Ieee Industrial Electronics Society, Vol 3*
+- **Adaptive Doppler Compensation for Mitigating Range Dependence in Forward-Looking Airborne Radar** — Khan, M. B.; Hussain, A.; Anjum, U. 等 (2020) *Electronics*
+- **Adaptive Vector Method for Motion Compensation in Ultra-Wideband Coherent Doppler Tomography** — Crawley, B. R.; Baum, T. C.; Nicholson, K. J. 等 (2019) *Ieee Transactions on Microwave Theory and Techniques*
+- **Adaptive time varying doppler shift compensation algorithm for OFDM-based underwater acoustic communication systems** — Abdelkareem, A. E.; Sharif, B. S.; Tsimenidis, C. C. (2016) *Ad Hoc Networks*
+- **Advanced Paris Altimeter Based on Delay Compensation of Doppler Waveforms** — D'Addio, S.; Martin-Neira, M. (2009) *2009 Ieee International Geoscience and Remote Sensing Symposium, Vols 1-5*
+- **An Adaptive Angle-Doppler Compensation Method for Airborne Bistatic Radar Based on PAST** — Hang, X.; Jun, Z. (2018) *6th International Conference on Computer-Aided Design, Manufacturing, Modeling and Simulation (Cdmms 2018)*
+- **An Adaptive Compensation of Moving Target Doppler Shift for Airborne Radar** — Hu, X. J.; Deng, J. H.; Cheng, W. S. 等 (2009) *2009 Ieee Aerospace Conference, Vols 1-7*
+- **An Airborne Radar System with Adaptive MTD Doppler Compensation Scheme using DSP Based Real-Time Spectral Estimation** — Kwag, Y. K. (2008) *2008 Ieee Radar Conference, Vols. 1-4*
+- **An Efficient Adaptive Angle-Doppler Compensation Approach for Non-Sidelooking Airborne Radar STAP** — Shen, M. W.; Yu, J.; Wu, D. 等 (2015) *Sensors*
+- **An Underwater Acoustic 64QAM OFDM Communication System with Robust Doppler Compensation** — Wada, T.; Suzuki, T.; Yamada, H. 等 (2016) *Oceans 2016 Mts/Ieee Monterey*
+- **An Underwater Acoustic OFDM Communication System with Robust Doppler Compensation** — Suzuki, T.; Wada, T.; Yamada, H. 等 (2017) *International Journal of Computer Science and Network Security*
+- **An Underwater Time Reversal Communication Method Using Symbol-Based Doppler Compensation with a Single Sound Pressure Sensor** — Zhao, A. B.; Zeng, C. G.; Hui, J. 等 (2018) *Sensors*
+- **An adaptive compensation of moving clutter Doppler shift for helicopter MTD radar** — Kwag, Y. K.; Choi, M. S.; Jung, C. H. 等 (2006) *Proceedings of 2006 Cie International Conference on Radar, Vols 1 and 2*
+- **An algorithm of matched pursuit with compensation for the analysis of multicomponent Doppler signals** — Fedosov, V. P.; Evdokimova, E. O. (2016) *Journal of Communications Technology and Electronics*
+- **An array antenna assisted digital terrestrial television broadcasting receiver with vehicle speed estimation and Doppler spread compensation** — Nagai, N.; Takayanagi, H.; Saito, M. 等 (2006) *Electronics and Communications in Japan Part I-Communications*
+- **Analysis and compensation for code Doppler Effect of BDS II signal under high dynamics** — Ouyang, X. F.; Zeng, F. L. (2016) *Selected Papers of the Photoelectronic Technology Committee Conferences Held November 2015*
+- **Angle-Domain Approach for Parameter Estimation in High-Mobility OFDM with Fully/Partly Calibrated Massive ULA** — Ge, Y.; Zhang, W.; Gao, F. 等 (2018) *IEEE Transactions on Wireless Communications*
+- **Angle-Domain Doppler Pre-Compensation for High-Mobility OFDM Uplink with Massive ULA** — Guo, W.; Zhang, W. L.; Mu, P. C. 等 (2017) *Globecom 2017 - 2017 Ieee Global Communications Conference*
+- **Angle-Doppler Compensation for Multistatic MIMO Radar** — Qureshi, T. R.; Rangaswamy, M.; Bell, K. L. (2015) *2015 Ieee International Radar Conference (Radarcon)*
+- **Arctangent demodulation with DC offset compensation in quadrature Doppler radar receiver systems** — Park, B. K.; Boric-Lubecke, O.; Lubecke, V. M. (2007) *Ieee Transactions on Microwave Theory and Techniques*
+- **Auditory fovea and Doppler shift compensation: adaptations for flutter detection in echolocating bats using CF-FM signals** — Schnitzler, H. U.; Denzinger, A. (2011) *Journal of Comparative Physiology a-Neuroethology Sensory Neural and Behavioral Physiology*
+- **Blind Doppler Compensation Scheme for Single Carrier Digital Underwater Communications** — Eynard, G.; Laot, C. (2008) *Oceans 2008, Vols 1-4*
+- **Broadband Doppler compensation for rational wavelet-based UWA communication systems** — Yu, L. M.; White, L. B. (2005) *2005 Asia-Pacific Conference on Communications (Apcc), Vols 1& 2*
+- **Carrier Aggregation Receiver with Beamformer and Compensation of Doppler Effects and Timing Offset** — Wang, X.; Ryu, H. G. (2012) *Computer Applications for Communication, Networking, and Digital Contents*
+- **Channel Imbalance Effects and Compensation for Doppler Radar Physiological Measurements** — Yavari, E.; Boric-Lubecke, O. (2015) *Ieee Transactions on Microwave Theory and Techniques*
+- **Closed loop bi-directional broadband Doppler compensation and channel equalization for single carrier high-speed underwater acoustic communication** — Zhang, Y. W.; Liu, L.; Sun, D. J. 等 (2015) *Oceans 2015 - Mts/Ieee Washington*
+- **Cognitive RF Stealth Radar Using Spoiled Weighting Vector For Doppler Compensation** — Wang, Z.; Yan, Y. S.; Xiong, J. (2016) *Proceedings of 2016 Ieee 13th International Conference on Signal Processing (Icsp 2016)*
+- **Coherent range and Doppler-walk compensation in PBR applications** — Christiansen, J. M.; Olsen, K. E.; Weiss, G. (2014) *2014 15th International Radar Symposium (Irs)*
+- **Compensation Scheme of Laser Doppler Velocimeter for Navigation Systems** — Zemlyanskiy, V.; Gusev, M. (2014) *2014 Ieee 3rd International Conference on Methods and Systems of Navigation and Motion Control (Msnmc)*
+- **Compensation System Design and Comparison of Very High Doppler Frequency Effect** — An, C.; Ryu, H. G. (2019) *Wireless Personal Communications*
+- **Compensation of Range Migration for Cyclically Repetitive Doppler-Sensitive Waveform (OFDM)** — Tigrek, R. F.; van Genderen, P. (2010) *Ieee Transactions on Aerospace and Electronic Systems*
+- **Compensation of the Doppler shift for a local position measurement system by using a Kalman filter** — Pourvoyeur, K.; Stelzer, A.; Fischer, A. (2005) *2005 IEEE MTT-S International Microwave Symposium, Vols 1-4*
+- **Cyclic Prefix Based Phase-coded OFDM Radar Doppler Offset Estimation and Compensation** — Zhao, J. J.; Huo, K.; Liu, Y. X. 等 (2017) *Journal of Electronics & Information Technology*
+- **Data-Aided Doppler Compensation for High-Speed Railway Communications Over mmWave Bands** — Gong, Z. J.; Li, C.; Jiang, F. 等 (2021) *Ieee Transactions on Wireless Communications*
+- **Data-Aided Doppler Frequency Shift Estimation and Compensation for UAVs** — Zhang, Q. X.; Sun, H. Q.; Feng, Z. Y. 等 (2020) *Ieee Internet of Things Journal*
+- **Data-Based Quadrature Imbalance Compensation for a CW Doppler Radar System** — Singh, A.; Gao, X. M.; Yavari, E. 等 (2013) *Ieee Transactions on Microwave Theory and Techniques*
+- **Decision fractional fast Fourier transform Doppler compensation in underwater acoustic orthogonal frequency division multiplexing** — Ma, X. F.; Zheng, C. Y. (2016) *Journal of the Acoustical Society of America*
+- **Demonstration of NLFM Waveforms With Experiments and Doppler Shift Compensation for SAR Application** — Wang, W.; Wang, R.; Deng, Y. K. 等 (2016) *Ieee Geoscience and Remote Sensing Letters*
+- **Determination of the anaerobic and respiratory compensation thresholds by the leg skin temperature and doppler test of leg blood flow** — Ivanov, S. V.; Arzamasov, K. M.; Izachik, U. A. 等 (2012) *Circulation*
+- **Differences Between Harmonic and Non-harmonic Neurons Processing Doppler-shift Compensation Information in Inferior Colliculus of Hipposideros pratti** — Li, L.; Fu, Z. Y.; Wang, L. P. 等 (2014) *Progress in Biochemistry and Biophysics*
+- **Doppler Compensation & Single Pulse Imaging using Adaptive Pulse Compression** — Blunt, S. D.; Shackelford, A. K.; Gerlach, K. 等 (2009) *Ieee Transactions on Aerospace and Electronic Systems*
+- **Doppler Compensation Algorithm Based on Conjugate Noise Group** — Wang, Z.; Gu, H.; Su, W. M. 等 (2014) *2014 12th International Conference on Signal Processing (Icsp)*
+- **Doppler Compensation Based Optimal Resource Allocation for QoS Guarantees in Underwater MIMO-OFDM Acoustic Wireless Relay Networks** — Wang, P.; Zhang, X.; Song, M. (2013) *2013 Ieee Military Communications Conference (Milcom 2013)*
+- **Doppler Compensation Method using Carrier Frequency Pilot for OFDM-Based Underwater Acoustic Communication Systems** — Nguyen, Q. K.; Do, D. H.; Nguyen, V. D. (2017) *Proceedings of the 2017 International Conference on Advanced Technologies for Communications (Atc)*
+- **Doppler Compensation for AF Two Way Relaying over Time Varying UWA Channels** — Daoud, S.; Karakaya, B.; Ghrayeb, A. (2014) *2014 Ieee Wireless Communications and Networking Conference (Wcnc)*
+- **Doppler Compensation for Binary Phase-Coded Radar Signals in Presence of Noise Jamming** — Matousek, Z.; Ochodnicky, J.; Babjak, M. 等 (2016) *2016 17th International Radar Symposium (Irs)*
+- **Doppler Compensation for D-STBC Coded Time-Varying Underwater Acoustic Channels** — Daoud, S.; Karakaya, B.; Ghrayeb, A. (2014) *2014 Ieee Wireless Communications and Networking Conference (Wcnc)*
+- **Doppler Compensation for Orthogonal Netted Radar Systems** — Zhao, Z.; Shi, X. Q. (2008) *Icsp: 2008 9th International Conference on Signal Processing, Vols 1-5, Proceedings*
+- **Doppler Compensation for WCDMA System in High-Speed Mobile Environments** — Lee, C. H.; Chen, P. Y.; Li, H. J. (2006) *2006 Ieee International Conference on Communications, Vols 1-12*
+- **Doppler Compensation of MISO Range Response in Subband Division LFM Pulse MIMO Radar** — Takahashi, R.; Takahashi, T.; Tasaki, H. (2016) *2016 International Symposium on Antennas and Propagation (Isap)*
+- **Doppler Compensation of Orthogonal Frequency Division Multiplexing for Ocean Intelligent Multimodal Information Technology** — Ma, X. F.; Wang, T. T.; Li, L. 等 (2020) *Mobile Networks & Applications*
+- **Doppler Compensation of Underwater Acoustic OFDM Based on Parallel Search in Time and Frequency Domain and FPGA Implementation** — Wang, J.; Xie, Z.; Jiao, J. S. (2018) *2018 Ieee 18th International Conference on Communication Technology (Icct)*
+- **Doppler Effect and Compensation in a Rotating Fanbeam Spaceborne Scatterometer** — Zhu, D.; Dong, X. L.; Lin, W. M. 等 (2010) *2010 Ieee International Geoscience and Remote Sensing Symposium*
+- **Doppler Frequency Estimation by Parameterized Time-Frequency Transform and Phase Compensation Technique** — Dong, X. J.; Chen, S. Q.; Xing, G. P. 等 (2018) *Ieee Sensors Journal*
+- **Doppler Frequency Offset Compensation Using Aid Information for Improving Performance in Aviation Mobile Broadband Communication** — Xian, W.; Jun, Z. (2008) *2008 4th International Conference on Wireless Communications, Networking and Mobile Computing, Vols 1-31*
+- **Doppler Frequency Offset Estimation and Compensation in OFDM Aeronautical Communication Systems in the Presence of Narrow-Band Interference** — Wang, X.; Zhang, X. L.; Yang, Y. (2016) *Milcom 2016 - 2016 Ieee Military Communications Conference*
+- **Doppler Radar Vital Sign Detection with Random Body Movement Cancellation Based on Adaptive Phase Compensation** — Gu, C. Z.; Wang, G. C.; Inoue, T. 等 (2013) *2013 Ieee Mtt-S International Microwave Symposium Digest (Ims)*
+- **Doppler Shift Compensation Schemes in VANETs** — Nyongesa, F.; Djouani, K.; Olwal, T. 等 (2015) *Mobile Information Systems*
+- **Doppler Shift Compensation in Vehicular Communication Systems** — Chelli, K.; Herfet, T. (2016) *2016 2nd Ieee International Conference on Computer and Communications (Iccc)*
+- **Doppler Spectrums Based Translational Motion Compensation for Narrowband Radar Imaging** — Liu, Y. L.; Wei, X. Z.; Peng, B. 等 (2017) *2017 Progress in Electromagnetics Research Symposium - Spring (Piers)*
+- **Doppler and/or Beyond-GI Multipath Compensation by Using an Antenna Array for OFDM Receiver** — Gao, J.; Mase, K. (2012) *2012 Ieee Vehicular Networking Conference (Vnc)*
+- **Doppler compensation algorithm for chirp-based acoustic local positioning systems** — Aguilera, T.; Alvarez, F. J.; Paredes, J. A. 等 (2020) *Digital Signal Processing*
+- **Doppler compensation for OFDM transmission by sectorised antenna reception** — Klenner, P.; Kammeyer, K. D. (2008) *European Transactions on Telecommunications*
+- **Doppler compensation for binary phase-coded waveforms** — Cheng, Y. P.; Bao, Z.; Zhao, P. F. 等 (2002) *Ieee Transactions on Aerospace and Electronic Systems*
+- **Doppler compensation in forward-looking STAP radar** — Kreyenkamp, O.; Klemm, R. (2001) *Iee Proceedings-Radar Sonar and Navigation*
+- **Doppler compensation method for the complementary phase-coded signal** — Li, W. J.; Ren, L. X.; Mao, E. K. 等 (2019) *Journal of Engineering-Joe*
+- **Doppler compensation mobile by using dual antenna for OFDM systems** — Serbetli, S.; Baggen, S. (2008) *2008 Ieee 67th Vehicular Technology Conference-Spring, Vols 1-7*
+- **Doppler effect compensation scheme based on constellation estimation for OFDM system** — Lee, B. S. (2008) *Electronics Letters*
+- **Doppler frequency compensation basing the velocity of train and high-speed railway scenario** — Huong, T. T.; Anh, N. D. (2019) *2019 12th International Conference on Advanced Technologies for Communications (Atc 2019)*
+- **Doppler tracking and fast compensation for OFDM transmission via non-stationary underwater platforms** — Pu, Z.; Wang, W.; Li, Y. 等 (2018) *Journal of Intelligent & Fuzzy Systems*
+- **Doppler-Based Motion Compensation Strategies for 3-D Diverging Wave Compounding and Multiplane-Transmit Beamforming: A Simulation Study** — Chen, Y. R.; D'hooge, J.; Luo, J. W. (2018) *Ieee Transactions on Ultrasonics Ferroelectrics and Frequency Control*
+- **Doppler-based motion compensation algorithm for focusing the signature of a rotorcraft** — Goldman, G. H. (2013) *Journal of the Acoustical Society of America*
+- **Doppler-compensation for OFDM-transmission by sectorized antenna reception** — Klenner, P.; Kammeyer, K. D. (2007) *Multi-Carrier Spread Spectrum 2007*
+- **Doppler-shift compensation behavior by Wagner's mustached bat, Pteronotus personatus** — Smotherman, M.; Guillen-Servent, A. (2008) *Journal of the Acoustical Society of America*
+- **Doppler-shift compensation behavior in horseshoe bats revisited: auditory feedback controls both a decrease and an increase in call frequency** — Metzner, W.; Zhang, S. Y.; Smotherman, M. (2002) *Journal of Experimental Biology*
+- **Doppler-shift compensation in the Taiwanese leaf-nosed bat (Hipposideros terasensis) recorded with a telemetry microphone system during flight** — Hiryu, S.; Katsura, K.; Lin, L. K. 等 (2005) *Journal of the Acoustical Society of America*
+- **Dynamic Doppler Frequency Shift Errors: Measurement, Characterization, and Compensation** — Wang, C.; Ellis, J. D. (2015) *Ieee Transactions on Instrumentation and Measurement*
+- **Effects of echo intensity on Doppler-shift compensation behavior in horseshoe bats** — Smotherman, M.; Metzner, W. (2003) *Journal of Neurophysiology*
+- **Efficient Doppler Spread Compensation with Frequency Domain Equalizer and Turbo Code** — Jeong, H.; Ryu, H. G. (2011) *Multimedia, Computer Graphics and Broadcasting, Pt Ii*
+- **Efficient Translational Motion Compensation for Micro-Doppler Extraction of Ballistic Missiles** — Jung, J. H.; Kim, S. H.; Choi, I. O. 等 (2017) *International Journal of Aeronautical and Space Sciences*
+- **Estimation and Compensation of Doppler Effect Using Variable Sub-carrier Spacing in Multiband UAC OFDM Systems** — Ahmed, S.; Arslan, H. (2010) *Oceans 2010*
+- **Estimation and Compensation of Doppler Scale in UAC OFDM Systems** — Ahmed, S. (2015) *Oceans 2015 - Mts/Ieee Washington*
+- **Evaluation of Cerebral Circulatory Compensation With Tc99m-HMPAO SPECT And Bilateral Transcranial Doppler Monitoring Of Middle Cerebral Artery In Patients With Chronic Carotid Artery Occlusions** — Kostina, I. S.; Scherbinin, A. V.; Ryzhkova, D. V. (2015) *European Journal of Nuclear Medicine and Molecular Imaging*
+- **Extended Multiple Aperture Mapdrift-Based Doppler Parameter Estimation and Compensation for Very-High-Squint Airborne SAR Imaging** — Zhou, Z. C.; Li, Y. H.; Wang, Y. 等 (2019) *Sensors*
+- **Extension of Adaptive Angle-Doppler Compensation (AADC) in STAP to Increase Homogeneity of Data in Airborne Bistatic Radar** — Fallah, A.; Bakhshi, H. (2012) *2012 Sixth International Symposium on Telecommunications (Ist)*
+- **FFT-based Equalizer with Doppler Compensation for OFDM Systems in Time-Variant Multipath Channels** — Eldarov, N.; Herfet, T. (2014) *2014 Ieee International Conference on Consumer Electronics (Icce)*
+- **Fast Tracking Doppler Compensation for OFDM-Based LEO Satellite Data Transmission** — Li, J. H.; Zhang, Y. F.; Zhang, Y. 等 (2016) *2016 2nd Ieee International Conference on Computer and Communications (Iccc)*
+- **Fast-Varying Doppler Compensation for Underwater Acoustic OFDM Systems** — Kang, T.; Iltis, R. A. (2008) *2008 42nd Asilomar Conference on Signals, Systems and Computers, Vols 1-4*
+- **Feasibility of heart rate variability measurement from quadrature Doppler radar using aretangent demodulation with DC offset compensation** — Massagram, W.; Hafner, N. M.; Park, B. K. 等 (2007) *2007 Annual International Conference of the Ieee Engineering in Medicine and Biology Society, Vols 1-16*
+- **Fine Doppler scale estimations for an underwater acoustic CP-OFDM system** — Wan, Lei; Jia, Hanbo; Zhou, Feng 等 (2020) *Signal Processing*
+- **First Demonstration of Doppler Compensation Technique Using Period-one Nonlinear Semiconductor Laser Dynamics for OFDM-RoF Coherent Detection** — Hung, Y. H.; Yan, J. H.; Huang, H. H. 等 (2018) *2018 Optical Fiber Communications Conference and Exposition (Ofc)*
+- **Free-Breathing Fetal Cardiac MRI With Doppler Ultrasound Gating, Compressed Sensing, and Motion Compensation** — Haris, K.; Hedstrom, E.; Kording, F. 等 (2020) *Journal of Magnetic Resonance Imaging*
+- **Frequency Spreading Doppler Scaling Compensation in Underwater Acoustic Multicarrier Communications** — Aminjavaheri, A.; RezazadehReyhani, A.; Farhang-Boroujeny, B. (2015) *2015 Ieee International Conference on Communications (Icc)*
+- **Gound Clutter Rejection for Airborne Radar Using Doppler Compensation** — Motahari, S. M. A.; Deng, H. (2012) *2012 Ieee Antennas and Propagation Society International Symposium (Apsursi)*
+- **Ground moving target detection for airborne radar using clutter doppler compensation and digital beamforming** — Geng, Z.; Motahari, S. M. A.; Deng, H. 等 (2018) *Microwave and Optical Technology Letters*
+- **High Resolution Full-Aperture ISAR Processing through Modified Doppler History Based Motion Compensation** — Song, J. H.; Lee, K. W.; Lee, W. K. 等 (2017) *Sensors*
+- **High Sensitivity GPS Acquisition Algorithm Based on Code Doppler Compensation** — Jiao, X. P.; Wang, J.; Li, X. (2012) *Proceedings of 2012 Ieee 11th International Conference on Signal Processing (Icsp) Vols 1-3*
+- **High-Frame-Rate Echocardiography Using Coherent Compounding With Doppler-Based Motion-Compensation** — Poree, J.; Posada, D.; Hodzic, A. 等 (2016) *Ieee Transactions on Medical Imaging*
+- **High-Mobility Wideband Massive MIMO Communications: Doppler Compensation, Analysis and Scaling Laws** — Guo, W.; Zhang, W. L.; Mu, P. C. 等 (2019) *Ieee Transactions on Wireless Communications*
+- **Hydrophone Array-Assisted Doppler Spread Compensation for Underwater Acoustic Communication** — Ebihara, T. (2013) *2013 Mts/Ieee Oceans - Bergen*
+- **Impact of Doppler Frequency Compensation Errors on Spaceborne Gnss-R Altimetry** — Park, H.; Camps, A.; Valencia, E. (2012) *2012 Ieee International Geoscience and Remote Sensing Symposium (Igarss)*
+- **Implementation of Doppler shift compensation algorithm for Underwater OFDM Communication Systems** — Saraswathi, K.; Reddy, T.; Ravishankar, S. 等 (2017) *Proceedings of the 2017 International Conference on Smart Technologies for Smart Nation (Smarttechcon)*
+- **Improved Semi-Bit Differential Acquisition Method for Navigation Bit Sign Transition and Code Doppler Compensation in Weak Signal Environment** — Nezhadshahbodaghi, M.; Mosavi, M. R.; Rahemi, N. (2020) *Journal of Navigation*
+- **Improving the Performance of High-Density Platooning Using Vehicle Sensor-Based Doppler-Compensation Algorithms** — Alieiev, R.; Jornod, G.; Hehn, T. 等 (2020) *Ieee Transactions on Intelligent Transportation Systems*
+- **Intermittently Nonlinear Impulsive Noise Mitigation and Doppler Shift Compensation in UWA-OFDM Systems** — Barazideh, R.; Niknam, S.; Natarajan, B. 等 (2019) *Ieee Access*
+- **Isar Motion Compensation Based on a New Doppler Parameters Estimation Procedure** — Noviello, C.; Fornaro, G.; Braca, P. 等 (2015) *2015 Ieee International Geoscience and Remote Sensing Symposium (Igarss)*
+- **Laser Doppler vibrometer with body vibration compensation** — Kim, H.; Lee, Y.; Kim, C. 等 (2003) *Optical Engineering*
+- **Location-Aware 5G Communications and Doppler Compensation for High-Speed Train Networks** — Levanen, T.; Talvitie, J.; Wichman, R. 等 (2017) *2017 European Conference on Networks and Communications (Eucnc)*
+- **Low-Complexity Doppler Compensation Algorithm for Underwater Acoustic OFDM Systems With Nonuniform Doppler Shifts** — Ma, L.; Jia, H. B.; Liu, S. Z. 等 (2020) *Ieee Communications Letters*
+- **Low-Complexity Doppler Compensation for OFDM-based Underwater Acoustic Communication Systems** — Abdelkareem, A. E.; Sharif, B. S.; Tsimenidis, C. C. 等 (2011) *2011 Ieee - Oceans Spain*
+- **Low-complexity Doppler compensation in mobile SIMO-OFDM systems** — Schellmann, M.; Thiele, L.; Jungnickel, V. (2008) *2008 42nd Asilomar Conference on Signals, Systems and Computers, Vols 1-4*
+- **MIMO Radar Receiver Design Based on Doppler Compensation for Range and Doppler Sidelobe Suppression** — Chen, J. L.; Li, J. Q.; Yang, L. S. 等 (2015) *Ieice Transactions on Electronics*
+- **Mechanical Doppler Compensation for Electron Excitation of NRF Photons** — Morse, E. C.; Mozin, V.; Norman, E. B. 等 (2009) *2008 Ieee Nuclear Science Symposium and Medical Imaging Conference (2008 Nss/Mic), Vols 1-9*
+- **Method of Detecting a Target Enveloped by a Plasma Sheath Based on Doppler Frequency Compensation** — Ding, Y.; Bai, B. W.; Gao, H. J. 等 (2020) *Ieee Transactions on Plasma Science*
+- **Modified JDL with Doppler compensation for airborne bistatic radar** — Heng, C.; Aboutanios, E.; Mulgrew, B. (2005) *2005 Ieee International Radar, Conference Record*
+- **Motion Compensation Study for a Floating Doppler Wind Lidar.** — Tiana-Alsina, J.; Gutierrez, M. A.; Wurth, I. 等 (2015) *2015 Ieee International Geoscience and Remote Sensing Symposium (Igarss)*
+- **Motion Compensation on Range Doppler Algorithm for Airborne SAR** — Moudgalya, A.; Morris, P. J.; Giriraja, C. V. (2018) *2018 International Conference on Advances in Computing, Communications and Informatics (Icacci)*
+- **Multi-Doppler Compensation in Wireless Communication Systems** — Gupta, R. (2019) *2019 Ursi Asia-Pacific Radio Science Conference (Ap-Rasc)*
+- **Multi-Resampling Doppler Compensation in Cooperative Underwater OFDM Systems** — Karakaya, B.; Hasna, M. O.; Duman, T. M. 等 (2013) *2013 Mts/Ieee Oceans - Bergen*
+- **Multiband Passive Bistatic Radar Coherent Range and Doppler-Walk Compensation** — Olsen, K. E.; Christiansen, J. M. (2015) *2015 Ieee International Radar Conference (Radarcon)*
+- **Non-uniform Doppler compensation for zero-padded OFDM over fast-varying underwater acoustic channels** — Li, B.; Zhou, S.; Stojanovic, M. 等 (2007) *Oceans 2007 - Europe, Vols 1-3*
+- **Optical homodyne BPSK receiver with Doppler shift compensation for LEO-GEO optical communication** — Ando, T.; Haraguchi, E.; Tajima, K. 等 (2013) *2013 Conference on Lasers and Electro-Optics Pacific Rim (Cleo-Pr)*
+- **Optimal Power Allocation and Doppler Compensation in Cooperative Underwater Networks using OFDM** — Yerramalli, S.; Mitra, U. (2009) *Oceans 2009, Vols 1-3*
+- **Optimum Doppler compensation scheme for DVB-H receivers** — Oria, C.; Baena-Lecuyer, V.; Granado, J. 等 (2006) *Electronics Letters*
+- **Optimum receiver design for broadband Doppler compensation in multipath/Doppler channels with rational orthogonal wavelet signaling** — Yu, L. M.; White, L. B. (2007) *Ieee Transactions on Signal Processing*
+- **Path specific Doppler compensation in time-reversal communications** — Jesus, S. M.; Siddiqui, S. I.; Silva, A. (2015) *Journal of the Acoustical Society of America*
+- **Performance of Doppler shift compensation in bats varies with species rather than with environmental clutter** — Zhang, Y.; Lin, A. Q.; Ding, J. N. 等 (2019) *Animal Behaviour*
+- **Piecewise Constant Doppler Algorithm: Performance Analysis, Further Simplification, and Motion Compensation** — Nan, Y. J.; Huang, X. J.; Guo, Y. J. (2020) *Ieee Transactions on Aerospace and Electronic Systems*
+- **Precise Doppler shift compensation in the hipposiderid bat, Hipposideros armiger** — Schoeppler, D.; Schnitzler, H. U.; Denzinger, A. (2018) *Scientific Reports*
+- **Precise Vascular Visualization in Ultrasonic Power Doppler Imaging with Motion Compensation** — Yoshikawa, H.; Azuma, T.; Kawabata, K. (2010) *Japanese Journal of Applied Physics*
+- **Predictive Communication and Its Application to Vehicular Environments: Doppler-Shift Compensation** — Alieiev, R.; Hehn, T.; Kwoczek, A. 等 (2018) *Ieee Transactions on Vehicular Technology*
+- **Proactive Doppler Shift Compensation in Vehicular Cyber-Physical Systems** — Du, J.; Liu, X.; Rao, L. (2018) *Ieee-Acm Transactions on Networking*
+- **Probing Angle Compensation Method for Enhancing Vital Sign Detection with Doppler Radar** — Gao, X. M.; Krook, J.; Okuda, J. R. 等 (2014) *2014 Asia-Pacific Microwave Conference (Apmc)*
+- **Radio environment map-based cognitive Doppler spread compensation algorithms for high-speed rail broadband mobile communications** — Li, J. X.; Zhao, Y. P. (2012) *Eurasip Journal on Wireless Communications and Networking*
+- **Rain attenuation and Doppler shift compensation for satellite communications** — Shin, S. K.; Lim, K.; Choi, K. 等 (2002) *Etri Journal*
+- **Range migration compensation and Doppler ambiguity resolution by keystone transform** — Yang, L.; Tao, Z.; Teng, L. 等 (2006) *Proceedings of 2006 Cie International Conference on Radar, Vols 1 and 2*
+- **Recovery cycle of inferior collicular neurons in Hipposideros pratti under behavior-related sound stimulus and the best Doppler-shift compensation conditions** — Tang, J.; Wei, C. X.; Chen, M. X. 等 (2017) *Physiology & Behavior*
+- **Research on the Effect of Code Doppler on Acquisition Performance and the Compensation Methods** — Zhang, L. F.; Zhang, T. Q.; Li, H. 等 (2013) *China Satellite Navigation Conference (Csnc) 2013 Proceedings: Beidou/Gnss Navigation Applications, Test & Assessment Technology, User Terminal Technology*
+- **Sample Fraction & Doppler Effect Compensation Algorithm for Acquisition of Weak GPS Signals** — Ahmad, U.; Sik, C. W.; Park, S. 等 (2011) *Proceedings of the 2011 International Technical Meeting of the Institute of Navigation*
+- **Sensor-Based Communication Prediction for Dynamic Doppler-Shift Compensation** — Alieiev, R.; Hehn, T.; Kwoczek, A. 等 (2017) *2017 15th International Conference on Its Telecommunications (Itst)*
+- **Short-range MMW PRC-CW radar utilizing Doppler compensation** — Zhao, Z.; Shi, X. Q.; Ding, D. Z. (2008) *2008 International Conference on Microwave and Millimeter Wave Technology Proceedings, Vols 1-4*
+- **Source motion detection, estimation, and compensation for underwater acoustics inversion by wideband ambiguity lag-Doppler filtering** — Josso, N. F.; Ioana, C.; Mars, J. I. 等 (2010) *Journal of the Acoustical Society of America*
+- **Space-Doppler Processing with Adaptive Compensation for Bistatic Multichannel ISAR Imaging of Non-Cooperative Targets** — Gelli, S.; Bacci, A.; Martorella, M. 等 (2015) *2015 12th European Radar Conference (Eurad)*
+- **Stepped frequency SAR imaging based on compensation in Doppler domain** — Tang, L.; Zhu, Y. F.; Fu, Q. (2014) *2014 Ieee International Conference on Signal Processing, Communications and Computing (Icspcc)*
+- **Technique of Doppler compensation for phase-coded signal pulse compression** — Zhang, Y. Y.; Jiang, L. F.; Song, W. J. 等 (2006) *Proceedings of 2006 Cie International Conference on Radar, Vols 1 and 2*
+- **The Impact of Early Diastolic Myocardial Relaxation on the Other Parameters of Diastolic Function and Association of Tissue Doppler Parameters of Diastolic Function with Diabetes Compensation and Duration in Type 2 Diabetic Patients** — Charvat, J.; Chlumsky, J.; Svab, P. 等 (2010) *Journal of International Medical Research*
+- **The Parameter Estimation of Transmit Diversity MIMO Radar with Iteratively Adaptive Pulse Compression and Doppler Compensation** — Wang, H. Q.; Zhu, X. H. (2015) *2015 International Conference on Wireless Communications & Signal Processing (Wcsp)*
+- **The Response Properties and Physiological Mechanism of Processing Doppler-shift Compensation Signal of The Single-on and Double-on Neurons in The Inferior Colliculus of Hipposideros pratti** — Wang, Q. C.; Kong, H. F.; Cheng, Y. W. 等 (2018) *Progress in Biochemistry and Biophysics*
+- **Time-Domain Motion Compensation of HF-Radar Doppler Spectra for an Antenna on a Moving Platform** — Shahidi, R.; Gill, E. W. (2019) *2019 Ieee/Oes Twelfth Current, Waves and Turbulence Measurement (Cwtm)*
+- **Time-variant Doppler frequency estimation and compensation for mobile OFDM systems** — Cai, J. P.; Li, Z.; Hao, Y. 等 (2006) *Ieee Transactions on Consumer Electronics*
+- **Transcranial Doppler Monitoring in Parkinson's Disease: Cerebrovascular Compensation of Orthostatic Hypotension** — Haubrich, C.; Pies, K.; Dafotakis, M. 等 (2010) *Ultrasound in Medicine and Biology*
+- **Translation compensation and micro-Doppler extraction for precession ballistic targets with a wideband terahertz radar** — Yang, Q.; Deng, B.; Wang, H. Q. 等 (2018) *Journal of Electronic Imaging*
+- **Translation compensation and micro-motion parameter estimation of laser micro-Doppler effect** — Guo, L. R.; Hu, Y. H.; Dong, X. 等 (2018) *Acta Physica Sinica*
+- **Translational Motion Compensation and Micro-Doppler Feature Extraction of Space Spinning Targets** — Gu, F. F.; Fu, M. H.; Liang, B. S. 等 (2018) *Ieee Geoscience and Remote Sensing Letters*
+- **Two steps Doppler compensation Algorithm from moving AUV to AUV/Mother Ship for OFDM-based UWA communication system** — Hoq, M. A.; Oshiro, S.; Wada, T. (2020) *International Journal of Computer Science and Network Security*
+- **Ultrasonic distance and velocity measurement using a pair of LPM signals for cross-correlation method: Improvement of Doppler-shift compensation and examination of Doppler velocity estimation** — Hirata, S.; Kurosawa, M. K. (2012) *Ultrasonics*
+- **Variable Range Resampling for Computationally Efficient Doppler Compensation in Underwater Acoustic Communication** — Yoshizawa, S.; Saito, T.; Mabuchi, Y. 等 (2018) *2018 Oceans - Mts/Ieee Kobe Techno-Oceans (Oto)*
+- **Wavelength dependent Stark compensation in isotope selective Doppler-free two photon ionization** — Sankari, M.; Kumar, P. V. K.; Suryanarayana, M. V. (2006) *Optics Communications*
+- **Wide dynamic range Doppler-shift compensation for space-borne optical communications** — Svec, C. B.; Shay, T. M. (2004) *Ieee Photonics Technology Letters*
+- **Wideband Mimo Radar Space-Time Processing with Doppler Compensation** — Li, R. Y.; Li, J.; Zhang, W. 等 (2015) *2015 Ieee China Summit & International Conference on Signal and Information Processing*
+- **High Throughput Mobile Communication Based on OTFS System with the Delay-Doppler Compensation** — An, C.; Ryu, H. G. (2019) *Wireless Personal Communications*
+- **Multiple Doppler Shifts Compensation and ICI Elimination by Beamforming in High-Mobility OFDM Systems** — Zhang, Y.; Yin, Q. Y.; Mu, P. C. 等 (2011) *2011 6th International Icst Conference on Communications and Networking in China (Chinacom)*
+- **Broadband Doppler Compensation: Principles and New Results** — Riedl, T. J.; Singer, A. C. (2011) *2011 Conference Record of the Forty-Fifth Asilomar Conference on Signals, Systems & Computers (Asilomar)*
+
+## MessagePassing（54 篇）
+
+- **(12条消息) 软阈值迭代算法（ISTA）和快速软阈值迭代算法（FISTA）_Anusat的博客-CSDN博客_fista算法**
+- **(9条消息) ISTA 算法_前丨尘忆·梦的博客-CSDN博客_ista算法**
+- **(9条消息) 梯度下降算法原理讲解——机器学习_Ardor-Zhang的博客-CSDN博客_梯度下降法**
+- **A GAMP-Based Low Complexity Sparse Bayesian Learning Algorithm** — Al-Shoukairi, Maher; Schniter, Philip; Rao, Bhaskar D. (2018) *IEEE Transactions on Signal Processing*
+- **A fast iterative shrinkage-thresholding algorithm for linear inverse problems** — Beck, Amir; Teboulle, Marc (2009) *Siam Journal on Imaging Sciences*
+- **A message-passing receiver for BICM-OFDM over unknown clustered-sparse channels** — Schniter, Philip (2011) *Ieee Journal on Selected Areas in Signal Processing*
+- **APPROXIMATE MESSAGE PASSING ALGORITHMS FOR COMPRESSED SENSING** — Maleki, Arian
+- **An Empirical Bayesian Strategy for Solving the Simultaneous Sparse Approximation Problem** — Wipf, David P.; Rao, Bhaskar D. (2007) *IEEE Transactions on Signal Processing*
+- **Approximate Message Passing With Parameter Estimation for Heavily Quantized Measurements** — Huang, Shuai; Qiu, Deqiang; Tran, Trac D. (2022) *IEEE Transactions on Signal Processing*
+- **Asymptotic Analysis of MAP Estimation via the Replica Method and Applications to Compressed Sensing** — Rangan, Sundeep; Fletcher, Alyson K.; Goyal, Vivek K (2012) *IEEE Transactions on Information Theory*
+- **Codes, Graphs, and Systems: A Celebration of the Life and Career of G. David Forney, Jr. on the Occasion of his Sixtieth Birthday** — Blahut, Richard E.; Koetter, Ralf (2002)
+- **Compressive Phase Retrieval via Generalized Approximate Message Passing** — Schniter, Philip; Rangan, Sundeep (2015) *IEEE Transactions on Signal Processing*
+- **Convergence Analysis and Assurance for Gaussian Message Passing Iterative Detector in Massive MU-MIMO Systems** — Liu, Lei; Yuen, Chau; Guan, Yong Liang 等 (2016) *IEEE Transactions on Wireless Communications*
+- **Distributed Variational Bayesian Algorithms Over Sensor Networks** — Hua, J. H.; Li, C. G. (2016) *Ieee Transactions on Signal Processing*
+- **Factor-Graph-Based Joint IBI/ICI Mitigation for OFDM in Underwater Acoustic Multipath Channels With Long-Separated Clusters** — Wang, Zhaohui; Zhou, Shengli; Catipovic, Josko 等 (2012) *IEEE Journal of Oceanic Engineering*
+- **Fast Variational Bayesian Learning for Channel Estimation with Prior Statistical Information** — Karseras, E.; Dai, W.; Dai, L. L. 等 (2015) *2015 IEEE 16th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)*
+- **Generalized Approximate Message Passing for Estimation with Random Linear Mixing** — Rangan, Sundeep (2011)
+- **Gradient methods for minimizing composite functions** — Nesterov, Yu. (2013) *Mathematical Programming*
+- **Hybrid Approximate Message Passing** — Rangan, Sundeep; Fletcher, Alyson K.; Goyal, Vivek K. 等 (2017) *IEEE Transactions on Signal Processing*
+- **Iterative Algorithms for Inference and Optimization, with Applications in Communications and Compressed Sensing** — Rush, Cynthia
+- **Joint Device Activity Detection, Channel Estimation and Signal Detection for Massive Grant-Free Access via BiGAMP** — Zhang, Shanshan; Cui, Ying; Chen, Wen (2023) *IEEE Transactions on Signal Processing*
+- **MOUSAVI-DOCUMENT-2014.pdf**
+- **Marginal Likelihood Maximization Based Fast Array Manifold Matrix Learning for Direction of Arrival Estimation** — Mao, Yiwen; Guo, Qinghua; Ding, Jinshan 等 (2021) *IEEE Transactions on Signal Processing*
+- **Message Passing Algorithms and Extensions of Sparse Bayesian Learning** — Al-Shoukairi, Maher
+- **Message Passing Algorithms for Optimization** — Ruozzi, Nicholas Robert
+- **Message Passing Approaches to Compressive Inference Under Structured Signal Priors** — Ziniel, J
+- **Message passing algorithms - methods and applications** — Bean, Andrew J.
+- **Multi-Layer Bilinear Generalized Approximate Message Passing** — Zou, Qiuyun; Zhang, Haochuan; Yang, Hongwen (2021) *IEEE Transactions on Signal Processing*
+- **Multiuser detection in massive spatial modulation (SM-) MIMO with low-resolution ADCs** — Wang, Shengchu; Li, Yunzhou; Wang, Jing 等 (2014)
+- **Performance Analysis and Improvement for VAMP Soft Frequency-Domain Equalizers** — Li, Dong; Wu, Yanbo; Tao, Jun 等 (2019) *IEEE Access*
+- **Sketched Clustering via Hybrid Approximate Message Passing** — Byrne, Evan; Chatalic, Antoine; Gribonval, Remi 等 (2019) *IEEE Transactions on Signal Processing*
+- **Solving Linear and Bilinear Inverse Problems using Approximate Message Passing Methods** (2020)
+- **Sparse Signal Recovery with Temporally Correlated Source Vectors Using Sparse Bayesian Learning** — Zhang, Zhilin; Rao, Bhaskar D. (2011) *IEEE Journal of Selected Topics in Signal Processing*
+- **The Dynamics of Message Passing on Dense Graphs, with Applications to Compressed Sensing** — Bayati, Mohsen; Montanari, Andrea (2010) *IEEE Transactions on Information Theory*
+- **Turbo Message Passing Based Receiver Design for Time-Varying OFDM Systems** — Kuai Xiaoyan; Yuan Xiaojun; Liang Ying-Chang (2019) *IEEE Transactions on Communications*
+- **Variational Bayesian Expectation Maximization for Radar Map Estimation** — Lundgren, M.; Svensson, L.; Hammarstrand, L. (2016) *Ieee Transactions on Signal Processing*
+- **nsfc_ZD21948308.pdf**
+- **A unifying tutorial on Approximate Message Passing** — Feng, Oliver Y; Venkataramanan, Ramji; Rush, Cynthia 等
+- **Approximate Message Passing Algorithms for Generalized Bilinear Inference** — Jason, T. Parker (2014)
+- **Bilinear Generalized Approximate Message Passing—Part I: Derivation** — Parker, Jason T.; Schniter, Philip; Cevher, Volkan (2014) *IEEE Transactions on Signal Processing*
+- **Bilinear Generalized Approximate Message Passing—Part II: Applications** — Parker, Jason T.; Schniter, Philip; Cevher, Volkan (2014) *IEEE Transactions on Signal Processing*
+- **Comparison of Damping Approaches for AMP** — Sterk, Elena; Sippel, Carmen; Fischer, Robert F. H. (2023)
+- **Denoising-based Approximate Message Passing for Compressed Sensing** — Christopher, A. Metzler
+- **Message Passing Algorithms for Compressed Sensing** — Donoho, David L.; Maleki, Arian; Montanari, Andrea (2009)
+- **Parametric Bilinear Generalized Approximate Message Passing** — Parker, Jason T.; Schniter, Philip (2016) *IEEE Journal of Selected Topics in Signal Processing*
+- **Unitary Approximate Message Passing for Sparse Bayesian Learning** — Luo, Man; Guo, Qinghua; Jin, Ming 等 (2021) *IEEE Transactions on Signal Processing*
+- **A Concise Tutorial on Approximate Message Passing** — Zou, Qiuyun; Yang, Hongwen (2022)
+- **Iterative Solution of Nonlinear Equations in Several Variables (Classics in Applied Mathematics)** — Rheinboldt, J. M. Ortega and W. C. (1987)
+- **Nonlinear Programming** — Bertsekas, Dimitri P. (1999)
+- **Iterative Frequency Domain Equalization With Generalized Approximate Message Passing** — Guo, Qinghua; Huang, Defeng; Nordholm, Sven 等 (2013) *IEEE Signal Processing Letters*
+- **Bayes-Optimal Joint Channel-and-Data Estimation for Massive MIMO With Low-Precision ADCs** — Wen, Chao-Kai; Wang, Chang-Jen; Jin, Shi 等 (2016) *IEEE Transactions on Signal Processing*
+- **EM-Based Joint Channel Estimation and Detection for Frequency Selective Channels Using Gaussian Message Passing** — Guo, Qinghua; Huang, Defeng (2011) *IEEE Transactions on Signal Processing*
+- **Temporal correlation and message passing-based sparse Bayesian learning channel estimation in single-carrier time-domain equalization for underwater acoustic communications** — Zhu, Guang-jun
+- **Belief-Propagation-Based Low-Complexity Channel Estimation and Detection for Underwater Acoustic Communications With Moving Transceivers** — Yang, Guang; Guo, Qinghua; Qin, Zhengchang 等 (2022) *IEEE Journal of Oceanic Engineering*
+
+## IEEE SPL（45 篇）
+
+- **A Novel $H_2$ Approach to FIR Prediction Under Disturbances and Measurement Errors** — Ortega-Contreras, Jorge; Pale-Ramon, Eli; Shmaliy, Yuriy S. 等 (2021) *IEEE Signal Processing Letters*
+- **A Two-Stage Maximum a Posterior Probability Method for Blind Identification of LDPC Codes** — Li, Longqing; Huang, Zhiping; Zhou, Jing (2021) *IEEE Signal Processing Letters*
+- **Adversarial Unsupervised Domain Adaptation for Harmonic-Percussive Source Separation** — Lordelo, C.; Benetos, E.; Dixon, S. 等 (2021) *IEEE Signal Processing Letters*
+- **An Efficient Newton-Based Method for Sparse Generalized Canonical Correlation Analysis** — Li, Xinrong; Xiu, Xianchao; Liu, Wanquan 等 (2022) *IEEE Signal Processing Letters*
+- **An Exact Solution for Sparse Sampling for Optimal Detection of Known Signals in Gaussian Noise** — Adhikari, Kaushallya; Kay, Steven (2023) *IEEE Signal Processing Letters*
+- **An Integral-Based Approach to Orthogonal AMP** — Cheng, Yiyao; Liu, Lei; Ping, Li (2021) *IEEE Signal Processing Letters*
+- **Automatic Classification of Glaucoma Stages Using Two-Dimensional Tensor Empirical Wavelet Transform** — Parashar, Deepak; Agrawal, Dheeraj Kumar (2021) *IEEE Signal Processing Letters*
+- **Bayesian Post-Model-Selection Estimation** — Harel, Nadav; Routtenberg, Tirza (2021) *IEEE Signal Processing Letters*
+- **Category-Aware Aircraft Landmark Detection** — Li, Yi; Chang, Yi; Ye, Yuntong 等 (2021) *IEEE Signal Processing Letters*
+- **Compressed Super-Resolution of Positive Sources** — Ferreira Da Costa, Maxime; Chi, Yuejie (2021) *IEEE Signal Processing Letters*
+- **Contrast Enhancement of Multiple Tissues in MR Brain Images With Reversibility** — Wu, Hao-Tian; Zheng, Kaihan; Huang, Qi 等 (2021) *IEEE Signal Processing Letters*
+- **Data-Driven Parameter Choice for Illumination Artifact Correction of Digital Images** — Dang, Hong-Phuong; Vimond, Myriam; Geffray, Segolen (2021) *IEEE Signal Processing Letters*
+- **Direction-of-Arrival Estimation Through Exact Continuous ℓ2,0-Norm Relaxation** — Soubies, Emmanuel; Chinatto, Adilson; Larzabal, Pascal 等 (2021) *IEEE Signal Processing Letters*
+- **Face Image Inpainting With Evolutionary Generators** — Han, Chong; Wang, Junli (2021) *IEEE Signal Processing Letters*
+- **Graph-Theoretic Properties of Sub-Graph Entropy** — Sen, Bhaskar; Parhi, Keshab K. (2021) *IEEE Signal Processing Letters*
+- **Hole-Free Coprime Array for DOA Estimation: Augmented Uniform Co-Array** — Ma, Penghui; Li, Jianfeng; Xu, Fan 等 (2021) *IEEE Signal Processing Letters*
+- **Hybrid Cascade Filter With Complementary Features for Visual Tracking** — Zhu, Hong; Han, Yusheng; Wang, Yong 等 (2021) *IEEE Signal Processing Letters*
+- **Learning Unsupervised and Supervised Representations via General Covariance** — Yuan, Yun-Hao; Li, Jin; Li, Yun 等 (2021) *IEEE Signal Processing Letters*
+- **Linguistic Steganography: From Symbolic Space to Semantic Space** — Zhang, Siyu; Yang, Zhongliang; Yang, Jinshuai 等 (2021) *IEEE Signal Processing Letters*
+- **Local Graph Clustering With Network Lasso** — Jung, Alexander; SarcheshmehPour, Yasmin (2021) *IEEE Signal Processing Letters*
+- **Meta-MSNet: Meta-Learning Based Multi-Source Data Fusion for Traffic Flow Prediction** — Fang, Shen; Pan, Xianbing; Xiang, Shiming 等 (2021) *IEEE Signal Processing Letters*
+- **Multi-Attention Network for Unsupervised Video Object Segmentation** — Zhang, Guifang; Wong, Hon-Cheng; Lo, Sio-Long (2021) *IEEE Signal Processing Letters*
+- **Multi-Function Radar Signal Sorting Based on Complex Network** — Chi, Kun; Shen, Jihong; Li, Yan 等 (2021) *IEEE Signal Processing Letters*
+- **Multi-Volumetric Refocusing of Light Fields** — Jayaweera, Sakila S.; Edussooriya, Chamira U. S.; Wijenayake, Chamith 等 (2021) *IEEE Signal Processing Letters*
+- **Non-Autoregressive Transformer for Speech Recognition** — Chen, Nanxin; Watanabe, Shinji; Villalba, Jesus 等 (2021) *IEEE Signal Processing Letters*
+- **On a Particular Family of Differential Beamformers With Cardioid-Like and No-Null Patterns** — Zhao, Xudong; Benesty, Jacob; Huang, Gongping 等 (2021) *IEEE Signal Processing Letters*
+- **On the Identifiability of Sparse Vectors From Modulo Compressed Sensing Measurements** — Prasanna, Dheeraj; Sriram, Chandrasekhar; Murthy, Chandra R. (2021) *IEEE Signal Processing Letters*
+- **Parameter Estimation for Sinusoidal Frequency-Modulated Signals Using Phase Modulation** — Jiang, Xiaodong; Wu, Siliang; Chen, Yuan 等 (2021) *IEEE Signal Processing Letters*
+- **Predicting Spatio-Temporal Entropic Differences for Robust No Reference Video Quality Assessment** — Mitra, Shankhanil; Soundararajan, Rajiv; Channappayya, Sumohana S. (2021) *IEEE Signal Processing Letters*
+- **Rapid Robust Principal Component Analysis: CUR Accelerated Inexact Low Rank Estimation** — Cai, HanQin; Hamm, Keaton; Huang, Longxiu 等 (2021) *IEEE Signal Processing Letters*
+- **Readout of Energy Pulses on Microwave SQUID Multiplexer: A Sensor Array-Based Approach** — Kunzler, Jonas A.; Lemos, Rodrigo P.; Karcher, Nick 等 (2021) *IEEE Signal Processing Letters*
+- **Real-Time Audio-Guided Multi-Face Reenactment** — Zhang, Jiangning; Zeng, Xianfang; Xu, Chao 等 (2022) *IEEE Signal Processing Letters*
+- **Robust Dereverberation With Kronecker Product Based Multichannel Linear Prediction** — Yang, Wenxing; Huang, Gongping; Chen, Jingdong 等 (2021) *IEEE Signal Processing Letters*
+- **Robust Downlink Transmit Optimization Under Quantized Channel Feedback via the Strong Duality for QCQP** — Lin, Xianming; Huang, Yongwei; Ma, Wing-Kin (2021) *IEEE Signal Processing Letters*
+- **Robust Kernel Correlation Based Bi-Channel Signal Detection With Correlated Non-Gaussian Noise** — Lai, Huadong; Xu, Weichao (2021) *IEEE Signal Processing Letters*
+- **SAGRNN: Self-Attentive Gated RNN For Binaural Speaker Separation With Interaural Cue Preservation** — Tan, Ke; Xu, Buye; Kumar, Anurag 等 (2021) *IEEE Signal Processing Letters*
+- **Semi-Blind Channel Estimation in MIMO Systems With Discrete Priors on Data Symbols** — Al-Shoukairi, Maher; Rao, Bhaskar D. (2022) *IEEE Signal Processing Letters*
+- **Signal Lag Measurements Based on Temporal Correlations** — Kim, Dong Sik; Lee, Eunae (2021) *IEEE Signal Processing Letters*
+- **Subspace-Based Learning for Automatic Dysarthric Speech Detection** — Janbakhshi, Parvaneh; Kodrasi, Ina; Bourlard, Herve (2021) *IEEE Signal Processing Letters*
+- **The Property of Frequency Shift in 2D-FRFT Domain With Application to Image Encryption** — Gao, Lei; Qi, Lin; Guan, Ling (2021) *IEEE Signal Processing Letters*
+- **Three-Stream Cross-Modal Feature Aggregation Network for Light Field Salient Object Detection** — Wang, Anzhi (2021) *IEEE Signal Processing Letters*
+- **Time Difference of Arrival Estimation Based on a Kronecker Product Decomposition** — Wang, Xianrui; Huang, Gongping; Benesty, Jacob 等 (2021) *IEEE Signal Processing Letters*
+- **Total Variation Constrained Graph-Regularized Convex Non-Negative Matrix Factorization for Data Representation** — Tian, Miao; Leng, Chengcai; Wu, Haonan 等 (2021) *IEEE Signal Processing Letters*
+- **Transient Performance Analysis of the $\ell _1$-RLS** — Gao, Wei; Chen, Jie; Richard, Cédric 等 (2022) *IEEE Signal Processing Letters*
+- **Two-Stream Encoder GAN With Progressive Training for Co-Saliency Detection** — Qian, Xiaoliang; Cheng, Xi; Cheng, Gong 等 (2021) *IEEE Signal Processing Letters*
+
+## MobileCommunication（45 篇）
+
+- **A Novel Iterative Algorithm for Time-varying Channel Estimation in OFDM systems** — Guo, Qilin; Wu, Muqing; Zhang, Qinjuan 等 (2011)
+- **Analytical Analysis of Bayesian CramÉr–Rao Bound for Dynamical Rayleigh Channel Complex Gains Estimation in OFDM System** — Hijazi, Hussein; Ros, Laurent (2009) *IEEE Transactions on Signal Processing*
+- **Bayesian Cramer-Rao Bound for OFDM Rapidly Time-Varying Channel Complex Gains Estimation** — Hijazi, H.; Ros, L. (2009)
+- **Bayesian Cramer-Rao bounds for complex gain parameters estimation of slowly varying Rayleigh channel in OFDM systems** — Hijazi, H.; Ros, L. (2009)
+- **Borne de Cramér-Rao Bayésienne associée à l'estimation des gains complexes d'un canal de Rayleigh avec spectre de Jakes pour les récepteurs OFDM à grande mobilité** — Hijazi, Hussein; Ros, L. (2009)
+- **Channel Estimation for Time-Varying MIMO Relay Systems** — Chiong, Choo W. R.; Rong, Yue; Xiang, Yong (2015) *IEEE Transactions on Wireless Communications*
+- **Channel estimation for MIMO-OFDM systems in Fast Time-Varying Environments** — Hijazi, H.; Simon, E.; Liénard, M. 等 (2010)
+- **Channel tracking and equalization using Kalman estimation for MIMO systems in non-isotropic Ricean fading environment** — Kazmi, Abbas H.; Khan, N. (2010)
+- **Complex Amplitudes Tracking Loop for multipath channel estimation in OFDM systems under slow to moderate fading** — Ros, L.; Hijazi, H.; Simon, E. (2014)
+- **Complex amplitudes tracking loop for multipath slow fading channel estimation in OFDM systems** — Ros, L.; Hijazi, H.; Simon, E. (2012)
+- **Efficient Estimation and Prediction for Sparse Time-Varying Underwater Acoustic Channels** — Zhang, Yi; Venkatesan, Ramachandran; Dobre, Octavia A. 等 (2020) *IEEE Journal of Oceanic Engineering*
+- **Estimation de canal et Synchronisation pour les systèmes OFDM en présence de mobilité** — Simon, E. (2015)
+- **Extended Kalman Filter based estimation for fast fading MIMO channels** — Ignatius, G.; Murali, K. V. U.; Krishna, N. 等 (2012)
+- **Hybrid Cramer-Rao bound for dynamical time-varying channel and carrier frequency offset estimation in OFDM systems** — Hijazi, H.; Fawaz, Lama; Akra, Amira 等 (2012)
+- **Interactive Multiple Model Estimation of Doubly-Selective Channels for OFDM systems** — Ashour, Mahmoud; El-Keyi, A. (2016)
+- **Iterative Decomposed OFDM Channel Estimation Algorithm Over Highly Mobile Channels** — Guo, Qilin; Wu, Muqing; Zhang, Qinjuan 等 (2013)
+- **Iterative Soft-Kalman Channel Estimation for Fast Time-Varying MIMO-OFDM Channels** — Simon, E.; Khalighi, M. (2013)
+- **Joint CFO and channel acquisition and tracking based on parametric channel modeling for OFDM systems in the presence of high mobility** — Simon, E.; Berbineau, M.; Liénard, M. (2011)
+- **Joint CFO and time-varying channel estimation by particle filtering in OFDM systems** — Hijazi, H.; Dakhlallah, Amina; Hajj, Shafic Al 等 (2013)
+- **Joint Carrier Frequency Offset and Channel Estimation for OFDM Systems via the EM Algorithm in the Presence of Very High Mobility** — Simon, E.; Ros, L.; Hijazi, H. 等 (2012)
+- **Joint Carrier Frequency Offset and fast time-varying channel estimation for MIMO-OFDM systems** — Simon, E.; Ros, L.; Hijazi, H. 等 (2011)
+- **Joint Estimation of Carrier Frequency Offset and Channel Complex Gains for OFDM Systems in Fast Time-Varying Vehicular Environments** — Simon, E.; Hijazi, H.; Ros, L. 等 (2010)
+- **Joint channel and phase noise estimation in OFDM systems at very high speeds** — Fang, Jin; Simon, E.; Berbineau, M. 等 (2013)
+- **Joint data QR-detection and Kalman estimation for OFDM time-varying Rayleigh channel complex gains** — Hijazi, Hussein; Ros, Laurent (2010) *IEEE Transactions on Communications*
+- **Kalman Filter Based Approach of a signal by removing ICI for OFDM Channel** — Kumar, L. (2019)
+- **Low-Complexity Block Turbo Equalization for OFDM Systems in Time-Varying Channels** — Fang, Kun; Rugini, Luca; Leus, Geert (2008) *IEEE Transactions on Signal Processing*
+- **Mixture PLL-based loop for joint CFO and channel estimation in slow time-varying OFDM environment** — Hijazi, H.; Al-Ghouwayel, Ali; Mostafa, Mohammad 等 (2014)
+- **Novel recursive approach for OFDM channel estimation under highly mobile conditions** — Guo, Qilin; Wu, Muqing; Zhang, Qinjuan 等 (2012)
+- **OFDM Channel Parameters Estimation used for ICI Reduction in time-varying Multipath Channels** — Hijazi, H.; Ros, L.; Jourdain, G. (2008)
+- **OFDM high speed channel complex gains estimation using Kalman filter and QR-detector** — Hijazi, H.; Ros, L. (2008)
+- **On the Capacity of Time-Varying Channels With Periodic Feedback** — Sadrabadi, Mehdi Ansari; Maddah-Ali, Mohammad Ali; Khandani, Amir Keyvan (2007) *IEEE Transactions on Information Theory*
+- **On the use of first-order autoregressive modeling for Rayleigh flat fading channel estimation with Kalman filter** — Ghandour-Haidar, Soukayna; Ros, L.; Brossier, J. (2012)
+- **On-line Bayesian Cramer-Rao Bounds for OFDM slowly varying rayleigh multi-path channel estimation** — Hijazi, H.; Ros, L. (2008)
+- **Paths complex gain tracking algorithms for OFDM receiver in slowly-varying channels** — Ros, L.; Hijazi, H.; Simon, E. (2010)
+- **Performance of Turbo Decision-Feedback Detection for Downlink OFDM** — Sil, Koushik; Agarwal, Manish; Guo, Dongning 等 (2007)
+- **Pilot-Assisted Time-Varying Channel Estimation for OFDM Systems** — Tang, Zijian; Cannizzaro, R.; Leus, G. 等 (2007)
+- **Pilot-Assisted Time-Varying OFDM Channel Estimation Based on Multiple OFDM Symbols** — Tang, Zijian; Leus, G.; Banelli, P. (2006)
+- **Polynomial Estimation of Time-Varying Multipath Gains With Intercarrier Interference Mitigation in OFDM Systems** — Hijazi, H.; Ros, L. (2009)
+- **Polynomial estimation of time-varying multipath gains with ICI mitigation in OFDM systems** — Hijazi, H.; Ros, L. (2008)
+- **Second-order modeling for Rayleigh flat fading channel estimation with Kalman Filter** — Ros, L.; Simon, E. (2011)
+- **Statistical Analysis Approach to Reduce Inter Channel Interference by using Kalaman Filter in term of BER & SNR** — Kumar, L.; Bhutto, Dr Javed Khan; Pandit, Mr Gautam (2019)
+- **Sur l'utilisation des filtres du premier-ordre pour l'estimation d'un canal radio-mobile de Rayleigh à évanouissement plat** — Ros, L.; Brossier, J.; Haidar, Soukayna Ghandour (2011)
+- **Time-Varying Channel Complex Gains Estimation and ICI Suppression in OFDM Systems** — Hijazi, H.; Ros, L. (2007)
+- **Transmission Systems Rayleigh time-varying channel complex gains estimation and ICI cancellation in OFDM systems** — Hijazi, H.; Ros, L. (2009)
+- **Télécommunications dans les systèmes de transport à forte mobilité : estimation et synchronisation de canal pour les communications MIMO - OFDM** — Fang, Jingfang (2012)
+
+## TeamReports（33 篇）
+
+- **Codes-and-Decoding-on-General-Graphs** — Niclas Wiberg (1996)
+- **50YearsDataScience数据科学五十年** — David Donoho (2015)
+- **A Revolution Belief Propagation in Graphs with Cycles** — Brendan J. Frey (1997)
+- **Adaptive Wireless Communications_ MIMO Channels and Networks** — Daniel W. Bliss, Siddhartan Govindasamy (2013)
+- **Approximate Message Passing: Applications to Communications Receivers** — Schniter, Phil
+- **Concise Derivation for Generalized Approximate Message Passing Using Expectation Propagation** — Zou, Qiuyun; Zhang, Haochuan; Wen, Chao-Kai 等 (2018) *IEEE Signal Processing Letters*
+- **Extension of replica analysis to MAP estimation with applications to compressed sensing** — Rangan, Sundeep; Fletcher, Alyson K.; Goyal, Vivek K. (2010)
+- **Frequency-domain equalization of single carrier transmissions over doubly selective channels** — Liu, Hong (2007)
+- **Graphical Models for Machine Learning and Digital Communication** — Brendan J. Frey (1998)
+- **Graphical Models, Exponential Families, and Variational Inference** — Jordan, Michael I.; Wainwright, Martin J. (2007) *Foundations and Trends® in Machine Learning*
+- **High-Dimensional Centrally Symmetric Polytopes with Neighborliness Proportional to Dimension** — Donoho, David L. (2005) *Discrete & Computational Geometry*
+- **High-Speed Wireless Communications_ Ultra-wideband, 3G Long Term Evolution, and 4G Mobile Systems** — Jiangzhou Wang (2008)
+- **Information.Theory.Inference.and.Learning.Algorithms** — David J. C. MacKay (2003)
+- **Iterative Receiver Design for ISI Channels Using Combined Belief- and Expectation-Propagation** — Sun, Peng; Zhang, Chuanzong; Wang, Zhongyong 等 (2015) *IEEE Signal Processing Letters*
+- **Message Passing ——How can factor graph help us do Inference** — Lin, Li
+- **Probabilistic & Unsupervised Learning Approximate Inference** — Maneesh, Sahani
+- **Probabilistic reasoning in intelligent systems networks of plausible inference**
+- **Probability_ A Lively Introduction** — Henk Tijms (2017)
+- **Recent Advances in Approximate Message Passing** — Schniter, Phil
+- **Statistical Physics, Optimization, Inference, and Message-Passing Algorithms** — Florent Krzakala, Federico Ricci-Tersenghi (2013)
+- **The Factor Graph Approach to Model-Based Signal Processing** — Loeliger, Hans-Andrea; Dauwels, Justin; Hu, Junli 等 (2007) *Proceedings of the IEEE*
+- **Trellis and Turbo Coding_ Iterative and Graph-Based Error Control Coding** — Christian B. Schlegel, Lance C. Perez (2015)
+- **Turbo Decoding as an Instance of Pearl's Belief Propagation Algorithm** — Robert J. McEliece, David J. C. MacKay (1998)
+- **Turbo Message Passing Algorithms for Structured Signal Recovery** — Xiaojun Yuan, Zhipeng Xue (2020)
+- **Understanding Belief Propagation and its generalizations** — Jonathan S. Yedidia, William T. Freeman (2001)
+- **Variational Message Passing** — John Winn, Christopher M. Bishop (2004)
+- **Variational algorithms for approximate bayesian inference** — Matthew J. Beal (2003)
+- **ep_summary** — Erik Sudderth (2002)
+- **expectation propagation for approximate bayesian inference**
+- **minka-aspect-talk**
+- **minka-ep-tut-slides**
+- **variational-inference** — David M. Blei
+- **变分推理-贝叶斯** (2012)
+
+## 叠加导频2023改（31 篇）
+
+- **Editorial Underwater Acoustic Communications: Where We Stand and What Is Next?** — Song, Aijun; Stojanovic, Milica; Chitre, Mandar %J IEEE Journal of Oceanic Engineering (2019)
+- **Exploiting Correlation in Sparse Signal Recovery Problems: Multiple Measurement Vectors, Block Sparsity, and Time-Varying Sparsity** — Zhang, Zhilin; Rao, Bhaskar D. (2011)
+- **Expectation-Maximization Gaussian-Mixture Approximate Message Passing** — Vila, Jeremy P.; Schniter, Philip (2013) *IEEE Transactions on Signal Processing*
+- **Data Transmission Over Linear Time-Varying Channels** — Kaplan, Alihan; Pohl, Volker; Lee, Dae Gwan (2022) *IEEE Transactions on Signal Processing*
+- **Orthogonal Delay Scale Space Modulation: A New Technique for Wideband Time-Varying Channels** — K. P., Arunkumar; Murthy, Chandra R. (2022) *IEEE Transactions on Signal Processing*
+- **Orthogonal Time-Frequency Space Modulation: A Promising Next-Generation Waveform** — Wei, Zhiqiang; Yuan, Weijie; Li, Shuangyang 等 (2021) *IEEE Wireless Communications*
+- **Bayes-Optimal Joint Channel-and-Data Estimation for Massive MIMO With Low-Precision ADCs** — Wen, Chao-Kai; Wang, Chang-Jen; Jin, Shi 等 (2016) *IEEE Transactions on Signal Processing*
+- **EM-Based Joint Channel Estimation and Detection for Frequency Selective Channels Using Gaussian Message Passing** — Guo, Qinghua; Huang, Defeng (2011) *IEEE Transactions on Signal Processing*
+- **Temporal correlation and message passing-based sparse Bayesian learning channel estimation in single-carrier time-domain equalization for underwater acoustic communications** — Zhu, Guang-jun
+- **Belief-Propagation-Based Low-Complexity Channel Estimation and Detection for Underwater Acoustic Communications With Moving Transceivers** — Yang, Guang; Guo, Qinghua; Qin, Zhengchang 等 (2022) *IEEE Journal of Oceanic Engineering*
+- **Data-Aided Channel Estimation for OTFS Systems With a Superimposed Pilot and Data Transmission Scheme** — Yuan, Weijie; Li, Shuangyang; Wei, Zhiqiang 等 (2021) *IEEE Wireless Communications Letters*
+- **Large-Scale Inference Empirical Bayes Methods for Estimation, Testing, and Prediction** — Efron, Bradley
+- **A Frequency Domain State-Space Approach to LS Estimation and Its Application in Turbo Equalization** — Qinghua Guo; Defeng Huang (2011) *IEEE Transactions on Signal Processing*
+- **A low-complexity iterative channel estimation and detection technique for doubly selective channels** — Guo, Qinghua; Ping, Li; Huang, Defeng (2009) *IEEE Transactions on Wireless Communications*
+- **Analysis of Sparse Bayesian Learning** — Faul, Anita; Tipping, Michael (2001)
+- **Channel Estimation for Massive MIMO Using Gaussian-Mixture Bayesian Learning** — Wen, Chao-Kai; Jin, Shi; Wong, Kai-Kit 等 (2015) *IEEE Transactions on Wireless Communications*
+- **ESTIMATION OF DOUBLY-SELECTIVE CHANNELS IN BLOCK TRANSMISSIONS USING DATA-DEPENDENT SUPERIMPOSED TRAINING** — Ghogho, Mounir; Swami, Ananthram (2006)
+- **Low-Complexity Iterative Detection for Large-Scale Multiuser MIMO-OFDM Systems Using Approximate Message Passing** — Wu, Sheng; Kuang, Linling; Ni, Zuyao 等 (2014) *IEEE Journal of Selected Topics in Signal Processing*
+- **Message-Passing Receiver for Joint Channel Estimation and Decoding in 3D Massive MIMO-OFDM Systems** — Wu, Sheng; Kuang, Linling; Ni, Zuyao 等 (2016) *IEEE Transactions on Wireless Communications*
+- **Multiuser Detection in Massive Spatial Modulation MIMO With Low-Resolution ADCs** — Wang, Shengchu; Li, Yunzhou; Wang, Jing (2015) *IEEE Transactions on Wireless Communications*
+- **Phase diagram and approximate message passing for blind calibration and dictionary learning** — Krzakala, Florent; Mézard, Marc; Zdeborová, Lenka (2013)
+- **Semi-Blind Channel-and-Signal Estimation for Uplink Massive MIMO With Channel Sparsity** — Yan, Wenjing; Yuan, Xiaojun (2019) *IEEE Access*
+- **Sparse Bayesian learning and the relevance vector machine** — Tipping, Michael (2001)
+- **Sparse signal recovery in the presence of correlated multiple measurement vectors** — Zhang, Zhilin; Rao, Bhaskar D. (2010)
+- **Stochastic Differential Equation Theory Applied to Wireless Channels** — Feng, Tao; Field, Timothy R.; Haykin, Simon (2007) *IEEE Transactions on Communications*
+- **What is the expectation maximization algorithm?** — Do, Chuong B; Batzoglou, Serafim (2008) *Nature Biotechnology*
+- **两个高斯分布乘积的理论推导_高斯分布相乘_程序猿小怪兽的博客-CSDN博客**
+- **Joint Message-Passing-Based Bidirectional Channel Estimation and Equalization With Superimposed Training for Underwater Acoustic Communications** — Yang, Guang; Guo, Qinghua; Ding, Hanxue 等 (2021) *IEEE Journal of Oceanic Engineering*
+- **Extension of SBL Algorithms for the Recovery of Block Sparse Signals With Intra-Block Correlation** — Zhang, Zhilin; Rao, Bhaskar D. (2013) *IEEE Transactions on Signal Processing*
+- **Channel Estimation Using Implicit Training** — Orozco-Lugo, A.G.; Lara, M.M.; McLernon, D.C. (2004) *IEEE Transactions on Signal Processing*
+- **Basis expansion models and diversity techniques for blind identification and equalization of time-varying channels** — Giannakis, G.B.; Tepedelenlioglu, C. (1998) *Proceedings of the IEEE*
+
+## Review（27 篇）
+
+- **Compressed sensing** — Donoho, D.L. (2006) *IEEE Transactions on Information Theory*
+- **Signal processing for underwater acoustic communications** — Singer, Andrew C.; Nelson, Jill K.; Kozat, Suleyman S. (2009) *IEEE Communications Magazine*
+- **Sparse Channel Estimation for Multicarrier Underwater Acoustic Communication: From Subspace Methods to Compressed Sensing** — Berger, Christian R.; Zhou, Shengli; Preisig, James C. 等 (2010) *IEEE Transactions on Signal Processing*
+- **State-of-the-Art Underwater Acoustic Communication Modems: Classifications, Analyses and Design Challenges** — Zia, Muhammad Yousuf Irfan; Poncela, Javier; Otero, Pablo (2020) *Wireless Personal Communications*
+- **Underwater Acoustic Communications and Networking: Recent Advances and Future Challenges** — Chitre, Mandar; Shahabudeen, Shiraz; Stojanovic, Milica (2008) *Marine Technology Society Journal*
+- **Underwater acoustic communication by passive-phase conjugation: theory and experimental results** — Rouseff, D.; Jackson, D.R.; Fox, W.L.J. 等 (2001) *IEEE Journal of Oceanic Engineering*
+- **Editorial Underwater Acoustic Communications: Where We Stand and What Is Next?** — Song, Aijun; Stojanovic, Milica; Chitre, Mandar %J IEEE Journal of Oceanic Engineering (2019)
+- **5G for Military Communications** — Bhardwaj, Anshu (2020) *Procedia Computer Science*
+- **A survey on energy efficiency in underwater wireless communications** — Islam, Kazi Yasin; Ahmad, Iftekhar; Habibi, Daryoush 等 (2022) *Journal of Network and Computer Applications*
+- **Applied Underwater Acoustics** — Bjørnø, L.; Buckingham, M. J.; Neighbors, Thomas H. 等 (2017)
+- **MIMO-OFDM underwater acoustic communication systems—A review** — Qiao, Gang; Babar, Zeeshan; Ma, Lu 等 (2017) *Physical Communication*
+- **Machine Learning for Underwater Acoustic Communications** — Huang, Lihuan; Wang, Yue; Zhang, Qunfei 等 (2022) *IEEE Wireless Communications*
+- **Military communications systems and technologies** — Parr, G (2004) *Computer Networks*
+- **New Frontiers in Marine Tourism. Diving Experiences, Sustainability** (2008)
+- **Overview of channel models for underwater wireless communication networks** — Domingo, Mari Carmen (2008) *Physical Communication*
+- **Security of underwater and air–water wireless communication: State-of-the-art, challenges and outlook** — Aman, Waqas; Al-Kuwari, Saif; Muzzammil, Muhammad 等 (2023) *Ad Hoc Networks*
+- **Stochastic resonance with reinforcement learning for underwater acoustic communication signal** — Qiu, Yinwen; Yuan, Fei; Ji, Shuyao 等 (2021) *Applied Acoustics*
+- **Temporal resolutions of time-reversal and passive-phase conjugation for underwater acoustic communications** — Yang, T.C. (2003) *IEEE Journal of Oceanic Engineering*
+- **The ROV manual: a user guide for remotely operated vehicles** — Christ, Robert D.; Wernli, Robert L. (2014)
+- **Ultrawideband Underwater Acoustic Communication Channels** — van Walree, Paul A.; Otnes, Roald (2013) *IEEE Journal of Oceanic Engineering*
+- **Underwater Acoustic Modems** — Sendra, Sandra; Lloret, Jaime; Jimenez, Jose Miguel 等 (2016) *IEEE Sensors Journal*
+- **Underwater Communications**
+- **Underwater acoustic communications** — Coates, R. (1993)
+- **Underwater communication past, present and future** — Berktay, H. O.; Gazey, B. K.; Teer, C. A. (1968) *Journal of Sound and Vibration*
+- **Underwater acoustic communication channels: Propagation models and statistical characterization** — Stojanovic, Milica; Preisig, James (2009) *IEEE Communications Magazine*
+- **Wireless Communications Over Rapidly Time-Varying Channels** (2011)
+- **水声MIMO信道容量和系统实现关键技术研究** — 朴大志 (2006)
+
+## AMP（27 篇）
+
+- **Bilinear generalized approximate message passing (BiG-AMP) for High Dimensional Inference** — Schniter, Phil
+- **Generalized Unitary Approximate Message Passing for Double Linear Transformation Model** — Mo, Linlin; Lu, Xinhua; Yuan, Jide 等 (2023) *IEEE Transactions on Signal Processing*
+- **Inference in Generalized Linear Models with Applications** — Byrne, Evan (2019)
+- **On the Proximity Factors of Lattice Reduction-Aided Decoding** — Ling, Cong (2011) *IEEE Transactions on Signal Processing*
+- **Orthogonal AMP** — Ma, Junjie; Ping, Li (2017) *IEEE Access*
+- **Regularization by Denoising: Clarifications and New Interpretations** — Reehorst, Edward T.; Schniter, Philip (2019) *IEEE Transactions on Computational Imaging*
+- **Sparse Bayesian learning using approximate message passing** — Al-Shoukairi, Maher; Rao, Bhaskar (2014)
+- **Sparse Reconstruction by Separable Approximation** — Wright, Stephen J.; Nowak, Robert D.; Figueiredo, MÁrio A. T. (2009) *IEEE Transactions on Signal Processing*
+- **Sparsity-Cognizant Total Least-Squares for Perturbed Compressive Sampling** — Zhu, Hao; Leus, Geert; Giannakis, Georgios B. (2011) *IEEE Transactions on Signal Processing*
+- **Exploiting Correlation in Sparse Signal Recovery Problems: Multiple Measurement Vectors, Block Sparsity, and Time-Varying Sparsity** — Zhang, Zhilin; Rao, Bhaskar D. (2011)
+- **Expectation-Maximization Gaussian-Mixture Approximate Message Passing** — Vila, Jeremy P.; Schniter, Philip (2013) *IEEE Transactions on Signal Processing*
+- **AMP Tools for Large-Scale Inference** — Schniter, Philip
+- **A family of algorithms for approximate bayesian inference** — T. P. Minka (2001)
+- **A unifying tutorial on Approximate Message Passing** — Feng, Oliver Y; Venkataramanan, Ramji; Rush, Cynthia 等
+- **Approximate Message Passing Algorithms for Generalized Bilinear Inference** — Jason, T. Parker (2014)
+- **Bilinear Generalized Approximate Message Passing—Part I: Derivation** — Parker, Jason T.; Schniter, Philip; Cevher, Volkan (2014) *IEEE Transactions on Signal Processing*
+- **Bilinear Generalized Approximate Message Passing—Part II: Applications** — Parker, Jason T.; Schniter, Philip; Cevher, Volkan (2014) *IEEE Transactions on Signal Processing*
+- **Comparison of Damping Approaches for AMP** — Sterk, Elena; Sippel, Carmen; Fischer, Robert F. H. (2023)
+- **Denoising-based Approximate Message Passing for Compressed Sensing** — Christopher, A. Metzler
+- **Message Passing Algorithms for Compressed Sensing** — Donoho, David L.; Maleki, Arian; Montanari, Andrea (2009)
+- **Parametric Bilinear Generalized Approximate Message Passing** — Parker, Jason T.; Schniter, Philip (2016) *IEEE Journal of Selected Topics in Signal Processing*
+- **Unitary Approximate Message Passing for Sparse Bayesian Learning** — Luo, Man; Guo, Qinghua; Jin, Ming 等 (2021) *IEEE Transactions on Signal Processing*
+- **A Concise Tutorial on Approximate Message Passing** — Zou, Qiuyun; Yang, Hongwen (2022)
+- **Iterative Detection for Orthogonal Time Frequency Space Modulation With Unitary Approximate Message Passing** — Yuan, Zhengdao; Liu, Fei; Yuan, Weijie 等 (2022) *IEEE Transactions on Wireless Communications*
+- **Extension of SBL Algorithms for the Recovery of Block Sparse Signals With Intra-Block Correlation** — Zhang, Zhilin; Rao, Bhaskar D. (2013) *IEEE Transactions on Signal Processing*
+- **Convolutional Approximate Message-Passing** — Takeuchi, Keigo (2020) *IEEE Signal Processing Letters*
+- **Memory approximate message passing** — Liu, Lei; Huang, Shunqi; Kurkoski, Brian M. (2020) *arXiv preprint arXiv:2012.10861*
+
+## ChannelEstimation（27 篇）
+
+- **A Nonisovelocity Geometry-Based Underwater Acoustic Channel Model** — Naderi, Meisam; Zajic, Alenka G.; Patzold, Matthias (2018) *IEEE Transactions on Vehicular Technology*
+- **A low-complexity orthogonal matching pursuit based channel estimation method for time-varying underwater acoustic OFDM systems** — Qiao, Gang; Song, Qingjun; Ma, Lu 等 (2019) *Applied Acoustics*
+- **Adaptive Downlink OFDMA System With Low-Overhead and Limited Feedback in Time-Varying Underwater Acoustic Channel** — Qiao, Gang; Liu, Lei; Ma, Lu 等 (2019) *IEEE Access*
+- **Analysis of outdated channel state information in underwater acoustic downlink OFDMA system** — Qiao, Gang; Liu, Lei; Ma, Lu (2018)
+- **Channel Estimation for FDD Multi-User Massive MIMO: A Variational Bayesian Inference-Based Approach** — Cheng, X. T.; Sun, J. J.; Li, S. Q. (2017) *Ieee Transactions on Wireless Communications*
+- **Channel estimation strategies for underwater acoustic (UWA) communication: An overview** — Khan, Md Rizwan; Das, Bikramaditya; Pati, Bibhuti Bhusan (2020) *Journal of the Franklin Institute*
+- **Channel-Adaptive Location-Assisted Wake-up Signal Detection Approach Based on LFM Over Underwater Acoustic Channels** — Wang, Deqing; Li, Haiyu; Xie, Yongjun 等 (2019) *IEEE Access*
+- **Data Packet Structure and Modem Design for Dynamic Underwater Acoustic Channels** — Zakharov, Y.; Henson, B.; Diamant, R. 等 (2019) *Ieee Journal of Oceanic Engineering*
+- **Differential Orthogonal Space-Time Block Coding Modulation for Time-Variant Underwater Acoustic Channels** — Qu, Fengzhong; Wang, Zhenduo; Yang, Liuqing %J IEEE Journal of Oceanic Engineering (2016)
+- **Doubly Selective Underwater Acoustic Channel Model for a Moving Transmitter/Receiver** — Chunshan, Liu; Zakharov, Y. V.; Teyan, Chen (2012) *IEEE Transactions on Vehicular Technology*
+- **High-rate communication for underwater acoustic channels using multiple transmitters and space-time coding: Receiver structures and experimental-results** — Roy, S.; Duman, T. M.; McDonald, V. 等 (2007) *Ieee Journal of Oceanic Engineering*
+- **Maximizing network coverage in a multichannel short-range underwater acoustic sensor network** — Ghannadrezaii, Hossein; Bousquet, Jean-François (2019) *Computer Networks*
+- **Online Modeling and Prediction of the Large-Scale Temporal Variation in Underwater Acoustic Communication Channels** — Sun, Wensheng; Wang, Zhaohui (2018) *IEEE Access*
+- **Performance of Spatially Coupled LDPC Codes over Underwater Acoustic Communication Channel** — Padala, Sravan Kumar; D'Souza, John (2020)
+- **Secrecy Capacity for an Underwater Acoustic Channel with a Dominant Noise Source** — Lo, Hung-Yi; Lehnert, James S.; Tran, Phuong T. (2019)
+- **Sparse Channel Estimation for OFDM-Based Underwater Acoustic Systems in Rician Fading With a New OMP-MAP Algorithm** — Panayirci, Erdal; Altabbaa, Mhd Tahssin; Uysal, Murat 等 (2019) *IEEE Transactions on Signal Processing*
+- **Sparse channel estimation of underwater TDS-OFDM system using look-ahead backtracking orthogonal matching pursuit** — Junejo, Naveed Ur Rehman; Esmaiel, Hamada; Zhou, Mingzhang 等 (2018)
+- **Statistical Characterization and Computationally Efficient Modeling of a Class of Underwater Acoustic Communication Channels** — Qarabaqi, Parastoo; Stojanovic, Milica (2013)
+- **Time reversal mfsk acoustic communication in underwater channel with large multipath spread** — Cao, Xiu-ling; Jiang, Wei-hua; Tong, F. %J Ocean Engineering (2018)
+- **Turbo Equalization: An Overview** — Tuchler, M.; Singer, A. C. (2011) *Ieee Transactions on Information Theory*
+- **Turbo解码与Turbo均衡关键技术研究** — 许可 (2011)
+- **Underwater Acoustic Channel Propagation Module for Simulation of Large-Scale Sub-Aquatic Internet of Things (IoT) Networks in JiST/SWANS** — Ghimire, Ashim; Badi, Ahmed (2018)
+- **Underwater Acoustic Channel Tracking based on Parameter Fault Detection Algorithm** — Yu, Haibo; Li, Xingguo; Li, Gangsheng (2019)
+- **Underwater sound channel in the northeastern East China Sea** — Song, Heechun; Cho, Chomgun; Hodgkiss, William 等 (2018)
+- **通信系统中基于概率图模型的迭代接收技术研究** — 段琳琳 (2014)
+- **Minimum mean squared error equalization using A priori information** — Tuchler, M.; Singer, A. C.; Koetter, R. (2002) *Ieee Transactions on Signal Processing*
+- **Turbo equalization: Principles and new results** — Tuchler, M.; Koetter, R.; Singer, A. C. (2002) *Ieee Transactions on Communications*
+
+## 频率估计（27 篇）
+
+- **A Fourier Transform-Based Frequency Estimation Algorithm** — Carboni, Alberto; Ferrero, Alessandro (2018) *IEEE Transactions on Instrumentation and Measurement*
+- **A Frequency Estimation Algorithm based on Energy Accumulation and Iteration Calculation for Underwater Time-Varying Multipath Channel** — Li, Lin
+- **A Method For Fine Resolution Frequency Estimation From Three DFT Samples** — Candan, Çag̃atay (2011) *IEEE Signal Processing Letters*
+- **A Noniterative Frequency Estimator With Rational Combination of Three Spectrum Lines** — Yang, Cui; Wei, Gang (2011) *IEEE Transactions on Signal Processing*
+- **A new algorithm for frequency estimation based on frequency searching** — Li, Yingtai; Zhao, Jin; Li, Jianzhuang 等 (2016)
+- **A novel single tone frequency estimation by interpolation using DFT samples with zero-padding** — Jinzhi, Xiang; Qing, Shen; Wei, Cui (2016)
+- **Accurate Frequency Estimator of Sinusoid Based on Interpolation of FFT and DTFT** — Fan, Lei; Qi, Guoqing; Xing, Jun 等 (2020) *IEEE Access*
+- **Analysis and Further Improvement of Fine Resolution Frequency Estimation Method From Three DFT Samples** — Candan, Çağatay (2013) *IEEE Signal Processing Letters*
+- **Analytical solution of DFT interpolated frequency estimator for Hanning windowed signal** — Liao, Jan-Ray (2015)
+- **Analytical solutions for frequency estimators by interpolation of DFT coefficients** — Liao, Jan-Ray; Lo, Shyng (2014) *Signal Processing*
+- **Digital Processing of Random Signals: Theory and Methods** — Porat, Boaz (2008)
+- **Estimating frequency by interpolation using Fourier coefficients** — Quinn, B.G. (1994) *IEEE Transactions on Signal Processing*
+- **Fast and Efficient Sinusoidal Frequency Estimation by Using the DFT Coefficients** — Serbes, Ahmet (2019) *IEEE Transactions on Communications*
+- **Fast, Accurate Frequency Estimators** — Jacobsen, Eric; Kootsookos, Peter (2007)
+- **Frequency Estimation by Interpolation of Two Fourier Coefficients: Cramér-Rao Bound and Maximum Likelihood Solution** — D’Amico, Antonio Alberto; Morelli, Michele; Moretti, Marco (2022) *IEEE Transactions on Communications*
+- **Frequency Estimation for Low Earth Orbit Satellites** — Aboutanios, Elias (2002)
+- **Frequency estimation by two- or three-point interpolated Fourier algorithms based on cosine windows** — Belega, Daniel; Petri, Dario (2015) *Signal Processing*
+- **Frequency estimation of a single real-valued sinusoid: An invariant function approach** — Candan, Çağatay; Çelebi, Utku (2021) *Signal Processing*
+- **Frequency estimator of sinusoid based on interpolation of three DFT spectral lines** — Fan, Lei; Qi, Guoqing (2018) *Signal Processing*
+- **Frequency estimator of sinusoid by interpolated DFT method based on maximum sidelobe decay windows** — Fan, Lei; Qi, Guoqing; Liu, Jinyu 等 (2021) *Signal Processing*
+- **Iterative frequency estimation by interpolation on Fourier coefficients** — Aboutanios, E.; Mulgrew, B. (2005) *IEEE Transactions on Signal Processing*
+- **Non-iterative and accurate frequency estimation of a single cisoid using two DFT coefficients** — Chen, Yuan; Ko, Annie Hin Cheung; Tam, Wing Shan 等 (2020) *Digital Signal Processing*
+- **On the Estimation of the Parameters of a Real Sinusoid in Noise** — Ye, Shanglin; Sun, Jiadong; Aboutanios, Elias (2017) *IEEE Signal Processing Letters*
+- **The maximum of the periodogram** — An, Hong-Zhi; Chen, Zhao-Guo; Hannan, E.J (1983) *Journal of Multivariate Analysis*
+- **main.pdf**
+- **连续时间傅里叶变换 - seniusen - 博客园**
+- **高精度正弦信号频率估计算法研究** (2011)
+
+## Equalization（25 篇）
+
+- **A Concise Representation for the Soft-in Soft-out LMMSE Detector** — Guo, Q. H.; Huang, D. F. (2011) *Ieee Communications Letters*
+- **An introduction to probabilistic graphical models** — Jordan, M. I. (2003)
+- **Applications of GAMP to Communications Receivers, Spring 2014** — Schniter, Philip (2014)
+- **Bidirectional equalization based on error propagation detection in long-range underwater acoustic communication** — Kim, Hyeonsu; Kim, Sunhyo; Choi, Jee Woong 等 (2019) *Japanese Journal of Applied Physics*
+- **Efficient Adaptive Turbo Equalization for Multiple-Input–Multiple-Output Underwater Acoustic Communications** — Duan, Weimin; Tao, Jun; Zheng, Y. Rosa (2018) *IEEE Journal of Oceanic Engineering*
+- **Enhanced MIMO LMMSE Turbo Equalization: Algorithm, Simulations, and Undersea Experimental Results** — Tao, Jun; Wu, Jingxian; Zheng, Yahong Rosa 等 (2011) *IEEE Transactions on Signal Processing*
+- **Equalization and carrier frequency offset compensation for UWA-OFDM communication systems based on the discrete sine transform** — Ramadan, K.; Fiky, Ahmed S.; Dessouky, Moawad I. 等 (2019) *Digital Signal Processing*
+- **Joint symbol detection and channel estimation for MIMO-OFDM systems via the variational Bayesian EM algorithm** — Zhang, Xiao-Ying; Wang, De-gang; Wei, Ji-Bo (2008)
+- **Low-complexity Turbo-equalization for diversity channels** — Reynolds, D.; Wang, X. D. (2001) *Signal Processing*
+- **Machine learning A Probabilistic Perspective** — Kevin P. Murphy (2012)
+- **Perceptual threshold of apparent source width in relation to the azimuth of a single reflection** — Johnson, D.; Lee, H. (2019) *J Acoust Soc Am*
+- **Probabilistic Backpropagation for ScalableLearning of Bayesian Neural Networks** — Ryan P. Adams (2015)
+- **Probabilistic Graphical Models: Principles and Techniques** — Koller (2014)
+- **Recent Advances in Approximate Message Passing, Summer 2019** — Schniter, Philip (2019)
+- **Reliability-Based Turbo Detection** — Tao, Jun; Wu, Jingxian; Zheng, Yahong Rosa (2011) *IEEE Transactions on Wireless Communications*
+- **Space-time turbo equalization in frequency-selective MIMO channels** — Abe, T.; Matsumoto, T. (2003) *Ieee Transactions on Vehicular Technology*
+- **Sparse Direct Adaptive Equalization for Single-Carrier MIMO Underwater Acoustic Communications** — Tao, Jun; Wu, Yanbo; Han, Xiao 等 (2020) *IEEE Journal of Oceanic Engineering*
+- **aspect-talk** — minka, T.
+- **ep-tut-slides** — minka, T.
+- **slides——Li Lin** — Lin Li (2021)
+- **A family of algorithms for approximate bayesian inference** — T. P. Minka (2001)
+- **Iterative channel estimation for turbo equalization of time-varying frequency-selective channels** — Otnes, R.; Tuchler, M. (2004) *Ieee Transactions on Wireless Communications*
+- **Iterative correction of intersymbol interference: Turbo-equalization** — Douillard, Catherine; Jézéquel, Michel; Berrou, Claude 等 (1995) *European Transactions on Telecommunications*
+- **Soft input channel estimation for turbo equalization** — Song, S.; Singer, A. C.; Sung, K. M. (2004) *Ieee Transactions on Signal Processing*
+- **Turbo equalization: Adaptive equalization and channel decoding jointly optimized** — Laot, C.; Glavieux, A.; Labat, J. (2001) *Ieee Journal on Selected Areas in Communications*
+
+## OTFS（23 篇）
+
+- **OTFS underwater acoustic communications based on passive time reversal** — Jing, Lianyou; Zhang, Namin; He, Chengbing 等 (2022) *Applied Acoustics*
+- **Orthogonal Time-Frequency Space Modulation: A Promising Next-Generation Waveform** — Wei, Zhiqiang; Yuan, Weijie; Li, Shuangyang 等 (2021) *IEEE Wireless Communications*
+- **A Complexity-Reduced QRD-SIC Detector for Interleaved OTFS** — Shao, Hua; Zhang, Haijun; Zhou, Huan 等 (2023) *IEEE Transactions on Wireless Communications*
+- **Channel Estimation for Orthogonal Time Frequency Space (OTFS) Massive MIMO** — Shen, Wenqian; Dai, Linglong; An, Jianping 等 (2019) *IEEE Transactions on Signal Processing*
+- **Delay-Doppler domain decision feedback turbo equalization for OTFS modulation** — Zhang, Yang; Zhang, Qunfei; He, Chengbing 等 (2022) *Physical Communication*
+- **Interference Cancellation and Iterative Detection for Orthogonal Time Frequency Space Modulation** — Raviteja, P.; Phan, Khoa T.; Hong, Yi 等 (2018) *IEEE Transactions on Wireless Communications*
+- **Iterative Channel Estimation And Data Detection in OTFS Using Superimposed Pilots** — Mishra, Himanshu B.; Singh, Prem; Prasad, Abhishek K. 等 (2021)
+- **Low complexity LMMSE Receiver for OTFS** — Tiwari, Shashank; Das, Suvra Sekhar; Rangamgari, Vivek (2019) *IEEE Communications Letters*
+- **Low-Complexity LMMSE Receiver Design for Practical-Pulse-Shaped MIMO-OTFS Systems** — Singh, Prem; Tiwari, Shashank; Budhiraja, Rohit (2022) *IEEE Transactions on Communications*
+- **Low-Complexity Linear Diversity-Combining Detector for MIMO-OTFS** — Thaj, Tharaj; Viterbo, Emanuele (2022) *IEEE Wireless Communications Letters*
+- **Low-Complexity MMSE Receiver Design for Massive MIMO OTFS Systems** — Ahmad Sheikh, Mudasir; Singh, Prem; Budhiraja, Rohit (2022) *IEEE Communications Letters*
+- **Low-Complexity ZF/MMSE MIMO-OTFS Receivers for High-Speed Vehicular Communication** — Singh, Prem; Gupta, Abhishek; Mishra, Himanshu B. 等 (2022) *IEEE Open Journal of the Communications Society*
+- **Low-complexity Linear Equalization for 2×2 MIMO-OTFS Signals** — Surabhi, G. D.; Chockalingam, A. (2020)
+- **OTFS Channel Estimation and Data Detection Designs With Superimposed Pilots** — Mishra, Himanshu B.; Singh, Prem; Prasad, Abhishek K. 等 (2022) *IEEE Transactions on Wireless Communications*
+- **Orthogonal Time Frequency Space (OTFS) Modulation** — Chockalingam, A; Hong, Yi; Viterbo, Emanuele
+- **Orthogonal Time Frequency Space (OTFS) With Dual-Mode Index Modulation** — Zhao, Hang; He, Dongxuan; Kang, Ziqi 等 (2021) *IEEE Wireless Communications Letters*
+- **Orthogonal Time Frequency Space Modulation** — Hadani, R.; Rakib, S.; Tsatsanis, M. 等 (2017)
+- **Pilot Design and Optimization for OTFS Modulation** — Wang, Siqiang; Guo, Jing; Wang, Xinyi 等 (2021) *IEEE Wireless Communications Letters*
+- **Iterative Detection for Orthogonal Time Frequency Space Modulation With Unitary Approximate Message Passing** — Yuan, Zhengdao; Liu, Fei; Yuan, Weijie 等 (2022) *IEEE Transactions on Wireless Communications*
+- **Low Complexity Iterative Rake Decision Feedback Equalizer for Zero-Padded OTFS Systems** — Thaj, Tharaj; Viterbo, Emanuele (2020) *IEEE Transactions on Vehicular Technology*
+- **Delay-Doppler Communications: Principles and Applications** — Hong, Yi; Thaj, Tharaj; Viterbo, Emanuele (2022)
+- **Data-Aided Channel Estimation for OTFS Systems With a Superimposed Pilot and Data Transmission Scheme** — Yuan, Weijie; Li, Shuangyang; Wei, Zhiqiang 等 (2021) *IEEE Wireless Communications Letters*
+- **High Throughput Mobile Communication Based on OTFS System with the Delay-Doppler Compensation** — An, C.; Ryu, H. G. (2019) *Wireless Personal Communications*
+
+## AMP_Introduction（22 篇）
+
+- **A Novel Single Carrier Frequency Domain Equalization Method in Underwater Acoustic Communications** — Zheng, Tonghui; Jing, Lianyou; He, Chengbing 等 (2021)
+- **A Unified Bayesian Inference Framework for Generalized Linear Models** — Meng, Xiangming; Wu, Sheng; Zhu, Jiang (2018) *IEEE Signal Processing Letters*
+- **Asymptotic Analysis of Complex LASSO via Complex Approximate Message Passing (CAMP)** — Maleki, A.; Anitori, L.; Yang, Z. 等 (2013) *IEEE Transactions on Information Theory*
+- **Compressive Imaging Using Approximate Message Passing and a Markov-Tree Prior** — Som, Subhojit; Schniter, Philip (2012) *IEEE Transactions on Signal Processing*
+- **Deep learning based on orthogonal approximate message passing for CP-free OFDM** — Zhang, Jing; He, Hengtao; Wen, Chao-Kai 等 (2019)
+- **Dynamic Compressive Sensing of Time-Varying Signals Via Approximate Message Passing** — Ziniel, Justin; Schniter, Philip (2013) *IEEE Transactions on Signal Processing*
+- **Message Passing-Based Impulsive Noise Mitigation and Channel Estimation for Underwater Acoustic OFDM Communications** — Feng, Xiao; Wang, Junfeng; Kuai, Xiaoyan 等 (2022) *IEEE Transactions on Vehicular Technology*
+- **Message passing algorithms for compressed sensing: II. Analysis and validation** — Donoho, David L.; Maleki, Arian; Montanari, Andrea (2010)
+- **Message-Passing De-Quantization With Applications to Compressed Sensing** — Kamilov, U. S.; Goyal, V. K.; Rangan, S. (2012) *IEEE Transactions on Signal Processing*
+- **Message-passing algorithms for compressed sensing: I Motivation and Construnction** — Donoho, David L.; Maleki, Arian; Montanari, Andrea (2009) *Proceedings of the National Academy of Sciences*
+- **Mobile underwater acoustic communication with orthogonal signal division multiplexing under inter-carrier interference larger than a guardband** — Tabata, Yushi; Ebihara, Tadashi; Ogasawara, Hanako 等 (2021) *Japanese Journal of Applied Physics*
+- **Model-Based Compressive Sensing** — Baraniuk, Richard G.; Cevher, Volkan; Duarte, Marco F. 等 (2010) *IEEE Transactions on Information Theory*
+- **On Communication Over Unknown Sparse Frequency-Selective Block-Fading Channels** — Kannu, Arun Pachai; Schniter, Philip (2011) *IEEE Transactions on Information Theory*
+- **Performance Analysis of Approximate Message Passing for Distributed Compressed Sensing** — Hannak, Gabor; Perelli, Alessandro; Goertz, Norbert 等 (2018) *IEEE Journal of Selected Topics in Signal Processing*
+- **Performance Analysis of Underwater Acoustic Communications in Barrow Strait** — Pelekanakis, Konstantinos; Blouin, Stéphane; Green, Dale (2021) *IEEE Journal of Oceanic Engineering*
+- **Rank-one matrix estimation: analysis of algorithmic and information theoretic limits by the spatial coupling method** — Barbier, Jean; Dia, Mohamad; Macris, Nicolas 等 (2018) *arXiv preprint arXiv:1812.02537*
+- **State evolution for approximate message passing with non-separable functions** — Nguyen, Phan-Minh; Montanari, Andrea; Berthier, Raphaël (2020) *Information and Inference: A Journal of the IMA*
+- **Time-varying carrier frequency offset estimation in OFDM underwater acoustic communication** — Avrashi, Gilad (2022) *Signal Processing*
+- **Underwater Acoustic Communication With Multicarrier Binary Frequency Shift Keying** — Zetterberg, Per; Lindqvist, Fredrik; Nilsson, Bernt (2022) *Ieee Journal of Oceanic Engineering*
+- **Universality in polytope phase transitions and iterative algorithms** — Bayati, Mohsen; Lelarge, Marc; Montanari, Andrea (2012)
+- **Vector Approximate Message Passing** — Rangan, Sundeep; Schniter, Philip; Fletcher, Alyson K. (2019) *IEEE Transactions on Information Theory*
+- **A Concise Tutorial on Approximate Message Passing** — Zou, Qiuyun; Yang, Hongwen (2022)
+
+## Comms（22 篇）
+
+- **5G mobile and wireless communications technology** — Osseiran, Afif (2016)
+- **6G Mobile Wireless Networks** — Yulei Wu, Sukhdeep Singh (2021)
+- **6G总体愿景与潜在关键技术** (2021)
+- **A practical guide to error-control coding using MATLAB** — Jiang, Yuan (2010)
+- **Advanced Antenna Array Engineering for 6G and Beyond Wireless Communications** — Guo, Yingjie Jay; Ziolkowski, Richard W. (2021)
+- **Cooperative OFDM Underwater Acoustic Communications** — Cheng, Xilin; Yang, Liuqing; Cheng, Xiang (2016)
+- **Digital Communication Systems** — Simon, Haykin (2013)
+- **Digital Communication Systems Signals, Channels, and Signaling** — Stefano Spezia (2021)
+- **Digital Signal Processing with Matlab Examples, Volume 3 Model-Based Actions and Sparse Representation** — Jose Maria Giron-Sierra (2017)
+- **Error Control Coding (2nd Edition)** — Lin, Shu; Daniel J., Costello
+- **MIMO-OFDM for LTE, WIFI and WIMAX: Coherent versus Non-Coherent and Cooperative Turbo-Transceivers** — Hanzo, Lajos; Akhtman, Yosef; Jiang, Ming 等 (2010)
+- **Machine Learning, Deep Learning and Computational Intelligence for Wireless Communication: Proceedings of MDCWC 2020** — Gopi, E. S. (2021)
+- **Machine learning for future wireless communications** — Luo, Fa-Long (2019)
+- **Next Generation Marine Wireless Communication Networks** — Lin, Bin; Duan, Jianli; Han, Mengqi 等 (2022)
+- **Orthogonal Time Frequency Space Modulation A Waveform for 6G** (2022)
+- **Practical Guide to the MIMO Radio Channel with MATLAB®; Examples** — Brown, Tim; Carvalho, Elisabeth De; Kyritsi, Persefoni (2012)
+- **QoS for Fixed and Mobile Ultra-Broadband** — Janevski; Toni (2019)
+- **Space-Time Codes and MIMO Systems** — Jankiraman, Mohinder (2004)
+- **ULTRA WIDEBAND WIRELESS COMMUNICATION** — Wiley, A John
+- **Wireless Communications Systems An Introduction** — Haupt, Randy L.
+- **Wireless Receiver Design for Digital Communications** — Kevin McClaning (2012)
+- **宽带无线通信系统** — Molisch, Andreas F.
+
+## TimeVaryingSPorComm（20 篇）
+
+- **Discrete Time-Frequency Characterizations of Dispersive Linear Time-Varying Systems** — Jiang, Ye; Papandreou-Suppappola, Antonia (2007) *IEEE Transactions on Signal Processing*
+- **Streaming Solutions for Time-Varying Optimization Problems** — Hamam, Tomer H.; Romberg, Justin (2022) *IEEE Transactions on Signal Processing*
+- **Data Transmission Over Linear Time-Varying Channels** — Kaplan, Alihan; Pohl, Volker; Lee, Dae Gwan (2022) *IEEE Transactions on Signal Processing*
+- **A Message Transmission Scheme for Linear Time-Varying Multipath Channels** — Kaplan, Alihan; Pohl, Volker; Lee, Dae Gwan (2020)
+- **A Survey on High Mobility Wireless Communications: Challenges, Opportunities and Solutions** — Wu, Jingxian; Fan, Pingzhi (2016) *IEEE Access*
+- **Bayesian Filtering and Smoothing** — S, Saerkkae (2013)
+- **Characterization of Randomly Time-Variant Linear Channels** — Bello, P. (1963) *IEEE Transactions on Communications Systems*
+- **Federated Learning With Over-the-Air Aggregation Over Time-Varying Channels** — Tegin, Busra; Duman, Tolga M. (2023) *IEEE Transactions on Wireless Communications*
+- **High-Mobility Satellite-UAV Communications: Challenges, Solutions, and Future Research Trends** — Wang, Jiawei; Jiang, Chunxiao; Kuang, Linling (2022) *IEEE Communications Magazine*
+- **Joint Sampling and Reconstruction of Time-Varying Signals Over Directed Graphs** — Xiao, Zhenlong; Fang, He; Tomasin, Stefano 等 (2023) *IEEE Transactions on Signal Processing*
+- **Message Transmission Over Rapidly Time-Varying Channels** — Kaplan, Alihan; Pohl, Volker (2021)
+- **Optimal ﬁltering with Kalman ﬁlters and smoothers – a Manual for Matlab toolbox EKF/UKF** — Hartikainen, Jouni; Särkkä, Simo
+- **Pilot-Aided Joint Estimation of Doubly Selective Channel and Carrier Frequency Offsets in OFDMA Uplink With High-Mobility Users** — Muneer, P.; Sameer, S. M. (2015) *IEEE Transactions on Vehicular Technology*
+- **Time-Varying Phase Noise Estimation, Channel Estimation, and Data Detection in RIS-Assisted MIMO Systems via Tensor Analysis** — Du, Jianhe; Cheng, Yuan; Jin, Libiao 等 (2023) *IEEE Transactions on Signal Processing*
+- **Delay-Doppler Communications: Principles and Applications** — Hong, Yi; Thaj, Tharaj; Viterbo, Emanuele (2022)
+- **Data-Aided Channel Estimation for OTFS Systems With a Superimposed Pilot and Data Transmission Scheme** — Yuan, Weijie; Li, Shuangyang; Wei, Zhiqiang 等 (2021) *IEEE Wireless Communications Letters*
+- **Wireless Communications Over Rapidly Time-Varying Channels** (2011)
+- **High Throughput Mobile Communication Based on OTFS System with the Delay-Doppler Compensation** — An, C.; Ryu, H. G. (2019) *Wireless Personal Communications*
+- **Broadband Doppler Compensation: Principles and New Results** — Riedl, T. J.; Singer, A. C. (2011) *2011 Conference Record of the Forty-Fifth Asilomar Conference on Signals, Systems & Computers (Asilomar)*
+- **Basis expansion models and diversity techniques for blind identification and equalization of time-varying channels** — Giannakis, G.B.; Tepedelenlioglu, C. (1998) *Proceedings of the IEEE*
+
+## Array&MIMO（19 篇）
+
+- **Bayesian Estimation of Graph Signals** — Kroizer, Ariel; Routtenberg, Tirza; Eldar, Yonina C. (2022) *IEEE Transactions on Signal Processing*
+- **Channel Estimation Based Equalizer for Underwater Acoustic Multiple-Input-Multiple-Output Communication** — Zhou, Yuehai; Tong, F. (2019) *IEEE Access*
+- **Channel Estimation and Equalization of Underwater Acoustic MIMO-OFDM Systems: A Review Estimation du canal et l’égalisation des systèmes MEMS-MROF acoustiques sous-marins: une revue** — Qiao, Gang; Babar, Zeeshan; Ma, Lu 等 (2019)
+- **Connectivity on Underwater MI-Assisted Acoustic Cooperative MIMO Networks** — Ren, Qingyan; Sun, Yanjing; Huo, Yu 等 (2020) *Sensors*
+- **DFT-Precoded MIMO OFDM Underwater Acoustic Communications** — Tao, Jun (2018) *IEEE Journal of Oceanic Engineering*
+- **Exploiting joint sparsity for underwater acoustic MIMO communications** — Zhou, Yue-hai; Jiang, Wei-hua; Tong, F. 等 (2017) *Applied Acoustics*
+- **Joint Estimation of Channel Responses and Phase Noises in Asynchronous MIMO Systems With Intentional Timing Offset** — Xie, Ning; Xu, Yuntao; Zhang, Jiaheng 等 (2023) *IEEE Transactions on Communications*
+- **Layered space-time receivers for frequency-selective wireless channels** — Lozano, A.; Papadias, C. (2002) *IEEE Transactions on Communications*
+- **Log-likelihood-ratio-based detection ordering in V-BLAST** — Kim, Sang Wu; Kim, Kyeong Pyo (2006) *IEEE Transactions on Communications*
+- **Low-Complexity LMMSE-Based Iterative Soft Interference Cancellation for MIMO Systems** — Park, Sangjoon (2022) *IEEE Transactions on Signal Processing*
+- **Orthogonal or Superimposed Pilots? A Rate-Efficient Channel Estimation Strategy for Stationary MIMO Fading Channels** — Asyhari, A. T.; ten Brink, S. (2017) *Ieee Transactions on Wireless Communications*
+- **Partial FFT Demodulation With IRC in MIMO-SC-FDE Communication Over Doppler Distorted Underwater Acoustic Channels** — Yin, Jingwei; Ge, Wei; Han, Xiao 等 (2019) *IEEE Communications Letters*
+- **Partial FFT Demodulation for MIMO-OFDM Over Time-Varying Underwater Acoustic Channels** — Han, Jing; Zhang, Lingling; Leus, Geert (2015) *IEEE Signal Processing Letters*
+- **Spatial modulation over partially coherent multiple-input/multiple-output channels** — Kilfoyle, Daniel B.; Preisig, James C.; Baggeroer, Arthur B. (2003) *IEEE transactions on signal processing*
+- **Statistical Modeling of MIMO Mobile-to-Mobile Underwater Channels** — Zajic, A. G. (2011) *Ieee Transactions on Vehicular Technology*
+- **Superimposed Pilots: An Alternative Pilot Structure to Mitigate Pilot Contamination in Massive Mimo** — Upadhya, K.; Vorobyov, S. A.; Vehkaperat, M. (2016) *2016 Ieee International Conference on Acoustics, Speech and Signal Processing Proceedings*
+- **Underwater cooperative MIMO communications using hybrid acoustic and magnetic induction technique** — Li, Zhangyu; Desai, Soham; Sudev, Vaishnendr D. 等 (2020) *Computer Networks*
+- **大规模MIMO系统中消息传递迭代接收技术研究** — 顾立新 (2017)
+- **MIMO-OFDM Wireless Communications with MATLAB** — Yong, Soo Cho (2010)
+
+## WirelessComms（19 篇）
+
+- **A vector-perturbation technique for near-capacity multiantenna multiuser communication - Part II: Perturbation** — Hochwald, B. M.; Peel, C. B.; Swindlehurst, A. L. (2005) *Ieee Transactions on Communications*
+- **Adaptive MAP receiver via the EM algorithm and message passings for MIMO-OFDM mobile communications** — Kashima, Tsuyoshi; Fukawa, Kazuhiko; Suzuki, Hiroshi (2006) *IEEE Journal on Selected Areas in Communications*
+- **Advances in Computing, Communication and Control** — Unnikrishnan, Srija; Surve, Sunil; Bhoir, Deepak (2011) *Communications in Computer & Information Science*
+- **Covert Mimicry Communication using Humpback Whale Song** — Qiao, Gang; Bilal, Muhammad; Liu, Songzuo 等 (2019)
+- **Digital communication** — Lee, Edward A.; Messerschmitt, David G. (2012)
+- **Digital communication receivers: synchronization, channel estimation and signal processing, 1998** — Meyr, Heinrich; Moeneclaey, Marc; Fechtel, Stefan A. (1998)
+- **Digital communications** — John G. . Proakis; Salehi, Masoud (2008)
+- **Fundamentals of wireless communication** — Tse, David; Viswanath, Pramod (2009)
+- **Multi-carrier digital communications** — Bahai, Ahmad R. S.; Saltzberg, Burton R.; Ergen, Mustafa (1999)
+- **Principles of digital communication** — Gallager, Robert G. (2008)
+- **Time reversal communication with a mobile source** — Song, H. C. (2013) *J Acoust Soc Am*
+- **Time-varying communication channels: Fundamentals, recent developments, and open problems** — Matz, Gerald; Hlawatsch, Franz (2006)
+- **Wireless Communications** — Goldsmith, Andea (2005)
+- **decoding of convolutional codes** — Zhou, Wuyang
+- **基于Zadoff-Chu序列的水声通信同步算法** — 李云飞 (2018)
+- **基于图变换和消息传递的MIMO-OFDM迭代接收机算法研究** — 袁正道 (2018)
+- **基于近似消息传递的宽带无线通信系统迭代接收算法研究** — 孙鹏 (2018)
+- **基于近似消息传递的结构化信号处理算法及应用研究** — 李扬清 (2017)
+- **追踪与广义近似消息传递** — 罗咏劼 (2016)
+
+## TV—UWA（18 篇）
+
+- **Clustered Adaptation for Estimation of Time-Varying Underwater Acoustic Channels** — Wang, Zhaohui; Zhou, Shengli; Preisig, James C. 等 (2012) *IEEE Transactions on Signal Processing*
+- **Efficient Multicarrier Communication for Highly Spread Underwater Acoustic Channels** — Hwang, Sung-Jun; Schniter, Philip (2008) *IEEE Journal on Selected Areas in Communications*
+- **Impact of Time-Varying Underwater Acoustic Channels on the Performance of Routing Protocols** — Tomasi, Beatrice; Toso, Giovanni; Casari, Paolo 等 (2013) *IEEE Journal of Oceanic Engineering*
+- **Iterative estimation of doubly selective underwater acoustic channel using basis expansion models** — Yu, Hua; Song, Aijun; Badiey, Mohsen 等 (2015) *Ad Hoc Networks*
+- **Time-Domain Oversampled OFDM Communication in Doubly-Selective Underwater Acoustic Channels** — Peng, Bo; Rossi, Pierluigi Salvo; Dong, Hefeng 等 (2015) *IEEE Communications Letters*
+- **Time-Frequency Characterization and Receiver Waveform Design for Shallow Water Environments** — Zhang, Jun Jason; Papandreou-Suppappola, Antonia; Gottin, Bertrand 等 (2009) *IEEE Transactions on Signal Processing*
+- **Underwater Acoustic Communication With an Orthogonal Signal Division Multiplexing Scheme in Doubly Spread Channels** — Ebihara, Tadashi; Mizutani, Koichi (2014) *IEEE Journal of Oceanic Engineering*
+- **Underwater communications in time-varying sparse channels using passive-phase conjugation** — Zhang, Guosong; Dong, Hefeng (2013) *Applied Acoustics*
+- **Discrete Time-Frequency Characterizations of Dispersive Linear Time-Varying Systems** — Jiang, Ye; Papandreou-Suppappola, Antonia (2007) *IEEE Transactions on Signal Processing*
+- **An iterative receiver for time-domain oversampled OFDM system over time-varying underwater acoustic channels** — Peng, Bo; Dong, Hefeng (2021) *Applied Acoustics*
+- **Cross-correlation quasi-gradient Doppler estimation for underwater acoustic OFDM mobile communications** — Li, Bin; Tong, Feng; Li, Jiang-hui 等 (2022) *Applied Acoustics*
+- **Exploiting Rapidly Time-Varying Sparsity for Underwater Acoustic Communication** — Jiang, Weihua; Tong, Feng; Zhu, Zhengliang (2022) *IEEE Transactions on Vehicular Technology*
+- **Channel temporal correlation-based optimization method for imperfect underwater acoustic channel state information** — Liu, Lei; Ma, Chao; Duan, Yong (2023) *Physical Communication*
+- **Doppler-Resilient Orthogonal Signal-Division Multiplexing for Underwater Acoustic Communication** — Ebihara, Tadashi; Leus, Geert (2016) *IEEE Journal of Oceanic Engineering*
+- **Multitask Sparse Bayesian Channel Estimation for Turbo Equalization in Underwater Acoustic Communications** — Liang, Yaokun; Yu, Hua; Ji, Fei 等 (2023) *IEEE Journal of Oceanic Engineering*
+- **Sparse Bayesian Learning for Channel Estimation in Time-Varying Underwater Acoustic OFDM Communication** — Qiao, Gang; Song, Qingjun; Ma, Lu 等 (2018) *IEEE Access*
+- **Tracking the time-varying sparsity of channel coefficients in shallow water acoustic communications** — Sen Gupta, Ananya; Preisig, James (2010)
+- **Multiple Doppler Shifts Compensation and ICI Elimination by Beamforming in High-Mobility OFDM Systems** — Zhang, Y.; Yin, Q. Y.; Mu, P. C. 等 (2011) *2011 6th International Icst Conference on Communications and Networking in China (Chinacom)*
+
+## IEEE JOE（18 篇）
+
+- **A Robust, Opportunistic Clock Synchronization Algorithm for Ad Hoc Underwater Acoustic Networks** — Vermeij, A.; Munafo, A. (2015) *Ieee Journal of Oceanic Engineering*
+- **Adaptive Channel Estimation and Data Detection for Underwater Acoustic MIMO-OFDM Systems** — Carrascosa, P. C.; Stojanovic, M. (2010) *Ieee Journal of Oceanic Engineering*
+- **An Embedded Tactical Decision Aid Framework for Environmentally Adaptive Autonomous Underwater Vehicle Communication and Navigation** — Bhatt, EeShan C.; Howard, Bradli; Schmidt, Henrik (2022) *IEEE Journal of Oceanic Engineering*
+- **Autonomous ROV Inspections of Aquaculture Net Pens Using DVL** — Amundsen, Herman B.; Caharija, Walter; Pettersen, Kristin Y. (2021) *IEEE Journal of Oceanic Engineering*
+- **Differentially Coherent Multichannel Detection of Acoustic OFDM Signals** — Aval, Y. M.; Stojanovic, M. (2015) *Ieee Journal of Oceanic Engineering*
+- **Evaluation of UKF-Based Fusion Strategies for Autonomous Underwater Vehicles Multisensor Navigation** — Bucci, Alessandro; Franchi, Matteo; Ridolfi, Alessandro 等 (2023) *IEEE Journal of Oceanic Engineering*
+- **Excellence in Review 2021** — Chitre, Mandar (2022) *IEEE Journal of Oceanic Engineering*
+- **Guest Editorial: Continued Exploration of Fine-Grained Sediments from SBCEX2017** — Wilson, Preston S.; Knobles, David P.; Neilsen, Tracianne B. (2022) *IEEE Journal of Oceanic Engineering*
+- **Linking Acoustic Communications and Network Performance: Integration and Experimentation of an Underwater Acoustic Network** — Caiti, A.; Grythe, K.; Hovem, J. M. 等 (2013) *Ieee Journal of Oceanic Engineering*
+- **LocDyn: Robust Distributed Localization for Mobile Underwater Networks** — Soares, C.; Gomes, J.; Ferreira, B. Q. 等 (2017) *Ieee Journal of Oceanic Engineering*
+- **Multichannel detection for wideband underwater acoustic CDMA communications** — Stojanovic, M.; Freitag, L. (2006) *Ieee Journal of Oceanic Engineering*
+- **Multiple-Resampling Receiver Design for OFDM Over Doppler-Distorted Underwater Acoustic Channels** — Tu, K.; Duman, T. M.; Stojanovic, M. 等 (2013) *Ieee Journal of Oceanic Engineering*
+- **Oceanic_Engineering_IEEE** (2021) *IEEE Journal of Oceanic Engineering*
+- **Performance Results of Two Iterative Receivers for Distributed MIMO OFDM With Large Doppler Deviations** — Huang, J. Z.; Zhou, S. L.; Wang, Z. H. (2013) *Ieee Journal of Oceanic Engineering*
+- **Reconstructing Internal Tides Field Based on Sampling by Autonomous Underwater Vehicles** — Zeng, Guangxian; Fan, Shuangshuang; Zhang, Xinyu 等 (2023) *IEEE Journal of Oceanic Engineering*
+- **Simulation of an Underwater Acoustic Communication Channel Characterized by Wind-Generated Surface Waves and Bubbles** — Dol, H. S.; Colin, M. E. G. D.; Ainslie, M. A. 等 (2013) *Ieee Journal of Oceanic Engineering*
+- **TS-MUWSN: Time Synchronization for Mobile Underwater Sensor Networks** — Pallares, O.; Bouvet, P. J.; del Rio, J. (2016) *Ieee Journal of Oceanic Engineering*
+- **Seismo-Acoustic Sensing on the Beaufort Sea in the 2021 Sea Ice Dynamics Experiment (SIDEx)** — Fischell, Erin M.; Fitzgerald, Caileigh; Manganini, Kevin 等 (2024) *IEEE Journal of Oceanic Engineering*
+
+## IEEE CM（17 篇）
+
+- **ARTIFICIAL INTELLIGENCE AND DATA SCIENCE FOR COMMUNICATIONS** — Choi, Yongmin; Kamal, Ahmed E; Louta, Malamati 等 (2023)
+- **COMG_20230701_Jul_2023-lowres** (2023)
+- **COMG_20230801_Aug_2023-lowres** (2023)
+- **COMG_20231001_Oct_2023-lowres** (2023)
+- **Communications_Magazine** (2023)
+- **Communications_Magazine_IEEE** (2021) *IEEE Communications Magazine*
+- **Communications_Magazine_IEEE_-_Volume_60_-_Issue_10.pdf** (2022)
+- **Communications_Magazine_IEEE_-_Volume_60_-_Issue_11.pdf** (2022)
+- **Communications_Magazine_IEEE_-_Volume_60_-_Issue_8.pdf** (2022)
+- **Communications_Magazine_IEEE_-_Volume_61_-_Issue_2.pdf** (2023)
+- **Communications_Magazine_IEEE_-_Volume_61_-_Issue_4** (2023)
+- **Communications_Magazine_IEEE_-_Volume_61_-_Issue_5** (2023)
+- **Communications_Magazine_IEEE_-_Volume_61_-_Issue_6** (2023)
+- **DATA SETS FOR MACHINE LEARNING IN WIRELESS COMMUNICATIONS AND NETWORKS** — Fischione, Carlo; Chafii, Marwa; Deng, Yansha 等 (2023)
+- **Impact of Digital Wireless: Views from Two Ends of a Dramatic Transformation** — Viterbi, Andrew J. (2022) *IEEE Communications Magazine*
+- **LOW EARTH ORBIT SATELLITES TO ENABLE ACCESS EQUALITY** — Kurt, Gunes Karabulut; Vázquez-Castro, Ángeles; Bastug, Ejder 等 (2022)
+- **OPTICAL COMMUNICATIONS AND NETWORKS** — Chagnon, Mathieu; Morita, Itsuro (2022)
+
+## 汇报（17 篇）
+
+- **Iterative receiver design** — Wymeersch, Henk (2007)
+- **50 Years of Data Science** — Donoho, David (2017) *Journal of Computational and Graphical Statistics*
+- **6.975 Week 11 Summary: Expectation Propagation** — Sudderth, Erik
+- **A Revolution Belief Propagation in Graphs with Cycles.pdf**
+- **Adaptive Wireless Communications: MIMO Channels and Networks** — Bliss, Daniel W.; Govindasamy, Siddhartan (2013)
+- **Codes-and-Decoding-on-General-Graphs.pdf**
+- **Expectation-Propagation for the Generative Aspect Model** — Minka, Tom; Lafferty, John
+- **High-Speed Wireless Communications: Ultra-wideband, 3G Long-Term Evolution, and 4G Mobile Systems** — Wang, Jiangzhou
+- **Information Theory, Inference, and Learning Algorithms** — MacKay, David J C
+- **Probability: A Lively Introduction:** — Tijms, Henk (2017)
+- **Statistical Physics, Optimization, Inference, and Message-Passing Algorithms: Lecture Notes of the Les Houches School of Physics: Special Issue, October 2013** — Krzakala, Florent; Ricci-Tersenghi, Federico; Zdeborova, Lenka 等 (2015)
+- **Trellis and turbo coding: iterative and graph-based error control coding** — Schlegel, Christian; Perez, Lance (2015)
+- **Understanding Belief Propagation and its generalizations.pdf**
+- **expectation propagation for approximate bayesian inference.pdf**
+- **minka-ep-tut-slides.pdf**
+- **slides——Li Lin.pdf**
+- **variational-inference-i.pdf**
+
+## 近期文献阅读（16 篇）
+
+- **An Approximate Message Passing Framework for Side Information** — Ma, Anna; Zhou, You; Rush, Cynthia 等 (2019) *IEEE Transactions on Signal Processing*
+- **Approximate Message Passing With Consistent Parameter Estimation and Applications to Sparse Learning** — Kamilov, Ulugbek S.; Rangan, Sundeep; Fletcher, Alyson K. 等 (2014) *IEEE Transactions on Information Theory*
+- **Approximate message passing for indoor THz channel estimation** — Schram, Viktoria; Bereyhi, Ali; Zaech, Jan-Nico 等 (2019) *arXiv preprint arXiv:1907.05126*
+- **Asymptotic mean-square optimality of belief propagation for sparse linear systems** — Guo, Dongning; Wang, Chih-Chun (2006)
+- **Belief propagation is asymptotically equivalent to map estimation for sparse linear systems** — Wang, Chih-Chun; Guo, Dongning (2006)
+- **Estimation of Rapidly Time-Varying Sparse Channels** — Li, Weichang; Preisig, James C. (2007) *IEEE Journal of Oceanic Engineering*
+- **Estimation with random linear mixing, belief propagation and compressed sensing** — Rangan, Sundeep (2010)
+- **Gaussian belief propagation: Theory and aplication** — Bickson, Danny (2008) *arXiv preprint arXiv:0811.2518*
+- **Generalized Approximate Message Passing for Massive MIMO mmWave Channel Estimation With Laplacian Prior** — Bellili, Faouzi; Sohrabi, Foad; Yu, Wei (2019) *IEEE Transactions on Communications*
+- **Iterative Multiuser Joint Decoding: Optimal Power Allocation and Low-Complexity Implementation** — Caire, G.; Muller, R. R.; Tanaka, T. (2004) *IEEE Transactions on Information Theory*
+- **Iterative detection for orthogonal time frequency space modulation using approximate message passing with unitary transformation** — Yuan, Zhengdao; Liu, Fei; Yuan, Weijie 等 (2020) *arXiv e-prints*
+- **MAP Estimation Via Agreement on Trees: Message-Passing and Linear Programming** — Wainwright, M. J.; Jaakkola, T. S.; Willsky, A. S. (2005) *IEEE Transactions on Information Theory*
+- **The capacity of low-density parity-check codes under message-passing decoding** — Richardson, Thomas J.; Urbanke, Rüdiger L. (2001) *IEEE Transactions on Information Theory*
+- **Turbo reconstruction of structured sparse signals** — Schniter, Philip (2010)
+- **Convolutional Approximate Message-Passing** — Takeuchi, Keigo (2020) *IEEE Signal Processing Letters*
+- **Memory approximate message passing** — Liu, Lei; Huang, Shunqi; Kurkoski, Brian M. (2020) *arXiv preprint arXiv:2012.10861*
+
+## Michael I. Jordan推荐以及我认为的好书（15 篇）
+
+- **A User's Guide to Measure Theoretic Probability** — David Pollard (2010)
+- **Bayesian Data Analysis** — Andrew Gelman; John B. Carlin; Hal S. Stern 等 (2020)
+- **Convex Optimization** — Stephen Boyd (2004)
+- **Elements of Large-sample Theory** — E. L. Lehmann (1998)
+- **Fundamentals of Statistical Signal Processing Volume I Estimation Theory** — Steven M. Kay (2013)
+- **Fundamentals of Statistical Signal Processing Volume II Detection Theory** — Steven M. Kay (2013)
+- **Fundamentals of Statistical Signal Processing Volume III Practical Algorithm Developments** — Steven M. Kay (2013)
+- **Introduction to Linear Optimization** — Dimitris Bertsimas; John N. Tsitsiklis (1997)
+- **Introductory Functional Analysis with Applications** — Erwin Kreyszig (1989)
+- **Matrix Computation** — Gene H. Golub; Charles F. Van Loan (2013)
+- **Monte Carlo Statistical Methods-book** — George Casella (2004)
+- **Monte Carlo Statistical Methods-slides** — George Casella
+- **Probabilistic machine learning: an introduction** — Murphy, Kevin P. (2022)
+- **Probability and Random processes** — Geoffrey R. Grimmett; David R. Stirzaker (2001)
+- **Statistical Inference** — G. Casella, R. L. Berger (2001)
+
+## SP Magazine（14 篇）
+
+- **55th Annual Asilomar Conference on Signals, Systems, and Computers** (2021) *IEEE Signal Processing Magazine*
+- **Call For Papers 75 Anniversary of Signal Processing Society Special Issue** (2022) *IEEE Signal Processing Magazine*
+- **Call for Papers: Special Issue on Hypercomplex Signal & Image Processing** (2023) *IEEE Signal Processing Magazine*
+- **Explainability in Data Science: Interpretability, Reproducibility, and Replicability** (2021) *IEEE Signal Processing Magazine*
+- **Foster Collaboration: Signal Processing for Advanced Materials** (2022) *IEEE Signal Processing Magazine*
+- **Get Published in the New IEEE Open Journal of Signal Processing** (2022) *IEEE Signal Processing Magazine*
+- **IEEE Machine Learning for Signal Processing Workshop** (2021) *IEEE Signal Processing Magazine*
+- **IEEE Open Journal of Signal Processing/ICASSP '24 announcement** (2023) *IEEE Signal Processing Magazine*
+- **IEEE Signal Processing Magazine Special Issue on Explainability in Data Science: Interpretability, Reproducibility, and Replicability** (2021) *IEEE Signal Processing Magazine*
+- **IEEE Signal Processing Society 75th Anniversary** (2023) *IEEE Signal Processing Magazine*
+- **Recent Advances in Affective Computing** (2021) *IEEE Signal Processing Magazine*
+- **SP 75th Anniversery** (2023) *IEEE Signal Processing Magazine*
+- **Special Issue On Physics-Driven Machine Learning for Computational Imaging** (2021) *IEEE Signal Processing Magazine*
+- **Table of Contents** (2022) *IEEE Signal Processing Magazine*
+
+## SignalProcessing（13 篇）
+
+- **Compressed sensing** — Donoho, D.L. (2006) *IEEE Transactions on Information Theory*
+- **Joint ML/MAP Estimation of the Frequency and Phase of a Single Sinusoid With Wiener Carrier Phase Noise** — Wang, Qian; Quan, Zhi; Bi, Suzhi 等 (2022) *IEEE Transactions on Signal Processing*
+- **A course in digital signal processing** — Porat, Boaz (1997)
+- **Adaptive Approximation Based Control: Unifying Neural, Fuzzy and Traditional Adaptive Approximation Approaches** — Haykin, Simon (2006)
+- **Adaptive Filtering: Algorithms and Practical Implementation** — Diniz, Paulo Sergio (2008)
+- **Adaptive filter theory (2nd ed.)** — Haykin, Simon (1996)
+- **Cooperative and graph signal processing principles and applications** — Djurić, Petar M. Richard (2018)
+- **Detection Estimation and Modulation Theory, Detection, Estimation, and Filtering Theory** — Bell, Kristine L. (1971)
+- **Digital Signal Processing: System Analysis and Design** — Diniz, Paulo; Netto, Sergio; Silva, Eduardo Da (2002)
+- **Digital signal processing: principles algorithms and applications** — Proakis, John G. (2001)
+- **Discrete-time signal processing** — Oppenheim, Alan V.; Schafer, Ronald W. (1989)
+- **统计与自适应信号处理** — Dimitris G. Manolakis, Vinay K. Ingle
+- **自适应信号处理** — 维德罗
+
+## IEEE WC（13 篇）
+
+- **ARTIFICIAL INTELLIGENCE ENABLED INTERNET OF UAVS FOR EMERGENCY COMMUNICATIONS** — Kaleem, Zeeshan; Coleri, Sinem; Deng, Yansha 等 (2022) *IEEE Wireless Communications*
+- **Enhanced Fronthaul for 5G and Beyond** — Zhang, Sunxuan; Wang, Zhao; Zhou, Zhenyu 等 (2022)
+- **Intelligent Surfaces for 5G and Beyond** — Zhang, Peiying; Wang, Chao; Aujla, Gagangeet Singh 等 (2021) *IEEE Wireless Communications*
+- **MWC_December2022-lowres.pdf** (2022)
+- **SEMANTIC COMMUNICATIONS FOR THE METAVERSE** — Niyato, Dusit; Ma, Ke; Wang, Zhaocheng 等 (2023) *IEEE Wireless Communications*
+- **Smart, Optimal, and Explainable Orchestration of Network Slices in 5G And Beyond Networks** — Chergui, Hatim; Ksentini, Adlen; Blanco, Luis 等 (2022) *IEEE Wireless Communications*
+- **WCM_2022_Jun-lowres.pdf** (2022)
+- **WCM_2022_Oct-lowres.pdf** (2022)
+- **Wireless_Communications_IEEE** (2021) *IEEE Transactions on Wireless Communications*
+- **Wireless_Communications_IEEE_-_Volume_30_-_Issue_1** (2023)
+- **Wireless_Communications_IEEE_-_Volume_30_-_Issue_2** (2023)
+- **Wireless_Communications_IEEE_-_Volume_30_-_Issue_3** (2023)
+- **Orthogonal Time-Frequency Space Modulation: A Promising Next-Generation Waveform** — Wei, Zhiqiang; Yuan, Weijie; Li, Shuangyang 等 (2021) *IEEE Wireless Communications*
+
+## QAM Signal（12 篇）
+
+- **(22条消息) Turbo译码原理说明（一）_snow_wang13804的博客-CSDN博客_turbo译码**
+- **(22条消息) 卷积译码之BCJR算法详细介绍_snow_wang13804的博客-CSDN博客_bcjr算法**
+- **A Simple Nonlinearity-Tailored Probabilistic Shaping Distribution for Square QAM** — Sillekens, Eric; Semrau, Daniel; Liga, Gabriele 等 (2018)
+- **Cramer-Rao lower bounds for QAM phase and frequency estimation** — Rice, F.; Cowley, B.; Moran, B. 等 (2001) *IEEE Transactions on Communications*
+- **Distribution of L-values in gray-mapped M2-QAM: closed-form approximations and applications** — Alvarado, Alex; Szczecinski, Leszek; Feick, Rodolfo 等 (2009) *IEEE Transactions on Communications*
+- **Effect of channel estimation error on M-QAM BER performance in Rayleigh fading** — Tang, Xiaoyi; Alouini, M.-S.; Goldsmith, A.J. (1999) *IEEE Transactions on Communications*
+- **Genetic algorithm optimized distribution sampling test for M-QAM modulation classification** — Zhu, Zhechen; Waqar Aslam, Muhammad; Nandi, Asoke K. (2014) *Signal Processing*
+- **Joint blind equalization, carrier recovery and timing recovery for high-order QAM signal constellations** — Jablon, N.K. (1992) *IEEE Transactions on Signal Processing*
+- **M-PSK and M-QAM BER computation using signal-space concepts** — Lu, Jianhua; Letaief, K.B.; Chuang, J.C.-I. 等 (1999) *IEEE Transactions on Communications*
+- **PAPR Distribution for Single Carrier M-QAM Modulations** — Kouassi, Kouakou; Andrieux, Guillaume; Diouris, Jean-François (2019) *Wireless Personal Communications*
+- **Probability distribution analysis of M-QAM-modulated OFDM symbol and reconstruction of distorted data** — Yoo, Hyunseuk; Guilloud, Frédéric; Pyndiah, Ramesh (2011) *EURASIP Journal on Advances in Signal Processing*
+- **Rate Adaptation and Reach Increase by Probabilistically Shaped 64-QAM: An Experimental Demonstration** — Buchali, Fred; Steiner, Fabian; Bocherer, Georg 等 (2016) *Journal of Lightwave Technology*
+
+## Superimposed Pilot（12 篇）
+
+- **Channel estimation and equalization for M-QAM transmission with a hidden pilot sequence** — Mazzenga, F. (2000) *IEEE Transactions on Broadcasting*
+- **Channel estimation and symbol detection for block transmission using data-dependent superimposed training** — Ghogho, M.; McLernon, D.; Alameda-Hernandez, E. 等 (2005) *IEEE Signal Processing Letters*
+- **Doubly Selective Channel Estimation Using Superimposed Training and Exponential Bases Models** — Tugnait, Jitendra K; Meng, Xiaohong; He, Shuangchi (2006) *EURASIP Journal on Advances in Signal Processing*
+- **Downlink Performance of Superimposed Pilots in Massive MIMO Systems** — Upadhya, Karthik; Vorobyov, Sergiy A.; Vehkapera, Mikko (2018) *IEEE Transactions on Wireless Communications*
+- **Frame/Training Sequence Synchronization and DC-Offset Removal for (Data-Dependent) Superimposed Training Based Channel Estimation** — Alameda-Hernandez, Enrique; McLernon, Des C.; Orozco-Lugo, Aldo G. 等 (2007) *IEEE Transactions on Signal Processing*
+- **Frame/Training Sequence Synchronization and DC-Offset Removal for (Data-Dependent) Superimposed Training Based Channel Estimation | IEEE Journals & Magazine | IEEE Xplore**
+- **On Doubly Selective Channel Estimation Using Superimposed Training and Discrete Prolate Spheroidal Sequences** — Shuangchi He; Tugnait, J.K. (2008) *IEEE Transactions on Signal Processing*
+- **On Superimposed Training for MIMO Channel Estimation and Symbol Detection** — He, Shuangchi; Tugnait, Jitendra K.; Meng, Xiaohong (2007) *IEEE Transactions on Signal Processing*
+- **On channel estimation using superimposed training and first-order statistics** — Tugnait, J.K.; Weilin Luo (2003)
+- **Pilot-based channel identification: proposal for semi-blind identification of communication channels** — Farhang-Boroujeny, B. (1995) *Scopus*
+- **Training Design for Multipath Channel and Frequency-Offset Estimation in MIMO Systems** — Ghogho, M.; Swami, A. (2006) *IEEE Transactions on Signal Processing*
+- **Channel Estimation Using Implicit Training** — Orozco-Lugo, A.G.; Lara, M.M.; McLernon, D.C. (2004) *IEEE Transactions on Signal Processing*
+
+## Hign-Rate（11 篇）
+
+- **High-rate underwater acoustic communication system for SHINKAI6500** — SHIMURA, Takuya; Yukihiro, KIDA; DEGUCHI, Mitsuyasu (2018)
+- **Equalizer for high data rate transmission in underwater communications** — Geller, B.; Broissier, J.M.; Capellano, V. (1994)
+- **Exploiting Space–Time–Frequency Diversity With MIMO–OFDM for Underwater Acoustic Communications** — Pelekanakis, Konstantinos; Baggeroer, Arthur B. (2011) *IEEE Journal of Oceanic Engineering*
+- **High-frequency acoustic communications achieving high bandwidth efficiency** — Song, H. C.; Hodgkiss, W. S.; Kuperman, W. A. 等 (2009) *The Journal of the Acoustical Society of America*
+- **How best to utilize bandwidth in underwater acoustic communication?** — Song, Hee-Chun (2013)
+- **MIMO-OFDM for High-Rate Underwater Acoustic Communications** — Li, Baosheng; Huang, Jie; Zhou, Shengli 等 (2009) *IEEE Journal of Oceanic Engineering*
+- **Performance analysis of turbo-coded MIMO–OFDM system for underwater communication** — Iruthayanathan, Nelson; Vishvaksenan, K.S.; Rajendran, V. 等 (2015) *Computers & Electrical Engineering*
+- **Time Reversal Receivers for High Data Rate Acoustic Multiple-Input–Multiple-Output Communication** — Song, Aijun; Badiey, Mohsen; McDonald, Vincent Keyko 等 (2011) *IEEE Journal of Oceanic Engineering*
+- **Very-High-Frequency Single-Input–Multiple-Output Acoustic Communication in Shallow Water** — Rudander, Jacob; van Walree, Paul A.; Husøy, Thor 等 (2019) *IEEE Journal of Oceanic Engineering*
+- **Iterative multi-channel equalization and decoding for high frequency underwater acoustic communications** — Won Choi, Jun; Drost, Robert J.; Singer, Andrew C. 等 (2008)
+- **Recent advances in high-speed underwater acoustic communications** — Stojanovic, M. (1996) *IEEE Journal of Oceanic Engineering*
+
+## Turbo（11 篇）
+
+- **Underwater Acoustic Communications: Long-Term Test of Turbo Equalization in Shallow Water** — Otnes, R.; Eggen, T. H. (2008) *IEEE Journal of Oceanic Engineering*
+- **Minimum mean squared error equalization using A priori information** — Tuchler, M.; Singer, A. C.; Koetter, R. (2002) *Ieee Transactions on Signal Processing*
+- **Turbo equalization: Principles and new results** — Tuchler, M.; Koetter, R.; Singer, A. C. (2002) *Ieee Transactions on Communications*
+- **Iterative channel estimation for turbo equalization of time-varying frequency-selective channels** — Otnes, R.; Tuchler, M. (2004) *Ieee Transactions on Wireless Communications*
+- **Iterative correction of intersymbol interference: Turbo-equalization** — Douillard, Catherine; Jézéquel, Michel; Berrou, Claude 等 (1995) *European Transactions on Telecommunications*
+- **Soft input channel estimation for turbo equalization** — Song, S.; Singer, A. C.; Sung, K. M. (2004) *Ieee Transactions on Signal Processing*
+- **Turbo equalization: Adaptive equalization and channel decoding jointly optimized** — Laot, C.; Glavieux, A.; Labat, J. (2001) *Ieee Journal on Selected Areas in Communications*
+- **Iterative Frequency Domain Equalization With Generalized Approximate Message Passing** — Guo, Qinghua; Huang, Defeng; Nordholm, Sven 等 (2013) *IEEE Signal Processing Letters*
+- **Adaptive Equalization in a Turbo Loop** — Yellepeddi, Atulya; Preisig, James C. (2015) *IEEE Transactions on Wireless Communications*
+- **Low-complexity MMSE turbo equalization: a possible solution for EDGE** — Laot, C.; Le Bidan, R.; Leroux, D. (2005) *IEEE Transactions on Wireless Communications*
+- **On the application of factor graphs and the sum-product algorithm to ISI channels** — Colavolpe, G.; Germi, G. (2005) *IEEE Transactions on Communications*
+
+## reference（11 篇）
+
+- **Accuracy analysis of frequency estimation of sinusoid based on interpolated FFT** — QI, Guo-qing; JIA, Xin-le (2004) *ACTA ELECTONICA SINICA*
+- **Analysis of White Noise on Power Frequency Estimation by DFT-Based Frequency Shifting and Filtering Algorithm** — Zhang, Junhao; Tang, Lu; Mingotti, Alessandro 等 (2020) *IEEE Transactions on Instrumentation and Measurement*
+- **ESPRIT - Estimation of Signal Parameters via Rotational Invariance Techniques** — Roy, R.; Kailath, T. (1989) *IEEE Transactions on Acoustics Speech and Signal Processing*
+- **Frequency Estimation by the Method of Minimum Mean Squared Error and P-value Distributed in the Wireless Sensor Network** — Khalaf, Osamah Ibrahim; Abdulsahib, Ghaida Muttashar (2019) *J. Inf. Sci. Eng.*
+- **Frequency estimation by two-or three-point interpolated Fourier algorithms based on cosine windows** — Belega, Daniel; Petri, Dario (2015) *Signal Processing*
+- **Fundamentals of statistical signal processing: estimation theory** — Kay, Steven M (1993)
+- **Modified Rife algorithm for frequency estimation of sinusoid and implementation in FPGA** — Wang, X. D.; Liu, Y.; Deng, Z. M. (2008) *Systems Engineering and Electronics*
+- **Multiple emitter location and signal parameter estimation** — Schmidt, R.; Schmidt, R. O. (1986) *IEEE Transactions on Antennas & Propagation*
+- **Single tone parameter estimation from discrete-time observations** — Rife, DCBP; Boorstyn, Robert (1974) *IEEE Transactions on information theory*
+- **Underwater Acoustic Signal Processing** — Abraham, Douglas A. (2019) *Modern Acoustics and Signal Processing*
+- **Use of the discrete Fourier transform in the measurement of frequencies and levels of tones** — Rife, David C; Vincent, GA (1970) *Bell System Technical Journal*
+
+## Basic&Tool（10 篇）
+
+- **A Course in Large Sample Theory**
+- **Digital Signal Processing (4th Ed) [OCR].pdf**
+- **Elements of information theory** — Cover, Thomas M.; Thomas, Joy A. (2003)
+- **Fast Fourier Transform - Algorithms and Applications** — Rao, K. R.; Kim, D. N.; Hwang, J. J. (2010)
+- **Introduction to algorithms** — Cormen, Thomas H. (2009)
+- **Introduction to nonlinear optimization: theory, algorithms, and applications with MATLAB** — Beck, Amir (2014)
+- **Signal processing theory and machine learning** — Diniz, Paulo Sergio Ramirez; Suykens, Johan A. K.; Chellappa, Rama 等 (2014)
+- **Signals and systems** — Oppenheim, Alan V.; Willsky, Alan S.; Young, Ian T. (1997)
+- **The Book of Why: The New Science of Cause and Effect:** — Judea Pearl; Dana Mackenzie (2020)
+- **Underwater acoustic modeling and simulation** — Etter, Paul C. (2018)
+
+## Mathematics（10 篇）
+
+- **A First Course in Random Matrix Theory for Physicists, Engineers and Data Scientists** — Marc Potters (2018)
+- **Iterative Methods for Solving Nonlinear Equations and Systems** (2019)
+- **Iterative methods for solving linear systems (Anne Greenbaum) (z-lib.org).pdf**
+- **Multipoint methods for solving nonlinear equations** — Petković, Miodrag (2013)
+- **Random matrix theory and wireless communications** — A M Tulino, S. Verdu (2004)
+- **Table of integrals, series, and products** — I. S. Gradshteyn; I. M. Ryzhik (2016)
+- **The Oxford Handbook of Random Matrix Theory** — Gernot Akemann, Jinho Baik (2015)
+- **矩阵分析与应用** — 张贤达
+- **Iterative Solution of Nonlinear Equations in Several Variables (Classics in Applied Mathematics)** — Rheinboldt, J. M. Ortega and W. C. (1987)
+- **Nonlinear Programming** — Bertsekas, Dimitri P. (1999)
+
+## MATLAB（9 篇）
+
+- **MIMO-OFDM Wireless Communications with MATLAB** — Yong, Soo Cho (2010)
+- **Communication systems principles using MATLAB** — Leis, John (2018)
+- **Digital Signal Processing for Wireless Communication using Matlab** — Gopi, E.S. (2021)
+- **Fundamentals of Graphics Using MATLAB®** — Ranjan Parkeh (2020)
+- **Matlab Communications System Toolbox documentation** (2016)
+- **Multi-Carrier Communication Systems with Examples in MATLAB: A New Perspective** — Hassan, Emad (2016)
+- **SIMULATION OF DIGITAL COMMUNICATION SYSTEMS USING MATLAB** — Viswanathan, Mathuranathan
+- **Understanding Digital Signal Processing with MATLAB® and Solutions** — Poularikas, Alexander D. (2018)
+- **Wireless Communication Systems in Matlab** — Viswanathan, Mathuranathan
+
+## FactorGraphs（9 篇）
+
+- **A recursive approach to low complexity codes** — Tanner, R. %J IEEE Transactions on information theory (1981)
+- **An Introduction to Variational Methods for Graphical Models** — Jordan, Michael I.; Jordan, Michael I.; Ghahramani, Zoubin 等 (1998)
+- **An introduction to factor graphs** — Loeliger, H.-A. (2004) *IEEE Signal Processing Magazine*
+- **Codes on graphs: normal realizations** — Forney G. D (2001) *IEEE Transactions on Information Theory*
+- **Factor graphs and the sum-product algorithm** — Kschischang, F. R.; Frey, B. J.; Loeliger, H.-A. (2001) *IEEE Transactions on Information Theory*
+- **LMMSE turbo equalization based on factor graphs** — Guo, Qinghua; Ping, Li (2008) *IEEE Journal on Selected Areas in Communications*
+- **Least Squares and Kalman Filtering on Forney Graphs** — Loeliger, H. A. (2002)
+- **On Factor Graphs and Electrical Networks** — Vontobel, Pascal O.; Loeliger, Hans Andrea (2003)
+- **Codes-and-Decoding-on-General-Graphs** — Niclas Wiberg (1996)
+
+## MIMO-OTFS（8 篇）
+
+- **OTFS underwater acoustic communications based on passive time reversal** — Jing, Lianyou; Zhang, Namin; He, Chengbing 等 (2022) *Applied Acoustics*
+- **Orthogonal Time-Frequency Space Modulation: A Promising Next-Generation Waveform** — Wei, Zhiqiang; Yuan, Weijie; Li, Shuangyang 等 (2021) *IEEE Wireless Communications*
+- **An Eigen Domain Interference Rejection Combining Algorithm for Narrowband Interference Suppression** — Liu, Fengwei; Zhao, Hongzhi; Tang, Youxi (2014) *IEEE Communications Letters*
+- **Doubly-Iterative Sparsified MMSE Turbo Equalization for OTFS Modulation** — Li, Haotian; Yu, Qiyue (2023) *IEEE Transactions on Communications*
+- **Low Complexity MRC Detection for OTFS Receiver with Oversampling** — Priya, Preety; Viterbo, Emanuele; Hong, Yi (2023) *IEEE Transactions on Wireless Communications*
+- **Optimum Combining in Digital Mobile Radio with Cochannel Interference** — Winters, J. (1984) *IEEE Journal on Selected Areas in Communications*
+- **Low Complexity Iterative Rake Decision Feedback Equalizer for Zero-Padded OTFS Systems** — Thaj, Tharaj; Viterbo, Emanuele (2020) *IEEE Transactions on Vehicular Technology*
+- **Delay-Doppler Communications: Principles and Applications** — Hong, Yi; Thaj, Tharaj; Viterbo, Emanuele (2022)
+
+## Acoustic&Sonar（8 篇）
+
+- **Digital Sonar Design in Underwater Acoustics** — Li, Qihu (2012)
+- **Digital underwater acoustic communications** — Xu, Tianzeng; Xu, Lufeng (2017)
+- **Model-Based Processing for Underwater Acoustic Arrays** — Sullivan, Edmund J. (2015)
+- **Principles of Sonar Performance** — Michael Ainslie (2010)
+- **Springer Handbook of Ocean Engineering** — Dhanak, Manhar R.; Xiros, Nikolaos I. (2016)
+- **Underwater Acoustic Networking Techniques** — Otnes, Roald; Asterjadhi, Alfred; Casari, Paolo 等 (2012)
+- **Underwater Acoustics** — Salah Bourennane (2012)
+- **声学理论基础** — 何祚镛, 赵玉芳
+
+## 博士论文（8 篇）
+
+- **基于差分卡尔曼滤波的变速移动异步水声多 用户通信技术** — Yang, Guang
+- **基于探通一体化的声纳波形设计方法及应用研究_门伟.pdf**
+- **基于稀疏表示的水下无人集群探测关键技术研究** — 苍, 思远
+- **强干扰环境下单载波水声通信技术研究** — Ge, Wei
+- **时变信道下的水声通信技术研究** — Li, Lin
+- **浅海环境下单载波时域均衡 水声通信关键技术研究** — Han, Xiao
+- **稳健移动扩频水声通信及多址技术研究** — Du, Pengyu
+- **脉冲环境下单载波水声通信技术研究** — Tian, Ya-nan
+
+## IEEE TVT（7 篇）
+
+- **A Synergetic Trust Model Based on SVM in Underwater Acoustic Sensor Networks** — Han, Guangjie; He, Yu; Jiang, Jinfang 等 (2019) *IEEE Transactions on Vehicular Technology*
+- **Asynchronous Localization With Mobility Prediction for Underwater Acoustic Sensor Networks** — Yan, Jing; Zhang, Xiaoning; Luo, Xiaoyuan 等 (2018) *IEEE Transactions on Vehicular Technology*
+- **Bidirectional Soft-Decision Feedback Turbo Equalization for MIMO Systems** — Duan, Weimin; Zheng, Yahong Rosa (2016) *IEEE Transactions on Vehicular Technology*
+- **Compressed Sensing of Underwater Acoustic Signals via Structured Approximation $l_0$-Norm** — Wu, Fei-Yun; Yang, Kunde; Duan, Rui (2018) *IEEE Transactions on Vehicular Technology*
+- **Modeling and Analysis of Coverage Degree and Target Detection for Autonomous Underwater Vehicle-Based System** — Sun, P.; Boukerche, A. (2018) *Ieee Transactions on Vehicular Technology*
+- **Optimal Beamforming Design for Underwater Acoustic Communication With Multiple Unsteady Sub-Gaussian Interferers** — Li, Jiaheng; Wang, Jingjing; Wang, Xinjie 等 (2019) *IEEE Transactions on Vehicular Technology*
+- **Silent Positioning in Underwater Acoustic Sensor Networks** — Xiuzhen, Cheng; Haining, Shu; Qilian, Liang 等 (2008) *IEEE Transactions on Vehicular Technology*
+
+## IRC-MIMO-AMP（7 篇）
+
+- **A unified framework of state evolution for message-passing algorithms** — Takeuchi, Keigo (2019)
+- **An enhanced iterative receiver based on vector approximate message passing for deep-sea vertical underwater acoustic communications** — Li, Dong; Wu, Yanbo; Zhu, Min 等 (2021) *Journal of the Acoustical Society of America*
+- **Hybrid Vector Perturbation Precoding: The Blessing of Approximate Message Passing** — Lyu, Shanxiang; Ling, Cong (2019) *IEEE Transactions on Signal Processing*
+- **Iterative multiuser joint detection and parameter estimation: A factor-graph approach** — Caire, Giuseppe; Tulino, Antonia; Biglieri, Ezio (2001)
+- **Single-Carrier Frequency-Domain Turbo Equalization With Various Soft Interference Cancellation Schemes for MIMO Systems** — Tao, Jun (2015) *IEEE Transactions on Communications*
+- **Soft-Decision Feedback Turbo Equalization for Multilevel Modulations** — Lou, Huang; Xiao, Chengshan (2011) *IEEE Transactions on Signal Processing*
+- **Turbo equalization** — Koetter, R.; Singer, A. C.; Tuchler, M. (2004) *Ieee Signal Processing Magazine*
+
+## 稀疏贝叶斯学习（7 篇）
+
+- **Iterative receiver design** — Wymeersch, Henk (2007)
+- **Large-Scale Inference Empirical Bayes Methods for Estimation, Testing, and Prediction** — Efron, Bradley
+- **Bayesian learning for sparse signal reconstruction** — Wipf, D.P.; Rao, B.D. (2003)
+- **Joint Approximately Sparse Channel Estimation and Data Detection in OFDM Systems Using Sparse Bayesian Learning** — Prasad, Ranjitha; Murthy, Chandra R.; Rao, Bhaskar D. (2014) *IEEE Transactions on Signal Processing*
+- **An overview of limited feedback in wireless communication systems** — Love, David J.; Heath, Robert W.; N. Lau, Vincent K. 等 (2008) *IEEE Journal on Selected Areas in Communications*
+- **Comparison of Sparse Signal Recovery Algorithms with Highly Coherent Dictionary Matrices: The Advantage of T-MSBL** — Zhang, Zhilin
+- **SBL_introduction.pdf**
+
+## 绪论（5 篇）
+
+- **AMP Tools for Large-Scale Inference** — Schniter, Philip
+- **Large-Scale Inference Empirical Bayes Methods for Estimation, Testing, and Prediction** — Efron, Bradley
+- **Generalized Orthogonal Matching Pursuit** — Jian Wang; Seokbeop Kwon; Byonghyo Shim (2012) *IEEE Transactions on Signal Processing*
+- **全海深高速水声通信机设计与试验** — 徐立军; 鄢社锋; 曾迪 等 (2019) *信号处理*
+- **近程高速水声毫米波通信仿真与试验验证** — 张友文; 黄福朋; 李姜辉 (2019) *应用声学*
+
+## MessagePassing&FatorGraph（5 篇）
+
+- **Handbook of graphical models** — Drton, Mathias Lauritzen (2019)
+- **Probabilistic Machine Learning: Advanced Topics** — Kevin P. Murphy (2023)
+- **概率图模型：原理与技术** — Koller (2014)
+- **Iterative receiver design** — Wymeersch, Henk (2007)
+- **Large-Scale Inference Empirical Bayes Methods for Estimation, Testing, and Prediction** — Efron, Bradley
+
+## Proceedings of the IEEE（5 篇）
+
+- **Cognitive Dynamic Systems: A Review of Theory, Applications, and Recent Advances** — Hilal, Waleed; Gadsden, S. Andrew; Yawney, John (2023) *Proceedings of the IEEE*
+- **Energy Transition Technology: The Role of Power Electronics** — Rodriguez, Jose; Blaabjerg, Frede; Kazmierkowski, Marian P. (2023) *Proceedings of the IEEE*
+- **Proceedings of the IEEE publication information** (2021) *Proceedings of the IEEE*
+- **Rayleigh Fading Channel Capacity for Coherent Signaling With Asymmetric Constellations** — Mallik, Ranjan K.; Murch, Ross (2022) *IEEE Transactions on Communications*
+- **Training Spiking Neural Networks Using Lessons From Deep Learning** — Eshraghian, Jason K.; Ward, Max; Neftci, Emre O. 等 (2023) *Proceedings of the IEEE*
+
+## IEEE JSTSP（4 篇）
+
+- **IEEE Journal of Selected Topics in Signal Processing Publication Information** (2022) *IEEE Journal of Selected Topics in Signal Processing*
+- **IEEE Signal Processing Society** (2021) *IEEE Journal of Selected Topics in Signal Processing*
+- **IEEE Signal Processing Society Information** (2023) *IEEE Journal of Selected Topics in Signal Processing*
+- **Selected_Topics_in_Signal_Processing_IEEE_Journal_of_-_Volume_17_-_Issue_2.pdf** (2023)
+
+## IEEE TCOM（4 篇）
+
+- **Adaptive Belief Propagation Decoding of CRC Concatenated NR LDPC and Polar Codes** — Zhu, Mingyang; Jiang, Ming; Zhao, Chunming (2022) *IEEE Transactions on Communications*
+- **IEEE Communications Society** (2021) *IEEE Transactions on Communications*
+- **IEEE Transactions on Communications Publication Information** (2022) *IEEE Transactions on Communications*
+- **Deep Learning-Based Implicit CSI Feedback in Massive MIMO** — Chen, Muhan; Guo, Jiajia; Wen, Chao-Kai 等 (2022) *IEEE Transactions on Communications*
+
+## 今日阅读（3 篇）
+
+- **Expectation-Maximization Gaussian-Mixture Approximate Message Passing** — Vila, Jeremy P.; Schniter, Philip (2013) *IEEE Transactions on Signal Processing*
+- **Sparse Bayesian learning for basis selection** — Wipf, D.P.; Rao, B.D. (2004) *IEEE Transactions on Signal Processing*
+- **Large-Scale Inference Empirical Bayes Methods for Estimation, Testing, and Prediction** — Efron, Bradley
+
+## 科普读物（3 篇）
+
+- **50 Years Data Science** — David Donoho
+- **《5G:开启未来无线通信创新之路》** — 赵绍刚; 李岳梦 (2020) *当代电力文化*
+- **为什么：关于因果关系的新科学** — Judea Pearl; Dana Mackenzie (2020)
+
+## EP（2 篇）
+
+- **The EP energy function and minimization schemes** — Minka, Thomas P
+- **minka-ep-uai-slides2.pdf**
+
+## Machine Learning（2 篇）
+
+- **Deep Learning-Based Implicit CSI Feedback in Massive MIMO** — Chen, Muhan; Guo, Jiajia; Wen, Chao-Kai 等 (2022) *IEEE Transactions on Communications*
+- **Joint Deep Reinforcement Learning and Unfolding: Beam Selection and Precoding for mmWave Multiuser MIMO With Lens Arrays** — Hu, Qiyu; Liu, Yanzhen; Cai, Yunlong 等 (2021) *IEEE Journal on Selected Areas in Communications*
+
+## IEEE TWC（2 篇）
+
+- **IEEE Transactions on Wireless Communications** (2022) *IEEE Transactions on Wireless Communications*
+- **IEEE Transactions on Wireless Communications Publication Information** (2023) *IEEE Transactions on Wireless Communications*
+
+## IEEE WCL（2 篇）
+
+- **IEEE Wireless Communications Letters** (2022) *IEEE Wireless Communications Letters*
+- **Sensing and Classification Using Massive MIMO: A Tensor Decomposition-Based Approach** — Manoj, B. R.; Tian, Guoda; Gunnarsson, Sara 等 (2021) *IEEE Wireless Communications Letters*
+
+## 中文（2 篇）
+
+- **改进的基于因子图Turbo均衡的外信息反馈机制** — 王忠勇;吕素;段琳琳;张传宗 (2012) *计算机工程与应用*
+- **水声MIMO信道容量和系统实现关键技术研究** — 朴大志 (2006)
+
+## 审稿（2 篇）
+
+- **JSIG-D-23-00026_R1_reviewer.pdf**
+- **JSIG-D-23-00026_reviewer.pdf**
+
+## 机器学习（2 篇）
+
+- **Elements of Causal Inference： Foundations and Learning Algorithms** (2017)
+- **Pattern recognition and machine learning** — Bishop, Christopher M. (2006)
+
+## 范数（2 篇）
+
+- **(8条消息) 范数（norm） 几种范数的简单介绍_Norstc的博客-CSDN博客_norm**
+- **L1正则化的稀疏性解释 - 纯净天空**
+
+## Blog（1 篇）
+
+- **(26条消息) 锁相环原理（PLL）_王敏WM的博客-CSDN博客_锁相环解调的原理**
+
+## GMM-AMP（1 篇）
+
+- **A Novel Multireceiver SAS RD Processor** — Zhang, Xuebo; Yang, Peixuan; Wang, Yanmei 等 (2024) *IEEE Transactions on Geoscience and Remote Sensing*
+
+## UWA Signal Processing（1 篇）
+
+- **Underwater Acoustic Signal Processing: Modeling, Detection, and Estimation** — Abraham, Douglas A. (2019)
+
+## 随便看看（1 篇）
+
+- **Cancer incidence and mortality in China, 2016** — Zheng, Rongshou; Zhang, Siwei; Zeng, Hongmei 等 (2022) *Journal of the National Cancer Center*
+
+## 未归类（986 篇）
+
+- (Adaptive Computation and Machine Learning series) Jonas Peters, Dominik Janzing, Bernhard Schölkopf - Elements of Causal Inference_ Foundations and Learning Algorithms-The MIT Press (2017).pdf
+- (Advances in tourism research series) Brian Garrod and Stefan Gössling (Eds.) - New Frontiers in Marine Tourism. Diving Experiences, Sustainability, Management-Elsevier (2008).pdf
+- (Oxford Handbooks in Mathematics) Gernot Akema
+- - Matlab Communications System Toolbox documentation (2016, MathWorks).pdf
+- 01 AA A low-complexity orthogonal matching pur
+- 02 TVT A Novel Spatial CCK Modulation Design f
+- 04 Access Adaptive Downlink OFDMA System With
+- 0490-6756(2011)03-0596-07.pdf
+- 05 JASA Direct adaptive equalization based on
+- 06 JASA Doppler scale estimation for varied sp
+- 08 Robust Equalization of Mobile Underwater Ac
+- 08 TVT Eigendecomposition-Based Partial FFT De
+- 08038934
+- 08501573
+- 09 JASA Exploiting time varying sparsity for u
+- 10 CM Index Modulated OFDM for Underwater Acou
+- 10 Gibbs-Sampler-Based Semiblind Equalizer in
+- 10.0003625
+- 10.1109_ACCESS.2019.2907326
+- 10.1109_JOE.2019.2932650
+- 10.1109_TVT.2017.2778261
+- 10.1109_TVT.2019.2945007
+- 10lwc12-3126353-completeissue.pdf
+- 11 Hybrid Carrier Modulation with Time-Domain
+- 11 JOE Iterative Per-Vector Equalization for O
+- 110jproc06-3174974-completeissue.pdf
+- 110jproc07-3182087-completeissue.pdf
+- 11lwc02-3145150-completeissue.pdf
+- 12 Direct-adaptation based bidirectional turbo
+- 12 Performance Analysis and Optimal Design of
+- 12 TSP Iterative Sparse Channel Estimation and
+- 1213412610_ba926bd0
+- 1301.2294
+- 15 Access Online Modeling and Prediction of th
+- 15 RLS - Direct adaptive equalization based on
+- 16 DF - Bidirectional equalization based on er
+- 16 SPL Partial FFT Demodulation for MIMO-OFDM
+- 16 Underwater Acoustic Communications Long-Ter
+- 17 Progressive Inter-Carrier Interference Equa
+- 17 TSP Sparse Channel Estimation for OFDM-Base
+- 18 DF - Bidirectional equalization for underwa
+- 18 Enhanced MIMO LMMSE Turbo Equalization Algo
+- 18 Networks The challenges of building scalabl
+- 19 Frequency-Domain Turbo Equalization with So
+- 19 TR - An Overview of Underwater Time-Reversa
+- 19 Wiley Tuning the demodulation frequency bas
+- 1998-poor-wornell-ph-ch8.pdf
+- 2005 - Estimation and tracking of rapidly time-varying br.pdf
+- 2008-Silent-positioning-in-underwater-ac
+- 2011 - Wireless Communications Over Rapidly Time-Varying .pdf
+- ... 还有 936 篇未列出
