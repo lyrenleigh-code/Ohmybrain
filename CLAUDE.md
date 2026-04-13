@@ -37,7 +37,8 @@ ohmybrain（本仓库 = 知识库 + Hub）
 
 | 项目 | 仓库地址 | 本地路径 |
 |------|---------|---------|
-| UWAcomm | github.com/lyrenleigh-code/UWAcomm | `D:\TechReq\UWAcomm` |
+| UWAcomm | github.com/lyrenleigh-code/UWAcomm | `D:\Claude\TechReq\UWAcomm` |
+| USBL | — | `D:\Claude\TechReq\USBL` |
 | ohmybrain-core | github.com/lyrenleigh-code/ohmybrain-core | `D:\Claude\ohmybrain-core` |
 
 ## 知识闭环
