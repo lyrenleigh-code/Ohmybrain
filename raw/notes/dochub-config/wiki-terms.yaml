@@ -1,0 +1,41 @@
+# 术语典：算法名 -> 别名映射
+# 供 lint_wiki.py 缺失链接检测使用
+# 格式：wiki文件名（不含.md）: [别名列表]
+
+terms:
+  GAMP广义近似消息传递:
+    - GAMP
+    - Generalized Approximate Message Passing
+    - 广义近似消息传递
+  BEM基扩展模型:
+    - BEM
+    - Basis Expansion Model
+    - 基扩展模型
+    - CE-BEM
+    - DCT-BEM
+  BCJR前向后向MAP译码:
+    - BCJR
+    - MAP译码
+    - SISO译码
+    - Log-MAP
+    - Max-Log-MAP
+  OMP正交匹配追踪:
+    - OMP
+    - Orthogonal Matching Pursuit
+    - 正交匹配追踪
+  MMSE-IC最小均方误差干扰消除:
+    - MMSE-IC
+    - Minimum Mean Square Error Interference Cancellation
+  DFE判决反馈均衡:
+    - DFE
+    - Decision Feedback Equalizer
+    - 判决反馈均衡
+    - BiDFE
+  MP消息传递OTFS均衡:
+    - OTFS-MP
+    - Message Passing
+    - 消息传递均衡
+  SBL稀疏贝叶斯学习:
+    - SBL
+    - Sparse Bayesian Learning
+    - 稀疏贝叶斯学习
