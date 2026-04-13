@@ -5,7 +5,7 @@
   python3 scripts/scrape.py <URL> [--type article|video|thread]
 
 需要设置环境变量：FIRECRAWL_API_KEY
-或在 H:/ohmybrain/.env 中配置。
+或在项目根目录 .env 中配置。
 
 示例：
   python3 scripts/scrape.py "https://example.com/article" --type article

@@ -37,8 +37,8 @@ ohmybrain（本仓库 = 知识库 + Hub）
 
 | 项目 | 仓库地址 | 本地路径 |
 |------|---------|---------|
-| UWAcomm | github.com/lyrenleigh-code/UWAcomm | `H:\UWAcomm` |
-| ohmybrain-core | github.com/lyrenleigh-code/ohmybrain-core | `H:\ohmybrain-core` |
+| UWAcomm | github.com/lyrenleigh-code/UWAcomm | `D:\TechReq\UWAcomm` |
+| ohmybrain-core | github.com/lyrenleigh-code/ohmybrain-core | `D:\Claude\ohmybrain-core` |
 
 ## 知识闭环
 
@@ -52,8 +52,8 @@ raw/ → ingest → wiki/ → query → promote → wiki/
 
 | 命令 | 用途 |
 |------|------|
-| `python3 scripts/lint_wiki.py` | Wiki 结构检查 |
-| `python3 scripts/sync_index.py` | 同步 index 页面计数 |
-| `python3 scripts/transcribe.py <文件>` | Whisper 音视频转录 |
-| `python3 scripts/scrape.py <URL>` | Firecrawl 网页抓取 |
-| `python3 scripts/import-zotero.py` | Zotero 论文导入 |
+| `python scripts/lint_wiki.py` | Wiki 结构检查 |
+| `python scripts/sync_index.py` | 同步 index 页面计数 |
+| `python scripts/transcribe.py <文件>` | Whisper 音视频转录 |
+| `python scripts/scrape.py <URL>` | Firecrawl 网页抓取 |
+| `python scripts/import-zotero.py` | Zotero 论文导入 |

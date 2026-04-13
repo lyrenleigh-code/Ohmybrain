@@ -3,7 +3,7 @@
 > 水声通信算法仿真平台 — MATLAB 全栈，6 种通信体制
 
 - **仓库**：github.com/lyrenleigh-code/UWAcomm
-- **本地**：`H:\UWAcomm`
+- **本地**：`D:\TechReq\UWAcomm`
 - **状态**：活跃开发中
 
 ## 当前任务
