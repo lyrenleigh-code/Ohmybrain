@@ -51,3 +51,8 @@ tags: [数学, 优化, 工具, MATLAB]
 ## 来源
 
 - Zotero 论文库分析 (2026-04-12)
+- [[guoyu-2024-lie-group-nav]] — SE₂(3) 李群上 SINS 误差建模；左/右不变误差下李代数对数映射；Davenport q 方法大角度安装偏差标定
+- [[zhengcuie-usbl-docking]] — 直接求解旋转矩阵（9 参数）避免欧拉角线性化；声线跟踪下以入射角向量为等量的最小二乘建模链条
+- [[yangbaoguo-2013-usbl-calibration]] — 改进高斯-牛顿（初值保护）+ 自适应辛普森逆向分层
+- [[huangjian-2019-lbl-usbl]] — 改进 PSO（区域划分 + 自适应权重 + 自适应变异）联合估计有效声速 + 目标位置；BELLHOP 迭代有效声速作为不动点迭代
+- [[yumin-2006-lr-usbl]] — 非线性 LS / 逐次 LS / M 估计抗差的递进求解链

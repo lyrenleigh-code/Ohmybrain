@@ -53,3 +53,12 @@ tags: [信号处理, IEEE TSP, 估计理论, 检测理论]
 ## 来源
 
 - Zotero 论文库分析 (2026-04-12)
+- [[dingjie-2020-compact-usbl]] — 观测方程最小二乘、矩阵分解解耦、非线性模型线性化（USBL 校准的经典估计理论应用）
+- [[hexutao-usbl-quad-array]] — EKF 相比低通和自适应残差在 SNR 16-22 dB 声波降噪的相位误差对比（实测表）
+- [[guoyu-2024-lie-group-nav]] — 不变 Kalman 滤波 + Statistical Similarity Measure 将 HKF/MCKF/RSTKF 统一为鲁棒滤波数学框架；MASSMKF 多维异质噪声
+- [[liufeng-2024-passive-localization]] — FIM/CRLB、EKF/UKF、粒子滤波、LM 非线性最小二乘在水声被动定位的综合应用
+- [[zhengcuie-usbl-docking]] — 自适应 Notch 滤波 + LMS 相位估计 + 互谱法时延 + 相位斜率解缠绕 + CRLB 精度天花板
+- [[yangbaoguo-2013-usbl-calibration]] — 非线性最小二乘、方程线性化、高斯-牛顿迭代、M 估计抗差实现
+- [[quzhenzhao-2024-usbl-precision]] — 欧氏距离中心 + 阈值剔除 + LS 校正三步融合（估计理论 + 鲁棒统计的工程组合）
+- [[huangjian-2019-lbl-usbl]] — GCC-NEW 加权函数、Grubbs 异常检测、UKF 非线性滤波、R-T-S 区间平滑的完整工程应用
+- [[yumin-2006-lr-usbl]] — 自适应 Notch 滤波、LMS 相位估计、互相关三点插值时延（长程双模估计范式）

@@ -62,3 +62,4 @@ fd=10Hz (doppler_rate=8.33e-4) + oracle alpha 补偿后：
 - Zotero 论文库分析 (2026-04-12)
 - [[uwacomm]] — 模块 07 实现了 BEM(CE/DCT)/DD-BEM/T-SBL/SAGE/Kalman 时变信道估计，模块 10 实现了两级分离多普勒估计与 spline/CFO/ICI 补偿
 - [[uwacomm]] — fd=10Hz ICI 极限量化数据 (2026-04-12)
+- [[huangjian-2019-lbl-usbl]] — 移动 USBL 定位中航迹畸变、信道时变、测量野值是同一工程现实的多层表现

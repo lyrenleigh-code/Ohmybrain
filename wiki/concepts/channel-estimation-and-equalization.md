@@ -66,3 +66,6 @@ tags: [信道估计, 均衡, 多普勒, 叠加导频, 接收机]
 - Zotero 论文库分析 (2026-04-12)
 - [[uwacomm]] — 模块 07 实现了 15+ 种估计算法（LS/MMSE/OMP/SBL/GAMP/AMP/VAMP/Turbo-VAMP/BEM/DD-BEM/Kalman 等）和 10+ 种均衡器（TDE/FDE/OTFS 三类）
 - [[uwacomm]] — 模块 07 doppler_rate 修正后新基线 (2026-04-12)
+- [[hexutao-usbl-quad-array]] — EKF 方法在声波信号降噪中的工程化使用（弱相关）
+- [[huangjian-2019-lbl-usbl]] — 时延估计与信道冲激响应首达时刻估计等价；GCC-NEW "互功率谱信号频点强化"思路可迁移到 CE 频域加权
+- [[yumin-2006-lr-usbl]] — 长程多途下窄带+宽带双模估计思路

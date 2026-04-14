@@ -51,3 +51,13 @@ MIMO（多输入多输出）与阵列处理方向研究利用多个发射/接收
 
 - Zotero 论文库分析 (2026-04-12)
 - [[uwacomm]] — 模块 11 实现了 ULA 阵列接收预处理和多阵元信道生成（gen_uwa_channel_array）
+- [[usbl-positioning]] — USBL 水声定位中的 DOA 估计、波束成形、阵列校准（来自 USBL 项目）
+- [[dingjie-2020-compact-usbl]] — 紧凑型声纳阵列的阵型误差修正（有效声速 + 基线长度重构）与复杂阵型 DOA 估计（基线分解法），可迁移至成像声纳、合成孔径声纳
+- [[hexutao-usbl-quad-array]] — 长短基线混合拓扑（L=8l 非等距四元）宽频解模糊阵型设计范式
+- [[guoyu-2024-lie-group-nav]] — USBL 紧组合以斜距+方位角为量测向量；松/紧组合在噪声协方差正确设置下等价（理论证明+仿真）
+- [[liufeng-2024-passive-localization]] — iUSBL（逆 USBL）阵列在 AUV 集群中的 DOA 观测接入协同定位因子图
+- [[zhengcuie-usbl-docking]] — 4 元正交平面阵 + 相位差/时延差定位；大孔径抗模糊从阵型冗余转移到频率维度（脉冲对双频）
+- [[yangbaoguo-2013-usbl-calibration]] — 四元平面阵 DOA 估计稳健校准；M 估计权值工程化
+- [[quzhenzhao-2024-usbl-precision]] — 五元十字阵分解为多基本构型的硬件冗余利用范式，工程化多源观测融合
+- [[huangjian-2019-lbl-usbl]] — Hough 变换定位将多种阵列测量（时延/方位）在同一参数空间累加的"参数空间融合"范式
+- [[yumin-2006-lr-usbl]] — 8 元 UCA 阵元附加相移标定；DOA 双模（相位差/时延差）
