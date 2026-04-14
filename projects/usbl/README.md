@@ -46,11 +46,16 @@ simulation/
 | 多径效应（海面/海底反射） | 高 |
 | C/C++ 产品化移植 | 后续 |
 
-## 参考文献
+## 项目内导航
 
-- `reference/` 下 4 篇中文学位论文（USBL 定位/校准/精度改进）
+- **wiki**: `wiki/index.md` — 14页
+- **仪表盘**: `wiki/dashboard.md`
+- **MOC**: `wiki/usbl-moc.md`
+- **文献综述**: `wiki/topics/usbl-literature-review.md`（9篇论文）
+- **研制计划**: `wiki/topics/lr-usbl-development-plan.md`
 
 ## Hub wiki 关联
 
+- [usbl-positioning](../../wiki/concepts/usbl-positioning.md) — USBL定位概念（从本项目promote）
 - [mimo-and-array-processing](../../wiki/concepts/mimo-and-array-processing.md)
 - [signal-processing-fundamentals](../../wiki/concepts/signal-processing-fundamentals.md)
