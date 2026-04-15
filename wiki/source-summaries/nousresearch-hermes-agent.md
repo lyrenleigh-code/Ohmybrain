@@ -150,3 +150,7 @@ Hermes 提供 `hermes claw migrate` 一键从 OpenClaw 导入 SOUL.md / MEMORY.m
 > **Prompt Caching Must Not Break** — Do NOT implement changes that would alter past context mid-conversation, change toolsets mid-conversation, or reload memories / rebuild system prompts mid-conversation. Cache-breaking forces dramatically higher costs.
 
 > DO NOT hardcode `~/.hermes` paths. Use `get_hermes_home()` for code paths and `display_hermes_home()` for user-facing messages. This was the source of **5 bugs fixed in PR #3575**.
+
+## 相关范本（打包哲学对照）
+
+- [[yizhiyanhua-ai-fireworks-tech-graph]] — Claude Code 私有 skill 格式 + npm 打包可分发（vs 本仓的 agentskills.io 开放标准）。两种打包哲学对照：开放互通 vs 私有分发。

@@ -4,6 +4,113 @@
 
 ---
 
+## [2026-04-15] sync | 基础设施改进下发母仓 + 3 下游项目
+
+把本日 Hub 完成并验证的两类基础设施改进同步到 `ohmybrain-core/template` + `TechReq/{USBL, UWAcomm, UWAnet}`。
+
+**P0（4 位置）**：
+- `settings.json` 所有 hook 命令改 `python "$CLAUDE_PROJECT_DIR/scripts/xxx.py"`（消除相对路径 CWD bug，4 位置各 0 处相对路径残留）
+- 新增 `scripts/raw_ingest_reminder.py`（1576 bytes，Hub 副本）+ `settings.json` 挂 `PostToolUse.Bash` matcher
+
+**P1（3 下游）**：
+- 母仓 `workflows/engineering/00-module-design.md` 回填到 USBL / UWAcomm / UWAnet——此前"先在母仓沉淀，明确后再回填"的决定，经 wiki-ingester spec 验证获得足够信心后放行
+
+**Defer**：
+- **P2 · wiki-ingester agent 下游化**——下游一般只走 `/promote-answer`，暂不建 `.claude/agents/`
+- **母仓→已派生项目的增量同步机制**——本次手动同步可行但不可持续，未来需要工具化
+
+**Hub 本仓不受影响**（Hub 早先已单独落地 P0，此次仅分发给另外 4 个位置）。
+
+---
+
+## [2026-04-15] validate+ingest | everything-claude-code（wiki-ingester spec 验证测试）
+
+测试对象：`raw/repos/affaan-m-everything-claude-code`（Affaan Mustafa/MIT/黑客松冠军，v1.10.0，**1963 文件 / 20+ 子目录，比 fireworks 大 40×**）。
+
+**验证目的**：测最新收紧的 wiki-ingester spec 预算约束在大型仓库下是否仍然生效。
+
+**测试设计**：最小 prompt（仅 `raw_path: xxx`，无任何扩展关键词），验证默认行为。
+
+**结果对照**：
+
+| 指标 | fireworks 基线 | 本次 ECC | 目标 | 结果 |
+|------|-------------|---------|------|------|
+| 耗时 | 56 min | **7.6 min** | ≤15 min | ✅ -86% |
+| Tool uses | 74 | 38 | ≤25 | ⚠️ 超目标 13 |
+| Tokens | 203k | 126k | ≤80k | ⚠️ 超目标 46k |
+| Summary 行数 | 383 | 205 | ≤200 | ⚠️ 超 5 行 |
+| 新建 concept | 1 | 0 | 0-1 | ✅ 严守 |
+| 更新页面 | 9 | 5 | ≤5 | ✅ 卡在上限 |
+
+**遵守的约束**：不新建 concept ✓ / 更新页数 ≤5 ✓ / 大幅减少耗时 ✓
+
+**违规（spec 约束没挡住）**：agent 在 4 个已有 concept/entity 页**都加了 `## H2` 级新小节**（"生产级规模化范本" / "规模化工程实践：ECC 48 agents 生态" / "生产级验证：ECC 的 Skills-First 策略" / "运行时门控扩展：ECC Hook Profile"），违反 spec 的"不加新小节"硬约束——本应只追加 wikilink 行。
+
+**产出**：
+- 新建 `source-summaries/affaan-m-everything-claude-code.md`（205 行）
+- 更新 4 个已有页（加 H2 小节 + 追加 wikilink）—— **应该只追加 wikilink**
+
+**初步结论**：耗时约束有效（-86%），结构约束（不加小节）**仍需进一步强化**——spec 的措辞歧义或软约束强度不足。下一步候选：把"不加小节"改为绝对禁令 + 动作后自检。
+
+更新 index.md（45 → 46）。
+
+---
+
+## [2026-04-15] ingest | fireworks-tech-graph（Claude Code Skill 工程化范本）
+
+用 `/ingest` 新架构（Step 1.5 询问→选 agent→wiki-ingester 独立上下文执行 Step 2-4）摄入 `raw/repos/yizhiyanhua-ai-fireworks-tech-graph`（yizhiyanhua-ai/MIT/npm v1.0.4，7 视觉风格 + 14 图类型的 SVG 生成 skill）。
+
+**产物**：
+- 新建 `source-summaries/yizhiyanhua-ai-fireworks-tech-graph.md` — 7 条可迁移模式（三层资源 / 触发关键词 / Pre-Tool-Call Checklist / Error Recovery Protocol / UML 映射表 / npm 打包 / 多 runtime 兼容）
+- 新建 `concepts/skill-layered-resources.md` — 三层资源分离作为独立概念（fireworks 正例 + Ohmybrain `llm-wiki` 当前反例）
+- 追加 wikilink 到 7 个已有页（`skills-vs-commands` / `claude-hooks-architecture` / `subagents-orchestration` / `entities/claude-code` / `source-summaries/claude-code-best-practice` / `source-summaries/nousresearch-hermes-agent` / `explorations/ohmybrain-agent-architecture-insights`）
+
+**Defer**：未新建 `skill-packaging` concept——单源（仅 fireworks）且 Ohmybrain 暂无打包需求。
+
+**摄入过程发现的 harness bug**（由 agent 诚实报告）：`.claude/settings.json` 里 `python scripts/check_raw_write.py` 用相对路径——CWD 在子仓时找不到脚本。下文另一 log 条目处理。
+
+更新 index.md（43 → 45）。
+
+---
+
+## [2026-04-15] spec | wiki-ingester 预算与默认行为约束
+
+基于 fireworks-tech-graph 摄入超预算事后检视（56 min / 74 tool uses / 203k tokens / 383 行 summary，vs dingjie 基线 6 min），收紧 `.claude/agents/wiki-ingester.md` spec（133 → 187 行）+ 同步 `.claude/commands/ingest.md`：
+
+**新增约束**：
+- **输出预算**：默认 summary ≤200 行 / 核心观点 5-8 条 / 启发 6-10 条 / 更新 ≤5 页
+- **阅读预算**：repo 默认只读 README + 顶层 tree + SKILL/package 前 100 行；不读 `references/*` / `templates/*` / `scripts/*` 正文
+- **交叉引用默认**：仅在已有页"来源"段追加一行 `[[slug]]`，**禁止**擅自加"## 小节"或修改段落
+- **新建 concept/entity**：默认不擅建，走"备注提案"路径等主会话决策
+
+**扩展通道**（user_intent 关键词显式授权）：`depth: full` / `new_concepts_ok` / `new_entities_ok` / `allow_new_sections` / `allow_paragraph_edit` / `wide_cross_ref`
+
+**把反例写进 spec**：Step 4 明文记录 fireworks 越界案例 + 预期降幅（56 min → 10-15 min），用具体数字而非抽象约束来锚定 agent 行为。
+
+**未做**（候选更大改造，见 P1+ 候选）：分阶段 agent（summary-agent + cross-ref-applier ×N 并行）。先观察 spec 级改进是否足以逼住越界。
+
+---
+
+## [2026-04-15] fix | Hook 脚本改绝对路径 + 新增 raw/ ingestion 检测
+
+修复两个 harness 监督盲区：
+
+**① Hook 脚本相对路径问题**：`.claude/settings.json` 所有 hook 命令从 `python scripts/xxx.py` 改为 `python $CLAUDE_PROJECT_DIR/scripts/xxx.py`，避免 CWD 切换（如 Bash `cd raw/repos/xxx`）后 hook 找不到脚本。
+
+**② 新增 `raw_ingest_reminder.py`（PostToolUse on Bash）**：检测 `git clone` / `curl -o raw/` / `wget -P raw/` / `cp/mv ... raw/` 等命令触及 `raw/` 的场景，stdout 提醒"raw/XXX 已新增，建议运行 `/ingest raw/XXX`"。动机：本次对话中"把这个项目放到 raw 中"用 `git clone` 扩充 raw/ 未触发 `/ingest`——自然语言 ≠ 显式命令，现在靠 hook 兜底。
+
+---
+
+## [2026-04-14] P1-3 | /ingest 路径分流（inline vs agent 二选一）
+
+给 `/ingest` 加 Step 1.5：处理前**预判资料规模**（文本 < 5k 字 / PDF < 10 页 / 仓库模块数 / 视频 < 15 min）+ 通过 AskUserQuestion 询问用户选 **inline 主会话内联** 还是 **agent 委托 wiki-ingester**。两条路径产出**同构的"摄入报告"契约**，Step 5-7 机械消费、路径无关。批量模式支持"统一策略"（全部 inline / 全部 agent 并行 / 混合逐个询问）。
+
+动机来自 A/B 报告 [[wiki-ingester-ab-test-dingjie-2020]] 结尾："新 agent 架构对短资料 ~300s+ / ~124k tokens 起步不划算"——需要一层规模分流。规模阈值只作默认高亮，**始终显式询问**，让用户保留"这次想快"或"这次想细"的决定权。
+
+**改动**：仅 `.claude/commands/ingest.md`（无新 agent/skill/script） + 本仓 `wiki/explorations/ohmybrain-agent-architecture-insights.md` 追加 §P1-3 实施记录。
+
+---
+
 ## [2026-04-14] batch-ingest | USBL 项目剩余 8 篇论文并行摄入
 
 用新架构 `wiki-ingester`（本会话 general-purpose 模拟）并行处理 USBL 项目 raw/papers/ 下剩余 8 篇中文博士/期刊论文。主会话做 Step 1（任务分发）和 Step 5-7（批量 cross-ref + index/log + lint）。

@@ -41,6 +41,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | UWAnet | github.com/lyrenleigh-code/UWAnet | `D:\Claude\TechReq\UWAnet` |
 | USBL | github.com/lyrenleigh-code/USBL | `D:\Claude\TechReq\USBL` |
 | ohmybrain-core | github.com/lyrenleigh-code/ohmybrain-core | `D:\Claude\ohmybrain-core` |
+| Pricing 🔒 | 私人，不公开 | `D:\Claude\DocProcess\Pricing` |
 
 ## 知识闭环
 

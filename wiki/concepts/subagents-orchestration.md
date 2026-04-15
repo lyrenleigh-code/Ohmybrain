@@ -134,6 +134,24 @@ Agent(subagent_type="agent-name", description="...", prompt="...", model="haiku"
 - 子代理活动通过 `delegate_task` 向父传播——见其 `agent/display.py` 和 `_run_single_child()` 实现
 - 单一 `CommandDef` 列表驱动多终端（CLI / 16 消息平台 / autocomplete），同一套编排跨平台复用
 
+
+## 子代理内部自律：Pre-Tool-Call + Error Recovery
+
+除编排模式外，单个子代理内部也需要**失败处理协议**。[[yizhiyanhua-ai-fireworks-tech-graph]] 示范了两段硬规约：
+
+- **Pre-Tool-Call Checklist**：工具调用前过 3 个 YES/NO 问题（完整命令？全部参数？语法无误？），任一 NO 就 STOP 不调工具
+- **Error Recovery Protocol**：第一次分析根因、第二次切换方法、第三次停并报告；明令 Never retry 同一失败命令
+
+**对 Ohmybrain 直接对症**：`wiki-ingester` agent 遇 PDF 乱码会反复重试 PyMuPDF。移植此协议可立即堵住。预估 30 分钟可完成。详见 [[yizhiyanhua-ai-fireworks-tech-graph]] 的"对 Ohmybrain 的启发 §3"。
+
+## 规模化工程实践：ECC 48 agents 生态
+
+[[affaan-m-everything-claude-code|Everything Claude Code (ECC)]] 把子代理编排从"3-5 个典型代理"推到 **48 个生产级代理**的规模，形成可直接复用的生态样本：
+
+- **分工颗粒**：除 planner / architect / tdd-guide / code-reviewer 等通用代理外，按**语言**拆 reviewer + build-resolver 对（typescript / python / go / java / kotlin / rust / cpp / dart / csharp / php / perl），按**场景**拆专精代理（`loop-operator` 自治循环、`harness-optimizer` harness 配置调优、`chief-of-staff` 通讯分诊、`silent-failure-hunter` 无声失败扫雷、`seo-specialist` 运营、`gan-evaluator/generator/planner` 三元对抗工作流）
+- **记忆分层**：结合 Claude Code v2.1.33+ 原生 Agent Memory（user/project/local）+ ECC 独有的 **Instinct 系统**（PreToolUse observer hook + confidence scoring 累积 + `/evolve` 聚类为 skill），形成"短期原生记忆 + 长期学习循环"双层
+- **启示**：Ohmybrain 现有 wiki-ingester 单代理可按该模式拆分——论文、代码仓、视频转录各自独立代理（可预加载对应 skill），配合 `memory: user` 跨摄入累积经验。
+
 ## 来源
 
 - 参考仓库：`raw/repos/claude-code-best-practice/best-practice/claude-subagents.md`
@@ -141,5 +159,7 @@ Agent(subagent_type="agent-name", description="...", prompt="...", model="haiku"
 - 对比报告：`raw/repos/claude-code-best-practice/reports/claude-agent-command-skill.md`
 - Agent Memory：`raw/repos/claude-code-best-practice/reports/claude-agent-memory.md`
 - 另一实现参考：[[nousresearch-hermes-agent]]
+- 生产级规模化范本：[[affaan-m-everything-claude-code]]（48 agents + instinct 系统）
 - 相关实体：[[claude-code]]
-- 相关 summary：[[claude-code-best-practice]]
+- 相关 summary：[[claude-code-best-practice]]、[[affaan-m-everything-claude-code]]
+- 子代理自律范本：[[yizhiyanhua-ai-fireworks-tech-graph]]（Pre-Tool-Call Checklist + Error Recovery Protocol）

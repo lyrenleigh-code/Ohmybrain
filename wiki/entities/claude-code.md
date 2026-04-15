@@ -45,8 +45,14 @@ Anthropic 出品的 CLI 工具，是 my-brain 系统的**核心执行引擎**。
 
 详见 [[claude-code-best-practice]]。
 
+单一 Skill 深度范本：[[yizhiyanhua-ai-fireworks-tech-graph]]（yizhiyanhua-ai / MIT）示范 Skill 工程化的 7 条可迁移模式——三层资源分离、frontmatter 触发关键词、Pre-Tool-Call Checklist、Error Recovery Protocol、UML 覆盖映射表、npm 打包可分发、多 runtime 兼容。
+
+生产级规模化范本：[[affaan-m-everything-claude-code|Everything Claude Code (ECC)]]（affaan-m / MIT / 黑客松冠军）—— 48 agents + 183 skills + 79 commands + 8 种 hooks × 12 语言生态的**可直接部署生产配置包**，与 best-practice 的"教科书参考"形成互补。独有机制：Instinct 系统（confidence scoring 增量学习）、Search-First 开发（写代码前强制研究）、Hook Runtime Controls（`ECC_HOOK_PROFILE` 运行时门控）、跨 Harness DRY Adapter（Cursor / Codex / OpenCode 复用同一套 hooks 脚本）、AgentShield 安全扫描。
+
 ## 来源
 
 - [[my-brain-setup-plan.md|搭建计划]] — 定义了 Claude Code 在三阶段中的核心角色
 - [[toolchain.md|工具链指南]] — 描述了 Claude Code 作为执行引擎的具体职责
 - [[claude-code-best-practice]] — shanraisshan 维护的最佳实践参考库
+- [[affaan-m-everything-claude-code]] — Affaan Mustafa 维护的生产级配置包（ECC）
+- Skill 工程化范本：[[yizhiyanhua-ai-fireworks-tech-graph]]

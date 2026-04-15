@@ -176,6 +176,7 @@ Hub 本身无 `/promote-answer` 命令（见 `ingest.md` 末尾："Hub 的 inges
 
 - [x] `llm-wiki.md` rule → skill（`paths: "wiki/**"` 自动激活）——2026-04-14 完成
 - [x] `/ingest` 抽出自治多步部分为 Agent——2026-04-14 完成，详见下文
+- [x] `/ingest` 增加 inline / agent 路径分流 + 用户预先询问——2026-04-14 完成，详见下文（来源：[[wiki-ingester-ab-test-dingjie-2020]] 结尾新 P1-3 候选）
 
 ### P1-1 实施记录：llm-wiki rule → skill（2026-04-14）
 
@@ -237,6 +238,39 @@ Agent 必须返回**结构化 markdown 报告**：元数据、新建页面列表
 - 结构化输出契约是否可靠——若 Agent 格式漂移，主会话 Step 5-6 的解析会失败
 - 若发现问题，调整 Agent prompt 中的"输出契约"段落
 
+### P1-3 实施记录：/ingest 路径分流（2026-04-14）
+
+**动机**：A/B 报告（[[wiki-ingester-ab-test-dingjie-2020]]）结论——新 agent 架构对长论文/大仓强（+182% 行数），但对**短笔记 / 小文章**重型 agent 划不来（~300s+ / ~124k tokens 起步）。需要在 `/ingest` 里加一层分流，短资料走主会话内联（llm-wiki skill 已经 `paths: wiki/**` 自动激活），长资料保持走 Agent。
+
+**改动**（仅 `.claude/commands/ingest.md`，无新文件）：
+
+| 位置 | 改动 |
+|------|------|
+| 架构图 | 新增 Step 1.5 + Step 2-4 分两路径 |
+| 新 Step 1.5 | 规模预判表（文本 / PDF / 仓库 / 视频的 短/长 阈值 + 测量命令） + AskUserQuestion 显式询问 |
+| Step 2-4 | 拆成"路径 A inline"和"路径 B agent"两小节，产出**同构的"摄入报告"契约** |
+| 报告契约 | 从 Agent 专属升级为两条路径共用（元数据 / 新建页面 / 更新页面 / 一句话摘要 / 备注）——Step 5-7 机械消费无需区分路径 |
+| 批量摄入 | 增加"批次统一策略"：`全部 inline` / `全部 agent 并行` / `逐个询问`；并行 agent 约束明文化（子 agent 只写 source-summary，主会话汇总后批量 cross-ref） |
+| frontmatter description | 反映双路径 |
+
+**关键设计取舍**：
+
+- **规模预判只作默认高亮，必须始终询问**——因为"这次想快"或"这次想细"能推翻规模判断（如小笔记用户仍可能想让 agent 多挖关联）
+- **报告契约两路径共用**——Step 5-7 是路径无关的，未来再加第三条路径（比如 MCP 服务化摄入）也能复用
+- **批量模式的"统一策略"减少打扰**——8 份论文不用问 8 次
+
+**预期收益**：
+
+- 短资料处理从 `~300s+` 降到 `<30s` 主会话内联
+- 长资料仍保留 agent 独立上下文保护 + 并行能力（4/14 USBL 8 篇并行已验证）
+- 用户拥有路径决定权——规模阈值只是提示
+
+**待观察**：
+
+- 规模阈值（5k 字 / 10 页 / 15 min）是否合理——用实际使用统计调整
+- AskUserQuestion 的交互体验——是否每次都默认项就够用
+- 是否有资料"看起来短但其实难"需要特别标注（比如数学密集的 4 页论文）
+
 ### P2 下一阶段
 
 - [ ] Wiki 检索做成 pluggable context engine
@@ -259,3 +293,7 @@ Agent 必须返回**结构化 markdown 报告**：元数据、新建页面列表
 - [[claude-hooks-architecture]] — Hook 架构
 - [[claude-code]] — 执行引擎实体页
 - [[harness-engineering]] — harness 设计基础
+
+## 补充参考
+
+- [[yizhiyanhua-ai-fireworks-tech-graph]] — Skill 工程化范本。在"现在就能做 Sec.3" 可追加：给 wiki-ingester agent 加 Pre-Tool-Call Checklist + Error Recovery Protocol；"值得规划 Sec.2.1" 可追加：llm-wiki 三层化（基于 [[skill-layered-resources]] 概念）。

@@ -171,6 +171,38 @@ hooks-config.local.json  >  hooks-config.json
 
 [[nousresearch-hermes-agent|Hermes Agent]] 在其消息网关层有一套独立 hook 系统（`gateway/hooks.py` + `gateway/builtin_hooks/`），与主 agent 循环解耦。典型用途：background 进程完成通知、状态事件、交付确认。这种**"主循环 hook + 网关 hook 双层"** 的设计值得对照——Claude Code 当前 hook 在代理生命周期层统一，未区分主会话与网关。
 
+
+## 内部自律的镜像：Skill 的 Pre-Tool-Call Checklist
+
+Hook 是**harness 从外部强制**规则，但同样的哲学也可以做成 **skill 内部自律条款**。[[yizhiyanhua-ai-fireworks-tech-graph]] 范本在 SKILL.md 里硬编码了：
+
+- **Pre-Tool-Call Checklist**：工具调用前逐项过 3 个 YES/NO 问题，任一 NO 就 STOP
+- **Error Recovery Protocol**：第一次分析、第二次换方法、第三次停并报告，明令 Never retry
+
+这对 Ohmybrain `wiki-ingester` agent 遇 PDF 乱码时的反复重试问题直接对症。把本应靠 hook 强制的"不要无限重试"写进 skill/agent 内部——**确定性的内化版本**。
+
+两者关系：
+- **外部 Hook**：harness 层的**阻断**式约束（不符就 exit 2）
+- **内部 Checklist**：skill/agent 内部的**自律**式约束（自己检查后不调工具）
+- 理想组合：关键约束用 hook（兜底），常规质量用 checklist（减少 hook 开销）
+
+## 运行时门控扩展：ECC Hook Profile
+
+[[affaan-m-everything-claude-code|Everything Claude Code]] 在基础 hook 架构之上加了**运行时门控**（runtime gating）层，解决"严格模式 vs 探索模式切换"的实际痛点：
+
+```bash
+export ECC_HOOK_PROFILE=minimal|standard|strict   # 默认 standard
+export ECC_DISABLED_HOOKS="pre:bash:tmux-reminder,post:edit:typecheck"
+```
+
+所有 hook 通过 `scripts/hooks/run-with-flags.js` 统一包装，**不需要编辑 hook 文件**即可临时调严格度。实现要点（对 Ohmybrain 可直接迁移）：
+
+- **包装器模式**：`run-with-flags.js` 读环境变量 → 决定是否跳过当前 hook → 继续调用真实 hook 脚本
+- **命名约定**：`<event>:<tool>:<hook-id>` 便于 `ECC_DISABLED_HOOKS` 精确门控
+- **Profile 语义**：minimal = 只跑关键安全 hook；standard = 默认；strict = 开全部（含 lint / typecheck / format）
+
+**对 Ohmybrain 的启示**：本仓未来可加 `OHMYBRAIN_HOOK_PROFILE=draft|strict`——`draft` 模式下撰写 wiki 时不跑 `lint_wiki.py`（避免频繁打断），`strict` 模式下 commit 前全量跑通。
+
 ## 来源
 
 - Claude Code Hook 官方文档：`code.claude.com/docs/en/hooks-guide`
@@ -179,5 +211,7 @@ hooks-config.local.json  >  hooks-config.json
 - Boris tips：`raw/repos/claude-code-best-practice/tips/claude-boris-15-tips-30-mar-26.md` (#4)
 - CLAUDE.md hook 事件清单：`raw/repos/claude-code-best-practice/CLAUDE.md`
 - 平行架构参考：[[nousresearch-hermes-agent]]（gateway hooks）
+- 运行时门控参考：[[affaan-m-everything-claude-code]]（`ECC_HOOK_PROFILE` + `ECC_DISABLED_HOOKS`）
 - 相关实体：[[claude-code]]
-- 相关 summary：[[claude-code-best-practice]]
+- 相关 summary：[[claude-code-best-practice]]、[[affaan-m-everything-claude-code]]
+- 内部自律范本：[[yizhiyanhua-ai-fireworks-tech-graph]]（Pre-Tool-Call Checklist + Error Recovery Protocol）

@@ -178,6 +178,25 @@ paths: "src/**/*.ts"
 
 Anthropic Claude Code 的 skill 是**私有格式**。[[nousresearch-hermes-agent|Hermes Agent]] 实现了 [agentskills.io](https://agentskills.io) 开放规范——26 个领域 skill 开箱即用（autonomous-ai-agents / data-science / devops / github / mcp / media / research / security 等），可在不同 agent 之间互通。若 Ohmybrain 想保持 skill 可移植性，值得关注这个标准。
 
+
+## Skill 内部组织：三层资源分离
+
+Skill 不仅要和 Command/Agent 做对比，Skill **自己内部**也有组织模式。主 `SKILL.md` 应保持精简，细节外置到 `references/` 懒加载——详见 [[skill-layered-resources]]。参考范本 [[yizhiyanhua-ai-fireworks-tech-graph]] 示范了 1 个主 SKILL + 10 个 references + 10 个 templates + 7 个 fixtures + 4 个 scripts 的分层结构。
+
+## 生产级验证：ECC 的 "Skills-First" 策略
+
+[[affaan-m-everything-claude-code|Everything Claude Code (ECC)]] 在 v1.10.0 的产品清单上明确给出**量化印证**：
+
+| 组件 | 数量 | ECC 官方定位 |
+|------|------|------------|
+| Skills | 183 | "**canonical workflow surface**"（主工作流表面） |
+| Agents | 48 | 专精代理，按语言 + 场景拆 |
+| Commands | 79 | "**legacy slash-entry compatibility surface**"（遗留兼容层） |
+
+> "New workflow contributions should land in `skills/` first. `commands/` should only be added or updated when a shim is still required for migration or cross-harness parity." —— ECC AGENTS.md
+
+这直接印证本表格中 **"解析优先级：Skill > Agent > Command"** 的结论——在规模化生产场景下，Anthropic 官方文档和社区最佳仓库都**走向同一答案**：skill 是最轻量、最可复用、可被自动语义匹配的首选工作流单元。**Ohmybrain 现有 `/ingest`、`/lint-wiki` 等 command 可保留做入口，但内部新工作流应优先 skill 化**。
+
 ## 来源
 
 - 核心对比报告：`raw/repos/claude-code-best-practice/reports/claude-agent-command-skill.md`
@@ -185,5 +204,8 @@ Anthropic Claude Code 的 skill 是**私有格式**。[[nousresearch-hermes-agen
 - Command 规格：`raw/repos/claude-code-best-practice/best-practice/claude-commands.md`
 - Skill 规格：`raw/repos/claude-code-best-practice/best-practice/claude-skills.md`
 - 开放标准参考：[[nousresearch-hermes-agent]]（agentskills.io 兼容实现）
-- 相关 summary：[[claude-code-best-practice]]
+- 生产级 skills-first 量化印证：[[affaan-m-everything-claude-code]]（183 skills vs 79 legacy commands）
+- 相关 summary：[[claude-code-best-practice]]、[[affaan-m-everything-claude-code]]
 - 相关实体：[[claude-code]]
+- 工程化范本：[[yizhiyanhua-ai-fireworks-tech-graph]] — Skill 三层资源分离 + 触发关键词 + Pre-Tool-Call 协议范本
+- 内部组织模式：[[skill-layered-resources]]

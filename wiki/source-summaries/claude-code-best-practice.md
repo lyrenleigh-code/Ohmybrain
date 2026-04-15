@@ -191,3 +191,7 @@ weather-svg-creator (Skill，生成 SVG 文件)
 - 参考仓库：`raw/repos/claude-code-best-practice/README.md` + `best-practice/*` + `reports/*`
 - 主要对接上游：`code.claude.com/docs/en/`（Claude Code 官方文档）
 - 相关实体：[[claude-code]]
+
+## 相关范本
+
+- [[yizhiyanhua-ai-fireworks-tech-graph]] — 单一 Skill 深度范本（本仓侧重配置集总，fireworks 侧重单 skill 工程化）

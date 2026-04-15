@@ -1,7 +1,7 @@
 # Wiki Index
 
-> 最后更新：2026-04-14
-> 页面总数：43
+> 最后更新：2026-04-15
+> 页面总数：46
 
 ## Concepts（概念页）
 
@@ -20,6 +20,7 @@
 - [subagents-orchestration](concepts/subagents-orchestration.md) — Claude Code 子代理编排，16 字段 frontmatter + Command→Agent→Skill 模式
 - [skills-vs-commands](concepts/skills-vs-commands.md) — Skill/Command/Agent 三机制对比，决策树 + 解析优先级
 - [claude-hooks-architecture](concepts/claude-hooks-architecture.md) — Claude Code Hook 架构，15 个生命周期事件 + 作用域层级
+- [skill-layered-resources](concepts/skill-layered-resources.md) — Skill 三层资源分离模式（SKILL.md 分类层 + references 参考层 + templates/scripts 执行层）
 
 ## Entities（实体页）
 
@@ -43,7 +44,7 @@
 ## Explorations（探索页）
 
 - [zotero-reorganization](explorations/zotero-reorganization.md) — Zotero 文件夹重组方案，基于研究地图将 64 个文件夹精简为 17 个
-- [ohmybrain-agent-architecture-insights](explorations/ohmybrain-agent-architecture-insights.md) — 基于 Claude Code Best Practice + Hermes Agent 对照的 Ohmybrain 架构启发录（P0/P1/P2/P3 行动项）
+- [ohmybrain-agent-architecture-insights](explorations/ohmybrain-agent-architecture-insights.md) — 基于 Claude Code Best Practice + Hermes Agent 对照的 Ohmybrain 架构启发录（P0/P1/P2/P3 行动项，P0 + P1 已完成）
 - [wiki-ingester-ab-test-dingjie-2020](explorations/wiki-ingester-ab-test-dingjie-2020.md) — 新架构（wiki-ingester Agent）首次实测 A/B 报告，丁杰 2020 USBL 博士论文
 
 ## Comparisons（比较页）
@@ -67,3 +68,5 @@
 - [quzhenzhao-2024-usbl-precision](source-summaries/quzhenzhao-2024-usbl-precision.md) — 五元十字阵多构型数据融合提升精度（蘧振超等, 2024 期刊短文）
 - [huangjian-2019-lbl-usbl](source-summaries/huangjian-2019-lbl-usbl.md) — LBL/USBL 组合定位跟踪六项关键技术（黄健博士论文, 西工大 2019）
 - [yumin-2006-lr-usbl](source-summaries/yumin-2006-lr-usbl.md) — 国内首代长程 USBL 系统研制（喻敏博士论文, 哈工程 863 项目 2006）
+- [yizhiyanhua-ai-fireworks-tech-graph](source-summaries/yizhiyanhua-ai-fireworks-tech-graph.md) — Claude Code Skill 工程化范本（7 风格/14 类图，MIT/npm v1.0.4），7 条可迁移模式
+- [affaan-m-everything-claude-code](source-summaries/affaan-m-everything-claude-code.md) — Everything Claude Code v1.10.0（Affaan Mustafa/MIT/黑客松冠军），48 agents + 183 skills + 79 commands 生产级配置包
