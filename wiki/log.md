@@ -4,6 +4,157 @@
 
 ---
 
+## [2026-04-17] apply | claude-mem 5 条可迁移模式落地（P0/P1/P2/P3）
+
+基于 [[thedotmack-claude-mem]] summary 中的 5 条推荐优先级，在 Hub + ohmybrain-core + 3 下游全面落地（不安装 claude-mem 本体，仅借鉴模式）。
+
+**P0 · `<private>` tag hook**（已完成）
+- 新建 `scripts/check_private_tags.py`（74 行，`dataclass(frozen=True)` + 正则扫描 + PreToolUse 阻断）
+- 保护范围：`wiki/**` + `projects/**`；放行 `raw/**` 及项目内部路径
+- 阻断行为：exit 2 + stderr 提示 3 种处理方式
+- 自测 7/7 通过（protected + private tag / 放行 / Edit / multiline / 非 Write 工具 / malformed JSON）
+- 部署：Hub `scripts/` + `ohmybrain-core/template/scripts/` + UWAcomm/USBL/UWAnet `scripts/`
+- settings.json 接入：5 位置全部追加为 PreToolUse Edit|Write matcher 的第 2 个 hook
+- 下游烟测 3/3 pass
+
+**P1a · llm-wiki §Query 改三层渐进披露**（已完成）
+- 改写 `~/.claude/skills/llm-wiki/SKILL.md` §Query：Step 1 索引（读 index.md）→ Step 2 时序上下文（读 log.md + frontmatter）→ Step 3 详情（≤3 页 Read）
+- 加入反模式清单：跳过 index 直接 grep 全文 / 一次读 5+ 页面 / 重复覆盖
+- 目标：约 10× token 节省（对照 claude-mem `search → timeline → get_observations` 模式）
+
+**P1b · plan-task / implement-task 重写**（已完成）
+- `plan-task/SKILL.md`：加 Phase 0 Documentation Discovery + Subagent Reporting Contract（sources/findings/snippets/confidence+gaps，无证据则拒绝重派）+ "COPY from docs, don't invent" 硬约束 + 每阶段 Allowed APIs + Anti-patterns
+- `implement-task/SKILL.md`：改为 Orchestrator 协议，每阶段部署 Implementation / Verification / Anti-pattern / Commit 4 个子代理，commit only if verified
+- 部署：`ohmybrain-core/template/.claude/skills/` + UWAcomm/USBL/UWAnet `.claude/skills/`
+
+**P2 · CLAUDE.md 补 Exit Code Strategy 段**（已完成）
+- Hub / ohmybrain-core/template / UWAcomm / USBL / UWAnet CLAUDE.md 全部补段
+- 表格化 0/1/2 语义 + 4 条设计原则（宽松优先 / 阻断谨慎 / 提醒用 exit 0 / Windows Terminal tab 注意）
+- 列出当前阻断型 hook：`check_raw_write` + `check_private_tags` + `check_index_log_sync`
+
+**P3 · mode 系统 UWAcomm 试点**（已完成）
+- 新建 `TechReq/UWAcomm/.claude/modes/matlab-zh.json`（结构化抽取 Language & Conventions + MATLAB 测试调试流程 + Git 约定）
+- 新建 `.claude/modes/README.md` 说明模式清单 + 现状 vs 最终形态 + 兼容性注记
+- **当前形态**：mode 文件作为可追溯的结构化镜像，CLAUDE.md 仍是主事实源（避免两处分叉）
+- **未运行时切换**：Claude Code 无 env-var 驱动 prompt 切换，待首个 mode 分叉场景出现时再决方案（YAGNI）
+- CLAUDE.md 加一行"当前模式：matlab-zh"指针
+
+**新基础设施清单**（Hub 视角）：
+| 类型 | 新增 |
+|------|------|
+| Hook 脚本 | 1（`check_private_tags.py`）|
+| Skill 重写 | 2（`plan-task` / `implement-task`，均在 core/template + 3 下游）|
+| 全局 Skill 改动 | 1（`llm-wiki` §Query 三层协议）|
+| CLAUDE.md 增补 | 5（Hub + core + 3 下游）|
+| 新目录 | 1（UWAcomm `.claude/modes/`）|
+
+**Defer**（未做）：
+- claude-mem 本体安装（明确决定不装，见本日对话）
+- Chroma 向量搜索 / worker service / SQLite observation DB（过度工程）
+- 运行时 mode 切换（YAGNI，待分叉场景）
+
+---
+
+## [2026-04-17] ingest | thedotmack-claude-mem（Claude Code 持久记忆插件）
+
+摄入 `raw/repos/claude-mem`（Alex Newman / AGPL-3.0 / v12.1.6，211 MB，TypeScript+Bun+SQLite+Chroma+React UI）——Trendshift 收录、Awesome Claude Code 提及的跨会话记忆插件。
+
+**产物**：
+- 新建 `source-summaries/thedotmack-claude-mem.md`（~180 行），5 条可迁移模式 + 4 条不建议借鉴 + 4 范本对照表 + 5 条推荐落地优先级
+- 追加 wikilink 到 3 页：[[claude-hooks-architecture]]（生命周期活例）/ [[subagents-orchestration]]（Subagent Contract 范本）/ [[entities/claude-code]]（插件生态代表）
+
+**核心启发**（按借鉴优先级）：
+- **P0**：`<private>` 标签 + hook 层脱敏——1 个 Python 脚本即可自动隔离 Pricing 🔒 类私项目
+- **P1**：`mem-search` 的**三层渐进披露检索**（search → timeline → get_observations，~10× token 节省）可直接移植到 `llm-wiki` skill
+- **P1**：`make-plan` / `do` 的 **Phase 0 Documentation Discovery + Subagent Reporting Contract**（sources / findings / snippets / confidence+gaps）给 `plan-task` / `implement-task` skill 强约束
+- **P2**：CLAUDE.md §Exit Code Strategy 明文契约（0=success / 1=non-blocking / 2=blocking + Windows Terminal tab 哲学）
+- **P3**：36 个 `code--{lang}.json` mode 系统（语言层与功能层分离）
+
+**不建议借鉴**：Chroma 向量搜索（49 页规模 grep 足够）/ worker service + React UI（过度工程，Obsidian 足够）/ SQLite observation DB（与 Ohmybrain 主动 ingest 哲学正交）/ AGPL-3.0（商用不友好）。
+
+**新建 concept 提案**（defer）：`progressive-disclosure-retrieval`——"索引→时序上下文→详情"三层检索模式。单源当前，待再找 1 个独立源（Anthropic Context Engineering 官方文档？）再创建。
+
+**遵守的约束**：summary 180 行（预算 ≤200）/ 更新 3 页（预算 ≤5）/ 仅追加 wikilink（无 H2 小节）/ 不新建 concept。
+
+更新 index.md（49 → 50）。
+
+---
+
+## [2026-04-17] rewrite | architecture/system-overview.md 反映三仓架构
+
+**触发**：Task 4 核查中发现 `system-overview.md` 仍描述**单仓一体化架构**（2026-04-12 创建时的早期设计），与当前实际的 `ohmybrain-core + project-* + ohmybrain(hub)` 三仓架构不符。
+
+**产出**：
+1. 摄入 `raw/notes/ohmybrain_core_hub_projects_diagram.md`（206 行）→ 新建 `source-summaries/ohmybrain-three-tier-seed.md`（作为架构页事实源）
+2. 重写 `architecture/system-overview.md`：
+   - 定位改为三仓架构
+   - 加入当前实例映射表（UWAcomm / USBL / UWAnet / Pricing + core + hub）
+   - 三层职责详述（母仓/项目仓/Hub）
+   - 数据流：初始化演进流 + 知识闭环 + 开发闭环
+   - Harness 机制：拆分 global/project 两级（rules/skills/agents/hooks）
+   - Hub hooks 实际状态表（2026-04-17 check_raw_write / post_wiki_write / raw_ingest_reminder / session_context / check_index_log_sync / commit_reminder）
+   - 当前规模表：49 页 / 4 项目 / 17 脚本
+   - 演进里程碑补"架构拆分"事件
+3. 保留"演化历史"段落显式标注：早期单仓设计 → 三仓拆分
+4. 追加 wikilink：[[ohmybrain-three-tier-seed]]、[[ohmybrain-agent-architecture-insights]]
+
+**未改**：`toolchain.md` / `research-map.md` / `my-brain-setup-plan` 保留原文 —— 它们要么与架构层无关（工具链），要么是历史快照（setup-plan）。
+
+更新 index.md（48 → 49，并更新 architecture 条目描述）。
+
+---
+
+## [2026-04-17] ingest | uwanet-protocol-sim-note（UWAnet 前期调研种子笔记）
+
+摄入 `raw/notes/uwanet-protocol-sim.md`（282 行学习笔记）——UWAnet 项目前期调研的**主种子文档**，项目当前处于"前期调研阶段"尚无代码产出。
+
+**产物**：
+- 新建 `source-summaries/uwanet-protocol-sim-note.md`（~90 行），核心观点 5 条（协议栈分层 / 平台选择 / 环境搭建 / Slotted ALOHA 案例 / Claude Code 加速时间对比）
+- 追加 wikilink 到 [[underwater-acoustic-communication]] 的"来源"段（UWA 网络作为 UWA 通信的组网延伸）
+- 未修改 [[uwacomm]] 实体页——uwacomm 与 uwanet 是并列项目，不互相从属
+
+**新建 concept 提案**（待决策）：
+- `uwa-networking` — 锚定 MAC / 路由 / 传输层协议 + 仿真平台（Aqua-Sim-NG / DESERT）+ 水声网络理论
+- **当前 defer**：单源，待 UWAnet 项目产出 ≥2 个实测结论后再创建
+
+**待后续同步**（本次未做）：
+- `entities/uwacomm.md` 规模数据陈旧（186→258 文件 / 13→14 模块），与 [2026-04-17 projects/uwacomm 同步] 同源，下次摄入/触碰时顺带更新
+
+更新 index.md（47 → 48）。
+
+---
+
+## [2026-04-17] ingest | cocoon-ai-architecture-diagram（Claude Skill 极简单用途范本）
+
+摄入 `raw/architecture-diagram-generator/`（Cocoon AI / MIT / v1.0，2025-12 提交）——Claude.ai 官方支持的架构图生成 skill，仅 1 个 `SKILL.md` (163 行) + 1 个 `template.html` (319 行) + `.zip` 分发包。
+
+**产物**：
+- 新建 `source-summaries/cocoon-ai-architecture-diagram.md`（95 行），核心观点 4 条
+- 追加 wikilink 到 3 个已有页：[[skill-layered-resources]] / [[yizhiyanhua-ai-fireworks-tech-graph]] / [[entities/claude-code]]
+- 未新建 concept（单源 + 内容与现有 skill-layered-resources 直接对照）
+
+**关键启发**：作为 [[yizhiyanhua-ai-fireworks-tech-graph]] 的**极简反例**，补足了 [[skill-layered-resources]] 的边界——**单风格 + 单输出类型的 skill 不必三层分离**，全塞主 SKILL.md 反而决策更清晰。判据补充为"≥2 个正交维度才值得分层"。
+
+**遵守的约束**：summary 95 行（预算 ≤200）/ 更新 3 页（预算 ≤5）/ 仅追加 wikilink 行（无 H2 小节）/ 不新建 concept。
+
+更新 index.md（46 → 47）。
+
+---
+
+## [2026-04-17] sync | projects/uwacomm/README.md 同步下游进度
+
+Hub 项目导航页滞后下游 2 天，本次同步 UWAcomm 2026-04-15~17 进展：
+- 规模：186 文件 25 830 行 → **258 文件 38 649 行**
+- 模块数：13 → **14**（新增 14_Streaming 流式仿真框架）
+- 体制表：补充各体制已接入 `modem_dispatch` 统一 API（OFDM / SC-TDE / SC-FDE / FH-MFSK）
+- 新增 4 条关键技术结论（流式相关：passband 原生信道 / hybrid 帧检测 / FH-MFSK 软判决 LLR / 多径展宽极限）
+- 替换"待办"为当前 9 条活跃 spec 方向（deoracle / OTFS 三项 / 流式 P4-P6 / UI polish/refactor）
+- 项目内导航：wiki 37 → 40 页，补 `conclusions.md` + `comparisons/e2e-test-matrix.md`
+
+仅 `projects/` 导航页变更，不涉及 wiki/ 本体——不更新 index.md 页数。
+
+---
+
 ## [2026-04-15] sync | 基础设施改进下发母仓 + 3 下游项目
 
 把本日 Hub 完成并验证的两类基础设施改进同步到 `ohmybrain-core/template` + `TechReq/{USBL, UWAcomm, UWAnet}`。

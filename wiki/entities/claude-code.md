@@ -56,3 +56,5 @@ Anthropic 出品的 CLI 工具，是 my-brain 系统的**核心执行引擎**。
 - [[claude-code-best-practice]] — shanraisshan 维护的最佳实践参考库
 - [[affaan-m-everything-claude-code]] — Affaan Mustafa 维护的生产级配置包（ECC）
 - Skill 工程化范本：[[yizhiyanhua-ai-fireworks-tech-graph]]
+- 单用途极简 Skill 范本：[[cocoon-ai-architecture-diagram]]（Cocoon AI / MIT，架构图生成）
+- 持久记忆插件：[[thedotmack-claude-mem]]（Alex Newman / AGPL-3.0，hook+worker+MCP 三层架构）

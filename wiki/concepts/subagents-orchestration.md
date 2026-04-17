@@ -160,6 +160,7 @@ Agent(subagent_type="agent-name", description="...", prompt="...", model="haiku"
 - Agent Memory：`raw/repos/claude-code-best-practice/reports/claude-agent-memory.md`
 - 另一实现参考：[[nousresearch-hermes-agent]]
 - 生产级规模化范本：[[affaan-m-everything-claude-code]]（48 agents + instinct 系统）
+- Phase 0 + Subagent Reporting Contract 范本：[[thedotmack-claude-mem]]（make-plan / do 强约束）
 - 相关实体：[[claude-code]]
 - 相关 summary：[[claude-code-best-practice]]、[[affaan-m-everything-claude-code]]
 - 子代理自律范本：[[yizhiyanhua-ai-fireworks-tech-graph]]（Pre-Tool-Call Checklist + Error Recovery Protocol）

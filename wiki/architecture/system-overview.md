@@ -1,271 +1,254 @@
 ---
 type: architecture
 created: 2026-04-12
-updated: 2026-04-12
-tags: [架构, 闭环, harness]
+updated: 2026-04-17
+tags: [架构, 三仓, Hub, 模板, 闭环, harness]
 ---
 
 # 系统架构总览
 
 ## 定位
 
-Ohmybrain 是一个 **LLM Wiki + 开发工程 + Claude Code Harness** 一体化仓库，同时承载知识管理和工程交付两个职能。
+Ohmybrain 体系采用**三仓架构**：**母仓模板** + **项目仓** + **Hub**。三者职责分离、数据单向流动，共享同一套 Claude Code harness 模板。
 
-## 完整目录结构
+事实源：[[ohmybrain-three-tier-seed]]（架构设计笔记）+ 本仓根 `CLAUDE.md` 项目映射表。
+
+> **演化历史**：早期（2026-04-12 前）曾是 *"LLM Wiki + 开发工程 + Claude Code Harness 一体化单仓"* 设计（见 [[my-brain-setup-plan]] / `raw/notes/agent_knowledge_repo_template.md`），后拆分为本文档描述的三仓结构。
+
+## 三仓结构
 
 ```
-ohmybrain/
-├── .claude/                        # Harness 层
-│   ├── settings.json               #   hooks 配置
-│   ├── rules/                      #   路径特定规则
-│   │   ├── wiki.md                 #     wiki 编写规范
-│   │   ├── raw.md                  #     raw 只读规则
-│   │   ├── engineering.md          #     代码工程规范
-│   │   └── specs.md                #     任务管理规范
-│   ├── skills/                     #   可复用工作流
-│   │   ├── ingest-source/          #     资料摄入
-│   │   ├── plan-task/              #     任务规划
-│   │   ├── implement-task/         #     任务实现
-│   │   ├── lint-wiki/              #     Wiki 检查
-│   │   └── promote-answer/         #     结论沉淀
-│   ├── hooks/                      #   行为强制执行
-│   │   ├── protect-raw.sh          #     拦截 raw/ 修改
-│   │   ├── wiki-post-edit.sh       #     编辑后 lint
-│   │   └── check-stop.sh           #     停止前验证
-│   └── commands/                   #   slash commands (旧版保留)
-│
-├── raw/                            # 原始事实层 (只读)
-│   ├── papers/                     #   学术论文
-│   ├── articles/                   #   网页文章
-│   ├── videos/                     #   视频转录
-│   ├── podcasts/                   #   播客转录
-│   ├── books/                      #   书籍笔记
-│   ├── courses/                    #   课程讲义
-│   ├── notes/                      #   对话/会议/思考
-│   ├── threads/                    #   社交媒体帖子
-│   ├── repos/                      #   代码仓库
-│   └── assets/                     #   图片/附件
-│
-├── wiki/                           # 可复用知识层
-│   ├── index.md                    #   内容索引
-│   ├── log.md                      #   变更日志
-│   ├── concepts/                   #   概念和方法
-│   ├── entities/                   #   人物/工具/项目/组织
-│   ├── architecture/               #   系统架构 (本文件所在)
-│   ├── modules/                    #   模块设计和接口
-│   ├── decisions/                  #   设计决策记录
-│   ├── incidents/                  #   故障和教训
-│   ├── topics/                     #   跨概念综合专题
-│   ├── comparisons/                #   A vs B 对比分析
-│   ├── explorations/               #   深度研究笔记
-│   └── source-summaries/           #   原始资料摘要
-│
-├── specs/                          # 需求入口层
-│   ├── active/                     #   当前任务 spec
-│   └── archive/                    #   已完成 spec
-│
-├── plans/                          # 实现计划层
-├── tasks/                          # 任务追踪
-├── src/                            # 源代码
-├── tests/                          # 自动化测试
-├── evals/                          # Agent/工作流评测
-│
-├── workflows/                      # 操作流程文档
-│   ├── knowledge/                  #   知识闭环
-│   │   ├── 01-ingest.md            #     1. 资料摄入
-│   │   ├── 02-query.md             #     2. 知识查询
-│   │   ├── 03-promote.md           #     3. 结论沉淀
-│   │   └── 04-review.md            #     4. 定期审查
-│   └── engineering/                #   开发闭环
-│       ├── 01-spec.md              #     1. 需求定义
-│       ├── 02-plan.md              #     2. 实现计划
-│       ├── 03-implement.md         #     3. 代码实现
-│       └── 04-validate.md          #     4. 完成验证
-│
-├── scripts/                        # 自动化脚本
-│   ├── lint_wiki.py                #   Wiki 结构检查
-│   ├── sync_index.py               #   同步 index 计数
-│   ├── validate_task.py            #   任务完成验证
-│   ├── transcribe.py               #   Whisper 音视频转录
-│   ├── scrape.py                   #   Firecrawl 网页抓取
-│   ├── import-zotero.py            #   Zotero 论文导入
-│   ├── import-readwise.py          #   Readwise 文章导入
-│   └── zotero_cleanup.py           #   Zotero 重复清理
-│
-├── .github/workflows/              # CI/CD
-│   ├── wiki-check.yml              #   Wiki lint + validate
-│   └── ci.yml                      #   测试 + 验证
-│
-├── .obsidian/                      # Obsidian vault 配置
-���   └── templates/                  #   页面模板
-│
-├── CLAUDE.md                       # 项目级 Claude Code 入口
-└── .gitignore
+┌──────────────────────┐       复制派生       ┌──────────────────────┐
+│  ohmybrain-core      │ ─────────────────→  │  project-*           │
+│  母仓 / 模板          │                      │  子项目仓（自包含）    │
+│  D:\Claude\ohmybrain- │ ←─── 经验回流 ───── │  D:\Claude\TechReq\  │
+│  core                │                      │  {UWAcomm,USBL,...}  │
+└──────────────────────┘                      └──────────┬───────────┘
+                                                          │ 索引
+                                                          │ 跨项目结论
+                                                          ↓ /promote-answer
+                                              ┌──────────────────────┐
+                                              │  ohmybrain (Hub)     │
+                                              │  知识库 + 项目导航     │
+                                              │  D:\Claude\Ohmybrain │
+                                              └──────────────────────┘
 ```
 
-## 六层架构
+### 当前实例
 
-| 层 | 目录 | 职责 | 读写 |
+| 角色 | 仓库 | 本地路径 | 状态 |
+|------|------|---------|------|
+| 母仓 | `ohmybrain-core` | `D:\Claude\ohmybrain-core` | 活跃 |
+| Hub | `ohmybrain`（本仓） | `D:\Claude\Ohmybrain` | 活跃 |
+| 项目仓 | `UWAcomm` | `D:\Claude\TechReq\UWAcomm` | 活跃开发 |
+| 项目仓 | `USBL` | `D:\Claude\TechReq\USBL` | 活跃开发 |
+| 项目仓 | `UWAnet` | `D:\Claude\TechReq\UWAnet` | 前期调研 |
+| 项目仓 🔒 | `Pricing` | `D:\Claude\DocProcess\Pricing` | 活跃，不公开 |
+
+## 三层职责
+
+### 1. `ohmybrain-core`（母仓/模板）
+
+> 定义"默认应该长什么样"。提供可复制的 harness + 工作流。
+
+```
+ohmybrain-core/
+├── README.md
+├── docs/
+│   └── new-project-sop.md        # 新项目启动 SOP
+└── template/                      # 👇 从此派生
+    ├── CLAUDE.md
+    ├── .claude/
+    │   ├── rules/                 # 路径特定规则（wiki/raw/engineering/specs）
+    │   ├── skills/                # 5 个技能（ingest/plan/implement/lint/promote-answer）
+    │   ├── commands/              # ingest.md + promote.md
+    │   └── settings.json          # 跨平台 Python hooks
+    ├── raw/                       # 10 子目录骨架（只读）
+    ├── wiki/                      # 知识层（index.md + log.md）
+    ├── scripts/                   # 8 个自动化脚本
+    ├── workflows/
+    │   ├── knowledge/             # 4 步（ingest→query→promote→review）
+    │   └── engineering/           # 5 步（module-design→spec→plan→implement→validate）
+    └── .github/workflows/
+```
+
+**使命**：变更模板即可一次性升级所有下游项目的 harness（目前靠手动同步 per 2026-04-15 log）。
+
+### 2. `project-*`（项目仓，自包含）
+
+> "这次具体做什么、交付什么"。每个项目有完整 harness + wiki + 代码。
+
+```
+project-*/
+├── CLAUDE.md                      # 项目级指令
+├── .claude/                       # 从 core 派生的 harness（可项目级定制）
+├── wiki/                          # 项目级知识
+│   ├── concepts/                  #   领域概念
+│   ├── modules/                   #   模块设计/函数索引
+│   ├── debug-logs/                #   调试日志
+│   ├── conclusions.md             #   技术结论累积
+│   ├── index.md / log.md
+│   └── ...
+├── specs/{active,archive}/        # 任务 spec
+├── plans/                         # 实现计划
+├── src/ or modules/               # 代码（按项目规则组织）
+├── tests/                         # 测试
+├── scripts/                       # 自动化（继承 + 项目补充）
+└── raw/                           # 项目原始资料（只读）
+```
+
+**独立性**：每个项目仓自包含、可单独 clone、单独开发。不依赖 Hub 或 core 运行。
+
+### 3. `ohmybrain`（Hub，本仓）
+
+> "把所有项目串起来看"。**无 src/ 无 specs/**——不承载业务。
+
+```
+Ohmybrain/
+├── CLAUDE.md                      # Hub 入口
+├── TODO.md                        # 观察期配置试点等
+├── projects/                      # 📍 项目导航
+│   ├── uwacomm/README.md
+│   ├── usbl/README.md
+│   ├── uwanet/README.md
+│   └── pricing/README.md
+├── raw/                           # 跨项目原始资料（只读）
+├── wiki/                          # 📍 跨项目知识层
+│   ├── concepts/                  #   跨项目抽象（水声通信/USBL定位/Claude-Code Skill/...）
+│   ├── entities/                  #   工具 + 项目
+│   ├── source-summaries/          #   论文/文章/仓库摘要
+│   ├── architecture/              #   架构页（本文件）
+│   ├── topics/ / explorations/ / comparisons/
+│   ├── index.md / log.md
+├── scripts/                       # Hub 特有（import-zotero/readwise/theses + 通用 lint 等）
+└── .claude/
+    ├── agents/wiki-ingester.md    #   摄入 agent（主会话委托）
+    ├── commands/ingest.md         #   /ingest 命令
+    └── settings.json              #   Hub 自己的 hooks
+```
+
+**Hub 特有**：不派生自 core 模板（角色与项目不同），但沿用相同 wiki/ + raw/ 约定。skill 层（`llm-wiki`）走**全局 `~/.claude/skills/`**，覆盖 Hub 与所有项目。
+
+## 数据流
+
+### 初始化与演进流
+
+```
+1. ohmybrain-core 维护 template/
+2. 新项目启动：cp -r ohmybrain-core/template/ → D:\Claude\TechReq\<新项目>/
+   （见 ohmybrain-core/docs/new-project-sop.md）
+3. 项目在本仓内独立闭环（知识 + 开发）
+4. 有价值的 harness 改进回写到 ohmybrain-core/template/（经验回流 A）
+5. 跨项目结论 /promote-answer → ohmybrain Hub wiki/（经验回流 B）
+6. Hub 提供统一入口（projects/ + wiki/）
+```
+
+### 知识闭环（项目内）
+
+```
+raw/ → ingest → wiki/ → query ↻
+                ↓ promote（跨项目价值时）
+            Hub wiki/
+```
+
+| 阶段 | 触发 | 工具 | 约束 |
+|------|------|------|------|
+| **收集** | 资料放入 `raw/{papers,articles,repos,...}` | 手动 / 脚本（import-zotero/readwise/theses） | raw/ 只读；PreToolUse hook 强制 |
+| **摄入** | `/ingest <路径>` | Hub 用 `wiki-ingester` agent；下游项目用 skill | 预算：≤200 行 summary / ≤5 页更新 |
+| **查询** | 用户提问 | 主会话读 wiki/ | 分"wiki 记录"vs"通用知识" |
+| **沉淀** | `/promote-answer`（下游专属） | 下游 skill | Hub 是终点，无 `/promote-answer` |
+| **审查** | 定期 | `lint_wiki.py` + `check_index_log_sync.py` | PostToolUse + Stop hook 强制 |
+
+### 开发闭环（项目内，Hub 不涉及）
+
+```
+spec → plan → implement → test → validate → archive
+       └──→ wiki/ 同步 ←──┘
+```
+
+详见各项目的 `workflows/engineering/`（0-5 阶段：module-design / spec / plan / implement / validate）。**Hub 无 specs/ 无 src/**。
+
+## Harness 机制（三仓一致）
+
+Claude Code 通过 `.claude/` + 全局 `~/.claude/` 共同保障行为一致：
+
+| 层 | 位置 | 作用 | 触发 |
 |----|------|------|------|
-| **Harness** | `.claude/` | 规则、技能、钩子——让 Claude 按规矩办事 | Claude 读，用户写 |
-| **原始事实** | `raw/` | 论文、文章、视频转录、代码仓库 | 只读 |
-| **可复用知识** | `wiki/` | 概念、实体、架构、决策、摘要 | 读写 |
-| **任务上下文** | `specs/` `plans/` | 需求 spec 和实现计划 | 读写 |
-| **交付物** | `src/` `tests/` `evals/` | 源代码、测试、评测 | 读写 |
-| **自动化** | `scripts/` `workflows/` `.github/` | 脚本、流程、CI | 读写 |
+| **Global Rules** | `~/.claude/rules/common/*.md` | 跨项目通用规范（coding-style / git / testing / ...） | 主会话启动时加载 |
+| **Project Rules** | `项目/.claude/rules/*.md` | 项目级路径规则（wiki.md / raw.md / engineering.md） | 读取对应路径自动加载 |
+| **Global Skills** | `~/.claude/skills/{llm-wiki,...}/SKILL.md` | 跨项目技能（llm-wiki 带 `paths: wiki/**` 自动激活） | 触发关键词或路径匹配 |
+| **Project Skills** | `项目/.claude/skills/*/SKILL.md` | 项目特有技能（UWAcomm 5 个：ingest/plan/implement/lint/promote-answer） | 用户显式调用 |
+| **Agents** | `项目/.claude/agents/*.md` | 子代理（Hub: wiki-ingester） | 主会话委托 |
+| **Hooks** | `项目/.claude/settings.json` → `scripts/*.py` | 强制行为（Pre/Post/Stop/SessionStart） | 工具调用时 |
 
-## 两个闭环
+### Hub hooks（2026-04-17 实际状态）
 
-### 知识闭环
-
-```
-raw/  -->  ingest  -->  wiki/  -->  query  -->  promote  -->  wiki/
- |                       ^                                    |
- +-----------------------+------------------------------------+
-```
-
-| 阶段 | 操作 | 输入 | 输出 |
-|------|------|------|------|
-| **收集** | 资料放入 `raw/` 对应子目录 | URL / 文件 / 文本 | `raw/{type}/` 文件 |
-| **摄入** | `/ingest-source` | `raw/` 文件 | source-summary + 概念/实体页更新 |
-| **查询** | 用户提问 | 问题 | 基于 wiki 的回答 |
-| **沉淀** | `/promote-answer` | 高价值结论 | wiki 页面更新 |
-| **审查** | 定期 review | wiki 全局 | 修复缺口、标记过时 |
-
-详细流程见 `workflows/knowledge/` 下的 4 个文件。
-
-### 开发闭环
-
-```
-spec  -->  plan  -->  implement  -->  test  -->  validate  -->  archive
-  |                      |                          |
-  |                      +----> wiki/ 同步 <--------+
-  |
-specs/active/  ---------------------------------------->  specs/archive/
-```
-
-| 阶段 | 操作 | 输入 | 输出 |
-|------|------|------|------|
-| **需求** | 在 `specs/active/` 建 spec | 用户需求 | spec 文件 |
-| **计划** | `/plan-task` | spec | `plans/` 下的实现计划 |
-| **实现** | `/implement-task` | spec + plan | `src/` 代码变更 |
-| **测试** | 运行测试 | 代码 | `tests/` 测试通过 |
-| **验证** | 自动检查 | 全局 | lint + validate 通过 |
-| **归档** | spec 移入 archive | -- | `specs/archive/` |
-
-实现过程中架构、行为或接口发生变化时，必须同步更新 wiki：
-- `wiki/architecture/` -- 架构变更
-- `wiki/modules/` -- 模块接口变更
-- `wiki/decisions/` -- 重要设计决策
-- `wiki/incidents/` -- 故障和教训
-
-详细流程见 `workflows/engineering/` 下的 4 个文件。
-
-### 两个闭环的交汇点
-
-**wiki/ 是交汇点**——知识闭环往 wiki 写入知识，开发闭环从 wiki 读取上下文并在变更后写回 wiki。
-
-```
-         知识闭环
-            |
-     raw -> wiki -> query
-            |
-            v  <-- 交汇点
-            |
-     spec -> wiki -> implement
-            |
-         开发闭环
-```
-
-## Harness 机制
-
-Claude Code 通过 `.claude/` 下的三层机制确保行为一致：
-
-| 层 | 位置 | 作用 | 执行时机 |
-|----|------|------|---------|
-| **Rules** | `.claude/rules/*.md` | 路径特定规范 | 读取对应路径时自动加载 |
-| **Skills** | `.claude/skills/*/SKILL.md` | 可复用工作流 | 用户调��时 |
-| **Hooks** | `.claude/hooks/*.sh` | 强制执行 | PreToolUse / PostToolUse / Stop |
-
-### 当前 Skills
-
-| 技能 | 对应闭环 | 用途 |
-|------|---------|------|
-| `/ingest-source` | 知识 | 原始资料 -> wiki 知识 |
-| `/lint-wiki` | 知识 | Wiki 结构检查和修复 |
-| `/promote-answer` | 知识 | 对话结论 -> wiki 沉淀 |
-| `/plan-task` | 开发 | spec -> 实现计划 |
-| `/implement-task` | 开发 | spec + plan -> 代码交付 |
-
-### Hooks 触发流程
-
-```
-用户请求 -> Claude 调用工具
-                |
-         PreToolUse hook
-         protect-raw.sh     <-- 拦截 raw/ 修改
-                |
-           工具执行
-                |
-         PostToolUse hook
-         wiki-post-edit.sh  <-- lint 检查
-                |
-         Claude 完成任务
-                |
-           Stop hook
-         check-stop.sh      <-- 验证任务完成
-```
+| Hook | 脚本 | 拦截 |
+|------|------|------|
+| **PreToolUse**（Edit/Write）| `check_raw_write.py` | raw/ 写入拦截 |
+| **PostToolUse**（Edit/Write）| `post_wiki_write.py` | 写入 wiki 后自动 lint |
+| **PostToolUse**（Bash）| `raw_ingest_reminder.py` | Bash 触及 raw/ 时提醒 `/ingest` |
+| **SessionStart** | `session_context.py` | 载入会话上下文 |
+| **Stop** | `check_index_log_sync.py` + `commit_reminder.py` | 索引/日志同步校验 + commit 提醒 |
 
 ## 工具链
 
 ```
-原始资料来源              收集工具               沉淀
---------------           --------------         --------------
-论文              ->     [[zotero]]          ->  raw/papers/
-网页文章          ->     [[readwise-reader]]  ->  raw/articles/
-YouTube 视频      ->     [[firecrawl]]        ->  raw/videos/
-本地视频          ->     [[whisper]]          ->  raw/videos/
-代码仓库          ->     [[github]]           ->  raw/repos/
-                              |
-                              v
-                        [[claude-code]]
-                       (ingest / harness)
-                              |
-                              v
-                           wiki/
-                              |
-                    +---------+---------+
-               [[obsidian]]         [[github]]
-              (可视化浏览)         (同步 / CI)
+原始资料来源              采集工具              沉淀位置
+──────────────            ──────────────       ──────────────
+论文             →       [[zotero]]        →   raw/papers/ (项目或 Hub)
+网页文章         →       [[readwise-reader]]→   raw/articles/
+YouTube/视频     →       [[firecrawl]]     →   raw/videos/
+本地视频         →       [[whisper]]       →   raw/videos/
+代码仓库         →       [[github]]        →   raw/repos/
+                                                    ↓
+                                           [[claude-code]]
+                                         ingest / harness / agents
+                                                    ↓
+                                              项目 wiki/
+                                                    ↓
+                                         /promote-answer (选择性)
+                                                    ↓
+                                               Hub wiki/
+                                                    ↓
+                                    +───────────────┴──────────────+
+                                  [[obsidian]]                 [[github]]
+                                (可视化浏览)              (CI/CD、版本同步)
 ```
 
-## 当前项目状态
+详细工具链见 [[toolchain]]。
 
-| 指标 | 数值 |
-|------|------|
-| Wiki 页面数 | 25 |
-| 概念页 | 10（覆盖全部研究方向） |
-| 实体页 | 8（7 个工具 + 1 个项目） |
-| Zotero 论文数 | 3,179（清理后） |
-| 工作流文档 | 8（知识 4 + 开发 4） |
-| Skills | 5 |
-| Rules | 4 |
-| 自动化脚本 | 8 |
+## 当前规模（2026-04-17）
 
-## 演进历史
+| 指标 | 数值 | 说明 |
+|------|------|------|
+| **Hub wiki 页数** | 49 | concepts 16 + entities 8 + source-summaries 20 + explorations 3 + topics 1 + architecture 1 + comparisons 0 |
+| **活跃项目数** | 4 | UWAcomm / USBL / UWAnet / Pricing🔒 |
+| **模板 skill 数** | 5 | ingest/plan/implement/lint/promote-answer（core + 下游继承） |
+| **全局 skill（Hub 用）** | 1 | `llm-wiki`（`paths: wiki/**` 自动激活） |
+| **Hub agent 数** | 1 | `wiki-ingester`（摄入任务独立上下文） |
+| **Zotero 论文数** | ~3 179 | 清理后 |
+| **自动化脚本（Hub）** | 17 | `scripts/` 下全量（含 import-*、lint、sync、transcribe、scrape 等） |
+
+## 演进里程碑
 
 | 日期 | 里程碑 |
 |------|--------|
-| 2026-04-12 | 初始搭建：仓库结构、CLAUDE.md、wiki 骨架 |
-| 2026-04-12 | 加入约束：hooks、lint 脚本、slash commands |
-| 2026-04-12 | 打通工具链：Obsidian、Whisper、Firecrawl、Zotero |
-| 2026-04-12 | Zotero 清理：移除 1634 重复条目，生成研究地图（10 方向） |
-| 2026-04-12 | Ingest UWAcomm 水声通信仿真平台 |
-| 2026-04-12 | 工程升级：开发闭环、rules/skills/hooks、CI |
+| 2026-04-12 | 单仓原型搭建：一体化仓库 + wiki 骨架 + hooks + slash commands |
+| 2026-04-12 | 工具链打通：Obsidian + Whisper + Firecrawl + Zotero |
+| 2026-04-12 | Zotero 清理：-1634 重复，生成 10 方向研究地图 |
+| 2026-04-12~13 | 摄入 UWAcomm 首个项目 + 工程闭环（rules/skills/hooks/CI） |
+| 2026-04-?? | **架构拆分**：单仓 → `ohmybrain-core + project-* + ohmybrain(hub)` 三仓 |
+| 2026-04-14 | wiki-ingester agent + `/ingest` Step 1.5 规模分流 |
+| 2026-04-15 | 基础设施下发：hook 绝对路径 + raw_ingest_reminder 同步到 core + 3 下游 |
+| 2026-04-15 | 摄入 ECC（Everything Claude Code）生产级参考 |
+| 2026-04-17 | 架构页重写：反映三仓现状（本次更新） |
 
 ## 相关页面
 
-- [[research-map]] -- 研究方向全景地图
-- [[toolchain]] -- 工具链详细指南
-- [[my-brain-setup-plan]] -- 初始搭建计划（历史参考）
-- [[uwacomm]] -- UWAcomm 水声通信仿真平台
+- [[ohmybrain-three-tier-seed]] — 三仓架构设计笔记（本页事实源）
+- [[research-map]] — 研究方向全景地图（概念侧切片）
+- [[toolchain]] — 工具链详细指南
+- [[my-brain-setup-plan]] — 初始单仓搭建计划（历史参考）
+- [[uwacomm]] — 首个从 core 派生的项目实体
+- [[ohmybrain-agent-architecture-insights]] — 架构演进中的 agent/skill 决策（P0-P3 行动项）

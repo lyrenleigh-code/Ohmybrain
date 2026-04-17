@@ -41,6 +41,10 @@ desktop.ini
 
 # === Git 嵌套仓库 ===
 raw/repos/
+raw/architecture-diagram-generator/
+
+# === Claude Code 本地覆盖 ===
+.claude/settings.local.json
 
 # === Python ===
 __pycache__/

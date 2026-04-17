@@ -381,3 +381,4 @@ Never:                       Retry the same command with same parameters.
 - 相关 concept：[[skills-vs-commands]]、[[skill-layered-resources]]、[[subagents-orchestration]]、[[claude-hooks-architecture]]
 - 相关实体：[[claude-code]]
 - 相关探索：[[ohmybrain-agent-architecture-insights]]
+- 极简对照：[[cocoon-ai-architecture-diagram]]（单用途 skill 不分层的反例）

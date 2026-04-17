@@ -60,3 +60,22 @@ raw/ → ingest → wiki/ → query → promote → wiki/
 | `python scripts/transcribe.py <文件>` | Whisper 音视频转录 |
 | `python scripts/scrape.py <URL>` | Firecrawl 网页抓取 |
 | `python scripts/import-zotero.py` | Zotero 论文导入 |
+
+## Hook Exit Code Strategy
+
+所有 `scripts/*.py` hook 脚本遵循 Claude Code 的 exit code 契约（借鉴自 claude-mem，see `wiki/source-summaries/thedotmack-claude-mem.md` §5）：
+
+| Exit | 含义 | 触发效果 |
+|------|------|---------|
+| **0** | 成功 / 优雅放行 | 继续执行，stdout 可见（SessionStart 上下文等） |
+| **1** | 非阻断错误 | stderr 显示给用户，继续执行 |
+| **2** | 阻断错误 | stderr 喂回 Claude 处理，阻止工具调用 |
+
+**设计原则**：
+
+- **宽松优先**：hook 遇未知输入（JSON 解析失败等）应 `exit 0` 放行，**不要阻断无关场景**
+- **阻断谨慎**：只在**安全性 / 一致性**被破坏时 `exit 2`（如：`check_raw_write.py` 拦截 raw/ 写入 / `check_private_tags.py` 拦截 `<private>` 标签外泄 / `check_index_log_sync.py` 拦截 index 未同步）
+- **提醒用 1**：非致命的"顺手提示"用 `exit 0` + stdout（如 `raw_ingest_reminder.py`），避免打断工作流
+- **Windows Terminal 注意**：Windows 下大量非 0 exit 可能导致 tab 累积；副作用 hook 默认用 exit 0 + stdout 提示
+
+当前 Hub 阻断型 hook 清单：`check_raw_write.py` / `check_private_tags.py` / `check_index_log_sync.py`

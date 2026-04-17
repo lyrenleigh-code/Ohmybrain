@@ -215,3 +215,4 @@ export ECC_DISABLED_HOOKS="pre:bash:tmux-reminder,post:edit:typecheck"
 - 相关实体：[[claude-code]]
 - 相关 summary：[[claude-code-best-practice]]、[[affaan-m-everything-claude-code]]
 - 内部自律范本：[[yizhiyanhua-ai-fireworks-tech-graph]]（Pre-Tool-Call Checklist + Error Recovery Protocol）
+- 生命周期活例：[[thedotmack-claude-mem]]（5 hooks + Setup + Exit Code Strategy 明文契约）

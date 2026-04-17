@@ -55,3 +55,4 @@ tags: [水声通信, 水下通信, 声学, 通信系统]
 
 - Zotero 论文库分析 (2026-04-12)
 - [[uwacomm]] — 水声通信方向的核心实现项目，MATLAB 全栈仿真平台，覆盖 6 种通信体制的完整端到端链路
+- [[uwanet-protocol-sim-note]] — UWAnet 项目前期调研笔记（协议栈 + Aqua-Sim-NG + Slotted ALOHA 案例 + 1 月学习路线）

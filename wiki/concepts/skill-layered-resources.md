@@ -86,6 +86,7 @@ Ohmybrain 当前 `~/.claude/skills/llm-wiki/SKILL.md` **把所有 wiki 操作协
 ## 来源
 
 - 参考范本：[[yizhiyanhua-ai-fireworks-tech-graph]]（21 KB SKILL + 10 references + 10 templates + 7 fixtures + 4 scripts）
+- 极简反例（不分层）：[[cocoon-ai-architecture-diagram]]（1 SKILL.md + 1 template.html，单风格单图类型）
 - 对照反例：Ohmybrain 当前 `~/.claude/skills/llm-wiki/SKILL.md` 单文件堆砌
 - 原始资料：`raw/repos/yizhiyanhua-ai-fireworks-tech-graph/SKILL.md`、`raw/repos/yizhiyanhua-ai-fireworks-tech-graph/references/`
 - 相关实体：[[claude-code]]

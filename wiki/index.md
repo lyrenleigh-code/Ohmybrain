@@ -1,7 +1,7 @@
 # Wiki Index
 
-> 最后更新：2026-04-15
-> 页面总数：46
+> 最后更新：2026-04-17
+> 页面总数：50
 
 ## Concepts（概念页）
 
@@ -35,7 +35,7 @@
 
 ## Architecture（架构页）
 
-- [system-overview](architecture/system-overview.md) — 系统架构总览，六层结构、双闭环（知识+开发）、Harness 机制、工具链
+- [system-overview](architecture/system-overview.md) — 系统架构总览，**三仓架构**（core / project / hub）+ 三层职责 + 知识/开发闭环 + Harness 机制 + 工具链（2026-04-17 重写，反映当前三仓现状）
 
 ## Topics（专题页）
 
@@ -70,3 +70,7 @@
 - [yumin-2006-lr-usbl](source-summaries/yumin-2006-lr-usbl.md) — 国内首代长程 USBL 系统研制（喻敏博士论文, 哈工程 863 项目 2006）
 - [yizhiyanhua-ai-fireworks-tech-graph](source-summaries/yizhiyanhua-ai-fireworks-tech-graph.md) — Claude Code Skill 工程化范本（7 风格/14 类图，MIT/npm v1.0.4），7 条可迁移模式
 - [affaan-m-everything-claude-code](source-summaries/affaan-m-everything-claude-code.md) — Everything Claude Code v1.10.0（Affaan Mustafa/MIT/黑客松冠军），48 agents + 183 skills + 79 commands 生产级配置包
+- [cocoon-ai-architecture-diagram](source-summaries/cocoon-ai-architecture-diagram.md) — Claude Skill 极简单用途范本（Cocoon AI/MIT，架构图生成器，1 SKILL+1 template），skill-layered-resources 的"何时不必分层"反例
+- [uwanet-protocol-sim-note](source-summaries/uwanet-protocol-sim-note.md) — UWAnet 项目前期调研笔记，水声协议栈 + Aqua-Sim-NG (ns-3) + Slotted ALOHA 5 节点案例 + 1 月学习路线（含 concept `uwa-networking` 新建提案）
+- [ohmybrain-three-tier-seed](source-summaries/ohmybrain-three-tier-seed.md) — Ohmybrain 三仓架构（core / project / hub）设计笔记，`system-overview.md` 2026-04-17 重写的事实源
+- [thedotmack-claude-mem](source-summaries/thedotmack-claude-mem.md) — Claude Code 持久记忆插件（Alex Newman / AGPL-3.0 / v12.1.6），hook+worker+MCP 三层架构；5 条可迁移模式（**3-layer 渐进披露检索** / make-plan-do Subagent Contract / 36 语言 mode / `<private>` 标签 / Exit Code 契约）

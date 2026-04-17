@@ -1,4 +1,4 @@
-"""导入 refrence/ 下的中文学位论文到 Zotero（通过 connector API）"""
+"""导入 reference/ 下的中文学位论文到 Zotero（通过 connector API）"""
 import json
 import urllib.request
 import time
@@ -15,7 +15,7 @@ theses = [
         "thesisType": "博士学位论文",
         "date": "2019",
         "tags": ["扩频", "DSSS", "水声通信"],
-        "pdf": r"D:\TechReq\UWAcomm\refrence\移动扩频水声通信及多址技术研究_杜鹏宇.pdf",
+        "pdf": r"D:\Claude\TechReq\UWAcomm\reference\移动扩频水声通信及多址技术研究_杜鹏宇.pdf",
     },
     {
         "title": "强干扰环境下单载波水声通信技术研究",
@@ -24,7 +24,7 @@ theses = [
         "thesisType": "学位论文",
         "date": "",
         "tags": ["单载波", "水声通信", "干扰"],
-        "pdf": r"D:\TechReq\UWAcomm\refrence\强干扰环境下单载波水声通信技术研究.pdf",
+        "pdf": r"D:\Claude\TechReq\UWAcomm\reference\强干扰环境下单载波水声通信技术研究.pdf",
     },
     {
         "title": "快时变信道下的水声通信技术研究",
@@ -33,7 +33,7 @@ theses = [
         "thesisType": "学位论文",
         "date": "",
         "tags": ["时变信道", "水声通信"],
-        "pdf": r"D:\TechReq\UWAcomm\refrence\快时变信道下的水声通信技术研究.pdf",
+        "pdf": r"D:\Claude\TechReq\UWAcomm\reference\快时变信道下的水声通信技术研究.pdf",
     },
     {
         "title": "水声MIMO信道容量和系统实现关键技术研究",
@@ -42,7 +42,7 @@ theses = [
         "thesisType": "学位论文",
         "date": "",
         "tags": ["MIMO", "水声通信"],
-        "pdf": r"D:\TechReq\UWAcomm\refrence\水声MIMO信道容量和系统实现关键技术研究.pdf",
+        "pdf": r"D:\Claude\TechReq\UWAcomm\reference\水声MIMO信道容量和系统实现关键技术研究.pdf",
     },
     {
         "title": "浅海环境下单载波时域均衡水声通信关键技术研究",
@@ -51,7 +51,7 @@ theses = [
         "thesisType": "学位论文",
         "date": "",
         "tags": ["单载波", "时域均衡", "水声通信"],
-        "pdf": r"D:\TechReq\UWAcomm\refrence\浅海环境下单载波时域均衡水声通信关键技术研究.pdf",
+        "pdf": r"D:\Claude\TechReq\UWAcomm\reference\浅海环境下单载波时域均衡水声通信关键技术研究.pdf",
     },
 ]
 
