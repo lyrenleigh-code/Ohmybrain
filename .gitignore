@@ -58,3 +58,6 @@ venv/
 *.pem
 credentials.*
 .mcp.json
+
+# === 临时草稿（diff_memory_log.py 等脚本生成的 draft） ===
+draft/

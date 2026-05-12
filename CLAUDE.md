@@ -40,8 +40,11 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | UWAcomm | github.com/lyrenleigh-code/UWAcomm | `D:\Claude\TechReq\UWAcomm` |
 | UWAnet | github.com/lyrenleigh-code/UWAnet | `D:\Claude\TechReq\UWAnet` |
 | USBL | github.com/lyrenleigh-code/USBL | `D:\Claude\TechReq\USBL` |
+| UWAcomm_usbl 🔒 | 私人，不公开 | `D:\Claude\TechReq\UWAcomm_usbl` |
 | ohmybrain-core | github.com/lyrenleigh-code/ohmybrain-core | `D:\Claude\ohmybrain-core` |
 | Pricing 🔒 | 私人，不公开 | `D:\Claude\DocProcess\Pricing` |
+| PaperReview 🔒 | 私人，不公开 | `D:\Claude\DocProcess\PaperReview` |
+| FlowGen | 私人，不公开 | `D:\Claude\Tools\FlowGen` |
 
 ## 知识闭环
 
@@ -78,4 +81,17 @@ raw/ → ingest → wiki/ → query → promote → wiki/
 - **提醒用 1**：非致命的"顺手提示"用 `exit 0` + stdout（如 `raw_ingest_reminder.py`），避免打断工作流
 - **Windows Terminal 注意**：Windows 下大量非 0 exit 可能导致 tab 累积；副作用 hook 默认用 exit 0 + stdout 提示
 
-当前 Hub 阻断型 hook 清单：`check_raw_write.py` / `check_private_tags.py` / `check_index_log_sync.py`
+当前 Hub hook 清单（2026-05-12）：
+
+| 类型 | 脚本 | 时机 | 说明 |
+|------|------|------|------|
+| 🔴 阻断 | `check_raw_write.py` | PreToolUse Edit/Write | raw/ 写入拦截 |
+| 🔴 阻断 | `check_private_tags.py` | PreToolUse Edit/Write | `<private>` 标签写入拦截 |
+| 🔴 阻断 | `check_index_log_sync.py` | Stop | wiki/ 变更但 index/log 未同步 |
+| 🟡 提醒 | `post_wiki_write.py` | PostToolUse Edit/Write | 写入 wiki 后自动 lint |
+| 🟡 提醒 | `raw_ingest_reminder.py` | PostToolUse Bash | Bash 触及 raw/ 时提醒 `/ingest` |
+| 🟡 提醒 | `commit_reminder.py` | Stop | wiki 未 commit 提醒 |
+| 🟡 提醒 | `check_memory_log_gap.py` | Stop | memory 日期 vs wiki/log.md 缺口（2026-05-12 新增） |
+| 🟢 注入 | `session_context.py` | SessionStart | 载入会话上下文 |
+
+详见 `wiki/architecture/system-overview.md §Hub hooks`。

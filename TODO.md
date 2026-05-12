@@ -4,31 +4,7 @@
 
 ## 待观察 / 待提交
 
-### 🟡 试用期未 commit：3 处 Claude Code 配置优化（2026-04-15 发起 / 2026-04-17 复盘）
-
-依据 [[yizhiyanhua-ai-fireworks-tech-graph]] + [[affaan-m-everything-claude-code]] 两仓启发点实施，**已落地但未 commit**，等经验验证再合入。
-
-**2026-04-17 现状核查**：3 项配置都仍在位。观察周期仅 2 天，以下为本次核查证据。
-
-- [x] ✅ **`~/.claude/skills/llm-wiki/SKILL.md` 触发关键词**（生效证据明确）
-  - 动作：frontmatter `description` 加 15 中 + 7 英文触发短语 + `paths: wiki/**`
-  - **2026-04-17 证据**：本次会话写入 `wiki/comparisons/e2e-test-matrix.md` 时，llm-wiki skill 自动激活（system-reminder 出现）。`paths: wiki/**` 路径触发+触发短语均有效。
-  - **无需 commit**（全局 skill 不在 git）。保留配置。
-
-- [ ] 🔶 **Hub `.claude/settings.json` 加 `env.CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=50`**（证据不足）
-  - 动作：auto-compact 阈值 95% → 50%
-  - **2026-04-17 现状**：env 仍在位。2 天内未出现明显长会话到达此阈值的场景，无法判断是否"更稳"或"过于激进"。
-  - **建议**：继续观察 1 次长会话（例如一次完整的多模块 /ingest 或大规模测试）再决策。
-
-- [ ] 🔶 **`.claude/agents/wiki-ingester.md` 加 `memory: user`**（证据不足）
-  - 动作：agent 开启用户级跨会话记忆
-  - **2026-04-17 现状**：`memory: user` 仍在 frontmatter。2 天内 wiki 有活跃写入（P3.1/3.2/3.3 进度）但未见显式 `/ingest` agent 调用记录。
-  - **建议**：下次真正触发 `/ingest` 时特别观察 agent 是否引用过往摄入经验；达到 2-3 次再决策。
-
-**何时 commit**：
-- #1 已确认生效（但全局 skill 不入 git，无需 commit）
-- #2 #3 继续观察；下次长会话/ingest 后再复盘
-- 如果 #2/#3 发现副作用 → 删除配置并在 `wiki/log.md` 记录
+<!-- 当前无活跃待办（2026-05-12 全部决断 / 关闭） -->
 
 ### 其他
 
@@ -38,4 +14,25 @@
 
 ## 已关闭 / 归档
 
-<!-- 已决策但有价值保留的条目移到这里 -->
+### ✅ 2026-04-15 试用期 3 处 Claude Code 配置（2026-05-12 决断闭环）
+
+依据 [[yizhiyanhua-ai-fireworks-tech-graph]] + [[affaan-m-everything-claude-code]] 启发点实施，挂"试用期未 commit"标签 28 天后决断：
+
+- **#1 `~/.claude/skills/llm-wiki/SKILL.md` 触发关键词** — ✅ 保留
+  - 全局 skill 不入 git，无需 commit；本次 2026-04-17 + 2026-05-12 会话均验证 `paths: wiki/**` 自动激活有效
+  - **结论**：永久保留，不必再观察
+
+- **#2 Hub `.claude/settings.json` `env.CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=50`** — ✅ 保留
+  - 2026-04-22 6 篇 doppler 并行摄入 + 2026-04-23 双图谱扩展 + 2026-05-12 三层基础设施会话均长 context，**28 天无可见副作用**
+  - **结论**：保留配置，纳入 settings.json 正常 commit（不再单独 gate）
+
+- **#3 `.claude/agents/wiki-ingester.md` `memory: user`** — ❌ 已删（2026-04-22）+ 根因已修复（2026-05-12）
+  - 2026-04-22 实测确认字段无效（项目本地 agent 不被识别）
+  - 2026-05-12 L1 修复：迁全局 + commands/ingest.md 加 fallback + 主会话代写后备
+  - **结论**：试用配置 #3 + L1 路径 B 修复一并闭环
+
+### ✅ 2026-04-22 /ingest 路径 B 修复（2026-05-12 关闭）
+
+详见 `wiki/log.md [2026-05-12] fix | /ingest 路径 B 工序修复` entry。
+
+**遗留处理**：项目本地 `.claude/agents/wiki-ingester.md`（契约源头）与全局 `~/.claude/agents/wiki-ingester.md`（invocable handle）的同步漂移已通过 `scripts/sync_agent.py` + Stop hook `--check` 自动化（2026-05-12）。
