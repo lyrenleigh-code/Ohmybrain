@@ -4,7 +4,11 @@
 
 - **仓库**：github.com/lyrenleigh-code/UWAnet
 - **本地**：`D:\Claude\TechReq\UWAnet`
-- **状态**：前期调研阶段
+- **状态**：**M1 环境搭建已跑通**（WSL2 Ubuntu 20.04 + ns-3.41 + Aqua-Sim-NG，2026-04-21 dry-run）
+  - 验证通过：`hello-simulator` ✅ / `JmacTest` ✅ / `broadcastMAC_example` ✅ / `VBF` ✅
+  - 装机 worktree：`D:/Claude/worktrees/uwanet-redo/`（独立于主仓）
+  - WSL 安装位置：`/home/lyren/ns3-workspace/ns-3-dev/`
+  - 下一步 M2：阅读 `src/aqua-sim-ng/model/aqua-sim-mac-aloha.cc` 源码
 
 ## 协议栈架构
 
@@ -30,9 +34,9 @@ MAC 层    — FAMA / MACA-U / T-LOHI        ← 入门重点
 
 | 阶段 | 内容 | 状态 |
 |------|------|------|
-| M0 | 前期调研与技术选型 | 进行中 |
-| M1 | ns-3 + Aqua-Sim-NG 环境搭建 | 待做 |
-| M2 | 读懂 aqua-sim-mac-aloha.cc 源码 | 待做 |
+| M0 | 前期调研与技术选型 | ✅ 已完成（2026-04-21 规划落地）|
+| M1 | ns-3 + Aqua-Sim-NG 环境搭建 | ✅ **已跑通 dry-run**（2026-04-21）|
+| M2 | 读懂 aqua-sim-mac-aloha.cc 源码 | 待做（下一步）|
 | M3 | 实现自定义 MAC 模块（Slotted ALOHA） | 待做 |
 | M4 | 参数扫描 + 性能分析 + 理论对比 | 待做 |
 

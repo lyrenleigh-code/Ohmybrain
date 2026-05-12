@@ -56,3 +56,7 @@ tags: [数学, 优化, 工具, MATLAB]
 - [[yangbaoguo-2013-usbl-calibration]] — 改进高斯-牛顿（初值保护）+ 自适应辛普森逆向分层
 - [[huangjian-2019-lbl-usbl]] — 改进 PSO（区域划分 + 自适应权重 + 自适应变异）联合估计有效声速 + 目标位置；BELLHOP 迭代有效声速作为不动点迭代
 - [[yumin-2006-lr-usbl]] — 非线性 LS / 逐次 LS / M 估计抗差的递进求解链
+- [[sun-2020-dsss-passband-doppler]] — 三点余弦模型的 LS 拟合、`|fc·Δτ| < π/2` 相位不模糊约束下的分辨率-范围权衡
+- [[yangyang-2026-uwa-otfs-nonuniform-doppler]] — 块稀疏 CS + MLE 分层优化：粗网格 + 二次拟合 + 精细搜索的低复杂度连续参数估计
+- [[zhengtonghui-2025-dd-mmse-teq]] — Woodbury 恒等 + 拉格朗日乘子 + MMSE 准则在 DD 域均衡中的联合使用
+- [[doppler-estimation-methods]] — MLE/LS/稀疏恢复/二次拟合在多普勒估计中的实例

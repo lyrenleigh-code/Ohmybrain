@@ -1,0 +1,198 @@
+# ==============================================================================
+# goal.yaml — UWAnet 新建项目闭环驱动文件
+#
+# 作用：Phase 0 人工写死；Phase 1-5 各 agent 只读此文件作为权威源
+# 使用：cp 到 worktree 根目录，例如 D:/Claude/worktrees/uwanet-redo/goal.yaml
+# ==============================================================================
+schema_version: "1.0"
+
+project:
+  name: UWAnet
+  slug: uwanet
+  type: research-simulation
+  domain: 水声通信组网协议仿真
+  description: |
+    基于 Aqua-Sim-NG (ns-3) 构建水声通信组网协议仿真平台。
+    物理层复用 UWAcomm 已实现的 OFDM/DSSS/FSK 等六种体制，
+    在其上搭建 MAC/网络层协议，研究水声信道下的组网性能。
+  tech_stack:
+    primary: [ns-3, Aqua-Sim-NG]
+    languages: [C++17, Python3.10]
+    os: [Ubuntu22.04, WSL2]
+    visualization: [NetAnim, matplotlib]
+  depends_on:
+    - project: UWAcomm
+      role: 物理层提供方
+      path: D:/Claude/TechReq/UWAcomm
+      interface: OFDM/DSSS/FSK 调制解调，含信道/同步/多普勒
+
+# ------------------------------------------------------------------------------
+# 路径（worktree 结构，Phase 1 后所有 agent 只读 worktree 内副本）
+# ------------------------------------------------------------------------------
+paths:
+  worktree_root: D:/Claude/worktrees/uwanet-redo
+  hub_root: D:/Claude/Ohmybrain
+  template_root: D:/Claude/ohmybrain-core/template
+  seed_dir: raw/seed
+  spec_dir: specs/active
+  plan_dir: plans
+
+# ------------------------------------------------------------------------------
+# 种子材料（Phase 1 复制；Phase 2 ingest；Phase 3 Planner 必读）
+#
+# 注：2026-04-21 已完成首轮 ingest（见 UWAnet/wiki/log.md）。新建 worktree 时
+# 可直接把 UWAnet/wiki/source-summaries/ 的摘要也复制为 seed，跳过 Phase 2
+# 的重新 ingest。
+# ------------------------------------------------------------------------------
+seed_materials:
+  - src: D:/Claude/TechReq/UWAnet/raw/notes/uwanet-moc-v1.md
+    dst: raw/seed/uwanet-moc-v1.md
+    role: 项目地图
+  - src: D:/Claude/TechReq/UWAnet/raw/notes/protocol-sim-brainstorm.md
+    dst: raw/seed/protocol-sim-brainstorm.md
+    role: 288 行详细调研（环境/代码结构/MAC 协议/学习路线）
+  - src: D:/Claude/TechReq/UWAnet/raw/papers/
+    dst: raw/seed/papers/
+    role: 4 篇论文（Aqua-Net 2009 / Aqua-Sim FG 2025 / Slotted FAMA 2006 / JANUS 2014）
+
+pre_ingested_summaries:
+  # 已摘要，可跳过 Phase 2
+  - D:/Claude/TechReq/UWAnet/wiki/source-summaries/uwanet-brainstorm.md
+  - D:/Claude/TechReq/UWAnet/wiki/source-summaries/ns3-installation-guide.md
+  - D:/Claude/TechReq/UWAnet/wiki/source-summaries/ns3-documentation-index.md
+  - D:/Claude/TechReq/UWAnet/wiki/source-summaries/aqua-sim-family.md
+  - D:/Claude/TechReq/UWAnet/wiki/source-summaries/slotted-fama-mac.md
+  - D:/Claude/TechReq/UWAnet/wiki/source-summaries/janus-standard.md
+
+cross_project_refs:
+  - path: D:/Claude/TechReq/UWAcomm/wiki/index.md
+    role: 物理层接口可用清单
+  - path: D:/Claude/Ohmybrain/wiki/concepts/underwater-acoustic-communication.md
+    role: Hub 领域概念
+
+# ------------------------------------------------------------------------------
+# Rubric — 机器可判；Planner 自检 + Evaluator 重打分共用
+# ------------------------------------------------------------------------------
+rubric:
+  # 本 rubric v2（2026-04-21）基于 UWAnet eval-1 实测发现的三个漏洞强化：
+  # - traceability：wikilink 必须 fs 可解析（裸 [[X]] 只能 Obsidian 识别 = 失效）
+  # - milestones：exit_criteria 禁散文化，必须命令/文件/数值/exit code
+  # - charter：成功标准禁循环引用 Planner/Evaluator 自评
+  planner_output:
+    charter_completeness:
+      required_sections:
+        - "## 项目定位"
+        - "## 范围界定"
+        - "## 非目标"
+        - "## 成功标准"
+      success_criteria_rules:
+        - "每条必须独立可判"
+        - "禁止循环引用 Planner / Evaluator 自评（如 'Planner 自评 ≥ 90'）"
+      weight: 15
+    architecture:
+      required_items:
+        - "协议栈图 ≥ 5 层（ASCII 或 Mermaid）"
+        - "每层选型理由"
+        - "与 UWAcomm 的接口定义（≥ 1 张表格或图）"
+      interface_table_rules:
+        - "每行必须是接口/信号"
+        - "禁止混入 ns-3 内部参数等无关项"
+      weight: 25
+    milestones:
+      min_count: 4
+      required_per_milestone: ["exit_criteria", "依赖", "预估工时"]
+      exit_criteria_format:
+        allowed: ["具体命令", "文件路径存在检查", "grep 命中数", "数值阈值", "exit code"]
+        forbidden: ["散文化要求（如 '回答两问' / '理解透' / '讨论清晰'）"]
+        penalty_per_violation_pct: 10
+      weight: 20
+    risks:
+      min_count: 5
+      required_categories: [技术风险, 外部依赖, 时间风险]
+      weight: 15
+    dependencies:
+      must_identify: [UWAcomm, ns-3, Aqua-Sim-NG]
+      weight: 10
+    traceability:
+      must_cite_seed: true
+      min_wikilinks: 5
+      wikilink_resolvable: fs   # 必须文件系统层可解析（带路径前缀）
+      bare_wikilink_penalty_pct: 10  # 每个裸 [[X]] 扣 10%（本项权重内）
+      dead_link_penalty_pct: 10      # 每个失效（目标不存在）扣 10%
+      weight: 15
+    pass_threshold: 80
+
+  m1_environment:
+    setup_script:
+      path: src/setup/install_ns3_aquasim.sh
+      must_contain: [apt-get, "git clone", cmake, make]
+    smoke_test:
+      path: tests/smoke/test_aqua_sim_aloha.py
+      exit_code: 0
+      must_output_keys: [packets_sent, throughput]
+    documentation:
+      path: workflows/01-env-setup.md
+      min_lines: 30
+      must_reference: [ns3-installation-guide, aqua-sim-family]
+    pass_threshold: 90
+
+# ------------------------------------------------------------------------------
+# 预算 + 模型分配（混搭降本）
+# ------------------------------------------------------------------------------
+budget:
+  tokens_total: 300000
+  usd_max: 5.00
+  wall_clock_min: 90
+  max_iterations_per_phase: 3
+  convergence_delta_min: 5
+  stale_iterations_kill: 2
+
+models:
+  scaffold: claude-haiku-4-5
+  ingest: claude-sonnet-4-6
+  planner: claude-opus-4-7
+  generator: claude-sonnet-4-6
+  evaluator: claude-sonnet-4-6
+  registrar: claude-haiku-4-5
+
+thinking:
+  planner_budget: 20000
+  generator_budget: 8000
+  evaluator_budget: 4000
+
+# ------------------------------------------------------------------------------
+# 红线（never_touch 绝对路径，never_execute 命令）
+# ------------------------------------------------------------------------------
+red_lines:
+  never_touch:
+    - D:/Claude/TechReq/UWAnet
+    - D:/Claude/TechReq/UWAcomm
+    - D:/Claude/Ohmybrain/raw
+  never_execute:
+    - "git push"
+    - "rm -rf"
+    - "git reset --hard"
+    - "sudo"
+  confirm_before:
+    - "commit to main"
+    - "write Ohmybrain/projects/"
+    - "edit Ohmybrain/CLAUDE.md"
+
+# ------------------------------------------------------------------------------
+# 升级 + 通知
+# ------------------------------------------------------------------------------
+escalation:
+  channels: [PushNotification]
+  checkpoint_path: .checkpoint/
+  snapshot_on: [iteration_exceed, budget_warn, rubric_fail_3x]
+  stop_on_uncertainty:
+    rubric_ambiguous: ask_user_question
+    seed_incomplete: halt_and_notify
+    external_dep_missing: halt_and_notify
+
+notify:
+  on_complete:
+    summary_path: run-report.md
+    include: [壁钟时间, token 消耗, USD 消耗, 迭代次数, rubric 最终分]
+  on_failure:
+    include: [失败阶段, 最后产物路径, checkpoint 路径, 建议人工操作]

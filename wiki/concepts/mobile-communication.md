@@ -51,3 +51,6 @@ tags: [移动通信, 无线通信, 5G, 参考技术]
 ## 来源
 
 - Zotero 论文库分析 (2026-04-12)
+- [[lalevee-2025-dichotomous-doppler]] — AUV 运动导致多普勒效应的嵌入式处理方案
+- [[yangyang-2026-uwa-otfs-nonuniform-doppler]] — 水下高移动性（2 m/s）平台 OTFS 实测：相比 OFDM 同速率下 BER 低 0.5-1 数量级
+- [[doppler-estimation-methods]] — 移动场景是多普勒估计的主要物理来源

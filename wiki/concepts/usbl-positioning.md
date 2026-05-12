@@ -67,3 +67,5 @@ tags: [USBL, 水声定位, DOA, 阵列处理, 校准]
 - [[quzhenzhao-2024-usbl-precision]] — 五元十字阵分解为多构型并融合（五元 + 四元 + 三元子阵），欧氏中心 + 阈值剔除 + LS 校正三步
 - [[huangjian-2019-lbl-usbl]] — LBL/USBL 组合定位跟踪六项关键技术：GCC-NEW 时延估计 + BELLHOP 有效声速 + PSO 未知声速 + Grubbs 融合 + UKF-RTS 平滑（西工大 2019）
 - [[yumin-2006-lr-usbl]] — 国内首代 LR-USBL（>4 km）系统研制：窄带 Notch+LMS 相位 + 宽带互相关插值双模 + 水池/海试两级校准（哈工程 863, 2006）
+- [[sun-2020-dsss-passband-doppler]] — 与 yumin-2006 的通带 LFM + 窄带 CW 双模定位哲学同构；CAF 粗同步 + 符号级精跟踪可为长程 USBL 时延估计借鉴
+- [[lalevee-2025-dichotomous-doppler]] — LBL/USBL 多信标并行跟踪的多普勒补偿骨架（10-30 信标级）

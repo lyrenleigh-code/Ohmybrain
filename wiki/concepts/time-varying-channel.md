@@ -63,3 +63,10 @@ fd=10Hz (doppler_rate=8.33e-4) + oracle alpha 补偿后：
 - [[uwacomm]] — 模块 07 实现了 BEM(CE/DCT)/DD-BEM/T-SBL/SAGE/Kalman 时变信道估计，模块 10 实现了两级分离多普勒估计与 spline/CFO/ICI 补偿
 - [[uwacomm]] — fd=10Hz ICI 极限量化数据 (2026-04-12)
 - [[huangjian-2019-lbl-usbl]] — 移动 USBL 定位中航迹畸变、信道时变、测量野值是同一工程现实的多层表现
+- [[sun-2020-dsss-passband-doppler]] — 把 α=v/c 作为符号级时变参数跟踪的典型实现，与块估计假设相对
+- [[wei-2020-dual-hfm-speed-spectrum]] — 水声时变信道下多普勒 α 估计的频域方案，突破采样率对速度分辨率的限制
+- [[muzzammil-2019-cpofdm-doppler-interp]] — CP-OFDM 下共享 α 多径信道的 α 估计与补偿
+- [[lalevee-2025-dichotomous-doppler]] — 针对多普勒频移时变的实时估计与补偿方法
+- [[yangyang-2026-uwa-otfs-nonuniform-doppler]] — "重采样消除主多普勒 + 建模残留 Doppler 因子 b_p"的分层时变信道处理范式
+- [[zhengtonghui-2025-dd-mmse-teq]] — 双色散信道在 DD 域的稀疏化表示是性能增益的物理基础
+- [[doppler-estimation-methods]] — 水声多普勒估计方法学集合 concept（2026-04-22）

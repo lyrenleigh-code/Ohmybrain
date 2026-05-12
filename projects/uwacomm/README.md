@@ -5,20 +5,21 @@
 - **仓库**：github.com/lyrenleigh-code/UWAcomm
 - **本地**：`D:\Claude\TechReq\UWAcomm`
 - **状态**：活跃开发中
-- **规模**：258 个 MATLAB 文件，38 649 行代码，14 个模块（截至 2026-04-17）
+- **规模**：365 个 MATLAB 文件，56 550 行代码，14 模块，284 commits（截至 2026-04-26）
+- **三工作树**：`UWAcomm/`（master 整合）· `UWAcomm-claude/`（claude-uwacomm-work-20260425 自主迭代）· `UWAcomm-codex/`（codex-uwacomm-worktree-20260425 实验）
 
-## 体制进度
+## 体制进度（2026-04-26）
 
-| 体制 | 版本 | 静态 | fd=1Hz (Jakes) | 离散 Doppler (disc-5Hz) | hyb-K10 |
-|------|------|------|----------------|-------------------------|---------|
-| **SC-TDE** | V5.1 | 0%@20dB | 0.76%@15dB | **0%@5dB+** | **0%@5dB+** |
-| **SC-FDE** | V4.0 | 0% | 0.20%（盲估） | 0.88%@10dB | 0%@10dB+ |
-| **OFDM** | V4.3 固化 | 0% | ~1%@15dB | **0%@10dB+** | **0%@10dB+** |
-| **OTFS** | V2.0 | 0%@5dB+ | 0%@10dB+ | **0%@10dB+** | 0.27%@10dB |
-| **DSSS** | V1.0 | 0%@-15dB+ | 0%@0dB | **0%@-10dB+** | **0%@-10dB+** |
-| **FH-MFSK** | V1.0 | 0%@10dB | 0%@5dB | **0%@0dB** | **0%@0dB** |
+| 体制 | 版本 | 静态 | fd=1Hz (Jakes) | 离散 Doppler (disc-5Hz) | 备注 |
+|------|------|------|----------------|-------------------------|------|
+| **SC-TDE** | V5.4 | 0%@20dB | 0.76%@15dB（V5.5 oracle α 让 SNR=15→20 单调） | **0%@5dB+** | post-CFO 修复后 α=+1e-2 50%→0.29% |
+| **SC-FDE** | sps+GAMP（4th iter）| 0% | 50% 灾难（Phase 3b.2 软符号-BEM 耦合） | 0.88%@10dB | training preamble 路线去 oracle |
+| **OFDM** | V4.3 固化 | 0% | ~1%@15dB | **0%@10dB+** | — |
+| **OTFS** | V2.0 | 0%@5dB+ | 0%@10dB+ | **0%@10dB+** | 暂停（参 memory feedback_uwacomm_skip_otfs） |
+| **DSSS** | V1.2 | 0%@-15dB+ | 0%@0dB | **0%@-10dB+** | post-CFO 单一根因修复后 α=+1e-2 43%→0% |
+| **FH-MFSK** | V1.0 | 0%@10dB | 0%@5dB | **0%@0dB** | — |
 
-4 体制（OFDM / SC-TDE / SC-FDE / FH-MFSK）已接入流式框架 `modem_dispatch` 统一 API（2026-04-15/16）。
+4 体制（OFDM / SC-TDE / SC-FDE / FH-MFSK）已接入流式框架 `modem_dispatch` 统一 API。
 
 ## 模块架构
 
@@ -58,19 +59,21 @@ RX: 09下变频 → 10多普勒补偿 → 08同步 → 07信道估计均衡 → 
 8. **流式 passband 原生信道**（`gen_uwa_channel_pb`）避免 baseband 下变频概念混乱
 9. **流式帧检测 hybrid 优于纯阈值**（首帧绝对最大锚定 + 后续窗口本地最大）
 10. **FH-MFSK 软判决 LLR** 显著改善衰落鲁棒性，但多径展宽 > 50% 符号时长仍崩
+11. **CFO post-comp 单一根因（2026-04-24）**：post-CFO 伪补偿是 SC-TDE/DSSS α=+1e-2 灾难率的唯一根因（SC-TDE 50%→0.29%、DSSS 43%→0%）；跨体制审计单一改动收益 > 多 plan 并行试错
+12. **训练 preamble 路线**：SC-FDE sps+GAMP 去 oracle 14_Streaming 架构迁移第 4 次成功（前 3 次失败）
 
-## 当前开发方向
+## 当前开发方向（2026-04-26）
 
 | 方向 | spec / 状态 |
 |------|------------|
 | 去 oracle 接收参数化 | `2026-04-16-deoracle-rx-parameters` 活跃 |
-| OTFS 通带 2D 脉冲整形 | `2026-04-13-otfs-pulse-shaping` 活跃 |
-| OTFS 两级同步架构 | `2026-04-13-otfs-sync-architecture` 活跃 |
-| OTFS 散布导频 | `2026-04-14-otfs-spread-pilot` 活跃 |
+| **SC-TDE fd=1Hz 非单调 BER 调研** | H4 confirmed α estimator 偏差是直接根因（2026-04-25 起，HEAD `6894477`）|
+| **SC-FDE Phase 3b.2 BEM 判决反馈** | static V3a PASS（all_cp_data RX 完全消除）；fd=1Hz 50% 灾难，4 路线 A/B/C/D 待决策（实施完未 commit） |
+| **HFM-signature calibration**（V5.6） | 2026-04-25 4/5 PASS，SNR=20 接近 oracle 0.92%/6.7% |
+| OTFS 通带 2D 脉冲整形 | `2026-04-13-otfs-pulse-shaping`（暂停）|
 | 流式 P4 scheme routing | `2026-04-15-streaming-p4-scheme-routing` 活跃 |
-| 流式 P5 并发 | `2026-04-15-streaming-p5-concurrent` 活跃 |
-| 流式 P6 AMC | `2026-04-15-streaming-p6-amc` 活跃 |
-| P3 demo UI 美化/重构 | `2026-04-17-p3-demo-ui-polish` + `refactor` 活跃（SC-FDE 待收敛） |
+| 流式 P5 并发 / P6 AMC | `2026-04-15-streaming-p5-concurrent` / `-p6-amc` 规划中 |
+| P3 demo UI 美化/重构 | 大部完成，剩 est_ber/refactor Step C 小遗留 |
 
 ## 项目内导航
 

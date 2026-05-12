@@ -56,3 +56,10 @@ tags: [水声通信, 水下通信, 声学, 通信系统]
 - Zotero 论文库分析 (2026-04-12)
 - [[uwacomm]] — 水声通信方向的核心实现项目，MATLAB 全栈仿真平台，覆盖 6 种通信体制的完整端到端链路
 - [[uwanet-protocol-sim-note]] — UWAnet 项目前期调研笔记（协议栈 + Aqua-Sim-NG + Slotted ALOHA 案例 + 1 月学习路线）
+- [[sun-2020-dsss-passband-doppler]] — DSSS 体制在长时 packet 下符号级多普勒跟踪的哈工程代表作，把"多普勒=时间伸缩"这一水声特有物理前提工程化
+- [[wei-2020-dual-hfm-speed-spectrum]] — 中科院声学所 2020 IEEE SPL，双 HFM 前导 + 频域速度谱扫描的高精度多普勒估计方法
+- [[muzzammil-2019-cpofdm-doppler-interp]] — UWA 低声速大多普勒场景下 CP-OFDM α 细估计的三种三点插值方法
+- [[lalevee-2025-dichotomous-doppler]] — OCEANS 2025，水声调制解调器 FPGA 二叉树多普勒估计实现
+- [[yangyang-2026-uwa-otfs-nonuniform-doppler]] — 宽带 UWA（fc/B ≈ O(1)）场景下的 OTFS 系统完整设计与南海 5.5 km 海试验证
+- [[zhengtonghui-2025-dd-mmse-teq]] — 单载波水声通信 DD 域 Turbo 均衡的丹江口湖试 4.076 kbps/2 km/8 通道实测
+- [[doppler-estimation-methods]] — 跨 6 篇论文抽取的水声多普勒估计方法学集合（2026-04-22）

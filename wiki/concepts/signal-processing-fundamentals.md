@@ -62,3 +62,9 @@ tags: [信号处理, IEEE TSP, 估计理论, 检测理论]
 - [[quzhenzhao-2024-usbl-precision]] — 欧氏距离中心 + 阈值剔除 + LS 校正三步融合（估计理论 + 鲁棒统计的工程组合）
 - [[huangjian-2019-lbl-usbl]] — GCC-NEW 加权函数、Grubbs 异常检测、UKF 非线性滤波、R-T-S 区间平滑的完整工程应用
 - [[yumin-2006-lr-usbl]] — 自适应 Notch 滤波、LMS 相位估计、互相关三点插值时延（长程双模估计范式）
+- [[sun-2020-dsss-passband-doppler]] — 通带相关 + 三点余弦插值的亚采样时延估计（在 Cespedes 1995 抛物线基础上升级为余弦近似以贴合通带信号结构）
+- [[wei-2020-dual-hfm-speed-spectrum]] — 通过"剥离模板后的 f⁴·|X|²/S² 统计量 + 1D 频域扫描"实现连续参数估计，"频域周期 vs 时域峰位"对偶的教科书案例
+- [[muzzammil-2019-cpofdm-doppler-interp]] — Dirichlet 核主瓣三点插值（抛物线 / Taylor / atan 三种路径）是通用参数估计范式
+- [[lalevee-2025-dichotomous-doppler]] — 滤波器组二分搜索 + 滑窗 FIFO + 相关峰阈值准则的硬件工程样本
+- [[yangyang-2026-uwa-otfs-nonuniform-doppler]] — Dirichlet 核、多项式近似、极值理论 max/mean≈4 自适应停止准则的集成应用
+- [[doppler-estimation-methods]] — 水声多普勒估计方法学集合，信号处理基础工具的集成展示

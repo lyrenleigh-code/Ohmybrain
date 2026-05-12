@@ -69,3 +69,9 @@ tags: [信道估计, 均衡, 多普勒, 叠加导频, 接收机]
 - [[hexutao-usbl-quad-array]] — EKF 方法在声波信号降噪中的工程化使用（弱相关）
 - [[huangjian-2019-lbl-usbl]] — 时延估计与信道冲激响应首达时刻估计等价；GCC-NEW "互功率谱信号频点强化"思路可迁移到 CE 频域加权
 - [[yumin-2006-lr-usbl]] — 长程多途下窄带+宽带双模估计思路
+- [[sun-2020-dsss-passband-doppler]] — 判决无关估计器（ℜ{·} 消调制符号）的架构哲学，对 DFE+PLL、宽带闭锁环等决策反馈路线的错误传播提供替代
+- [[wei-2020-dual-hfm-speed-spectrum]] — 多普勒估计作为均衡前置步骤；α 精度直接影响时变信道估计/均衡链路下游
+- [[muzzammil-2019-cpofdm-doppler-interp]] — α 估计作为接收机预处理第一步，三点插值突破采样分辨率天花板
+- [[yangyang-2026-uwa-otfs-nonuniform-doppler]] — 两步信道估计范式：BSOMP 粗定位路径块 + MLE 一维多项式拟合精调残留 Doppler
+- [[zhengtonghui-2025-dd-mmse-teq]] — SC-UWAC 最新 DD 域 Turbo 均衡，MMSE + 先验抵消 + Woodbury 恒等的 DD 域搬迁
+- [[doppler-estimation-methods]] — 多普勒估计作为信道估计与均衡的前置环节（2026-04-22 方法学集合）
