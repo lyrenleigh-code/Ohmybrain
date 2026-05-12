@@ -4,6 +4,504 @@
 
 ---
 
+## [2026-05-09] new-project | PaperReview 派生
+
+DocProcess 类私人子项目第 4 个（依次：Pricing / UWAprojDoc / CooperativeDetection / **PaperReview**），学位论文外审工作区。
+
+**关键事实**：
+- 「英文」语义注：项目名 PaperReview 本身是英文，但**材料语言**为中文——评审意见也用中文撰写
+- HEAD b3568f6 / 手动模式（非闭环）
+- 当前在评水声专硕一份
+
+**Hub 影响**：`projects/paperreview/README.md` 已就位（项目导航）。Hub 不收任何评审材料原文（私人项目硬约束）。
+
+---
+
+## [2026-05-03] tool | flowgen-vsdx skill M5 升级 — PPT 风格高级模板
+
+`~/.claude/skills/flowgen-vsdx/` 升级 M5 模式：
+
+- 新增 `templates/ppt_business_flow.py` — 用于复杂业务架构图
+- 覆盖模式：多分支扇出 / 共用基础设施 / 双反馈环 / 旁路 / 路径外 label
+- M4 默认 GraphViz 自动布局保留作简单图回退
+
+**跨项目可复用**：UWAprojDoc 等方案文档场景已开始用 M5；其他项目方案文档可直接接入。flowgen 5 skill 决策树见 `~/.claude/skills/flowgen*/SKILL.md`。
+
+**配套约定**（memory `feedback_uwaprojdoc_flowgen_only` + `feedback_doc_visual_diversification`）：方案文档流程图必须走 flowgen* 5 个 skill 之一，禁止 matplotlib mock / 手画 SVG；图的视觉必须按业务真实结构匹配模式（线性/并行/反馈/扇出/汇聚），决策文案必须业务化。
+
+---
+
+## [2026-04-28] new-project | UWAprojDoc 派生
+
+DocProcess 类私人子项目第 2 个，水声项目某专项方案技术文档撰写工作区。
+
+**v0 docx 完整落地**（派生当日同步完成）：
+- 4.8 MB
+- 8 分系统 33 模块独立小节
+- 60 张图含 33 模块流程图 5 模式竖向
+- HEAD=48f4324
+
+**后续进展**（2026-05-01）：
+- 原型 ingest（HTML + PROJECT_SPEC）
+- 5 wiki 页 + 业务流程/运用场景 7 议题（F1-F7）待决——框架定型后才落 `wiki/topics/`
+
+**Hub 影响**：私人项目，材料不进 Hub。导航页可选（看用户是否要 `projects/uwaprojdoc/`）。
+
+---
+
+## [2026-04-25] new-project | UWAcomm_usbl 派生（内网 Internal）
+
+TechReq/UWAcomm_usbl 完成 SOP 派生：水声通信 + USBL 联合定位/通信仿真，依赖 UWAcomm + USBL 双源。
+
+**关键事实**：
+- 内网 GitLab Internal 可见（非公开）
+- 混合模式（参考 UWAcomm + USBL 两路）
+- 派生当日未实装代码
+
+**后续进展（节选，详见 memory）**：
+- 2026-04-25 SPEC-001 批 0+1 完成（M1 8 文件 70k 字 C 档），3 冲突待决
+- 2026-05-06 项目范围定型：整机原型样机 / 总集成枢纽 / 3 人 / 5 月水池 PoC + 6 月海试 + 12 月国产化；Phase α 借厦大 + Phase β 双线替换
+- 2026-05-11 双工作树归属约定（main=原窗口 / design/v1.x=design 修订）+ 硬件路径事实颠覆估时（VPX 已到位 / 哈工程软件无所有权 / UWAcomm 仅 MATLAB → α/β/γ/δ/ε 五选一）
+- 2026-05-12 三件事并行（自研全链 PC+ATA-L8+iPotest / 哈工程整机 / 厦门 USBL）+ 距离 15m + CAGE5 5 元 + V0.7 大纲 2338 行 + SPEC-002 试验前预演 334 行
+
+**Hub 影响**：`projects/uwacomm_usbl/README.md` 已就位。Hub 不收内部内容（Internal 项目硬约束）。
+
+---
+
+## [2026-04-19 ~ 2026-05-11] backfill | UWAcomm/USBL 23 天主线进展补帐
+
+借 L3 `diff_memory_log.py` 工具补这段时间未及时沉淀的项目侧进展（Hub 视角时间轴，不复述 memory 详细记录）。
+
+### UWAcomm 主线（11 个 session）
+
+- **04-19** S1 E2E benchmark 完成（7 工具 + 11 runner）
+- **04-24** SC-TDE V5.4 post-CFO fix（50%→0.29%）+ DSSS V1.2 audit（43%→0%，"单一根因"方法学）
+- **04-25** V5.5 fd=1Hz iter R5 + V5.6 HFM-signature calibration 4/5 PASS；SC-FDE Phase 3b.2 软符号-BEM 鸡蛋耦合 4 路线 A/B/C/D 待决
+- **04-26** SC-FDE 协议层突破 jakes fd=1Hz 50% limitation：pilot=128(=blk_cp) 47%→3.37%（**14×**）
+- **04-27** SC-TDE 收尾 + OTFS 重启（撤销 04-21 skip，移植 codex rx_chain/spread-pilot/clip-PAPR）+ P4 scheme routing 4/4 PASS
+- **04-28** P4 UI ↔ codex 对齐 + Jakes 接通 + RX α 符号 V6→V7 + α refinement 移植
+- **05-01** P4 UI 稳定性 4 fix（51%→0%）+ V3.0 解耦 blk_cp/blk_fft + V4.0 预设（K=31 直接链路 0.68%）
+- **05-03** UI 50% RCA H5 命中（jakes 假 α）+ Phase 3 P5/P6 整批移植（8 commit 27 文件已 push）
+- **05-04** simple UI v2.0（tx/rx_simple_ui classdef + 4 模式 + 流式 chunk）+ jakes V2.0 passband-native（Hilbert+SoS）+ SC-FDE V4.1 高 SNR 修复（pass 50.23%→**0.43%** 117× / SNR=80 48.71%→0.53% 94×）+ 24/24 矩阵全 PASS
+- **05-06** OTFS 4-27 漏登补登 + Phase 4 BER FAIL 归档（hann × 6 trial 全退化 +1.9~+14.8 pp，loopback 2.78e+01 vs rect 1.26e-15，**维持 rect 默认**）
+
+### USBL 主线
+
+- **04-25** H8 spec draft 落地，等用户答 D1-D4；H7 未起
+
+### 跨项目教训（候选 promote，留待 /promote-answer 单独决策）
+
+无日期 feedback 已分类（详见 `draft/log-draft-2026-05-12.md`）：
+- UWAcomm `feedback_comp_resample_carrier_phase` — passband real time-scaling 等效反载波相位；baseband complex 需手动补偿
+- UWAcomm `feedback_uwacomm_ui_ber_diagnose_order` — UI BER 异常先 diag 绕开 UI 链验算法
+- UWAcomm `feedback_uwacomm_codex_compare_method` — BER 异常先 diff codex worktree
+- UWAcomm `reference_otfs_pilot_tradeoff` — Impulse/ZC/Superimposed 三方案 PAPR-NMSE tradeoff
+- 通用 `feedback_doc_visual_diversification` — 方案文档视觉差异化
+- 通用 `feedback_uwaprojdoc_flowgen_only` — 流程图统一走 flowgen* skill
+
+### Hub 影响
+
+本次补帐只加 log entry，不新建 concept/source-summary。跨项目教训如需独立成 concept，由用户后续单独促发。页面总数不变（86）。
+
+---
+
+## [2026-05-12] promote | OTFS pilot tradeoff + MATLAB pitfalls 沉淀到 Hub
+
+从 memory 跨项目可复用 reference/feedback 类挑出 2 条 promote 到 Hub source-summary：
+
+**新建**：
+- `wiki/source-summaries/uwacomm-otfs-pilot-tradeoff.md` ← memory `reference_otfs_pilot_tradeoff`（2026-04-14 UWAcomm 实测）
+  - Impulse / ZC / Superimposed 三方案 PAPR-NMSE 对照表 + 物理解释 + 选型指南 + Superimposed SIR 公式
+  - 适用范围：任何项目恢复 OTFS 时的 pilot 设计参考
+- `wiki/source-summaries/matlab-pitfalls.md` ← memory `feedback_matlab_inf_bug`
+  - 起点 pitfall：`inf` 字面量触发"double→struct"转换错误的 path 污染陷阱
+  - 设计为生长性集合，后续累积 pitfall 时追加
+
+**更新**：
+- `wiki/concepts/ofdm-and-otfs.md` 来源段追加 `[[uwacomm-otfs-pilot-tradeoff]]`
+- `wiki/index.md` Source Summaries 段加 2 行；页面总数 86 → **88**
+
+**未 promote 的 3 条 candidate**（重审后归项目侧）：
+- `feedback_uwacomm_path` — UWAcomm 路径事实（项目特定，不跨项目）
+- `reference_uwacomm_obsidian` — UWAcomm debug-logs 位置（项目特定）
+- `feedback_ohmybrain_workflow` — UWAcomm spec→plan→code 工序（Hub 全局 CLAUDE.md 已描述，UWAcomm 是应用案例）
+
+---
+
+## [2026-05-12] tool | scripts/sync_agent.py 防 wiki-ingester 双副本漂移
+
+L1 修复后留下的同步债务一次性补上。
+
+- **源头**：`.claude/agents/wiki-ingester.md`（项目本地，git 跟踪，契约权威）
+- **镜像**：`~/.claude/agents/wiki-ingester.md`（全局，invocable handle）
+- **机制**：SHA-256 比对。`--sync` 源→镜像；`--check` 漂移 exit 1 适合 hook；默认报告 + 修复指引
+
+**接入 Stop hook**：`.claude/settings.json` Stop 段追加 `python scripts/sync_agent.py --check`，会话结束自动检查漂移（exit 0 同步 / exit 1 漂移 stderr 提示）。
+
+**当前状态**：✓ 已同步（hash `6bd73309c569`）。
+
+**未来场景**：编辑项目本地 wiki-ingester.md 后 Stop 时 stderr 提示 `python scripts/sync_agent.py --sync` 修复。
+
+---
+
+## [2026-05-12] doc | system-overview.md + CLAUDE.md hook 清单同步
+
+架构总览页过期 25 天（updated 2026-04-17），CLAUDE.md hook 清单只列阻断型 3 个，本次一次性同步。
+
+**system-overview.md**：
+- 项目实例表 4 → **10 项目**：补 UWAcomm_usbl / UWAprojDoc / CooperativeDetection / PaperReview / FlowGen / usbl-s1（分 TechReq / DocProcess🔒 / Tools / 导航占位 四组）
+- 目录 ASCII 树同步 10 个 projects/ README
+- §Hub hooks 表 5 → **8 hook**（补 `check_private_tags` / `check_memory_log_gap`，加阻断/提醒/注入类型列）
+- §当前规模：49 → **86 页** / 4 → **9 项目** / 17 → **19 scripts**
+- §演进里程碑：补 04-21 ~ 05-12 共 7 个事件
+
+**CLAUDE.md `§Hook Exit Code Strategy`**：阻断型 3 个清单 → 完整 8 hook 表（阻断 3 / 提醒 4 / 注入 1）。
+
+---
+
+## [2026-05-12] hook | scripts/check_memory_log_gap.py Stop hook 提醒沉淀缺口
+
+新增 Stop hook `scripts/check_memory_log_gap.py`（~60 行，提醒型 exit 0），会话结束时自动检查 memory→Hub log 缺口：
+
+- 复用 L3 的解析逻辑（INDEX_LINE_RE + DATE_RE）
+- 只在"缺口最近日期 ≤ 7 天内"才提示（避免老欠账反复刷屏）
+- stdout 一句话 + 跑 `diff_memory_log.py` 指令；exit 0 不阻断（Windows Terminal tab 友好）
+
+**接入**：`.claude/settings.json` Stop hook 段追加为第 3 条（前两条：`check_index_log_sync.py` 阻断型 / `commit_reminder.py` 提醒型）。
+
+**首次试运行**（手动 `python scripts/check_memory_log_gap.py`）：
+```
+[memory→Hub] 12 个日期 memory 有但 wiki/log.md 缺，其中 3 个在最近 7 天内（最近：2026-05-11）
+  详情：python scripts/diff_memory_log.py --out draft/log-draft-2026-05-12.md
+```
+
+**与阻断型 hook 的边界**：memory→Hub 不是机械 1:1 转（session 摘要不必都进 Hub），强制阻断会误伤——所以选提醒型。决策权在用户。
+
+---
+
+## [2026-05-12] tool | scripts/diff_memory_log.py 批量回流缺口报告
+
+新增脚本 `scripts/diff_memory_log.py`（~150 行）——对照 auto-memory `MEMORY.md` 与 Hub `wiki/log.md`，找出未沉淀到 Hub 的项目侧记录。
+
+**逻辑**：
+- 解析 MEMORY.md 索引行（`- [Title](file.md) — description` 格式，49 条）
+- 提取日期：先 desc 抽 `YYYY-MM-DD`，fallback 从文件名抽（覆盖 `project_*_2026-04-23_session.md` 这种）
+- 对照 wiki/log.md 已记录日期（H2 header）
+- 按前缀分类建议动作：`promote-candidate` / `log-only` / `review` / `skip` / `skip-or-log-only`
+
+**首次运行结果**（draft 写到 `draft/log-draft-2026-05-12.md`，gitignored）：
+- memory 49 条 → 28 条带日期 + 21 条无日期
+- Hub log.md 9 个日期 → **12 个缺口日期**（2026-04-19 ~ 2026-05-11，最近 23 天最严重）
+- 缺口含：UWAcomm 6 session（04-24 ~ 05-06）+ UWAprojDoc（04-28 + 05-01）+ UWAcomm_usbl（04-25/05-06/05-11）+ PaperReview（05-09）+ flowgen-vsdx M5（05-03）+ USBL H8（04-25）
+
+**用法**：
+```bash
+python scripts/diff_memory_log.py               # stdout
+python scripts/diff_memory_log.py --out FILE   # 写到文件
+```
+
+**配套**：`draft/` 已加入 `.gitignore`。Draft 报告供用户审核，挑选后手工 merge 进 log.md / 走 `/promote-answer`。
+
+**动机**：L1 修复了 `/ingest` 工序后，需要补 20 天历史欠账——但 memory→Hub 不是 1:1 转移（session 摘要不必都进 Hub，跨项目结论才进），脚本只产 draft + 分类建议，决策权留给用户。
+
+---
+
+## [2026-05-12] fix | /ingest 路径 B 工序修复（TODO 2026-04-22 关闭）
+
+修复挂了 20 天的 `/ingest` 路径 B 工序，让 `wiki-ingester` agent 真正可调用：
+
+- **迁全局**：`cp .claude/agents/wiki-ingester.md ~/.claude/agents/wiki-ingester.md` — 全局副本作为 invocable handle（项目本地版保留为契约源头 + git 跟踪点）
+- **commands/ingest.md 路径 B 段重写**：加 "首选调用 + Fallback 内联契约 + 主会话代写后备" 三层兜底
+  - 首选：`subagent_type="wiki-ingester"`（全局副本，2026-05-12 起可用）
+  - Fallback：`subagent_type="general-purpose"` + prompt 内联 "Read `~/.claude/agents/wiki-ingester.md` 作为契约"
+  - 后备：subagent Write 被拒时，agent 把完整 markdown 内联到报告，主会话 Glob 验证后代写落盘（2026-04-22 6 篇 doppler 实测 5/6 命中此后备）
+- **未做**（遗留）：项目本地 vs 全局副本同步机制——目前手动双改，未来视漂移频率写 `scripts/sync_agent.py`
+
+**动机**：过去 19 天（2026-04-23 后）Hub log.md 0 条新 entry，对比 memory 中 11 个 UWAcomm session + UWAprojDoc / UWAcomm_usbl / PaperReview / CooperativeDetection 等项目记录——`/ingest` 路径 B 失效导致沉淀工序高摩擦，本次先修工序基础设施，后续 L3 写批量回流脚本补 20 天历史欠账。
+
+页面总数不变（纯基础设施修复，不涉 wiki 内容）。
+
+---
+
+## [2026-04-23] new-project | FlowGen 完整 SOP 派生
+
+新项目 **FlowGen** 完整走完 `ohmybrain-core/docs/new-project-sop.md` §1-§6（手动模式，非闭环）：
+
+- **§1 派生**：`cp -r D:/Claude/ohmybrain-core/template/. D:/Claude/Tools/FlowGen/`（保留了会话早前浅克隆的 `raw/repos/mermaid/` + 我手写的 `raw/repos/README.md`）
+- **§1.5 补齐**：`mkdir -p specs/{active,archive} plans src tests evals`
+- **§2 配置 CLAUDE.md**：替换占位符（slug=flowgen / 描述=需求→Mermaid 流程图 LLM 工具 / 分类=Tools/），增加 FlowGen 特有约束（单用户、无 UI、仅 flowchart、Claude API 核心、参考仓 mermaid-js）
+- **§3 git init + 首 commit**：`init: 从 ohmybrain-core 模板初始化 FlowGen`；.gitignore 追加 `raw/repos/*/` 忽略外部参考仓
+- **§4 注册 Hub**：新建 `projects/flowgen/README.md`，更新 Hub CLAUDE.md 项目映射表 + 根 `D:/Claude/CLAUDE.md` 项目清单（加 Tools/ 分类）
+- **§6 验证**：dirs OK / 占位符 OK / `lint_wiki.py` + `validate_task.py` 双通过
+
+**分类新增**：首个 `D:/Claude/Tools/` 下项目。区别于 `TechReq/`（算法研究）+ `DocProcess/`（文档处理）。未来跨项目工具都放这里。
+
+**后续工作不在本 Hub 会话进行** — 用户将在 FlowGen 项目 Claude Code 会话内起 spec / plan / M1 MVP 实施。
+
+---
+
+## [2026-04-23] ingest | mermaid-js/mermaid 代码仓（FlowGen 项目参考源）
+
+通过 `/ingest` 路径 B（`general-purpose` agent 替身 + 内联 wiki-ingester 契约）把 mermaid-js/mermaid 代码仓摄入到 Hub：
+
+- **新建 source-summary**：`wiki/source-summaries/mermaid-js-mermaid.md` — Knut Sveidqvist 2014+ 维护的 JS 图表渲染器，MIT，monorepo × 8 package × 27 图类型，v11.14.0 核心
+- **cross-ref**（只追加 wikilink，严守默认预算）：
+  - `wiki/architecture/memory-graph.md`「相关页面」段 — 本页两张图谱就用其 `flowchart LR` DSL
+  - `wiki/entities/obsidian.md`「来源」段 — Obsidian 原生 Mermaid 预览
+- **未执行的提案**（等主会话决策）：
+  - 新建 concept `diagram-as-code`（归纳 Mermaid / PlantUML / D2 / Graphviz DSL 族通性）
+  - 新建 concept `visual-regression-testing`（Argos 截图 diff 模式）
+  - 派生 concept `diagram-orchestration-pattern`（Mermaid detectType + loadDiagram 调度器，可迁移 FlowGen 核心）
+
+**源路径特殊说明**：raw 在 `D:/Claude/Tools/FlowGen/raw/repos/mermaid`（FlowGen 项目 raw/，**不在 Hub raw/**）— 因 FlowGen 项目未完整派生，只起了 raw/repos/ 骨架就先摄入，Hub 侧直接跨目录读取源仓。符合"Hub 收录跨项目参考"职能。
+
+**agent 调用模式**：本次 subagent 的 Write/Edit 全部一次通过（无需主会话代写 fallback），是近期少见的 subagent 权限全绿。
+
+**页面总数**：84 → 85。
+
+---
+
+## [2026-04-23] MCP graph 扩展 | 新增 Ohmybrain 生态图谱（A 图）
+
+MCP knowledge graph 从单主题（UWAcomm α 补偿栈）扩展为双主题：
+
+- **图谱 A — Ohmybrain 生态**（8 实体 + 11 关系）：ohmybrain-core / Ohmybrain / UWAcomm / USBL / UWAnet / Pricing / DocHub / calendar。关系含派生 / 知识回流 / template 反哺 / projects 导航 / 已被取代
+- **图谱 B — UWAcomm α 补偿栈**（17 实体 + 23 关系，2026-04-23 早已建，无改动）
+
+**共享节点**：UWAcomm + Ohmybrain 在两图均出现，通过累加 observation 承载两视角（不建双节点）。方案 A（同节点加观测）落地。
+
+**落地产物**：
+- MCP graph 23 实体 + 34 关系（`~/.claude/memory/graph.jsonl`，56 行）
+- `wiki/mcp-entities/` 更新：17→23 个 entity 笔记（+`ohmybrain-core` / `USBL` / `UWAnet` / `Pricing` / `DocHub` / `calendar`）
+- `architecture/memory-graph.md` 重写：双主题结构，两张 Mermaid + 共享节点段
+- index.md 追加 6 个 Repo / Ecosystem 条目
+
+**页面总数**：78 → 84（+6 entity）。
+
+**⚠️ 技术债**：MCP server 当前仍写 npx cache（`AppData/Local/npm-cache/_npx/`），因 `MEMORY_FILE_PATH` env 改动需要 Claude Code **重启**才生效。本次通过 `cp` 手动同步 npx cache → 稳定路径，**下次重启后自动走稳定路径**。
+
+---
+
+## [2026-04-23] 记忆栈补齐 | user 画像 + Git 红线 + Session Bootstrap
+
+记忆栈审查发现 3 个空白，全部补齐：
+
+- **auto-memory `user_profile.md`** — 首条 user 类记忆，结构化画像（身份/技术栈/环境/语言/工作风格/协作偏好）
+- **auto-memory `feedback_git_confirmation.md`** — 明文化 Git 破坏性操作红线，列 🔴 必授权 / 🟢 可直接 / 授权信号 / 永久红线四段
+- **wiki `memory-stack.md` 新增"新会话 Bootstrap 清单"节** — 自动加载层 / 按任务触发读取 / 启动自检三段，加速 context 压缩后的重启
+
+**MEMORY.md** 追加 2 条索引（current 18 条，+2）。
+
+---
+
+## [2026-04-23] MCP graph wikilink 投影（17 实体笔记 + 1 索引）
+
+新增 `wiki/mcp-entities/`（18 `.md`），把 MCP 知识图谱投影为 Obsidian wikilink 网络，供 **Juggl / Extended Graph / 原生 graph view** 可视化。每个 entity 一篇，frontmatter 带 `type` + `cssclass: type-<type>`（按 project / hub / scheme / technique / paper 分类），`[[wikilink]]` 互链体现 in/out 关系。
+
+**新增脚本**：`scripts/generate_mcp_entities.py` — 从 `C:/Users/zazn/.claude/memory/graph.jsonl` 读 MCP graph 自动生成 entity 笔记。可重复运行（覆盖模式），MCP graph 变更后重跑。
+
+**页面总数**：60 → 78（+17 entity + 1 _index）。
+
+---
+
+## [2026-04-23] 架构页 | MCP 知识图谱 Mermaid 快照
+
+新建 `architecture/memory-graph.md`，把当前 MCP memory graph（17 实体 + 23 关系，UWAcomm α 补偿技术栈）渲染成 Mermaid 供 Obsidian 预览。含实体/关系清单表、颜色分层（project/hub/scheme/technique/paper）、状态标记（SC-TDE 待修、OTFS 暂停虚线）。
+
+**背景**：MCP 数据已从 npx cache（易失）迁到稳定路径 `C:\Users\zazn\.claude\memory\graph.jsonl`，配合 `MEMORY_FILE_PATH` env 配置。本页作可视化入口，刷新方式为"让 Claude 重绘"（目前手动，脚本化 TODO）。
+
+**页面总数**：59 → 60。
+
+---
+
+## [2026-04-23] 架构页 | 记忆栈首次全面文档化
+
+新建 `architecture/memory-stack.md`，把 Claude Code 的"长期记忆"收口为 5 层栈：全局 CLAUDE.md / 项目 CLAUDE.md / auto-memory / MCP graph / Hub wiki。含逐层详解、决策树、当前状态、维护节奏、已知权衡。
+
+**上下文**：用户本次会话（从进入 Ohmybrain 开始）ABCD 四步：
+- A 清理 auto-memory：剥离 `project_uwacomm.md` 过期 TODO；压缩 `project_uwacomm_p3_ui.md` 为遗留清单；`feedback_otfs_pilot_tradeoff` → `reference_otfs_pilot_tradeoff`
+- B 新建 `~/.claude/CLAUDE.md`（全局默认偏好）
+- C 首建 MCP memory 图谱（UWAcomm α 补偿栈，17 实体 + 23 关系）
+- D 本页（记忆栈 architecture 文档化收口）
+
+**页面总数**：58 → 59；最后更新：2026-04-22 → 2026-04-23。
+
+---
+
+## [2026-04-22] ingest | 6 篇 UWA 多普勒论文批量摄入（并行 agent 模式）
+
+对 `D:/Claude/TechReq/UWAcomm/raw/papers/` 下 6 篇多普勒估计相关论文做 Hub 层批量摄入，路径 B（6 个 general-purpose agent 并行，代替 wiki-ingester 因本地 agent 调不出）。
+
+**新建 source-summary**（6 篇）：
+- `source-summaries/sun-2020-dsss-passband-doppler.md` — DSSS 符号级通带多普勒跟踪（Sun/Hong/Cui/Liu, 哈工程, JCIN 2020）
+- `source-summaries/wei-2020-dual-hfm-speed-spectrum.md` — 双 HFM 速度谱扫描多普勒估计（Wei/Ma/Zhao/Yan, 中科院声学所, IEEE SPL 2020）
+- `source-summaries/muzzammil-2019-cpofdm-doppler-interp.md` — CP-OFDM 多普勒尺度 α 插值法（Muzzammil/Wan/Jia/Qiao, 哈工程, ICICSP 2019）
+- `source-summaries/lalevee-2025-dichotomous-doppler.md` — FPGA 二叉树多普勒估计（Lalevée et al., ISEN-Brest, OCEANS 2025）
+- `source-summaries/yangyang-2026-uwa-otfs-nonuniform-doppler.md` — UWA-OTFS 非均匀多普勒 OG-BSOMP-MLE（Yang/Ma 哈工程, IEEE JOE 2026）
+- `source-summaries/zhengtonghui-2025-dd-mmse-teq.md` — SC 水声 DD 域 MMSE Turbo 均衡（Zheng/He/Jing/Yan, 西工大, IEEE JOE 2025）
+
+**新建 concept**（1 个）：
+- `concepts/doppler-estimation-methods.md` — 跨 6 篇论文抽取的水声多普勒估计方法学集合（波形/结构/工程三维分类）
+
+**更新 concept**（9 个，追加 wikilink）：
+- `concepts/underwater-acoustic-communication.md` + 7 条
+- `concepts/time-varying-channel.md` + 7 条
+- `concepts/signal-processing-fundamentals.md` + 7 条
+- `concepts/channel-estimation-and-equalization.md` + 7 条
+- `concepts/ofdm-and-otfs.md` + 3 条
+- `concepts/mathematical-optimization.md` + 4 条
+- `concepts/usbl-positioning.md` + 2 条
+- `concepts/mobile-communication.md` + 3 条
+- `concepts/message-passing-algorithms.md` + 1 条
+- `concepts/mimo-and-array-processing.md` + 1 条
+
+**更新 entity**（1 个）：
+- `entities/uwacomm.md` — 追加 6 篇相关论文 block
+
+**摄入模式说明**：
+- **路径 A/B 选择**：用户选 agent 并行（路径 B）
+- **wiki-ingester 缺陷**：项目本地 agent `.claude/agents/wiki-ingester.md` 未被 Claude Code subagent_type 识别，改用 `general-purpose` 替身 + prompt 内联完整契约
+- **权限问题**：subagent 的 Write 权限被 harness 拒绝（6 个中 5 个，1 个第 3 次重试成功），主会话代为落盘
+- **批次约束**：6 个 agent 只写自己的 source-summary，cross-ref 全部走"提案"段，主会话汇总去重后统一应用，避免 race condition（USBL 8 篇并行模式复用）
+- **跨会话记忆观察**（TODO §3）：MEMORY.md / CLAUDE.md / SessionStart summary 确实注入 subagent（"信息层"传递有效），但 Write/Bash 等"能力层"权限不随记忆传递 —— 证明 `memory: user` frontmatter 即使生效也只管信息不管权限
+
+更新 index.md（页面总数 51 → 58；最后更新 2026-04-21 → 2026-04-22）。
+
+---
+
+## [2026-04-22] P2 完成 | USBL-S1 autonomous workflow 第 2 次验证
+
+**Phase P2 方法论验证完成**：USBL-S1 Simulation Platform 作为 autonomous-new-project-workflow 的第 2 次实测，验证 workflow **不依赖特定技术栈**（首例 UWAnet 是 C++/ns-3，本次是 MATLAB/Monte Carlo）。
+
+**成果显著优于首例**：
+
+| 维度 | UWAnet 首例（P1） | USBL-S1（P2） |
+|---|---|---|
+| Phase 3 首轮 | FAIL 需 v2 | **PASS 92/100** |
+| Phase 4 首轮 | FAIL（Bash 权限） | **PASS 91→100 修后** |
+| 壁钟 / Token / $ | 75min / 530k / $7 | **55min / 450k / $6.5** |
+| Agent 调用 | 5 | **4** |
+
+**新发现 Pitfalls**（补到 [[explorations/autonomous-new-project-workflow]]）：
+- **#10** Wikilink 根目录路径歧义（Obsidian vault 根 vs fs 相对路径）
+- **#11** MATLAB 脚本 matlab_invoke 结构限制（.m 无 shebang）
+
+**Hub 新增**：
+- `projects/usbl-s1/README.md` — P2 dry-run 导航入口（独立于 `projects/usbl/`）
+- `explorations/autonomous-new-project-workflow.md` — 追加 Pitfalls #10/#11 + §后续路径 P2 标 ✅
+
+**Worktree**：`D:/Claude/worktrees/usbl-redo/`（USBL 主仓全程 never_touch，未改动）
+
+**下一步建议**：
+- **P2-matlab-branch（新）**：基于本次经验抽 `template/prompts/goal.yaml.matlab-sim.tpl` + `template/.claude/settings.local.matlab.json.example`，下次 MATLAB 项目开箱用
+- **P3（远期）**：封装 `/new-project` command
+
+---
+
+## [2026-04-21] P1 完成 | 闭环套件模板化到 ohmybrain-core
+
+继本日 UWAnet dry-run 验证后，把完整闭环套件抽到 `ohmybrain-core/template/`，下次新建项目开箱即用。
+
+**新增**：
+- `template/prompts/goal.yaml.tpl`（~135 行，Jinja 占位符版，含 v2 rubric 4 项硬约束）
+- `template/prompts/planner.md`（从 UWAnet 复制，通用）
+- `template/prompts/evaluator.md`（从 UWAnet 复制，含 v2 约束验证）
+- `template/prompts/README.md`（启动流程 + 占位符清单 + 实测预算 + 坑位提示）
+- `template/.claude/settings.local.json.example`（Bash 白名单，修 Pitfall #7）
+
+**更新**：
+- `template/CLAUDE.md`（新增"## 闭环模式（可选）"段落指向 prompts/ 和 `.claude/settings.local.json.example`）
+- `ohmybrain-core/docs/new-project-sop.md`（新增 §8 闭环模式启动章节）
+
+**效果**：下次开新项目 `cp -r template/. <worktree>/` 后只需：
+1. 填 goal.yaml 占位符（~5 个必填）
+2. 复制 `settings.local.json.example` → `settings.local.json`
+3. 启动 Phase 3 Planner
+
+**不需要**重新设计 rubric、prompt、红线、预算，全部继承 UWAnet 首轮 dry-run 的校准值。
+
+**exploration 页状态更新**：`wiki/explorations/autonomous-new-project-workflow.md` §后续路径 P1 → ✅ 已完成。
+
+---
+
+## [2026-04-21] phase4-5 dry-run | UWAnet 闭环完整走通（真装机 PASS）
+
+基于本日上午方法论设计，下午完成完整闭环 dry-run：Phase 1 scaffold → Phase 2 ingest (reuse) → Phase 3 Planner v1/v2 + Eval v1/v2 → Phase 4 Generator + Eval + **真装机**。
+
+**Phase 3 实测数据（GAN harness 首次验证）**：
+- 两轮 Planner/Evaluator 迭代：Eval 独立分 v1=83 → v2=92 (**Δ+9 真收敛**)
+- Planner 自评虚报从 v1 的 +10 降到 v2 的 +3（**校准改善 70%**）
+- Evaluator 独立 grep 验证抓到 5 个裸 wikilink + 1 处散文化 EC + 循环引用 3 类漏洞
+- Rubric v1 → v2 加严（+4 约束：`wikilink_resolvable` / `exit_criteria_format` / `success_criteria_rules` / `interface_table_rules`）
+
+**Phase 4 实测数据（真装机）**：
+- WSL2 Ubuntu 20.04 + ns-3.41 (shallow, tag lock) + Aqua-Sim-NG (rmartin5 官方) 全装
+- 2015/2015 构建目标，0 error（第一轮 `-Werror=parentheses` 挂 2 处，patch 2 行源码 + `CXXFLAGS=-Wno-error` 修复）
+- 验证通过：hello-simulator ✅ / JmacTest ✅ / broadcastMAC_example ✅ / VBF ✅ / smoke_test.py (stub) ✅
+
+**累计成本**：~$7 / ~75 min 壁钟（含人工干预：sudo NOPASSWD 配置 + patch aqua-sim-ng 2 行源码）
+
+**沉淀到 Hub 的可复用资产**：
+- `projects/uwanet/prompts/goal.yaml` v2（4 项新 rubric 约束）
+- `projects/uwanet/prompts/planner.md + evaluator.md`
+- `scripts/extract_pdf.py`（跨项目 PDF ingest 工具）
+- `wiki/explorations/autonomous-new-project-workflow.md`（本日已更新：+实测段 + 3 个新 Pitfall）
+
+**本次发现的 3 个新 pitfall（详见 exploration 页）**：
+- **#7** Subagent Bash 运行时隐式拦截（需 `.claude/settings.local.json` 显式 allow）
+- **#8** Upstream 代码与新 GCC 不兼容（`-Werror=parentheses`，需 patch + `CXXFLAGS=-Wno-error`）
+- **#9** ns-3.41 API 变更（`./ns3 show examples` 废弃、target 名必须 CamelCase）
+
+**UWAnet 项目状态**：前期调研阶段 → **M1 环境搭建已跑通**，下一步 M2 源码阅读。
+
+**未做**（defer）：
+- smoke_test.py STUB_MODE=False 实现（`rubric.m1_environment` stub 已满足，真模式属于 M2 事）
+- `.claude/settings.local.json` Bash 白名单模板化到 `ohmybrain-core/template/`（下个项目时做）
+- ns-3.41 target 命名规则补到 `wiki/source-summaries/ns3-documentation-index.md`（UWAnet 侧 TODO）
+
+页面总数不变（纯内容追加 + exploration 页内部扩充）。
+
+---
+
+## [2026-04-21] explore + promote | 自主新建项目工作流方法论
+
+**背景**：本日会话从"非工作时段让 agent 无人值守推进项目"这一诉求出发，针对 UWAnet 重建场景设计了一套"一行目标 → M1 落地"的自主闭环。沉淀本次设计决策为跨项目可复用资产。
+
+**Hub wiki 产出**：
+- 新建 `explorations/autonomous-new-project-workflow.md`（~200 行）— 7 阶段 DAG + 3 种闭环模式（Verification / Santa / GAN）+ rubric 设计原则 + 预算四层约束 + 红线/升级 + 6 个 pitfalls + 可复用资产清单 + P0-P3 后续路径
+- 链入 5 个已有页：[[harness-engineering]]、[[subagents-orchestration]]、[[claude-hooks-architecture]]、[[ohmybrain-agent-architecture-insights]]、[[system-overview]]、[[skills-vs-commands]]
+
+**Hub projects 产出**（导航层，非 wiki 层）：
+- `projects/uwanet/prompts/goal.yaml` — 闭环权威驱动（含 pre_ingested_summaries、预算混搭、红线、升级）
+- `projects/uwanet/prompts/planner.md` — `gan-planner` prompt，产 PRD + 架构 + 里程碑 + 风险
+- `projects/uwanet/prompts/evaluator.md` — `gan-evaluator` prompt，独立 grep 硬验证 + rubric 打分 + 反馈
+- `projects/uwanet/prompts/README.md` — 套件说明 + 阶段映射 + 使用方式
+
+**Hub scripts 新增**：
+- `scripts/extract_pdf.py` — PyMuPDF 实现的 PDF 文本提取（批量 + 单文件），补齐本机无 `pdftoppm` 的短板，**未来所有项目 ingest PDF 可复用**
+
+**UWAnet 项目侧**（本次顺带完成）：
+- /ingest `raw/papers/` 4 篇 + `raw/courses/NS3资料/` 14 份 PDF（用上述 `extract_pdf.py`）
+- 产出 5 份 source-summary：`ns3-installation-guide` / `ns3-documentation-index` / `aqua-sim-family` / `slotted-fama-mac` / `janus-standard`
+- UWAnet `wiki/index.md` 页面总数 2 → 7；`wiki/log.md` 追加同日条目
+
+**跨项目启发（核心）**：
+- **调试期 vs 闭环期共存**：分层自动化（已完成模块挂闭环 / 在调模块半自动 / 基础设施层随时可上）
+- **GAN + Verification 组合**比单一闭环稳：前者管"好不好"后者管"对不对"
+- **迭代上限比 token 上限更关键**：token 设再大，死循环一样烧光
+- **Evaluator 必须独立 grep 验证，不信 Planner 自评**
+
+**Defer**（未做）：
+- 新建 `gan-harness` / `verification-loop` concept 页 — 单源（仅本次会话），待首次 dry-run 产出实测数据再独立成 concept
+- 抽 `goal.yaml` 结构到 `ohmybrain-core/template/prompts/` — 等 UWAnet 真跑一次完整闭环后再做
+- 封装成 `.claude/skills/new-project-loop/` — P2，需 2 个以上项目验证
+
+**接续动作**：等用户在 worktree `uwanet-redo` 发起 Phase 1+2 dry-run，验证闭环。
+
+更新 `index.md`（50 → 51）。
+
+---
+
 ## [2026-04-17] apply | claude-mem 5 条可迁移模式落地（P0/P1/P2/P3）
 
 基于 [[thedotmack-claude-mem]] summary 中的 5 条推荐优先级，在 Hub + ohmybrain-core + 3 下游全面落地（不安装 claude-mem 本体，仅借鉴模式）。

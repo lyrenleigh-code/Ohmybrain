@@ -1,7 +1,7 @@
 # Wiki Index
 
-> 最后更新：2026-04-17
-> 页面总数：50
+> 最后更新：2026-05-12
+> 页面总数：88
 
 ## Concepts（概念页）
 
@@ -13,6 +13,7 @@
 - [ofdm-and-otfs](concepts/ofdm-and-otfs.md) — OFDM与OTFS调制，多载波调制技术在水声通信中的应用（~64篇）
 - [mathematical-optimization](concepts/mathematical-optimization.md) — 数学与优化，研究体系的基础工具层（~30篇）
 - [time-varying-channel](concepts/time-varying-channel.md) — 时变信道处理，双色散信道的建模估计与补偿（~22篇）
+- [doppler-estimation-methods](concepts/doppler-estimation-methods.md) — 水声多普勒估计方法学集合，跨 6 篇论文抽取的波形/结构/工程三维分类（2026-04-22）
 - [mimo-and-array-processing](concepts/mimo-and-array-processing.md) — MIMO与阵列处理，多天线空间域信号处理技术（~21篇）
 - [machine-learning-methods](concepts/machine-learning-methods.md) — 机器学习方法，数据驱动的通信方法新兴方向（~2篇）
 - [harness-engineering](concepts/harness-engineering.md) — Harness 工程，Claude Code agent harness 的设计与实践
@@ -36,6 +37,17 @@
 ## Architecture（架构页）
 
 - [system-overview](architecture/system-overview.md) — 系统架构总览，**三仓架构**（core / project / hub）+ 三层职责 + 知识/开发闭环 + Harness 机制 + 工具链（2026-04-17 重写，反映当前三仓现状）
+- [memory-stack](architecture/memory-stack.md) — Claude Code 长期记忆 5 层栈（global CLAUDE.md / project CLAUDE.md / auto-memory / MCP graph / Hub wiki），含决策树 + 当前规模 + 维护节奏（2026-04-23 首建）
+- [memory-graph](architecture/memory-graph.md) — MCP 知识图谱 Mermaid 快照（UWAcomm α 补偿技术栈：17 实体 + 23 关系，2026-04-23 首次快照）
+
+## MCP Entities（MCP graph Obsidian 投影，供 Juggl / 原生 graph 可视化）
+
+- [_index](mcp-entities/_index.md) — MCP Entities 索引入口 + Juggl 样式建议
+- Project / Hub: [UWAcomm](mcp-entities/UWAcomm.md) · [Ohmybrain](mcp-entities/Ohmybrain.md)
+- Scheme: [SC-FDE](mcp-entities/SC-FDE.md) · [OFDM](mcp-entities/OFDM.md) · [SC-TDE](mcp-entities/SC-TDE.md) · [OTFS](mcp-entities/OTFS.md) · [DSSS](mcp-entities/DSSS.md) · [FH-MFSK](mcp-entities/FH-MFSK.md)
+- Technique: [est_alpha_dual_chirp](mcp-entities/est_alpha_dual_chirp.md) · [iterative-refinement](mcp-entities/iterative-refinement.md) · [est_alpha_dsss_symbol](mcp-entities/est_alpha_dsss_symbol.md)
+- Paper: [wei-2020-dual-hfm](mcp-entities/wei-2020-dual-hfm.md) · [sun-2020-dsss-doppler](mcp-entities/sun-2020-dsss-doppler.md) · [muzzammil-2019-cpofdm](mcp-entities/muzzammil-2019-cpofdm.md) · [yang-2026-otfs](mcp-entities/yang-2026-otfs.md) · [zheng-2025-dd-mmse](mcp-entities/zheng-2025-dd-mmse.md) · [lalevee-2025-dichotomous](mcp-entities/lalevee-2025-dichotomous.md)
+- Repo / Ecosystem: [ohmybrain-core](mcp-entities/ohmybrain-core.md) · [USBL](mcp-entities/USBL.md) · [UWAnet](mcp-entities/UWAnet.md) · [Pricing](mcp-entities/Pricing.md) · [DocHub](mcp-entities/DocHub.md) · [calendar](mcp-entities/calendar.md) · [FlowGen](mcp-entities/FlowGen.md)
 
 ## Topics（专题页）
 
@@ -46,6 +58,7 @@
 - [zotero-reorganization](explorations/zotero-reorganization.md) — Zotero 文件夹重组方案，基于研究地图将 64 个文件夹精简为 17 个
 - [ohmybrain-agent-architecture-insights](explorations/ohmybrain-agent-architecture-insights.md) — 基于 Claude Code Best Practice + Hermes Agent 对照的 Ohmybrain 架构启发录（P0/P1/P2/P3 行动项，P0 + P1 已完成）
 - [wiki-ingester-ab-test-dingjie-2020](explorations/wiki-ingester-ab-test-dingjie-2020.md) — 新架构（wiki-ingester Agent）首次实测 A/B 报告，丁杰 2020 USBL 博士论文
+- [autonomous-new-project-workflow](explorations/autonomous-new-project-workflow.md) — 自主新建项目工作流方法论（GAN harness + Verification loop + 混搭模型 + 红线/升级），以 UWAnet 重建为例，UWAnet prompts 套件已落盘 `projects/uwanet/prompts/`
 
 ## Comparisons（比较页）
 
@@ -74,3 +87,12 @@
 - [uwanet-protocol-sim-note](source-summaries/uwanet-protocol-sim-note.md) — UWAnet 项目前期调研笔记，水声协议栈 + Aqua-Sim-NG (ns-3) + Slotted ALOHA 5 节点案例 + 1 月学习路线（含 concept `uwa-networking` 新建提案）
 - [ohmybrain-three-tier-seed](source-summaries/ohmybrain-three-tier-seed.md) — Ohmybrain 三仓架构（core / project / hub）设计笔记，`system-overview.md` 2026-04-17 重写的事实源
 - [thedotmack-claude-mem](source-summaries/thedotmack-claude-mem.md) — Claude Code 持久记忆插件（Alex Newman / AGPL-3.0 / v12.1.6），hook+worker+MCP 三层架构；5 条可迁移模式（**3-layer 渐进披露检索** / make-plan-do Subagent Contract / 36 语言 mode / `<private>` 标签 / Exit Code 契约）
+- [sun-2020-dsss-passband-doppler](source-summaries/sun-2020-dsss-passband-doppler.md) — DSSS 符号级通带多普勒跟踪（Sun/Hong/Cui/Liu, 哈工程, JCIN 2020），通带相关 + 三点余弦插值 + 判决无关估计，比 CAF 算力低精度高
+- [wei-2020-dual-hfm-speed-spectrum](source-summaries/wei-2020-dual-hfm-speed-spectrum.md) — 双 HFM 速度谱扫描多普勒估计（Wei/Ma/Zhao/Yan, 中科院声学所, IEEE SPL 2020），U(f)=f⁴·|X|²/S² 统计量 + 1D 连续速度扫描，千岛湖海试 0.04 m/s
+- [muzzammil-2019-cpofdm-doppler-interp](source-summaries/muzzammil-2019-cpofdm-doppler-interp.md) — CP-OFDM 多普勒尺度 α 估计插值法（Muzzammil/Wan/Jia/Qiao, 哈工程, ICICSP 2019），Dirichlet 核三种插值（抛物线/Taylor/atan），单径多径性能反转
+- [lalevee-2025-dichotomous-doppler](source-summaries/lalevee-2025-dichotomous-doppler.md) — FPGA 二叉树多普勒估计（Lalevée et al., ISEN-Brest, OCEANS 2025），log₂N 替代穷举 + 滑窗 FIFO + Zynq 7020 实现（17k LUT/22 DSP）
+- [yangyang-2026-uwa-otfs-nonuniform-doppler](source-summaries/yangyang-2026-uwa-otfs-nonuniform-doppler.md) — UWA-OTFS 非均匀多普勒建模 + OG-BSOMP-MLE 块稀疏信道估计（Yang/Ma 哈工程, IEEE JOE 2026），南海 5.5 km 海试
+- [zhengtonghui-2025-dd-mmse-teq](source-summaries/zhengtonghui-2025-dd-mmse-teq.md) — SC 水声 DD 域 MMSE Turbo 均衡（Zheng/He/Jing/Yan, 西工大, IEEE JOE 2025），丹江口湖试 4.076 kbps/2 km/8 通道/BER<10⁻⁴
+- [mermaid-js-mermaid](source-summaries/mermaid-js-mermaid.md) — Mermaid 图表渲染器（Knut Sveidqvist 2014+，MIT，v11.14.0），文本 DSL → SVG，27 图类型，diagram-as-code 事实标准，FlowGen 项目参考仓
+- [uwacomm-otfs-pilot-tradeoff](source-summaries/uwacomm-otfs-pilot-tradeoff.md) — UWAcomm OTFS 三方案（Impulse/ZC/Superimposed）PAPR-NMSE-复杂度 tradeoff（2026-04-14 实测），OTFS 恢复时直接调用
+- [matlab-pitfalls](source-summaries/matlab-pitfalls.md) — MATLAB 跨项目 pitfalls 集合（生长性），起点：`inf` 字面量触发"double→struct"转换错误的 path 污染陷阱

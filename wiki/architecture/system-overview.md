@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-04-12
-updated: 2026-04-17
+updated: 2026-05-12
 tags: [架构, 三仓, Hub, 模板, 闭环, harness]
 ---
 
@@ -40,10 +40,20 @@ Ohmybrain 体系采用**三仓架构**：**母仓模板** + **项目仓** + **Hu
 |------|------|---------|------|
 | 母仓 | `ohmybrain-core` | `D:\Claude\ohmybrain-core` | 活跃 |
 | Hub | `ohmybrain`（本仓） | `D:\Claude\Ohmybrain` | 活跃 |
-| 项目仓 | `UWAcomm` | `D:\Claude\TechReq\UWAcomm` | 活跃开发 |
+| **TechReq/** | | | **水声通信算法仿真** |
+| 项目仓 | `UWAcomm` | `D:\Claude\TechReq\UWAcomm` | 活跃开发（MATLAB 6 体制） |
 | 项目仓 | `USBL` | `D:\Claude\TechReq\USBL` | 活跃开发 |
 | 项目仓 | `UWAnet` | `D:\Claude\TechReq\UWAnet` | 前期调研 |
-| 项目仓 🔒 | `Pricing` | `D:\Claude\DocProcess\Pricing` | 活跃，不公开 |
+| 项目仓 🔒 | `UWAcomm_usbl` | `D:\Claude\TechReq\UWAcomm_usbl` | 派生 2026-04-25，内网 Internal（UWAcomm+USBL 联合仿真） |
+| **DocProcess/** 🔒 | | | **文档处理工作区，全部私人项目** |
+| 项目仓 🔒 | `Pricing` | `D:\Claude\DocProcess\Pricing` | 活跃（军用软件四号文报价） |
+| 项目仓 🔒 | `UWAprojDoc` | `D:\Claude\DocProcess\UWAprojDoc` | 派生 2026-04-28（水声专项方案技术文档撰写） |
+| 项目仓 🔒 | `CooperativeDetection` | `D:\Claude\DocProcess\CooperativeDetection` | 派生 2026-05-08（水下分布式协同探测 4 专题 12 课题） |
+| 项目仓 🔒 | `PaperReview` | `D:\Claude\DocProcess\PaperReview` | 派生 2026-05-09（学位论文外审） |
+| **Tools/** | | | **跨项目工具** |
+| 项目仓 | `FlowGen` | `D:\Claude\Tools\FlowGen` | 派生 2026-04-23（自然语言→Mermaid 流程图，未实装） |
+| **导航占位** | | | |
+| Hub 占位 | `usbl-s1` | `projects/usbl-s1/` 仅 | dry-run 子项目（autonomous-new-project-workflow P2 实测，无对应主仓） |
 
 ## 三层职责
 
@@ -107,11 +117,17 @@ project-*/
 Ohmybrain/
 ├── CLAUDE.md                      # Hub 入口
 ├── TODO.md                        # 观察期配置试点等
-├── projects/                      # 📍 项目导航
-│   ├── uwacomm/README.md
+├── projects/                      # 📍 项目导航（10 个）
+│   ├── uwacomm/README.md          #   TechReq/
 │   ├── usbl/README.md
 │   ├── uwanet/README.md
-│   └── pricing/README.md
+│   ├── uwacomm_usbl/README.md     #   TechReq/ 🔒
+│   ├── pricing/README.md          #   DocProcess/ 🔒
+│   ├── CooperativeDetection/README.md
+│   ├── paperreview/README.md
+│   ├── flowgen/README.md          #   Tools/
+│   ├── ohmybrain-core/README.md   #   母仓
+│   └── usbl-s1/README.md          #   dry-run 子项目（无主仓）
 ├── raw/                           # 跨项目原始资料（只读）
 ├── wiki/                          # 📍 跨项目知识层
 │   ├── concepts/                  #   跨项目抽象（水声通信/USBL定位/Claude-Code Skill/...）
@@ -181,15 +197,20 @@ Claude Code 通过 `.claude/` + 全局 `~/.claude/` 共同保障行为一致：
 | **Agents** | `项目/.claude/agents/*.md` | 子代理（Hub: wiki-ingester） | 主会话委托 |
 | **Hooks** | `项目/.claude/settings.json` → `scripts/*.py` | 强制行为（Pre/Post/Stop/SessionStart） | 工具调用时 |
 
-### Hub hooks（2026-04-17 实际状态）
+### Hub hooks（2026-05-12 实际状态）
 
-| Hook | 脚本 | 拦截 |
-|------|------|------|
-| **PreToolUse**（Edit/Write）| `check_raw_write.py` | raw/ 写入拦截 |
-| **PostToolUse**（Edit/Write）| `post_wiki_write.py` | 写入 wiki 后自动 lint |
-| **PostToolUse**（Bash）| `raw_ingest_reminder.py` | Bash 触及 raw/ 时提醒 `/ingest` |
-| **SessionStart** | `session_context.py` | 载入会话上下文 |
-| **Stop** | `check_index_log_sync.py` + `commit_reminder.py` | 索引/日志同步校验 + commit 提醒 |
+| Hook | 脚本 | 类型 | 作用 |
+|------|------|------|------|
+| **PreToolUse**（Edit/Write）| `check_raw_write.py` | 🔴 阻断 | raw/ 写入拦截 |
+| **PreToolUse**（Edit/Write）| `check_private_tags.py` | 🔴 阻断 | `<private>` 标签写入拦截 |
+| **PostToolUse**（Edit/Write）| `post_wiki_write.py` | 🟡 提醒 | 写入 wiki 后自动 lint |
+| **PostToolUse**（Bash）| `raw_ingest_reminder.py` | 🟡 提醒 | Bash 触及 raw/ 时提醒 `/ingest` |
+| **SessionStart** | `session_context.py` | 🟢 注入 | 载入会话上下文 |
+| **Stop** | `check_index_log_sync.py` | 🔴 阻断 | wiki/ 变更但 index/log 未同步 |
+| **Stop** | `commit_reminder.py` | 🟡 提醒 | wiki 未 commit 提醒 |
+| **Stop** | `check_memory_log_gap.py` | 🟡 提醒 | memory 日期 vs wiki/log.md 缺口（2026-05-12 新增） |
+
+阻断型 3 个 / 提醒型 4 个 / 注入型 1 个，详见 Hub `CLAUDE.md §Hook Exit Code Strategy`。
 
 ## 工具链
 
@@ -218,17 +239,17 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 
 详细工具链见 [[toolchain]]。
 
-## 当前规模（2026-04-17）
+## 当前规模（2026-05-12）
 
 | 指标 | 数值 | 说明 |
 |------|------|------|
-| **Hub wiki 页数** | 49 | concepts 16 + entities 8 + source-summaries 20 + explorations 3 + topics 1 + architecture 1 + comparisons 0 |
-| **活跃项目数** | 4 | UWAcomm / USBL / UWAnet / Pricing🔒 |
+| **Hub wiki 页数** | 86 | concepts + entities + source-summaries + mcp-entities + explorations + topics + architecture + comparisons（详见 `wiki/index.md`） |
+| **活跃项目数** | 9 | TechReq×4（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒）+ DocProcess×4（Pricing / UWAprojDoc / CooperativeDetection / PaperReview，全 🔒）+ Tools×1（FlowGen） |
 | **模板 skill 数** | 5 | ingest/plan/implement/lint/promote-answer（core + 下游继承） |
 | **全局 skill（Hub 用）** | 1 | `llm-wiki`（`paths: wiki/**` 自动激活） |
-| **Hub agent 数** | 1 | `wiki-ingester`（摄入任务独立上下文） |
+| **wiki-ingester agent** | 2 副本 | 全局 `~/.claude/agents/`（invocable，2026-05-12 起）+ 项目本地（契约源头 + git 跟踪） |
 | **Zotero 论文数** | ~3 179 | 清理后 |
-| **自动化脚本（Hub）** | 17 | `scripts/` 下全量（含 import-*、lint、sync、transcribe、scrape 等） |
+| **自动化脚本（Hub）** | 19 | `scripts/` 全量（+ 2026-05-12 加 `diff_memory_log.py` / `check_memory_log_gap.py`） |
 
 ## 演进里程碑
 
@@ -242,7 +263,14 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 | 2026-04-14 | wiki-ingester agent + `/ingest` Step 1.5 规模分流 |
 | 2026-04-15 | 基础设施下发：hook 绝对路径 + raw_ingest_reminder 同步到 core + 3 下游 |
 | 2026-04-15 | 摄入 ECC（Everything Claude Code）生产级参考 |
-| 2026-04-17 | 架构页重写：反映三仓现状（本次更新） |
+| 2026-04-17 | 架构页重写：反映三仓现状 |
+| 2026-04-21 | autonomous-new-project-workflow 落地（P1 dry-run UWAnet） |
+| 2026-04-22 | 6 篇 UWA Doppler 论文并行摄入 + `doppler-estimation-methods` concept |
+| 2026-04-23 | FlowGen 派生（首个 Tools/ 项目） |
+| 2026-04-25 | UWAcomm_usbl 派生（首个内网 Internal 项目） |
+| 2026-04-28 | UWAprojDoc 派生（DocProcess 文档撰写工作区） |
+| 2026-05-08~09 | CooperativeDetection / PaperReview 派生（DocProcess 私人项目） |
+| 2026-05-12 | `/ingest` 路径 B 修复 + memory→Hub log 缺口工具链（L1+L2+L3）+ 架构页同步（本次更新） |
 
 ## 相关页面
 
