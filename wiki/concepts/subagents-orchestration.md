@@ -164,3 +164,4 @@ Agent(subagent_type="agent-name", description="...", prompt="...", model="haiku"
 - 相关实体：[[claude-code]]
 - 相关 summary：[[claude-code-best-practice]]、[[affaan-m-everything-claude-code]]
 - 子代理自律范本：[[yizhiyanhua-ai-fireworks-tech-graph]]（Pre-Tool-Call Checklist + Error Recovery Protocol）
+- founder 视角的 orchestrator 人格化：[[anthropic-2026-founders-playbook]]（Anthropic 2026，founder = orchestrator of agents 命题）

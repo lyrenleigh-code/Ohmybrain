@@ -1,7 +1,7 @@
 # Wiki Index
 
-> 最后更新：2026-05-13（DigitalTwinGuide 派生 + 2026-05-12 目录大整理：mcp-entities/DocHub 路径同步 Archive/）
-> 页面总数：88
+> 最后更新：2026-05-22（ingest Anthropic Founder's Playbook v3）
+> 页面总数：89
 
 ## Concepts（概念页）
 
@@ -96,3 +96,4 @@
 - [mermaid-js-mermaid](source-summaries/mermaid-js-mermaid.md) — Mermaid 图表渲染器（Knut Sveidqvist 2014+，MIT，v11.14.0），文本 DSL → SVG，27 图类型，diagram-as-code 事实标准，FlowGen 项目参考仓
 - [uwacomm-otfs-pilot-tradeoff](source-summaries/uwacomm-otfs-pilot-tradeoff.md) — UWAcomm OTFS 三方案（Impulse/ZC/Superimposed）PAPR-NMSE-复杂度 tradeoff（2026-04-14 实测），OTFS 恢复时直接调用
 - [matlab-pitfalls](source-summaries/matlab-pitfalls.md) — MATLAB 跨项目 pitfalls 集合（生长性），起点：`inf` 字面量触发"double→struct"转换错误的 path 污染陷阱
+- [anthropic-2026-founders-playbook](source-summaries/anthropic-2026-founders-playbook.md) — Anthropic 2026 v3 AI-Native 创业方法论（36 页），四阶段（Idea/MVP/Launch/Scale）+ 三表面（Chat/Cowork/Code）+ CLAUDE.md as architectural memory + 5 条工程方法论可迁移

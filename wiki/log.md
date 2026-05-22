@@ -4,6 +4,22 @@
 
 ---
 
+## [2026-05-22] ingest | article：The Founder's Playbook v3 (Anthropic, 2026)
+
+Anthropic 官方 marketing playbook ingest 到 Hub：36 页 / 7 章，"AI-Native 创业"四阶段（Idea/MVP/Launch/Scale）+ 三表面（Chat/Cowork/Code）方法论。**对水声研究者不直接 actionable，但 5 条工程方法论可迁移**（CLAUDE.md as architectural memory / devil's advocate as default / scope doc 写"deliberately does not do" / 三表面分工 / Sean Ellis 40% PMF test）。
+
+- 新建 source-summary: `wiki/source-summaries/anthropic-2026-founders-playbook.md`
+- 更新 cross-ref（3 处，仅追加 wikilink 行）：
+  - `wiki/entities/claude-code.md` § 来源
+  - `wiki/concepts/subagents-orchestration.md` § 来源
+  - `wiki/architecture/memory-stack.md` § 相关页面（独立 validation L2 层）
+
+更新 index.md（页面总数 88 → 89）。
+
+inline 路径执行（用户选）；按默认协议 ≤200 行 + ≤5 cross-ref + 仅追加 wikilink，未新建 concept/entity，未改写已有段落。
+
+---
+
 ## [2026-05-13] new-project | DigitalTwinGuide 派生
 
 DocProcess 类私人子项目第 5 个（依次：Pricing / UWAprojDoc / CooperativeDetection / PaperReview / **DigitalTwinGuide**），数字孪生项目实施指南撰写工作区（方法论文档型）。

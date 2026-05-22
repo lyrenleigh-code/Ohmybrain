@@ -58,3 +58,4 @@ Anthropic 出品的 CLI 工具，是 my-brain 系统的**核心执行引擎**。
 - Skill 工程化范本：[[yizhiyanhua-ai-fireworks-tech-graph]]
 - 单用途极简 Skill 范本：[[cocoon-ai-architecture-diagram]]（Cocoon AI / MIT，架构图生成）
 - 持久记忆插件：[[thedotmack-claude-mem]]（Alex Newman / AGPL-3.0，hook+worker+MCP 三层架构）
+- 官方 founder 方法论：[[anthropic-2026-founders-playbook]]（Anthropic 2026 v3，三表面 Chat/Cowork/Code 分工 + CLAUDE.md as architectural memory）

@@ -227,6 +227,7 @@ context 被压缩或新开会话时，按这个顺序快速进入状态：
 - [[claude-hooks-architecture]] — Hook 生命周期（SessionStart 注入 auto-memory 至上下文的入口）
 - [[skills-vs-commands]] — Skill/Command/Agent 三机制（llm-wiki skill 属 Layer 1）
 - [[subagents-orchestration]] — Subagent 编排（Layer 3 的 feedback "subagent Write 受限"来源）
+- [[anthropic-2026-founders-playbook]] — Anthropic 官方 founder 方法论 v3（CLAUDE.md as architectural memory，对 L2 层的独立 validation）
 
 ## 修订记录
 
