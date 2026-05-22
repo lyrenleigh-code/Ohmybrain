@@ -13,10 +13,11 @@ autogen: generate_mcp_entities.py
 
 ## Observations
 
-- 路径 D:\Claude\DocHub
+- 路径 D:\Claude\Archive\DocHub
 - 2026-04-13 归档，被 Ohmybrain 取代
+- 2026-05-12 迁入 Archive/
 - 有价值内容已迁移到 Ohmybrain/raw + wiki
-- 证据：DocHub/ARCHIVED.md
+- 证据：Archive/DocHub/ARCHIVED.md
 
 ## 出边（指向）
 

@@ -4,6 +4,25 @@
 
 ---
 
+## [2026-05-13] new-project | DigitalTwinGuide 派生
+
+DocProcess 类私人子项目第 5 个（依次：Pricing / UWAprojDoc / CooperativeDetection / PaperReview / **DigitalTwinGuide**），数字孪生项目实施指南撰写工作区（方法论文档型）。
+
+**关键事实**：
+- **主交付物**：《数字孪生项目实施指南》—— 回答"数字孪生项目怎么做"的方法论文档
+- **首份种子材料**：`raw/notes/20吨级AUV数字孪生体系构建与运行支持技术课题指南.md`（25 KB / 233 行）
+- **首版 docx**：宋体版完成，4 步 pandoc pipeline（normalize / pandoc / three_line / clean_indent）固化在 `.tmp/`
+- **样板 reference**：AUV 课题指南种子 + 多智能体样板
+- **覆盖范围**：希望同类水下平台 / 装备数字孪生课题可复用
+- 派生自 `ohmybrain-core/template/`，HEAD 63 init（docx 仍 stage 未 commit）
+
+**Hub 影响**：
+- `projects/digitaltwinguide/README.md` 已就位（项目导航卡片，标注 🔒 私人项目硬约束）
+- `CLAUDE.md` 项目仓库映射追加 1 行
+- DigitalTwinGuide 不进 Hub 公开 wiki（私人 DocProcess 系），方法论结论沉淀走 `<private>` 标签或私人区域
+
+---
+
 ## [2026-05-09] new-project | PaperReview 派生
 
 DocProcess 类私人子项目第 4 个（依次：Pricing / UWAprojDoc / CooperativeDetection / **PaperReview**），学位论文外审工作区。
@@ -102,6 +121,48 @@ TechReq/UWAcomm_usbl 完成 SOP 派生：水声通信 + USBL 联合定位/通信
 ### Hub 影响
 
 本次补帐只加 log entry，不新建 concept/source-summary。跨项目教训如需独立成 concept，由用户后续单独促发。页面总数不变（86）。
+
+---
+
+## [2026-05-12] refactor | D:/Claude 顶层目录大整理（方案 C）
+
+执行用户授权的"方案 C"目录重组：18 顶层项 → 14 顶层项，精简 4。涉及 6 次 mv + 3 次 git worktree move + 全局 path 引用同步。
+
+**移动操作**：
+- `DocHub/` → `Archive/DocHub/`（2026-04-13 归档项目入归档容器）
+- `worktrees/{usbl-redo,uwanet-redo}/` → `Archive/worktrees-redo/`（autonomous-workflow P1/P2 dry-run 产物）
+- `open-design/` → `External/open-design/`（第三方 nexu-io/open-design fork，先 kill 占着的 dev server PID 34776+WINWORD×2）
+- `scripts/migrate-to-gitlab.sh` → `ohmybrain-core/scripts/`（顶层零散脚本归位 + 删空 scripts/）
+- `TechReq/UWAcomm-claude` → `worktrees/UWAcomm-claude`（`git worktree move`）
+- `TechReq/UWAcomm-codex` → `worktrees/UWAcomm-codex`（`git worktree move`）
+- `TechReq/UWAcomm_usbl-design` → `worktrees/UWAcomm_usbl-design`（PowerShell Move-Item + 手工修 .git/worktrees/.../gitdir registration）
+
+**新增容器**（含 README 说明用途）：
+- `Archive/` — 归档历史/dry-run/已取代项目
+- `External/` — 第三方仓库（与个人项目隔离）
+
+**新增 worktree 命名空间**：`D:/Claude/worktrees/` 集中 3 个活跃 worktree（UWAcomm-claude / UWAcomm-codex / UWAcomm_usbl-design），TechReq/ 只放 4 个主项目（USBL / UWAcomm / UWAcomm_usbl / UWAnet）
+
+**path 引用同步**（C7）：
+- `D:/Claude/CLAUDE.md` 项目清单重写为 4 分组（主项目 12 / Worktrees 3 / 工具周边 3 / 第三方与归档 3）
+- `D:/Claude/AGENTS.md` 改为 `@CLAUDE.md`（Codex 与 Claude Code 单一事实源，零漂移）
+- `D:/Claude/.claude/settings.local.json` 33 处 allowlist 路径替换（git -C / matlab -batch / cp 等命令）
+- 5 个 memory 文件：feedback_uwacomm_{worktree_ownership,usbl_worktree_ownership,claude_branch_autonomous,codex_compare_method} + project_ohmybrain_ecosystem
+- MCP graph：`~/.claude/memory/graph.jsonl` DocHub entity observations + Hub mcp-entities/DocHub.md 同步
+
+**架构页同步**（A1 已含）：
+- `wiki/architecture/system-overview.md` 项目实例表 4 → 10 + ASCII 树 + 演进里程碑加 04-21~05-12 events
+
+**风险事件**：
+- open-design dev server PID 34776 跑了 5 天（用户授权后 kill）
+- 2 个 WINWORD 进程锁 docx（用户授权 Stop）
+- PowerShell Move-Item 中途失败留半移状态，用 `cmd rd /s /q` 清残留
+
+**未做**（follow-up）：
+- 历史孤儿页 `concepts/vsdx-reverse-engineering-workflow.md`（与本次无关，保留）
+- Ohmybrain `CLAUDE.md` 项目仓库映射只列 GitHub 映射 8 项目（私人/无 git 项目未列，按设计如此）
+
+页面总数不变（88，纯路径同步无新建/删除）。
 
 ---
 

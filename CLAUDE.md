@@ -44,6 +44,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | ohmybrain-core | github.com/lyrenleigh-code/ohmybrain-core | `D:\Claude\ohmybrain-core` |
 | Pricing 🔒 | 私人，不公开 | `D:\Claude\DocProcess\Pricing` |
 | PaperReview 🔒 | 私人，不公开 | `D:\Claude\DocProcess\PaperReview` |
+| DigitalTwinGuide 🔒 | 私人，不公开 | `D:\Claude\DocProcess\DigitalTwinGuide` |
 | FlowGen | 私人，不公开 | `D:\Claude\Tools\FlowGen` |
 
 ## 知识闭环
