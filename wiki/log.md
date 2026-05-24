@@ -4,6 +4,106 @@
 
 ---
 
+## [2026-05-24] implementation | ohmybrain-core 三模板拆分**已实施**
+
+承接早间 project-types.md 设计，授权后实施 ohmybrain-core 仓拆分：
+
+**ohmybrain-core commits**:
+- `a560fef` feat: autonomous-new-project-workflow 落地 + GitLab 迁移辅助（pending 改动先 commit）
+- `247986a` feat: 三模板拆分 — engineering / document / tool（189 文件 / +6039 行）
+- 已 push gitlab/main
+
+**拆分结果**：
+- `template-engineering/` (原 template/，git mv 保留 history) → 派生到 `TechReq/`
+- `template-document/` (新建，workflows/document/ 4 步 + output/ 占位 + 私人强调) → 派生到 `DocProcess/`
+- `template-tool/` (新建，workflows/tool/ 5 步 + templates/ + output/sample/) → 派生到 `Tools/`
+
+**Hub wiki 同步**：
+- `wiki/architecture/three-tier-architecture.md` 加 § core 三模板段
+- `wiki/architecture/system-overview.md` 三仓 ASCII 图更新（含 template-engineering / -document / -tool）
+- `wiki/architecture/project-types.md` 实施记录段（待实施 → 已实施）
+
+**已派生项目**（UWAcomm / UWAprojDoc / FlowGen / AnthropicPPT 等）**不受影响**，他们已 cp 走独立演化。新项目派生直接选对应模板。
+
+---
+
+## [2026-05-24] architecture | 三类项目模板设计（待 ohmybrain-core 拆分实施）
+
+User 反馈：项目实际分 3 类（开发 / 文档 / 工具），当前 core 只有 1 个通用模板，派生后各项目自行注释"哪些不用"。
+
+**新加 1 个 wiki 页**：
+- `wiki/architecture/project-types.md` — 三类项目识别 + 对比表（目录/工作流/skill/hooks/commit 风格）+ 文档撰写闭环（spec → draft → validate → archive）+ 工具开发闭环（design → implement → test → register-skill → docs）+ ohmybrain-core 拆分 plan
+
+**设计决策**（待 user 授权动 ohmybrain-core 仓后实施）：
+- 现 `ohmybrain-core/template/` → 改名 `template-engineering/`
+- 新建 `ohmybrain-core/template-document/`（删 src/tests/evals + 加 output/ + 改 CLAUDE.md）
+- 新建 `ohmybrain-core/template-tool/`（删 tests/evals + 加 templates/ output/sample/ + skill 注册流程）
+- 派生命令变 `cp -r template-<type>/ → 新项目`，零调整开始
+
+未实施时机：等 user 授权动 ohmybrain-core 仓。
+
+---
+
+## [2026-05-24] mechanism | Hub → core 同步机制 + `/sync-to-core` 命令
+
+延续 hub-as-brain 通道 3 (core template 延迟下沉)，明确"Hub 怎么去帮忙更新 ohmybrain-core"的机制。当前现状是**手动同步散在 user 头脑中没清单**。
+
+**新加 2 个 wiki 页**：
+- `wiki/architecture/core-update-mechanism.md` — 同步机制详细规约：什么下沉（通用 skill/hook/rule/workflow/结构/CLAUDE.md）/ 什么不下沉（Hub 专属/项目特化/私人/含 secrets）/ 触发信号（≥ 2 项目验证 / ADR 标 downstream / review 决议 / 哲学澄清）/ 候选标记方式（frontmatter / inline 注释 / queue 页）/ 同步步骤（手动 6 步 + 半自动 /sync-to-core）/ 安全约束
+- `wiki/topics/core-update-queue.md` — pending 队列（12 candidate 含 high/medium/low priority + 反例 4 条 + 评估标准 + 维护节奏）
+
+**新加 1 个命令**：
+- `.claude/commands/sync-to-core.md` — `/sync-to-core` Hub 专属命令：8 步流程（读 queue / 选 candidate / 比对 diff / 安全检查 / 生成 commit msg / 等授权 / apply / 更新 queue）
+
+**关联**：
+- 与 `/ingest`（raw → wiki）和 `/promote-answer`（项目 → Hub）构成"知识三段流"
+- 通道 3 现在有明确实现路径，不再"散在 user 头脑中"
+- user 反馈"Hub 怎么去更新 core" 的直接回应
+
+---
+
+## [2026-05-24] architecture | Hub 大脑功能 8 gap 补强（dedicated 9 页框架）
+
+延续早间的三仓 + 双闭环加强，user 反馈深层问题："Hub 没起到大脑作用，有信息遗漏"。识别 8 类散在各处的关键信息，建立 1 + 8 = 9 个 dedicated 页框架：
+
+**顶层入口**：
+- `wiki/architecture/hub-as-brain.md` — 大脑功能定位：8 类 gap + 设计原则（SSOT / 索引-时序-详情三层 / 反馈式更新 / 与 core 边界）+ 优先级 + roadmap
+
+**8 个 dedicated 页骨架**（含种子内容，详细填充见 [[roadmap]] P0）：
+- `wiki/concepts/anti-patterns.md` — 跨项目反模式合集（feedback_* 60+ 条提炼，按阶段 Research/Build/RCA/Promote/全阶段分类）
+- `wiki/concepts/workflow-glossary.md` — 工作流术语表（V→V→V / PMF / 单根因审计 / archive / promote 等 + 算法研究 + Claude Code 协作术语）
+- `wiki/topics/ecosystem-dashboard.md` — 跨仓状态快照面板
+- `wiki/architecture/decision-log.md` — ADR-style 决策记录（含 7 条历史 ADR）
+- `wiki/architecture/conventions.md` — 10 类跨项目约定（命名 / 目录 / commit / 工作流 / Hooks / Worktree / 私人项目）
+- `wiki/topics/harness-resources.md` — Hooks + Skills + Rules + Agents + MCP 全景索引
+- `wiki/topics/memory-index.md` — auto-memory 60+ 条按类型 + 主题聚合
+- `wiki/architecture/roadmap.md` — 18 月里程碑 + P0/P1/P2/P3 roadmap
+
+**关联**：
+- 触发源：本次 PPT 编制 + 哲学澄清后 user 进一步反馈
+- 后续：roadmap P0 详细化各页（持续）
+- memory `project_anthropic_ppt_init` 已记录该项目派生背景
+
+---
+
+## [2026-05-24] architecture | 三仓哲学澄清 + 双闭环 dedicated 页
+
+PPT 编制过程暴露 Hub wiki 三仓结构 + 双闭环描述不清，需查 `ohmybrain-core/template/workflows/` 才搞清楚。本次做 3 件事：
+
+**新加 2 页**：
+- `wiki/architecture/three-tier-architecture.md` — 哲学澄清：**Hub = 大脑·主动**，**project = 需求牵引·业务驱动**，**ohmybrain-core = 被动模板**（被 Hub 更新）。明确 core 不是"源头"而是"成熟模式打包供新项目复用的副本"。数据流向：project → wiki 反馈 → Hub → 更新 template/ → core → 新项目派生。
+- `wiki/architecture/dual-loop.md` — knowledge 闭环 4 步（ingest / query / promote / review）+ engineering 闭环 4 步（spec / plan / implement / validate）+ 跨闭环触发关系完整 ASCII 图。module-design 明确归 phase 0 不算闭环内。
+
+**修 1 页**：
+- `wiki/architecture/system-overview.md`
+  - 顶部"定位"加哲学说明，引用 [[three-tier-architecture]]
+  - 知识闭环表加 review 第 4 步
+  - 开发闭环从模糊"0-5 阶段"改为明确"4 步 + phase 0 module-design"
+
+**关联**：触发源为 `D:\Claude\Tools\AnthropicPPT` 编制 V4 PPT 时发现 system-overview 描述与 core 不一致。
+
+---
+
 ## [2026-05-22] ingest | article：The Founder's Playbook v3 (Anthropic, 2026)
 
 Anthropic 官方 marketing playbook ingest 到 Hub：36 页 / 7 章，"AI-Native 创业"四阶段（Idea/MVP/Launch/Scale）+ 三表面（Chat/Cowork/Code）方法论。**对水声研究者不直接 actionable，但 5 条工程方法论可迁移**（CLAUDE.md as architectural memory / devil's advocate as default / scope doc 写"deliberately does not do" / 三表面分工 / Sean Ellis 40% PMF test）。

@@ -9,30 +9,44 @@ tags: [架构, 三仓, Hub, 模板, 闭环, harness]
 
 ## 定位
 
-Ohmybrain 体系采用**三仓架构**：**母仓模板** + **项目仓** + **Hub**。三者职责分离、数据单向流动，共享同一套 Claude Code harness 模板。
+Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-* (需求牵引 · 业务驱动)** + **ohmybrain-core (被动模板)**。
 
-事实源：[[ohmybrain-three-tier-seed]]（架构设计笔记）+ 本仓根 `CLAUDE.md` 项目映射表。
+**哲学**（详见 [[three-tier-architecture]]）：
 
-> **演化历史**：早期（2026-04-12 前）曾是 *"LLM Wiki + 开发工程 + Claude Code Harness 一体化单仓"* 设计（见 [[my-brain-setup-plan]] / `raw/notes/agent_knowledge_repo_template.md`），后拆分为本文档描述的三仓结构。
+- **Ohmybrain (本仓) = 大脑**：知识沉淀、决策、模板演化的中枢
+- **项目 = 需求牵引**：实际业务在此发生，是整个生态的演进驱动力
+- **ohmybrain-core = 被动模板**：项目模板存储，由 Hub 主动更新
+
+> ⚠️ core 不是"源头"，Hub 才是。core 只是 Hub 把成熟模式打包供新项目复用的副本。
+
+事实源：[[three-tier-architecture]]（哲学澄清） + [[ohmybrain-three-tier-seed]]（设计笔记）+ 本仓根 `CLAUDE.md`。
+
+> **演化历史**：早期（2026-04-12 前）曾是 *"LLM Wiki + 开发工程 + Claude Code Harness 一体化单仓"* 设计（见 [[my-brain-setup-plan]] / `raw/notes/agent_knowledge_repo_template.md`），后拆分为本文档描述的三仓结构；2026-05-24 哲学澄清为 Hub 主动 + project 牵引 + core 被动。
 
 ## 三仓结构
 
 ```
-┌──────────────────────┐       复制派生       ┌──────────────────────┐
-│  ohmybrain-core      │ ─────────────────→  │  project-*           │
-│  母仓 / 模板          │                      │  子项目仓（自包含）    │
-│  D:\Claude\ohmybrain- │ ←─── 经验回流 ───── │  D:\Claude\TechReq\  │
-│  core                │                      │  {UWAcomm,USBL,...}  │
-└──────────────────────┘                      └──────────┬───────────┘
-                                                          │ 索引
-                                                          │ 跨项目结论
-                                                          ↓ /promote-answer
-                                              ┌──────────────────────┐
-                                              │  ohmybrain (Hub)     │
-                                              │  知识库 + 项目导航     │
-                                              │  D:\Claude\Ohmybrain │
-                                              └──────────────────────┘
+┌────────────────────────────────┐       复制派生       ┌──────────────────────┐
+│  ohmybrain-core (被动模板)      │ ─────────────────→  │  project-*           │
+│  ├ template-engineering/       │  cp -r template-*/  │  子项目仓（自包含）    │
+│  ├ template-document/      🔒  │                      │  D:\Claude\<area>\   │
+│  └ template-tool/              │                      │  按类型分 3 area     │
+│  D:\Claude\ohmybrain-core      │                      │  TechReq/DocProcess/ │
+└────────────────────────────────┘                      │  Tools/              │
+       ↑                                                 └──────────┬───────────┘
+       │ Hub 主动 update                                              │
+       │ template-*/                                                  │ /promote-answer
+       │ (通道 3 延迟)                                                 ↓
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  ohmybrain (Hub · 大脑·主动)                                                  │
+│  ├ wiki/ 跨项目知识 + 决策                                                    │
+│  ├ projects/ 项目导航                                                         │
+│  └ 通过 ~/.claude/ 全局层实时指导所有 project (通道 1)                          │
+│  D:\Claude\Ohmybrain                                                          │
+└──────────────────────────────────────────────────────────────────────────────┘
 ```
+
+> **2026-05-24 拆分**：原 `template/` 拆为 3 模板对应 3 类项目（engineering / document / tool）。详见 [[project-types]]。
 
 ### 当前实例
 
@@ -159,30 +173,45 @@ Ohmybrain/
 6. Hub 提供统一入口（projects/ + wiki/）
 ```
 
-### 知识闭环（项目内）
+### 知识闭环（4 步 · 项目内）
+
+详见 [[dual-loop]] § knowledge 闭环。简表：
 
 ```
-raw/ → ingest → wiki/ → query ↻
-                ↓ promote（跨项目价值时）
-            Hub wiki/
+ingest → query → promote → review
+                              ↓
+                       弱触发新 ingest
 ```
 
-| 阶段 | 触发 | 工具 | 约束 |
+| 步骤 | 动词 | 触发 | 工具 | 产出 |
+|------|------|------|------|------|
+| **01** | `ingest` | 新资料进入 `raw/` | `/ingest` 或 wiki-ingester agent | `wiki/source-summaries/` |
+| **02** | `query` | 用户领域问题 | 3 层渐进披露 | "wiki 记录" vs "通用知识"分类回答 |
+| **03** | `promote` | 跨项目可复用结论 | `/promote-answer`（仅下游） | Hub wiki 新页 |
+| **04** | `review` | 定期（周/月） | 人工 + `lint_wiki.py` | 整理 + 触发新 ingest |
+
+**约束**：Hub 无 `/promote-answer`（终点）；`raw/` 只读（hook 拦截）；`<private>` 标签拦截外泄。
+
+### 开发闭环（4 步 · 项目内，Hub 不涉及）
+
+详见 [[dual-loop]] § engineering 闭环。简表：
+
+```
+spec → plan → implement → validate
+                              ↓
+                       弱触发新 spec
+```
+
+| 步骤 | 动词 | 触发 | 产出 |
 |------|------|------|------|
-| **收集** | 资料放入 `raw/{papers,articles,repos,...}` | 手动 / 脚本（import-zotero/readwise/theses） | raw/ 只读；PreToolUse hook 强制 |
-| **摄入** | `/ingest <路径>` | Hub 用 `wiki-ingester` agent；下游项目用 skill | 预算：≤200 行 summary / ≤5 页更新 |
-| **查询** | 用户提问 | 主会话读 wiki/ | 分"wiki 记录"vs"通用知识" |
-| **沉淀** | `/promote-answer`（下游专属） | 下游 skill | Hub 是终点，无 `/promote-answer` |
-| **审查** | 定期 | `lint_wiki.py` + `check_index_log_sync.py` | PostToolUse + Stop hook 强制 |
+| **01** | `spec` | 新 task（knowledge 已 ready） | `specs/active/<slug>.md` |
+| **02** | `plan` | spec 复杂或跨多文件 | `plans/<slug>.md` |
+| **03** | `implement` | plan 完成或直接 code | 可工作代码 + commit |
+| **04** | `validate` | code 完成 | spec 进入 `specs/archive/` |
 
-### 开发闭环（项目内，Hub 不涉及）
-
-```
-spec → plan → implement → test → validate → archive
-       └──→ wiki/ 同步 ←──┘
-```
-
-详见各项目的 `workflows/engineering/`（0-5 阶段：module-design / spec / plan / implement / validate）。**Hub 无 specs/ 无 src/**。
+> Phase 0：`module-design` 不在 4 步闭环内，是新模块设计 / 非平凡重构的前置文档。
+>
+> **Hub 无 specs/ 无 src/**——不承载业务。
 
 ## Harness 机制（三仓一致）
 
