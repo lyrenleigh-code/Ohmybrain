@@ -17,7 +17,6 @@ tags: [core, queue, 下沉, 候选]
 |----|------|---------|---------|---------|------|
 | Q-001 | `check_index_log_sync.py` hook | `Ohmybrain/scripts/` | `core/template/scripts/` | ✓ Hub 实战，需 ≥ 2 项目验证 | — |
 | Q-002 | `<private>` 标签拦截 hook | `Ohmybrain/scripts/check_private_tags.py` | `core/template/scripts/` | ✓ Hub 实战，DocProcess 项目验证 | — |
-| Q-003 | wiki-ingester agent 契约 | `Ohmybrain/.claude/agents/wiki-ingester.md` | `core/template/.claude/agents/` | ✓ Hub + UWAcomm 实战 | ADR-002 |
 | Q-004 | `~/.claude/rules/common/llm-wiki.md` 工作流约定 | `~/.claude/rules/common/` | `core/template/.claude/rules/wiki.md` | ✓ 全局已使用 | — |
 
 ### medium priority
@@ -42,9 +41,9 @@ tags: [core, queue, 下沉, 候选]
 
 > 本段记录已成功下沉到 core 的条目。从 pending 移到这里。
 
-| 日期 | ID | 内容 | core commit |
-|------|---|------|-------------|
-| (待首次同步) | | | |
+| 日期 | ID | 内容 | core commit | 备注 |
+|------|---|------|-------------|------|
+| 2026-05-24 | Q-003 | wiki-ingester agent 契约 | `ohmybrain-core 4902412` | 3 模板都加（knowledge 闭环跨类型通用）|
 
 ## 评估标准（决策时用）
 

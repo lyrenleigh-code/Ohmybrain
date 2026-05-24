@@ -4,6 +4,35 @@
 
 ---
 
+## [2026-05-24] sync-to-core 首次实战 | Q-003 wiki-ingester 下沉
+
+`/sync-to-core` 命令 2026-05-24 早间建立后第一次实战使用。
+
+**处理**: Q-003 wiki-ingester agent 契约
+
+**评估其他 high priority**:
+- Q-001 check_index_log_sync.py: Hub vs core diff 40 bytes (EOL 差异)，trivial **skip**
+- Q-002 check_private_tags.py: Hub vs core diff **空**，已 in sync 跳过
+- Q-003 wiki-ingester.md: core 不存在 → **CREATE** ✓ 本次
+- Q-004 ~/.claude/rules/common/llm-wiki.md: **REJECT** — source 是 deprecated 占位（已迁移到 skill），core 那份是活规则方向错
+
+**Q-003 实施**:
+- cp `D:\Claude\Ohmybrain\.claude\agents\wiki-ingester.md` (8734 bytes)
+- 加到 3 个模板（knowledge.ingest 跨类型通用）:
+  - `template-engineering/.claude/agents/`
+  - `template-document/.claude/agents/`
+  - `template-tool/.claude/agents/`
+- ohmybrain-core commit `4902412` (3 files, 558 insertions)
+
+**Queue 更新**: Q-003 从 pending 移到"已下沉历史"段，记录 commit 4902412
+
+**首次实战教训**:
+- queue 中候选**先 diff** 才知道真假需要 sync（4 个 high priority 实际只 1 个真需要）
+- 3 模板拆分后 cp 目标需要 1→3 扩展，knowledge 通用类型默认全加
+- 命令 8 步流程清晰可用 ✓
+
+---
+
 ## [2026-05-24] implementation | ohmybrain-core 三模板拆分**已实施**
 
 承接早间 project-types.md 设计，授权后实施 ohmybrain-core 仓拆分：
