@@ -11,36 +11,38 @@
 **Ohmybrain 不是项目仓库，而是知识中心**。具体算法和工程闭环放在各 TechReq/Tools 子项目里，跨项目可复用的结论、领域知识、工具经验、论文笔记一律沉淀到这里。
 
 ```
-ohmybrain-core（母仓 / 模板）
-  ├→ 派生 → UWAcomm
-  ├→ 派生 → USBL
-  ├→ 派生 → UWAnet
-  ├→ 派生 → UWAcomm_usbl 🔒
-  ├→ 派生 → FlowGen 🔒
-  └→ 派生 → Pricing 🔒
+ohmybrain-core（母仓 / 模板，三模板拆分：engineering / document / tool）
+  ├→ 派生 → UWAcomm                  (TechReq, engineering)
+  ├→ 派生 → USBL                     (TechReq, engineering)
+  ├→ 派生 → UWAnet                   (TechReq, engineering)
+  ├→ 派生 → UWAcomm_usbl 🔒          (TechReq, engineering)
+  ├→ 派生 → FlowGen                  (Tools, tool)
+  ├→ 派生 → AnthropicPPT             (Tools, tool, 2026-05-23)
+  ├→ 派生 → Pricing 🔒               (DocProcess, document)
+  └→ 派生 → UWAprojDoc 🔒 等 5 个文档项目 (DocProcess, document)
 
 ohmybrain（本仓库 = 知识库 + Hub）
   ├── raw/        只读原始资料（论文 / 文章 / 视频 / 仓库参考）
-  ├── wiki/       跨项目知识沉淀（86 页知识资产）
+  ├── wiki/       跨项目知识沉淀（104 页知识资产）
   ├── projects/   项目导航总览
   └── scripts/    知识库自动化脚本
 ```
 
 ---
 
-## 知识规模（2026-04-26）
+## 知识规模（2026-05-25）
 
 | 类别 | 数量 | 路径 |
 |------|------|------|
-| Wiki 页面 | **86** | `wiki/` |
-| Concepts（概念页） | 17 | `wiki/concepts/` |
+| Wiki 页面 | **104** | `wiki/` |
+| Concepts（概念页） | 20 | `wiki/concepts/` |
 | Entities（实体页） | 8 | `wiki/entities/` |
-| Architecture（架构页） | 3 | `wiki/architecture/` |
-| MCP Entities（MCP 图谱投影） | ~30 | `wiki/mcp-entities/` |
-| Topics（专题页） | 1 | `wiki/topics/` |
+| Architecture（架构页） | **11** | `wiki/architecture/`（含 hub-as-brain / dual-loop / three-tier-architecture / decision-log / project-types / core-update-mechanism / conventions / roadmap / memory-stack / memory-graph / system-overview） |
+| MCP Entities（MCP 图谱投影） | 25 | `wiki/mcp-entities/` |
+| Topics（专题页） | **5** | `wiki/topics/`（含 ecosystem-dashboard / harness-resources / memory-index / core-update-queue / research-map） |
 | Explorations（探索页） | 4 | `wiki/explorations/` |
-| Source Summaries（资料摘要） | 30+ | `wiki/source-summaries/` |
-| 自动化脚本 | 19 | `scripts/` |
+| Source Summaries（资料摘要） | 31 | `wiki/source-summaries/` |
+| 自动化脚本 | 23 | `scripts/` |
 
 ---
 
@@ -70,13 +72,26 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | **UWAcomm** | [lyrenleigh-code/UWAcomm](https://github.com/lyrenleigh-code/UWAcomm) | [lilin/UWAcomm](http://192.168.10.100:8880/lilin/UWAcomm) | `D:\Claude\TechReq\UWAcomm` | 🟢 活跃 |
 | **USBL** | [lyrenleigh-code/USBL](https://github.com/lyrenleigh-code/USBL) | [lilin/USBL](http://192.168.10.100:8880/lilin/USBL) | `D:\Claude\TechReq\USBL` | 🟢 活跃 |
 | **UWAnet** | [lyrenleigh-code/UWAnet](https://github.com/lyrenleigh-code/UWAnet) | [lilin/UWAnet](http://192.168.10.100:8880/lilin/UWAnet) | `D:\Claude\TechReq\UWAnet` | 🟡 调研 |
-| **UWAcomm_usbl** 🔒 | — | [lilin/UWAcomm_usbl](http://192.168.10.100:8880/lilin/UWAcomm_usbl) | `D:\Claude\TechReq\UWAcomm_usbl` | 🟢 起步 |
-| **ohmybrain-core** | [lyrenleigh-code/ohmybrain-core](https://github.com/lyrenleigh-code/ohmybrain-core) | [lilin/ohmybrain-core](http://192.168.10.100:8880/lilin/ohmybrain-core) | `D:\Claude\ohmybrain-core` | 🟢 母仓 |
+| **UWAcomm_usbl** 🔒 | — | [lilin/UWAcomm_usbl](http://192.168.10.100:8880/lilin/UWAcomm_usbl) | `D:\Claude\TechReq\UWAcomm_usbl` | 🟢 活跃（整机原型 / V0.8 大纲） |
+| **ohmybrain-core** | [lyrenleigh-code/ohmybrain-core](https://github.com/lyrenleigh-code/ohmybrain-core) | [lilin/ohmybrain-core](http://192.168.10.100:8880/lilin/ohmybrain-core) | `D:\Claude\ohmybrain-core` | 🟢 母仓（三模板：engineering / document / tool） |
 | **Ohmybrain** | [lyrenleigh-code/Ohmybrain](https://github.com/lyrenleigh-code/Ohmybrain) | [lilin/Ohmybrain](http://192.168.10.100:8880/lilin/Ohmybrain) | `D:\Claude\Ohmybrain` | 🟢 Hub |
-| **FlowGen** 🔒 | — | [lilin/FlowGen](http://192.168.10.100:8880/lilin/FlowGen) | `D:\Claude\Tools\FlowGen` | 🟡 起步 |
+| **FlowGen** 🔒 | — | [lilin/FlowGen](http://192.168.10.100:8880/lilin/FlowGen) | `D:\Claude\Tools\FlowGen` | 🟢 活跃（7 skill 实装） |
+| **AnthropicPPT** 🔒 | — | [lilin/AnthropicPPT](http://192.168.10.100:8880/lilin/AnthropicPPT) | `D:\Claude\Tools\AnthropicPPT` | 🟡 起步（2026-05-23 派生） |
 | **Pricing** 🔒 | — | [lilin/Pricing](http://192.168.10.100:8880/lilin/Pricing) | `D:\Claude\DocProcess\Pricing` | 🟢 私人 |
 
-🔒 内网 GitLab Internal 可见，**禁止推送至公开 GitHub/Gitee**。
+### DocProcess 私人文档项目（非 git 仓库）
+
+托管于本地 `D:\Claude\DocProcess\`，不入 git/远端：
+
+| 项目 | 派生 | 焦点 |
+|------|------|------|
+| **UWAprojDoc** 🔒 | 2026-04-28 | 水声专项方案技术文档 v17（33.2 MB / 17 章 / 146 图）|
+| **CooperativeDetection** 🔒 | 2026-05-08 | 水下分布式协同探测 4 专题 12 课题（≈ 2400 万元）|
+| **PaperReview** 🔒 | 2026-05-09 | 学位论文外审（中文论文中文评审意见）|
+| **DigitalTwinGuide** 🔒 | 2026-05-13 | 数字孪生实施指南方法论（首份种子=20 吨级 AUV 课题指南）|
+| **DigitalTwin1plusN** 🔒 | 2026-05-25 | 「1+N」水下集群数字孪生体系方案（1 百吨大 U + 24 一吨小 U，双层孪生）|
+
+🔒 内网 GitLab Internal 可见或本地私人，**禁止推送至公开 GitHub/Gitee**。所有 GitLab 远端项目统一使用 `main` 主分支（2026-05-25 起，UWAcomm 同步迁移）。
 
 ---
 
