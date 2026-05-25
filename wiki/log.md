@@ -4,6 +4,20 @@
 
 ---
 
+## [2026-05-25] maintenance | 入会自检数据同步
+
+按 memory `feedback_ohmybrain_self_improvement` 约定执行入会自检，发现并修复 3 项数据不一致：
+
+- **孤儿页补注册**：`concepts/vsdx-reverse-engineering-workflow.md`（2026-05-10 建立但从未注册 index.md），加入 Concepts 段（紧跟 skill-layered-resources）
+- **ecosystem-dashboard 规模快照刷新**：日期 2026-05-24 → 2026-05-25；wiki 页数 67 → **104**；分类细分由 "18 concepts + 8 entities + 31 source-summaries + 1 topic + 5 architecture + 4 exploration" 修正为 "20 concepts + 8 entities + 11 architecture + 5 topics + 4 explorations + 31 source-summaries + 25 mcp-entities"
+- **index.md 头部描述修正**：原描述 "ingest Anthropic Founder's Playbook v3" 是 2026-05-22 的事件、与同步日期 2026-05-25 不匹配，改为本次自检事由
+
+`scripts/sync_index.py` 同时把页面总数从 89 → 104（之前未及时同步 2026-05-24 三仓哲学澄清 + dedicated 页扩展）。
+
+`python scripts/lint_wiki.py` 由"1 个孤儿页"转为 ✓ 通过。
+
+---
+
 ## [2026-05-24] sync-to-core 首次实战 | Q-003 wiki-ingester 下沉
 
 `/sync-to-core` 命令 2026-05-24 早间建立后第一次实战使用。

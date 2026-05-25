@@ -1,7 +1,7 @@
 # Wiki Index
 
-> 最后更新：2026-05-22（ingest Anthropic Founder's Playbook v3）
-> 页面总数：89
+> 最后更新：2026-05-25（入会自检：补 vsdx-reverse-engineering-workflow 注册 + dashboard 数据刷新）
+> 页面总数：104
 
 ## Concepts（概念页）
 
@@ -24,6 +24,7 @@
 - [skills-vs-commands](concepts/skills-vs-commands.md) — Skill/Command/Agent 三机制对比，决策树 + 解析优先级
 - [claude-hooks-architecture](concepts/claude-hooks-architecture.md) — Claude Code Hook 架构，15 个生命周期事件 + 作用域层级
 - [skill-layered-resources](concepts/skill-layered-resources.md) — Skill 三层资源分离模式（SKILL.md 分类层 + references 参考层 + templates/scripts 执行层）
+- [vsdx-reverse-engineering-workflow](concepts/vsdx-reverse-engineering-workflow.md) — Visio .vsdx 反演 + 模板渲染工作流，pywin32 → Python 模板批量生成（FlowGen 2026-05-10 重复 2 次提炼）
 
 ## Entities（实体页）
 

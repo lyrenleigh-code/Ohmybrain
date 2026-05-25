@@ -46,11 +46,11 @@ tags: [dashboard, 生态, 状态, 实时]
 | **Ohmybrain** (本仓 = Hub) | 🟢 活跃 | `D:\Claude\Ohmybrain` |
 | **ohmybrain-core** (母仓) | 🟢 活跃 | `D:\Claude\ohmybrain-core` |
 
-## Hub 内部规模快照（2026-05-24）
+## Hub 内部规模快照（2026-05-25）
 
 | 指标 | 数值 | 说明 |
 |------|------|------|
-| wiki 页数 | **67** | 18 concepts + 8 entities + 31 source-summaries + 1 topic + **5 architecture** + 4 exploration |
+| wiki 页数 | **104** | 20 concepts + 8 entities + 11 architecture + 5 topics + 4 explorations + 31 source-summaries + 25 mcp-entities |
 | 自动化脚本 | **19** | `scripts/` 全量 |
 | Hooks | **8** | 3 阻断 + 5 提醒/注入 |
 | 全局 skill | **90+** | `~/.claude/skills/` 见 [[harness-resources]] |
