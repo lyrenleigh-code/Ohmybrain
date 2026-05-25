@@ -13,6 +13,7 @@ tags: [roadmap, 演化, 里程碑]
 
 | 日期 | 里程碑 | 类型 |
 |------|--------|------|
+| **2026-05-25** | DigitalTwin1plusN 项目派生（首例采用 template-document） | DocProcess |
 | **2026-05-24** | Hub 大脑哲学澄清 + 8 dedicated 页框架 | 架构 (ADR-007) |
 | **2026-05-23** | AnthropicPPT 项目派生（PPT 模板沉淀） | 工具 (ADR-006) |
 | **2026-05-16** | rx_stream_p4 接口移植 + 双回归 RCA | UWAcomm |

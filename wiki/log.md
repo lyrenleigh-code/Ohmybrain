@@ -4,6 +4,24 @@
 
 ---
 
+## [2026-05-25] new-project | DigitalTwin1plusN 派生
+
+DocProcess 类私人子项目第 6 个（依次：Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / **DigitalTwin1plusN**），「1+N」水下集群数字孪生体系方案撰写工作区。
+
+**关键事实**：
+- **主交付物**：《「1+N」水下集群数字孪生体系方案》—— docx 方案/报告，回答"1 中心 + 24 节点的数字孪生体系怎么搭、孪生什么、孪生到什么粒度"
+- **体系构成**：1 艘百吨级大 U（指挥/通信中继/任务规划/数据汇聚枢纽）+ N=24 艘 1 吨级小 U（探测/扫描/编队/分布式作业）
+- **孪生维度**：本体孪生（单艇平台/部件级）+ 集群孪生（编队/通信网络/任务协同/态势感知）**双层并行**
+- **关联姊妹**：[[../../../DocProcess/DigitalTwinGuide]]（方法论指南，可参考但不形式化依赖；本项目专注「1+N」实例化）
+- 派生自 `ohmybrain-core/template-document/`（首例采用"三模板拆分"后 document 模板的 DocProcess 子项目），HEAD=e97b8c2，main 分支（SOP §3 main 约定首例）
+
+**Hub 影响**：
+- `projects/digitaltwin1plusn/README.md` 已就位（项目导航卡片，标注 🔒 私人项目硬约束）
+- DigitalTwin1plusN 不进 Hub 公开 wiki（私人 DocProcess 系），方法论结论沉淀走 `<private>` 标签或私人区域
+- raw/ 全空待投入种子；后续 spec 起稿待用户投料
+
+---
+
 ## [2026-05-25] maintenance | 入会自检数据同步
 
 按 memory `feedback_ohmybrain_self_improvement` 约定执行入会自检，发现并修复 3 项数据不一致：

@@ -31,6 +31,7 @@ tags: [dashboard, 生态, 状态, 实时]
 | **CooperativeDetection** 🔒 | 🟢 活跃 | 4 专题 12 课题（≈ 2400 万元） | `D:\Claude\DocProcess\CooperativeDetection` |
 | **PaperReview** 🔒 | 🟢 活跃 | 学位论文外审 | `D:\Claude\DocProcess\PaperReview` |
 | **DigitalTwinGuide** 🔒 | 🟢 活跃 | 数字孪生实施指南方法论 | `D:\Claude\DocProcess\DigitalTwinGuide` |
+| **DigitalTwin1plusN** 🔒 | 🟡 起步 | 「1+N」水下集群数字孪生体系方案（2026-05-25 派生） | `D:\Claude\DocProcess\DigitalTwin1plusN` |
 
 ### Tools / 跨项目工具
 
