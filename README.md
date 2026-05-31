@@ -18,6 +18,7 @@ ohmybrain-core（母仓 / 模板，三模板拆分：engineering / document / to
   ├→ 派生 → UWAcomm_usbl 🔒          (TechReq, engineering)
   ├→ 派生 → FlowGen                  (Tools, tool)
   ├→ 派生 → AnthropicPPT             (Tools, tool, 2026-05-23)
+  ├→ 派生 → IconForge                (Tools, tool, 2026-05-29)
   ├→ 派生 → Pricing 🔒               (DocProcess, document)
   └→ 派生 → UWAprojDoc 🔒 等 5 个文档项目 (DocProcess, document)
 
@@ -42,7 +43,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | Topics（专题页） | **5** | `wiki/topics/`（含 ecosystem-dashboard / harness-resources / memory-index / core-update-queue / research-map） |
 | Explorations（探索页） | 4 | `wiki/explorations/` |
 | Source Summaries（资料摘要） | 31 | `wiki/source-summaries/` |
-| 自动化脚本 | 23 | `scripts/` |
+| 自动化脚本 | 22 | `scripts/` |
 
 ---
 

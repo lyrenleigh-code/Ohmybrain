@@ -1,6 +1,6 @@
 # Wiki Index
 
-> 最后更新：2026-05-25（入会自检：补 vsdx-reverse-engineering-workflow 注册 + dashboard 数据刷新）
+> 最后更新：2026-05-31（入会自检 C 阶段：workflow 审计修正 50 处 2026-05-29 并行填充残留 stale + 新增 ADR-020 IconForge + memory/项目计数对齐 CANON 67/14 + AnthropicPPT 补入权威源）
 > 页面总数：104
 
 ## Concepts（概念页）

@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-04-12
-updated: 2026-05-12
+updated: 2026-05-31
 tags: [架构, 三仓, Hub, 模板, 闭环, harness]
 ---
 
@@ -64,8 +64,14 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 🔒 | `UWAprojDoc` | `D:\Claude\DocProcess\UWAprojDoc` | 派生 2026-04-28（水声专项方案技术文档撰写） |
 | 项目仓 🔒 | `CooperativeDetection` | `D:\Claude\DocProcess\CooperativeDetection` | 派生 2026-05-08（水下分布式协同探测 4 专题 12 课题） |
 | 项目仓 🔒 | `PaperReview` | `D:\Claude\DocProcess\PaperReview` | 派生 2026-05-09（学位论文外审） |
+| 项目仓 🔒 | `DigitalTwinGuide` | `D:\Claude\DocProcess\DigitalTwinGuide` | 派生 2026-05-13（数字孪生项目实施指南方法论） |
+| 项目仓 🔒 | `DigitalTwin1plusN` | `D:\Claude\DocProcess\DigitalTwin1plusN` | 派生 2026-05-25（「1+N」集群数字孪生体系） |
 | **Tools/** | | | **跨项目工具** |
 | 项目仓 | `FlowGen` | `D:\Claude\Tools\FlowGen` | 派生 2026-04-23（自然语言→Mermaid 流程图，未实装） |
+| 项目仓 | `IconForge` | `D:\Claude\Tools\IconForge` | 派生 2026-05-29（自然语言→图标 SVG，未实装） |
+| 项目仓 | `AnthropicPPT` | `D:\Claude\Tools\AnthropicPPT` | 派生 2026-05-23（FIELDBOOK PPT 模板，skill `anthropic-ppt`） |
+| **Patents/** 🔒 | | | **专利交底书工作区（无 git）** |
+| 项目仓 🔒 | `Patents` | `D:\Claude\Patents` | 3 候选交底书（iusbl-jacobian / otfs-spread-pilot / usbl-cage5-3d-hybrid-doa） |
 | **导航占位** | | | |
 | Hub 占位 | `usbl-s1` | `projects/usbl-s1/` 仅 | dry-run 子项目（autonomous-new-project-workflow P2 实测，无对应主仓） |
 
@@ -131,7 +137,7 @@ project-*/
 Ohmybrain/
 ├── CLAUDE.md                      # Hub 入口
 ├── TODO.md                        # 观察期配置试点等
-├── projects/                      # 📍 项目导航（10 个）
+├── projects/                      # 📍 项目导航（14 个）
 │   ├── uwacomm/README.md          #   TechReq/
 │   ├── usbl/README.md
 │   ├── uwanet/README.md
@@ -139,7 +145,11 @@ Ohmybrain/
 │   ├── pricing/README.md          #   DocProcess/ 🔒
 │   ├── CooperativeDetection/README.md
 │   ├── paperreview/README.md
+│   ├── digitaltwinguide/README.md
+│   ├── digitaltwin1plusn/README.md
 │   ├── flowgen/README.md          #   Tools/
+│   ├── iconforge/README.md
+│   ├── anthropicppt/README.md
 │   ├── ohmybrain-core/README.md   #   母仓
 │   └── usbl-s1/README.md          #   dry-run 子项目（无主仓）
 ├── raw/                           # 跨项目原始资料（只读）
@@ -268,17 +278,17 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 
 详细工具链见 [[toolchain]]。
 
-## 当前规模（2026-05-12）
+## 当前规模（2026-05-31）
 
 | 指标 | 数值 | 说明 |
 |------|------|------|
-| **Hub wiki 页数** | 86 | concepts + entities + source-summaries + mcp-entities + explorations + topics + architecture + comparisons（详见 `wiki/index.md`） |
-| **活跃项目数** | 9 | TechReq×4（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒）+ DocProcess×4（Pricing / UWAprojDoc / CooperativeDetection / PaperReview，全 🔒）+ Tools×1（FlowGen） |
+| **Hub wiki 页数** | 104 | concepts 20 + entities 8 + source-summaries 31 + mcp-entities 25 + explorations 4 + topics 5 + architecture 11 + comparisons 0（详见 `wiki/index.md`） |
+| **活跃项目数** | 14 | TechReq×4（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒）+ DocProcess×6（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / DigitalTwin1plusN，全 🔒）+ Tools×3（FlowGen / IconForge / AnthropicPPT）+ Patents🔒 |
 | **模板 skill 数** | 5 | ingest/plan/implement/lint/promote-answer（core + 下游继承） |
 | **全局 skill（Hub 用）** | 1 | `llm-wiki`（`paths: wiki/**` 自动激活） |
 | **wiki-ingester agent** | 2 副本 | 全局 `~/.claude/agents/`（invocable，2026-05-12 起）+ 项目本地（契约源头 + git 跟踪） |
 | **Zotero 论文数** | ~3 179 | 清理后 |
-| **自动化脚本（Hub）** | 19 | `scripts/` 全量（+ 2026-05-12 加 `diff_memory_log.py` / `check_memory_log_gap.py`） |
+| **自动化脚本（Hub）** | 22 | `scripts/` 全量（含 `dashboard_snapshot.py`） |
 
 ## 演进里程碑
 

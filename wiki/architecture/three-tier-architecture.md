@@ -25,7 +25,7 @@ tags: [架构, 三仓, 哲学, Hub, 大脑]
 ohmybrain-core/
 ├── template-engineering/   ──派生──► TechReq/    (UWAcomm / USBL / UWAnet / ...)
 ├── template-document/      ──派生──► DocProcess/ 🔒 (UWAprojDoc / Pricing / ...)
-└── template-tool/          ──派生──► Tools/      (FlowGen / AnthropicPPT / ...)
+└── template-tool/          ──派生──► Tools/      (FlowGen / IconForge / AnthropicPPT)
 ```
 
 详见 [[project-types]]。Hub 主动更新这 3 个 template-*/ 中任一个（详见本页 § Hub 指导项目的两条通道 § 通道 3）。

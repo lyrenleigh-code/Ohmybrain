@@ -4,6 +4,60 @@
 
 ---
 
+## [2026-05-31] maintenance | 入会自检 C 阶段：workflow 审计修正 50 处 2026-05-29 残留 stale + ADR-020
+
+承接 2026-05-29 B 阶段（8 dedicated 页并行填充，其 log 自承"并行各 agent 互不知情引入新一批 stale"）。ultracode 模式下用 workflow 系统性审计 + 主会话代写修复。
+
+**触发**：入会自检（memory `feedback_ohmybrain_self_improvement`），P0/P1 自检发现 2026-05-29 整批仍未 commit + 多处残留不一致。
+
+**审计编排**：1 个后台 workflow，8 cluster 并行审计 → 逐 cluster 对抗式验证（16 agent / 158 工具调用），对照权威源（`D:/Claude/CLAUDE.md` 项目清单 + `MEMORY.md` + 实时文件系统 + git log）。产出 **50 处确认问题**（30 high / 16 med / 4 low，候选 53 经验证去伪 3）。
+
+**修复（13 文件）**：
+
+- **计数对齐 CANON @2026-05-31**：memory **63→67**（project **39→43**，索引 64→67 行）波及 dashboard / hub-as-brain（CANON 表 + 8 类表）/ anti-patterns / memory-index / conventions callout；wiki 页数 **86→104** / 活跃项目 **9→13** / 脚本 **19→22** / 项目导航 **10→13**（system-overview）。
+- **roadmap**：P0「8 dedicated 页填充」8 项全部 `[ ]`→`[x]`（2026-05-29 已做却未勾）+ 里程碑表补 2026-05-29 行（IconForge 派生 + B 阶段）。
+- **IconForge（2026-05-29 派生）补登**：dashboard Tools 段 + system-overview 项目表/ASCII 导航 + Hub/根 `CLAUDE.md` 映射 + README 派生树 + memory-index Tools 系（3→6，含补 orphan）。
+- **ADR-020 新增**（decision-log）：IconForge 项目派生；起点声明 + 6 页范围标注 `ADR-001~019`→`ADR-001~020` 级联同步。
+- **stale 交叉引用**：decision-log ADR-016 错引 `ADR-013`→`ADR-007`（SC-FDE 突破）；UWAprojDoc dashboard/memory-index 锚点 2026-05-22→**2026-05-29 C1-C6**（commit ad59ef8）；conventions §10 补 calibration worktree 行 + `V0.4→V0.x`；坏 wikilink `single-root-cause-audit`→`decision-log`；Hub CLAUDE.md `H:\UWAcomm`→`D:\Claude\TechReq\UWAcomm` + 补 3 DocProcess 项目。
+- **memory-index 组求和调和**：既有 off-by-one（UWAcomm_usbl 标 7 实 8）修正；新增 4 条 project（iconforge / archposter / m8_layered_replica / uwaprojdoc_2026-05-29）使组合计 = 43。
+- **MEMORY.md orphan 补索引**：`project_flowgen_m8_layered_replica.md`（磁盘有 / 索引漏）补一行，使 disk 43 = 索引一致。
+
+**AnthropicPPT 跨源不一致 → 已裁决（用户选 a：补入权威源）**：AnthropicPPT 原在磁盘 + memory + Hub dashboard/README，但缺失于 `D:/Claude/CLAUDE.md` 项目清单（projects/ 亦无 nav card）。审计判定为跨源不一致并 surface，用户裁定其为正式 Tools 项目 → 补入 `D:/Claude/CLAUDE.md` Tools 区 + 建 `projects/anthropicppt/README.md` nav card + Hub 各处回填一致（活跃项目 13→**14** / Tools×2→×3 / system-overview 项目表+ASCII / three-tier + project-types 例 / Hub CLAUDE.md 映射）。
+
+> **遗留观察（未动，仅记录）**：`D:/Claude/CLAUDE.md` Worktrees 表仅 3 行，缺 `worktrees/UWAcomm_usbl-calibration`（已据 memory `feedback_uwacomm_usbl_worktree_ownership` 补入 conventions §10）；该根文件补登待用户授权。
+
+`lint_wiki.py` ✓ / `dashboard_snapshot.py` 实时核对全绿 / 页面总数不变 104（纯内容修正）。**本批 + 2026-05-29 B 阶段整批仍未 commit**（git 操作待用户授权，memory `feedback_git_confirmation`）。
+
+---
+
+## [2026-05-29] maintenance | 入会自检 B 阶段：8 dedicated 页填充 + 跨页事实同步 + ADR 扩充
+
+承接 2026-05-24 建的 8 dedicated 页骨架，ultracode 模式下用 workflow 并行填充 + 跨页事实校正。
+
+**触发**：入会自检（memory `feedback_ohmybrain_self_improvement`）。先并行审计 8 页完整度（平均 67%，32 处过期事实），再并行填充。
+
+**8 页填充**（各页 updated → 2026-05-29）：
+- `concepts/anti-patterns` 55% → 新增「首次触发事件」列 + 遍历 20 条 feedback 补全 + 新增协作边界/文档/agent 工具链三类反模式
+- `architecture/decision-log` 45% → 补 12 条历史 ADR（ADR-008~019），全表按日期序重排，**编号 ADR-001~019 连续**
+- `topics/ecosystem-dashboard` 55% → 数据刷新 + 各项目 session/HEAD 锚点 + 落地 `scripts/dashboard_snapshot.py`
+- `topics/harness-resources` 70% → skills 本地 31/注入 90+ 两层 + agents 55 全列 + rules 15 目录
+- `architecture/conventions` 78% → §10 worktree 5 行归属映射表 + §9 私人项目扩到全部 🔒 + 脱敏 promote 5 步
+- `topics/memory-index` 75% → 计数精确(63) + 补 5 条新增 + cross-cutting 主题 3→7
+- `concepts/workflow-glossary` 80% → 补算法领域名词组 + CC 协作术语 + flowgen 8 子 skill
+- `architecture/hub-as-brain` 75% → 状态/roadmap 改「8 页已填充」+ CANON 权威计数表
+
+**跨页事实同步（CANON @2026-05-29）**：feedback 20 / memory 63 / 本地 skills 31(注入 90+) / agents 55 / rules 15 目录 / scripts 22 / wiki 106(104 内容页)。修正多页「60+/90+」过期计数。
+
+**ADR 重编号波及修复**：decision-log 改日期序 ADR-001~019 后，roadmap 里程碑表 4 处错位编号（007→018 / 006→017 / 005→007 / 004→005）+ 5 页「ADR-001~007」范围标注全部对齐为 ADR-001~019。这是并行填充各 agent 互不知情引入的新一批 stale，后置核验抓到。
+
+**新增脚本**：`scripts/dashboard_snapshot.py`（共 22 个 .py），统计 wiki/scripts/skills/agents/rules/memory 规模输出 markdown 表，供 dashboard 手动对齐。
+
+**编排**：3 个后台 workflow（审计 8 agent + 填充 8 agent），主会话代写落盘（subagent Write 受限 + wiki hook 需主会话触发，memory `feedback_subagent_write_permission`）。
+
+`lint_wiki.py` ✓ / 页面总数不变（纯内容填充）。未 commit。
+
+---
+
 ## [2026-05-25] new-project | DigitalTwin1plusN 派生
 
 DocProcess 类私人子项目第 6 个（依次：Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / **DigitalTwin1plusN**），「1+N」水下集群数字孪生体系方案撰写工作区。
@@ -165,6 +219,17 @@ PPT 编制过程暴露 Hub wiki 三仓结构 + 双闭环描述不清，需查 `o
 
 ---
 
+## [2026-05-23] new-project | AnthropicPPT 派生（log 补登）
+
+Tools/AnthropicPPT 从 CC算法开发-v4 PPT 沉淀派生（2026-05-29 自检补登此前缺失的 log entry）。
+
+- 主交付：Anthropic FIELDBOOK 风 PPT 模板（python-pptx，16:9，纸张色 + 铁锈红 严肃中英混排）
+- 含 design_tokens + 8 helpers + 9 layout + skill `anthropic-ppt`（关键词触发 PPT/幻灯片/演讲/slides/pptx）
+- memory `project_anthropic_ppt_init`；对应 [[decision-log]] ADR-017
+- Hub 影响：仅 [[ecosystem-dashboard]] / [[roadmap]] 引用，无新 wiki 内容页
+
+---
+
 ## [2026-05-22] ingest | article：The Founder's Playbook v3 (Anthropic, 2026)
 
 Anthropic 官方 marketing playbook ingest 到 Hub：36 页 / 7 章，"AI-Native 创业"四阶段（Idea/MVP/Launch/Scale）+ 三表面（Chat/Cowork/Code）方法论。**对水声研究者不直接 actionable，但 5 条工程方法论可迁移**（CLAUDE.md as architectural memory / devil's advocate as default / scope doc 写"deliberately does not do" / 三表面分工 / Sean Ellis 40% PMF test）。
@@ -178,6 +243,15 @@ Anthropic 官方 marketing playbook ingest 到 Hub：36 页 / 7 章，"AI-Native
 更新 index.md（页面总数 88 → 89）。
 
 inline 路径执行（用户选）；按默认协议 ≤200 行 + ≤5 cross-ref + 仅追加 wikilink，未新建 concept/entity，未改写已有段落。
+
+---
+
+## [2026-05-16] backfill | UWAcomm + UWAcomm_usbl session（log 补登）
+
+2026-05-29 自检补登 2 个 skip-or-log-only 缺口（项目侧 session 快照，详见 memory，不复述细节）：
+
+- **UWAcomm**：rx_stream_p4 接口移植（claude worktree 4 commit `d74c0a2`+`3d6d0b5` 未 push）+ 双回归 RCA（test 1+2 algo A FAIL / test 5 fd=1Hz 50% 回归 vs `a291af4`）；对应 [[decision-log]] ADR-016
+- **UWAcomm_usbl**：_v2 反向 diff 锁定用户唯一改动 §A.6 → 折中 7 列 + 8 步 build pipeline 生 _v3.docx
 
 ---
 

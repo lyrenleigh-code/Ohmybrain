@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-31
 tags: [roadmap, 演化, 里程碑]
 ---
 
@@ -13,22 +13,23 @@ tags: [roadmap, 演化, 里程碑]
 
 | 日期 | 里程碑 | 类型 |
 |------|--------|------|
-| **2026-05-25** | DigitalTwin1plusN 项目派生（首例采用 template-document） | DocProcess |
-| **2026-05-24** | Hub 大脑哲学澄清 + 8 dedicated 页框架 | 架构 (ADR-007) |
-| **2026-05-23** | AnthropicPPT 项目派生（PPT 模板沉淀） | 工具 (ADR-006) |
-| **2026-05-16** | rx_stream_p4 接口移植 + 双回归 RCA | UWAcomm |
-| **2026-05-13** | DigitalTwinGuide 项目初始化 | DocProcess |
-| **2026-05-12** | claude+codex worktree 175 文件吸收 + memory→Hub log 工具链 | UWAcomm + Hub |
-| **2026-05-09** | PaperReview 项目派生 | DocProcess |
-| **2026-05-08** | CooperativeDetection 项目派生 | DocProcess |
-| **2026-05-06** | OTFS 4-27 漏登补登 + Phase 4 BER FAIL 归档 | UWAcomm |
-| **2026-05-04** | simple UI v2.0 + jakes V2.0 + SC-FDE V4.1 (117× 改善) | UWAcomm |
-| **2026-05-01** | P4 UI 稳定性 + V3.0 解耦 | UWAcomm |
-| **2026-04-28** | UWAprojDoc 项目派生 + P4 UI ↔ codex 对齐 | DocProcess + UWAcomm |
-| **2026-04-26** | SC-FDE Phase 4+5 协议层突破 (14× 改善) | UWAcomm (ADR-005) |
-| **2026-04-25** | UWAcomm_usbl 项目派生 + V5.5/V5.6 HFM calibration | UWAcomm |
-| **2026-04-23** | FlowGen 项目派生 + 单根因审计法形成 | Tools + UWAcomm (ADR-004) |
-| **2026-04-21** | autonomous-new-project-workflow 落地 | Hub |
+| **2026-05-29** | IconForge 项目派生 + 入会自检 B 阶段（8 dedicated 页实质填充 + decision-log ADR 连续重排） | Tools + Hub (ADR-020) |
+| **2026-05-25** | DigitalTwin1plusN 项目派生（首例采用 template-document） | DocProcess (ADR-019) |
+| **2026-05-24** | Hub 大脑哲学澄清 + 8 dedicated 页框架 | 架构 (ADR-018) |
+| **2026-05-23** | AnthropicPPT 项目派生（PPT 模板沉淀） | 工具 (ADR-017) |
+| **2026-05-16** | rx_stream_p4 接口移植 + 双回归 RCA | UWAcomm (ADR-016) |
+| **2026-05-13** | DigitalTwinGuide 项目初始化 | DocProcess (ADR-015) |
+| **2026-05-12** | claude+codex worktree 175 文件吸收 + memory→Hub log 工具链 | UWAcomm + Hub (ADR-014) |
+| **2026-05-09** | PaperReview 项目派生 | DocProcess (ADR-013) |
+| **2026-05-08** | CooperativeDetection 项目派生 | DocProcess (ADR-012) |
+| **2026-05-06** | OTFS 4-27 漏登补登 + Phase 4 BER FAIL 归档 | UWAcomm (ADR-011) |
+| **2026-05-04** | simple UI v2.0 + jakes V2.0 + SC-FDE V4.1 (117× 改善) | UWAcomm (ADR-010) |
+| **2026-05-01** | P4 UI 稳定性 + V3.0 解耦 | UWAcomm (ADR-009) |
+| **2026-04-28** | UWAprojDoc 项目派生 + P4 UI ↔ codex 对齐 | DocProcess + UWAcomm (ADR-008) |
+| **2026-04-26** | SC-FDE Phase 4+5 协议层突破 (14× 改善) | UWAcomm (ADR-007) |
+| **2026-04-25** | UWAcomm_usbl 项目派生 + V5.5/V5.6 HFM calibration | UWAcomm (ADR-006) |
+| **2026-04-23** | FlowGen 项目派生 + 单根因审计法形成 | Tools + UWAcomm (ADR-005) |
+| **2026-04-21** | autonomous-new-project-workflow 落地 | Hub (ADR-004) |
 | **2026-04-17** | 架构页重写 (三仓架构定型) | Hub (ADR-003) |
 | **2026-04-14** | wiki-ingester agent 引入 | Hub (ADR-002) |
 | **2026-04-12** | Ohmybrain 体系初版（单仓原型） | Hub (ADR-001) |
@@ -37,15 +38,17 @@ tags: [roadmap, 演化, 里程碑]
 
 ### P0 - 立即（下 2 周）
 
-**Hub 8 dedicated 页详细填充**（本次 2026-05-24 只建骨架）：
-- [ ] [[../concepts/workflow-glossary]] 补齐所有术语
-- [ ] [[../concepts/anti-patterns]] 把每个反模式标"首次触发事件"
-- [ ] [[../topics/harness-resources]] 完整 90+ skill 分类
-- [ ] [[../topics/memory-index]] 加 cross-cutting topic 索引
-- [ ] [[decision-log]] 补齐历史 ADR（追溯到 2026-04 之前）
-- [ ] [[conventions]] 补 Worktree / 私人项目细化约定
-- [ ] [[../topics/ecosystem-dashboard]] 实现 `scripts/dashboard_snapshot.py` 自动同步
-- [ ] [[hub-as-brain]] 维护本页持续更新
+**Hub 8 dedicated 页详细填充** ✅ 已于 2026-05-29 自检批次全部实质填充完成（2026-05-24 建骨架 → 2026-05-29 实填 → 2026-05-31 自检校正残留 stale）：
+- [x] [[../concepts/workflow-glossary]] 补齐所有术语
+- [x] [[../concepts/anti-patterns]] 把每个反模式标"首次触发事件"
+- [x] [[../topics/harness-resources]] 完整 skill 分类（本地 31 / 注入 90+）
+- [x] [[../topics/memory-index]] 加 cross-cutting topic 索引
+- [x] [[decision-log]] 补齐历史 ADR（ADR-001~020 连续，追溯到 2026-04-12）
+- [x] [[conventions]] 补 Worktree / 私人项目细化约定
+- [x] [[../topics/ecosystem-dashboard]] 实现 `scripts/dashboard_snapshot.py` 自动同步
+- [x] [[hub-as-brain]] 维护本页持续更新
+
+> P0 全部完成。下一阶段焦点转 P1（见下）。本批 = ✅ 8 页实质填充（2026-05-29）+ 2026-05-31 入会自检发现并修正 **50 处** 2026-05-29 并行填充残留 stale（计数 / 日期 / ADR 引用 / IconForge 缺失 / 已做未勾选），详见 [[../log]] [2026-05-31] 段。
 
 ### P1 - 短期（下 1-2 月）
 

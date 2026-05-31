@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-29
 tags: [ADR, 决策, log]
 ---
 
@@ -11,9 +11,61 @@ tags: [ADR, 决策, log]
 
 最新在上。
 
+> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-020 连续。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+
 ---
 
-## ADR-007 · 2026-05-24 · Hub 大脑哲学澄清
+## ADR-020 · 2026-05-29 · IconForge 项目派生
+
+### 触发
+
+PPT / 方案文档高频需要图标；自然语言→矢量图标（SVG）的 LLM 直出能力缺口。同构 `flowgen-vsdx` skill 的"LLM 即生成器"范式可复用到图标域。
+
+### 决策
+
+派生 `D:\Claude\Tools\IconForge`（私人，tool 类，从 `ohmybrain-core/template-tool/` 派生）。评估 `samzong/ai-icon-generator` 后判定其位图 SaaS 路线不作骨架（可借风格 / ICNS / prompt），LLM 直出矢量自研。派生后即**暂停**，恢复时下一步 M1 spec。
+
+### 实现
+
+- HEAD=a6b361a，66 文件未实装（手动模式）
+- 同步：dashboard Tools 段 + memory-index Tools 系 + roadmap 里程碑 + Hub / 根 `CLAUDE.md` 项目映射
+- 同日（2026-05-29）并行：入会自检 B 阶段 8 dedicated 页实质填充 + 本页 ADR 重排为连续编号（见 [[roadmap]] 2026-05-29 行）
+
+### 后果
+
+- ✓ Tools 系第 3 个工具项目（继 FlowGen 2026-04-23 / AnthropicPPT 2026-05-23 之后）
+- ✓ template-tool 模板第二次派生验证
+- ⚠ 派生后暂停，未实装；恢复节奏待定
+
+---
+
+## ADR-019 · 2026-05-25 · DigitalTwin1plusN 项目派生
+
+### 触发
+
+「1+N」水下集群数字孪生体系（1 艘百吨级大 U + 24 艘小 U）需独立工作区，且 DigitalTwinGuide 已沉淀方法论可作上游参考。
+
+### 决策
+
+派生 `D:\Claude\DocProcess\DigitalTwin1plusN`（私人项目），**首例采用 template-document 模板**派生；先做概念决议再落 spec，不直接起草正文。
+
+### 实现
+
+- ingest + **P1-P11 概念决议**（P11 暂缓）+ 3 份 spec
+- 体系定义：1 大 U（LDUUV 母舰 + 5 职能）+ 8 察打 I（明哨/主动）+ 16 察打 II（暗哨/被动）+ 8 小集群
+- 核心战术 **"I 看 II 打" 三段切换**；9 类智能体 × 三层
+- 24 个月 4 级试验 + 试验主导 + 缩减海试；自研全栈 + IP 聚焦集群战术
+- HEAD=234eb11（7 commit）
+
+### 后果
+
+- ✓ template-document 模板首次实战验证
+- ✓ 概念层（P1-P11）先收敛，降低后续正文返工
+- ⚠ P11 暂缓项与后续章节耦合度待观察
+
+---
+
+## ADR-018 · 2026-05-24 · Hub 大脑哲学澄清
 
 ### 触发
 
@@ -42,9 +94,11 @@ V4 PPT 编制过程发现 Hub wiki 描述与 ohmybrain-core/workflows/ 不一致
 - ✓ 不必再回 ohmybrain-core 翻 template/
 - ⚠ 维护成本：需要持续填充 dedicated 页（roadmap）
 
+> 注：本条与 ADR-006/ADR-007（旧编号下的同期事件）为同一批 2026-05-24 工作，本次重排后哲学澄清归此条。
+
 ---
 
-## ADR-006 · 2026-05-23 · AnthropicPPT 项目派生
+## ADR-017 · 2026-05-23 · AnthropicPPT 项目派生
 
 ### 触发
 
@@ -68,7 +122,221 @@ CC算法开发-v4.pptx 编制过程沉淀 FIELDBOOK 风格 + 9 layout + design t
 
 ---
 
-## ADR-005 · 2026-04-26 · SC-FDE Phase 4+5 协议层突破
+## ADR-016 · 2026-05-16 · rx_stream_p4 接口移植 + 双回归 RCA
+
+### 触发
+
+UWAcomm-claude worktree 完成 rx_stream_p4 接口移植后，需验证移植未破坏既有体制；多路回归暴露 algo A FAIL 与 fd=1Hz 50% 回归。
+
+### 决策
+
+不立即追改，先把回归结果分类为「接口移植本身」与「上游 algo bug」两类，分别挂 RCA TODO；对 simple UI 侧 algo A FAIL 用加 dither 临时绕过，保留算法层根因待查。
+
+### 实现
+
+- claude worktree 4 commit（d74c0a2 + 3d6d0b5 rx_stream_p4 接口移植）**未 push**
+- 落 spec `2026-05-16-rx-stream-p4-interface-restoration.md`
+- 回归结果：test 1+2 algo A FAIL（V4.1 + 零噪 + LS fallback trigger 失效三方耦合）/ test 4 ✓ 24/24 + 1 改善 / test 5 fd=1Hz 50% 回归（vs a291af4 baseline 3.37%，14× 退化，algo B 待 RCA）
+
+### 后果
+
+- ✓ 接口移植与算法 bug 分离，避免误把回归归咎于移植
+- ⚠ fd=1Hz 50% 回归 = ADR-007（SC-FDE Phase 4+5 突破，旧编号 ADR-005）的 14× 改善被部分抵消，algo B RCA 待观察
+- ⚠ algo A 三方耦合根因待观察
+
+---
+
+## ADR-015 · 2026-05-13 · DigitalTwinGuide 项目派生
+
+### 触发
+
+数字孪生项目实施指南（方法论文档）需独立工作区，首份种子为 20 吨级 AUV 课题指南。
+
+### 决策
+
+派生 `D:\Claude\DocProcess\DigitalTwinGuide`（私人项目），沉淀一套可复用的 4 步 pandoc pipeline 作为方法论文档的固定产线。
+
+### 实现
+
+- 首版数字孪生宋体版 docx 完成（基于 AUV 课题指南种子 + 多智能体样板 reference，含五~八章 + 经费表）
+- 4 步 pandoc pipeline（normalize / pandoc / three_line / clean_indent）固化在 .tmp/
+- 63 init + docx 仍 stage 未 commit
+
+### 后果
+
+- ✓ pandoc 4 步产线可复用于后续方法论文档
+- ⚠ docx 与 init 提交挂起，commit 状态待观察
+
+---
+
+## ADR-014 · 2026-05-12 · claude+codex worktree 175 文件吸收
+
+### 触发
+
+UWAcomm 双轨开发（claude / codex worktree）出现分叉；codex 侧有 175 个 claude 缺失的独有文件，需收敛但不能破坏 claude 既有逻辑。
+
+### 决策
+
+claude worktree **吸收 codex 独有 175 文件**，关键算法（modem_decode_scfde V4.1 + LS fallback）走**手动合并**而非整体覆盖；对冲突项逐项做 C 级决策（保留较优实现）。
+
+### 实现
+
+- modem_decode_scfde V4.1 + LS fallback 手动合并（51 行净增 / `info.channel_estimator` 新字段 / claude 高 SNR clamp 与 codex GAMP-bad fallback 正交共存）
+- spec 状态分裂修正（archive 追加 codex 2026-04-26 A2 段 + 删 2 active 副本）
+- C 级决策：rx_stream_p4 保留 claude 350 行（弃 codex 731 superset）/ simple UI 双轨保留 / spec 取 claude archive
+- HEAD=1128350 本地超前 origin 2 commit **未 push**，master 1e545de 不动
+
+### 后果
+
+- ✓ 双轨收敛为单一可用基线，正交逻辑共存不互斥
+- ⚠ 4 项回归测试挂高优先 TODO 未跑（直接催生 ADR-016 的回归验证）
+- ⚠ 本地超前 origin 未 push，同步状态待观察
+
+---
+
+## ADR-013 · 2026-05-09 · PaperReview 项目派生
+
+### 触发
+
+学位论文外审（中文论文中文评审意见）需独立工作区，与算法/方案项目隔离。
+
+### 决策
+
+派生 `D:\Claude\DocProcess\PaperReview`（私人子项目，手动模式），专做外审；项目名中"英文"指 PaperReview 本身，非材料语言（材料均为中文）。
+
+### 实现
+
+- HEAD b3568f6，手动模式
+- 当前在评水声专硕一份
+
+### 后果
+
+- ✓ 外审工作与其它项目彻底隔离
+- 后续多份外审复用同一工作区（待观察）
+
+---
+
+## ADR-012 · 2026-05-08 · CooperativeDetection 项目派生
+
+### 触发
+
+水下分布式协同探测方案（4 专题 12 课题）需独立工作区。
+
+### 决策
+
+派生 `D:\Claude\DocProcess\CooperativeDetection`（私人项目），承载 4 专题 12 课题方案文档。
+
+### 实现
+
+- 2026-05-08 从 DocProcess 派生
+- 4 专题 12 课题方案 + emf 矢量图（per roadmap P1）
+
+### 后果
+
+- ✓ 协同探测方案独立成仓
+- ⚠ 方案文档 + emf 矢量图工作量待观察（roadmap P1 列为待办）
+
+---
+
+## ADR-011 · 2026-05-06 · OTFS 4-27 漏登补登 + Phase 4 BER FAIL 归档
+
+### 触发
+
+OTFS 在 2026-04-27 的移植工作（rx_otfs / PAPR / 扩散 pilot）漏登；同时 Phase 4 hann 窗实验全部退化，需要给出"维持现状"的明确归档结论而非继续试。
+
+### 决策
+
+- 补登 OTFS 4-27 工作到 memory/log
+- Phase 4 BER FAIL **归档为负结果**：hann × 6 trial 全退化，**维持 rect 默认**，不再继续 hann 路线
+
+### 实现
+
+- OTFS 4-27 漏登补登（rx_otfs / PAPR / 扩散 pilot）
+- Phase 4 BER FAIL 归档（hann × 6 trial 全退化 +1.9~+14.8 pp，loopback 2.78e+01 vs rect 1.26e-15）
+- 2 commit（e7f376c + 88fb31b）已 push origin + gitlab
+
+### 后果
+
+- ✓ 负结果显式归档，避免重复试 hann
+- ✓ rect 作为默认窗确定
+- ⚠ OTFS jakes 5Hz 33% limitation 仍待后续 RCA（待观察）
+
+---
+
+## ADR-010 · 2026-05-04 · SC-FDE V4.1 高 SNR 修复（117× 改善）
+
+### 触发
+
+SC-FDE 在高 SNR（pass / SNR=80）出现 ~50% 灾难率，与"高 SNR 应更好"直觉相悖。
+
+### 决策
+
+定位为高 SNR 下均衡器噪声方差估计与 pre-turbo 触发的耦合问题，采用 `nv_eq` clamp + SNR>25dB 时 disable `trigger_pretturbo` 的双重修复。
+
+### 实现
+
+- SC-FDE V4.1 高 SNR 修复（pass 50.23% → **0.43%**（117×）/ SNR=80 48.71% → 0.53%（94×）；nv_eq clamp + trigger_pretturbo SNR>25dB disable）
+- 同期：simple UI v2.0（tx/rx_simple_ui classdef + 4 模式 + 流式 chunk）+ jakes V2.0 passband-native（Hilbert + SoS）+ OTFS K×2 fix
+- 24/24 矩阵全 PASS + 详细测试报告
+- HEAD 7cd0ed7 已 push origin + gitlab
+
+### 后果
+
+- ✓ 高 SNR 灾难率消除（117× / 94×）
+- ✓ 24/24 矩阵全 PASS
+- ⚠ pre-turbo 在高 SNR 被 disable 是 trade-off，对低 SNR turbo 增益无影响但耦合根因仍待长期观察
+
+---
+
+## ADR-009 · 2026-05-01 · P4 UI 稳定性 + V3.0 解耦
+
+### 触发
+
+P4 UI 链路 BER 异常（51%）；blk_cp 与 blk_fft 强耦合导致参数难独立调整。
+
+### 决策
+
+- 4 处 fix 修复 P4 UI BER（51% → 0%）
+- V3.0 **解耦 blk_cp / blk_fft**，并引入 V4.0 预设降低配置复杂度
+
+### 实现
+
+- 4 fix（51% → 0%）
+- V3.0 解耦 blk_cp / blk_fft
+- V4.0 预设（K=31 直接链路 0.68%）
+- HEAD 86328ba
+
+### 后果
+
+- ✓ P4 UI BER 异常修复
+- ✓ blk_cp / blk_fft 可独立配置
+- ⚠ UI 实测仍出现 50%，列为 follow-up（→ 2026-05-03 H5 jakes 假 α RCA 命中，待观察延续）
+
+---
+
+## ADR-008 · 2026-04-28 · UWAprojDoc 项目派生
+
+### 触发
+
+水声专项方案技术文档撰写需独立工作区；同期 P4 UI 需与 codex worktree 对齐。
+
+### 决策
+
+派生 `D:\Claude\DocProcess\UWAprojDoc`（私人项目），承载技术文档；P4 UI 侧采用"先 diff codex 再改"的对齐策略。
+
+### 实现
+
+- UWAprojDoc 派生 + 完整 v0 docx 落地（4.8 MB，8 分系统 33 模块独立小节，60 张图含 33 模块流程图 5 模式竖向）；HEAD=48f4324
+- UWAcomm 侧：V2.0 透传 + Jakes 接通（gen_uwa_channel）+ RX α 符号 V6→V7 + α refinement 移植；4 modified + 6 untracked 未 commit；HEAD 28a4bc6 未变
+
+### 后果
+
+- ✓ 技术文档独立成仓，v0 docx 完整落地
+- ⚠ UWAcomm 侧改动未 commit、待用户实测 BER（待观察）
+
+---
+
+## ADR-007 · 2026-04-26 · SC-FDE Phase 4+5 协议层突破
 
 ### 触发
 
@@ -85,11 +353,33 @@ UWAcomm `modem_decode_scfde.m` V4.1+LS fallback，HEAD=47770b0。
 ### 后果
 
 - ✓ fd=1Hz 47% → 3.37%（14× 改善）
-- ⚠ 但 2026-05-16 回归测试 fd=1Hz 50% 再次出现，algo B 待 RCA
+- ⚠ 但 2026-05-16 回归测试 fd=1Hz 50% 再次出现，algo B 待 RCA（见 ADR-016）
 
 ---
 
-## ADR-004 · 2026-04-23 · 单根因审计法形成
+## ADR-006 · 2026-04-25 · UWAcomm_usbl 项目派生
+
+### 触发
+
+UWAcomm + USBL 联合仿真（整机原型样机 / 总集成枢纽）需独立工作区，且属内网 Internal。
+
+### 决策
+
+派生 `D:\Claude\TechReq\UWAcomm_usbl`（内网 Internal，混合模式），从 ohmybrain-core SOP 派生；同期 UWAcomm 主线推进 HFM-signature calibration。
+
+### 实现
+
+- TechReq/UWAcomm_usbl 完成 SOP 派生（混合模式，未实装）
+- UWAcomm 侧：V5.5 fd=1Hz iter 反向收敛 R5 + V5.6 HFM-signature calibration 4/5 PASS（SNR=20 接近 oracle 0.92% / 6.7%）；spec 保留 active；HEAD c2dede1
+
+### 后果
+
+- ✓ 联合仿真项目独立成仓
+- ⚠ 项目未实装；UWAcomm_usbl 后续范围多次演进（3 件事并行 / 硬件路径事实修订），方向待观察
+
+---
+
+## ADR-005 · 2026-04-23 · 单根因审计法形成
 
 ### 触发
 
@@ -101,12 +391,34 @@ D9/D10 toggle + 跨 4 runner audit 形成单一根因定位法。
 
 ### 实现
 
-写入 memory `feedback_single_root_cause_audit`，限 MATLAB 算法 RCA 不外推。
+写入 memory `feedback_single_root_cause_audit`，限 MATLAB 算法 RCA 不外推。同期 Tools/FlowGen 完成 SOP 派生（Mermaid 流程图生成工具，未实装）。
 
 ### 后果
 
 - ✓ 0% 灾难率（单一函数 fix 解决）
 - ✓ 跨多次 RCA 复用（SC-TDE V5.4 / SC-FDE V4.1）
+
+---
+
+## ADR-004 · 2026-04-21 · autonomous-new-project-workflow 落地
+
+### 触发
+
+新项目派生缺乏统一 SOP，每次手工搭骨架易遗漏 wiki/raw/scripts/workflows 结构。
+
+### 决策
+
+把"新项目派生"固化为 autonomous workflow，配合 ohmybrain-core/template/ 母仓实现一键派生。
+
+### 实现
+
+- 落地 [[autonomous-new-project-workflow]]（wiki/explorations/）
+- dry-run 产物归档（usbl-redo P2 / uwanet-redo P1，per Archive/worktrees-redo）
+
+### 后果
+
+- ✓ 后续 UWAcomm_usbl / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / DigitalTwin1plusN 均沿此 SOP 派生
+- ⚠ dry-run 阶段产物为实验性，正式派生流程在后续项目中逐步收敛
 
 ---
 
@@ -128,7 +440,7 @@ D9/D10 toggle + 跨 4 runner audit 形成单一根因定位法。
 
 - ✓ 职责清晰
 - ⚠ 模板下沉需手动同步（per 2026-04-15 log）
-- 后续 → ADR-007 哲学澄清
+- 后续 → ADR-018 哲学澄清
 
 ---
 
@@ -154,6 +466,8 @@ D9/D10 toggle + 跨 4 runner audit 形成单一根因定位法。
 ---
 
 ## ADR-001 · 2026-04-12 · Ohmybrain 体系初版
+
+> **体系起点**：本条为 Ohmybrain 体系的起点，**此前无历史 ADR**。
 
 ### 决策
 
@@ -181,11 +495,11 @@ D9/D10 toggle + 跨 4 runner audit 形成单一根因定位法。
 （具体改了什么，新建什么文件 / 接口 / 流程）
 
 ### 后果
-（积极 ✓ 和潜在 ⚠ 两面）
+（积极 ✓ 和潜在 ⚠ 两面；不确定的写"待观察"）
 ```
 
 ## 相关页面
 
 - [[hub-as-brain]] — 大脑功能定位
 - [[three-tier-architecture]] — 三仓哲学
-- [[../topics/roadmap]] — 决策 → 未来 roadmap
+- [[roadmap]] — 决策 → 未来 roadmap
