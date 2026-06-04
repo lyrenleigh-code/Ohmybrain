@@ -4,6 +4,19 @@
 
 ---
 
+## [2026-06-01] maintenance | 入会自检 P0 pass — 无改动
+
+进入 Hub 起手自检（memory `feedback_ohmybrain_self_improvement`），用户选轻量收尾。
+
+**P0 核对**：
+- `log.md` 最新 = 2026-05-31 C 阶段（修正 50 处残留 stale + ADR-020 + AnthropicPPT 入册），**已 commit `e23f7de`，工作区干净**——上条 entry 末尾"本批仍未 commit"为当时快照，后续已授权提交（历史 entry 不改）。
+- `MEMORY.md` 末尾与 wiki 同步（flowgen-archposter 2026-05-30 / m8-layered-replica 2026-05-29），无日期缺口。
+- `roadmap.md` P0「8 dedicated 页填充」8 项全 ✅，焦点已转 P1。
+
+距上次自检 1 天，无残留需修。本次仅记此 entry 保留连续性，无其他改动。
+
+---
+
 ## [2026-05-31] maintenance | 入会自检 C 阶段：workflow 审计修正 50 处 2026-05-29 残留 stale + ADR-020
 
 承接 2026-05-29 B 阶段（8 dedicated 页并行填充，其 log 自承"并行各 agent 互不知情引入新一批 stale"）。ultracode 模式下用 workflow 系统性审计 + 主会话代写修复。

@@ -41,6 +41,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | UWAnet | github.com/lyrenleigh-code/UWAnet | `D:\Claude\TechReq\UWAnet` |
 | USBL | github.com/lyrenleigh-code/USBL | `D:\Claude\TechReq\USBL` |
 | UWAcomm_usbl 🔒 | 私人，不公开 | `D:\Claude\TechReq\UWAcomm_usbl` |
+| SonarSim 🔒 | 私人，不公开 | `D:\Claude\TechReq\SonarSim` |
 | ohmybrain-core | github.com/lyrenleigh-code/ohmybrain-core | `D:\Claude\ohmybrain-core` |
 | Pricing 🔒 | 私人，不公开 | `D:\Claude\DocProcess\Pricing` |
 | UWAprojDoc 🔒 | 私人，不公开 | `D:\Claude\DocProcess\UWAprojDoc` |
@@ -48,6 +49,8 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | PaperReview 🔒 | 私人，不公开 | `D:\Claude\DocProcess\PaperReview` |
 | DigitalTwinGuide 🔒 | 私人，不公开 | `D:\Claude\DocProcess\DigitalTwinGuide` |
 | DigitalTwin1plusN 🔒 | 私人，不公开 | `D:\Claude\DocProcess\DigitalTwin1plusN` |
+| VisioForge 🔒 | 私人，不公开 | `D:\Claude\DocProcess\VisioForge` |
+| CooperativeASW 🔒 | 私人，不公开 | `D:\Claude\DocProcess\CooperativeASW` |
 | FlowGen | 私人，不公开 | `D:\Claude\Tools\FlowGen` |
 | IconForge | 私人，不公开 | `D:\Claude\Tools\IconForge` |
 | AnthropicPPT | 私人，不公开 | `D:\Claude\Tools\AnthropicPPT` |
