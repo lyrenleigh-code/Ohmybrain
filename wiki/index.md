@@ -54,7 +54,7 @@
 
 ## Agents（Agent 协作页）
 
-- [claude-codex-collaboration](agents/claude-codex-collaboration.md) — Claude Code + Codex 分工、串行交接、并行探索、红队 review、worktree 边界（2026-06-09 新建）
+- [claude-codex-collaboration](agents/claude-codex-collaboration.md) — Claude Code + Codex 分工、串行交接、并行探索、红队 review、worktree 边界 + 同仓并发写 / commit 边界（2026-06-09 新建，当日补并发写约束）
 
 ## Workflows（流程页）
 

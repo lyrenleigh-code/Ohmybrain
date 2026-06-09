@@ -2,7 +2,7 @@
 type: agent
 created: 2026-06-09
 updated: 2026-06-09
-tags: [agent协作, claude-codex, worktree, 审查契约, 完成契约]
+tags: [agent协作, claude-codex, worktree, 并发写, commit边界, 审查契约, 完成契约]
 ---
 
 # Claude + Codex 协作协议
@@ -69,6 +69,25 @@ Agent B 审查正确性、缺失测试、隐藏假设和路径风险。
 - 除非任务明确要求，不修改另一个 agent 的 worktree。
 - 合并竞争版本时必须说明采用哪一版，不做无来源的复制粘贴。
 - 交接单必须记录下一步以哪个 worktree 为权威来源。
+
+## 同仓并发写（无法 worktree 隔离时）
+
+Worktree 规则解决「不同分支隔离探索」。但有些仓**无法 worktree 隔离**——典型是 **Ohmybrain Hub**（单一共享知识仓，两个 agent 都要往里写、且都碰 `index.md` / `log.md` / `conventions.md` 这类基础设施文件），以及任何被指定为单一事实源的项目主仓。这类仓的并发写须遵守：
+
+- **串行写优先**：同一时间只有一个 agent 主动批量写该仓。动手前先 `git status` 看是否有他方在飞改动；有则先协调，不并行硬写。
+- **共享基础设施文件**：
+  - `wiki/log.md` **append-only**——各 agent 在顶部追加自己的条目，不改写他人条目（天然可并存）。
+  - `wiki/index.md` 的计数 / 描述是**共享冲突区**——谁改了计数，谁负责最后跑 `lint_wiki.py` / `dashboard_snapshot.py` 核对全站一致；后写者先读最新再改，不覆盖他人描述行。
+- **写前重读**：编辑共享文件（`index.md` / `log.md` / `conventions.md` 等）前重读当前内容，防「modified since read」覆盖。
+
+## commit 边界
+
+> 来源教训（2026-06-09）：一次 promote 与一次并行「文档结构口径同步」在同一工作树混到 18→28 文件，`git add -u` 一把抓到对方仍在写的半成品；且 `index.md` / `log.md` 共享，无法只挑单方的行提交。
+
+- **commit 前必 `git status`**：确认暂存范围只含本任务改动。工作树若含他方未提交 / 仍在增长的改动，**停下与用户确认 commit 范围**，不盲 `git add -A` / `-u` 把他方半成品一并提交。
+- **不在移动目标上 commit**：若文件数仍在变化（他方 pass 仍在写），等其稳定再提交。
+- **共享仓 commit / push 须用户明确授权**（重申 [[../architecture/conventions]] §5 破坏性操作）；push 远程逐次授权，私有项目禁 push 公开远程（§9 红线）。
+- 合并 / 连带提交他方改动前，在 commit message 或交接单注明哪些改动属哪一方。
 
 ## 审查契约
 

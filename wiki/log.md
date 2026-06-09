@@ -4,6 +4,20 @@
 
 ---
 
+## [2026-06-09] architecture | 协作框架补「同仓并发写 + commit 边界」约束
+
+承接同日 promote 会话中的真实碰撞（promote 与并行「文档结构口径同步」pass 在同一工作树混到 18→28 文件、`git add -u` 抓到对方半成品、`index.md`/`log.md` 共享无法只挑单方行提交），用户审后给 ADR-024 协作协议层补**同仓并发写**约束（仅此一项，其余三候选——Codex 绑定 §9 / 结论边界绑定 / 声明式锁——本次不加，避免过度约束）。
+
+**根因认知**：原框架假设「并行 = 不同 worktree 隔离」，但 **Ohmybrain Hub 是单一共享仓**，两个 agent 都要写、且都碰 `index.md`/`log.md`/`conventions.md` 基础设施文件，**无法 worktree 隔离**——这是框架的结构性盲区。
+
+**新增约束**（写入根 `D:/Claude/AGENTS.md` 短强版 + [[../agents/claude-codex-collaboration]] 展开两节）：
+- **同仓并发写**：单一共享仓同一时间只一个 agent 主动批量写；动手前 `git status` 查在飞改动；`log.md` append-only 各加各的、`index.md` 计数谁改谁核对；编辑共享文件前重读防覆盖。
+- **commit 边界**：commit 前必 `git status` 核对暂存范围；工作树含他方未提交/在飞改动则停下与用户确认范围，禁止盲 `git add -A`/`-u` 连带提交半成品；不在「文件数仍变化的移动目标」上 commit；共享仓 commit/push 须用户授权（重申 [[../architecture/conventions]] §5），私有项目禁 push 公开远程（§9）。
+
+**核验**：`lint_wiki.py` ✓ / 页面总数不变 107（仅 `claude-codex-collaboration` 内容增补 + `index` 描述同步）。AGENTS.md 在 `D:/Claude` 根（非 git 仓），随工作区编辑不入 Ohmybrain commit。
+
+---
+
 ## [2026-06-09] promote | 紧凑阵 DOA 实测经验脱敏回流（usbl-positioning + mimo-and-array-processing）
 
 `/promote-answer` 跨项目回流（入会自检 P1「找跨项目可 promote 的结论」）。把某紧凑基阵受控水域实测 DOA 调试的可复用结论，经 [[architecture/conventions]] §9 脱敏后写入两个**既有** concept 页，**页面总数不变 107**（仅内容增补 + `updated`→2026-06-09）。
