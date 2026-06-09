@@ -2,7 +2,7 @@
 type: agent
 created: 2026-06-09
 updated: 2026-06-09
-tags: [agent协作, claude-codex, worktree, 并发写, commit边界, 审查契约, 完成契约]
+tags: [agent协作, claude-codex, worktree, 并发写, commit边界, 任务分配, 收口职责, 审查契约, 完成契约]
 ---
 
 # Claude + Codex 协作协议
@@ -29,7 +29,15 @@ wiki/           -> 长期知识
 | Claude Code | 需求澄清、架构设计、研究综合、长文档、初版 spec/plan |
 | Codex | 实现、重构、测试、本地验证、代码审查 |
 
-小任务中任一 agent 都可以承担另一方的工作；大任务应保持分工显式。
+任务按复杂度 / 风险分配主导权：
+
+| 复杂度 | 主导 / 流程 |
+|---|---|
+| **复杂架构 / 长期项目 / 协议设计** | **Claude Code 主导**全程 |
+| **中等复杂** | Claude Code 先写 spec/plan → Codex 按计划实施 → **Claude Code 复核并决定是否回流 Hub** |
+| **明确、可验收、低风险小项目** | **Codex 可独立执行**项目本体（spec 清晰、验收标准明确、不触架构 / 不触 Hub 登记时） |
+
+小任务中任一 agent 可临时承担另一方的单点工作；但项目级主导权与收口职责按上表与 § 收口职责 划分，不因方便而模糊。
 
 ## 协作模式
 
@@ -74,7 +82,7 @@ Agent B 审查正确性、缺失测试、隐藏假设和路径风险。
 
 Worktree 规则解决「不同分支隔离探索」。但有些仓**无法 worktree 隔离**——典型是 **Ohmybrain Hub**（单一共享知识仓，两个 agent 都要往里写、且都碰 `index.md` / `log.md` / `conventions.md` 这类基础设施文件），以及任何被指定为单一事实源的项目主仓。这类仓的并发写须遵守：
 
-- **串行写优先**：同一时间只有一个 agent 主动批量写该仓。动手前先 `git status` 看是否有他方在飞改动；有则先协调，不并行硬写。
+- **串行写、单一写权限持有者**：同一共享仓在同一时间只有一个 Agent **持有写权限**，另一方只读 / 审查 / 等待；写权限通过 `handoff/active/` 交接单显式转移，不靠默契。动手前先 `git status` 看是否有他方在飞改动；有则先协调，不并行硬写。
 - **共享基础设施文件**：
   - `wiki/log.md` **append-only**——各 agent 在顶部追加自己的条目，不改写他人条目（天然可并存）。
   - `wiki/index.md` 的计数 / 描述是**共享冲突区**——谁改了计数，谁负责最后跑 `lint_wiki.py` / `dashboard_snapshot.py` 核对全站一致；后写者先读最新再改，不覆盖他人描述行。
@@ -111,6 +119,17 @@ agent 声称任务完成前，应检查：
 - 本地测试或验证命令
 - 如果修改了 wiki，确认 `wiki/index.md` 和 `wiki/log.md` 已同步
 - 如果不再需要另一方继续，归档 handoff
+
+## 收口职责（Claude Code 专属）
+
+Codex 可以完成项目本体（实现 / 测试 / 本地验证 / 项目内文档）。但以下四类**收口动作由 Claude Code 统一完成**，不由 Codex 代行：
+
+- **Hub 登记**：项目状态 / 派生 / 计数登记进 Hub（`CLAUDE.md` 映射、[[../topics/ecosystem-dashboard]]、[[../architecture/decision-log]]、[[../architecture/roadmap]]、[[../topics/memory-index]]、`projects/` 导航卡）。
+- **跨项目知识沉淀**：`/promote-answer` 回流 Hub wiki、跨项目结论提炼、私人项目脱敏（[[../architecture/conventions]] §9）。
+- **架构影响判断**：判断某改动是否触及三仓架构 / 是否需新 ADR / 是否需更新协议层。
+- **最终归档**：spec / plan / handoff 的 archive 决策，及「是否回流 Hub」的最终拍板。
+
+> Codex 执行中若产生值得回流的结论或触及架构的改动，应在 `handoff/active/` 或项目 log 标记，交 Claude Code 收口，而非自行写入 Hub。
 
 ## 相关页面
 
