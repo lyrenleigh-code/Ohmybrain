@@ -1,8 +1,8 @@
 ---
 type: topic
 created: 2026-05-24
-updated: 2026-05-31
-last-sync: 2026-05-31
+updated: 2026-06-09
+last-sync: 2026-06-09
 tags: [memory, 索引, auto-memory]
 ---
 
@@ -12,7 +12,9 @@ tags: [memory, 索引, auto-memory]
 
 > 不复制 memory 完整内容（避免双写），本页只索引 + 简短描述 + link 到 memory 文件。
 
-> **计数口径（@2026-05-31）**：auto-memory 共 **67 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 68 个文件）。分布：user **1** / feedback **20** / project **43** / reference **3**。下方各类型标题计数与此严格一致。
+> **计数口径（@2026-06-09）**：auto-memory 共 **77 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 78 个 `.md`）。分布：user **1** / feedback **21** / project **52** / reference **3**。下方各类型标题计数与此严格一致。
+>
+> 注：`MEMORY.md` 索引行中「flowgen-vsdx M5 升级」一条指向 `~/.claude/skills/flowgen-vsdx/SKILL.md`（skill 文件，**非 memory 条目**），不计入 77。
 
 ## 按类型分类
 
@@ -20,7 +22,7 @@ tags: [memory, 索引, auto-memory]
 
 - [user_profile](../../../../../zazn/.claude/projects/D--Claude/memory/user_profile.md) — UWA 研究者 / MATLAB 主力 / Windows+bash / 中文 / 专家主导 / 并行优先
 
-### feedback（行为指导 · 20 条）
+### feedback（行为指导 · 21 条）
 
 按主题分组：
 
@@ -40,10 +42,11 @@ tags: [memory, 索引, auto-memory]
 **UWAcomm_usbl worktree（1）**
 - `feedback_uwacomm_usbl_worktree_ownership` — 双 worktree main/design
 
-**算法 RCA（3）**
+**算法 RCA / MATLAB 出图（4）**
 - `feedback_single_root_cause_audit` — D9/D10 toggle + 跨 runner audit（限 MATLAB 算法 RCA）
 - `feedback_matlab_inf_bug` — MATLAB inf 字面量触发 struct 转换错误，用 0 替代
 - `feedback_comp_resample_carrier_phase` — passband 时间伸缩等效反载波相位 / baseband 需手动补
+- `feedback_matlab_interactive_figs` — 出图用 `matlab -r` 桌面会话弹交互窗（非 -batch 存 PNG）；绘图写成 poolData/ 可复用函数（view_td/view_analysis）（2026-06-05 新增）
 
 **Claude Code Harness（2）**
 - `feedback_project_local_agent_not_invocable` — 项目 .claude/agents/*.md 不在 subagent_type 列表
@@ -56,7 +59,7 @@ tags: [memory, 索引, auto-memory]
 - `feedback_doc_visual_diversification` — 流程图不能统一布局换数据
 - `feedback_doc_flowgen_only` — 方案 / 方法论文档图必走 flowgen-* skill
 
-### project（项目状态 · 43 条）
+### project（项目状态 · 52 条）
 
 按项目分组：
 
@@ -80,7 +83,7 @@ tags: [memory, 索引, auto-memory]
 - `project_uwacomm_sctde_cfo_rca` — SC-TDE+DSSS CFO RCA 闭环
 - `project_uwacomm_scfde_phase3b2` — SC-FDE Phase 3b.2 归档
 
-**UWAcomm_usbl（8）**
+**UWAcomm_usbl（13）**
 - `project_uwacomm_usbl_init` — 项目初始化
 - `project_uwacomm_usbl_techdesign` — SPEC-001 技术设计
 - `project_uwacomm_usbl_scope` — 项目范围 2026-05-06
@@ -89,6 +92,11 @@ tags: [memory, 索引, auto-memory]
 - `project_uwacomm_usbl_2026-05-13_session` — V0.8 大纲
 - `project_uwacomm_usbl_2026-05-16_session` — _v2 反向 diff + _v3 重 build
 - `project_uwacomm_usbl_2026-05-22_session` — 笔记 ingest + 差异对照 + 阵型决议
+- `project_uwacomm_usbl_2026-06-01_session` — 水听器收发三板架构（SPEC-003 通用平台分置）
+- `project_uwacomm_usbl_pooldata_2026-06-03` — calibration poolData 实测 DOA + W1/W2 校准流水线（CAGE5 5 元阵）
+- `project_uwacomm_usbl_pooldata_6-04_2026-06-05` — 6-04 东南大学水池 CBF 校准验证（CBF 优于 TDOA）
+- `project_uwacomm_usbl_doa_debug` — 1.9m DOA 调试（hilbert 包络修 abs-MF 检峰 bug）
+- `project_uwacomm_usbl_poolData_gcc_cbf_2026-06-07` — GCC-TDOA vs CBF 实测深析
 
 **USBL（1）**
 - `project_usbl_h8_drafting` — H8 起草中断点
@@ -108,10 +116,20 @@ tags: [memory, 索引, auto-memory]
 **DocProcess / DigitalTwin1plusN（1）**
 - `project_digitaltwin1plusn_init` — 「1+N」水下集群数字孪生体系（1 大 U + 24 小 U，双层孪生，P1-P11 决议，7 commit，2026-05-25 新增）
 
-**Tools 系（6）**
+**DocProcess / VisioForge（1）**
+- `project_visioforge_init` — 通用 Visio 出图工作区（复用 flowgen-* 8 skill，6 张 SN 效能预报图 1:1 复刻 + replica_lib2.py，2026-06-02 新增）
+
+**DocProcess / CooperativeASW（1）**
+- `project_cooperativeasw_init` — UWAprojDoc 编队协同探潜分系统单列细化 docx（17 章 223k 字 + 24 图 + I 族接口图，DEPENDS_ON=UWAprojDoc，2026-06-03 新增）
+
+**TechReq / SonarSim（1）**
+- `project_sonarsim_init` — 主动声呐界面仿真 MATLAB（SPEC-001 跑通单发同频干扰混响强度图 + 接声呐方程，2026-06-03 新增）
+
+**Tools 系（7）**
 - `project_flowgen_init` — FlowGen 初始化
 - `project_flowgen_m8_drafting` — FlowGen M8-replica 中断点（PNG→Visio，视觉识图精度待提升）
 - `project_flowgen_m8_layered_replica` — FlowGen M8 分系统架构图复刻（2026-05-29 9/9 张高保真 Visio，DRY 共享引擎 + 模型库异构 renderer）
+- `project_flowgen_archmap_b2_layered` — FlowGen archmap L 族（阶段1 系统架构图 commit 5372721 已 push + 阶段2-A 逻辑架构图，冷蓝 renderer 5 增量 + compact 三档 fill，2026-06-01~02）
 - `project_flowgen_archposter_ppt_restyle` — archposter 民国风→冷蓝 PPT 风重塑 + 反向工程 Visio 方法论（2026-05-30）
 - `project_anthropic_ppt_init` — AnthropicPPT 初始化（2026-05-23）
 - `project_iconforge_init` — IconForge 初始化（自然语言→图标 SVG，派生后暂停，2026-05-29）
@@ -121,7 +139,7 @@ tags: [memory, 索引, auto-memory]
 - `project_ohmybrain_uwa_doppler_ingest` — 6 篇 UWA Doppler 论文 ingest
 - `project_ohmybrain_2026-05-24_session` — PPT V4 + AnthropicPPT 派生 + 13 dedicated 页 + 三模板 + /sync-to-core 实战 + 三仓 push（2026-05-24 新增）
 
-> 注：`project_uwacomm`（含 13 条 session 条）+ `project_uwacomm_usbl`（含 8 条）+ `project_uwaprojdoc`（含 3 条）等高频项目的多日 session 条目均计入上方分组，合计 43。
+> 注：`project_uwacomm`（含 13 条 session 条）+ `project_uwacomm_usbl`（含 13 条）+ `project_uwaprojdoc`（含 3 条）等高频项目的多日 session 条目均计入上方分组，加 Tools 系 7 + 新增 VisioForge/CooperativeASW/SonarSim 各 1，合计 52。
 
 ### reference（参考 · 3 条）
 
@@ -174,6 +192,7 @@ MATLAB 算法 root-cause-analysis 的工具 + 边界：
 - `feedback_doc_visual_diversification` — 按业务真实结构匹配模式，禁统一布局换数据
 - `project_flowgen_init` — FlowGen 工具初始化
 - `project_flowgen_m8_drafting` — M8-replica PNG→Visio 中断点
+- `project_flowgen_archmap_b2_layered` — archmap L 族系统/逻辑架构图 renderer（2026-06-01~02）
 - `project_uwaprojdoc_2026-05-22_session` — 8 张 sub-N data-flow Visio 风 PNG/VSDX 实战
 - `project_uwacomm_usbl_2026-05-13_session` — V0.8 大纲附录 13 张数据记录表
 
@@ -202,6 +221,17 @@ DocProcess 系 docx 生成的固化 pipeline 与反向 diff 经验：
 - `project_digitaltwinguide` — 数字孪生实施指南方法论（首份种子 = 20 吨级 AUV）
 - `project_digitaltwin1plusn_init` — 「1+N」集群双层孪生体系（1 大 U + 24 小 U，"I 看 II 打"）
 
+### USBL 实测 DOA / 阵列校准（2026-06 实测线）
+
+UWAcomm_usbl calibration 分支 poolData/ 实测数据 DOA 估计与阵列校准（独立于合成仿真）：
+
+- `project_uwacomm_usbl_2026-06-01_session` — 水听器收发三板架构（SPEC-003）
+- `project_uwacomm_usbl_pooldata_2026-06-03` — poolData 实测 DOA + W1/W2 校准流水线
+- `project_uwacomm_usbl_pooldata_6-04_2026-06-05` — 6-04 CBF 校准验证（CBF 优于 TDOA）
+- `project_uwacomm_usbl_doa_debug` — 1.9m DOA hilbert 包络修 abs-MF bug
+- `project_uwacomm_usbl_poolData_gcc_cbf_2026-06-07` — GCC-TDOA vs CBF 实测深析
+- `feedback_matlab_interactive_figs` — MATLAB 出图用交互窗（view_td/view_analysis 函数）
+
 ## Memory ↔ Hub wiki 对应关系
 
 | Memory 类型 | Hub wiki 对应位置 |
@@ -216,7 +246,7 @@ DocProcess 系 docx 生成的固化 pipeline 与反向 diff 经验：
 - memory 是**主动**沉淀（每会话产生新条目）
 - Hub wiki 是**被动**索引（季度更新本页同步）
 - 不双向同步 — memory 是事实源，wiki 是索引视图
-- **last-sync: 2026-05-31**（计数已对齐 CANON：feedback 20 / project 43 / reference 3 / user 1 / 总 67）
+- **last-sync: 2026-06-09**（计数已对齐 CANON：feedback 21 / project 52 / reference 3 / user 1 / 总 77）
 
 ## 相关页面
 

@@ -4,6 +4,27 @@
 
 ---
 
+## [2026-06-09] maintenance + new-project | 入会自检一致性审计：补登 3 新项目 + 计数 67→77 + ADR-021~023
+
+入会自检（memory `feedback_ohmybrain_self_improvement`）。P0/P1 发现：上次自检 2026-06-01 后 8 天派生了 **3 个新项目**，但 commit `6e4fedf`（2026-06-04）**只**把它们注册到 Hub `CLAUDE.md` 映射 + `projects/` 导航卡，**未**同步 dashboard / system-overview / decision-log / roadmap / memory-index / 各处计数。ultracode 模式下用 workflow 系统审计（6 cluster 并行 → 逐 cluster 对抗验证，12 agent）对照权威源（`D:/Claude/CLAUDE.md` + `MEMORY.md` + 实时文件系统），产出 **56 处已验证 finding**（36 high / 14 med / 6 low），主会话代写修复。
+
+**3 新项目补登**（new-project 类，2026-06-04 commit `6e4fedf` 实际注册，本次补齐全部 Hub 视图）：
+- **VisioForge** 🔒（2026-06-02，DocProcess，派生自 template-document，DEPENDS_ON 无）—— 通用 Visio 出图工作区，复用全局 flowgen-* 8 skill；自建 `scripts/replica_lib2.py`（Visio 动态直角连接器 `GlueTo(PinX)` + 真圆柱 4 段组合），首批 6 张 SN 效能预报图 1:1 复刻；git init -b main 首 commit 未提交。memory `project_visioforge_init`。
+- **SonarSim** 🔒（2026-06-03，TechReq，派生自 template-engineering，无依赖）—— 主动声呐界面仿真（MATLAB App Designer 显控台 + 探测链路）；SPEC-001 已实现跑通（单发同频干扰混响强度图，11 个 .m，T1-T4 单测过）+ 2026-06-04 接声呐方程绝对定标 + 18km 长程场景归档；已 commit+push 内网 gitlab `lilin/SonarSim`。memory `project_sonarsim_init`。
+- **CooperativeASW** 🔒（2026-06-03，DocProcess，派生自 template-document，DEPENDS_ON=UWAprojDoc）—— UWAprojDoc「编队协同探潜配置仿真与效能评估分系统」单列细化成 standalone docx（17 章 223k 字 + 24 图 + 969KB/100 页）；2026-06-04 图件大改催生 `archmap_interface.py`（I 族接口图）skill；commit `f46b16d`+`5da5de1` 本地未 push。memory `project_cooperativeasw_init`。
+
+**计数对齐 CANON @2026-06-09**：memory **67→77**（project **43→52** / feedback **20→21** / user 1 / reference 3）波及 dashboard 规模快照 / hub-as-brain CANON 表 + 8 类职责表 / anti-patterns / memory-index / conventions §0 / index.md。活跃项目 **14→17**（system-overview）；wiki 内容页保持 **104**（3 项目皆 🔒/Tools，不进 Hub 公开内容页）。
+
+**ADR-021/022/023 新增**（decision-log，最新在上）：ADR-023 CooperativeASW / ADR-022 SonarSim / ADR-021 VisioForge；起点声明 + 4 页范围标注 `ADR-001~020`→`ADR-001~023` 级联同步（decision-log / ecosystem-dashboard ×2 / hub-as-brain ×2 / conventions ×2）。roadmap 里程碑补 3 行（06-02/03）+ system-overview 演进里程碑补 4 行（05-25/05-29/06-02/06-03）。
+
+**stale 锚点刷新**：dashboard UWAcomm_usbl `2026-05-22/50bec65`→`2026-06-07/c6d608e`（pooldata 实测 DOA 线，CBF 优于 TDOA）；FlowGen `🟡 未实装/2026-05-13`→`🟢 活跃/2026-06-04 archmap 族扩展`。memory-index 补 9 project（UWAcomm_usbl 8→13 + Tools 6→7 + 新 3 项目组）+ 1 feedback（`feedback_matlab_interactive_figs`）+ 新增「USBL 实测 DOA / 阵列校准」cross-cutting 主题。
+
+**遗留（surface 给用户裁决，未自行改动）**：① Patents 🔒（无 git）在 `D:/Claude/CLAUDE.md` 列出，但 Hub CLAUDE.md 映射 + dashboard 未登记（system-overview / conventions §9 已含）—— 是否补登统一口径待定；② conventions §10 worktree 表 4 行 vs 根 `D:/Claude/CLAUDE.md` 3 行（缺 `UWAcomm_usbl-calibration`），根文件补登待用户授权（沿 2026-05-31 遗留观察）；③ FlowGen archmap 族是否单列独立 ADR 待定。
+
+`lint_wiki.py` 待跑。**本批未 commit**（git 操作待用户授权，memory `feedback_git_confirmation`）。
+
+---
+
 ## [2026-06-01] maintenance | 入会自检 P0 pass — 无改动
 
 进入 Hub 起手自检（memory `feedback_ohmybrain_self_improvement`），用户选轻量收尾。

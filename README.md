@@ -16,11 +16,12 @@ ohmybrain-core（母仓 / 模板，三模板拆分：engineering / document / to
   ├→ 派生 → USBL                     (TechReq, engineering)
   ├→ 派生 → UWAnet                   (TechReq, engineering)
   ├→ 派生 → UWAcomm_usbl 🔒          (TechReq, engineering)
+  ├→ 派生 → SonarSim 🔒              (TechReq, engineering, 2026-06-03)
   ├→ 派生 → FlowGen                  (Tools, tool)
   ├→ 派生 → AnthropicPPT             (Tools, tool, 2026-05-23)
   ├→ 派生 → IconForge                (Tools, tool, 2026-05-29)
   ├→ 派生 → Pricing 🔒               (DocProcess, document)
-  └→ 派生 → UWAprojDoc 🔒 等 5 个文档项目 (DocProcess, document)
+  └→ 派生 → UWAprojDoc 🔒 等 7 个文档项目 (DocProcess, document)
 
 ohmybrain（本仓库 = 知识库 + Hub）
   ├── raw/        只读原始资料（论文 / 文章 / 视频 / 仓库参考）
@@ -31,7 +32,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 
 ---
 
-## 知识规模（2026-05-25）
+## 知识规模（2026-06-09）
 
 | 类别 | 数量 | 路径 |
 |------|------|------|
@@ -74,6 +75,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | **USBL** | [lyrenleigh-code/USBL](https://github.com/lyrenleigh-code/USBL) | [lilin/USBL](http://192.168.10.100:8880/lilin/USBL) | `D:\Claude\TechReq\USBL` | 🟢 活跃 |
 | **UWAnet** | [lyrenleigh-code/UWAnet](https://github.com/lyrenleigh-code/UWAnet) | [lilin/UWAnet](http://192.168.10.100:8880/lilin/UWAnet) | `D:\Claude\TechReq\UWAnet` | 🟡 调研 |
 | **UWAcomm_usbl** 🔒 | — | [lilin/UWAcomm_usbl](http://192.168.10.100:8880/lilin/UWAcomm_usbl) | `D:\Claude\TechReq\UWAcomm_usbl` | 🟢 活跃（整机原型 / V0.8 大纲） |
+| **SonarSim** 🔒 | — | [lilin/SonarSim](http://192.168.10.100:8880/lilin/SonarSim) | `D:\Claude\TechReq\SonarSim` | 🟢 私人（已 commit+push 内网） |
 | **ohmybrain-core** | [lyrenleigh-code/ohmybrain-core](https://github.com/lyrenleigh-code/ohmybrain-core) | [lilin/ohmybrain-core](http://192.168.10.100:8880/lilin/ohmybrain-core) | `D:\Claude\ohmybrain-core` | 🟢 母仓（三模板：engineering / document / tool） |
 | **Ohmybrain** | [lyrenleigh-code/Ohmybrain](https://github.com/lyrenleigh-code/Ohmybrain) | [lilin/Ohmybrain](http://192.168.10.100:8880/lilin/Ohmybrain) | `D:\Claude\Ohmybrain` | 🟢 Hub |
 | **FlowGen** 🔒 | — | [lilin/FlowGen](http://192.168.10.100:8880/lilin/FlowGen) | `D:\Claude\Tools\FlowGen` | 🟢 活跃（7 skill 实装） |
@@ -91,6 +93,8 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | **PaperReview** 🔒 | 2026-05-09 | 学位论文外审（中文论文中文评审意见）|
 | **DigitalTwinGuide** 🔒 | 2026-05-13 | 数字孪生实施指南方法论（首份种子=20 吨级 AUV 课题指南）|
 | **DigitalTwin1plusN** 🔒 | 2026-05-25 | 「1+N」水下集群数字孪生体系方案（1 百吨大 U + 24 一吨小 U，双层孪生）|
+| **VisioForge** 🔒 | 2026-06-02 | 通用 Visio 出图工作区（为各项目按需产 .vsdx，复用 flowgen-* 8 skill）|
+| **CooperativeASW** 🔒 | 2026-06-03 | UWAprojDoc「编队协同探潜配置仿真与效能评估分系统」单列细化 docx（17 章 223k 字 / 24 图 / 969KB，DEPENDS_ON=UWAprojDoc）|
 
 🔒 内网 GitLab Internal 可见或本地私人，**禁止推送至公开 GitHub/Gitee**。所有 GitLab 远端项目统一使用 `main` 主分支（2026-05-25 起，UWAcomm 同步迁移）。
 

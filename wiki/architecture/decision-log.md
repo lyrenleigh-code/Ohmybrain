@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-05-29
+updated: 2026-06-09
 tags: [ADR, 决策, log]
 ---
 
@@ -11,7 +11,85 @@ tags: [ADR, 决策, log]
 
 最新在上。
 
-> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-020 连续。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-023 连续。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+
+---
+
+## ADR-023 · 2026-06-03 · CooperativeASW 项目派生
+
+### 触发
+
+UWAprojDoc「编队协同探潜配置仿真与效能评估分系统」（父方案第 9 章）需扩写成可独立交付的分系统 docx 方案，做更深细化；素材（5 功能模块 docx + 编队素材）已就位。
+
+### 决策
+
+派生 `D:\Claude\DocProcess\CooperativeASW`（私人，从 template-document 派生，**DEPENDS_ON=UWAprojDoc**）——把父方案一个分系统单列成 standalone 子方案。硬约束：成文 standalone（禁提与总系统/父方案关系），主线 = 战术「执行→优化→选择」贯穿全篇，图走 flowgen-* skill。
+
+### 实现
+
+- 全文 17 章 ≈ 223k 字 + 24 图全细化 + 24 图注；docx 969 KB / 100 页（合稿器 `build_docx.py` A4 fit-to-box）
+- 2026-06-04 图件大改：图 4-1/1-2 改 I 族接口图（**催生 `archmap_interface.py` skill**）+ 24 图 workflow 并行细化 + 5 组成图紧凑化
+- commit `f46b16d`（文字稿）+ `5da5de1`（0604 图件大改 / 行为决策树），本地未 push
+
+### 后果
+
+- ✓ 首例「父方案分系统单列成 standalone 子方案」+ DEPENDS_ON 依赖链建立
+- ✓ I 族接口图 archmap_interface skill 借此孵化（回流全局 flowgen-archposter）
+- ⚠ 图 + docx push 待内网私有库；mod6/7 细化与若干指标来源待补
+
+> memory `project_cooperativeasw_init`。
+
+---
+
+## ADR-022 · 2026-06-03 · SonarSim 项目派生
+
+### 触发
+
+主动声呐界面仿真（显控台 + 探测链路）需独立工作区，验证 App Designer model/view 解耦范式（沿用 UWAcomm 14_Streaming 先例）。
+
+### 决策
+
+派生 `D:\Claude\TechReq\SonarSim`（私人，从 template-engineering 派生），MATLAB App Designer，无依赖，手动模式；用户授权自主代跑（类 claude 分支），但保留"不代下结论"边界。
+
+### 实现
+
+- 3 wiki 种子页（声呐方程双体制 / model-view-pipeline / 参考综述，项目本地非 Hub）
+- SPEC-001 已实现跑通：单发同频干扰混响强度图，11 个 `.m`（waveform_gen / beamform_fan / matched_filter / build_cube / render_reverb_map …），T1-T4 单测过
+- 2026-06-04 绝对定标升级（接声呐方程，物理量 dB）+ 18km 长程场景归档（SPEC-001 闭环）
+- 已 commit + push 内网 gitlab `lilin/SonarSim`
+
+### 后果
+
+- ✓ template-engineering 模板派生验证（区别于 DocProcess 系 template-document）
+- ✓ SPEC-001 仿真目标 SNR 复现声呐方程（±0.1 dB），"假"消除
+- ⚠ 后续 GUI 化 / CFAR / PPI / MVDR 抑旁瓣线待续
+
+> memory `project_sonarsim_init`。
+
+---
+
+## ADR-021 · 2026-06-02 · VisioForge 项目派生
+
+### 触发
+
+各项目按需产 `.vsdx` 出图缺一个通用工作区；flowgen-* 8 skill 已成熟但 replica 复刻图能力（容器 / 正交连线 / 圆柱）不足。
+
+### 决策
+
+派生 `D:\Claude\DocProcess\VisioForge`（私人，从 template-document 派生，DEPENDS_ON 无）作通用 Visio 出图工作区，复用全局 flowgen-* 8 skill；高保真复刻走项目本地增强渲染器（不改全局 skill）。
+
+### 实现
+
+- 自建 `scripts/replica_lib2.py`：容器框 + Visio 动态直角连接器（`GlueTo(PinX)` 自动正交）+ 真圆柱 4 段 z-order 组合 + `page.Export` PNG 自检
+- 首批 6 张 SN 效能预报图 1:1 高保真复刻（各图 `scripts/hf_<slug>.py` 手建 SPEC）
+- git init -b main，首 commit 未提交（待授权）
+
+### 后果
+
+- ✓ 「flowgen-replica 不足时走项目本地增强渲染器」范式确立
+- ⚠ 首 commit 待授权未提交；MVP 脚本保留对照
+
+> memory `project_visioforge_init`。
 
 ---
 

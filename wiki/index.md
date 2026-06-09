@@ -1,11 +1,11 @@
 # Wiki Index
 
-> 最后更新：2026-05-31（入会自检 C 阶段：workflow 审计修正 50 处 2026-05-29 并行填充残留 stale + 新增 ADR-020 IconForge + memory/项目计数对齐 CANON 67/14 + AnthropicPPT 补入权威源）
+> 最后更新：2026-06-09（入会自检一致性审计：补登 3 新项目 SonarSim/VisioForge/CooperativeASW 到 dashboard/system-overview/decision-log(ADR-021~023)/roadmap/memory-index + memory 计数对齐 CANON 77/活跃项目 17；3 项目皆 🔒/Tools 不进 Hub 公开内容页，总数仍 104）
 > 页面总数：104
 
 ## Concepts（概念页）
 
-- [anti-patterns](concepts/anti-patterns.md) — 跨项目反模式合集，按阶段分类（Research / Build / RCA / Promote / 全阶段），feedback_* memory 60+ 条提炼（2026-05-24 新建）
+- [anti-patterns](concepts/anti-patterns.md) — 跨项目反模式合集，按阶段分类（Research / Build / RCA / Promote / 全阶段），feedback_* memory 21 条提炼（2026-05-24 新建）
 - [workflow-glossary](concepts/workflow-glossary.md) — 工作流术语表（V→V→V / PMF / 单根因审计 / archive 等核心 + 跨项目术语），中英文 / 缩写 / 引用源（2026-05-24 新建）
 - [underwater-acoustic-communication](concepts/underwater-acoustic-communication.md) — 水声通信系统，利用声波在水下传输信息的核心方向（~1120篇）
 - [channel-estimation-and-equalization](concepts/channel-estimation-and-equalization.md) — 信道估计与均衡，接收机获取信道响应并消除码间干扰（~335篇）
@@ -65,7 +65,7 @@
 - [research-map](topics/research-map.md) — 研究全景地图，展示10个研究方向的层次结构和交叉关系
 - [ecosystem-dashboard](topics/ecosystem-dashboard.md) — 跨仓状态快照面板：项目状态 / Hub 规模 / Hooks 状态 / Promote 队列（2026-05-24 新建，非实时）
 - [harness-resources](topics/harness-resources.md) — Claude Code Harness 全景索引（Hooks 8 + Skills 90+ + Rules + Agents + 6 MCP），加载层次决策树（2026-05-24 新建）
-- [memory-index](topics/memory-index.md) — `~/.claude/projects/D--Claude/memory/` 60+ 条 auto-memory 按类型 + 主题聚合索引（2026-05-24 新建）
+- [memory-index](topics/memory-index.md) — `~/.claude/projects/D--Claude/memory/` 77 条 auto-memory 按类型 + 主题聚合索引（2026-05-24 新建）
 - [core-update-queue](topics/core-update-queue.md) — Hub → core 待下沉候选队列（pending + history + 评估标准 + 反例）（2026-05-24 新建）
 
 ## Explorations（探索页）

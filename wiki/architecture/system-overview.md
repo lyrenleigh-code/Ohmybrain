@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-04-12
-updated: 2026-05-31
+updated: 2026-06-09
 tags: [架构, 三仓, Hub, 模板, 闭环, harness]
 ---
 
@@ -59,6 +59,7 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 | `USBL` | `D:\Claude\TechReq\USBL` | 活跃开发 |
 | 项目仓 | `UWAnet` | `D:\Claude\TechReq\UWAnet` | 前期调研 |
 | 项目仓 🔒 | `UWAcomm_usbl` | `D:\Claude\TechReq\UWAcomm_usbl` | 派生 2026-04-25，内网 Internal（UWAcomm+USBL 联合仿真） |
+| 项目仓 🔒 | `SonarSim` | `D:\Claude\TechReq\SonarSim` | 派生 2026-06-03（主动声呐界面仿真，MATLAB App Designer，手动模式） |
 | **DocProcess/** 🔒 | | | **文档处理工作区，全部私人项目** |
 | 项目仓 🔒 | `Pricing` | `D:\Claude\DocProcess\Pricing` | 活跃（军用软件四号文报价） |
 | 项目仓 🔒 | `UWAprojDoc` | `D:\Claude\DocProcess\UWAprojDoc` | 派生 2026-04-28（水声专项方案技术文档撰写） |
@@ -66,8 +67,10 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 🔒 | `PaperReview` | `D:\Claude\DocProcess\PaperReview` | 派生 2026-05-09（学位论文外审） |
 | 项目仓 🔒 | `DigitalTwinGuide` | `D:\Claude\DocProcess\DigitalTwinGuide` | 派生 2026-05-13（数字孪生项目实施指南方法论） |
 | 项目仓 🔒 | `DigitalTwin1plusN` | `D:\Claude\DocProcess\DigitalTwin1plusN` | 派生 2026-05-25（「1+N」集群数字孪生体系） |
+| 项目仓 🔒 | `VisioForge` | `D:\Claude\DocProcess\VisioForge` | 派生 2026-06-02（通用 Visio 出图工作区，复用 flowgen-* 8 skill） |
+| 项目仓 🔒 | `CooperativeASW` | `D:\Claude\DocProcess\CooperativeASW` | 派生 2026-06-03（UWAprojDoc 编队协同探潜分系统单列细化 docx，DEPENDS_ON=UWAprojDoc） |
 | **Tools/** | | | **跨项目工具** |
-| 项目仓 | `FlowGen` | `D:\Claude\Tools\FlowGen` | 派生 2026-04-23（自然语言→Mermaid 流程图，未实装） |
+| 项目仓 | `FlowGen` | `D:\Claude\Tools\FlowGen` | 派生 2026-04-23（自然语言→Visio/Mermaid 出图工具族；flowgen-* Visio skill 活跃，Mermaid 主入口未实装） |
 | 项目仓 | `IconForge` | `D:\Claude\Tools\IconForge` | 派生 2026-05-29（自然语言→图标 SVG，未实装） |
 | 项目仓 | `AnthropicPPT` | `D:\Claude\Tools\AnthropicPPT` | 派生 2026-05-23（FIELDBOOK PPT 模板，skill `anthropic-ppt`） |
 | **Patents/** 🔒 | | | **专利交底书工作区（无 git）** |
@@ -137,16 +140,19 @@ project-*/
 Ohmybrain/
 ├── CLAUDE.md                      # Hub 入口
 ├── TODO.md                        # 观察期配置试点等
-├── projects/                      # 📍 项目导航（14 个）
+├── projects/                      # 📍 项目导航（17 个）
 │   ├── uwacomm/README.md          #   TechReq/
 │   ├── usbl/README.md
 │   ├── uwanet/README.md
 │   ├── uwacomm_usbl/README.md     #   TechReq/ 🔒
+│   ├── sonarsim/README.md         #   TechReq/ 🔒
 │   ├── pricing/README.md          #   DocProcess/ 🔒
 │   ├── CooperativeDetection/README.md
 │   ├── paperreview/README.md
 │   ├── digitaltwinguide/README.md
 │   ├── digitaltwin1plusn/README.md
+│   ├── visioforge/README.md       #   DocProcess/ 🔒
+│   ├── CooperativeASW/README.md   #   DocProcess/ 🔒
 │   ├── flowgen/README.md          #   Tools/
 │   ├── iconforge/README.md
 │   ├── anthropicppt/README.md
@@ -278,12 +284,12 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 
 详细工具链见 [[toolchain]]。
 
-## 当前规模（2026-05-31）
+## 当前规模（2026-06-09）
 
 | 指标 | 数值 | 说明 |
 |------|------|------|
 | **Hub wiki 页数** | 104 | concepts 20 + entities 8 + source-summaries 31 + mcp-entities 25 + explorations 4 + topics 5 + architecture 11 + comparisons 0（详见 `wiki/index.md`） |
-| **活跃项目数** | 14 | TechReq×4（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒）+ DocProcess×6（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / DigitalTwin1plusN，全 🔒）+ Tools×3（FlowGen / IconForge / AnthropicPPT）+ Patents🔒 |
+| **活跃项目数** | 17 | TechReq×5（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒）+ DocProcess×8（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / DigitalTwin1plusN / VisioForge / CooperativeASW，全 🔒）+ Tools×3（FlowGen / IconForge / AnthropicPPT）+ Patents🔒 |
 | **模板 skill 数** | 5 | ingest/plan/implement/lint/promote-answer（core + 下游继承） |
 | **全局 skill（Hub 用）** | 1 | `llm-wiki`（`paths: wiki/**` 自动激活） |
 | **wiki-ingester agent** | 2 副本 | 全局 `~/.claude/agents/`（invocable，2026-05-12 起）+ 项目本地（契约源头 + git 跟踪） |
@@ -309,7 +315,11 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 | 2026-04-25 | UWAcomm_usbl 派生（首个内网 Internal 项目） |
 | 2026-04-28 | UWAprojDoc 派生（DocProcess 文档撰写工作区） |
 | 2026-05-08~09 | CooperativeDetection / PaperReview 派生（DocProcess 私人项目） |
-| 2026-05-12 | `/ingest` 路径 B 修复 + memory→Hub log 缺口工具链（L1+L2+L3）+ 架构页同步（本次更新） |
+| 2026-05-12 | `/ingest` 路径 B 修复 + memory→Hub log 缺口工具链（L1+L2+L3）+ 架构页同步 |
+| 2026-05-25 | DigitalTwin1plusN 派生（「1+N」集群数字孪生体系，DocProcess🔒） |
+| 2026-05-29 | IconForge 派生（自然语言→图标 SVG，Tools/） |
+| 2026-06-02 | VisioForge 派生（通用 Visio 出图工作区，DocProcess🔒） |
+| 2026-06-03 | SonarSim 派生（主动声呐界面仿真 MATLAB，TechReq🔒）+ CooperativeASW 派生（UWAprojDoc 协同探潜分系统单列细化 docx，DocProcess🔒） |
 
 ## 相关页面
 
