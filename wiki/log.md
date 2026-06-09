@@ -4,6 +4,24 @@
 
 ---
 
+## [2026-06-09] tooling | 写权限互斥锁 hook（单仓串行原则的硬性强制）
+
+把「单仓串行」从文档约定升级为 **PreToolUse hook 硬性强制**。先用 claude-code-guide 核实 Claude Code hook 加载语义：**嵌套 `Ohmybrain/.claude/settings.json` 在会话根=`D:/Claude` 时不被加载**（只从会话根 `.claude/settings.json(.local)` + 全局 `~/.claude` 三处加载、不按文件路径上溯）→ hook 必须放**会话根**。
+
+**新增**（均在 `D:/Claude` 根，**非 git 仓**，不入 Ohmybrain commit）：
+- `D:/Claude/.claude/hooks/agent_writelock.py`：PreToolUse(Edit\|Write\|MultiEdit\|NotebookEdit) 检查/认领、Stop(`--release`) 释放。受保护仓默认 `Ohmybrain`（`GUARDED_REPOS` 可扩展）。自动认领模式：首写者认领仓根锁 `.agent-writelock.lock.json`、每写刷新 `last_write_at`；他方未过期持有 → **exit 2 阻断**（stderr 提示谁持有 + 如何接管）；空闲超 **6h TTL** 自动失效防死锁；身份用 stdin `session_id` + env `CLAUDE_AGENT_LABEL`（默认 claude-code）。
+- `D:/Claude/.claude/settings.json`：新建（原根仅 `settings.local.json` 含 permissions 无 hooks），挂上述 PreToolUse + Stop。
+
+**git-tracked 改动**（本 commit）：`.gitignore` 加 `.agent-writelock.lock.json`（transient 锁勿提交）；[[../agents/claude-codex-collaboration]] §同仓并发写 加 hook 安全网说明；`index` 描述同步。AGENTS.md（根非 git）核心原则补 hook 指针。
+
+**测试**：6 场景全过（跨仓放行 / 无锁认领 / 自己刷新 / 他方 exit 2 阻断 / 过期接管 / 持有者释放删锁），无残留锁。**生效时机**：Claude Code 会话启动时加载 settings，本 hook **下个会话**（或 `/hooks` 重载）起对受保护仓生效。
+
+**局限**：当前仅 Claude 侧——Claude↔Claude 互斥 + Claude 尊重已存在锁；Codex 需在其 hook 系统用同锁文件格式镜像才双向（现无 `.codex/`）。**另注**：经此核实发现 Hub 现有 hook（raw/private/index-log）也在 `Ohmybrain/.claude/settings.json`，在 `D:/Claude` 根会话同样**未触发**，是独立隐患，待单独处理。
+
+**核验**：`lint_wiki.py` ✓ / 页面总数不变 107。
+
+---
+
 ## [2026-06-09] architecture | 协作框架落实「单仓串行·跨仓并行」原则（总纲 + 三档分配 + Claude 收口）
 
 用户把协作原则讲清后做的**符合性审计 + 补缺**。审计结论：原框架对该原则**部分满足**——同仓串行的"机制"在（上一条 commit 刚补），但①缺纲领化表述 + 写权限独占措辞；②缺复杂度三档分配（尤其"Codex 独立执行低风险小项目"授权 + "中等任务回流决策权归 Claude"）；③**P3「Claude 收口职责」整段缺失**（Hub 登记 / 跨项目沉淀 / 架构影响判断 / 最终归档无归属规定）。用户裁决三项全补。

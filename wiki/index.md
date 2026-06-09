@@ -54,7 +54,7 @@
 
 ## Agents（Agent 协作页）
 
-- [claude-codex-collaboration](agents/claude-codex-collaboration.md) — Claude Code + Codex 协作：单仓串行/跨仓并行总纲 + 写权限独占 + 复杂度三档分配 + worktree/同仓并发写/commit 边界 + Claude 收口职责（Hub 登记/沉淀/架构判断/归档）（2026-06-09 新建，当日两轮补约束）
+- [claude-codex-collaboration](agents/claude-codex-collaboration.md) — Claude Code + Codex 协作：单仓串行/跨仓并行总纲 + 写权限独占 + 复杂度三档分配 + worktree/同仓并发写/commit 边界 + Claude 收口职责（Hub 登记/沉淀/架构判断/归档）+ 写权限锁 hook 硬性强制（2026-06-09 新建，当日三轮补约束 + hook）
 
 ## Workflows（流程页）
 

@@ -87,6 +87,7 @@ Worktree 规则解决「不同分支隔离探索」。但有些仓**无法 workt
   - `wiki/log.md` **append-only**——各 agent 在顶部追加自己的条目，不改写他人条目（天然可并存）。
   - `wiki/index.md` 的计数 / 描述是**共享冲突区**——谁改了计数，谁负责最后跑 `lint_wiki.py` / `dashboard_snapshot.py` 核对全站一致；后写者先读最新再改，不覆盖他人描述行。
 - **写前重读**：编辑共享文件（`index.md` / `log.md` / `conventions.md` 等）前重读当前内容，防「modified since read」覆盖。
+- **硬性安全网（写权限锁 hook）**：`D:/Claude/.claude/hooks/agent_writelock.py`（PreToolUse Edit\|Write）对受保护仓（默认 `Ohmybrain`，可扩展项目主仓）强制单写者——首写者自动认领仓根锁 `.agent-writelock.lock.json`（gitignore、勿提交）、每写刷新；他方未过期持有则 **exit 2 阻断**（只能读 / 审查 / 等交接），Stop 释放、空闲超 6h 自动失效防死锁。配置在**会话根 `D:/Claude/.claude/settings.json`**（嵌套 `Ohmybrain/.claude/settings.json` 在根会话不被加载，故不放那里）。Codex 接入时用同锁文件格式镜像即可双向；当前仅 Claude 侧（Claude↔Claude 互斥 + Claude 尊重已存在的锁）。
 
 ## commit 边界
 

@@ -46,6 +46,9 @@ raw/architecture-diagram-generator/
 # === Claude Code 本地覆盖 ===
 .claude/settings.local.json
 
+# === Agent 写权限锁（transient 本地状态，勿提交；由 .claude/hooks/agent_writelock.py 维护） ===
+.agent-writelock.lock.json
+
 # === Python ===
 __pycache__/
 *.pyc
