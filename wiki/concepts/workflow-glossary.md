@@ -134,7 +134,7 @@ tags: [术语, glossary, 工作流]
 | **single source of truth (SSOT)** | 一个事实只在一处定义，其他地方引用 | [[../architecture/hub-as-brain]] |
 | **wikilink** | `[[slug]]` 跨页引用语法（Obsidian 兼容） | wiki 规则 |
 | **frontmatter** | YAML metadata 头部（type / created / updated / tags） | 同上 |
-| **ADR** | Architecture Decision Record 架构决策记录；Hub 中以章节形式（ADR-001~024）存放于 [[../architecture/decision-log]]，引用一律链 decision-log 而非悬空 ADR-N | [[../architecture/decision-log]] |
+| **ADR** | Architecture Decision Record 架构决策记录；Hub 中以章节形式（ADR-001~025）存放于 [[../architecture/decision-log]]，引用一律链 decision-log 而非悬空 ADR-N | [[../architecture/decision-log]] |
 
 ## 相关页面
 
@@ -144,4 +144,4 @@ tags: [术语, glossary, 工作流]
 - [[../architecture/memory-stack]] — 5 层 memory 栈详细
 - [[subagents-orchestration]] — subagent / orchestrator / 编排术语来源
 - [[skill-layered-resources]] — 渐进披露 / Skill 三层资源来源
-- [[../architecture/decision-log]] — ADR-001~024 章节存放处
+- [[../architecture/decision-log]] — ADR-001~025 章节存放处

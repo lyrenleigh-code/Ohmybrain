@@ -4,6 +4,26 @@
 
 ---
 
+## [2026-06-09] maintenance | 入会自检（三）：脚本侧 + CANON 计数「部分登记」收尾 + 3 历史遗留收口
+
+入会自检（memory `feedback_ohmybrain_self_improvement`）。承接同日审计（二）commit `538b00c`（已 push gitlab，工作树干净）。P0 核对 log/MEMORY/roadmap 后，**针对性对抗验证**（538b00c 后无新 commit / 新 memory，markdown 全站 wiki 计数已一致 107/109，故不重跑全量 workflow 审计已验证状态）抓到两处审计（二）遗留的 **「部分登记」straggler**，并经用户裁决收口 3 个历史遗留项。
+
+**Finding 1 · 脚本侧部分登记（concrete bug）**：`scripts/dashboard_snapshot.py` 实时报 **内容页 105**，而 markdown 全站为 107——根因是其 `WIKI_SUBDIRS` 硬编码列表**未含审计（二）新建的 `agents/` + `workflows/` 两分类**。脚本本应是 markdown 计数的对齐基准，却低报 2，**反向风险**：下次有人「按脚本输出对齐 markdown」会把 107 错改回 105。修法选**自愈式**（`discover_wiki_subdirs` 自动发现 wiki 全部子目录，已知分类按 `PREFERRED_ORDER` 排序、未来新分类按字母序追加），从根上消除「新增 wiki 分类 → 脚本静默漏算」。实跑：内容页 105→**107**、breakdown 与 [[topics/ecosystem-dashboard]] 表逐项一致。lint 只查孤儿页、不查计数，故此前一直放过。
+
+**Finding 2 · CANON memory 计数部分登记**：审计（二）新增 memory `project_ohmybrain_agent_collab_protocol`（77→78 / project 52→53），但 **CANON 计数只传播到 [[topics/memory-index]]**，**11 处其他位置仍停在 77/52**。核验实文件数确为 **78**（user 1 / feedback 21 / **project 53** / reference 3；MEMORY.md 索引 79 行 = 78 memory + 1 个 flowgen-vsdx skill 指针）后，统一传播 78/53：`conventions §0` / `hub-as-brain`（gap7 + CANON 表 + dashboard 实跑行，3 处）/ `anti-patterns`（正文 + 相关页，2 处）/ `three-tier-architecture` / `index` / `ecosystem-dashboard`（规模表 + 相关页，2 处）/ `roadmap`（dashboard 实跑行）。
+
+**3 历史遗留收口（审计「一」surface、用户本次裁决全做）**：
+
+1. **Patents 🔒 登记进 Hub 视图**：根 `D:/Claude/CLAUDE.md` 有 Patents 但 Hub `CLAUDE.md` 映射表 + [[topics/ecosystem-dashboard]] 缺（system-overview / conventions §9 早已含，活跃项目 17 也早已计入）。补 Hub `CLAUDE.md` 映射行 + dashboard 新增「专利工作区」子段（🟡 候选 / 无 git / 3 候选交底书）。
+2. **根 `D:/Claude/CLAUDE.md` worktree 表补 `UWAcomm_usbl-calibration` 行**（Hub conventions §10 早已 4 行，根文件仅 3 行；calibration/v1.x CAGE5 阵元位置 LS 校准，HEAD `eae7080` 未 push）。**根文件改动经用户授权**。
+3. **FlowGen archmap 族单列 ADR-025**（事件 2026-06-01~04，追溯登记）：[[architecture/decision-log]] 新增 ADR-025（L 族分层架构图 archmap_layered + I 族 hub-spoke archmap_interface + business/data/stdflow renderer，托管于 flowgen-archposter）。**编号取舍**：采用 **append-only 稳定 ID**（不重排既有编号，避免 024→025 跨页引用级联失效，正是 [[log]] 2026-05-29 重编号教训），ADR-025 按事件日期排在 ADR-024(06-09) 与 ADR-023(06-03) 之间，**编号与位置不严格对应**已在起点声明显式说明。级联：起点声明范围 + **10 处 `ADR-001~024`→`~025`**（conventions×2 / hub-as-brain×2 / workflow-glossary×2 / harness-resources / ecosystem-dashboard×2）+ roadmap 里程碑补 2026-06-04 行。
+
+**核验**：`lint_wiki.py` ✓ / `dashboard_snapshot.py` 实跑 内容页 107 + memory 78 / grep 全站零残留（无 `~024` 范围引用、无 `77`·`project 52` memory 计数）。**本批已 commit + push gitlab main**（用户授权；GitHub origin 暂不动，仍停在 `6e4fedf` 落后 gitlab，待后续统一）。
+
+> **新增反模式认知**（→ memory）：「部分登记」触发面再泛化——不只「新项目派生」「新增 wiki 页/分类」，**「新增 memory 条目」同样会漏传 CANON 计数**，且 **CANON 计数的验证脚本本身也可能成为漏登对象**（脚本硬编码枚举 = stale 源）。lint 不查计数是结构性盲区，须靠 `dashboard_snapshot.py` 实跑 + grep 后置核验。
+
+---
+
 ## [2026-06-09] maintenance | 入会自检一致性审计（二）：协作协议层「部分登记」收尾
 
 入会自检（memory `feedback_ohmybrain_self_improvement`）。承接上一条「协作协议层落地」——该批 3 新页 + index/log + 根 AGENTS.md 已就位（104→107），但 log 自承「lint_wiki.py 待本轮补齐后统一运行」，属典型**「部分登记」反模式**（与 06-04 `6e4fedf` 漏同步同源）：3 新页把页数推到 107，但**规模表 / 枚举 / 新页约定全未收尾**。

@@ -74,7 +74,7 @@
 - [research-map](topics/research-map.md) — 研究全景地图，展示10个研究方向的层次结构和交叉关系
 - [ecosystem-dashboard](topics/ecosystem-dashboard.md) — 跨仓状态快照面板：项目状态 / Hub 规模 / Hooks 状态 / Promote 队列（2026-05-24 新建，非实时）
 - [harness-resources](topics/harness-resources.md) — Claude Code Harness 全景索引（Hooks 8 + Skills 90+ + Rules + Agents + 6 MCP），加载层次决策树（2026-05-24 新建）
-- [memory-index](topics/memory-index.md) — `~/.claude/projects/D--Claude/memory/` 77 条 auto-memory 按类型 + 主题聚合索引（2026-05-24 新建）
+- [memory-index](topics/memory-index.md) — `~/.claude/projects/D--Claude/memory/` 78 条 auto-memory 按类型 + 主题聚合索引（2026-05-24 新建）
 - [core-update-queue](topics/core-update-queue.md) — Hub → core 待下沉候选队列（pending + history + 评估标准 + 反例）（2026-05-24 新建）
 
 ## Explorations（探索页）

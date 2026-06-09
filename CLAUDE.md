@@ -54,6 +54,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | FlowGen | 私人，不公开 | `D:\Claude\Tools\FlowGen` |
 | IconForge | 私人，不公开 | `D:\Claude\Tools\IconForge` |
 | AnthropicPPT | 私人，不公开 | `D:\Claude\Tools\AnthropicPPT` |
+| Patents 🔒 | 私人，不公开（**无 git**） | `D:\Claude\Patents` |
 
 ## 知识闭环
 

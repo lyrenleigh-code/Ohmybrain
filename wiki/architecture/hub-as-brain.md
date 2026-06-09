@@ -20,10 +20,10 @@ tags: [大脑, Hub, 元架构, single-source-of-truth]
 | 1 | **反模式 / 经验合集** | 跨项目共享教训，避免重蹈 | `~/.claude/projects/D--Claude/memory/feedback_*` 21 条 | ✓ [[anti-patterns]] · 2026-05-29 · 实质填充 |
 | 2 | **工作流术语表** | V→V→V / PMF / 单根因审计 / archive 等术语跨场景使用 | 散在 memory + 各项目 CLAUDE.md | ✓ [[workflow-glossary]] · 2026-05-29 · 实质填充 |
 | 3 | **生态 dashboard** | 哪些项目活跃 / 归档 / wip，hooks 状态，wiki 规模 | system-overview 里一张表，不够动态 | ✓ [[ecosystem-dashboard]] · 2026-05-29 · 实质填充 |
-| 4 | **决策记录 ADR** | 重大架构决策（三仓哲学澄清、双闭环 4 步对齐等） | 散在 log.md / memory / git history | ✓ [[decision-log]] · 2026-06-09 · 实质填充（ADR-001~024，章节形式） |
+| 4 | **决策记录 ADR** | 重大架构决策（三仓哲学澄清、双闭环 4 步对齐等） | 散在 log.md / memory / git history | ✓ [[decision-log]] · 2026-06-09 · 实质填充（ADR-001~025，章节形式） |
 | 5 | **跨项目约定** | 命名 / 目录 / commit / PR 风格 | 散在 `~/.claude/rules/`（15 个目录）+ 各项目 CLAUDE.md | ✓ [[conventions]] · 2026-05-29 · 实质填充 |
 | 6 | **Harness 全景** | Hooks (Hub 8 + 各项目 N) / Skills (本地 31 / 注入 90+) / Rules (15 目录) / Agents (55) | 散在 `~/.claude/skills/` + 各项目 .claude/ | ✓ [[harness-resources]] · 2026-05-29 · 实质填充 |
-| 7 | **memory 条目索引** | 77 个 auto-memory 文件没在 Hub 中出现 | `MEMORY.md`（索引 77 行）但与 Hub wiki 脱节 | ✓ [[memory-index]] · 2026-06-09 · 实质填充 |
+| 7 | **memory 条目索引** | 78 个 auto-memory 文件没在 Hub 中出现 | `MEMORY.md`（索引 78 行）但与 Hub wiki 脱节 | ✓ [[memory-index]] · 2026-06-09 · 实质填充 |
 | 8 | **演化时间线 + roadmap** | 里程碑 + 下一步 = 大脑的"过去 + 未来" | system-overview 里程碑表，无 roadmap | ✓ [[roadmap]] · 2026-05-29 · 实质填充 |
 
 > **本页（入口）** · 2026-05-29 · 75% → 已刷新（计数对齐 CANON + 状态/roadmap 与现状对齐）。
@@ -32,7 +32,7 @@ tags: [大脑, Hub, 元架构, single-source-of-truth]
 
 | 资源 | 权威值 | 拆解 |
 |------|--------|------|
-| **auto-memory 文件** | 77 个 | user 1 / feedback 21 / project 52 / reference 3（`MEMORY.md` 索引 77 行） |
+| **auto-memory 文件** | 78 个 | user 1 / feedback 21 / project 53 / reference 3（`MEMORY.md` 索引 78 行） |
 | **本地 skills** | 33 目录，其中 31 含 SKILL.md | `~/.claude/skills/` |
 | **可见 skills（注入后）** | **90+** | 本地 31 叠加 `ecc:*` plugin / marketplace 注入；**必须区分"本地 31 vs 注入 90+"两层，不可裸写 90+** |
 | **全局 agents** | 55 个 `.md` | `~/.claude/agents/` |
@@ -40,7 +40,7 @@ tags: [大脑, Hub, 元架构, single-source-of-truth]
 | **Ohmybrain wiki** | 109 个 `.md` | 根 index+log 2 + 107 内容页（architecture 12 / agents 1 / workflows 1 / concepts 20 / entities 8 / explorations 4 / mcp-entities 25 / source-summaries 31 / topics 5 / comparisons 0） |
 | **Ohmybrain scripts** | 22 个 `.py` | `scripts/` |
 
-> **ADR 存放**：决策记录在 [[decision-log]] **内**以章节形式呈现（ADR-001~024），**非独立文件**；引用一律用 `[[decision-log]]`，不要写 `[[ADR-00x]]` 这类悬空链接。
+> **ADR 存放**：决策记录在 [[decision-log]] **内**以章节形式呈现（ADR-001~025），**非独立文件**；引用一律用 `[[decision-log]]`，不要写 `[[ADR-00x]]` 这类悬空链接。
 
 ## 大脑设计原则
 
@@ -116,7 +116,7 @@ tags: [大脑, Hub, 元架构, single-source-of-truth]
 
 dedicated 页已全部建成，重心转为**保持新鲜 + 降低维护成本**：
 
-- **dashboard 自动化**：`scripts/dashboard_snapshot.py` 已落地（2026-06-09 实跑：memory 77 / wiki 内容页 107 / scripts 22 / 本地 skill 31 / agent 55 / rules 15 目录 / MCP 6），自动扫 `~/.claude/`（memory / skills / agents / rules 计数）+ wiki 规模，输出 markdown 表供 [[ecosystem-dashboard]] 与本页 CANON 表对齐。
+- **dashboard 自动化**：`scripts/dashboard_snapshot.py` 已落地（2026-06-09 实跑：memory 78 / wiki 内容页 107 / scripts 22 / 本地 skill 31 / agent 55 / rules 15 目录 / MCP 6），自动扫 `~/.claude/`（memory / skills / agents / rules 计数）+ wiki 规模，输出 markdown 表供 [[ecosystem-dashboard]] 与本页 CANON 表对齐。
 - **promote queue 自动扫描**：扩展脚本扫各项目 memory / wiki 的"待回流"标记，自动汇入 [[core-update-queue]]，减少漏 promote。
 - **季度复盘**：每季度核对 8 个 dedicated 页计数 / 状态 vs 现状，更新 [[roadmap]] 里程碑；CANON 权威计数随之刷新。
 - **断链巡检**：定期 `python scripts/lint_wiki.py`，确保 9 页互链与 [[decision-log]] / [[core-update-queue]] 等回链不悬空。

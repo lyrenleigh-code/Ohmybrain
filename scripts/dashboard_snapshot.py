@@ -32,11 +32,16 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-# wiki 子目录展示顺序（与 dashboard 页一致）
-WIKI_SUBDIRS = [
+# wiki 子目录展示顺序（与 ecosystem-dashboard 表一致）。
+# 仅用于「已知分类」的排序；实际统计由 discover_wiki_subdirs 自动发现 wiki/ 下
+# 所有子目录——新增分类（如 2026-06-09 的 agents/ workflows/）会自动计入并追加，
+# 不再像旧硬编码列表那样静默漏算（避免「新增 wiki 分类后脚本未同步」的部分登记）。
+PREFERRED_ORDER = [
     "concepts",
     "entities",
     "architecture",
+    "agents",
+    "workflows",
     "topics",
     "explorations",
     "source-summaries",
@@ -68,14 +73,26 @@ def count_glob(directory: Path, pattern: str) -> int:
     return sum(1 for _ in directory.glob(pattern))
 
 
-def count_wiki(hub_root: Path) -> tuple[dict[str, int], int, int, int]:
-    """返回 (各子目录页数, 内容页合计, 根文件数, 总文件数)。"""
+def discover_wiki_subdirs(wiki: Path) -> list[str]:
+    """自动发现 wiki/ 下所有子目录。已知分类按 PREFERRED_ORDER 排序，
+    未知分类（未来新增）按字母序追加在后，确保不会静默漏算。"""
+    if not wiki.is_dir():
+        return list(PREFERRED_ORDER)
+    actual = {d.name for d in wiki.iterdir() if d.is_dir()}
+    ordered = [s for s in PREFERRED_ORDER if s in actual]
+    extra = sorted(actual - set(PREFERRED_ORDER))
+    return ordered + extra
+
+
+def count_wiki(hub_root: Path) -> tuple[dict[str, int], int, int, int, list[str]]:
+    """返回 (各子目录页数, 内容页合计, 根文件数, 总文件数, 子目录顺序)。"""
     wiki = hub_root / "wiki"
-    per_dir = {sub: count_md(wiki / sub) for sub in WIKI_SUBDIRS}
+    subdirs = discover_wiki_subdirs(wiki)
+    per_dir = {sub: count_md(wiki / sub) for sub in subdirs}
     content_total = sum(per_dir.values())
     root_files = count_md(wiki)  # 根级 index.md / log.md
     grand_total = content_total + root_files
-    return per_dir, content_total, root_files, grand_total
+    return per_dir, content_total, root_files, grand_total, subdirs
 
 
 def count_skills(claude_root: Path) -> tuple[int, int]:
@@ -125,7 +142,7 @@ def count_memory(claude_root: Path) -> tuple[dict[str, int], int]:
 
 
 def render(hub_root: Path, claude_root: Path) -> str:
-    per_dir, content_total, root_files, wiki_total = count_wiki(hub_root)
+    per_dir, content_total, root_files, wiki_total, subdirs = count_wiki(hub_root)
     scripts_n = count_glob(hub_root / "scripts", "*.py")
     skill_dirs, skill_with_md = count_skills(claude_root)
     agents_n = count_agents(claude_root)
@@ -133,7 +150,7 @@ def render(hub_root: Path, claude_root: Path) -> str:
     mem_counts, mem_total = count_memory(claude_root)
 
     wiki_breakdown = " + ".join(
-        f"{per_dir[s]} {s}" for s in WIKI_SUBDIRS
+        f"{per_dir[s]} {s}" for s in subdirs
     )
     mem_breakdown = " / ".join(
         f"{k} {v}" for k, v in mem_counts.items() if v

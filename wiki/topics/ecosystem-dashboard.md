@@ -48,6 +48,12 @@ tags: [dashboard, 生态, 状态, 实时]
 | **AnthropicPPT** | 🟢 活跃 | FIELDBOOK PPT 模板（2026-05-23 派生，design_tokens + 8 helpers + 9 layout + skill `anthropic-ppt`） | `D:\Claude\Tools\AnthropicPPT` |
 | **IconForge** | 🟡 未实装 | 自然语言→图标 SVG 生成工具（2026-05-29 派生后暂停，HEAD `a6b361a` 66 文件未实装；已评估 samzong/ai-icon-generator，恢复后下一步 M1 spec） | `D:\Claude\Tools\IconForge` |
 
+### 专利工作区（私人）
+
+| 项目 | 状态 | 当前焦点（最近 session / 锚点） | 路径 |
+|------|------|---------|------|
+| **Patents** 🔒 | 🟡 候选 | 私密专利交底书工作区（**无 git**，禁 `git init` 避免泄露草稿历史）；3 候选交底书：iusbl-jacobian / otfs-spread-pilot / usbl-cage5-3d-hybrid-doa | `D:\Claude\Patents` |
+
 ### 母仓 / Hub
 
 | 仓 | 状态 | 最近动态 | 路径 |
@@ -69,10 +75,10 @@ tags: [dashboard, 生态, 状态, 实时]
 | 全局 skill（注入后可见） | **90+** | 本地 31 叠加 `ecc:*` plugin / marketplace 注入后；裸写 90+ 会掩盖本地真实规模，故两层并列 |
 | 全局 agent | **55** | `~/.claude/agents/*.md` |
 | rules 目录 | **15** | common / zh / web + 12 语言（cpp/csharp/dart/golang/java/kotlin/perl/php/python/rust/swift/typescript） |
-| Memory 条目 | **77** | 4 类：user 1 / feedback 21 / project 52 / reference 3（见 [[memory-index]]） |
+| Memory 条目 | **78** | 4 类：user 1 / feedback 21 / project 53 / reference 3（见 [[memory-index]]） |
 | MCP servers | **6** | context7 / exa / github / memory / playwright / sequential-thinking |
 
-> ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~024）。
+> ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~025）。
 
 ## Hub Hooks 当前状态
 
@@ -125,6 +131,6 @@ tags: [dashboard, 生态, 状态, 实时]
 - [[system-overview]] — 系统架构总览（含规模表）
 - [[hub-as-brain]] — 大脑功能定位
 - [[harness-resources]] — Hooks / Skills / Rules 全景
-- [[memory-index]] — auto-memory 77 条目索引（本页 session 锚点来源）
+- [[memory-index]] — auto-memory 78 条目索引（本页 session 锚点来源）
 - [[core-update-queue]] — Hub → core 下沉候选队列
-- [[decision-log]] — ADR-001~024 决策记录
+- [[decision-log]] — ADR-001~025 决策记录

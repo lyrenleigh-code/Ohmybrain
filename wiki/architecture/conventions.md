@@ -10,7 +10,7 @@ tags: [约定, conventions, 跨项目]
 命名 / 目录 / commit / PR / 工作流 / worktree / 私人项目 等跨项目共享约定。**事实源 = `~/.claude/rules/common/*.md`**（全局规则），本页是 Hub wiki 的索引 + 项目级扩展。
 
 > [!note] 全局资源规模（@2026-06-09）
-> `~/.claude/` 当前承载：**auto-memory 77 个**（user 1 / feedback 21 / project 52 / reference 3，`MEMORY.md` 索引 77 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 31 个**（33 个目录、其中 31 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
+> `~/.claude/` 当前承载：**auto-memory 78 个**（user 1 / feedback 21 / project 53 / reference 3，`MEMORY.md` 索引 78 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 31 个**（33 个目录、其中 31 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
 
 ## 1. 命名约定
 
@@ -50,7 +50,7 @@ tags: [约定, conventions, 跨项目]
 | 矛盾标注 | 用 `> [!warning]` 不静默覆盖 |
 | 摘要密度 | source-summary ≤ 200 行；详情页可更长但用层级分割 |
 | 提炼 vs 搬运 | wiki 是**提炼**，不是 raw/ 的复制 |
-| ADR 引用 | ADR 以章节形式（ADR-001 ~ ADR-024）存放在 [[decision-log]] 内，**引用一律写 `[[decision-log]]`**，不要写 `[[ADR-002]]` 这种悬空链接 |
+| ADR 引用 | ADR 以章节形式（ADR-001 ~ ADR-025）存放在 [[decision-log]] 内，**引用一律写 `[[decision-log]]`**，不要写 `[[ADR-002]]` 这种悬空链接 |
 
 ## 4. 反模式约定（don't do）
 
@@ -183,7 +183,7 @@ UWAcomm_usbl-design baseline：`dd0f7af`（落地 5/8–5/11 设计方案 V1.1 +
 
 - [[hub-as-brain]] — 大脑功能定位（本页是其中之一）
 - [[dual-loop]] — 双闭环工作流约定的源头
-- [[decision-log]] — 架构决策记录（ADR-001 ~ ADR-024 章节）
+- [[decision-log]] — 架构决策记录（ADR-001 ~ ADR-025 章节）
 - [[../concepts/anti-patterns]] — 反模式约定（don't do）
 - [[../topics/harness-resources]] — harness 资源规模 + Hooks 约定来源
 - [[document-protocol]] — 项目文档结构协议（骨架 / 状态归属 / 迁移级别）
