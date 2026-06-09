@@ -7,13 +7,16 @@ Stop hook: 会话结束时若 wiki/ 有未提交变更, 提示用户 commit/push
 import io
 import subprocess
 import sys
+from pathlib import Path
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+
+ROOT = Path(__file__).resolve().parent.parent  # Ohmybrain 根（cwd 无关）
 
 
 def changed_wiki_files() -> list[str]:
     result = subprocess.run(
-        ["git", "status", "--porcelain", "wiki/"],
+        ["git", "-C", str(ROOT), "status", "--porcelain", "wiki/"],
         capture_output=True, text=True, encoding="utf-8",
     )
     if result.returncode != 0:

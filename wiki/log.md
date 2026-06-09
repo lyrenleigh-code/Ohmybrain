@@ -4,6 +4,25 @@
 
 ---
 
+## [2026-06-09] tooling | 修复 Hub hook 在 D:/Claude 根会话哑火（提升到会话根 + 脚本 cwd 无关）
+
+承接写权限锁会话中经 claude-code-guide 核实的隐患：**会话根 = `D:/Claude` 时，`Ohmybrain/.claude/settings.json` 的 hook 不被加载**（Claude Code 只从会话根 `.claude` + 全局 `~/.claude` 加载，不按文件路径上溯），故 Hub 的 raw/private/index-log 等 8 个 hook 在根会话**一直未触发**。用户裁决「这次一起修」。
+
+**脚本侧 cwd 无关化**（git-tracked，向后兼容——从 Ohmybrain 根触发结果不变）：
+- `check_index_log_sync.py` / `commit_reminder.py`：`git` → `git -C ROOT`（ROOT 由 `__file__` 定位 Hub 根）。
+- `post_wiki_write.py`：lint 用绝对路径 + `cwd=ROOT`，且 scope 收紧到 **Ohmybrain wiki/**（原 `"wiki/" in path` 会误判其他项目 wiki）。
+- 其余 5 个（check_raw_write / check_private_tags / raw_ingest_reminder / session_context / check_memory_log_gap / sync_agent）本就 cwd 无关（路径/内容/`__file__`），无需改。
+
+**配置侧**（非 git，`D:/Claude/.claude/settings.json`）：把 8 个 Hub hook 全部注册到会话根（脚本走 `$CLAUDE_PROJECT_DIR/Ohmybrain/scripts/`），与 `agent_writelock.py` 并存。`Ohmybrain/.claude/settings.json` 保留不动（Ohmybrain 根会话用，单会话只一个项目根、无双触发）。
+
+**影响面**（用户已知悉）：Hub 守卫现在在所有 `D:/Claude` 根会话生效——`check_raw_write` 变全工作区 raw/ 保护；Stop 检查每次会话结束跑，但 **Hub 干净时 no-op**（`check_index_log_sync` 仅当 Hub wiki 有未同步 index/log 才 exit 2 阻断）。**生效时机**：下个会话加载 settings 起。
+
+**测试**：从 `cwd=/d/Claude`（非 Ohmybrain、非 git 仓）跑 3 个改后脚本——check_index_log_sync 正确查 Hub（干净 ✓ exit0）、commit_reminder 静默、post_wiki_write 对 Ohmybrain wiki 路径跑 lint / 对 UWAcomm wiki 路径正确跳过。
+
+**核验**：`lint_wiki.py` ✓ / 页面总数不变 107（仅脚本 + CLAUDE.md + log，无 wiki 内容页增减）。
+
+---
+
 ## [2026-06-09] tooling | 写权限互斥锁 hook（单仓串行原则的硬性强制）
 
 把「单仓串行」从文档约定升级为 **PreToolUse hook 硬性强制**。先用 claude-code-guide 核实 Claude Code hook 加载语义：**嵌套 `Ohmybrain/.claude/settings.json` 在会话根=`D:/Claude` 时不被加载**（只从会话根 `.claude/settings.json(.local)` + 全局 `~/.claude` 三处加载、不按文件路径上溯）→ hook 必须放**会话根**。

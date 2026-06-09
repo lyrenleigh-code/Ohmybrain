@@ -108,3 +108,5 @@ raw/ → ingest → wiki/ → query → promote → wiki/
 | 🟢 注入 | `session_context.py` | SessionStart | 载入会话上下文 |
 
 详见 `wiki/architecture/system-overview.md §Hub hooks`。
+
+> **2026-06-09 hook 加载位置修正**：经 claude-code-guide 核实，会话根 = `D:/Claude` 时**嵌套 `Ohmybrain/.claude/settings.json` 不被加载**（Claude Code 只从会话根 + 全局加载 hooks，不按文件路径上溯），故上表 hook 在 `D:/Claude` 根会话曾"哑火"。现已**同时注册到会话根 `D:/Claude/.claude/settings.json`**（脚本路径 `$CLAUDE_PROJECT_DIR/Ohmybrain/scripts/`），并把 `check_index_log_sync` / `commit_reminder` / `post_wiki_write` 三个原依赖 cwd 的脚本改为 **cwd 无关**（`__file__` 定位 Hub 根 + `git -C ROOT` + lint 用绝对路径），两处会话根均正确生效；`Ohmybrain/.claude/settings.json` 保留不动（Ohmybrain 根会话仍用它，无双触发，单会话只一个项目根）。新增 `🔴 agent_writelock.py`（PreToolUse 写权限互斥锁 + Stop 释放，受保护仓默认 Ohmybrain，详见 `wiki/agents/claude-codex-collaboration.md §同仓并发写`），脚本在 `D:/Claude/.claude/hooks/`。
