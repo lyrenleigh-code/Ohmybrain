@@ -1,13 +1,13 @@
 ---
 type: topic
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-06-09
 tags: [core, queue, 下沉, 候选]
 ---
 
 # core 更新候选队列
 
-人工维护的"待下沉到 ohmybrain-core/template/ 的候选清单"。机制详见 [[../architecture/core-update-mechanism]]。
+人工维护的"待下沉到 ohmybrain-core/template-* 的候选清单"。机制详见 [[../architecture/core-update-mechanism]]。
 
 ## 待下沉候选（pending）
 
@@ -15,17 +15,17 @@ tags: [core, queue, 下沉, 候选]
 
 | ID | 候选 | 当前位置 | 目标位置 | 验证状态 | ADR |
 |----|------|---------|---------|---------|------|
-| Q-001 | `check_index_log_sync.py` hook | `Ohmybrain/scripts/` | `core/template/scripts/` | ✓ Hub 实战，需 ≥ 2 项目验证 | — |
-| Q-002 | `<private>` 标签拦截 hook | `Ohmybrain/scripts/check_private_tags.py` | `core/template/scripts/` | ✓ Hub 实战，DocProcess 项目验证 | — |
-| Q-004 | `~/.claude/rules/common/llm-wiki.md` 工作流约定 | `~/.claude/rules/common/` | `core/template/.claude/rules/wiki.md` | ✓ 全局已使用 | — |
+| Q-001 | `check_index_log_sync.py` hook | `Ohmybrain/scripts/` | `core/template-*/scripts/` | ✓ Hub 实战，需 ≥ 2 项目验证 | — |
+| Q-002 | `<private>` 标签拦截 hook | `Ohmybrain/scripts/check_private_tags.py` | `core/template-document/scripts/`（必要时同步三模板） | ✓ Hub 实战，DocProcess 项目验证 | — |
+| Q-004 | `~/.claude/rules/common/llm-wiki.md` 工作流约定 | `~/.claude/rules/common/` | `core/template-*/.claude/rules/wiki.md` | ✓ 全局已使用 | — |
 
 ### medium priority
 
 | ID | 候选 | 备注 |
 |----|------|------|
-| Q-005 | 三层渐进披露查询约定（index → log → 详 ≤3 页）| 写入 core/template/.claude/skills/query.md，启发自 claude-mem |
+| Q-005 | 三层渐进披露查询约定（index → log → 详 ≤3 页）| 写入 core/template-*/.claude/skills/query.md，启发自 claude-mem |
 | Q-006 | `~/.claude/rules/common/code-review.md` 通用部分 | 部分跨项目通用，需筛选 |
-| Q-007 | Hook exit code strategy 文档 | 已在 Hub CLAUDE.md 阐述，可下沉到 core/template/CLAUDE.md |
+| Q-007 | Hook exit code strategy 文档 | 已在 Hub CLAUDE.md 阐述，可下沉到 core/template-*/CLAUDE.md |
 | Q-008 | knowledge.review 步骤定义（workflows/knowledge/04-review.md）| 检查 core 当前版本是否完整 |
 
 ### low priority / 待评估
@@ -53,7 +53,7 @@ tags: [core, queue, 下沉, 候选]
 - [ ] **≥ 2 个项目验证**（或明显的通用价值）
 - [ ] **不含敏感**（无 secrets / 无 private 内容）
 - [ ] **稳定**（不是一次性实验）
-- [ ] **value 足够**（值得维护到 template/ 中）
+- [ ] **value 足够**（值得维护到一个或多个 template-* 中）
 
 ## 反例（曾考虑但拒绝下沉）
 

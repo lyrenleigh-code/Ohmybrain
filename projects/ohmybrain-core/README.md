@@ -1,6 +1,6 @@
 # ohmybrain-core
 
-> 母仓 / 模板 / 通用 harness — 所有项目从此派生
+> 母仓 / 三模板 / 通用 harness — 所有项目按类型从此派生
 
 - **仓库**：github.com/lyrenleigh-code/ohmybrain-core（GitLab 内网镜像 http://192.168.10.100:8880/lilin/ohmybrain-core）
 - **本地**：`D:\Claude\ohmybrain-core`
@@ -9,9 +9,10 @@
 ## 三仓架构定位
 
 ```
-ohmybrain-core（本项目 / 模板）
-  ├──派生──► UWAcomm / USBL / UWAnet（公开）
-  └──派生──► UWAcomm_usbl 🔒 / FlowGen 🔒 / Pricing 🔒（私人 / 内网）
+ohmybrain-core（本项目 / 三模板）
+  ├── template-engineering/ ──派生──► TechReq/*（算法 / 仿真 / 硬件设计）
+  ├── template-document/    ──派生──► DocProcess/*（文档 / 方案 / 报告）
+  └── template-tool/        ──派生──► Tools/*（工具 / skill / template）
 
 ohmybrain（Hub）  ← 跨项目知识沉淀
 project（具体项目）  ← 工程闭环 / 算法实现
@@ -21,15 +22,15 @@ project（具体项目）  ← 工程闭环 / 算法实现
 
 | 目录 | 内容 |
 |------|------|
-| `template/.claude/rules/` | 4 条路径规则（wiki / raw / engineering / specs） |
-| `template/.claude/skills/` | 5 个技能（ingest / plan / implement / lint / promote） |
-| `template/.claude/commands/` | Slash commands（`/ingest`, `/promote`） |
-| `template/.claude/settings.json` | 跨平台 hooks（Pre / Post / Stop） |
-| `template/.obsidian/` | Obsidian vault 配置 + 5 wiki 模板 |
-| `template/raw/` · `wiki/` · `specs/` · `plans/` | 工程目录骨架 |
-| `template/scripts/` | 7+ 自动化脚本 |
-| `template/.github/workflows/` | CI + wiki-check |
-| `template/prompts/` | 自主新建项目闭环驱动套件 |
+| `template-*/.claude/rules/` | 路径规则（wiki / raw / engineering / specs 等） |
+| `template-*/.claude/skills/` | 通用技能（ingest / plan / implement / lint / promote） |
+| `template-*/.claude/commands/` | Slash commands（`/ingest`, `/promote`） |
+| `template-*/.claude/settings.json` | 跨平台 hooks（Pre / Post / Stop） |
+| `template-*/.obsidian/` | Obsidian vault 配置 + wiki 模板 |
+| `template-*/raw/` · `wiki/` · `specs/active/` · `plans/active/` · `handoff/active/` | 项目协作骨架 |
+| `template-*/scripts/` | 自动化脚本 |
+| `template-*/.github/workflows/` | CI + wiki-check |
+| `template-*/prompts/` | 自主新建项目闭环驱动套件 |
 
 ## 派生项目状态（2026-04-26）
 
@@ -50,7 +51,7 @@ project（具体项目）  ← 工程闭环 / 算法实现
 
 ```
 1. 在 Hub 的 projects/<slug>/ 下建占位
-2. 拷贝 template/ 到目标路径
+2. 按项目类型拷贝 `template-engineering/`、`template-document/` 或 `template-tool/` 到目标路径
 3. 填 CLAUDE.md（slug / 路径 / 关联项目 / 启动模式）
 4. （可选）填 prompts/goal.yaml 启用自主闭环
 5. git init + 双远端（GitHub + GitLab）
@@ -60,7 +61,7 @@ project（具体项目）  ← 工程闭环 / 算法实现
 ## 经验回流
 
 ```
-项目实战 → 发现可复用模式 → 写到 ohmybrain-core/template/
+项目实战 → 发现可复用模式 → Hub 评估 → 写到 ohmybrain-core/template-*/
        └→ 跨项目知识     → 写到 ohmybrain/wiki/
 ```
 

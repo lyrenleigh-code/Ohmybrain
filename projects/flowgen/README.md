@@ -6,7 +6,7 @@
 - **本地**：`D:\Claude\Tools\FlowGen`
 - **分类**：Tools/（跨项目工具类，区别于 TechReq/ 算法研究项目）
 - **状态**：刚完成 SOP 派生（2026-04-23），未开始实装
-- **派生自**：`ohmybrain-core/template/`
+- **派生自**：历史旧模板；当前同类模板为 `D:\Claude\ohmybrain-core\template-tool\`
 
 ## 目标
 

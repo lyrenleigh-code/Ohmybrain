@@ -32,7 +32,7 @@ project:
 paths:
   worktree_root: D:/Claude/worktrees/uwanet-redo
   hub_root: D:/Claude/Ohmybrain
-  template_root: D:/Claude/ohmybrain-core/template
+  template_root: D:/Claude/ohmybrain-core/template-engineering
   seed_dir: raw/seed
   spec_dir: specs/active
   plan_dir: plans

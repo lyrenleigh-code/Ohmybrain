@@ -6,7 +6,7 @@
 - **类别**：🔒 私人项目（DocProcess 系，禁止公开发布 / 禁止 promote 至 Hub 公开 wiki）
 - **状态**：初始化完成，原始方案稿已就位（5 份 raw/notes/）
 - **派生时间**：2026-05-08
-- **派生自**：`D:\Claude\ohmybrain-core\template\`
+- **派生自**：历史旧模板；当前同类模板为 `D:\Claude\ohmybrain-core\template-document\`
 
 ## 项目群一览
 

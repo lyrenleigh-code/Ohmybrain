@@ -89,23 +89,22 @@ ohmybrain-core/
 ├── README.md
 ├── docs/
 │   └── new-project-sop.md        # 新项目启动 SOP
-└── template/                      # 👇 从此派生
-    ├── CLAUDE.md
-    ├── .claude/
-    │   ├── rules/                 # 路径特定规则（wiki/raw/engineering/specs）
-    │   ├── skills/                # 5 个技能（ingest/plan/implement/lint/promote-answer）
-    │   ├── commands/              # ingest.md + promote.md
-    │   └── settings.json          # 跨平台 Python hooks
-    ├── raw/                       # 10 子目录骨架（只读）
+├── template-engineering/          # TechReq/*：算法 / 仿真 / 硬件设计
+├── template-document/             # DocProcess/*：文档 / 方案 / 报告
+└── template-tool/                 # Tools/*：工具 / skill / template
+    ├── AGENTS.md                  # Agent 协作入口
+    ├── CLAUDE.md                  # 项目级指令
+    ├── .claude/                   # rules / skills / commands / agents / hooks
+    ├── specs/active/              # 任务 spec
+    ├── plans/active/              # 实现计划
+    ├── handoff/active/            # Claude Code / Codex 交接单
+    ├── raw/                       # 原始资料（只读）
     ├── wiki/                      # 知识层（index.md + log.md）
-    ├── scripts/                   # 8 个自动化脚本
-    ├── workflows/
-    │   ├── knowledge/             # 4 步（ingest→query→promote→review）
-    │   └── engineering/           # 5 步（module-design→spec→plan→implement→validate）
-    └── .github/workflows/
+    ├── scripts/                   # 自动化脚本
+    └── workflows/                 # knowledge + 类型特化闭环
 ```
 
-**使命**：变更模板即可一次性升级所有下游项目的 harness（目前靠手动同步 per 2026-04-15 log）。
+**使命**：把 Hub 已确认成熟的模式下沉为三类可复制项目骨架。模板更新只影响后续新派生项目；已运行项目通过全局规则、Hub query 或手动同步吸收变化。
 
 ### 2. `project-*`（项目仓，自包含）
 
@@ -140,7 +139,7 @@ project-*/
 Ohmybrain/
 ├── CLAUDE.md                      # Hub 入口
 ├── TODO.md                        # 观察期配置试点等
-├── projects/                      # 📍 项目导航（17 个）
+├── projects/                      # 📍 项目导航（18 个）
 │   ├── uwacomm/README.md          #   TechReq/
 │   ├── usbl/README.md
 │   ├── uwanet/README.md
@@ -157,6 +156,7 @@ Ohmybrain/
 │   ├── iconforge/README.md
 │   ├── anthropicppt/README.md
 │   ├── ohmybrain-core/README.md   #   母仓
+│   ├── patents/README.md          #   Patents/ 🔒（无 git）
 │   └── usbl-s1/README.md          #   dry-run 子项目（无主仓）
 ├── raw/                           # 跨项目原始资料（只读）
 ├── wiki/                          # 📍 跨项目知识层
@@ -181,11 +181,11 @@ Ohmybrain/
 ### 初始化与演进流
 
 ```
-1. ohmybrain-core 维护 template/
-2. 新项目启动：cp -r ohmybrain-core/template/ → D:\Claude\TechReq\<新项目>/
+1. ohmybrain-core 维护 `template-engineering/`、`template-document/`、`template-tool/`
+2. 新项目启动：按类型复制对应 `template-*` → `D:\Claude\TechReq|DocProcess|Tools\<新项目>/`
    （见 ohmybrain-core/docs/new-project-sop.md）
 3. 项目在本仓内独立闭环（知识 + 开发）
-4. 有价值的 harness 改进回写到 ohmybrain-core/template/（经验回流 A）
+4. 有价值的 harness 改进经 Hub 评估后回写到对应 `ohmybrain-core/template-*/`（经验回流 A）
 5. 跨项目结论 /promote-answer → ohmybrain Hub wiki/（经验回流 B）
 6. Hub 提供统一入口（projects/ + wiki/）
 ```
@@ -222,7 +222,7 @@ spec → plan → implement → validate
 | 步骤 | 动词 | 触发 | 产出 |
 |------|------|------|------|
 | **01** | `spec` | 新 task（knowledge 已 ready） | `specs/active/<slug>.md` |
-| **02** | `plan` | spec 复杂或跨多文件 | `plans/<slug>.md` |
+| **02** | `plan` | spec 复杂或跨多文件 | `plans/active/<slug>.md` |
 | **03** | `implement` | plan 完成或直接 code | 可工作代码 + commit |
 | **04** | `validate` | code 完成 | spec 进入 `specs/archive/` |
 

@@ -6,7 +6,7 @@
 - **类别**：🔒 私人项目（DocProcess 系，禁止公开发布 / 禁止 promote 至 Hub 公开 wiki）
 - **状态**：已有首份外审材料（水声领域专硕学位论文 + 中文评审意见 draft + 正式版）
 - **派生时间**：2026-05-09
-- **派生自**：`D:\Claude\ohmybrain-core\template\`
+- **派生自**：历史旧模板；当前同类模板为 `D:\Claude\ohmybrain-core\template-document\`
 - **启动模式**：手动
 
 ## 项目目标

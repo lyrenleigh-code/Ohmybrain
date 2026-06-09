@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-05-29
+updated: 2026-06-09
 tags: [大脑, Hub, 元架构, single-source-of-truth]
 ---
 
@@ -65,7 +65,7 @@ tags: [大脑, Hub, 元架构, single-source-of-truth]
 大脑的内容不是写一次就完。机制：
 - **触发**：项目实践中暴露 gap（如本次 PPT 编制暴露双闭环不清）
 - **沉淀**：写新页或更新已有页
-- **下沉**：模式成熟后下沉到 `ohmybrain-core/template/` 让新项目继承
+- **下沉**：模式成熟后下沉到 `ohmybrain-core/template-*/` 让新项目继承
 
 ### 4. 与 ohmybrain-core 的边界
 
@@ -85,9 +85,9 @@ tags: [大脑, Hub, 元架构, single-source-of-truth]
 |------|------|------|------|---|
 | **1 全局层** `~/.claude/rules+skills+agents+memory` | 主 | **实时**（会话启动加载）| 所有 project 自动覆盖 | 改 rules/common/code-review.md → 所有项目下次会话立即生效 |
 | **2 wiki query** | 主 | 按需（project 主动 pull）| 仅当前查询项目 | project 在 `knowledge.query` 时来读 Hub wiki |
-| **3 core template** | 弱 | **延迟**（下次派生才生效）| 仅新派生项目 | 改 core/template/.claude/skills/ → 新派生项目继承 |
+| **3 core template** | 弱 | **延迟**（下次派生才生效）| 仅新派生项目 | 改 core/template-*/.claude/skills/ → 新派生项目继承 |
 
-> **关键认知**：通道 1 才是 Hub "实时指导" project 的主路径。通道 3（core template）只影响**新派生**项目，对已运行项目无作用，故归为"弱触发"。
+> **关键认知**：通道 1 才是 Hub "实时指导" project 的主路径。通道 3（core template）只影响**新派生**项目，对已运行项目无作用，故归为"弱触发"；下沉时必须选择具体 `template-engineering/`、`template-document/` 或 `template-tool/`。
 
 **通道 3 的同步机制**：Hub → core 不是自动的，需要 user 主动决策 + 手动同步（或用 `/sync-to-core` 命令辅助）。详见 [[core-update-mechanism]]。当前 pending 候选见 [[core-update-queue]]。
 

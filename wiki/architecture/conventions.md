@@ -30,7 +30,10 @@ tags: [约定, conventions, 跨项目]
 | `wiki/` | 知识层 | 改动必同步 `index.md` + `log.md`（Stop hook） |
 | `specs/active/` | 进行中任务 | 单职责，验收后转 archive |
 | `specs/archive/` | 已归档任务 | 不删除，按 date sort |
-| `plans/` | 实现计划 | 非平凡任务才需要 |
+| `plans/active/` | 进行中实现计划 | 非平凡任务才需要 |
+| `plans/archive/` | 已归档计划 | 与 spec 归档节奏保持一致 |
+| `handoff/active/` | Agent / 跨会话交接单 | Claude Code 与 Codex 串行或并行交接时使用 |
+| `handoff/archive/` | 已关闭交接单 | 交接完成后归档 |
 | `scripts/` | 自动化 | hooks + utilities（Hub 当前 22 个 .py） |
 | `output/` | 交付物（如适用） | 通常不 commit binary（除 demo） |
 | `.claude/` | harness | rules / skills / hooks / agents / settings.json |
@@ -99,11 +102,11 @@ Type: `feat` / `fix` / `refactor` / `docs` / `test` / `chore` / `perf` / `ci`
 
 - **knowledge 闭环**: ingest → query → promote → review
 - **engineering 闭环**: spec → plan → implement → validate
-- 硬工序：`specs/active/<slug>.md` → `plans/<slug>.md`（如复杂）→ code → archive
+- 硬工序：`specs/active/<slug>.md` → `plans/active/<slug>.md`（如复杂）→ code → archive；跨 Agent / 跨会话时补 `handoff/active/<slug>.md`
 
 ## 7. 跨项目反向工程约定
 
-- 新项目派生：`cp -r ohmybrain-core/template/ → D:\Claude\<area>/<name>/`
+- 新项目派生：按项目类型复制 `ohmybrain-core/template-engineering|template-document|template-tool/ → D:\Claude\<area>\<name>/`
 - 项目内 wiki 与 Hub 不互相替代：项目 wiki = 项目级具体，Hub wiki = 跨项目可复用
 - `/promote-answer` 只在下游项目，Hub 不向上回流
 
@@ -153,6 +156,9 @@ Type: `feat` / `fix` / `refactor` / `docs` / `test` / `chore` / `perf` / `ci`
 3. **自检 `<private>`**：确认产出文本无 `<private>` 标签、无密级词、无可反推真实工程的细节；`check_private_tags.py` 是兜底，不是替代人工。
 4. **用户确认**：把脱敏后的 wiki 草稿交用户审，**用户点头**才写入 `wiki/`。
 5. **落盘 + 同步**：写入对应 `wiki/<分类>/`，同步 `index.md` + `log.md`，**不携带任何指向私有仓库的反链**。
+
+> [!warning] 数值簇 = 可反推指纹（2026-06-09 DOA promote 实践）
+> 步骤 2「数值改量级」要看**数值簇整体**而非逐个：单个数值看似量级（如 ~37° / ~7° / 1.5°），但一组高辨识度精确值 + 实验结构（如「两距离 / 距离翻倍」「方位 4–8° 密采」）成簇出现，仍能把读者收敛到**唯一一次真实试验**。脱敏须连数据集结构指纹（距离档数 / 倍率关系 / 精确角栅格度数）一并抹掉，并整体再降一档到趋势 / 量级。**leak-safety 优先于 credibility**——可反推性的风险高于 Hub 页数值可信度的收益，精确值留项目归档。对抗验证时单设「脱敏泄漏」lens 专扫此类数值簇。
 
 ## 10. Worktree 约定
 

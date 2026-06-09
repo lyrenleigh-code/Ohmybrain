@@ -78,6 +78,6 @@ cd D:/Claude/worktrees/uwanet-redo
 ## 相关
 
 - 设计决策过程：见会话沉淀（暂未 promote 到 Hub wiki）
-- 母模板：`D:/Claude/ohmybrain-core/template`
+- 母模板：`D:/Claude/ohmybrain-core/template-engineering`
 - 新项目 SOP：`D:/Claude/ohmybrain-core/docs/new-project-sop.md`
 - UWAnet 当前状态：`D:/Claude/TechReq/UWAnet/wiki/dashboard.md`

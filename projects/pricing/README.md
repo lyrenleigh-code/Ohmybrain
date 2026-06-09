@@ -5,7 +5,7 @@
 - **仓库**：`D:\Claude\DocProcess\Pricing`
 - **类别**：🔒 私人项目（DocProcess 系，禁止公开发布 / 禁止 promote 至 Hub 公开 wiki）
 - **状态**：活跃开发中
-- **派生自**：`D:\Claude\ohmybrain-core\template\`
+- **派生自**：历史旧模板；当前同类模板为 `D:\Claude\ohmybrain-core\template-document\`
 - **启动模式**：手动
 
 ## 项目目标

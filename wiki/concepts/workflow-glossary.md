@@ -1,7 +1,7 @@
 ---
 type: concept
 created: 2026-05-24
-updated: 2026-05-29
+updated: 2026-06-09
 tags: [术语, glossary, 工作流]
 ---
 
@@ -108,7 +108,7 @@ tags: [术语, glossary, 工作流]
 | **核心 / core** | ohmybrain-core 母仓，被动模板 | 同上 |
 | **项目仓 / project-*** | UWAcomm / USBL / DocProcess/* 等业务驱动方 | 同上 |
 | **worktree 三路隔离** | main（用户主导）/ exp（Claude 自主）/ dev（Codex 并行）三路 worktree | `feedback_uwacomm_worktree_ownership` |
-| **派生 / derive** | `cp -r ohmybrain-core/template/` 新建项目 | new-project-sop.md |
+| **派生 / derive** | 按项目类型复制 `ohmybrain-core/template-engineering/`、`template-document/` 或 `template-tool/` 新建项目 | new-project-sop.md |
 
 ## 反模式 / 行为约束术语
 

@@ -6,7 +6,7 @@
 - **本地**：`D:\Claude\TechReq\UWAcomm_usbl`
 - **分类**：TechReq/（算法研究类，与 UWAcomm / USBL / UWAnet 同级）
 - **状态**：**SPEC-001 批 0+1 完成**（2026-04-25，M1 8 文件 70k 字 C 档详细级），3 冲突待决，批 2-6 暂停
-- **派生自**：`ohmybrain-core/template/`（2026-04-25 派生）
+- **派生自**：历史旧模板（2026-04-25 派生）；当前同类模板为 `D:\Claude\ohmybrain-core\template-engineering\`
 - **启动模式**：混合（M0-M1 闭环冷启动 → M2+ 切手动）
 
 ## 关联项目

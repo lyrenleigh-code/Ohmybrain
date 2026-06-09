@@ -1,12 +1,12 @@
 # Wiki Index
 
-> 最后更新：2026-06-09（Claude Code + Codex 协作协议层：新增 document-protocol / claude-codex-collaboration / agent-handoff，页面总数 107）
+> 最后更新：2026-06-09（项目文档结构口径同步：三模板 / plans-active / handoff / 硬件设计子型；页面总数不变 107）
 > 页面总数：107
 
 ## Concepts（概念页）
 
 - [anti-patterns](concepts/anti-patterns.md) — 跨项目反模式合集，按阶段分类（Research / Build / RCA / Promote / 全阶段），feedback_* memory 21 条提炼（2026-05-24 新建）
-- [workflow-glossary](concepts/workflow-glossary.md) — 工作流术语表（V→V→V / PMF / 单根因审计 / archive 等核心 + 跨项目术语），中英文 / 缩写 / 引用源（2026-05-24 新建）
+- [workflow-glossary](concepts/workflow-glossary.md) — 工作流术语表（V→V→V / PMF / 单根因审计 / archive / derive 等核心 + 跨项目术语），中英文 / 缩写 / 引用源（2026-06-09 三模板口径同步）
 - [underwater-acoustic-communication](concepts/underwater-acoustic-communication.md) — 水声通信系统，利用声波在水下传输信息的核心方向（~1120篇）
 - [channel-estimation-and-equalization](concepts/channel-estimation-and-equalization.md) — 信道估计与均衡，接收机获取信道响应并消除码间干扰（~335篇）
 - [signal-processing-fundamentals](concepts/signal-processing-fundamentals.md) — 信号处理基础，统计信号处理、估计检测等理论方法（~328篇）
@@ -16,10 +16,10 @@
 - [mathematical-optimization](concepts/mathematical-optimization.md) — 数学与优化，研究体系的基础工具层（~30篇）
 - [time-varying-channel](concepts/time-varying-channel.md) — 时变信道处理，双色散信道的建模估计与补偿（~22篇）
 - [doppler-estimation-methods](concepts/doppler-estimation-methods.md) — 水声多普勒估计方法学集合，跨 6 篇论文抽取的波形/结构/工程三维分类（2026-04-22）
-- [mimo-and-array-processing](concepts/mimo-and-array-processing.md) — MIMO与阵列处理，多天线空间域信号处理技术（~21篇）
+- [mimo-and-array-processing](concepts/mimo-and-array-processing.md) — MIMO与阵列处理，多天线空间域信号处理技术（~21篇）+ 紧凑阵 DOA 实测经验（模态/abs 假象/PHAT/正交阵解耦，2026-06-09 promote）
 - [machine-learning-methods](concepts/machine-learning-methods.md) — 机器学习方法，数据驱动的通信方法新兴方向（~2篇）
 - [harness-engineering](concepts/harness-engineering.md) — Harness 工程，Claude Code agent harness 的设计与实践
-- [usbl-positioning](concepts/usbl-positioning.md) — 超短基线定位，USBL技术链路、商用设备参数、工程经验
+- [usbl-positioning](concepts/usbl-positioning.md) — 超短基线定位，USBL技术链路、商用设备参数、工程经验 + 紧凑阵 DOA 实测经验（CBF vs TDOA 模态选择，2026-06-09 promote）
 - [subagents-orchestration](concepts/subagents-orchestration.md) — Claude Code 子代理编排，16 字段 frontmatter + Command→Agent→Skill 模式
 - [skills-vs-commands](concepts/skills-vs-commands.md) — Skill/Command/Agent 三机制对比，决策树 + 解析优先级
 - [claude-hooks-architecture](concepts/claude-hooks-architecture.md) — Claude Code Hook 架构，15 个生命周期事件 + 作用域层级
@@ -39,18 +39,18 @@
 
 ## Architecture（架构页）
 
-- [system-overview](architecture/system-overview.md) — 系统架构总览，**三仓架构**（Hub / project / core）+ 三层职责 + 知识/开发闭环 + Harness 机制 + 工具链（2026-04-17 重写，2026-05-24 哲学澄清 + 4+4 闭环对齐）
-- [three-tier-architecture](architecture/three-tier-architecture.md) — 三仓哲学澄清（Hub = 大脑·主动 / project = 需求牵引·业务驱动 / core = 被动模板），数据流向 + 角色对照 + 反模式应对（2026-05-24 新建）
-- [dual-loop](architecture/dual-loop.md) — 双工作流闭环详细规约（knowledge 4 步 + engineering 4 步 + 跨闭环触发关系图 + V→V→V / PMF 双指标），2026-05-24 新建
+- [system-overview](architecture/system-overview.md) — 系统架构总览，**三仓架构**（Hub / project / core）+ 三层职责 + 知识/开发闭环 + Harness 机制 + 工具链（2026-06-09 三模板 + Agent 协作目录口径同步）
+- [three-tier-architecture](architecture/three-tier-architecture.md) — 三仓哲学澄清（Hub = 大脑·主动 / project = 需求牵引·业务驱动 / core = 被动模板），数据流向 + 角色对照 + 反模式应对（2026-06-09 `template-*` 口径同步）
+- [dual-loop](architecture/dual-loop.md) — 双工作流闭环详细规约（knowledge 4 步 + engineering 4 步 + `plans/active/` + 跨闭环触发关系图 + V→V→V / PMF 双指标），2026-06-09 路径口径同步
 - [hub-as-brain](architecture/hub-as-brain.md) — **Hub 大脑功能定位**：8 类信息（反模式 / 术语 / dashboard / ADR / 约定 / harness / memory / roadmap）的顶层入口（2026-05-24 新建）
 - [decision-log](architecture/decision-log.md) — 跨仓重大架构决策 ADR-style 累积记录（2026-05-24 新建）
-- [conventions](architecture/conventions.md) — 跨项目约定（命名 / 目录 / commit / 工作流 / Hooks / Worktree 等 10 类）（2026-05-24 新建）
+- [conventions](architecture/conventions.md) — 跨项目约定（命名 / 目录 / commit / 工作流 / Hooks / Worktree / handoff 等 10 类）（2026-06-09 plans/handoff 口径同步）
 - [roadmap](architecture/roadmap.md) — 演化里程碑 + P0/P1/P2/P3 roadmap（2026-05-24 新建）
-- [core-update-mechanism](architecture/core-update-mechanism.md) — Hub → ohmybrain-core 同步机制：什么下沉 / 触发信号 / 候选标记 / 步骤 / 安全约束（2026-05-24 新建）
-- [project-types](architecture/project-types.md) — 三类项目模板（engineering / document / tool）特征 + 对比 + 文档撰写闭环 + 工具开发闭环 + core 拆分实施 plan（2026-05-24 新建）
+- [core-update-mechanism](architecture/core-update-mechanism.md) — Hub → ohmybrain-core 同步机制：什么下沉 / 触发信号 / 候选标记 / 步骤 / 安全约束，按 `template-*` 指向具体模板（2026-06-09 同步）
+- [project-types](architecture/project-types.md) — 三类项目模板（engineering / document / tool）特征 + 对比 + 硬件设计子型 + 文档/工具闭环 + 当前派生流程（2026-06-09 同步）
 - [document-protocol](architecture/document-protocol.md) — Claude Code + Codex 共用的项目文档协议层：目录骨架 / 路径安全 / 状态所有权 / 迁移级别（2026-06-09 新建）
 - [memory-stack](architecture/memory-stack.md) — Claude Code 长期记忆 5 层栈（global CLAUDE.md / project CLAUDE.md / auto-memory / MCP graph / Hub wiki），含决策树 + 当前规模 + 维护节奏（2026-04-23 首建）
-- [memory-graph](architecture/memory-graph.md) — MCP 知识图谱 Mermaid 快照（UWAcomm α 补偿技术栈：17 实体 + 23 关系，2026-04-23 首次快照）
+- [memory-graph](architecture/memory-graph.md) — MCP 知识图谱 Mermaid 快照（UWAcomm α 补偿技术栈：17 实体 + 23 关系，2026-06-09 模板口径微调）
 
 ## Agents（Agent 协作页）
 
@@ -73,9 +73,9 @@
 
 - [research-map](topics/research-map.md) — 研究全景地图，展示10个研究方向的层次结构和交叉关系
 - [ecosystem-dashboard](topics/ecosystem-dashboard.md) — 跨仓状态快照面板：项目状态 / Hub 规模 / Hooks 状态 / Promote 队列（2026-05-24 新建，非实时）
-- [harness-resources](topics/harness-resources.md) — Claude Code Harness 全景索引（Hooks 8 + Skills 90+ + Rules + Agents + 6 MCP），加载层次决策树（2026-05-24 新建）
+- [harness-resources](topics/harness-resources.md) — Claude Code Harness 全景索引（Hooks 8 + Skills 90+ + Rules + Agents + 6 MCP），加载层次决策树（2026-06-09 三模板来源口径同步）
 - [memory-index](topics/memory-index.md) — `~/.claude/projects/D--Claude/memory/` 78 条 auto-memory 按类型 + 主题聚合索引（2026-05-24 新建）
-- [core-update-queue](topics/core-update-queue.md) — Hub → core 待下沉候选队列（pending + history + 评估标准 + 反例）（2026-05-24 新建）
+- [core-update-queue](topics/core-update-queue.md) — Hub → core 待下沉候选队列（pending + history + 评估标准 + 反例），目标路径指向 `template-*`（2026-06-09 同步）
 
 ## Explorations（探索页）
 

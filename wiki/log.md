@@ -4,6 +4,41 @@
 
 ---
 
+## [2026-06-09] promote | 紧凑阵 DOA 实测经验脱敏回流（usbl-positioning + mimo-and-array-processing）
+
+`/promote-answer` 跨项目回流（入会自检 P1「找跨项目可 promote 的结论」）。把某紧凑基阵受控水域实测 DOA 调试的可复用结论，经 [[architecture/conventions]] §9 脱敏后写入两个**既有** concept 页，**页面总数不变 107**（仅内容增补 + `updated`→2026-06-09）。
+
+**源**：私人内网项目实测线归档（5 篇 RCA / 对比 / 口径文档），及用户审定的 4 篇项目 memory 综述。**双 workflow 核验**：Phase 1（4 agent 并行核验 7 篇归档 + 规划落点，与 memory 综述零冲突、已识别并丢弃被推翻的中间结论）→ 主会话起草 → Phase 2（3 lens 对抗验证：脱敏泄漏 / 过度断言+陈旧值 / 事实支撑+跨页重复，均 pass_with_fixes、无 critical）。
+
+**落点分工**（防跨页重复，交叉处 wikilink 互引而非各写一遍）：
+- [[concepts/usbl-positioning]] §实测经验（USBL 应用角度，5 条）：校准收益取决于接入的 DOA 模态 / CBF 现场精度优于群时延 TDOA（带单目标·低中多径·整带相干条件）/ 分辨率≠精度 / 校准「可迁移 vs 条件内拟合」/ 密角栅格+多工况覆盖设计建议。
+- [[concepts/mimo-and-array-processing]] §实测经验（通用阵列处理，6 条）：群时延 vs 波束/载波相位两种 DOA 模态 / 小孔径模态天花板换估计器无法突破 / abs 实信号检峰载波假象→hilbert+抛物亚样点 / GCC-PHAT 预白化+限带 cycle-skip / 鲁棒共识失效边界（低抖动≠高可信）/ 正交阵解耦病态维度。
+
+**脱敏要点**（§9 五步，用户审后写入）：剥项目名/型号/试验地点/数据集编号/脚本名/commit/内网路径；数值降量级+带条件（避免精确数值簇成可反推指纹）；抹「两距离/距离翻倍」数据集结构指纹；阵型泛化为「紧凑基阵」；不携任何私有仓/worktree 反链。修复 Phase 2 抓到的跨页重复（usbl 模态论压成应用结论+wikilink）+ 因果篡改（~度级 RMS 不归因「校准只消平滑偏置」）+ 软化「不能突破」绝对措辞 + 拆分「同角稳定性 vs 跨工况泛化」。
+
+**沉淀**：据本次实践补 [[architecture/conventions]] §9 警示「**数值簇 = 可反推指纹**」——单个数值像量级，但成簇 + 实验结构仍可反推唯一试验，脱敏须抹数据集结构指纹、leak-safety 优先于 credibility。
+
+**核验**：`lint_wiki.py` ✓ / 页面总数不变 107 / 两页 `updated` 已同步 + conventions §9 增警示。
+
+---
+
+## [2026-06-09] maintenance | 项目文档结构口径同步：三模板 + handoff + 硬件设计子型
+
+按用户要求整理当前项目文档结构，采用**文档口径同步**而非目录迁移：不移动 `TechReq/`、`DocProcess/`、`Tools/`、`worktrees/`、`Patents/`、`Ohmybrain/`、`ohmybrain-core/` 等既有根路径，只更新会指导后续行动的入口、SOP、架构说明和下沉队列。
+
+**同步内容**：
+
+- **P0 入口文档**：更新 `D:/Claude/CLAUDE.md`、`Ohmybrain/README.md`、`Ohmybrain/CLAUDE.md`、`ohmybrain-core/README.md`、`ohmybrain-core/docs/new-project-sop.md`，统一为 `template-engineering/`、`template-document/`、`template-tool/` 三模板派生口径；任务状态入口统一为 `specs/active/` + `plans/active/` + `handoff/active/`。
+- **新项目 SOP**：删除旧 `ohmybrain-core/template/` 单模板流程，改为按项目类型派生；新增 **engineering-hardware** 子型，单独硬件设计项目仍从 `template-engineering/` 派生到 `TechReq/<name>/`，再补 `design/`、`bom/`、`datasheets/`、`prototypes/` 等硬件资料目录。
+- **架构页**：同步 `project-types`、`system-overview`、`three-tier-architecture`、`dual-loop`、`conventions`、`core-update-mechanism`、`hub-as-brain`、`memory-graph` 等当前说明页，把旧 `template/`、`plans/<slug>.md` 改成 `template-*` 与 `plans/active/<slug>.md`。
+- **操作索引页**：同步 `harness-resources`、`core-update-queue`、`workflow-glossary`、`ecosystem-dashboard`，避免 `/sync-to-core`、derive 术语和 harness 来源继续指向旧路径。
+- **项目导航**：补 `projects/patents/README.md` 私密项目卡；`system-overview` 的 `projects/` 导航入口计数更新为 18。
+- **Hub 索引**：更新 `wiki/index.md` 相关条目描述；页面总数保持 107，无新增 wiki 页。
+
+**保留原则**：`decision-log`、历史 `source-summaries`、旧探索记录中的 `template/` 若属于历史事实，不做重写，避免污染时间线。
+
+---
+
 ## [2026-06-09] maintenance | 入会自检（三）：脚本侧 + CANON 计数「部分登记」收尾 + 3 历史遗留收口
 
 入会自检（memory `feedback_ohmybrain_self_improvement`）。承接同日审计（二）commit `538b00c`（已 push gitlab，工作树干净）。P0 核对 log/MEMORY/roadmap 后，**针对性对抗验证**（538b00c 后无新 commit / 新 memory，markdown 全站 wiki 计数已一致 107/109，故不重跑全量 workflow 审计已验证状态）抓到两处审计（二）遗留的 **「部分登记」straggler**，并经用户裁决收口 3 个历史遗留项。

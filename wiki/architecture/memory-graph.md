@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-06-09
 tags: [架构, memory, MCP, 知识图谱, mermaid, UWAcomm, α补偿, Ohmybrain, 生态]
 ---
 
@@ -61,7 +61,7 @@ flowchart LR
   usbl -->|知识回流| hub
   unet -->|知识回流| hub
 
-  uw ==反哺 template==> core
+  uw ==反哺 template-*==> core
 
   hub -->|projects 导航| uw
   hub -->|projects 导航| usbl
@@ -84,7 +84,7 @@ flowchart LR
 
 | Name | Type | 状态 | 关键观测 |
 |------|------|------|---------|
-| ohmybrain-core | repo_template | 活跃 | `D:\Claude\ohmybrain-core`，template/ + new-project-sop |
+| ohmybrain-core | repo_template | 活跃 | `D:\Claude\ohmybrain-core`，template-* + new-project-sop |
 | Ohmybrain | knowledge_hub | 活跃 | Hub，无 src/ 无 specs/，知识终点 |
 | UWAcomm | project | 活跃 | `TechReq/UWAcomm`，派生自 core，反哺 template |
 | USBL | project | 活跃 | `TechReq/USBL`，P2 完成 |
@@ -100,7 +100,7 @@ flowchart LR
 |------|------|------|
 | ohmybrain-core | 派生 | UWAcomm / USBL / UWAnet / Pricing / **FlowGen**（5）|
 | UWAcomm / USBL / UWAnet | 知识回流到 | Ohmybrain（3）|
-| UWAcomm | template 改进回哺 | ohmybrain-core |
+| UWAcomm | template-* 改进回哺 | ohmybrain-core |
 | Ohmybrain | projects 导航 | UWAcomm / USBL / UWAnet / **FlowGen**（4）|
 | DocHub | 已被取代 | Ohmybrain |
 
@@ -215,7 +215,7 @@ flowchart LR
 
 | 节点 | 在图谱 A | 在图谱 B |
 |---|---|---|
-| **UWAcomm** | project，派生自 core，反哺 template，回流 Hub | 实装 6 体制 |
+| **UWAcomm** | project，派生自 core，反哺 template-*，回流 Hub | 实装 6 体制 |
 | **Ohmybrain** | Hub，收录项目导航 + 知识终点 | 收录 6 篇 paper |
 
 两图同节点通过 observation 累积 —— 不建双节点，只加 observation。
