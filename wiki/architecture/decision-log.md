@@ -11,7 +11,35 @@ tags: [ADR, 决策, log]
 
 最新在上。
 
-> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-023 连续。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-024 连续。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+
+---
+
+## ADR-024 · 2026-06-09 · Claude+Codex 协作协议层落地
+
+### 触发
+
+Claude Code 与 Codex 双 agent 在 `D:\Claude` 协作缺乏稳定文件接口，依赖临时聊天上下文；worktree 边界、交接、审查 / 完成契约无成文协议。用户提出「Claude Code 和 Codex 联合使用场景」+「文档结构重新构建」需求。
+
+### 决策
+
+建立「先建文档协议层、不移动代码路径」的协作层：新增 3 个 Hub wiki 页（`document-protocol` / `claude-codex-collaboration` / `agent-handoff`），以 `specs/active` + `plans/active` + `handoff/active` + `wiki` 为双 agent 稳定接口；迁移只做 L0+L1（补 `handoff/`、`AGENTS.md`），L3 移动项目根须用户明确批准。
+
+### 实现
+
+- 新建 `wiki/architecture/document-protocol.md`（三层结构 + 标准项目骨架 + 路径安全 + L0-L3 迁移级别）
+- 新建 `wiki/agents/claude-codex-collaboration.md`（默认角色 + 串行 / 并行 / 红队三模式 + worktree / 审查 / 完成契约）——首个 `agents/` 分类页
+- 新建 `wiki/workflows/agent-handoff.md`（交接单模板 + 创建 / 归档标准）——首个 `workflows/` 分类页
+- 根 `D:\Claude\AGENTS.md` 从单纯 `@CLAUDE.md` 扩展为 agent 协作入口，`CLAUDE.md` 增「Agent 协作协议层」节，均指向这 3 页
+- `index.md` 加 Agents / Workflows 两章节 + 页数 104→107，`log.md` 加 [2026-06-09] entry
+
+### 后果
+
+- ✓ 双 agent 协作有了文件级 single source of truth；wiki 新增 `agents/` + `workflows/` 两个分类（架构级，非单项目派生）
+- ✓ 入会自检一致性审计（二）配套收尾：6 cluster workflow / 31 finding，修计数 104→107 跨 6 文件 + 3 新页 conventions §3 合规（frontmatter + wikilink）+ 4 处交叉链
+- ⚠ 协议层属「先建协议、后迁项目」L0+L1 阶段，各项目根 `handoff/` / `AGENTS.md` 实体补齐待逐项目推进
+
+> memory `project_ohmybrain_agent_collab_protocol`。
 
 ---
 

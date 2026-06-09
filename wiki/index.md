@@ -1,7 +1,7 @@
 # Wiki Index
 
-> 最后更新：2026-06-09（入会自检一致性审计：补登 3 新项目 SonarSim/VisioForge/CooperativeASW 到 dashboard/system-overview/decision-log(ADR-021~023)/roadmap/memory-index + memory 计数对齐 CANON 77/活跃项目 17；3 项目皆 🔒/Tools 不进 Hub 公开内容页，总数仍 104）
-> 页面总数：104
+> 最后更新：2026-06-09（Claude Code + Codex 协作协议层：新增 document-protocol / claude-codex-collaboration / agent-handoff，页面总数 107）
+> 页面总数：107
 
 ## Concepts（概念页）
 
@@ -48,8 +48,17 @@
 - [roadmap](architecture/roadmap.md) — 演化里程碑 + P0/P1/P2/P3 roadmap（2026-05-24 新建）
 - [core-update-mechanism](architecture/core-update-mechanism.md) — Hub → ohmybrain-core 同步机制：什么下沉 / 触发信号 / 候选标记 / 步骤 / 安全约束（2026-05-24 新建）
 - [project-types](architecture/project-types.md) — 三类项目模板（engineering / document / tool）特征 + 对比 + 文档撰写闭环 + 工具开发闭环 + core 拆分实施 plan（2026-05-24 新建）
+- [document-protocol](architecture/document-protocol.md) — Claude Code + Codex 共用的项目文档协议层：目录骨架 / 路径安全 / 状态所有权 / 迁移级别（2026-06-09 新建）
 - [memory-stack](architecture/memory-stack.md) — Claude Code 长期记忆 5 层栈（global CLAUDE.md / project CLAUDE.md / auto-memory / MCP graph / Hub wiki），含决策树 + 当前规模 + 维护节奏（2026-04-23 首建）
 - [memory-graph](architecture/memory-graph.md) — MCP 知识图谱 Mermaid 快照（UWAcomm α 补偿技术栈：17 实体 + 23 关系，2026-04-23 首次快照）
+
+## Agents（Agent 协作页）
+
+- [claude-codex-collaboration](agents/claude-codex-collaboration.md) — Claude Code + Codex 分工、串行交接、并行探索、红队 review、worktree 边界（2026-06-09 新建）
+
+## Workflows（流程页）
+
+- [agent-handoff](workflows/agent-handoff.md) — `handoff/active/` 交接单触发条件、模板、归档标准（2026-06-09 新建）
 
 ## MCP Entities（MCP graph Obsidian 投影，供 Juggl / 原生 graph 可视化）
 

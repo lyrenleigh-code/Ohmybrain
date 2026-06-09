@@ -9,7 +9,7 @@ tags: [dashboard, 生态, 状态, 实时]
 
 跨仓状态快照。**非实时**（需手动 / 半自动同步），但比"散在各处看"快。
 
-> 上次同步：**2026-06-09**（方式：入会自检一致性审计 workflow 补登 3 新项目 SonarSim/VisioForge/CooperativeASW + 刷新 UWAcomm_usbl/FlowGen 焦点 + `scripts/dashboard_snapshot.py` 重算规模表 memory 67→77）
+> 上次同步：**2026-06-09**（方式：Claude+Codex 协作协议层 ADR-024 落地 + 入会自检一致性审计二 workflow 修协议层「部分登记」stale——wiki 计数 104→107 跨 6 文件 + 3 新页 conventions §3 合规 + 4 交叉链 + memory 77→78）
 >
 > 来源：本页是聚合视图。各项目仓有独立 wiki/log.md，本页 link 而不复制。各项目「当前焦点」的 session 日期 / HEAD 锚点抽自 auto-memory 索引（`~/.claude/projects/D--Claude/memory/MEMORY.md`），见 [[memory-index]]。
 >
@@ -52,7 +52,7 @@ tags: [dashboard, 生态, 状态, 实时]
 
 | 仓 | 状态 | 最近动态 | 路径 |
 |---|------|------|------|
-| **Ohmybrain** (本仓 = Hub) | 🟢 活跃 | 2026-06-09 入会自检一致性审计：补登 3 新项目（SonarSim/VisioForge/CooperativeASW）到 dashboard/system-overview/decision-log(ADR-021~023)/roadmap/memory-index + 计数 67→77 + 刷新 UWAcomm_usbl/FlowGen 焦点。上游 commit `6e4fedf`（2026-06-04 注册 3 新项目导航卡 + CLAUDE.md 映射），本批尚未 commit | `D:\Claude\Ohmybrain` |
+| **Ohmybrain** (本仓 = Hub) | 🟢 活跃 | 2026-06-09 两批：(1) 入会自检一致性审计补登 3 新项目（SonarSim/VisioForge/CooperativeASW）+ 计数 67→77（commit `7b7fa9d`）；(2) **Claude+Codex 协作协议层**（document-protocol / claude-codex-collaboration / agent-handoff + agents//workflows/ 新分类 + 根 AGENTS.md，**ADR-024**）+ 入会自检审计二修协议层「部分登记」stale（wiki 计数 104→107 跨 6 文件 + 3 新页 §3 合规 + 4 交叉链 + memory 77→78）。本批 commit + push gitlab main | `D:\Claude\Ohmybrain` |
 | **ohmybrain-core** (母仓) | 🟢 活跃 | 三模板就位；候选下沉队列见 [[core-update-queue]] | `D:\Claude\ohmybrain-core` |
 
 ## Hub 内部规模快照（2026-06-09）
@@ -61,8 +61,8 @@ tags: [dashboard, 生态, 状态, 实时]
 
 | 指标 | 数值 | 说明 |
 |------|------|------|
-| wiki 内容页 | **104** | 20 concepts + 8 entities + 11 architecture + 5 topics + 4 explorations + 31 source-summaries + 25 mcp-entities + 0 comparisons |
-| wiki 总文件 | **106** | 104 内容页 + 根 `index.md` + `log.md` |
+| wiki 内容页 | **107** | 20 concepts + 8 entities + 12 architecture + 1 agents + 1 workflows + 5 topics + 4 explorations + 31 source-summaries + 25 mcp-entities + 0 comparisons |
+| wiki 总文件 | **109** | 107 内容页 + 根 `index.md` + `log.md` |
 | 自动化脚本 | **22** | `scripts/*.py` 全量（含 dashboard_snapshot.py） |
 | Hooks | **8** | 3 阻断 + 4 提醒 + 1 注入（见下表） |
 | 全局 skill（本地） | **31** | `~/.claude/skills/` 含 SKILL.md 的目录（33 个目录中 31 个有 SKILL.md） |
@@ -72,7 +72,7 @@ tags: [dashboard, 生态, 状态, 实时]
 | Memory 条目 | **77** | 4 类：user 1 / feedback 21 / project 52 / reference 3（见 [[memory-index]]） |
 | MCP servers | **6** | context7 / exa / github / memory / playwright / sequential-thinking |
 
-> ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~023）。
+> ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~024）。
 
 ## Hub Hooks 当前状态
 
@@ -127,4 +127,4 @@ tags: [dashboard, 生态, 状态, 实时]
 - [[harness-resources]] — Hooks / Skills / Rules 全景
 - [[memory-index]] — auto-memory 77 条目索引（本页 session 锚点来源）
 - [[core-update-queue]] — Hub → core 下沉候选队列
-- [[decision-log]] — ADR-001~023 决策记录
+- [[decision-log]] — ADR-001~024 决策记录

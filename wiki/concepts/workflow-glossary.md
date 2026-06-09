@@ -9,7 +9,7 @@ tags: [术语, glossary, 工作流]
 
 跨项目工作流相关术语的中文 / 英文 / 缩写定义。这里是 single source of truth，其他文档引用。
 
-> 计数口径以 `[[../architecture/system-overview]]` 与 index/log 为准（如 wiki 共 106 个 .md、本地 skill 31 含 SKILL.md / 注入后 90+、agents 55 个等），术语表只描述概念不复述统计。
+> 计数口径以 `[[../architecture/system-overview]]` 与 index/log 为准（如 wiki 共 109 个 .md、本地 skill 31 含 SKILL.md / 注入后 90+、agents 55 个等），术语表只描述概念不复述统计。
 
 ## 核心动词（来自 [[../architecture/dual-loop]]）
 
@@ -134,7 +134,7 @@ tags: [术语, glossary, 工作流]
 | **single source of truth (SSOT)** | 一个事实只在一处定义，其他地方引用 | [[../architecture/hub-as-brain]] |
 | **wikilink** | `[[slug]]` 跨页引用语法（Obsidian 兼容） | wiki 规则 |
 | **frontmatter** | YAML metadata 头部（type / created / updated / tags） | 同上 |
-| **ADR** | Architecture Decision Record 架构决策记录；Hub 中以章节形式（ADR-001~023）存放于 [[../architecture/decision-log]]，引用一律链 decision-log 而非悬空 ADR-N | [[../architecture/decision-log]] |
+| **ADR** | Architecture Decision Record 架构决策记录；Hub 中以章节形式（ADR-001~024）存放于 [[../architecture/decision-log]]，引用一律链 decision-log 而非悬空 ADR-N | [[../architecture/decision-log]] |
 
 ## 相关页面
 
@@ -144,4 +144,4 @@ tags: [术语, glossary, 工作流]
 - [[../architecture/memory-stack]] — 5 层 memory 栈详细
 - [[subagents-orchestration]] — subagent / orchestrator / 编排术语来源
 - [[skill-layered-resources]] — 渐进披露 / Skill 三层资源来源
-- [[../architecture/decision-log]] — ADR-001~023 章节存放处
+- [[../architecture/decision-log]] — ADR-001~024 章节存放处

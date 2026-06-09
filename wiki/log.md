@@ -4,6 +4,40 @@
 
 ---
 
+## [2026-06-09] maintenance | 入会自检一致性审计（二）：协作协议层「部分登记」收尾
+
+入会自检（memory `feedback_ohmybrain_self_improvement`）。承接上一条「协作协议层落地」——该批 3 新页 + index/log + 根 AGENTS.md 已就位（104→107），但 log 自承「lint_wiki.py 待本轮补齐后统一运行」，属典型**「部分登记」反模式**（与 06-04 `6e4fedf` 漏同步同源）：3 新页把页数推到 107，但**规模表 / 枚举 / 新页约定全未收尾**。
+
+ultracode 用 workflow 系统审计（6 cluster 并行 → 逐 finding 对抗验证，37 agent / 188 tool-use）对照权威源（`index.md` 107 + 实时文件系统 + `conventions §3`），产出 **31 处已验证 finding（0 refuted）**。主会话代写修复 **Group 1-4（19 处机械/合规，is_judgment_call=false）**：
+
+- **计数 / 枚举（8 处，6 文件）**：`system-overview`（§当前规模 104→107 + Hub 目录树补 agents/workflows/mcp-entities）、`conventions`（§2 callout 106→109）、`ecosystem-dashboard`（内容页 104→107 / 总文件 106→109）、`hub-as-brain`（CANON 表 + line119 dashboard 实跑值）、`workflow-glossary`（口径 callout 106→109）、`memory-stack`（Layer5 粒度行补新分类）。全部 architecture 11→12 + agents 1 + workflows 1。
+- **新页约定合规（3 页 × 2）**：3 新页原 frontmatter=0 / wikilink=0，**直接违反 conventions §3**（必含 type/created/updated/tags + ≥1 wikilink）→ 补 YAML frontmatter（type 按目录单数取 architecture/agent/workflow）+ 末尾「相关页面」（wikilinks 5/4/3）。
+- **交叉链（4 处）**：`system-overview`/`conventions`/`dual-loop`/`hub-as-brain` 的「相关页面」补链入 3 新页，打破 agents/workflows 两新分类的孤岛。
+- **既存 stale 顺带（1 处）**：`roadmap` §P0 `ADR-001~020`→`~023`（上一轮 7b7fa9d 补登 021~023 时漏改）。
+
+lint 通过、全站无残留 104/106。**Group 5 判断项经用户裁决全部采纳并应用**：① 新增 **ADR-024**（Claude+Codex 协作协议层）+ roadmap / system-overview 各加 2026-06-09 里程碑行 + 级联 bump 全站「ADR-001~023」**当前范围**引用→「~024」（decision-log 起点声明 / hub-as-brain×2 / conventions×2 / workflow-glossary×2 / ecosystem-dashboard×2 / harness-resources，共 10 处；roadmap §P0「补齐历史」与 dashboard 历史 ADR-021~023 描述不动）；② 新增 memory `project_ohmybrain_agent_collab_protocol` + MEMORY.md 索引 + memory-index 计数 77→78 / project 52→53；③ commit + push gitlab main（连带上一 commit `7b7fa9d`）。
+
+---
+
+## [2026-06-09] architecture | Claude Code + Codex 协作协议层落地
+
+承接用户提出的「Claude Code 和 Codex 联合使用场景」与「整个文档结构重新构建」需求，本次采用**文档协议层重构**，不移动任何既有代码/项目根路径。
+
+**新增 3 个 Hub 协议页**：
+- `wiki/architecture/document-protocol.md` — 标准项目骨架、三层文档职责、路径安全、状态所有权、迁移级别（默认 L0+L1）
+- `wiki/agents/claude-codex-collaboration.md` — Claude Code / Codex 分工、串行交接、并行探索、红队 review、worktree 边界
+- `wiki/workflows/agent-handoff.md` — `handoff/active/` 交接单触发条件、模板、归档标准
+
+**根入口更新**：
+- `D:/Claude/AGENTS.md` 从单纯引用 `CLAUDE.md` 扩展为 agent 协作入口，指向三页协议文档并明确 raw 只读、wiki index/log 同步、并行 worktree 边界。
+- `D:/Claude/CLAUDE.md` 增加「Agent 协作协议层」，声明 `specs/active/ + plans/active/ + handoff/active/` 为任务状态入口。
+
+**路径策略**：本轮只补协议与目录骨架，不迁移 `TechReq/`、`DocProcess/`、`Tools/`、`worktrees/`、`Ohmybrain/`、`ohmybrain-core/` 等项目根，避免脚本、Obsidian 链接、worktree、历史 wiki 引用失效。
+
+`index.md` 页面总数更新为 107。`lint_wiki.py` 待本轮全部模板/目录补齐后统一运行。
+
+---
+
 ## [2026-06-09] maintenance + new-project | 入会自检一致性审计：补登 3 新项目 + 计数 67→77 + ADR-021~023
 
 入会自检（memory `feedback_ohmybrain_self_improvement`）。P0/P1 发现：上次自检 2026-06-01 后 8 天派生了 **3 个新项目**，但 commit `6e4fedf`（2026-06-04）**只**把它们注册到 Hub `CLAUDE.md` 映射 + `projects/` 导航卡，**未**同步 dashboard / system-overview / decision-log / roadmap / memory-index / 各处计数。ultracode 模式下用 workflow 系统审计（6 cluster 并行 → 逐 cluster 对抗验证，12 agent）对照权威源（`D:/Claude/CLAUDE.md` + `MEMORY.md` + 实时文件系统），产出 **56 处已验证 finding**（36 high / 14 med / 6 low），主会话代写修复。

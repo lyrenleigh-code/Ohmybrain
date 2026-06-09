@@ -164,7 +164,8 @@ Ohmybrain/
 │   ├── entities/                  #   工具 + 项目
 │   ├── source-summaries/          #   论文/文章/仓库摘要
 │   ├── architecture/              #   架构页（本文件）
-│   ├── topics/ / explorations/ / comparisons/
+│   ├── agents/ / workflows/       #   协作协议层（Claude Code + Codex）
+│   ├── topics/ / explorations/ / comparisons/ / mcp-entities/
 │   ├── index.md / log.md
 ├── scripts/                       # Hub 特有（import-zotero/readwise/theses + 通用 lint 等）
 └── .claude/
@@ -288,7 +289,7 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 
 | 指标 | 数值 | 说明 |
 |------|------|------|
-| **Hub wiki 页数** | 104 | concepts 20 + entities 8 + source-summaries 31 + mcp-entities 25 + explorations 4 + topics 5 + architecture 11 + comparisons 0（详见 `wiki/index.md`） |
+| **Hub wiki 页数** | 107 | concepts 20 + entities 8 + source-summaries 31 + mcp-entities 25 + explorations 4 + topics 5 + architecture 12 + agents 1 + workflows 1 + comparisons 0（详见 `wiki/index.md`） |
 | **活跃项目数** | 17 | TechReq×5（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒）+ DocProcess×8（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / DigitalTwin1plusN / VisioForge / CooperativeASW，全 🔒）+ Tools×3（FlowGen / IconForge / AnthropicPPT）+ Patents🔒 |
 | **模板 skill 数** | 5 | ingest/plan/implement/lint/promote-answer（core + 下游继承） |
 | **全局 skill（Hub 用）** | 1 | `llm-wiki`（`paths: wiki/**` 自动激活） |
@@ -320,6 +321,7 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 | 2026-05-29 | IconForge 派生（自然语言→图标 SVG，Tools/） |
 | 2026-06-02 | VisioForge 派生（通用 Visio 出图工作区，DocProcess🔒） |
 | 2026-06-03 | SonarSim 派生（主动声呐界面仿真 MATLAB，TechReq🔒）+ CooperativeASW 派生（UWAprojDoc 协同探潜分系统单列细化 docx，DocProcess🔒） |
+| 2026-06-09 | Claude+Codex 协作协议层落地（3 协议页 + agents/ + workflows/ 新分类 + 双 agent 文件接口） |
 
 ## 相关页面
 
@@ -329,3 +331,4 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 - [[my-brain-setup-plan]] — 初始单仓搭建计划（历史参考）
 - [[uwacomm]] — 首个从 core 派生的项目实体
 - [[ohmybrain-agent-architecture-insights]] — 架构演进中的 agent/skill 决策（P0-P3 行动项）
+- [[document-protocol]] — 项目文档结构协议（工作区地图/Hub/项目状态三层 + 标准骨架 + L0-L3 迁移级别）

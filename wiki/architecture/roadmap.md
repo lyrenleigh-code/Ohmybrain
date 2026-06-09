@@ -13,6 +13,7 @@ tags: [roadmap, 演化, 里程碑]
 
 | 日期 | 里程碑 | 类型 |
 |------|--------|------|
+| **2026-06-09** | Claude+Codex 协作协议层落地（document-protocol / claude-codex-collaboration / agent-handoff，新增 agents/ + workflows/ 分类） | 架构 (ADR-024) |
 | **2026-06-03** | CooperativeASW 项目派生（UWAprojDoc 分系统单列 standalone docx，DEPENDS_ON=UWAprojDoc） | DocProcess (ADR-023) |
 | **2026-06-03** | SonarSim 项目派生（主动声呐界面仿真，template-engineering） | TechReq (ADR-022) |
 | **2026-06-02** | VisioForge 项目派生（通用 Visio 出图工作区，复用 flowgen-* 8 skill） | DocProcess (ADR-021) |
@@ -46,7 +47,7 @@ tags: [roadmap, 演化, 里程碑]
 - [x] [[../concepts/anti-patterns]] 把每个反模式标"首次触发事件"
 - [x] [[../topics/harness-resources]] 完整 skill 分类（本地 31 / 注入 90+）
 - [x] [[../topics/memory-index]] 加 cross-cutting topic 索引
-- [x] [[decision-log]] 补齐历史 ADR（ADR-001~020 连续，追溯到 2026-04-12）
+- [x] [[decision-log]] 补齐历史 ADR（ADR-001~023 连续，追溯到 2026-04-12）
 - [x] [[conventions]] 补 Worktree / 私人项目细化约定
 - [x] [[../topics/ecosystem-dashboard]] 实现 `scripts/dashboard_snapshot.py` 自动同步
 - [x] [[hub-as-brain]] 维护本页持续更新
