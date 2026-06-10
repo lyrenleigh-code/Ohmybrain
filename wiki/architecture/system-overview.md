@@ -139,7 +139,7 @@ project-*/
 Ohmybrain/
 ├── CLAUDE.md                      # Hub 入口
 ├── TODO.md                        # 观察期配置试点等
-├── projects/                      # 📍 项目导航（18 个）
+├── projects/                      # 📍 项目导航（19 个）
 │   ├── uwacomm/README.md          #   TechReq/
 │   ├── usbl/README.md
 │   ├── uwanet/README.md
@@ -258,6 +258,8 @@ Claude Code 通过 `.claude/` + 全局 `~/.claude/` 共同保障行为一致：
 
 阻断型 3 个 / 提醒型 4 个 / 注入型 1 个，详见 Hub `CLAUDE.md §Hook Exit Code Strategy`。
 
+> **工作区级 hook ×2**（2026-06-10 新增，脚本托管 Hub `scripts/` 走 git、仅注册 `D:/Claude` 会话根 settings，不计入上表 Hub 8）：`check_push_readme.py` 🔴 PreToolUse(Bash)——工作区内任意仓 `git push` 前检查 README* 是否随之更新，未更新 exit 2 阻断（`SKIP_README=1` 前缀逃生）；`calendar_reminder.py` 🟡 Stop——今日 `calendar/YYYY-MM-DD *.md` 未建则提醒（stamp 节流 ≥4h 一次）。
+
 ## 工具链
 
 ```
@@ -290,12 +292,12 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 | 指标 | 数值 | 说明 |
 |------|------|------|
 | **Hub wiki 页数** | 107 | concepts 20 + entities 8 + source-summaries 31 + mcp-entities 25 + explorations 4 + topics 5 + architecture 12 + agents 1 + workflows 1 + comparisons 0（详见 `wiki/index.md`） |
-| **活跃项目数** | 17 | TechReq×5（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒）+ DocProcess×8（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / DigitalTwin1plusN / VisioForge / CooperativeASW，全 🔒）+ Tools×3（FlowGen / IconForge / AnthropicPPT）+ Patents🔒 |
+| **活跃项目数** | 18 | TechReq×6（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒 / USBL_hw🔒）+ DocProcess×8（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / DigitalTwin1plusN / VisioForge / CooperativeASW，全 🔒）+ Tools×3（FlowGen / IconForge / AnthropicPPT）+ Patents🔒 |
 | **模板 skill 数** | 5 | ingest/plan/implement/lint/promote-answer（core + 下游继承） |
 | **全局 skill（Hub 用）** | 1 | `llm-wiki`（`paths: wiki/**` 自动激活） |
 | **wiki-ingester agent** | 2 副本 | 全局 `~/.claude/agents/`（invocable，2026-05-12 起）+ 项目本地（契约源头 + git 跟踪） |
 | **Zotero 论文数** | ~3 179 | 清理后 |
-| **自动化脚本（Hub）** | 22 | `scripts/` 全量（含 `dashboard_snapshot.py`） |
+| **自动化脚本（Hub）** | 24 | `scripts/` 全量（含 `dashboard_snapshot.py`；2026-06-10 +2 工作区级 hook 脚本） |
 
 ## 演进里程碑
 
@@ -322,6 +324,7 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 | 2026-06-02 | VisioForge 派生（通用 Visio 出图工作区，DocProcess🔒） |
 | 2026-06-03 | SonarSim 派生（主动声呐界面仿真 MATLAB，TechReq🔒）+ CooperativeASW 派生（UWAprojDoc 协同探潜分系统单列细化 docx，DocProcess🔒） |
 | 2026-06-09 | Claude+Codex 协作协议层落地（3 协议页 + agents/ + workflows/ 新分类 + 双 agent 文件接口） |
+| 2026-06-10 | USBL_hw 派生（USBL 硬件设计，engineering-hardware 子型首例，TechReq🔒）+ 工作区级 hook ×2（push README 检查 / calendar 提醒） |
 
 ## 相关页面
 

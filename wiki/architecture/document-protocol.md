@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-10
 tags: [文档协议, 协作层, 三层结构, 路径安全, 迁移级别]
 ---
 
@@ -22,6 +22,8 @@ tags: [文档协议, 协作层, 三层结构, 路径安全, 迁移级别]
 | 工作区地图 | `D:\Claude\CLAUDE.md` + `AGENTS.md` | 稳定路径、全局规则、agent 入口 |
 | Hub 知识 | `Ohmybrain/wiki/` + `Ohmybrain/projects/` | 跨项目记忆、决策、可复用协议 |
 | 项目状态 | 项目内 `wiki/`、`specs/`、`plans/`、`handoff/` | 当前任务状态、实现上下文、本地知识 |
+
+> **Hub 豁免**：Ohmybrain Hub 是知识中枢而非业务项目（[[three-tier-architecture]]），**不适用**下方「标准项目骨架」的 specs/plans/handoff 约束；Hub 侧知识闭环的中断交接走 `TODO.md` + `wiki/log.md`（见 [[../workflows/agent-handoff]] §知识闭环交接）。
 
 ## 标准项目骨架
 

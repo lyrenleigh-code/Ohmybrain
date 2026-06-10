@@ -4,6 +4,85 @@
 
 ---
 
+## [2026-06-10] handoff | USBL_hw 首批 ingest + 缺口分析 → 交接 Codex（协议层首次实战）
+
+USBL_hw 派生当日完成首循环并**首次实战 ADR-024 交接协议**（项目侧详情在 USBL_hw 自己的 wiki/log，此处记 Hub 视图）：
+
+- **ingest**：raw/design/ 4 源（含 UWAcomm_usbl SPEC-003 三板架构参考副本）→ 项目 wiki 5 页 + 综合基线页（背板插卡 vs 三板叠装路线对比，初判 B）
+- **correction**：功放供电 ±320V→**48V/峰值 10A**（用户与材料提供方确认，`> [!warning]` 标注不静默覆盖）；连带 210dB/10kW 指标存疑（与 480W 差 20 倍）
+- **缺口分析**（用户讨论结论）：详细设计五大阻塞——需求基线未锁（频段/SL/0.2° 分解/平台档位）、参考数据可信度、换能器与阵元资料空白、收发共舱定量预算缺、与 UWAcomm_usbl 接口未冻结 → 首个 spec 改为 **SPEC-001 系统需求与指标分解**
+- **交接**：`USBL_hw/handoff/active/2026-06-10-spec001-requirements-prep.md`（T1 SPEC-001 骨架 / T2 提供方核实清单 / T3 接口问题列表；修改边界禁 raw/、wiki、git；4 定向问题 `[待用户]` 占位不代填）。**USBL_hw 写权限移交 Codex**，Claude 保留 Hub 登记收口。
+
+本页同步：dashboard USBL_hw 行刷新。
+
+---
+
+## [2026-06-10] new-project | USBL_hw 派生（USBL 硬件设计，engineering-hardware 子型首例，ADR-026）
+
+用户提出新建「USBL硬件设计」项目并问「分支还是独立」。决策**独立项目** `TechReq/USBL_hw` 🔒（详见 [[architecture/decision-log]] ADR-026）：USBL 主仓公开（硬件资料必须私密）+ 交付物域不同（图纸/BOM vs MATLAB）+ 沿 2026-06-09 engineering-hardware 子型口径——**子型首例**，结构经实战验证后可升格 template-hardware（触发：第 2 个纯硬件项目）。
+
+**实施**：SOP §1+§1.5 派生（template-engineering + design/bom/datasheets/prototypes/output/tests 扩展，占位符全清）+ CLAUDE.md 定制（🔒 约束 / 硬件目录地图 / 与 UWAcomm_usbl 边界表：校准算法/CAGE5 实测/三板架构留彼处，硬件本体归此）+ git init -b main（**未 commit**，无远程，push 待内网库）+ 手动模式。
+
+**Hub 登记**（全量一次到位）：[[architecture/decision-log]] ADR-026 + 范围串 8 处 `ADR-001~025`→`026`；`D:/Claude/CLAUDE.md` + Hub CLAUDE.md 映射 + `projects/usbl_hw/` 导航卡；[[topics/ecosystem-dashboard]] TechReq 行（5→6）；[[architecture/system-overview]] 活跃项目 17→18 + 导航 19 + 里程碑行；[[architecture/roadmap]] 里程碑行；memory `project_usbl_hw_init`（计数 79→80 / project 54→55，级联 [[topics/memory-index]] + dashboard + [[architecture/hub-as-brain]] CANON 表——后者顺修上午漏级联的 78/53/22 残留）。
+
+**核验**：`lint_wiki.py` ✓ / 页面总数不变 107（projects/ 导航不计数）。USBL_hw 与 Hub 均未 commit（git 待用户授权）。
+
+---
+
+## [2026-06-10] architecture | Hub 架构体检（7 维 + 对抗复核）+ 协议层文字补强 ×4
+
+用户问「整个 Hub 架构有没有问题」。ultracode workflow 体检：7 维并行审计（三仓一致性 / 双闭环 / hooks 拓扑 / 协作协议 / wiki 信息架构 / 导航层 / memory 栈）→ 24 条 P0/P1 指控**逐条对抗复核**→ 仅 **6 条成立、18 条驳回**（34 agent）。总体判断：基本面健康，薄弱带集中在协议层存量落地、promote 脱敏细节、memory 图谱层失活。
+
+**成立的 6 条**：① AGENTS.md 三层脱离（协议+SOP+模板都要求，**存量项目 4/4 抽查全缺**——协议 06-09 才建未补存量）；② promote 源端缺显式脱敏步骤（conventions §9 有约定但下游命令文档未落，check_private_tags 只防 Hub 端）；③ MCP memory 图谱层实际停摆（graph.jsonl 停 05-12 / memory-graph 快照停 04-23，文档仍称活跃）；④ 协作协议正文缺「仅 Claude 侧 / L0+L1」现状声明；⑤ hub-as-brain 反链缺 2 协议页；⑥ 知识闭环中断交接未明文。
+
+**典型驳回**（复核价值）：「rules/common 不存在」×2 = 审计员查错位置（实在 `~/.claude/rules/`）；「Hub 缺 specs/plans/handoff 违协议」= 有意设计（Hub 非项目）；「计数 CANON 必然漂移」「log.md 膨胀失控」「双注册 hook 漂移」= 过度推断/已有补偿机制。
+
+**本批已修（④⑤⑥ + 1 澄清，纯文字）**：[[../agents/claude-codex-collaboration]] 顶部加「当前实装现状」框（L0+L1 / Codex 零接入 / writelock 仅 Claude 侧）；[[hub-as-brain]] 相关页面补 2 协议页反链；[[../workflows/agent-handoff]] 新增 §知识闭环交接（Hub 特例：TODO.md + log.md，queue 即持久状态）；[[document-protocol]] §三层结构后加「Hub 豁免」注。4 页 `updated`→2026-06-10。
+
+**待用户裁决（未动）**：①存量项目补 AGENTS.md + SOP 校验（动其他项目仓）；② promote 脱敏 step（动 core 模板）；③ 图谱层冻结 or 补同步（方向之争）。
+
+**核验**：`lint_wiki.py` ✓ / 页面总数不变 107。本批未 commit。
+
+---
+
+## [2026-06-10] tooling | 工作区级 hook ×2：push README 同步检查 + 每日 calendar 提醒
+
+用户提出两条「每当 X 就做 Y」型规则落地。按三层放置框架（约定文本 / 执行机制 / 沉淀）实施——执行机制必须 hook（CLAUDE.md/memory 靠自觉不可靠）。
+
+**新增脚本**（本仓 `scripts/`，git 跟踪；注册**仅** `D:/Claude/.claude/settings.json` 会话根，沿 2026-06-09 hook 加载语义）：
+- `check_push_readme.py` 🔴 PreToolUse(Bash)：工作区内任意仓 `git push` 前检查 outgoing commit（含链式 commit 的待提交改动）是否动过 README*，未动 exit 2 阻断 + `SKIP_README=1` 前缀单次逃生；dry-run / 无 upstream / 工作区外仓 / 坏 JSON 一律放行（宽松优先）。
+- `calendar_reminder.py` 🟡 Stop：今日 `calendar/YYYY-MM-DD 标题.md` 未建则 stdout 提醒；**stamp 节流 ≥4h 一次**（Stop 每轮回复结束都触发，无节流会刷屏）；env `CALENDAR_DIR`/`CALENDAR_STAMP` 测试钩子。
+
+**设计决策**：① push 检查弃「先提醒后升级」原方案——PreToolUse exit 0 的 stdout 对 Claude 不可见等于没装，直接做阻断+逃生才闭环；② 注册不进 `Ohmybrain/.claude/settings.json`（scope=工作区非 Hub 守卫，避免再扩双注册漂移面）。
+
+**测试**：12 场景全过（非 push 放行 / 未动 README 阻断 / SKIP 逃生 / dry-run / 坏 JSON / README 已更新放行 / 链式 commit+push pending 判定 / 工作区外仓跳过 / calendar 缺失提醒 / 4h 节流静默 / 已建静默 / 真实目录+临时 stamp）。
+
+**级联**：约定文本入 `D:/Claude/CLAUDE.md §约定` ×2 行；Hub CLAUDE.md hook 注 + [[architecture/system-overview]] §Hub hooks 注 + 脚本计数 22→24 + [[topics/harness-resources]] 新「工作区级 Hooks」小节 + [[topics/ecosystem-dashboard]] 规模表（脚本 24 / Hooks 8+2）+ hooks 表注。**生效时机：下个会话**（settings 启动时加载）。
+
+**核验**：`lint_wiki.py` ✓ / 页面总数不变 107（仅脚本 + 注 + 计数）。本批未 commit（git 待用户授权）。
+
+---
+
+## [2026-06-10] maintenance | 入会自检（四）：queue 收口 + UWAprojDoc 导航补建 + 5 日期 log 补登
+
+入会自检（memory `feedback_ohmybrain_self_improvement`）。ultracode 4 路并行审计（roadmap 时效 / dashboard+projects 登记 / core-update-queue / 脚本核验+memory 缺口），主会话逐项核实后修复。脚本基线全绿：`lint_wiki.py` ✓ / 计数 107 ✓ / git 干净（HEAD `9adc44f`）/ 无残留写锁。
+
+**P0 修复**：
+- **[[topics/core-update-queue]] 状态收口**：high priority 3 候选自 2026-05-24 实战裁决后一直挂 pending——按当日 log 实录关闭：Q-001（diff 仅 40B EOL，core 已含 → skip）、Q-002（diff 空，已 in sync → skip）入 synced 表补记；Q-004（source 已 deprecated 迁 skill，方向反）入反例表。另今日验证 Q-007（三模板 CLAUDE.md 均含 exit code 文档）、Q-008（三模板 04-review.md 存在且一致）→ 同收 synced。medium 余 Q-005/Q-006 补阻因。**high priority 队列现为空**。
+- **`projects/uwaprojdoc/README.md` 补建**：UWAprojDoc（2026-04-28 注册）的 projects/ 导航卡**从未创建**（git 史证空——当时仅做 Hub CLAUDE.md 映射）。按 DocProcess 导航卡式样补建（🔒 + 状态 + 子项目 CooperativeASW 指针）。
+
+**P1 修复**：
+- **5 缺口日期 log 补登**（`check_memory_log_gap` 报 5 日期 / 8 条 memory）：[2026-06-07] / [2026-06-05] / [2026-06-03] / [2026-06-02] / [2026-05-30] backfill entries 按时序位插入（先例：[2026-05-23] / [2026-05-16] 补登）。
+- **projects/ 导航状态行对齐 dashboard**：sonarsim（"待首个 spec"→SPEC-001 跑通 + 定标 + 18km）/ CooperativeASW（"待起草"→17 章 docx 已成）/ visioforge（"0 图件"→6 张 SN 复刻待终审）/ usbl-s1 补「状态」行（dry-run 归档性质，非独立项目）。
+- **[[architecture/roadmap]] 状态整理**：里程碑 2026-06-09 行并入写权限互斥锁 + hook 会话根提升两项 tooling；表尾注明 ADR 追溯登记原则（编号与日期非严格单调）；P0 注追记 06-09/06-10 残留收口；P1 FlowGen 混合行拆分为已完成/待办两行。
+- **[[topics/ecosystem-dashboard]]**：上次同步 → 2026-06-10；TechReq 表下加 usbl-s1 性质注（不单列状态行）；规模快照重跑——除 memory 因本 session 末新增自检条目 **78→79**（project 53→54，级联 [[topics/memory-index]] 计数口径 / Ohmybrain Hub 组 4→5 / last-sync，并顺修"不计入 77"残留）外其余无变化（107/109/22/31/55/15/6）。
+
+**审计误报记录**（对抗复核价值）：① dashboard auditor 判"18 目录账目一致"——实为 uwaprojdoc 缺失与 usbl-s1 额外存在相互抵消；② queue auditor 判 Q-001/Q-002/Q-004"已下沉应移 synced"——实为 skip / skip / REJECT 三种不同裁决，照搬会写错历史；③ memory 计数 79 vs 78 非缺口（1 条索引行指向全局 skill 非 memory 文件）。
+
+**核验**：`lint_wiki.py` ✓ / 页面总数不变 107（projects/ 导航与 log/index 不计数）。**本批未 commit**（git 操作待用户授权，memory `feedback_git_confirmation`）。
+
+---
+
 ## [2026-06-09] tooling | 修复 Hub hook 在 D:/Claude 根会话哑火（提升到会话根 + 脚本 cwd 无关）
 
 承接写权限锁会话中经 claude-code-guide 核实的隐患：**会话根 = `D:/Claude` 时，`Ohmybrain/.claude/settings.json` 的 hook 不被加载**（Claude Code 只从会话根 `.claude` + 全局 `~/.claude` 加载，不按文件路径上溯），故 Hub 的 raw/private/index-log 等 8 个 hook 在根会话**一直未触发**。用户裁决「这次一起修」。
@@ -179,6 +258,33 @@ lint 通过、全站无残留 104/106。**Group 5 判断项经用户裁决全部
 
 ---
 
+## [2026-06-07] backfill | UWAcomm_usbl poolData GCC vs CBF 深析（log 补登）
+
+2026-06-10 自检（四）补登（项目侧 session 快照，详见 memory `project_uwacomm_usbl_poolData_gcc_cbf_2026-06-07`，不复述细节）：GCC-TDOA vs CBF 实测对比深析（1.9m + 6-04 数据），CBF 可现场实施 ~1.5-1.9°；25 个新脚本 untracked；方法论结论已于 [2026-06-09] promote 脱敏回流两 concept 页。
+
+---
+
+## [2026-06-05] backfill | UWAcomm_usbl 6-04 CBF 校准验证 + 1.9m DOA 估计调试（log 补登）
+
+2026-06-10 自检（四）补登（项目侧 session 快照，详见 memory `project_uwacomm_usbl_pooldata_6-04_2026-06-05` + `project_uwacomm_usbl_doa_debug`，不复述细节）：
+
+- **6-04 东南大学水池全流程**：34 个 .m + Word 报告，CBF 显著优于 TDOA（commit `9c48911`）
+- **1.9m DOA 调试**：`abs(实MF相关)` 检峰 bug → hilbert 解析包络修复，26 个脚本 + 归档 `DOA_ESTIMATION_DEBUG.md`（commit `c6d608e` 已 push gitlab）
+
+---
+
+## [2026-06-03] backfill | SonarSim / CooperativeASW 派生日 + UWAcomm_usbl poolData 实测线起步（log 补登）
+
+2026-06-10 自检（四）补登日期 header 对齐 memory→log 缺口。SonarSim / CooperativeASW 两项目派生正文已于 [2026-06-09]「补登 3 新项目」entry 详记，此处不复述。本日另有 **UWAcomm_usbl poolData/ 实测线起步**（calibration/v1.x，CAGE5 5 元阵 1.9m/2.1m HFM 水池数据主流水线 `uwa_doa_pipeline.m`，详见 memory `project_uwacomm_usbl_pooldata_2026-06-03`）。
+
+---
+
+## [2026-06-02] backfill | VisioForge 派生日 session（log 补登）
+
+2026-06-10 自检（四）补登日期 header 对齐 memory→log 缺口。VisioForge 派生正文已于 [2026-06-09]「补登 3 新项目」entry 详记（memory `project_visioforge_init`），此处不复述。
+
+---
+
 ## [2026-06-01] maintenance | 入会自检 P0 pass — 无改动
 
 进入 Hub 起手自检（memory `feedback_ohmybrain_self_improvement`），用户选轻量收尾。
@@ -215,6 +321,12 @@ lint 通过、全站无残留 104/106。**Group 5 判断项经用户裁决全部
 > **遗留观察（未动，仅记录）**：`D:/Claude/CLAUDE.md` Worktrees 表仅 3 行，缺 `worktrees/UWAcomm_usbl-calibration`（已据 memory `feedback_uwacomm_usbl_worktree_ownership` 补入 conventions §10）；该根文件补登待用户授权。
 
 `lint_wiki.py` ✓ / `dashboard_snapshot.py` 实时核对全绿 / 页面总数不变 104（纯内容修正）。**本批 + 2026-05-29 B 阶段整批仍未 commit**（git 操作待用户授权，memory `feedback_git_confirmation`）。
+
+---
+
+## [2026-05-30] backfill | flowgen-archposter 冷蓝 PPT 重塑（log 补登）
+
+2026-06-10 自检（四）补登（项目侧 session 快照，详见 memory `project_flowgen_archposter_ppt_restyle`，不复述细节）：archposter 民国风→冷蓝 PPT 商务风（FillPattern=30 渐变 / Bevel / 软投影）+ Visio 反向工程方法论；已同步全局 skill，commit `b23cbb9`+`2a3ed4f`。
 
 ---
 

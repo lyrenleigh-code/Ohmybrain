@@ -4,7 +4,7 @@
 
 - **仓库**：`D:\Claude\DocProcess\CooperativeASW`
 - **类别**：🔒 私人项目（DocProcess 系，禁止公开发布 / 禁止 promote 至 Hub 公开 wiki）
-- **状态**：初始化完成，raw/materials 素材就位，待 /ingest + 起草
+- **状态**：🟢 活跃；全文 17 章 223k 字 + 24 图全细化 + docx 969KB/100 页（文字稿 commit `f46b16d`）；2026-06-04 图件大改（I 族接口图 + build_docx A4 fit-to-box + 行为决策树 6.5.5，commit `5da5de1`）；本地未 push，待内网私有库（2026-06-10 自检同步）
 - **派生时间**：2026-06-03
 - **派生自**：`D:\Claude\ohmybrain-core\template-document\`
 - **父项目**：`D:\Claude\DocProcess\UWAprojDoc`（第 9 章 / `wiki/modules/sub-3-coop-asw.md`）

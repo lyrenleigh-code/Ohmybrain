@@ -5,6 +5,7 @@
 > 本条目记录 **USBL 主项目 S1 仿真平台** 作为 autonomous workflow 第 2 次验证的 dry-run 成果。
 > 不是独立项目，**USBL 主项目仍以 `projects/usbl/README.md` 为权威入口**。
 
+- **状态**：✅ Dry-run 完成（2026-04-22，Phase 0-4 全 PASS）——归档性质导航页，非独立项目
 - **Worktree**：`D:/Claude/worktrees/usbl-redo/`
 - **首例参考**：`D:/Claude/worktrees/uwanet-redo/`（UWAnet 首例 2026-04-21）
 - **验证目标**：autonomous-new-project-workflow 方法论对 MATLAB 研究仿真项目的适用性

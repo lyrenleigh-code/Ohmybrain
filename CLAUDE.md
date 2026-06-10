@@ -43,6 +43,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | UWAcomm | github.com/lyrenleigh-code/UWAcomm | `D:\Claude\TechReq\UWAcomm` |
 | UWAnet | github.com/lyrenleigh-code/UWAnet | `D:\Claude\TechReq\UWAnet` |
 | USBL | github.com/lyrenleigh-code/USBL | `D:\Claude\TechReq\USBL` |
+| USBL_hw 🔒 | 私人，不公开（当前无远程） | `D:\Claude\TechReq\USBL_hw` |
 | UWAcomm_usbl 🔒 | 私人，不公开 | `D:\Claude\TechReq\UWAcomm_usbl` |
 | SonarSim 🔒 | 私人，不公开 | `D:\Claude\TechReq\SonarSim` |
 | ohmybrain-core | github.com/lyrenleigh-code/ohmybrain-core | `D:\Claude\ohmybrain-core` |
@@ -110,3 +111,5 @@ raw/ → ingest → wiki/ → query → promote → wiki/
 详见 `wiki/architecture/system-overview.md §Hub hooks`。
 
 > **2026-06-09 hook 加载位置修正**：经 claude-code-guide 核实，会话根 = `D:/Claude` 时**嵌套 `Ohmybrain/.claude/settings.json` 不被加载**（Claude Code 只从会话根 + 全局加载 hooks，不按文件路径上溯），故上表 hook 在 `D:/Claude` 根会话曾"哑火"。现已**同时注册到会话根 `D:/Claude/.claude/settings.json`**（脚本路径 `$CLAUDE_PROJECT_DIR/Ohmybrain/scripts/`），并把 `check_index_log_sync` / `commit_reminder` / `post_wiki_write` 三个原依赖 cwd 的脚本改为 **cwd 无关**（`__file__` 定位 Hub 根 + `git -C ROOT` + lint 用绝对路径），两处会话根均正确生效；`Ohmybrain/.claude/settings.json` 保留不动（Ohmybrain 根会话仍用它，无双触发，单会话只一个项目根）。新增 `🔴 agent_writelock.py`（PreToolUse 写权限互斥锁 + Stop 释放，受保护仓默认 Ohmybrain，详见 `wiki/agents/claude-codex-collaboration.md §同仓并发写`），脚本在 `D:/Claude/.claude/hooks/`。
+
+> **2026-06-10 工作区级 hook ×2 新增**：`check_push_readme.py`（🔴 PreToolUse Bash——D:/Claude 下任意仓 `git push` 前检查 README* 是否随之更新，未更新 exit 2 阻断，命令前加 `SKIP_README=1 ` 单次放行）+ `calendar_reminder.py`（🟡 Stop——今日 `calendar/YYYY-MM-DD 标题.md` 未建则提醒，stamp 节流 ≥4h 一次）。两脚本托管本仓 `scripts/`（git 跟踪），**仅注册会话根 `D:/Claude/.claude/settings.json`**（Ohmybrain 根会话不加载；scope=全工作区，非 Hub 守卫，不计入上表 8 hook）。

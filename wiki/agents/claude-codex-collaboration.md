@@ -1,15 +1,17 @@
 ---
 type: agent
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-10
 tags: [agent协作, claude-codex, worktree, 并发写, commit边界, 任务分配, 收口职责, 审查契约, 完成契约]
 ---
 
 # Claude + Codex 协作协议
 
-> 最后更新：2026-06-09
+> 最后更新：2026-06-10
 
 本文定义 Claude Code 和 Codex 在 `D:\Claude` 中如何协作。
+
+> **当前实装现状（2026-06-10）**：本协议处于 **L0+L1 阶段**（先建协议层、未移代码路径）。Codex 尚未实际接入（无 `.codex/`、零 Codex 会话）；写权限互斥锁 `agent_writelock.py` **仅 Claude 侧**生效（Claude↔Claude 互斥 + Claude 尊重已有锁），Codex 侧需镜像同锁文件格式后才双向。本文的双 agent 条款在 Codex 接入前为**前瞻性约定**，单 Claude 运行时仅「单仓串行 + 收口职责」两节实际生效。
 
 ## 运行原则
 

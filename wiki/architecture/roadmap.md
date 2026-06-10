@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-06-09
+updated: 2026-06-10
 tags: [roadmap, 演化, 里程碑]
 ---
 
@@ -13,7 +13,8 @@ tags: [roadmap, 演化, 里程碑]
 
 | 日期 | 里程碑 | 类型 |
 |------|--------|------|
-| **2026-06-09** | Claude+Codex 协作协议层落地（document-protocol / claude-codex-collaboration / agent-handoff，新增 agents/ + workflows/ 分类） | 架构 (ADR-024) |
+| **2026-06-10** | USBL_hw 项目派生（USBL 硬件设计，engineering-hardware 子型首例）+ 工作区级 hook ×2（push README 检查 / calendar 提醒） | TechReq + Hub (ADR-026) |
+| **2026-06-09** | Claude+Codex 协作协议层落地（document-protocol / claude-codex-collaboration / agent-handoff，新增 agents/ + workflows/ 分类）+ 单仓串行硬性化（写权限互斥锁 hook `agent_writelock.py` + Hub 8 hook 提升会话根修「根会话哑火」） | 架构 + tooling (ADR-024) |
 | **2026-06-04** | FlowGen archmap 渲染器族扩展（L 族分层架构图 + I 族 hub-spoke 接口图 + business/data/stdflow，托管于 flowgen-archposter） | Tools (ADR-025，追溯登记) |
 | **2026-06-03** | CooperativeASW 项目派生（UWAprojDoc 分系统单列 standalone docx，DEPENDS_ON=UWAprojDoc） | DocProcess (ADR-023) |
 | **2026-06-03** | SonarSim 项目派生（主动声呐界面仿真，template-engineering） | TechReq (ADR-022) |
@@ -39,6 +40,8 @@ tags: [roadmap, 演化, 里程碑]
 | **2026-04-14** | wiki-ingester agent 引入 | Hub (ADR-002) |
 | **2026-04-12** | Ohmybrain 体系初版（单仓原型） | Hub (ADR-001) |
 
+> ADR 编号是 append-only 稳定 ID，允许**追溯登记**（详见 [[decision-log]] 头注），故编号与日期非严格单调——如 ADR-025（2026-06-04）日期早于 ADR-024（2026-06-09）行属正常。
+
 ## 未来 Roadmap
 
 ### P0 - 立即（下 2 周）
@@ -53,7 +56,7 @@ tags: [roadmap, 演化, 里程碑]
 - [x] [[../topics/ecosystem-dashboard]] 实现 `scripts/dashboard_snapshot.py` 自动同步
 - [x] [[hub-as-brain]] 维护本页持续更新
 
-> P0 全部完成。下一阶段焦点转 P1（见下）。本批 = ✅ 8 页实质填充（2026-05-29）+ 2026-05-31 入会自检发现并修正 **50 处** 2026-05-29 并行填充残留 stale（计数 / 日期 / ADR 引用 / IconForge 缺失 / 已做未勾选），详见 [[../log]] [2026-05-31] 段。
+> P0 全部完成。下一阶段焦点转 P1（见下）。本批 = ✅ 8 页实质填充（2026-05-29）+ 2026-05-31 入会自检发现并修正 **50 处** 2026-05-29 并行填充残留 stale（计数 / 日期 / ADR 引用 / IconForge 缺失 / 已做未勾选），详见 [[../log]] [2026-05-31] 段。后续残留经 2026-06-09 自检（一/二/三）+ 2026-06-10 自检（四）分批收口（56 处 finding + 协作协议层「部分登记」+ queue/导航补全），填充本体不再变动。
 
 ### P1 - 短期（下 1-2 月）
 
@@ -64,7 +67,8 @@ tags: [roadmap, 演化, 里程碑]
 
 **Hub 工具**:
 - [ ] AnthropicPPT templates/layouts/ 9 layout builder 完整封装
-- [x] FlowGen flowgen-* Visio skill 族扩展（archmap L/I 族 + business/data-functional/stdflow renderer 落地，2026-06-01~04，[[decision-log]] ADR-025）；[ ] Mermaid 主入口仍待实装
+- [x] FlowGen flowgen-* Visio skill 族扩展（archmap L/I 族 + business/data-functional/stdflow renderer 落地，2026-06-01~04，[[decision-log]] ADR-025）
+- [ ] FlowGen Mermaid 主入口实装（CLI flowgen 主链路，与 Visio 族分离）
 - [x] Hub `scripts/dashboard_snapshot.py` 自动状态汇总（已落地；2026-06-09 修 WIKI_SUBDIRS 漏 agents/workflows 致内容页 105→107，改为自愈式自动发现子目录，实跑 memory 78 / 内容页 107）
 
 **UWAcomm_usbl 整机原型**:

@@ -1,7 +1,7 @@
 ---
 type: workflow
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-10
 tags: [交接流程, handoff, agent协作, 工作流, 归档标准]
 ---
 
@@ -87,6 +87,14 @@ handoff/archive/YYYY-MM-DD-task-slug.md
 - 验证状态已经记录；
 - 不再存在跨 agent 依赖；
 - 任何长期有效的经验已经沉淀到 `wiki/`。
+
+## 知识闭环交接（Hub 特例）
+
+Hub 本身无 `handoff/` 目录（非业务项目，见 [[../architecture/document-protocol]] §三层结构注）。**promote / sync-to-core / ingest 半途中断**时的交接走：
+
+- **Hub `TODO.md`** 留状态行（处理到哪个候选 / 哪一步、阻在什么）；
+- **`wiki/log.md`** 下次会话收口时记 entry 闭环；
+- core-update-queue / promote 候选本身就是持久状态，**不靠会话上下文**——中断后任何会话可从 queue 页 + TODO 恢复。
 
 ## 相关页面
 

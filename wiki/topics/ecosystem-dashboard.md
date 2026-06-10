@@ -1,7 +1,7 @@
 ---
 type: topic
 created: 2026-05-24
-updated: 2026-06-09
+updated: 2026-06-10
 tags: [dashboard, 生态, 状态, 实时]
 ---
 
@@ -9,7 +9,7 @@ tags: [dashboard, 生态, 状态, 实时]
 
 跨仓状态快照。**非实时**（需手动 / 半自动同步），但比"散在各处看"快。
 
-> 上次同步：**2026-06-09**（方式：Claude+Codex 协作协议层 ADR-024 落地 + 入会自检一致性审计二 workflow 修协议层「部分登记」stale——wiki 计数 104→107 跨 6 文件 + 3 新页 conventions §3 合规 + 4 交叉链 + memory 77→78）
+> 上次同步：**2026-06-10**（方式：入会自检（四）4 路审计收口 + 工作区级 hook ×2 + 架构体检（7 维对抗复核，6/24 成立）+ **USBL_hw 派生登记（ADR-026，TechReq 5→6）**）
 >
 > 来源：本页是聚合视图。各项目仓有独立 wiki/log.md，本页 link 而不复制。各项目「当前焦点」的 session 日期 / HEAD 锚点抽自 auto-memory 索引（`~/.claude/projects/D--Claude/memory/MEMORY.md`），见 [[memory-index]]。
 >
@@ -26,6 +26,9 @@ tags: [dashboard, 生态, 状态, 实时]
 | **UWAnet** | 🟡 前期调研 | 水声组网协议 (Aqua-Sim-NG / ns-3)，尚无 session 锚点 | `D:\Claude\TechReq\UWAnet` |
 | **UWAcomm_usbl** 🔒 | 🟢 活跃 | 整机原型样机 + 总集成（2026-04-25 派生）；2026-06-01 SPEC-003 水听器收发三板架构（通用平台分置）+ 06-03/05/07 CAGE5 5 元阵东南大学水池实测 DOA 调试（CBF 优于 TDOA，方位泛化 1.2-1.9°）；HEAD `c6d608e`+（pooldata 实测线已 push gitlab） | `D:\Claude\TechReq\UWAcomm_usbl` |
 | **SonarSim** 🔒 | 🟢 活跃 | 主动声呐界面仿真（显控台 + 探测链路，MATLAB App Designer，无依赖，手动模式，2026-06-03 派生）；SPEC-001 已实现跑通（单发同频干扰混响强度图，11 个 .m，T1-T4 单测过）+ 2026-06-04 绝对定标升级（接声呐方程）+ 18km 长程场景；已 commit+push 内网 gitlab lilin/SonarSim | `D:\Claude\TechReq\SonarSim` |
+| **USBL_hw** 🔒 | 🟡 起步 | USBL 硬件设计（**engineering-hardware 子型首例**，2026-06-10 派生，手动模式，ADR-026）；首批 ingest 4 源 → wiki 5 页 + 功放供电订正（±320V→48V/10A，210dB 指标连带存疑）+ 详细设计五缺口分析；**已交接 Codex**（handoff/active/ SPEC-001 骨架 + 核实清单），4 定向问题待用户答；git 未 commit、无远程 | `D:\Claude\TechReq\USBL_hw` |
+
+> 另：`projects/usbl-s1/` 是 USBL S1 仿真平台 **autonomous workflow dry-run（2026-04-22，Phase 0-4 全 PASS）的归档性质导航页**，非独立项目（USBL 权威入口仍是 `projects/usbl/`），故不单列状态行。
 
 ### DocProcess / 文档工作区（全私人）
 
@@ -61,7 +64,7 @@ tags: [dashboard, 生态, 状态, 实时]
 | **Ohmybrain** (本仓 = Hub) | 🟢 活跃 | 2026-06-09 两批：(1) 入会自检一致性审计补登 3 新项目（SonarSim/VisioForge/CooperativeASW）+ 计数 67→77（commit `7b7fa9d`）；(2) **Claude+Codex 协作协议层**（document-protocol / claude-codex-collaboration / agent-handoff + agents//workflows/ 新分类 + 根 AGENTS.md，**ADR-024**）+ 入会自检审计二修协议层「部分登记」stale（wiki 计数 104→107 跨 6 文件 + 3 新页 §3 合规 + 4 交叉链 + memory 77→78）。本批 commit + push gitlab main | `D:\Claude\Ohmybrain` |
 | **ohmybrain-core** (母仓) | 🟢 活跃 | 三模板就位；候选下沉队列见 [[core-update-queue]] | `D:\Claude\ohmybrain-core` |
 
-## Hub 内部规模快照（2026-06-09）
+## Hub 内部规模快照（2026-06-10）
 
 > 由 `scripts/dashboard_snapshot.py` 统计生成（wiki 子目录页数 / scripts / 本地 skills / agents / rules / memory）。skill 一栏区分**本地两层**：磁盘 SKILL.md 与叠加 plugin/marketplace 注入后的可见总数。
 
@@ -69,16 +72,16 @@ tags: [dashboard, 生态, 状态, 实时]
 |------|------|------|
 | wiki 内容页 | **107** | 20 concepts + 8 entities + 12 architecture + 1 agents + 1 workflows + 5 topics + 4 explorations + 31 source-summaries + 25 mcp-entities + 0 comparisons |
 | wiki 总文件 | **109** | 107 内容页 + 根 `index.md` + `log.md` |
-| 自动化脚本 | **22** | `scripts/*.py` 全量（含 dashboard_snapshot.py） |
-| Hooks | **8** | 3 阻断 + 4 提醒 + 1 注入（见下表） |
+| 自动化脚本 | **24** | `scripts/*.py` 全量（含 dashboard_snapshot.py；2026-06-10 +2 工作区级 hook 脚本） |
+| Hooks | **8 + 2** | Hub 8（3 阻断 + 4 提醒 + 1 注入，见下表）+ 工作区级 2（见表下注） |
 | 全局 skill（本地） | **31** | `~/.claude/skills/` 含 SKILL.md 的目录（33 个目录中 31 个有 SKILL.md） |
 | 全局 skill（注入后可见） | **90+** | 本地 31 叠加 `ecc:*` plugin / marketplace 注入后；裸写 90+ 会掩盖本地真实规模，故两层并列 |
 | 全局 agent | **55** | `~/.claude/agents/*.md` |
 | rules 目录 | **15** | common / zh / web + 12 语言（cpp/csharp/dart/golang/java/kotlin/perl/php/python/rust/swift/typescript） |
-| Memory 条目 | **78** | 4 类：user 1 / feedback 21 / project 53 / reference 3（见 [[memory-index]]） |
+| Memory 条目 | **80** | 4 类：user 1 / feedback 21 / project 55 / reference 3（见 [[memory-index]]；含本日自检 session + USBL_hw init 条目） |
 | MCP servers | **6** | context7 / exa / github / memory / playwright / sequential-thinking |
 
-> ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~025）。
+> ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~026）。
 
 ## Hub Hooks 当前状态
 
@@ -92,6 +95,8 @@ tags: [dashboard, 生态, 状态, 实时]
 | 🟡 提醒 | `commit_reminder.py` | Stop | wiki 未 commit 提醒 |
 | 🟡 提醒 | `check_memory_log_gap.py` | Stop | memory 与 wiki/log 缺口提醒 |
 | 🟢 注入 | `session_context.py` | SessionStart | 载入会话上下文 |
+
+> **工作区级 ×2**（2026-06-10，仅注册 `D:/Claude` 会话根，脚本托管 Hub `scripts/`）：`check_push_readme.py` 🔴 PreToolUse Bash（push 前 README 同步检查，`SKIP_README=1` 逃生）；`calendar_reminder.py` 🟡 Stop（每日 calendar 日志提醒，4h 节流）。
 
 详细见 [[system-overview]] § Harness 机制 与 [[harness-resources]]。
 
@@ -131,6 +136,6 @@ tags: [dashboard, 生态, 状态, 实时]
 - [[system-overview]] — 系统架构总览（含规模表）
 - [[hub-as-brain]] — 大脑功能定位
 - [[harness-resources]] — Hooks / Skills / Rules 全景
-- [[memory-index]] — auto-memory 78 条目索引（本页 session 锚点来源）
+- [[memory-index]] — auto-memory 80 条目索引（本页 session 锚点来源）
 - [[core-update-queue]] — Hub → core 下沉候选队列
-- [[decision-log]] — ADR-001~025 决策记录
+- [[decision-log]] — ADR-001~026 决策记录

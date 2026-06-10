@@ -1,7 +1,7 @@
 ---
 type: topic
 created: 2026-05-24
-updated: 2026-06-09
+updated: 2026-06-10
 tags: [core, queue, 下沉, 候选]
 ---
 
@@ -13,20 +13,14 @@ tags: [core, queue, 下沉, 候选]
 
 ### high priority
 
-| ID | 候选 | 当前位置 | 目标位置 | 验证状态 | ADR |
-|----|------|---------|---------|---------|------|
-| Q-001 | `check_index_log_sync.py` hook | `Ohmybrain/scripts/` | `core/template-*/scripts/` | ✓ Hub 实战，需 ≥ 2 项目验证 | — |
-| Q-002 | `<private>` 标签拦截 hook | `Ohmybrain/scripts/check_private_tags.py` | `core/template-document/scripts/`（必要时同步三模板） | ✓ Hub 实战，DocProcess 项目验证 | — |
-| Q-004 | `~/.claude/rules/common/llm-wiki.md` 工作流约定 | `~/.claude/rules/common/` | `core/template-*/.claude/rules/wiki.md` | ✓ 全局已使用 | — |
+（空 — 上轮 high priority 4 候选已于 2026-05-24 实战全部裁决：Q-003 下沉 / Q-001、Q-002 已 in sync 关闭 / Q-004 REJECT，详见下方 synced 与反例表。队列文件 2026-06-10 自检收口补记。）
 
 ### medium priority
 
 | ID | 候选 | 备注 |
 |----|------|------|
-| Q-005 | 三层渐进披露查询约定（index → log → 详 ≤3 页）| 写入 core/template-*/.claude/skills/query.md，启发自 claude-mem |
-| Q-006 | `~/.claude/rules/common/code-review.md` 通用部分 | 部分跨项目通用，需筛选 |
-| Q-007 | Hook exit code strategy 文档 | 已在 Hub CLAUDE.md 阐述，可下沉到 core/template-*/CLAUDE.md |
-| Q-008 | knowledge.review 步骤定义（workflows/knowledge/04-review.md）| 检查 core 当前版本是否完整 |
+| Q-005 | 三层渐进披露查询约定（index → log → 详 ≤3 页）| 写入 core/template-*/.claude/skills/query.md，启发自 claude-mem；**阻因**：尚无 ≥2 项目验证，待下游项目实际用 query 工作流后再评 |
+| Q-006 | `~/.claude/rules/common/code-review.md` 通用部分 | 部分跨项目通用，需筛选；**阻因**：未圈定"通用子集"范围，需先在 ≥1 个 TechReq 项目剪裁验证 |
 
 ### low priority / 待评估
 
@@ -44,6 +38,10 @@ tags: [core, queue, 下沉, 候选]
 | 日期 | ID | 内容 | core commit | 备注 |
 |------|---|------|-------------|------|
 | 2026-05-24 | Q-003 | wiki-ingester agent 契约 | `ohmybrain-core 4902412` | 3 模板都加（knowledge 闭环跨类型通用）|
+| 2026-05-24 | Q-001 | `check_index_log_sync.py` hook | （无新 commit） | 实战 diff 仅 40B EOL 差异，core 已含 → skip 关闭（2026-06-10 队列补记）|
+| 2026-05-24 | Q-002 | `<private>` 标签拦截 hook | `0b399f5`（2026-04-17 已含）| 实战 diff 空，已 in sync → skip 关闭（2026-06-10 队列补记）|
+| 2026-05-24 | Q-007 | Hook exit code strategy 文档 | `247986a` | 三模板 CLAUDE.md 均已含（2026-06-10 验证各 2 处命中）|
+| 2026-05-24 | Q-008 | knowledge.review 步骤（04-review.md）| `247986a` | 2026-06-10 验证：三模板 04-review.md 存在且内容一致 → 完整性检查闭环 |
 
 ## 评估标准（决策时用）
 
@@ -59,6 +57,7 @@ tags: [core, queue, 下沉, 候选]
 
 | 候选 | 拒绝理由 |
 |------|---------|
+| `llm-wiki.md` 工作流约定（Q-004）| source `~/.claude/rules/common/llm-wiki.md` 已 deprecated（2026-04-14 迁全局 skill），core 持活规则方向反 — REJECT（2026-05-24 实战）|
 | UWAcomm V→V→V 工作流 | 项目特化，算法 RCA 场景 |
 | DocProcess 4 步 pandoc pipeline | 私人项目，含敏感内容 |
 | Hub-as-brain 8 类页 | Hub 专属，新项目不需要 |

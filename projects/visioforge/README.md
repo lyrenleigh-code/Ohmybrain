@@ -4,7 +4,7 @@
 
 - **仓库**：`D:\Claude\DocProcess\VisioForge`
 - **类别**：🔒 私人项目（DocProcess 系，禁止公开发布 / 禁止 promote 至 Hub 公开 wiki）
-- **状态**：初始化完成，0 图件（待首张出图 spec）
+- **状态**：🟡 起步；首批 6 张 SN 效能预报图 1:1 高保真复刻（自建 `scripts/replica_lib2.py`，6/6 output/*.vsdx 待终审）；git init 未 commit（2026-06-10 自检同步）
 - **派生时间**：2026-06-02
 - **派生自**：`D:\Claude\ohmybrain-core\template-document\`
 - **启动模式**：手动（文档/图件型）

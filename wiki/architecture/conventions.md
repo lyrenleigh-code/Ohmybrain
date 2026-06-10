@@ -53,7 +53,7 @@ tags: [约定, conventions, 跨项目]
 | 矛盾标注 | 用 `> [!warning]` 不静默覆盖 |
 | 摘要密度 | source-summary ≤ 200 行；详情页可更长但用层级分割 |
 | 提炼 vs 搬运 | wiki 是**提炼**，不是 raw/ 的复制 |
-| ADR 引用 | ADR 以章节形式（ADR-001 ~ ADR-025）存放在 [[decision-log]] 内，**引用一律写 `[[decision-log]]`**，不要写 `[[ADR-002]]` 这种悬空链接 |
+| ADR 引用 | ADR 以章节形式（ADR-001 ~ ADR-026）存放在 [[decision-log]] 内，**引用一律写 `[[decision-log]]`**，不要写 `[[ADR-002]]` 这种悬空链接 |
 
 ## 4. 反模式约定（don't do）
 
@@ -189,7 +189,7 @@ UWAcomm_usbl-design baseline：`dd0f7af`（落地 5/8–5/11 设计方案 V1.1 +
 
 - [[hub-as-brain]] — 大脑功能定位（本页是其中之一）
 - [[dual-loop]] — 双闭环工作流约定的源头
-- [[decision-log]] — 架构决策记录（ADR-001 ~ ADR-025 章节）
+- [[decision-log]] — 架构决策记录（ADR-001 ~ ADR-026 章节）
 - [[../concepts/anti-patterns]] — 反模式约定（don't do）
 - [[../topics/harness-resources]] — harness 资源规模 + Hooks 约定来源
 - [[document-protocol]] — 项目文档结构协议（骨架 / 状态归属 / 迁移级别）

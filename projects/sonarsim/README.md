@@ -4,7 +4,7 @@
 
 - **仓库**：`D:\Claude\TechReq\SonarSim`
 - **类别**：🔒 私人项目（TechReq 工程系，禁止推送公开 GitHub/Gitee / 禁止 promote 至 Hub 公开 wiki）
-- **状态**：初始化完成（ohmybrain-core 派生 + Hub 注册 + git init main），待首个 spec
+- **状态**：🟢 活跃；SPEC-001 已实现跑通（单发同频干扰混响强度图，11 个 .m，T1-T4 单测过）+ 2026-06-04 绝对定标升级（接声呐方程）+ 18km 长程场景；已 commit+push 内网 gitlab（2026-06-10 自检同步）
 - **派生时间**：2026-06-03
 - **派生自**：`D:\Claude\ohmybrain-core\template-engineering\`
 - **依赖**：无（全新独立项目）

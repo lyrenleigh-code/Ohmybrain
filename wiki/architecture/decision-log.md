@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-06-09
+updated: 2026-06-10
 tags: [ADR, 决策, log]
 ---
 
@@ -11,9 +11,25 @@ tags: [ADR, 决策, log]
 
 最新在上。
 
-> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-025。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-026。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
 >
 > **编号约定**：ADR 编号为 **append-only 稳定 ID**（按登记顺序递增、不复用、不重排）；表按**事件日期降序**排列。绝大多数情况下编号降序 == 日期降序，但 retroactive 追溯条目（如 ADR-025 事件 2026-06-04、2026-06-09 登记）会出现编号与位置不严格对应——这是为避免重编号引发跨页引用级联失效（教训见 [[../log]] 2026-05-29）而做的取舍。
+
+---
+
+## ADR-026 · 2026-06-10 · USBL_hw 项目派生（engineering-hardware 子型首例）
+
+### 触发
+
+用户提出新建「USBL硬件设计」项目，并问应作 USBL 分支还是独立项目。
+
+### 决策
+
+**独立项目** `TechReq/USBL_hw` 🔒（手动模式，git 仅本地 main、无远程）。理由：① USBL 主仓是**公开 GitHub 仓**，硬件资料（基阵/电路/BOM/样机）必须私密，不能走其分支；② 交付物域不同（图纸/BOM/datasheet vs MATLAB 算法），二进制设计资料不宜混入算法仓历史；③ 沿 ADR 前一日口径走 **engineering-hardware 子型**（`template-engineering/` + `design/{requirements,schematics,pcb,mechanical,interfaces,reviews}` + `bom/ datasheets/ prototypes/ output/ tests/` 扩展）——子型**首例**，目录结构经实战验证后可升格 `template-hardware`（触发条件：第 2 个纯硬件项目出现时再立独立分类，同 flowgen-archmap「≥2 族成型再独立」判据）。
+
+### 实现
+
+SOP §1+§1.5 派生 + 占位符填充 + CLAUDE.md 项目边界表（阵元校准算法 / CAGE5 实测数据 / 三板架构留 UWAcomm_usbl，硬件本体设计归本项目，跨界引用不复制）+ git init -b main（未 commit，待授权）+ Hub 全量登记（CLAUDE.md ×2 / projects/ 导航 / dashboard / system-overview / roadmap / memory ×3 / log+index）。
 
 ---
 
