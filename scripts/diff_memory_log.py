@@ -39,7 +39,8 @@ class MemoryEntry:
     filename: str
     title: str
     description: str
-    date: str | None
+    date: str | None  # 首个日期（展示用）
+    dates: tuple[str, ...]  # 全部日期（缺口检测用，单行可多日）
     action: str
 
 
@@ -75,11 +76,12 @@ def parse_memory_index(path: Path) -> list[MemoryEntry]:
         if not m:
             continue
         title, filename, desc = m.groups()
-        # 优先 desc 抽日期；其次 filename（session 文件常用 *_YYYY-MM-DD_*.md 命名）
-        date_match = DATE_RE.search(desc) or DATE_RE.search(filename)
-        date = date_match.group(1) if date_match else None
+        # 收集 desc + filename 全部日期（单行可登记多日进展）；首个作展示日期，
+        # 全集用于缺口检测——用 findall 而非 search 避免只取首日漏报
+        all_dates = tuple(dict.fromkeys(DATE_RE.findall(desc) + DATE_RE.findall(filename)))
+        date = all_dates[0] if all_dates else None
         action = classify(filename, title)
-        entries.append(MemoryEntry(filename, title, desc, date, action))
+        entries.append(MemoryEntry(filename, title, desc, date, all_dates, action))
     return entries
 
 
@@ -112,12 +114,13 @@ def render_report(entries: list[MemoryEntry], log_dates: set[str]) -> str:
     by_date: dict[str, list[MemoryEntry]] = defaultdict(list)
     no_date: list[MemoryEntry] = []
     for e in entries:
-        if e.date:
-            by_date[e.date].append(e)
+        if e.dates:
+            for d in e.dates:  # 多日条目归入每个日期，缺口检测才不漏
+                by_date[d].append(e)
         else:
             no_date.append(e)
 
-    dated_count = sum(len(v) for v in by_date.values())
+    dated_count = sum(1 for e in entries if e.dates)
     missing = sorted(d for d in by_date if d not in log_dates)
     aligned = sorted(d for d in by_date if d in log_dates)
 

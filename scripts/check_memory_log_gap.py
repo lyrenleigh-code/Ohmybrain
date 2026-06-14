@@ -40,9 +40,10 @@ def memory_dated_entries() -> set[str]:
         if not m:
             continue
         _, filename, desc = m.groups()
-        date_match = DATE_RE.search(desc) or DATE_RE.search(filename)
-        if date_match:
-            dates.add(date_match.group(1))
+        # 收集 desc + filename 中的全部日期（单行可登记多日进展，如 USBL_hw 行
+        # 含 06-10 派生 + 06-11/06-12 进展）——用 findall 而非 search 避免只取首日漏报
+        for d in DATE_RE.findall(desc) + DATE_RE.findall(filename):
+            dates.add(d)
     return dates
 
 

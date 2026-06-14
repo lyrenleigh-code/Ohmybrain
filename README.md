@@ -46,7 +46,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | Topics（专题页） | **5** | `wiki/topics/`（含 ecosystem-dashboard / harness-resources / memory-index / core-update-queue / research-map） |
 | Explorations（探索页） | 4 | `wiki/explorations/` |
 | Source Summaries（资料摘要） | 31 | `wiki/source-summaries/` |
-| 自动化脚本 | 22 | `scripts/` |
+| 自动化脚本 | 24 | `scripts/` |
 
 ---
 
@@ -144,6 +144,8 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | 命令 | 用途 | 备注 |
 |------|------|------|
 | `python scripts/lint_wiki.py` | Wiki 结构检查（frontmatter / 链接 / 死链） | 含 `--quick` 模式 |
+| `python scripts/dashboard_snapshot.py` | 生成 Hub 规模快照表（粘贴到 ecosystem-dashboard） | 纯标准库 |
+| `python scripts/dashboard_snapshot.py --check` | 校验 wiki / README 各处 CANON 计数与实跑值一致 | Stop hook；不一致才提醒 |
 | `python scripts/sync_index.py` | 同步 wiki/index.md 页面计数 | log.md 配套 |
 | `python scripts/transcribe.py <文件>` | Whisper 音视频转录 → raw/ | 需 whisper + ffmpeg |
 | `python scripts/scrape.py <URL>` | Firecrawl 网页抓取 → raw/ | 需 FIRECRAWL_API_KEY |

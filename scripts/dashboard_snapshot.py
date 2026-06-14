@@ -29,8 +29,15 @@
 
 from __future__ import annotations
 
+import argparse
+import io
+import re
 import sys
 from pathlib import Path
+
+# Windows 控制台默认 gbk，wiki 文本含非 gbk 字符 / 输出含符号——统一 UTF-8 stdout，
+# 避免作 Stop hook 时 UnicodeEncodeError 崩溃（同 check_memory_log_gap.py 处理）。
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 # wiki 子目录展示顺序（与 ecosystem-dashboard 表一致）。
 # 仅用于「已知分类」的排序；实际统计由 discover_wiki_subdirs 自动发现 wiki/ 下
@@ -172,7 +179,103 @@ def render(hub_root: Path, claude_root: Path) -> str:
     return "\n".join(lines)
 
 
+# ---------------------------------------------------------------------------
+# CANON 计数校验（--check）
+# ---------------------------------------------------------------------------
+# 「部分登记」反模式：CANON 计数（memory / scripts / wiki 页数等）在多处 wiki
+# 现态页冗余冗写，某处 bump 后漏级联到其他处 → 反复 stale（2026-05-31 / 06-09×3
+# / 06-10 / 06-14 自检连续命中）。lint_wiki.py 只查孤儿页不查计数，是结构性盲区。
+#
+# 本注册表把「哪个页面的哪个数字应等于哪个实跑值」显式编码：每条 = (相对 hub 根的
+# 路径（wiki/* 或 README.md）, 单捕获组正则, ground-truth 键, 标签)。--check 逐条
+# read+findall，捕获数 ≠ 实跑值即报 stale；正则未命中即报「模式失配」（页面措辞变了）。
+#
+# 只扫现态页（wiki + README，**不扫 log.md**），故历史 log 里的旧计数（如 "78→79"）
+# 不会误报。新增 CANON 冗写点时在此追加一行即可。
+CANON_CHECKS: list[tuple[str, str, str, str]] = [
+    # --- memory 总数 ---
+    ("wiki/architecture/conventions.md", r"auto-memory (\d+) 个", "mem_total", "memory 总数"),
+    ("wiki/concepts/anti-patterns.md", r"memory 共 (\d+) 个", "mem_total", "memory 总数"),
+    ("wiki/concepts/anti-patterns.md", r"共 (\d+) 个原始源", "mem_total", "memory 总数"),
+    ("wiki/index.md", r"(\d+) 条 auto-memory", "mem_total", "memory 总数"),
+    ("wiki/architecture/three-tier-architecture.md", r"恒久（(\d+) 条）", "mem_total", "memory 总数"),
+    ("wiki/topics/ecosystem-dashboard.md", r"Memory 条目 \| \*\*(\d+)\*\*", "mem_total", "memory 总数"),
+    # --- memory project 子计数 ---
+    ("wiki/architecture/conventions.md", r"project (\d+) / reference", "mem_project", "memory project 子数"),
+    ("wiki/concepts/anti-patterns.md", r"project (\d+) / reference", "mem_project", "memory project 子数"),
+    ("wiki/topics/ecosystem-dashboard.md", r"project (\d+) / reference", "mem_project", "memory project 子数"),
+    # --- scripts ---
+    ("wiki/architecture/conventions.md", r"Hub 当前 (\d+) 个 \.py", "scripts", "scripts 数"),
+    ("wiki/topics/ecosystem-dashboard.md", r"自动化脚本 \| \*\*(\d+)\*\*", "scripts", "scripts 数"),
+    ("README.md", r"自动化脚本 \| (\d+) \|", "scripts", "scripts 数"),
+    # --- wiki 内容页 / 总文件 ---
+    ("wiki/index.md", r"页面总数：(\d+)", "wiki_content", "wiki 内容页"),
+    ("wiki/topics/ecosystem-dashboard.md", r"wiki 内容页 \| \*\*(\d+)\*\*", "wiki_content", "wiki 内容页"),
+    ("wiki/topics/ecosystem-dashboard.md", r"wiki 总文件 \| \*\*(\d+)\*\*", "wiki_total", "wiki 总文件"),
+    ("wiki/architecture/conventions.md", r"Hub wiki 当前共 \*\*(\d+) 个 \.md\*\*", "wiki_total", "wiki 总文件"),
+    # --- agents / rules / skills（本地）---
+    ("wiki/topics/ecosystem-dashboard.md", r"全局 agent \| \*\*(\d+)\*\*", "agents", "agents 数"),
+    ("wiki/architecture/conventions.md", r"agents (\d+) 个 \.md", "agents", "agents 数"),
+    ("wiki/topics/ecosystem-dashboard.md", r"rules 目录 \| \*\*(\d+)\*\*", "rules", "rules 目录数"),
+    ("wiki/architecture/conventions.md", r"rules (\d+) 个目录", "rules", "rules 目录数"),
+    ("wiki/topics/ecosystem-dashboard.md", r"全局 skill（本地） \| \*\*(\d+)\*\*", "skills_local", "本地 skill 数"),
+    ("wiki/architecture/conventions.md", r"skills 本地 (\d+) 个", "skills_local", "本地 skill 数"),
+]
+
+
+def compute_ground_truth(hub_root: Path, claude_root: Path) -> dict[str, int]:
+    _, content_total, _, wiki_total, _ = count_wiki(hub_root)
+    _, skill_with_md = count_skills(claude_root)
+    mem_counts, mem_total = count_memory(claude_root)
+    return {
+        "mem_total": mem_total,
+        "mem_project": mem_counts.get("project", 0),
+        "mem_feedback": mem_counts.get("feedback", 0),
+        "scripts": count_glob(hub_root / "scripts", "*.py"),
+        "wiki_content": content_total,
+        "wiki_total": wiki_total,
+        "agents": count_agents(claude_root),
+        "rules": count_rules(claude_root),
+        "skills_local": skill_with_md,
+    }
+
+
+def run_check(hub_root: Path, claude_root: Path) -> tuple[list[str], list[str], dict[str, int]]:
+    """返回 (问题列表, 通过列表, 实跑值)。问题非空即有 CANON 漂移或措辞失配。"""
+    gt = compute_ground_truth(hub_root, claude_root)
+    issues: list[str] = []
+    oks: list[str] = []
+    for relpath, pattern, key, label in CANON_CHECKS:
+        f = hub_root / relpath
+        expected = gt[key]
+        if not f.is_file():
+            issues.append(f"[缺文件] {relpath}（期望 {label}={expected}）")
+            continue
+        found = re.findall(pattern, f.read_text(encoding="utf-8"))
+        if not found:
+            issues.append(f"[模式失配] {relpath} ::{label}：正则未命中，措辞可能变了，需更新 CANON_CHECKS 或人工核对 → {pattern}")
+            continue
+        bad = sorted({v for v in found if int(v) != expected})
+        if bad:
+            issues.append(f"[计数 stale] {relpath} ::{label}：页面写 {bad}，实跑应为 {expected}")
+        else:
+            oks.append(f"[OK] {relpath} ::{label}={expected}（{len(found)} 处）")
+    return issues, oks, gt
+
+
 def main() -> int:
+    parser = argparse.ArgumentParser(
+        description="Ohmybrain 生态规模快照 / CANON 计数一致性校验"
+    )
+    parser.add_argument(
+        "--check", action="store_true",
+        help="校验 wiki 各处 CANON 计数与实跑值是否一致（不一致 stdout 提醒，始终 exit 0；可作 Stop hook）",
+    )
+    parser.add_argument(
+        "-v", "--verbose", action="store_true", help="--check 时打印每条检查（含通过项）",
+    )
+    args = parser.parse_args()
+
     hub_root = find_hub_root(Path(__file__).resolve().parent)
     if hub_root is None:
         hub_root = find_hub_root(Path.cwd())
@@ -181,6 +284,26 @@ def main() -> int:
         return 1
 
     claude_root = Path.home() / ".claude"
+
+    if args.check:
+        issues, oks, gt = run_check(hub_root, claude_root)
+        if args.verbose:
+            for line in oks:
+                print(line)
+        if issues:
+            print(
+                f"[CANON-check] {len(issues)} 处 CANON 计数不一致 / 失配"
+                f"（实跑：memory {gt['mem_total']} / project {gt['mem_project']} · "
+                f"scripts {gt['scripts']} · wiki 内容页 {gt['wiki_content']}/{gt['wiki_total']} · "
+                f"agents {gt['agents']} · rules {gt['rules']} · skills {gt['skills_local']}）："
+            )
+            for line in issues:
+                print(f"  - {line}")
+            print("  → 修正后重跑 `python scripts/dashboard_snapshot.py --check` 应静默。")
+        elif args.verbose:
+            print("[CANON-check] ✓ 全部一致")
+        return 0  # 提醒型：始终 exit 0（Stop hook 安全，Windows 友好）
+
     if not claude_root.is_dir():
         print(f"WARN: ~/.claude 不存在（{claude_root}），全局资源计数将为 0", file=sys.stderr)
 

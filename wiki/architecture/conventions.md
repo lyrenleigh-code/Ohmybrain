@@ -9,8 +9,8 @@ tags: [约定, conventions, 跨项目]
 
 命名 / 目录 / commit / PR / 工作流 / worktree / 私人项目 等跨项目共享约定。**事实源 = `~/.claude/rules/common/*.md`**（全局规则），本页是 Hub wiki 的索引 + 项目级扩展。
 
-> [!note] 全局资源规模（@2026-06-09）
-> `~/.claude/` 当前承载：**auto-memory 78 个**（user 1 / feedback 21 / project 53 / reference 3，`MEMORY.md` 索引 78 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 31 个**（33 个目录、其中 31 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
+> [!note] 全局资源规模（@2026-06-14）
+> `~/.claude/` 当前承载：**auto-memory 80 个**（user 1 / feedback 21 / project 55 / reference 3，`MEMORY.md` 索引 81 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 31 个**（33 个目录、其中 31 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
 
 ## 1. 命名约定
 
@@ -34,7 +34,7 @@ tags: [约定, conventions, 跨项目]
 | `plans/archive/` | 已归档计划 | 与 spec 归档节奏保持一致 |
 | `handoff/active/` | Agent / 跨会话交接单 | Claude Code 与 Codex 串行或并行交接时使用 |
 | `handoff/archive/` | 已关闭交接单 | 交接完成后归档 |
-| `scripts/` | 自动化 | hooks + utilities（Hub 当前 22 个 .py） |
+| `scripts/` | 自动化 | hooks + utilities（Hub 当前 24 个 .py，2026-06-10 +2 工作区级 hook） |
 | `output/` | 交付物（如适用） | 通常不 commit binary（除 demo） |
 | `.claude/` | harness | rules / skills / hooks / agents / settings.json |
 

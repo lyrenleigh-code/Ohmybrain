@@ -65,6 +65,10 @@
           },
           {
             "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/scripts/dashboard_snapshot.py\" --check"
+          },
+          {
+            "type": "command",
             "command": "python \"$CLAUDE_PROJECT_DIR/scripts/sync_agent.py\" --check"
           }
         ]

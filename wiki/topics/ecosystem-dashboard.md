@@ -1,7 +1,7 @@
 ---
 type: topic
 created: 2026-05-24
-updated: 2026-06-10
+updated: 2026-06-14
 tags: [dashboard, 生态, 状态, 实时]
 ---
 
@@ -9,11 +9,11 @@ tags: [dashboard, 生态, 状态, 实时]
 
 跨仓状态快照。**非实时**（需手动 / 半自动同步），但比"散在各处看"快。
 
-> 上次同步：**2026-06-10**（方式：入会自检（四）4 路审计收口 + 工作区级 hook ×2 + 架构体检（7 维对抗复核，6/24 成立）+ **USBL_hw 派生登记（ADR-026，TechReq 5→6）**）
+> 上次同步：**2026-06-14**（方式：ultracode 入会自检（五）4 维 workflow 审计 + 逐 finding 对抗验证（16 confirmed / 0 refuted）；**USBL_hw 行 06-11~14 进展全刷**（🟡起步→🟢活跃，38 commit / 设计层基本冻结）+ CANON memory 78→80 / project 53→55 五页级联 + scripts 22→24 + 🕸️ 标记修订 + **UWAcomm / UWAcomm_usbl / DigitalTwin1plusN / USBL 四行据 git 实况刷新**（锚点改取真实 git HEAD；4 行已超前各自 auto-memory，待相应项目 session 回填））
 >
 > 来源：本页是聚合视图。各项目仓有独立 wiki/log.md，本页 link 而不复制。各项目「当前焦点」的 session 日期 / HEAD 锚点抽自 auto-memory 索引（`~/.claude/projects/D--Claude/memory/MEMORY.md`），见 [[memory-index]]。
 >
-> **stale 标记约定**：项目「当前焦点」session 日期距今 **> 30 天** 视为 stale（标 🕸️），需要主动回访确认状态；本表锚点皆 ≤ 30 天（最早 UWAnet 仅前期调研无 session）。
+> **stale 标记约定**：项目「当前焦点」session 日期距今 **> 30 天** 视为 stale（标 🕸️），需要主动回访确认状态；除已标 🕸️ 的 DigitalTwinGuide（init 起 master 无 commit，停滞 32 天）外，其余锚点 ≤ 30 天（最早 UWAnet 仅前期调研无 session）。
 
 ## 仓 / 项目状态总览
 
@@ -21,12 +21,12 @@ tags: [dashboard, 生态, 状态, 实时]
 
 | 项目 | 状态 | 当前焦点（最近 session / 锚点） | 路径 |
 |------|------|---------|------|
-| **UWAcomm** | 🟢 活跃开发 | 6 通信体制 V→V→V 持续迭代；2026-05-16 rx_stream_p4 接口移植（claude worktree 4 commit `d74c0a2`+`3d6d0b5` 未 push）+ 双回归 RCA（algo A FAIL / fd=1Hz 50% 回归 vs `a291af4`） | `D:\Claude\TechReq\UWAcomm` |
-| **USBL** | 🟢 活跃开发 | 超短基线自定位；2026-04-25 H8 spec draft 落地，等用户答 D1-D4，H7 未起 | `D:\Claude\TechReq\USBL` |
+| **UWAcomm** | 🟢 活跃开发 | 6 通信体制 V→V→V 持续迭代；2026-05-16 rx_stream_p4 接口移植（claude worktree 4 commit `d74c0a2`+`3d6d0b5` 未 push）+ 双回归 RCA（algo A FAIL / fd=1Hz 50% 回归 vs `a291af4`）；**main `ba03e8a` 已落「6 体制水池试验验证」里程碑**（commit 标题：5 实测 BER=0 + OTFS sim 验证；结论待用户复核，auto-memory 尚停 05-16 待回填） | `D:\Claude\TechReq\UWAcomm` |
+| **USBL** | 🟢 活跃开发 | 超短基线自定位；2026-04-25 H8 spec draft（等答 D1-D4，H7 未起）；**2026-05-25 main `accc52a`：D-OQ-1 链路预算 / D-OQ-2 多深度标定两跨项目回流专题（回流自 UWAcomm_usbl）+ README mermaid 三章节**（auto-memory 仅 project_usbl_h8_drafting，待回填） | `D:\Claude\TechReq\USBL` |
 | **UWAnet** | 🟡 前期调研 | 水声组网协议 (Aqua-Sim-NG / ns-3)，尚无 session 锚点 | `D:\Claude\TechReq\UWAnet` |
-| **UWAcomm_usbl** 🔒 | 🟢 活跃 | 整机原型样机 + 总集成（2026-04-25 派生）；2026-06-01 SPEC-003 水听器收发三板架构（通用平台分置）+ 06-03/05/07 CAGE5 5 元阵东南大学水池实测 DOA 调试（CBF 优于 TDOA，方位泛化 1.2-1.9°）；HEAD `c6d608e`+（pooldata 实测线已 push gitlab） | `D:\Claude\TechReq\UWAcomm_usbl` |
+| **UWAcomm_usbl** 🔒 | 🟢 活跃 | 整机原型样机 + 总集成（2026-04-25 派生）；calibration 分支 06-03/05/07 CAGE5 5 元阵东南大学水池实测 DOA 调试（CBF 优于 TDOA，方位泛化 1.2-1.9°，HEAD `c6d608e` 已 push gitlab）；**main `73cf223`：硬件功能接口图 v3 + SPEC-003 接口定义**（2026-06-01 收发三板架构后续；dashboard 原仅记 calibration 线） | `D:\Claude\TechReq\UWAcomm_usbl` |
 | **SonarSim** 🔒 | 🟢 活跃 | 主动声呐界面仿真（显控台 + 探测链路，MATLAB App Designer，无依赖，手动模式，2026-06-03 派生）；SPEC-001 已实现跑通（单发同频干扰混响强度图，11 个 .m，T1-T4 单测过）+ 2026-06-04 绝对定标升级（接声呐方程）+ 18km 长程场景；已 commit+push 内网 gitlab lilin/SonarSim | `D:\Claude\TechReq\SonarSim` |
-| **USBL_hw** 🔒 | 🟡 起步 | USBL 硬件设计（**engineering-hardware 子型首例**，2026-06-10 派生，手动模式，ADR-026）；首批 ingest 4 源 → wiki 5 页 + 功放供电订正（±320V→48V/10A，210dB 指标连带存疑）+ 详细设计五缺口分析；**已交接 Codex**（handoff/active/ SPEC-001 骨架 + 核实清单），4 定向问题待用户答；git 未 commit、无远程 | `D:\Claude\TechReq\USBL_hw` |
+| **USBL_hw** 🔒 | 🟢 活跃 | USBL 硬件设计（**engineering-hardware 子型首例**，2026-06-10 派生，手动模式，ADR-026）；**设计决策层基本全冻结**：收发链 TX+RX 全 first-pass（NeUB-816 实测闭环 TVR~146.8dB@12kHz→190dB 仅需~184W / 功放路线 a；2026-06-12 平台重构去 Zynq→分布式 ARM 控制板+采集 FPGA-A 数字直驱）+ SPEC 成熟度 001/002 first-pass·003 third-pass·004 confirmed·005 first-pass（005 因平台重构降级重开）；2026-06-14 连带文档对齐 + 5 路对抗验证 + 3 checkpoint 裁决 + 3D φ200；wiki 27 页；写权已回 Claude；HEAD `32ae044` 共 38 commit，本地 main 无远程（push 待内网库），工作树尚有未提交改动（Codex 06-14 拓扑/3D 批待复核提交）；剩余全属外部依赖（江苏水声 NeUB-816 大信号 + 供应商询证 + 耐压 FEA + 水池实测） | `D:\Claude\TechReq\USBL_hw` |
 
 > 另：`projects/usbl-s1/` 是 USBL S1 仿真平台 **autonomous workflow dry-run（2026-04-22，Phase 0-4 全 PASS）的归档性质导航页**，非独立项目（USBL 权威入口仍是 `projects/usbl/`），故不单列状态行。
 
@@ -38,8 +38,8 @@ tags: [dashboard, 生态, 状态, 实时]
 | **UWAprojDoc** 🔒 | 🟢 活跃 | 水声专项方案；2026-05-29 业务场景 C1-C6 全套（C5 区域预警 / C6 编队协同探潜 使命级新增 + 六详章 + ch04§4.1.4 覆盖矩阵 + 独立场景 docx）；已 commit `ad59ef8`（本地未 push） | `D:\Claude\DocProcess\UWAprojDoc` |
 | **CooperativeDetection** 🔒 | 🟢 活跃 | 4 专题 12 课题方案（2026-05-08 派生） | `D:\Claude\DocProcess\CooperativeDetection` |
 | **PaperReview** 🔒 | 🟢 活跃 | 学位论文外审（中文）；2026-05-09 派生，HEAD `b3568f6`，当前在评水声专硕一份 | `D:\Claude\DocProcess\PaperReview` |
-| **DigitalTwinGuide** 🔒 | 🟢 活跃 | 数字孪生实施指南方法论；2026-05-13 首版宋体 docx + 4 步 pandoc pipeline，63 init + docx 仍 stage 未 commit | `D:\Claude\DocProcess\DigitalTwinGuide` |
-| **DigitalTwin1plusN** 🔒 | 🟡 起步 | 「1+N」水下集群数字孪生体系方案（2026-05-25 派生）；P1-P11 概念决议（P11 暂缓）+ 3 spec，HEAD `234eb11`（7 commit） | `D:\Claude\DocProcess\DigitalTwin1plusN` |
+| **DigitalTwinGuide** 🔒 | 🕸️ 停滞 | 数字孪生实施指南方法论；2026-05-13 首版宋体 docx + 4 步 pandoc pipeline，63 init + docx 仍 stage 未 commit；**init 起 master 无 commit，停滞 32 天，待回访** | `D:\Claude\DocProcess\DigitalTwinGuide` |
+| **DigitalTwin1plusN** 🔒 | 🟢 活跃 | 「1+N」水下集群数字孪生体系方案（2026-05-25 派生）；P1-P11 概念决议（P11 暂缓）+ 3 spec；**同日（05-25 晚）v0-v5 完整可研报告 docx 落地（4 步 pandoc pipeline，报价表按 V1.0 格式），HEAD `234eb11`→`c866bb7`（12 commit，本地无远程）**（auto-memory 待回填同日 docx 延续） | `D:\Claude\DocProcess\DigitalTwin1plusN` |
 | **VisioForge** 🔒 | 🟡 起步 | 通用 Visio 出图工作区（2026-06-02 派生，复用全局 flowgen-* 8 skill）；首批 6 张 SN 效能预报图 1:1 高保真复刻（自建 scripts/replica_lib2.py）；git init -b main 首 commit 未提交 | `D:\Claude\DocProcess\VisioForge` |
 | **CooperativeASW** 🔒 | 🟢 活跃 | UWAprojDoc「编队协同探潜配置仿真与效能评估分系统」单列细化独立 docx 方案（2026-06-03 派生，DEPENDS_ON=UWAprojDoc）；全文 17 章 223k 字 + 24 图全细化 + docx 969KB/100 页；2026-06-04 图件大改（I 族接口图 + build_docx A4 fit-to-box）；commit `f46b16d`+`5da5de1`（本地未 push） | `D:\Claude\DocProcess\CooperativeASW` |
 
@@ -64,7 +64,7 @@ tags: [dashboard, 生态, 状态, 实时]
 | **Ohmybrain** (本仓 = Hub) | 🟢 活跃 | 2026-06-09 两批：(1) 入会自检一致性审计补登 3 新项目（SonarSim/VisioForge/CooperativeASW）+ 计数 67→77（commit `7b7fa9d`）；(2) **Claude+Codex 协作协议层**（document-protocol / claude-codex-collaboration / agent-handoff + agents//workflows/ 新分类 + 根 AGENTS.md，**ADR-024**）+ 入会自检审计二修协议层「部分登记」stale（wiki 计数 104→107 跨 6 文件 + 3 新页 §3 合规 + 4 交叉链 + memory 77→78）。本批 commit + push gitlab main | `D:\Claude\Ohmybrain` |
 | **ohmybrain-core** (母仓) | 🟢 活跃 | 三模板就位；候选下沉队列见 [[core-update-queue]] | `D:\Claude\ohmybrain-core` |
 
-## Hub 内部规模快照（2026-06-10）
+## Hub 内部规模快照（2026-06-14）
 
 > 由 `scripts/dashboard_snapshot.py` 统计生成（wiki 子目录页数 / scripts / 本地 skills / agents / rules / memory）。skill 一栏区分**本地两层**：磁盘 SKILL.md 与叠加 plugin/marketplace 注入后的可见总数。
 
@@ -97,6 +97,8 @@ tags: [dashboard, 生态, 状态, 实时]
 | 🟢 注入 | `session_context.py` | SessionStart | 载入会话上下文 |
 
 > **工作区级 ×2**（2026-06-10，仅注册 `D:/Claude` 会话根，脚本托管 Hub `scripts/`）：`check_push_readme.py` 🔴 PreToolUse Bash（push 前 README 同步检查，`SKIP_README=1` 逃生）；`calendar_reminder.py` 🟡 Stop（每日 calendar 日志提醒，4h 节流）。
+>
+> **其他 settings 注册的操作/一致性 guard（不计入上表策展 8）**：`agent_writelock.py`（PreToolUse 写锁 + Stop 释放）；`sync_agent.py --check`（Stop，agent 同步）；**`dashboard_snapshot.py --check`（Stop，2026-06-14 新增——CANON 计数校验，显式注册表逐条比对 wiki 计数 token vs 实跑值，不一致才提醒，根治计数级联反复）**。
 
 详细见 [[system-overview]] § Harness 机制 与 [[harness-resources]]。
 

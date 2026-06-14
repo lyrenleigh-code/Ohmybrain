@@ -4,6 +4,26 @@
 
 ---
 
+## [2026-06-11 ~ 2026-06-14] maintenance | 入会自检（五）：USBL_hw 06-11~14 进展全刷 + dashboard 跨项目对账 + CANON 级联
+
+ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第五轮），4 维 workflow 审计 + 逐 finding 对抗验证（16 confirmed / 0 refuted / 0 uncertain）。区间 header 覆盖 06-11~14（兼闭合 `check_memory_log_gap` 多日期缺口）。
+
+**① USBL_hw 06-11~14 进展登记**（Hub 视图，项目侧详情见 USBL_hw 自身 wiki/log）：自 06-10 派生（当时「未 commit、无远程」）演进到**设计决策层基本全冻结**——收发链 TX+RX 全 first-pass（NeUB-816 实测闭环 TVR~146.8dB@12kHz→190dB 仅需~184W / 功放路线 a）+ 平台重构去 Zynq→分布式 ARM 控制板+采集 FPGA-A 数字直驱 + 结构方案 B φ200 + USBL 7 厂商对标；SPEC 成熟度 001/002 first-pass·003 third-pass·004 confirmed·005 first-pass（005 因平台重构 confirmed→first-pass 重开）；窗口 22 commit（06-11=11 / 06-12=12 / 06-14=9，06-13 无）/ 全仓 38，HEAD `32ae044`，本地 main 无远程；写权已回 Claude。
+
+**② dashboard 跨项目对账**（dimension C）：除 USBL_hw 外另发现 4 行落后 git，据实况刷新——UWAcomm（main `ba03e8a`「6 体制水池试验验证」里程碑，结论待用户复核）/ UWAcomm_usbl（main `73cf223` 硬件接口图 v3+SPEC-003，原行仅记 calibration 分支 `c6d608e`）/ DigitalTwin1plusN（`234eb11`→`c866bb7` 同日 v0-v5 可研 docx，🟡→🟢）/ USBL（`accc52a` D-OQ-1/2 回流专题+README mermaid，原行停 04-25）；DigitalTwinGuide 加 🕸️（init 起无 commit，停滞 32 天），修正「锚点皆 ≤30 天」断言。**注：上述 4 行已超前各自 auto-memory，待相应项目 session 回填**。
+
+**③ CANON 计数级联**（dimension B，「部分登记」反模式复发）：06-10/06-11 的 memory 78→80 / project 53→55 bump 漏级联 5 处现态页（conventions §0 + 目录表 scripts 22→24 / anti-patterns ×2 / index / three-tier），统一传播至 80/55/24。
+
+**④ 工具盲点修复**（dimension D2）：`check_memory_log_gap.py` + `diff_memory_log.py` 原用 `DATE_RE.search` 只取每行首日期，致 USBL_hw 行嵌入的 06-11/06-12 被首日 06-10 掩盖、本会话 Stop 未告警 log 滞后——改 `findall` 收集单行全部日期（两调用点同改防发散）。
+
+**结论**：无新增 ADR（[[architecture/decision-log]] 起点声明：项目内部里程碑不入跨仓 ADR）；roadmap 按 ADR-keyed 粒度不单列里程碑行（仅加注）。
+
+> **surface 给用户（未自动处理）**：① USBL_hw 06-14 会话回填其 auto-memory（git 超前 memory）；② UWAcomm / UWAcomm_usbl / DigitalTwin1plusN / USBL 四项 memory 回填；③ `dashboard_snapshot.py` 升级 CANON `--check` 校验器（根治计数级联反复，B-06）；④ calendar 06-14 待补。
+
+本批仅文件改动，**未 commit**（git 待授权）。
+
+---
+
 ## [2026-06-10] handoff | USBL_hw 首批 ingest + 缺口分析 → 交接 Codex（协议层首次实战）
 
 USBL_hw 派生当日完成首循环并**首次实战 ADR-024 交接协议**（项目侧详情在 USBL_hw 自己的 wiki/log，此处记 Hub 视图）：
@@ -273,9 +293,9 @@ lint 通过、全站无残留 104/106。**Group 5 判断项经用户裁决全部
 
 ---
 
-## [2026-06-03] backfill | SonarSim / CooperativeASW 派生日 + UWAcomm_usbl poolData 实测线起步（log 补登）
+## [2026-06-03 ~ 2026-06-04] backfill | SonarSim / CooperativeASW 派生日 + UWAcomm_usbl poolData 实测线起步（log 补登）
 
-2026-06-10 自检（四）补登日期 header 对齐 memory→log 缺口。SonarSim / CooperativeASW 两项目派生正文已于 [2026-06-09]「补登 3 新项目」entry 详记，此处不复述。本日另有 **UWAcomm_usbl poolData/ 实测线起步**（calibration/v1.x，CAGE5 5 元阵 1.9m/2.1m HFM 水池数据主流水线 `uwa_doa_pipeline.m`，详见 memory `project_uwacomm_usbl_pooldata_2026-06-03`）。
+2026-06-10 自检（四）补登日期 header 对齐 memory→log 缺口。SonarSim / CooperativeASW 两项目派生正文已于 [2026-06-09]「补登 3 新项目」entry 详记，此处不复述。本日另有 **UWAcomm_usbl poolData/ 实测线起步**（calibration/v1.x，CAGE5 5 元阵 1.9m/2.1m HFM 水池数据主流水线 `uwa_doa_pipeline.m`，详见 memory `project_uwacomm_usbl_pooldata_2026-06-03`）。**2026-06-04**：CooperativeASW 图件大改（24 图 workflow 重设计 + build_docx A4 fit-to-box）催生全局 `archmap_interface.py`（I 族 hub-spoke 接口图）skill + SonarSim 接声呐方程绝对定标；范围扩为区间（2026-06-14 自检（五）改 `check_memory_log_gap` 为 findall 后新捕获的 06-04 缺口，于此闭合）。
 
 ---
 

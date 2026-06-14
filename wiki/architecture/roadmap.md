@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-06-10
+updated: 2026-06-14
 tags: [roadmap, 演化, 里程碑]
 ---
 
@@ -41,6 +41,8 @@ tags: [roadmap, 演化, 里程碑]
 | **2026-04-12** | Ohmybrain 体系初版（单仓原型） | Hub (ADR-001) |
 
 > ADR 编号是 append-only 稳定 ID，允许**追溯登记**（详见 [[decision-log]] 头注），故编号与日期非严格单调——如 ADR-025（2026-06-04）日期早于 ADR-024（2026-06-09）行属正常。
+>
+> 2026-06-14 入会自检（五）：USBL_hw 派生后 06-11~14 设计层冻结（窗口 22 commit / 全仓 38，收发链 first-pass + 平台去 Zynq + SPEC-004 confirmed 等）按 ADR-keyed 粒度（每里程碑对应一条 ADR）**不单列新里程碑行**；进展详见 [[../topics/ecosystem-dashboard]] USBL_hw 行 + [[../log]] [2026-06-11 ~ 2026-06-14] 条目。
 
 ## 未来 Roadmap
 
