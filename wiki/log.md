@@ -3,6 +3,16 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-06-15] new-project | PaperTrans 派生（外文论文英译中翻译工作区）
+
+DocProcess 系第 10 个子项目 `PaperTrans`（`D:\Claude\DocProcess\PaperTrans`，git 仅本地 main、无远程，75 文件已暂存待 commit）派生登记。按 `template-document` SOP 派生，手动模式，🔒 私人。
+
+**定位**：外文（英文为主）学术论文 → 术语一致的中文译稿，水声/通信/信号处理领域优先。**一篇论文 = 一份 spec = 一份译稿**。
+
+**脚手架要点**：CLAUDE.md/README.md 占位符清零并改写为翻译语境；wiki 两页种子（`glossary.md` 术语表单一可信源 + 通用/水声种子术语；`concepts/translation-conventions.md` 英译中风格指南：语体/保形元素/一致性/03-validate 自查清单）；`specs/_TEMPLATE-paper-translation.md` 单篇翻译 spec 模板（真论文到位时复制到 active/）；4 步翻译闭环（01-spec→02-draft→03-validate→04-archive）对齐 `workflows/document/`。lint_wiki/sync_index/validate_task 三校验通过。
+
+**登记面**：projects/papertrans/README.md（新建）+ Hub CLAUDE.md 项目映射表（补 PaperTrans + 顺带补此前漏登的 `papers` 行）+ DocProcess/CLAUDE.md 子项目清单。dashboard 项目计数（已注册 21→22）留下次入会自检统一刷新。
+
 ## [2026-06-15] tooling | 注册全局 skill `calibration-field`（FieldKit M2）
 
 FieldKit 出图系统注册为全局 skill `~/.claude/skills/calibration-field/SKILL.md`（自包含：5 图种 schema + 图片(`render.py`→PNG/PDF) / PPT(`styled_diagram`→可编辑幻灯片) 两种产出 + carve-out 边界 + 双调色板 + 8 技法）。关键词触发（封面/扉页/总览/校准场/风格化配图…）。本地 skill **31→32**（目录 33→34）；harness-resources 清单 + dashboard/conventions 计数同步。FieldKit M2 ✅。

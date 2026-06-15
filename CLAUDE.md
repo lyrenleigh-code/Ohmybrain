@@ -55,6 +55,8 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | DigitalTwin1plusN 🔒 | 私人，不公开 | `D:\Claude\DocProcess\DigitalTwin1plusN` |
 | VisioForge 🔒 | 私人，不公开 | `D:\Claude\DocProcess\VisioForge` |
 | CooperativeASW 🔒 | 私人，不公开 | `D:\Claude\DocProcess\CooperativeASW` |
+| papers 🔒 | 私人，不公开 | `D:\Claude\DocProcess\papers` |
+| PaperTrans 🔒 | 私人，不公开（当前无远程） | `D:\Claude\DocProcess\PaperTrans` |
 | FlowGen | 私人，不公开 | `D:\Claude\Tools\FlowGen` |
 | IconForge | 私人，不公开 | `D:\Claude\Tools\IconForge` |
 | AnthropicPPT | 私人，不公开 | `D:\Claude\Tools\AnthropicPPT` |
