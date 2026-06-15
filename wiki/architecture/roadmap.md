@@ -13,6 +13,7 @@ tags: [roadmap, 演化, 里程碑]
 
 | 日期 | 里程碑 | 类型 |
 |------|--------|------|
+| **2026-06-15** | FieldKit 项目派生 + 「校准场 / Calibration Field」图示风格系统（共享 design kit → HTML→PNG/PDF 生成器 SHIPPED v1 + AnthropicPPT styled_diagram SHIPPED v2 + flowgen styled-figure carve-out）；借鉴 pbakaus/impeccable | Tools (ADR-027 / ADR-028) |
 | **2026-06-10** | USBL_hw 项目派生（USBL 硬件设计，engineering-hardware 子型首例）+ 工作区级 hook ×2（push README 检查 / calendar 提醒） | TechReq + Hub (ADR-026) |
 | **2026-06-09** | Claude+Codex 协作协议层落地（document-protocol / claude-codex-collaboration / agent-handoff，新增 agents/ + workflows/ 分类）+ 单仓串行硬性化（写权限互斥锁 hook `agent_writelock.py` + Hub 8 hook 提升会话根修「根会话哑火」） | 架构 + tooling (ADR-024) |
 | **2026-06-04** | FlowGen archmap 渲染器族扩展（L 族分层架构图 + I 族 hub-spoke 接口图 + business/data/stdflow，托管于 flowgen-archposter） | Tools (ADR-025，追溯登记) |

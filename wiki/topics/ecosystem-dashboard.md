@@ -50,6 +50,7 @@ tags: [dashboard, 生态, 状态, 实时]
 | **FlowGen** | 🟢 活跃 | 需求→Visio/Mermaid 出图工具族；2026-06-01 阶段1 系统架构图（commit `5372721` 已 push gitlab）+ 2026-06-02 阶段2-A 逻辑架构图 + 2026-06-04 archmap business/data-functional/interface(I 族)/stdflow 多 renderer + 新 archmap skill | `D:\Claude\Tools\FlowGen` |
 | **AnthropicPPT** | 🟢 活跃 | FIELDBOOK PPT 模板（2026-05-23 派生，design_tokens + 8 helpers + 9 layout + skill `anthropic-ppt`） | `D:\Claude\Tools\AnthropicPPT` |
 | **IconForge** | 🟡 未实装 | 自然语言→图标 SVG 生成工具（2026-05-29 派生后暂停，HEAD `a6b361a` 66 文件未实装；已评估 samzong/ai-icon-generator，恢复后下一步 M1 spec） | `D:\Claude\Tools\IconForge` |
+| **FieldKit** | 🟢 活跃 | 「校准场 / Calibration Field」图示风格系统（2026-06-15 派生，template-tool SOP 脚手架，借鉴 pbakaus/impeccable）；共享 design kit（tokens + kit.css + sonar motif + 氛围层 baker）→ 消费者①HTML→PNG/PDF 生成器（flow + composition，暗 Lacquer Instrument + 亮 Paper Field 双调色板）SHIPPED v1 + 消费者②AnthropicPPT styled_diagram 布局族 SHIPPED v2；HEAD `aa93de0` 无远程；未来 skill `calibration-field` | `D:\Claude\Tools\FieldKit` |
 
 ### 专利工作区（私人）
 
@@ -64,7 +65,7 @@ tags: [dashboard, 生态, 状态, 实时]
 | **Ohmybrain** (本仓 = Hub) | 🟢 活跃 | 2026-06-09 两批：(1) 入会自检一致性审计补登 3 新项目（SonarSim/VisioForge/CooperativeASW）+ 计数 67→77（commit `7b7fa9d`）；(2) **Claude+Codex 协作协议层**（document-protocol / claude-codex-collaboration / agent-handoff + agents//workflows/ 新分类 + 根 AGENTS.md，**ADR-024**）+ 入会自检审计二修协议层「部分登记」stale（wiki 计数 104→107 跨 6 文件 + 3 新页 §3 合规 + 4 交叉链 + memory 77→78）。本批 commit + push gitlab main | `D:\Claude\Ohmybrain` |
 | **ohmybrain-core** (母仓) | 🟢 活跃 | 三模板就位；候选下沉队列见 [[core-update-queue]] | `D:\Claude\ohmybrain-core` |
 
-## Hub 内部规模快照（2026-06-14）
+## Hub 内部规模快照（2026-06-15）
 
 > 由 `scripts/dashboard_snapshot.py` 统计生成（wiki 子目录页数 / scripts / 本地 skills / agents / rules / memory）。skill 一栏区分**本地两层**：磁盘 SKILL.md 与叠加 plugin/marketplace 注入后的可见总数。
 
@@ -78,10 +79,10 @@ tags: [dashboard, 生态, 状态, 实时]
 | 全局 skill（注入后可见） | **90+** | 本地 31 叠加 `ecc:*` plugin / marketplace 注入后；裸写 90+ 会掩盖本地真实规模，故两层并列 |
 | 全局 agent | **55** | `~/.claude/agents/*.md` |
 | rules 目录 | **15** | common / zh / web + 12 语言（cpp/csharp/dart/golang/java/kotlin/perl/php/python/rust/swift/typescript） |
-| Memory 条目 | **80** | 4 类：user 1 / feedback 21 / project 55 / reference 3（见 [[memory-index]]；含本日自检 session + USBL_hw init 条目） |
+| Memory 条目 | **81** | 4 类：user 1 / feedback 21 / project 56 / reference 3（见 [[memory-index]]；含本日自检 session + USBL_hw init 条目） |
 | MCP servers | **6** | context7 / exa / github / memory / playwright / sequential-thinking |
 
-> ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~026）。
+> ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~028）。
 
 ## Hub Hooks 当前状态
 
@@ -140,4 +141,4 @@ tags: [dashboard, 生态, 状态, 实时]
 - [[harness-resources]] — Hooks / Skills / Rules 全景
 - [[memory-index]] — auto-memory 80 条目索引（本页 session 锚点来源）
 - [[core-update-queue]] — Hub → core 下沉候选队列
-- [[decision-log]] — ADR-001~026 决策记录
+- [[decision-log]] — ADR-001~028 决策记录

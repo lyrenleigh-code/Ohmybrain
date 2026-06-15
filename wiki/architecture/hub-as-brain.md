@@ -20,7 +20,7 @@ tags: [大脑, Hub, 元架构, single-source-of-truth]
 | 1 | **反模式 / 经验合集** | 跨项目共享教训，避免重蹈 | `~/.claude/projects/D--Claude/memory/feedback_*` 21 条 | ✓ [[anti-patterns]] · 2026-05-29 · 实质填充 |
 | 2 | **工作流术语表** | V→V→V / PMF / 单根因审计 / archive 等术语跨场景使用 | 散在 memory + 各项目 CLAUDE.md | ✓ [[workflow-glossary]] · 2026-05-29 · 实质填充 |
 | 3 | **生态 dashboard** | 哪些项目活跃 / 归档 / wip，hooks 状态，wiki 规模 | system-overview 里一张表，不够动态 | ✓ [[ecosystem-dashboard]] · 2026-05-29 · 实质填充 |
-| 4 | **决策记录 ADR** | 重大架构决策（三仓哲学澄清、双闭环 4 步对齐等） | 散在 log.md / memory / git history | ✓ [[decision-log]] · 2026-06-09 · 实质填充（ADR-001~026，章节形式） |
+| 4 | **决策记录 ADR** | 重大架构决策（三仓哲学澄清、双闭环 4 步对齐等） | 散在 log.md / memory / git history | ✓ [[decision-log]] · 2026-06-09 · 实质填充（ADR-001~028，章节形式） |
 | 5 | **跨项目约定** | 命名 / 目录 / commit / PR 风格 | 散在 `~/.claude/rules/`（15 个目录）+ 各项目 CLAUDE.md | ✓ [[conventions]] · 2026-05-29 · 实质填充 |
 | 6 | **Harness 全景** | Hooks (Hub 8 + 各项目 N) / Skills (本地 31 / 注入 90+) / Rules (15 目录) / Agents (55) | 散在 `~/.claude/skills/` + 各项目 .claude/ | ✓ [[harness-resources]] · 2026-05-29 · 实质填充 |
 | 7 | **memory 条目索引** | 80 个 auto-memory 文件没在 Hub 中出现 | `MEMORY.md`（索引 81 行）但与 Hub wiki 脱节 | ✓ [[memory-index]] · 2026-06-10 · 实质填充 |
@@ -32,7 +32,7 @@ tags: [大脑, Hub, 元架构, single-source-of-truth]
 
 | 资源 | 权威值 | 拆解 |
 |------|--------|------|
-| **auto-memory 文件** | 80 个 | user 1 / feedback 21 / project 55 / reference 3（`MEMORY.md` 索引 81 行，含 1 行指向全局 skill 非 memory 文件） |
+| **auto-memory 文件** | 81 个 | user 1 / feedback 21 / project 56 / reference 3（`MEMORY.md` 索引 81 行，含 1 行指向全局 skill 非 memory 文件） |
 | **本地 skills** | 33 目录，其中 31 含 SKILL.md | `~/.claude/skills/` |
 | **可见 skills（注入后）** | **90+** | 本地 31 叠加 `ecc:*` plugin / marketplace 注入；**必须区分"本地 31 vs 注入 90+"两层，不可裸写 90+** |
 | **全局 agents** | 55 个 `.md` | `~/.claude/agents/` |
@@ -40,7 +40,7 @@ tags: [大脑, Hub, 元架构, single-source-of-truth]
 | **Ohmybrain wiki** | 109 个 `.md` | 根 index+log 2 + 107 内容页（architecture 12 / agents 1 / workflows 1 / concepts 20 / entities 8 / explorations 4 / mcp-entities 25 / source-summaries 31 / topics 5 / comparisons 0） |
 | **Ohmybrain scripts** | 24 个 `.py` | `scripts/`（2026-06-10 +2 工作区级 hook 脚本） |
 
-> **ADR 存放**：决策记录在 [[decision-log]] **内**以章节形式呈现（ADR-001~026），**非独立文件**；引用一律用 `[[decision-log]]`，不要写 `[[ADR-00x]]` 这类悬空链接。
+> **ADR 存放**：决策记录在 [[decision-log]] **内**以章节形式呈现（ADR-001~028），**非独立文件**；引用一律用 `[[decision-log]]`，不要写 `[[ADR-00x]]` 这类悬空链接。
 
 ## 大脑设计原则
 

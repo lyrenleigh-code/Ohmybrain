@@ -1,6 +1,6 @@
 # Wiki Index
 
-> 最后更新：2026-06-10（入会自检（四）/ 工作区级 hook ×2（脚本 22→24）/ 架构体检 7 维对抗复核 + 协议层补强 ×4 / USBL_hw 派生登记（ADR-026，活跃 17→18）+ ingest·订正·**交接 Codex（ADR-024 协议首实战）**；页面总数不变 107）
+> 最后更新：2026-06-15（FieldKit 派生登记（ADR-027，Tools 项目 SOP 脚手架，活跃 18→19、Tools×3→×4）+ flowgen styled-figure carve-out（ADR-028，校准场风格图例外）+ memory 80→81（新增 project_fieldkit_init）+ ADR range ~026→~028；页面总数不变 107，projects/fieldkit/ 导航卡不计入 content 页）
 > 页面总数：107
 
 ## Concepts（概念页）
@@ -74,7 +74,7 @@
 - [research-map](topics/research-map.md) — 研究全景地图，展示10个研究方向的层次结构和交叉关系
 - [ecosystem-dashboard](topics/ecosystem-dashboard.md) — 跨仓状态快照面板：项目状态 / Hub 规模 / Hooks 状态 / Promote 队列（2026-05-24 新建，非实时）
 - [harness-resources](topics/harness-resources.md) — Claude Code Harness 全景索引（Hooks 8 + Skills 90+ + Rules + Agents + 6 MCP），加载层次决策树（2026-06-09 三模板来源口径同步）
-- [memory-index](topics/memory-index.md) — `~/.claude/projects/D--Claude/memory/` 80 条 auto-memory 按类型 + 主题聚合索引（2026-05-24 新建）
+- [memory-index](topics/memory-index.md) — `~/.claude/projects/D--Claude/memory/` 81 条 auto-memory 按类型 + 主题聚合索引（2026-05-24 新建）
 - [core-update-queue](topics/core-update-queue.md) — Hub → core 待下沉候选队列（pending + history + 评估标准 + 反例），目标路径指向 `template-*`（2026-06-09 同步）
 
 ## Explorations（探索页）

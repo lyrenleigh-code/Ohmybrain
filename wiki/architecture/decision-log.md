@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-06-10
+updated: 2026-06-15
 tags: [ADR, 决策, log]
 ---
 
@@ -11,9 +11,63 @@ tags: [ADR, 决策, log]
 
 最新在上。
 
-> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-026。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-028。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
 >
 > **编号约定**：ADR 编号为 **append-only 稳定 ID**（按登记顺序递增、不复用、不重排）；表按**事件日期降序**排列。绝大多数情况下编号降序 == 日期降序，但 retroactive 追溯条目（如 ADR-025 事件 2026-06-04、2026-06-09 登记）会出现编号与位置不严格对应——这是为避免重编号引发跨页引用级联失效（教训见 [[../log]] 2026-05-29）而做的取舍。
+
+---
+
+## ADR-028 · 2026-06-15 · flowgen 风格图例外（styled-figure carve-out）
+
+### 触发
+
+硬规则 `feedback_doc_flowgen_only`（[[../concepts/anti-patterns]]）要求**方案/方法论文档的图一律走 flowgen* 8 skill → Visio .vsdx**，禁 matplotlib mock / 手画 SVG。但 ADR-027 的「校准场 / Calibration Field」图风系统专产**封面 / 章节扉页 / 总览风格配图**（HTML/SVG→PNG/PDF 位图终稿），与该硬规则字面冲突。用户批准开一个**窄口径例外**。
+
+### 决策
+
+对 `feedback_doc_flowgen_only` 增**用户批准的 carve-out**：**非可编辑的风格配图**（封面 / 章节扉页 / 总览 / cover / overview）**可改走校准场路径**（`Tools/FieldKit` HTML/SVG→PNG/PDF 或 `Tools/AnthropicPPT` `templates/styled_diagram.py`）。**判据（须同时满足）**：① 是封面/扉页/总览风格配图，非流程/架构/时序/组成业务线条图；② 产物是位图/PDF 终稿，不需后期在 Visio 改字改框。**回弹规则**：只要是「可编辑线条图」或带「业务流程/架构/时序/组成」语义，即使想风格化也**必须回 flowgen→.vsdx**。本例外**不放宽**「手画 SVG mock 冒充流程图」禁令——校准场是受管的可复用 kit。
+
+### 实现
+
+- memory `feedback_doc_flowgen_only.md`：决策树表后增「风格图例外 / 校准场分流」节 + 例外条件追加交叉引用 bullet。
+- skill `flowgen-archposter/SKILL.md`：决策树加 off-ramp 分支 + anti-trigger 表加一行（封面/总览风格图 → `calibration-field`，非 flowgen）。
+
+### 后果
+
+- ✓ 校准场图风系统有合法落地通道，硬规则不再字面冲突。
+- ✓ 边界写死「可编辑线条图回弹 flowgen」，防例外被滥用为「风格化冒充流程图」。
+- ⚠ 判据靠人工分流（封面/总览 vs 业务线条图），误判风险待观察；anti-trigger 行 + 回弹规则兜底。
+
+> memory `feedback_doc_flowgen_only`。关联 ADR-027（FieldKit 派生）。
+
+---
+
+## ADR-027 · 2026-06-15 · FieldKit 项目派生（Tools，校准场图风系统）
+
+### 触发
+
+方案文档/演示需要一套**风格化封面 / 章节 / 总览配图**能力（非可编辑业务线条图）——flowgen→Visio 擅长可编辑线条图，但产不出有氛围层（冷暗漆面 / 纸感）的位图/PDF 终稿。借鉴 `pbakaus/impeccable` 的「校准场」图风，沉淀为可复用的共享 design kit + 出图消费者。
+
+### 决策
+
+**独立工具项目** `Tools/FieldKit`（git 仅本地 main、无远程，HEAD `aa93de0`），承载「**Calibration Field / 校准场**」图示风格系统，**按 template-tool SOP 派生**——产品包 `fieldkit/` + `kit.css` + `examples/` + `tests/` + 协作层 `specs/`（含 retroactive **SPEC-001**）/`plans/`/`handoff/`/`wiki/`/`.claude/`/`raw/` + `AGENTS.md`/`CLAUDE.md`。**登记沿革**：派生当日先以 lean 工作目录跑通产品（消费者①/② v1/v2），同会话经 Hub 入会自检发现 lean 缺口后**补全 SOP 脚手架 + SPEC-001 retroactive**。独立成项目（非并入 AnthropicPPT）理由：① 横切多消费者的共享 kit；② AnthropicPPT 是既有已登记项目，其 `styled_diagram` 是增能不是新项目。
+
+### 实现
+
+- 新建 `Tools/FieldKit`（lean dir）：共享 kit（design tokens + `kit.css` + sonar motif + `bake_atmosphere.py` 分辨率无关氛围层 baker）。
+- **消费者①** = HTML→PNG/PDF 生成器（flow + composition，暗「Lacquer Instrument」+ 亮「Paper Field」双调色板）= SHIPPED v1（`ced9bc6`）。
+- **消费者②** = 既有 `Tools/AnthropicPPT` 增 `templates/styled_diagram.py` + 氛围层资产（`56f79da`）= SHIPPED v2（增能，不计新项目）。
+- 未来全局 skill `calibration-field`（待建）。
+- Hub 登记：CLAUDE.md ×2 + `projects/fieldkit/` 导航卡 + dashboard + system-overview + roadmap + memory `project_fieldkit_init` + log/index（活跃 18→19、Tools×3→×4、导航 19→20、memory 80→81）。
+
+### 后果
+
+- ✓ 风格化封面/总览配图有了受管可复用的 kit；AnthropicPPT 与 FieldKit 互补。
+- ✓ 按 template-tool SOP 完整脚手架，specs/plans/handoff/wiki 齐备，跨会话续作有据。
+- ⚠ flowgen-lite（消费者③ Visio 骨架版）暂未做（保真天花板低，可选）。
+- ⚠ 关联 ADR-028 carve-out 须严守边界：校准场只接非可编辑风格图。
+
+> memory `project_fieldkit_init`。关联 ADR-028、AnthropicPPT（ADR-017）。
 
 ---
 

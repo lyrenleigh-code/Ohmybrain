@@ -3,6 +3,18 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-06-15] new-project | FieldKit 派生（Calibration Field/校准场 图风系统）+ flowgen styled-figure carve-out
+
+Tools/ 第 4 个项目 `FieldKit`（`D:\Claude\Tools\FieldKit`，git 仅本地 main、无远程，HEAD `aa93de0`）派生登记。派生当日先以 lean 工作目录跑通产品（v1/v2），同会话经 Hub 入会自检发现 lean 缺口后**按 template-tool SOP 补全脚手架**（specs 含 retroactive SPEC-001 / plans / handoff / wiki / .claude / raw + AGENTS.md/CLAUDE.md）。
+
+「**Calibration Field / 校准场**」图示风格系统（借鉴 pbakaus/impeccable）：共享 design kit（tokens + kit.css + sonar motif + 氛围层 baker）→ 消费者①HTML→PNG/PDF 生成器（flow + composition，暗「Lacquer Instrument」+ 亮「Paper Field」双调色板）SHIPPED v1（`ced9bc6`）；消费者②既有 AnthropicPPT 增 `templates/styled_diagram.py`（HEAD `56f79da`）SHIPPED v2（增能，非新项目）。未来 skill `calibration-field`（待建）。
+
+**ADR-027**（FieldKit 派生，Tools lean）+ **ADR-028**（flowgen styled-figure carve-out：用户批准 `feedback_doc_flowgen_only` 例外——封面/章节/总览非可编辑风格配图可走校准场 HTML/SVG→PNG/PDF；可编辑业务线条图仍一律 flowgen→.vsdx）写入 [[architecture/decision-log]]。
+
+计数同步：活跃项目 18→19（Tools×3→×4）、projects/ 导航 19→20、auto-memory 80→81（project 55→56，新增 `project_fieldkit_init`）、ADR range ~026→~028（10 处现态页）。wiki 页面总数不变 107。
+
+登记面：CLAUDE.md ×2 + projects/fieldkit/README.md（新建）+ ecosystem-dashboard（Tools 表 + 快照日期）+ system-overview（实例表 + 规模 + 导航数）+ roadmap（里程碑）+ memory-index + index。carve-out 落地：`feedback_doc_flowgen_only.md` + `flowgen-archposter/SKILL.md`。
+
 
 ## [2026-06-11 ~ 2026-06-14] maintenance | 入会自检（五）：USBL_hw 06-11~14 进展全刷 + dashboard 跨项目对账 + CANON 级联
 
