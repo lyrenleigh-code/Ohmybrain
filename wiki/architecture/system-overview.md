@@ -74,7 +74,7 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 | `FlowGen` | `D:\Claude\Tools\FlowGen` | 派生 2026-04-23（自然语言→Visio/Mermaid 出图工具族；flowgen-* Visio skill 活跃，Mermaid 主入口未实装） |
 | 项目仓 | `IconForge` | `D:\Claude\Tools\IconForge` | 派生 2026-05-29（自然语言→图标 SVG，未实装） |
 | 项目仓 | `AnthropicPPT` | `D:\Claude\Tools\AnthropicPPT` | 派生 2026-05-23（FIELDBOOK PPT 模板，skill `anthropic-ppt`） |
-| 项目仓 | `FieldKit` | `D:\Claude\Tools\FieldKit` | 派生 2026-06-15（Calibration Field/校准场 图风系统，template-tool SOP，HEAD aa93de0 无远程；future skill `calibration-field`） |
+| 项目仓 | `FieldKit` | `D:\Claude\Tools\FieldKit` | 派生 2026-06-15（Calibration Field/校准场 图风系统，template-tool SOP，HEAD aa93de0 无远程；skill `calibration-field` 已注册） |
 | **Patents/** 🔒 | | | **专利交底书工作区（无 git）** |
 | 项目仓 🔒 | `Patents` | `D:\Claude\Patents` | 3 候选交底书（iusbl-jacobian / otfs-spread-pilot / usbl-cage5-3d-hybrid-doa） |
 | **导航占位** | | | |

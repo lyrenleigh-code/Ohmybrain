@@ -57,7 +57,7 @@ tags: [ADR, 决策, log]
 - 新建 `Tools/FieldKit`（lean dir）：共享 kit（design tokens + `kit.css` + sonar motif + `bake_atmosphere.py` 分辨率无关氛围层 baker）。
 - **消费者①** = HTML→PNG/PDF 生成器（flow + composition，暗「Lacquer Instrument」+ 亮「Paper Field」双调色板）= SHIPPED v1（`ced9bc6`）。
 - **消费者②** = 既有 `Tools/AnthropicPPT` 增 `templates/styled_diagram.py` + 氛围层资产（`56f79da`）= SHIPPED v2（增能，不计新项目）。
-- 未来全局 skill `calibration-field`（待建）。
+- 全局 skill `calibration-field` 已注册（`~/.claude/skills/`，2026-06-15）。
 - Hub 登记：CLAUDE.md ×2 + `projects/fieldkit/` 导航卡 + dashboard + system-overview + roadmap + memory `project_fieldkit_init` + log/index（活跃 18→19、Tools×3→×4、导航 19→20、memory 80→81）。
 
 ### 后果

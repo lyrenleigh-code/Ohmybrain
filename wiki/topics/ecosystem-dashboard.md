@@ -50,7 +50,7 @@ tags: [dashboard, 生态, 状态, 实时]
 | **FlowGen** | 🟢 活跃 | 需求→Visio/Mermaid 出图工具族；2026-06-01 阶段1 系统架构图（commit `5372721` 已 push gitlab）+ 2026-06-02 阶段2-A 逻辑架构图 + 2026-06-04 archmap business/data-functional/interface(I 族)/stdflow 多 renderer + 新 archmap skill | `D:\Claude\Tools\FlowGen` |
 | **AnthropicPPT** | 🟢 活跃 | FIELDBOOK PPT 模板（2026-05-23 派生，design_tokens + 8 helpers + 9 layout + skill `anthropic-ppt`） | `D:\Claude\Tools\AnthropicPPT` |
 | **IconForge** | 🟡 未实装 | 自然语言→图标 SVG 生成工具（2026-05-29 派生后暂停，HEAD `a6b361a` 66 文件未实装；已评估 samzong/ai-icon-generator，恢复后下一步 M1 spec） | `D:\Claude\Tools\IconForge` |
-| **FieldKit** | 🟢 活跃 | 「校准场 / Calibration Field」图示风格系统（2026-06-15 派生，template-tool SOP 脚手架，借鉴 pbakaus/impeccable）；共享 design kit（tokens + kit.css + sonar motif + 氛围层 baker）→ 消费者①HTML→PNG/PDF 生成器（flow + composition，暗 Lacquer Instrument + 亮 Paper Field 双调色板）SHIPPED v1 + 消费者②AnthropicPPT styled_diagram 布局族 SHIPPED v2；HEAD `aa93de0` 无远程；未来 skill `calibration-field` | `D:\Claude\Tools\FieldKit` |
+| **FieldKit** | 🟢 活跃 | 「校准场 / Calibration Field」图示风格系统（2026-06-15 派生，template-tool SOP 脚手架，借鉴 pbakaus/impeccable）；共享 design kit（tokens + kit.css + sonar motif + 氛围层 baker）→ 消费者①HTML→PNG/PDF 生成器（flow + composition，暗 Lacquer Instrument + 亮 Paper Field 双调色板）SHIPPED v1 + 消费者②AnthropicPPT styled_diagram 布局族 SHIPPED v2；HEAD `aa93de0` 无远程；skill `calibration-field` 已注册 | `D:\Claude\Tools\FieldKit` |
 
 ### 专利工作区（私人）
 
@@ -75,7 +75,7 @@ tags: [dashboard, 生态, 状态, 实时]
 | wiki 总文件 | **109** | 107 内容页 + 根 `index.md` + `log.md` |
 | 自动化脚本 | **24** | `scripts/*.py` 全量（含 dashboard_snapshot.py；2026-06-10 +2 工作区级 hook 脚本） |
 | Hooks | **8 + 2** | Hub 8（3 阻断 + 4 提醒 + 1 注入，见下表）+ 工作区级 2（见表下注） |
-| 全局 skill（本地） | **31** | `~/.claude/skills/` 含 SKILL.md 的目录（33 个目录中 31 个有 SKILL.md） |
+| 全局 skill（本地） | **32** | `~/.claude/skills/` 含 SKILL.md 的目录（33 个目录中 31 个有 SKILL.md） |
 | 全局 skill（注入后可见） | **90+** | 本地 31 叠加 `ecc:*` plugin / marketplace 注入后；裸写 90+ 会掩盖本地真实规模，故两层并列 |
 | 全局 agent | **55** | `~/.claude/agents/*.md` |
 | rules 目录 | **15** | common / zh / web + 12 语言（cpp/csharp/dart/golang/java/kotlin/perl/php/python/rust/swift/typescript） |

@@ -3,6 +3,10 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-06-15] tooling | 注册全局 skill `calibration-field`（FieldKit M2）
+
+FieldKit 出图系统注册为全局 skill `~/.claude/skills/calibration-field/SKILL.md`（自包含：5 图种 schema + 图片(`render.py`→PNG/PDF) / PPT(`styled_diagram`→可编辑幻灯片) 两种产出 + carve-out 边界 + 双调色板 + 8 技法）。关键词触发（封面/扉页/总览/校准场/风格化配图…）。本地 skill **31→32**（目录 33→34）；harness-resources 清单 + dashboard/conventions 计数同步。FieldKit M2 ✅。
+
 ## [2026-06-15] new-project | FieldKit 派生（Calibration Field/校准场 图风系统）+ flowgen styled-figure carve-out
 
 Tools/ 第 4 个项目 `FieldKit`（`D:\Claude\Tools\FieldKit`，git 仅本地 main、无远程，HEAD `aa93de0`）派生登记。派生当日先以 lean 工作目录跑通产品（v1/v2），同会话经 Hub 入会自检发现 lean 缺口后**按 template-tool SOP 补全脚手架**（specs 含 retroactive SPEC-001 / plans / handoff / wiki / .claude / raw + AGENTS.md/CLAUDE.md）。

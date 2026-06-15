@@ -7,7 +7,7 @@
 - **状态**：🟢 活跃（2026-06-15 派生）
 - **核心**：共享 kit（design tokens + kit.css + sonar motif + bake_atmosphere.py 分辨率无关氛围层）；消费者①=HTML→PNG/PDF 生成器（flow + composition，dark Lacquer Instrument + light Paper Field 双调色板）SHIPPED v1；消费者②=AnthropicPPT templates/styled_diagram.py SHIPPED v2
 - **来源**：借鉴 pbakaus/impeccable 的校准场图风
-- **关联**：未来全局 skill `calibration-field`（待建）；ADR-027（派生）/ ADR-028（flowgen styled-figure carve-out）；与 AnthropicPPT 互补
+- **关联**：全局 skill `calibration-field`（已注册）；ADR-027（派生）/ ADR-028（flowgen styled-figure carve-out）；与 AnthropicPPT 互补
 
 ## 里程碑
 
@@ -15,4 +15,4 @@
 |--------|------|------|
 | M0 | 派生 + 共享 kit（tokens + kit.css + sonar motif）+ HTML→PNG/PDF 生成器 v1（flow + composition）| ✅ 2026-06-15 |
 | M1 | 氛围层 baker（bake_atmosphere.py）+ AnthropicPPT styled_diagram v2 | ✅ 2026-06-15 |
-| M2 | 注册全局 skill `calibration-field` | ⏳ |
+| M2 | 注册全局 skill `calibration-field` | ✅ 2026-06-15 |
