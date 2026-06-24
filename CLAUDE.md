@@ -59,8 +59,9 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | PaperTrans 🔒 | 私人，不公开（当前无远程） | `D:\Claude\DocProcess\PaperTrans` |
 | FlowGen | 私人，不公开 | `D:\Claude\Tools\FlowGen` |
 | IconForge | 私人，不公开 | `D:\Claude\Tools\IconForge` |
-| AnthropicPPT | 私人，不公开 | `D:\Claude\Tools\AnthropicPPT` |
+| AnthropicPPT | 私人，不公开（2026-06-24 降级=FIELDBOOK 设计源+归档，ADR-030）| `D:\Claude\Tools\AnthropicPPT` |
 | FieldKit | 私人，不公开（内网 gitlab lilin/FieldKit） | `D:\Claude\Tools\FieldKit` |
+| ppt-master 🔌 | 第三方 vendored（hugohe3/ppt-master 30.8k★ MIT，非派生不计活跃项目，ADR-030）| `D:\Claude\Tools\ppt-master` |
 | Patents 🔒 | 私人，不公开（**无 git**） | `D:\Claude\Patents` |
 
 ## 知识闭环

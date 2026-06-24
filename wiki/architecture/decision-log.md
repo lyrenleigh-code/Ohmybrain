@@ -11,9 +11,42 @@ tags: [ADR, 决策, log]
 
 最新在上。
 
-> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-029。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-030。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
 >
 > **编号约定**：ADR 编号为 **append-only 稳定 ID**（按登记顺序递增、不复用、不重排）；表按**事件日期降序**排列。绝大多数情况下编号降序 == 日期降序，但 retroactive 追溯条目（如 ADR-025 事件 2026-06-04、2026-06-09 登记）会出现编号与位置不严格对应——这是为避免重编号引发跨页引用级联失效（教训见 [[../log]] 2026-05-29）而做的取舍。
+
+---
+
+## ADR-030 · 2026-06-24 · 采纳 ppt-master 作通用 PPT deck 引擎 + FIELDBOOK 迁模板 + AnthropicPPT 降级
+
+### 触发
+
+用户提供 `hugohe3/ppt-master`（30.8k★ MIT）问"怎么借鉴"。`Tools/AnthropicPPT` 的 python-pptx **命令式**生成（`modify_v3/v4_stepN`）每个 deck 重搓一长串脆弱脚本、9 固定 layout 是天花板、品牌锁死 FIELDBOOK。
+
+### 决策
+
+**采纳整个 ppt-master skill**（不重造 30.8k★ 轮子）作通用 PPT 生成引擎；FIELDBOOK 真资产（设计 IP）迁为 ppt-master **`fieldbook` brand + deck 模板**；`AnthropicPPT` 降级为 FIELDBOOK 设计 source-of-truth + 历史归档。ppt-master 定性=**第三方 vendored 工具**（类 [[../architecture/system-overview]] 的 External/open-design，**非 ohmybrain-core 派生项目，不计入"活跃项目数"**），落点 `D:\Claude\Tools\ppt-master`。
+
+### 核心机制
+
+ppt-master = agent **逐页手写 SVG**（LLM 母语，自由版式）→ `svg_to_pptx`（drawingml_converter 包）转**原生 DrawingML**（圆角矩形 rx/ry→prstGeom、文本→可编辑文本框、**零栅格化**）。解耦"设计"与"pptx 机制"。
+
+### 实现
+
+- **保真度 GATE 通过**：手写 FIELDBOOK 测试 SVG → 37 形状 / 0 图片；deck 模板 5 页端到端 → 5/5 原生 / 全 0 图片；用户 PowerPoint 眼检视觉+可编辑性过。
+- `fieldbook` **brand**（`templates/brands/fieldbook/`，区别官方 anthropic：纸底非白/铁锈红非 coral/衬线非 sans）+ **deck**（`templates/decks/fieldbook/` 5 SVG，5 agent 并行 authoring + 主会话校验）。
+- vendor 到 `Tools/ppt-master`（sparse+blobless clone 只取 skills/ppt-master，精简无 examples，git 可 `update_repo.py`）。
+- `anthropic-ppt` skill 改路由到 ppt-master+fieldbook（**复用槽，无新增 skill，本地 skill 仍 32**）。
+- `AnthropicPPT` 降级（CLAUDE.md/README banner + `modify_v4_step*`→`scripts/legacy/`）。
+
+### 后果
+
+- ✓ FIELDBOOK PPT 走 SVG-native 引擎，突破固定 layout 天花板，产物原生可编辑。
+- ✓ 不重造轮子（30.8k★ 活跃维护 v2.11）。
+- ⚠ 跑 ppt-master 外部脚本需**用户授权**（auto-mode classifier 拦新克隆外部代码 + agent 不得自我改 settings 提权）→ 加 `Bash(python scripts/*.py:*)` allow 规则或 `!` 自跑。
+- ⚠ 与 flowgen（Visio 可编辑线条图）/ FieldKit（氛围位图，ADR-027/028）边界互补：**ppt-master = 完整 deck**。
+
+> memory `project_ppt_master_adoption_2026-06-24`。spec：`Tools/AnthropicPPT/specs/active/2026-06-24-adopt-ppt-master-plan-a.md`。关联 ADR-017（AnthropicPPT 派生）、ADR-027/028（FieldKit/carve-out）。
 
 ---
 

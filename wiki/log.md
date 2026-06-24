@@ -3,6 +3,20 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-06-24] tooling | 采纳 ppt-master 作通用 PPT 引擎 + FIELDBOOK 迁模板 + AnthropicPPT 降级（Plan A，ADR-030）
+
+用户提供 `hugohe3/ppt-master`（30.8k★ MIT）问"怎么借鉴" → **Plan A**：采纳整 skill 作通用 PPT deck 引擎（agent 逐页手写 SVG → `svg_to_pptx` 转原生 DrawingML，零栅格化、任意页型），FIELDBOOK 迁为 `fieldbook` brand/deck 模板，AnthropicPPT 降级。
+
+- **保真度 GATE 通过**：手写 FIELDBOOK 测试 SVG → 37 形状 / 0 图片；deck 模板 5 页端到端 → 5/5 原生 / 全 0 图片；用户 PowerPoint 眼检过。
+- **落地**：vendor `Tools/ppt-master`（sparse+blobless clone 只取 skills/ppt-master）；`fieldbook` **brand**（templates/brands/fieldbook）+ **deck**（templates/decks/fieldbook 5 SVG，5 agent 并行 authoring + 主会话校验）；`anthropic-ppt` skill 改路由到 ppt-master+fieldbook（**复用槽，本地 skill 仍 32**）；AnthropicPPT 降级（CLAUDE/README banner + `modify_v4_step*`→legacy，33 脚本）。
+- **定性**：ppt-master = **第三方 vendored**（类 External/open-design，**不计活跃项目数**，活跃仍 20）。
+- **Hub 登记（本条）**：[[architecture/decision-log]] **ADR-030** + 起点声明 ~029→~030 + root/Hub CLAUDE.md 第三方登记 + [[topics/ecosystem-dashboard]]（AnthropicPPT 降级注 + ppt-master 第三方注 + sync）+ [[architecture/system-overview]] 实例表 + [[architecture/roadmap]] 里程碑 + [[topics/memory-index]] + index；**CANON 级联** memory 83→84 / project 58→59（7 页）+ ADR range ~029→~030（5 文件 7 处）。`dashboard_snapshot.py --check` 静默。
+- **权限**：跑 ppt-master 外部脚本被 auto-mode classifier 拦（新克隆外部代码）+ agent 不得自我改 settings 提权 → 须用户加 `Bash(python scripts/*.py:*)` allow 规则或 `!` 自跑。
+
+memory `project_ppt_master_adoption_2026-06-24`。spec `Tools/AnthropicPPT/specs/active/2026-06-24-adopt-ppt-master-plan-a.md`。本批未 commit（git 待授权）。
+
+---
+
 ## [2026-06-24] maintenance | 入会自检（六）：PaperTrans 补登 + USBL_hw 刷新 + CANON 级联 + MEMORY.md 压缩
 
 ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第六轮），5 维并行 workflow 审计（A CANON 计数 / B dashboard↔git-HEAD 对账 / C memory-log 同步 / D 部分登记 / E 历史遗留）+ 逐 finding 对抗验证（44 agent / 39 finding → 33 confirmed / 1 refuted / 5 uncertain）+ 主会话逐条复核代写。

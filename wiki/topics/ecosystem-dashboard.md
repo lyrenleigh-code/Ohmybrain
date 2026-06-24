@@ -10,7 +10,7 @@ updated: 2026-06-24
 
 跨仓状态快照。**非实时**（需手动 / 半自动同步），但比"散在各处看"快。
 
-> 上次同步：**2026-06-24**（方式：ultracode 入会自检（六）5 维 workflow 审计 + 逐 finding 对抗验证（44 agent / 33 confirmed / 1 refuted / 5 uncertain）；**USBL_hw 行刷新**（`32ae044`/38→`c7c07da`/71 commit，已建 gitlab 远程，写权交回 Codex）+ **PaperTrans 补登状态行**（06-15 派生当日漏登）+ CANON memory 81→83 / project 56→58 / skills 31→32 多页级联 + **CooperativeDetection / PaperReview 标 🕸️**（>30 天）+ FieldKit/FlowGen/AnthropicPPT 锚点刷新；UWAcomm / USBL / UWAcomm_usbl / DigitalTwin1plusN 四行 git 未动、memory 回填仍 pending）
+> 上次同步：**2026-06-24**（方式：ultracode 入会自检（六）5 维 workflow 审计 + 逐 finding 对抗验证（44 agent / 33 confirmed / 1 refuted / 5 uncertain）；**USBL_hw 行刷新**（`32ae044`/38→`c7c07da`/71 commit，已建 gitlab 远程，写权交回 Codex）+ **PaperTrans 补登状态行**（06-15 派生当日漏登）+ CANON memory 81→83 / project 56→58 / skills 31→32 多页级联 + **CooperativeDetection / PaperReview 标 🕸️**（>30 天）+ FieldKit/FlowGen/AnthropicPPT 锚点刷新；UWAcomm / USBL / UWAcomm_usbl / DigitalTwin1plusN 四行 git 未动、memory 回填仍 pending）；**+ 同日 ppt-master 采纳（Plan A / ADR-030）**：vendored `Tools/ppt-master` + FIELDBOOK→`fieldbook` brand/deck 模板 + AnthropicPPT 降级（memory 83→84 / project 58→59、ADR ~029→~030 级联，ppt-master 第三方不计活跃项目）
 >
 > 来源：本页是聚合视图。各项目仓有独立 wiki/log.md，本页 link 而不复制。各项目「当前焦点」的 session 日期 / HEAD 锚点抽自 auto-memory 索引（`~/.claude/projects/D--Claude/memory/MEMORY.md`），见 [[memory-index]]。
 >
@@ -50,9 +50,11 @@ updated: 2026-06-24
 | 项目 | 状态 | 当前焦点（最近 session / 锚点） | 路径 |
 |------|------|---------|------|
 | **FlowGen** | 🟢 活跃 | 需求→Visio/Mermaid 出图工具族；2026-06-01 阶段1 系统架构图（commit `5372721` 已 push gitlab）+ 2026-06-02 阶段2-A 逻辑架构图 + 2026-06-04 archmap business/data-functional/interface(I 族)/stdflow 多 renderer + 新 archmap skill + 2026-06-15 M5-pro 专业正交路由流程图 + 逐 skill 详解 PPT（HEAD `385072e`，gitlab/main） | `D:\Claude\Tools\FlowGen` |
-| **AnthropicPPT** | 🟢 活跃 | FIELDBOOK PPT 模板（2026-05-23 派生，design_tokens + 8 helpers + 9 layout + skill `anthropic-ppt`）；2026-06-15 新增 `styled_diagram`（Calibration Field 消费者②，native pptx 风格层 + 4 图种，HEAD `438c57e`/gitlab） | `D:\Claude\Tools\AnthropicPPT` |
+| **AnthropicPPT** | 🟢 活跃 | FIELDBOOK PPT 模板（2026-05-23 派生，design_tokens + 8 helpers + 9 layout + skill `anthropic-ppt`）；2026-06-15 新增 `styled_diagram`（Calibration Field 消费者②，native pptx 风格层 + 4 图种，HEAD `438c57e`/gitlab）；**2026-06-24 降级（Plan A/ADR-030）**：PPT 生成迁 ppt-master + `fieldbook` 模板，本项目降为 FIELDBOOK 设计源 + 归档（modify_v4→legacy，skill 改路由） | `D:\Claude\Tools\AnthropicPPT` |
 | **IconForge** | 🟡 未实装 | 自然语言→图标 SVG 生成工具（2026-05-29 派生后暂停，HEAD `a6b361a` 66 文件未实装；已评估 samzong/ai-icon-generator，恢复后下一步 M1 spec） | `D:\Claude\Tools\IconForge` |
 | **FieldKit** | 🟢 活跃 | 「校准场 / Calibration Field」图示风格系统（2026-06-15 派生，template-tool SOP 脚手架，借鉴 pbakaus/impeccable）；共享 design kit（tokens + kit.css + sonar motif + 氛围层 baker）→ 消费者①HTML→PNG/PDF 生成器（flow + composition，暗 Lacquer Instrument + 亮 Paper Field 双调色板）SHIPPED v1 + 消费者②AnthropicPPT styled_diagram 布局族 SHIPPED v2；HEAD `5a9d75b`（06-15，扩 3 图种 layered/cover/sequence + 字体系统），已建内网 gitlab 远程（lilin/FieldKit，已 push）；skill `calibration-field` 已注册 | `D:\Claude\Tools\FieldKit` |
+
+> 🔌 **第三方 vendored（不计入活跃项目数）**：`ppt-master`（`Tools/ppt-master`，hugohe3/ppt-master 30.8k★ MIT）= 通用 PPT deck 引擎（agent 手写 SVG → 原生 DrawingML）；**FIELDBOOK 已迁为其 `fieldbook` brand + deck 模板**（Plan A / ADR-030，2026-06-24）。跑其脚本需用户授权。
 
 ### 专利工作区（私人）
 
@@ -81,10 +83,10 @@ updated: 2026-06-24
 | 全局 skill（注入后可见） | **90+** | 本地 32 叠加 `ecc:*` plugin / marketplace 注入后；裸写 90+ 会掩盖本地真实规模，故两层并列 |
 | 全局 agent | **55** | `~/.claude/agents/*.md` |
 | rules 目录 | **15** | common / zh / web + 12 语言（cpp/csharp/dart/golang/java/kotlin/perl/php/python/rust/swift/typescript） |
-| Memory 条目 | **83** | 4 类：user 1 / feedback 21 / project 58 / reference 3（见 [[memory-index]]；含 2026-06-24 自检 session + PaperTrans init 条目） |
+| Memory 条目 | **84** | 4 类：user 1 / feedback 21 / project 59 / reference 3（见 [[memory-index]]；含 ppt-master adoption + 2026-06-24 自检 + PaperTrans init 条目） |
 | MCP servers | **6** | context7 / exa / github / memory / playwright / sequential-thinking |
 
-> ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~029）。
+> ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~030）。
 
 ## Hub Hooks 当前状态
 
@@ -141,6 +143,6 @@ updated: 2026-06-24
 - [[system-overview]] — 系统架构总览（含规模表）
 - [[hub-as-brain]] — 大脑功能定位
 - [[harness-resources]] — Hooks / Skills / Rules 全景
-- [[memory-index]] — auto-memory 83 条目索引（本页 session 锚点来源）
+- [[memory-index]] — auto-memory 84 条目索引（本页 session 锚点来源）
 - [[core-update-queue]] — Hub → core 下沉候选队列
-- [[decision-log]] — ADR-001~029 决策记录
+- [[decision-log]] — ADR-001~030 决策记录
