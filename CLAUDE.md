@@ -60,7 +60,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | FlowGen | 私人，不公开 | `D:\Claude\Tools\FlowGen` |
 | IconForge | 私人，不公开 | `D:\Claude\Tools\IconForge` |
 | AnthropicPPT | 私人，不公开 | `D:\Claude\Tools\AnthropicPPT` |
-| FieldKit | 私人，不公开（当前无远程） | `D:\Claude\Tools\FieldKit` |
+| FieldKit | 私人，不公开（内网 gitlab lilin/FieldKit） | `D:\Claude\Tools\FieldKit` |
 | Patents 🔒 | 私人，不公开（**无 git**） | `D:\Claude\Patents` |
 
 ## 知识闭环

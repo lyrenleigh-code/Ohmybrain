@@ -11,9 +11,36 @@ tags: [ADR, 决策, log]
 
 最新在上。
 
-> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-028。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-029。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
 >
 > **编号约定**：ADR 编号为 **append-only 稳定 ID**（按登记顺序递增、不复用、不重排）；表按**事件日期降序**排列。绝大多数情况下编号降序 == 日期降序，但 retroactive 追溯条目（如 ADR-025 事件 2026-06-04、2026-06-09 登记）会出现编号与位置不严格对应——这是为避免重编号引发跨页引用级联失效（教训见 [[../log]] 2026-05-29）而做的取舍。
+
+---
+
+## ADR-029 · 2026-06-15 · PaperTrans 项目派生（DocProcess，外文论文英译中翻译工作区）
+
+> **追溯登记**（事件 2026-06-15，2026-06-24 入会自检（六）补登 ADR）：派生当日只登 CLAUDE.md ×2 + `projects/` 导航 + log + memory，漏 ADR / dashboard / system-overview / memory-index / 活跃项目计数，属「部分登记」反模式复发，本次收口。
+
+### 触发
+
+需要一个专门的**外文（英文为主）学术论文 → 术语一致中文译稿**工作区（水声 / 通信 / 信号处理领域优先）。翻译与 PaperReview（中文论文外审）、papers（论文写作）域不同，需独立的术语单一可信源 + 单篇 spec 闭环。
+
+### 决策
+
+**独立 DocProcess 子项目** `DocProcess/PaperTrans` 🔒（git 仅本地 main、无远程，手动模式），**按 template-document SOP 派生**。核心约定：**一篇论文 = 一份 spec = 一份译稿**；wiki `glossary.md` 为术语单一可信源；4 步翻译闭环（01-spec → 02-draft → 03-validate → 04-archive）对齐 `workflows/document/`。DocProcess 第 10 个正式登记子项目。
+
+### 实现
+
+- SOP §1 派生（template-document，占位符全清，CLAUDE.md/README 改写为翻译语境）+ wiki 两页种子（`glossary.md` 术语表 + `concepts/translation-conventions.md` 英译中风格指南）+ 单篇 spec 模板。
+- Hub 登记：CLAUDE.md ×2 + `projects/papertrans/` 导航卡 + memory `project_papertrans_init` + log（2026-06-15）；**dashboard / system-overview 实例表 / memory-index / 本 ADR / 活跃项目计数 19→20、DocProcess×8→×9 于 2026-06-24 入会自检（六）补登**。
+
+### 后果
+
+- ✓ 外文论文翻译有受管工作区，术语一致性有单一可信源。
+- ✓ 首篇已产出全书译稿（23 单元草稿 + 367 页 PDF 待终审，HEAD `ed1a7ad`/06-16）。
+- ⚠ 派生当日「部分登记」（漏 5 个登记面）——再次印证新项目派生须过全套登记面 checklist（见 [[../concepts/anti-patterns]] 「部分登记」反模式 + [[../topics/memory-index]]）。
+
+> memory `project_papertrans_init`。关联 ADR-013（PaperReview，同类 DocProcess 手动文档项目）。
 
 ---
 

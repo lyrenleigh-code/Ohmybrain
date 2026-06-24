@@ -13,6 +13,7 @@ tags: [roadmap, 演化, 里程碑]
 
 | 日期 | 里程碑 | 类型 |
 |------|--------|------|
+| **2026-06-15** | PaperTrans 项目派生（外文论文英译中翻译工作区，template-document，一篇=一spec=一译稿 + 术语单一可信源；首篇全书译稿已成）；2026-06-24 入会自检（六）追溯补登 | DocProcess (ADR-029) |
 | **2026-06-15** | FieldKit 项目派生 + 「校准场 / Calibration Field」图示风格系统（共享 design kit → HTML→PNG/PDF 生成器 SHIPPED v1 + AnthropicPPT styled_diagram SHIPPED v2 + flowgen styled-figure carve-out）；借鉴 pbakaus/impeccable | Tools (ADR-027 / ADR-028) |
 | **2026-06-10** | USBL_hw 项目派生（USBL 硬件设计，engineering-hardware 子型首例）+ 工作区级 hook ×2（push README 检查 / calendar 提醒） | TechReq + Hub (ADR-026) |
 | **2026-06-09** | Claude+Codex 协作协议层落地（document-protocol / claude-codex-collaboration / agent-handoff，新增 agents/ + workflows/ 分类）+ 单仓串行硬性化（写权限互斥锁 hook `agent_writelock.py` + Hub 8 hook 提升会话根修「根会话哑火」） | 架构 + tooling (ADR-024) |
@@ -52,7 +53,7 @@ tags: [roadmap, 演化, 里程碑]
 **Hub 8 dedicated 页详细填充** ✅ 已于 2026-05-29 自检批次全部实质填充完成（2026-05-24 建骨架 → 2026-05-29 实填 → 2026-05-31 自检校正残留 stale）：
 - [x] [[../concepts/workflow-glossary]] 补齐所有术语
 - [x] [[../concepts/anti-patterns]] 把每个反模式标"首次触发事件"
-- [x] [[../topics/harness-resources]] 完整 skill 分类（本地 31 / 注入 90+）
+- [x] [[../topics/harness-resources]] 完整 skill 分类（本地 32 / 注入 90+）
 - [x] [[../topics/memory-index]] 加 cross-cutting topic 索引
 - [x] [[decision-log]] 补齐历史 ADR（ADR-001~023 连续，追溯到 2026-04-12）
 - [x] [[conventions]] 补 Worktree / 私人项目细化约定

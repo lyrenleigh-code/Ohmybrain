@@ -11,7 +11,10 @@ tags: [架构, memory, MCP, 知识图谱, mermaid, UWAcomm, α补偿, Ohmybrain,
 
 [[memory-stack]] 第 4 层（MCP memory server）的 Mermaid 可视化快照，供 Obsidian 直接预览。原始数据存于 `C:\Users\zazn\.claude\memory\graph.jsonl`。
 
-**当前规模**（2026-04-23 晚更 v3）：**24 实体 + 36 关系**，覆盖两个主题：
+> [!warning] 图谱层休眠（2026-06-24 入会自检（六）标注）
+> `graph.jsonl` 自 **2026-05-12** 起停止同步，本快照内容冻结于 2026-04-23 v3。**MCP memory 图谱层已事实休眠（dormant）**——当前活跃记忆层 = Layer 3 auto-memory（`MEMORY.md`）+ Layer 5 Hub wiki，二者已覆盖跨会话 + 人类可读 + 关系网需求。本页保留作历史快照，不再随会话更新；如需复活图谱层另起 spec。见 [[memory-stack]] § Layer 4。
+
+**当前规模**（2026-04-23 晚更 v3，已冻结）：**24 实体 + 36 关系**，覆盖两个主题：
 
 - 🔵 **图谱 A — Ohmybrain 生态**（9 实体 × 13 关系，+FlowGen 工具项目）
 - 🟢 **图谱 B — UWAcomm α 补偿栈**（17 实体 × 23 关系）

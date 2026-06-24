@@ -3,6 +3,7 @@ type: architecture
 created: 2026-04-12
 updated: 2026-06-15
 tags: [架构, 三仓, Hub, 模板, 闭环, harness]
+updated: 2026-06-24
 ---
 
 # 系统架构总览
@@ -70,11 +71,12 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 🔒 | `DigitalTwin1plusN` | `D:\Claude\DocProcess\DigitalTwin1plusN` | 派生 2026-05-25（「1+N」集群数字孪生体系） |
 | 项目仓 🔒 | `VisioForge` | `D:\Claude\DocProcess\VisioForge` | 派生 2026-06-02（通用 Visio 出图工作区，复用 flowgen-* 8 skill） |
 | 项目仓 🔒 | `CooperativeASW` | `D:\Claude\DocProcess\CooperativeASW` | 派生 2026-06-03（UWAprojDoc 编队协同探潜分系统单列细化 docx，DEPENDS_ON=UWAprojDoc） |
+| 项目仓 🔒 | `PaperTrans` | `D:\Claude\DocProcess\PaperTrans` | 派生 2026-06-15（外文论文英译中翻译工作区，template-document，一篇=一spec=一译稿，手动模式 🔒） |
 | **Tools/** | | | **跨项目工具** |
 | 项目仓 | `FlowGen` | `D:\Claude\Tools\FlowGen` | 派生 2026-04-23（自然语言→Visio/Mermaid 出图工具族；flowgen-* Visio skill 活跃，Mermaid 主入口未实装） |
 | 项目仓 | `IconForge` | `D:\Claude\Tools\IconForge` | 派生 2026-05-29（自然语言→图标 SVG，未实装） |
 | 项目仓 | `AnthropicPPT` | `D:\Claude\Tools\AnthropicPPT` | 派生 2026-05-23（FIELDBOOK PPT 模板，skill `anthropic-ppt`） |
-| 项目仓 | `FieldKit` | `D:\Claude\Tools\FieldKit` | 派生 2026-06-15（Calibration Field/校准场 图风系统，template-tool SOP，HEAD aa93de0 无远程；skill `calibration-field` 已注册） |
+| 项目仓 | `FieldKit` | `D:\Claude\Tools\FieldKit` | 派生 2026-06-15（Calibration Field/校准场 图风系统，template-tool SOP，HEAD `5a9d75b`，已建内网 gitlab 远程；skill `calibration-field` 已注册） |
 | **Patents/** 🔒 | | | **专利交底书工作区（无 git）** |
 | 项目仓 🔒 | `Patents` | `D:\Claude\Patents` | 3 候选交底书（iusbl-jacobian / otfs-spread-pilot / usbl-cage5-3d-hybrid-doa） |
 | **导航占位** | | | |
@@ -294,7 +296,7 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 | 指标 | 数值 | 说明 |
 |------|------|------|
 | **Hub wiki 页数** | 107 | concepts 20 + entities 8 + source-summaries 31 + mcp-entities 25 + explorations 4 + topics 5 + architecture 12 + agents 1 + workflows 1 + comparisons 0（详见 `wiki/index.md`） |
-| **活跃项目数** | 19 | TechReq×6（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒 / USBL_hw🔒）+ DocProcess×8（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / DigitalTwin1plusN / VisioForge / CooperativeASW，全 🔒）+ Tools×4（FlowGen / IconForge / AnthropicPPT / FieldKit）+ Patents🔒 |
+| **活跃项目数** | 20 | TechReq×6（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒 / USBL_hw🔒）+ DocProcess×9（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / DigitalTwin1plusN / VisioForge / CooperativeASW / PaperTrans，全 🔒）+ Tools×4（FlowGen / IconForge / AnthropicPPT / FieldKit）+ Patents🔒（papers 未正式登记，见 [[../topics/core-update-queue]] / decision-log 待裁） |
 | **模板 skill 数** | 5 | ingest/plan/implement/lint/promote-answer（core + 下游继承） |
 | **全局 skill（Hub 用）** | 1 | `llm-wiki`（`paths: wiki/**` 自动激活） |
 | **wiki-ingester agent** | 2 副本 | 全局 `~/.claude/agents/`（invocable，2026-05-12 起）+ 项目本地（契约源头 + git 跟踪） |

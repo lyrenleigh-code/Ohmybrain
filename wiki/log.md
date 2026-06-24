@@ -3,6 +3,28 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-06-24] maintenance | 入会自检（六）：PaperTrans 补登 + USBL_hw 刷新 + CANON 级联 + MEMORY.md 压缩
+
+ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第六轮），5 维并行 workflow 审计（A CANON 计数 / B dashboard↔git-HEAD 对账 / C memory-log 同步 / D 部分登记 / E 历史遗留）+ 逐 finding 对抗验证（44 agent / 39 finding → 33 confirmed / 1 refuted / 5 uncertain）+ 主会话逐条复核代写。
+
+**① PaperTrans 补登**（「部分登记」反模式连续第 6 轮复发）：06-15 派生当日只登 CLAUDE.md ×2 + `projects/papertrans/` 导航 + log + memory，漏 dashboard 行 / system-overview 实例表 / memory-index 条目 / **ADR-029**（追溯登记）/ 活跃项目计数。本轮补全：dashboard DocProcess 表新增行 + system-overview 实例表 + 活跃项目 19→20 / DocProcess×8→×9 + memory-index project 组 + decision-log ADR-029 + roadmap 里程碑。**实况修正**：非 log 旧状态「75 文件待 commit」，实为首篇全书译稿收尾归档（23 单元 + 367 页 PDF 待终审，HEAD `ed1a7ad`/06-16）。
+
+**② USBL_hw 行刷新**（dimension B/C 最大 stale，dashboard 落后 git 9 天 / 33 commit）：dashboard `32ae044`/38 commit/无远程 → `c7c07da`（06-23）/**71 commit**/已建内网 gitlab 远程（lilin/USBL_hw, ahead 3）；06-16~23 Hub 视图进展 = 方案设计说明书 v1.0 终稿 `82ae586` push + v1.1 通信章 §5.2 深扩写/公式 OMML 原生化 + SPEC-006 收发半双工+值班 + SPEC-007 五板号统一 + 板2 timing 平台重构 + 询证函 send-pack 全面同步 + S0 发射链仿真签核；**2026-06-23 写权交接回 Codex**。详情归 USBL_hw 项目自身 wiki/log + auto-memory。
+
+**③ CANON 计数级联修复**：skills 本地 31→32 / 33 目录→34（calibration-field 注册当日只 bump headline，细分括号留 stale，跨 conventions / hub-as-brain / workflow-glossary / roadmap / ecosystem-dashboard 6 文件）；memory 81→83 / project 56→58（含本 audit6 + papertrans，跨 conventions / anti-patterns / index / three-tier / ecosystem-dashboard / memory-index / hub-as-brain）；ADR range ~028→~029（8 文件 + decision-log 新增 ADR-029）。`dashboard_snapshot.py --check` 重跑静默。
+
+**④ stale 🕸️ 重算**（@2026-06-24）：CooperativeDetection（05-09，46 天）+ PaperReview（05-09，46 天，dirty=7 或在评中）新增 🕸️；DigitalTwinGuide 停滞 32→约 42 天；dashboard line 16 断言更新。**锚点刷新**：FieldKit `aa93de0`→`5a9d75b`（已建远程）/ FlowGen +`385072e` M5-pro / AnthropicPPT +`438c57e` styled_diagram / UWAprojDoc `ad59ef8`→`eed5374`。
+
+**⑤ MEMORY.md 压缩**（PostToolUse hook 触发，27→14.7KB）：USBL_hw 索引行膨胀成 ~7KB 多段巨行（违反「一行一条目」），连同其余长行全量紧凑化（保留 84 条 [标题](链接) 不变，详情留各 .md）。
+
+**对抗去伪**（confirmed 仍带错误细节，主会话订正）：B-02 papers≠PaperTrans / C-02 agent 臆造 USBL_hw 索引行的 SPEC token / E-01 "4/4" 实为 13/13（4 项目已有 AGENTS.md）/ E-06 refuted（4 项目 memory 回填仍 pending）。
+
+> **surface 给用户（未自动处理，待裁决）**：① **papers 项目**状态歧义（仅登 DocProcess/CLAUDE.md，未进 22 项目注册表 / dashboard / projects / ADR / memory，git init 零 commit）——正式立项 or 非正式 staging？② 存量 13 项目缺 AGENTS.md（动他仓需授权）③ promote 源端脱敏 step 缺（动 core 需授权）④ MCP memory graph.jsonl 停 05-12（冻结 or 恢复）⑤ calendar 06-13~24 缺 12 天（个人日程不代填）⑥ 4 项目（UWAcomm/USBL/UWAcomm_usbl/DigitalTwin1plusN）memory 回填 + USBL_hw 索引行 06-16~23 回填（各项目 session 做）⑦ UWAcomm/USBL/UWAnet 三仓 gitlab/master upstream [gone]（需重设 upstream）。
+
+本批仅文件改动，**未 commit**（git 待授权）。memory `project_ohmybrain_2026-06-24_audit6`。
+
+---
+
 ## [2026-06-15] new-project | PaperTrans 派生（外文论文英译中翻译工作区）
 
 DocProcess 系第 10 个子项目 `PaperTrans`（`D:\Claude\DocProcess\PaperTrans`，git 仅本地 main、无远程，75 文件已暂存待 commit）派生登记。按 `template-document` SOP 派生，手动模式，🔒 私人。

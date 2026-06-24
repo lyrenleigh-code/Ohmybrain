@@ -3,6 +3,7 @@ type: topic
 created: 2026-05-24
 updated: 2026-06-10
 tags: [core, queue, 下沉, 候选]
+updated: 2026-06-24
 ---
 
 # core 更新候选队列
@@ -13,7 +14,11 @@ tags: [core, queue, 下沉, 候选]
 
 ### high priority
 
-（空 — 上轮 high priority 4 候选已于 2026-05-24 实战全部裁决：Q-003 下沉 / Q-001、Q-002 已 in sync 关闭 / Q-004 REJECT，详见下方 synced 与反例表。队列文件 2026-06-10 自检收口补记。）
+| ID | 候选 | 备注 |
+|----|------|------|
+| Q-013 | promote **源端脱敏 step** 下沉到 core 三模板 promote 工作流 | 2026-06-24 入会自检（六）E-02 发现：core 三模板 `03-promote.md` / `.claude/commands/promote.md` / `promote-answer/SKILL.md` 均无脱敏 step，`check_private_tags` 只防 Hub 目的端、不在 promote 源工作流做。Hub 侧 [[../architecture/conventions]] §9 已有脱敏 4 步（抽象 / 数值改量级 / 去结构指纹 / 用户确认）可直接下沉。**满足全 5 标准**（跨项目通用 / 安全相关 / 稳定 / 有 Hub 源 / 高价值）；待 `/sync-to-core` 专门 pass 落地 |
+
+> 历史：上轮 high priority 4 候选已于 2026-05-24 实战全部裁决（Q-003 下沉 / Q-001、Q-002 已 in sync 关闭 / Q-004 REJECT，详见下方 synced 与反例表；队列文件 2026-06-10 自检收口补记）。
 
 ### medium priority
 
