@@ -3,6 +3,23 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-06-25] maintenance | 入会自检（八）：审计后两笔操作 CANON 复核 + 4 处真 stale 收口
+
+ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第八轮）。**动因**：今日 入会自检（七）后又新增两笔操作（ingest 立项论证模板 + UWCombatPlatform 派生），落在 `dashboard_snapshot.py --check` 盲区（活跃项目数 / DocProcess×N / projects 卡数 + 各页现态计数不机检）的「部分登记」高发窗口。16 页 canonical 并行抽取 workflow（19 agent = Extract 16 + Verify 3）+ 逐疑点对抗验证（3 旗标全 isReal=true）+ 主会话独立复核（含 1 处 workflow 假阴性补捕）。
+
+**机器可检集复核（全一致）**：`--check` 静默 / lint 通过 / sync_index 108——memory 86（project 61 / feedback 21 / ref 3 / user 1，MEMORY.md 87 行）、skills 32/34、wiki 110/108（含先前易漏的 mcp-entities 25 页）、source-summaries 32、ADR-001~032。**登记矩阵**：UWCombatPlatform / UWAcommTrial 在 16 页**所有应登记面全 present**（今日两派生登记面完整，无「部分登记」复发——连续 7 轮反模式本轮未续）。
+
+**4 处真 stale 收口**（均系旧值未随 canon 更新，对齐到已正确的权威值，**不改变任何权威计数**故无级联）：
+1. `workflow-glossary.md:12` 计数口径行「wiki 共 109 个 .md」→ **108**（与所引 index/system-overview 的 108 对齐）
+2. `memory-index.md:101` project 分组「USBL（1）」→ **（2）**（组下实列 2 条 h8_drafting + hw_init；project 总数 61 不变，line156 汇总注脚已含 USBL_hw）
+3. `D:/Claude/CLAUDE.md` 主项目表 DocProcess 段漏 **PaperTrans**（10→11 行，对齐 DocProcess×11；插在 CooperativeASW 06-03 与 UWAcommTrial 06-24 之间保持派生日升序）
+4. `memory-stack.md:189` Layer 3 自动加载「auto-memory 16 条」→ **86**（2026-04-23 建页旧值；**workflow 假阴性**——memory-stack 抽取 agent 只判 line 101/124 历史快照正确不报，漏 line 189 现态描述，主会话独立预读补捕，再证 [[feedback_single_root_cause_audit]] 逐条复核纪律）
+
+**结构盲区延续（surface）**：`CANON_CHECKS` 注册表仍不含「活跃项目数 / DocProcess×N / projects 卡数」（自检七已记），本轮靠人工 grep + workflow 抽取兜底；根治需给 `dashboard_snapshot.py` 加「活跃项目数 / DocProcess 行数」check。audit6/七 6 项 surface（papers 部分登记 / 13 仓缺 AGENTS.md / promote 脱敏 step / MCP graph 停 05-12 / 三仓 upstream gone / 4 项目 memory 回填）未变，待用户裁决。
+
+本批仅文件改动，**未 commit**（git 待授权）。**不新建 audit memory**（本轮系轻量计数核验型自检，非项目里程碑；中途新建 memory 会 86→87 触发全 CANON 级联，自相矛盾且易错——故仅演化既有 [[feedback_ohmybrain_self_improvement]]（第八轮），详情留本 log entry）。
+
+---
 ## [2026-06-25] new-project | UWCombatPlatform 派生（水下作战试验平台建设方案 + 报价，DocProcess 🔒）
 
 承接甲方（水下作战信息实验室，含大型水池）**水下作战试验平台建设方案 + 报价**投标（初稿 2026-06-26 截稿），按 `template-document` SOP 派生 DocProcess 第 11 个子项目 `UWCombatPlatform`（`D:\Claude\DocProcess\UWCombatPlatform`，git 本地 main 无远程，🔒 手动模式）。全链条 6 模块：UUV论证仿真 / 硬件国产化 / 感知通信 / 水池半实物 / 智能对抗集群 / 应用验证；总成本不低于 5000 万。DEPENDS_ON=UWAcomm / SonarSim / USBL（已有仿真基础）+ Pricing（4 号文报价口径）。

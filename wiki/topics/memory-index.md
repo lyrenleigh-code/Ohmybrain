@@ -98,7 +98,7 @@ tags: [memory, 索引, auto-memory]
 - `project_uwacomm_usbl_doa_debug` — 1.9m DOA 调试（hilbert 包络修 abs-MF 检峰 bug）
 - `project_uwacomm_usbl_poolData_gcc_cbf_2026-06-07` — GCC-TDOA vs CBF 实测深析
 
-**USBL（1）**
+**USBL（2）**
 - `project_usbl_h8_drafting` — H8 起草中断点
 - `project_usbl_hw_init` — USBL_hw 派生（USBL 硬件设计，engineering-hardware 子型首例，🔒 无远程，ADR-026，2026-06-10 新增）
 

@@ -9,7 +9,7 @@ tags: [术语, glossary, 工作流]
 
 跨项目工作流相关术语的中文 / 英文 / 缩写定义。这里是 single source of truth，其他文档引用。
 
-> 计数口径以 `[[../architecture/system-overview]]` 与 index/log 为准（如 wiki 共 109 个 .md、本地 skill 32 含 SKILL.md / 注入后 90+、agents 55 个等），术语表只描述概念不复述统计。
+> 计数口径以 `[[../architecture/system-overview]]` 与 index/log 为准（如 wiki 共 108 个 .md、本地 skill 32 含 SKILL.md / 注入后 90+、agents 55 个等），术语表只描述概念不复述统计。
 
 ## 核心动词（来自 [[../architecture/dual-loop]]）
 
