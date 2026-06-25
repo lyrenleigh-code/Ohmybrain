@@ -14,6 +14,7 @@ tags: [roadmap, 演化, 里程碑]
 | 日期 | 里程碑 | 类型 |
 |------|--------|------|
 | **2026-06-24** | 采纳 ppt-master（30.8k★ MIT，agent 手写 SVG→原生 DrawingML）作通用 PPT deck 引擎 + FIELDBOOK 迁 `fieldbook` brand/deck 模板 + AnthropicPPT 降级（Plan A；ppt-master = 第三方 vendored 不计活跃项目）| Tools 第三方 (ADR-030) |
+| **2026-06-24** | UWAcommTrial 项目派生（UWAcomm 多模通信机通信距离性能湖上试验大纲，template-document，依赖 UWAcomm；完善既有大纲 + 13 张记录表逐表分页附件，v1 已交付归档）；2026-06-25 入会自检（七）追溯补登 | DocProcess (ADR-031) |
 | **2026-06-15** | PaperTrans 项目派生（外文论文英译中翻译工作区，template-document，一篇=一spec=一译稿 + 术语单一可信源；首篇全书译稿已成）；2026-06-24 入会自检（六）追溯补登 | DocProcess (ADR-029) |
 | **2026-06-15** | FieldKit 项目派生 + 「校准场 / Calibration Field」图示风格系统（共享 design kit → HTML→PNG/PDF 生成器 SHIPPED v1 + AnthropicPPT styled_diagram SHIPPED v2 + flowgen styled-figure carve-out）；借鉴 pbakaus/impeccable | Tools (ADR-027 / ADR-028) |
 | **2026-06-10** | USBL_hw 项目派生（USBL 硬件设计，engineering-hardware 子型首例）+ 工作区级 hook ×2（push README 检查 / calendar 提醒） | TechReq + Hub (ADR-026) |

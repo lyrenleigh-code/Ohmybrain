@@ -1,6 +1,6 @@
 # Wiki Index
 
-> 最后更新：2026-06-24（入会自检（六）：PaperTrans 项目补登——06-15 派生当日漏登 dashboard/system-overview/memory-index/ADR-029（DocProcess×8→×9、活跃 19→20）+ USBL_hw 进展刷新（→`c7c07da`/71 commit/已建 gitlab 远程）+ CANON 级联修复 skills 31→32、memory 81→83/project 56→58、ADR range ~028→~029 + CooperativeDetection/PaperReview 标 🕸️；**+ ppt-master 采纳（Plan A/ADR-030）**：FIELDBOOK→`fieldbook` brand/deck 模板 + AnthropicPPT 降级 + memory 83→84/project 58→59、ADR ~029→~030（ppt-master = 第三方 vendored 不计活跃项目）；上批 2026-06-15 FieldKit 派生（ADR-027/028）；页面总数不变 107，projects/ 导航卡不计入 content 页）
+> 最后更新：2026-06-25（入会自检（七）：UWAcommTrial 项目补登——06-24 派生当日「部分登记」漏 8 面，收口 dashboard / system-overview 实例表 / ADR-031 / roadmap / memory-index / log / auto-memory，活跃 20→21、DocProcess×9→×10、memory 84→85 / project 59→60、ADR ~030→~031；页面总数不变 107，projects/ 导航卡不计入 content 页）；前轮 2026-06-24（入会自检（六）：PaperTrans 项目补登——06-15 派生当日漏登 dashboard/system-overview/memory-index/ADR-029（DocProcess×8→×9、活跃 19→20）+ USBL_hw 进展刷新（→`c7c07da`/71 commit/已建 gitlab 远程）+ CANON 级联修复 skills 31→32、memory 81→83/project 56→58、ADR range ~028→~029 + CooperativeDetection/PaperReview 标 🕸️；**+ ppt-master 采纳（Plan A/ADR-030）**：FIELDBOOK→`fieldbook` brand/deck 模板 + AnthropicPPT 降级 + memory 83→84/project 58→59、ADR ~029→~030（ppt-master = 第三方 vendored 不计活跃项目）；上批 2026-06-15 FieldKit 派生（ADR-027/028）；页面总数不变 107，projects/ 导航卡不计入 content 页）
 > 页面总数：107
 
 ## Concepts（概念页）
@@ -74,7 +74,7 @@
 - [research-map](topics/research-map.md) — 研究全景地图，展示10个研究方向的层次结构和交叉关系
 - [ecosystem-dashboard](topics/ecosystem-dashboard.md) — 跨仓状态快照面板：项目状态 / Hub 规模 / Hooks 状态 / Promote 队列（2026-05-24 新建，非实时）
 - [harness-resources](topics/harness-resources.md) — Claude Code Harness 全景索引（Hooks 8 + Skills 90+ + Rules + Agents + 6 MCP），加载层次决策树（2026-06-09 三模板来源口径同步）
-- [memory-index](topics/memory-index.md) — `~/.claude/projects/D--Claude/memory/` 84 条 auto-memory 按类型 + 主题聚合索引（2026-05-24 新建）
+- [memory-index](topics/memory-index.md) — `~/.claude/projects/D--Claude/memory/` 85 条 auto-memory 按类型 + 主题聚合索引（2026-05-24 新建）
 - [core-update-queue](topics/core-update-queue.md) — Hub → core 待下沉候选队列（pending + history + 评估标准 + 反例），目标路径指向 `template-*`（2026-06-09 同步）
 
 ## Explorations（探索页）

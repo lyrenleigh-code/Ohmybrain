@@ -3,6 +3,23 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-06-25] new-project | 入会自检（七）：UWAcommTrial 补登（「部分登记」反模式连续第 7 轮复发）
+
+ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第七轮），4 维并行 workflow 审计（A 登记面完整性 / B 计数级联定位 / C git-HEAD↔dashboard 对账 / D audit6 遗留复查）+ 逐缺口对抗验证（18 agent / 14 confirmed / **0 假阴性**）+ 主会话逐条复核代写。
+
+**① UWAcommTrial 补登**（DocProcess 系，2026-06-24 派生，template-document，依赖 UWAcomm，**源仓无 git**）：06-24 派生当日只登 root/Hub/DocProcess CLAUDE.md ×3 + `projects/uwacommtrial/` 导航卡，漏 8 面。本轮补全：[[topics/ecosystem-dashboard]] DocProcess 状态行 + [[architecture/system-overview]] 实例表行 + [[architecture/decision-log]] **ADR-031**（追溯）+ [[architecture/roadmap]] 里程碑 + [[topics/memory-index]] project 组 + 本 log entry + auto-memory `project_uwacommtrial_init` + MEMORY.md 指针；**CANON 计数级联** 活跃项目 20→21 / DocProcess×9→×10（system-overview:300）+ memory 84→85 / project 59→60（hub-as-brain CANON 表 / conventions §0 / ecosystem-dashboard 规模快照 / memory-index）。交付实况：v1 已交付归档（大纲完善：补目的/依据/对象/判据/组织/安全/数据归档 + 13 张记录表逐表分页附件，SPEC-001 已 archive）。
+
+**② USBL_hw dashboard 锚点对账修正**（dimension C）：dashboard `c7c07da`/71 commit/ahead 3 → 实际 `293f241`/72 commit/ahead 4（audit6 当晚 2026-06-24 21:45 写权交回 Codex 后续 1 commit：硬件设计说明书提取 + v1.12 母版同步 + 4 图修复 + 图表自动编号；`c7c07da` 经 merge-base 验证仍为祖先，线性推进）。
+
+**③ audit6 残留顺修**：conventions §9 私人项目表补回 USBL_hw + PaperTrans（audit6 漏登）+ UWAcommTrial；system-overview:147 `projects/` 树注释 `20 个`→23（与本项目无关的存量 stale，树体补 uwaprojdoc/usbl_hw/papertrans/fieldkit/uwacommtrial 5 卡）。
+
+**结构盲区记录（surface）**：dimension B 实证 `dashboard_snapshot.py --check` 的 `CANON_CHECKS` 注册表只机检 memory/skills/agents/rules/wiki/scripts，**不含「活跃项目数 / DocProcess×N / projects 卡数」**——连续 7 轮「部分登记」均栽在此盲区（计数能机检却漏项目登记面）。可加「活跃项目数」check 根治（留 surface）。
+
+**对抗验证**：14/14 confirmed / 0 假阴性（本轮缺口判定 100% 准确），但仍主会话逐条复核（[[feedback_single_root_cause_audit]] 教训）。**audit6 surface 7 遗留复查**：6 仍 open（papers 部分登记 / 13 仓缺 AGENTS.md / promote 脱敏 step / MCP graph.jsonl 停 05-12 / 三仓 upstream [gone] / 4 项目 memory 回填），calendar 收窄到缺 06-13/19/20/21（个人日程不代填）。
+
+本批仅文件改动，**未 commit**（git 待授权；本地 main 已对齐 gitlab，领先 github 12 commit）。memory `project_uwacommtrial_init` + [[feedback_ohmybrain_self_improvement]] 演化（七）。
+
+---
 ## [2026-06-24] tooling | 采纳 ppt-master 作通用 PPT 引擎 + FIELDBOOK 迁模板 + AnthropicPPT 降级（Plan A，ADR-030）
 
 用户提供 `hugohe3/ppt-master`（30.8k★ MIT）问"怎么借鉴" → **Plan A**：采纳整 skill 作通用 PPT deck 引擎（agent 逐页手写 SVG → `svg_to_pptx` 转原生 DrawingML，零栅格化、任意页型），FIELDBOOK 迁为 `fieldbook` brand/deck 模板，AnthropicPPT 降级。

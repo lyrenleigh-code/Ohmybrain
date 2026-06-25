@@ -247,5 +247,5 @@ Hooks 按触发时机执行（PreToolUse / PostToolUse / Stop / SessionStart）
 - [[../architecture/hub-as-brain]] — 大脑功能定位
 - [[../architecture/system-overview]] § Harness 机制 — 三仓 harness 总览
 - [[../architecture/conventions]] — Exit Code Strategy 等
-- [[../architecture/decision-log]] — ADR-001~030（ADR 章节，非独立文件）
+- [[../architecture/decision-log]] — ADR-001~031（ADR 章节，非独立文件）
 - [[ecosystem-dashboard]] § Hub Hooks

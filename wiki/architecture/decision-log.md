@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-06-15
+updated: 2026-06-25
 tags: [ADR, 决策, log]
 ---
 
@@ -11,9 +11,36 @@ tags: [ADR, 决策, log]
 
 最新在上。
 
-> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-030。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-031（含 ADR-031 追溯）。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
 >
 > **编号约定**：ADR 编号为 **append-only 稳定 ID**（按登记顺序递增、不复用、不重排）；表按**事件日期降序**排列。绝大多数情况下编号降序 == 日期降序，但 retroactive 追溯条目（如 ADR-025 事件 2026-06-04、2026-06-09 登记）会出现编号与位置不严格对应——这是为避免重编号引发跨页引用级联失效（教训见 [[../log]] 2026-05-29）而做的取舍。
+
+---
+
+## ADR-031 · 2026-06-24 · UWAcommTrial 项目派生（DocProcess，UWAcomm 多模通信机通信距离湖上试验大纲）
+
+> **追溯登记**（事件 2026-06-24，2026-06-25 入会自检（七）补登 ADR）：派生当日只登 root/Hub/DocProcess CLAUDE.md ×3 + `projects/` 导航卡，漏 ADR / dashboard / system-overview 实例表 / roadmap / memory-index / log / auto-memory / 活跃项目计数，属「部分登记」反模式连续第 7 轮复发，本次收口。
+
+### 触发
+
+需要一个专门工作区完善 UWAcomm 多模通信机的**通信距离性能湖上试验大纲**，并产 13 张记录表逐表分页附件。依赖 UWAcomm（`D:\Claude\TechReq\UWAcomm` 多体制水声通信算法仿真源）。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/UWAcommTrial` 🔒（**源仓无 git**，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=UWAcomm。DocProcess 第 10 个正式登记子项目（papers 仍未正式登记，见 [[../topics/ecosystem-dashboard]] / 本页待裁）。
+
+### 实现
+
+- SOP §1 派生 + `projects/uwacommtrial/` 导航卡 + memory `project_uwacommtrial_init` + log（事件 2026-06-24）。
+- dashboard 状态行 / system-overview 实例表 + 活跃计数 20→21、DocProcess×9→×10 / memory-index project 组（59→60）/ 本 ADR / roadmap 里程碑 / auto-memory 于 **2026-06-25 入会自检（七）补登**（4 维 workflow，18 agent / 14 confirmed / 0 假阴性，主会话逐条复核）。
+
+### 后果
+
+- ✓ 多模通信机通信距离湖上试验大纲有受管工作区，与 UWAcomm 仿真源挂钩。
+- ✓ v1 已交付归档（大纲完善：补目的 / 依据 / 对象 / 判据 / 组织 / 安全 / 数据归档 + 13 张记录表逐表分页附件，SPEC-001 已 archive）。
+- ⚠ 派生当日「部分登记」漏 8 面——反模式连续第 7 轮复发；根因盲区 = `dashboard_snapshot.py --check` 只机检 memory/skills 计数，**不校验项目登记面 / 活跃计数**（见 [[../log]] 2026-06-25）。
+
+> memory `project_uwacommtrial_init`。关联 ADR-029（PaperTrans 派生，同属 template-document DocProcess 追溯登记）。
 
 ---
 

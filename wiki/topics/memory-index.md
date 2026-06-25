@@ -12,7 +12,7 @@ tags: [memory, 索引, auto-memory]
 
 > 不复制 memory 完整内容（避免双写），本页只索引 + 简短描述 + link 到 memory 文件。
 
-> **计数口径（@2026-06-24）**：auto-memory 共 **84 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 85 个 `.md`）。分布：user **1** / feedback **21** / project **59** / reference **3**。下方各类型标题计数与此严格一致。
+> **计数口径（@2026-06-25）**：auto-memory 共 **85 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 86 个 `.md`）。分布：user **1** / feedback **21** / project **60** / reference **3**。下方各类型标题计数与此严格一致。
 >
 > 注：`MEMORY.md` 索引行中「flowgen-vsdx M5 升级」一条指向 `~/.claude/skills/flowgen-vsdx/SKILL.md`（skill 文件，**非 memory 条目**），不计入总数。
 
@@ -59,7 +59,7 @@ tags: [memory, 索引, auto-memory]
 - `feedback_doc_visual_diversification` — 流程图不能统一布局换数据
 - `feedback_doc_flowgen_only` — 方案 / 方法论文档图必走 flowgen-* skill
 
-### project（项目状态 · 59 条）
+### project（项目状态 · 60 条）
 
 按项目分组：
 
@@ -126,6 +126,9 @@ tags: [memory, 索引, auto-memory]
 **DocProcess / PaperTrans（1）**
 - `project_papertrans_init` — PaperTrans 派生（外文论文英译中翻译工作区，template-document，一篇=一spec=一译稿 + 术语单一可信源，🔒 无远程，2026-06-15 新增）
 
+**DocProcess / UWAcommTrial（1）**
+- `project_uwacommtrial_init` — UWAcommTrial 派生（UWAcomm 多模通信机通信距离湖上试验大纲，template-document，依赖 UWAcomm，完善大纲 + 13 表分页附件，v1 已交付归档，🔒 源仓无 git，2026-06-24 派生 / 2026-06-25 补登）
+
 **TechReq / SonarSim（1）**
 - `project_sonarsim_init` — 主动声呐界面仿真 MATLAB（SPEC-001 跑通单发同频干扰混响强度图 + 接声呐方程，2026-06-03 新增）
 
@@ -147,7 +150,7 @@ tags: [memory, 索引, auto-memory]
 - `project_ohmybrain_2026-06-10_audit4` — 入会自检（四）：queue 收口（high 清空）+ uwaprojdoc 导航补建 + 5 日期 log 补登全清 + 审计误报 3 例（2026-06-10 新增）
 - `project_ohmybrain_2026-06-24_audit6` — 入会自检（六）：5 维 workflow 审计（44 agent / 33 confirmed / 1 refuted）+ PaperTrans 补登（dashboard/system-overview/memory-index/ADR-029）+ USBL_hw 进展刷新（→c7c07da/71 commit）+ CANON 级联（skills 31→32 / memory 81→83）+ CooperativeDetection/PaperReview 标 🕸️（2026-06-24 新增）
 
-> 注：`project_uwacomm`（含 13 条 session 条）+ `project_uwacomm_usbl`（含 13 条）+ `project_uwaprojdoc`（含 3 条）等高频项目的多日 session 条目均计入上方分组，加 Tools 系 7 + VisioForge/CooperativeASW/SonarSim/USBL_hw/PaperTrans 各 1 + Ohmybrain Hub session 3 条（2026-06-09 / 2026-06-10 / 2026-06-24）+ Tools 系 +1 FieldKit +1 ppt-master，合计 59。
+> 注：`project_uwacomm`（含 13 条 session 条）+ `project_uwacomm_usbl`（含 13 条）+ `project_uwaprojdoc`（含 3 条）等高频项目的多日 session 条目均计入上方分组，加 Tools 系 7 + VisioForge/CooperativeASW/SonarSim/USBL_hw/PaperTrans/UWAcommTrial 各 1 + Ohmybrain Hub session 3 条（2026-06-09 / 2026-06-10 / 2026-06-24）+ Tools 系 +1 FieldKit +1 ppt-master，合计 60。
 
 ### reference（参考 · 3 条）
 
@@ -254,7 +257,7 @@ UWAcomm_usbl calibration 分支 poolData/ 实测数据 DOA 估计与阵列校准
 - memory 是**主动**沉淀（每会话产生新条目）
 - Hub wiki 是**被动**索引（季度更新本页同步）
 - 不双向同步 — memory 是事实源，wiki 是索引视图
-- **last-sync: 2026-06-24**（计数已对齐 CANON：feedback 21 / project 59 / reference 3 / user 1 / 总 84）
+- **last-sync: 2026-06-25**（计数已对齐 CANON：feedback 21 / project 60 / reference 3 / user 1 / 总 85）
 
 ## 相关页面
 
