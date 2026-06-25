@@ -10,7 +10,7 @@ updated: 2026-06-24
 
 跨仓状态快照。**非实时**（需手动 / 半自动同步），但比"散在各处看"快。
 
-> 上次同步：**2026-06-25**（方式：入会自检（七，本轮）承 入会自检（六，2026-06-24）5 维 workflow 审计 + 逐 finding 对抗验证（44 agent / 33 confirmed / 1 refuted / 5 uncertain）；**USBL_hw 行刷新**（`32ae044`/38→`c7c07da`/71 commit，已建 gitlab 远程，写权交回 Codex）+ **PaperTrans 补登状态行**（06-15 派生当日漏登）+ CANON memory 81→83 / project 56→58 / skills 31→32 多页级联 + **CooperativeDetection / PaperReview 标 🕸️**（>30 天）+ FieldKit/FlowGen/AnthropicPPT 锚点刷新；UWAcomm / USBL / UWAcomm_usbl / DigitalTwin1plusN 四行 git 未动、memory 回填仍 pending）；**+ 同日 ppt-master 采纳（Plan A / ADR-030）**：vendored `Tools/ppt-master` + FIELDBOOK→`fieldbook` brand/deck 模板 + AnthropicPPT 降级（memory 83→84 / project 58→59、ADR ~029→~030 级联，ppt-master 第三方不计活跃项目）；**+ 2026-06-25 入会自检（七）**：UWAcommTrial 补登（06-24 派生当日「部分登记」漏 8 面，4 维 workflow 18 agent/14 confirmed/0 假阴性，本轮收口 dashboard/system-overview 实例表/ADR-031/roadmap/memory-index/log/auto-memory，活跃 **20→21** / DocProcess×9→×10 / memory 84→85 / project 59→60）+ **USBL_hw 锚点对账** `c7c07da`/71→`293f241`/72/ahead 4（audit6 当晚 Codex 续 1 commit）
+> 上次同步：**2026-06-25**（方式：入会自检（七，本轮）承 入会自检（六，2026-06-24）5 维 workflow 审计 + 逐 finding 对抗验证（44 agent / 33 confirmed / 1 refuted / 5 uncertain）；**USBL_hw 行刷新**（`32ae044`/38→`c7c07da`/71 commit，已建 gitlab 远程，写权交回 Codex）+ **PaperTrans 补登状态行**（06-15 派生当日漏登）+ CANON memory 81→83 / project 56→58 / skills 31→32 多页级联 + **CooperativeDetection / PaperReview 标 🕸️**（>30 天）+ FieldKit/FlowGen/AnthropicPPT 锚点刷新；UWAcomm / USBL / UWAcomm_usbl / DigitalTwin1plusN 四行 git 未动、memory 回填仍 pending）；**+ 同日 ppt-master 采纳（Plan A / ADR-030）**：vendored `Tools/ppt-master` + FIELDBOOK→`fieldbook` brand/deck 模板 + AnthropicPPT 降级（memory 83→84 / project 58→59、ADR ~029→~030 级联，ppt-master 第三方不计活跃项目）；**+ 2026-06-25 入会自检（七）**：UWAcommTrial 补登（06-24 派生当日「部分登记」漏 8 面，4 维 workflow 18 agent/14 confirmed/0 假阴性，本轮收口 dashboard/system-overview 实例表/ADR-031/roadmap/memory-index/log/auto-memory，活跃 **20→21** / DocProcess×9→×10 / memory 84→85 / project 59→60）+ **USBL_hw 锚点对账** `c7c07da`/71→`293f241`/72/ahead 4（audit6 当晚 Codex 续 1 commit）；**+ ingest 立项论证报告模板（脱敏）→ source-summaries（内容页 107→108 / source-summaries 31→32）+ 起新项目 UWCombatPlatform（水下作战平台建设方案，template-document，活跃 21→22 / DocProcess×10→×11 / memory 85→86，ADR-032）**
 >
 > 来源：本页是聚合视图。各项目仓有独立 wiki/log.md，本页 link 而不复制。各项目「当前焦点」的 session 日期 / HEAD 锚点抽自 auto-memory 索引（`~/.claude/projects/D--Claude/memory/MEMORY.md`），见 [[memory-index]]。
 >
@@ -43,8 +43,9 @@ updated: 2026-06-24
 | **DigitalTwin1plusN** 🔒 | 🟢 活跃 | 「1+N」水下集群数字孪生体系方案（2026-05-25 派生）；P1-P11 概念决议（P11 暂缓）+ 3 spec；**同日（05-25 晚）v0-v5 完整可研报告 docx 落地（4 步 pandoc pipeline，报价表按 V1.0 格式），HEAD `234eb11`→`c866bb7`（12 commit，本地无远程）**（auto-memory 待回填同日 docx 延续） | `D:\Claude\DocProcess\DigitalTwin1plusN` |
 | **VisioForge** 🔒 | 🟡 起步 | 通用 Visio 出图工作区（2026-06-02 派生，复用全局 flowgen-* 8 skill）；首批 6 张 SN 效能预报图 1:1 高保真复刻（自建 scripts/replica_lib2.py）；git init -b main 首 commit 未提交 | `D:\Claude\DocProcess\VisioForge` |
 | **CooperativeASW** 🔒 | 🟢 活跃 | UWAprojDoc「编队协同探潜配置仿真与效能评估分系统」单列细化独立 docx 方案（2026-06-03 派生，DEPENDS_ON=UWAprojDoc）；全文 17 章 223k 字 + 24 图全细化 + docx 969KB/100 页；2026-06-04 图件大改（I 族接口图 + build_docx A4 fit-to-box）；commit `f46b16d`+`5da5de1`（本地未 push） | `D:\Claude\DocProcess\CooperativeASW` |
-| **PaperTrans** 🔒 | 🟢 活跃 | 外文论文英译中翻译工作区（2026-06-15 派生，template-document SOP，手动模式）；一篇=一spec=一译稿，wiki 术语表+翻译规范两页种子；**首篇全书译稿收尾归档（23 单元草稿 + 367 页 PDF 待终审，HEAD `ed1a7ad`/06-16），本地 main 无远程** |
-| **UWAcommTrial** 🔒 | 🟢 活跃 | UWAcomm 多模通信机通信距离性能湖上试验大纲（2026-06-24 派生，template-document，依赖 UWAcomm）；完善既有大纲（补目的 / 依据 / 对象 / 判据 / 组织 / 安全 / 数据归档）+ 13 张记录表逐表分页附件；**v1 已交付归档，SPEC-001 已 archive，源仓无 git** | `D:\Claude\DocProcess\UWAcommTrial` | `D:\Claude\DocProcess\PaperTrans` |
+| **PaperTrans** 🔒 | 🟢 活跃 | 外文论文英译中翻译工作区（2026-06-15 派生，template-document SOP，手动模式）；一篇=一spec=一译稿，wiki 术语表+翻译规范两页种子；**首篇全书译稿收尾归档（23 单元草稿 + 367 页 PDF 待终审，HEAD `ed1a7ad`/06-16），本地 main 无远程** | `D:\Claude\DocProcess\PaperTrans` |
+| **UWAcommTrial** 🔒 | 🟢 活跃 | UWAcomm 多模通信机通信距离性能湖上试验大纲（2026-06-24 派生，template-document，依赖 UWAcomm）；完善既有大纲（补目的 / 依据 / 对象 / 判据 / 组织 / 安全 / 数据归档）+ 13 张记录表逐表分页附件；**v1 已交付归档，SPEC-001 已 archive，源仓无 git** | `D:\Claude\DocProcess\UWAcommTrial` |
+| **UWCombatPlatform** 🔒 | 🟢 活跃 | 水下作战试验平台建设方案 + 报价（2026-06-25 派生，template-document，全链条 6 模块：UUV论证仿真 / 硬件国产化 / 感知通信 / 水池半实物 / 智能对抗集群 / 应用验证；依赖 UWAcomm/SonarSim/USBL）；**初稿 2026-06-26 截稿，🔒 本地无远程，涉密 docx gitignore** | `D:\Claude\DocProcess\UWCombatPlatform` |
 
 ### Tools / 跨项目工具
 
@@ -76,18 +77,18 @@ updated: 2026-06-24
 
 | 指标 | 数值 | 说明 |
 |------|------|------|
-| wiki 内容页 | **107** | 20 concepts + 8 entities + 12 architecture + 1 agents + 1 workflows + 5 topics + 4 explorations + 31 source-summaries + 25 mcp-entities + 0 comparisons |
-| wiki 总文件 | **109** | 107 内容页 + 根 `index.md` + `log.md` |
+| wiki 内容页 | **108** | 20 concepts + 8 entities + 12 architecture + 1 agents + 1 workflows + 5 topics + 4 explorations + 32 source-summaries + 25 mcp-entities + 0 comparisons |
+| wiki 总文件 | **110** | 108 内容页 + 根 `index.md` + `log.md` |
 | 自动化脚本 | **24** | `scripts/*.py` 全量（含 dashboard_snapshot.py；2026-06-10 +2 工作区级 hook 脚本） |
 | Hooks | **8 + 2** | Hub 8（3 阻断 + 4 提醒 + 1 注入，见下表）+ 工作区级 2（见表下注） |
 | 全局 skill（本地） | **32** | `~/.claude/skills/` 含 SKILL.md 的目录（34 个目录中 32 个有 SKILL.md） |
 | 全局 skill（注入后可见） | **90+** | 本地 32 叠加 `ecc:*` plugin / marketplace 注入后；裸写 90+ 会掩盖本地真实规模，故两层并列 |
 | 全局 agent | **55** | `~/.claude/agents/*.md` |
 | rules 目录 | **15** | common / zh / web + 12 语言（cpp/csharp/dart/golang/java/kotlin/perl/php/python/rust/swift/typescript） |
-| Memory 条目 | **85** | 4 类：user 1 / feedback 21 / project 60 / reference 3（见 [[memory-index]]；含 ppt-master adoption + 2026-06-24 自检 + PaperTrans init + UWAcommTrial init 条目） |
+| Memory 条目 | **86** | 4 类：user 1 / feedback 21 / project 61 / reference 3（见 [[memory-index]]；含 ppt-master adoption + 2026-06-24 自检 + PaperTrans init + UWAcommTrial init + UWCombatPlatform init 条目） |
 | MCP servers | **6** | context7 / exa / github / memory / playwright / sequential-thinking |
 
-> ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~031）。
+> ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~032）。
 
 ## Hub Hooks 当前状态
 
@@ -144,6 +145,6 @@ updated: 2026-06-24
 - [[system-overview]] — 系统架构总览（含规模表）
 - [[hub-as-brain]] — 大脑功能定位
 - [[harness-resources]] — Hooks / Skills / Rules 全景
-- [[memory-index]] — auto-memory 85 条目索引（本页 session 锚点来源）
+- [[memory-index]] — auto-memory 86 条目索引（本页 session 锚点来源）
 - [[core-update-queue]] — Hub → core 下沉候选队列
-- [[decision-log]] — ADR-001~031 决策记录
+- [[decision-log]] — ADR-001~032 决策记录

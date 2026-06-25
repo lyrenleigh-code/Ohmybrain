@@ -11,9 +11,35 @@ tags: [ADR, 决策, log]
 
 最新在上。
 
-> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-031（含 ADR-031 追溯）。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-032（含 ADR-031/032 追溯）。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
 >
 > **编号约定**：ADR 编号为 **append-only 稳定 ID**（按登记顺序递增、不复用、不重排）；表按**事件日期降序**排列。绝大多数情况下编号降序 == 日期降序，但 retroactive 追溯条目（如 ADR-025 事件 2026-06-04、2026-06-09 登记）会出现编号与位置不严格对应——这是为避免重编号引发跨页引用级联失效（教训见 [[../log]] 2026-05-29）而做的取舍。
+
+---
+
+## ADR-032 · 2026-06-25 · UWCombatPlatform 项目派生（DocProcess，水下作战试验平台建设方案 + 报价）
+
+### 触发
+
+甲方（水下作战信息实验室，含大型水池）需要**水下作战试验平台建设方案 + 报价**初稿（2026-06-26 截稿），全链条 6 模块（UUV论证仿真 / 硬件国产化 / 感知通信 / 水池半实物 / 智能对抗集群 / 应用验证）。同日 ingest 甲方「综合论证报告模板」脱敏为 Hub `lixiang-lunzheng-report-template`，需独立工作区承接撰写。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/UWCombatPlatform` 🔒（git 本地 main 无远程，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=UWAcomm / SonarSim / USBL（已有水声仿真基础）+ Pricing（4 号文软件报价口径）。DocProcess 第 11 个正式登记子项目。**涉密 docx（甲方原始模板）gitignore `raw/notes/*.docx`，不入 git**。
+
+### 实现
+
+- SOP §1 派生（copy template-document）+ 占位符填充 + git init（本地 🔒，73 文件暂存）+ SPEC-001（建设方案 + 报价大纲）+ 甲方 docx 复制到 `raw/notes/`（gitignore）。
+- Hub 全 12 面登记（**派生当日全量，吸取连续 7 轮「部分登记」教训**）：root/Hub/DocProcess CLAUDE.md + `projects/uwcombatplatform/` 导航卡 + dashboard 状态行 + system-overview 实例表 + 本 ADR + roadmap 里程碑 + memory-index + memory `project_uwcombatplatform_init` + log；CANON 级联 活跃 21→22 / DocProcess×10→×11 / memory 85→86 / project 60→61 / ADR range ~031→~032。
+
+### 后果
+
+- ✓ 水下作战平台建设方案有受管工作区，复用已有水声仿真基础 + 立项论证模板 + 4 号文报价口径。
+- ✓ 派生当日**全量登记**（不留部分登记）。
+- ⚠ scope 限「建设方案 + 报价」（非完整 18 节论证）；技术指标 / 设备清单 / 报价数据待甲方/用户提供（专家主导，不代编）。
+- ⚠ 涉密：raw docx 已 gitignore，禁推公开远程。
+
+> memory `project_uwcombatplatform_init`。spec `DocProcess/UWCombatPlatform/specs/active/2026-06-25-uuv-combat-platform-proposal.md`。关联 ADR-031（UWAcommTrial）、同日 ingest 源摘要 `lixiang-lunzheng-report-template`。
 
 ---
 

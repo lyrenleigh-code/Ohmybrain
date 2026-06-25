@@ -1,7 +1,7 @@
 # Wiki Index
 
-> 最后更新：2026-06-25（入会自检（七）：UWAcommTrial 项目补登——06-24 派生当日「部分登记」漏 8 面，收口 dashboard / system-overview 实例表 / ADR-031 / roadmap / memory-index / log / auto-memory，活跃 20→21、DocProcess×9→×10、memory 84→85 / project 59→60、ADR ~030→~031；页面总数不变 107，projects/ 导航卡不计入 content 页）；前轮 2026-06-24（入会自检（六）：PaperTrans 项目补登——06-15 派生当日漏登 dashboard/system-overview/memory-index/ADR-029（DocProcess×8→×9、活跃 19→20）+ USBL_hw 进展刷新（→`c7c07da`/71 commit/已建 gitlab 远程）+ CANON 级联修复 skills 31→32、memory 81→83/project 56→58、ADR range ~028→~029 + CooperativeDetection/PaperReview 标 🕸️；**+ ppt-master 采纳（Plan A/ADR-030）**：FIELDBOOK→`fieldbook` brand/deck 模板 + AnthropicPPT 降级 + memory 83→84/project 58→59、ADR ~029→~030（ppt-master = 第三方 vendored 不计活跃项目）；上批 2026-06-15 FieldKit 派生（ADR-027/028）；页面总数不变 107，projects/ 导航卡不计入 content 页）
-> 页面总数：107
+> 最后更新：2026-06-25（**ingest**：立项论证报告模板脱敏摄入 `source-summaries/lixiang-lunzheng-report-template`——内容页 107→108 / source-summaries 31→32 / 总文件 109→110；**起新项目 UWCombatPlatform**（水下作战平台建设方案+报价，template-document，活跃 21→22 / DocProcess×10→×11 / memory 85→86 / project 60→61 / ADR-032）；**入会自检（七）**：UWAcommTrial 项目补登——06-24 派生当日「部分登记」漏 8 面，收口 dashboard / system-overview 实例表 / ADR-031 / roadmap / memory-index / log / auto-memory，活跃 20→21、DocProcess×9→×10、memory 84→85 / project 59→60、ADR ~030→~031；页面总数不变 107，projects/ 导航卡不计入 content 页）；前轮 2026-06-24（入会自检（六）：PaperTrans 项目补登——06-15 派生当日漏登 dashboard/system-overview/memory-index/ADR-029（DocProcess×8→×9、活跃 19→20）+ USBL_hw 进展刷新（→`c7c07da`/71 commit/已建 gitlab 远程）+ CANON 级联修复 skills 31→32、memory 81→83/project 56→58、ADR range ~028→~029 + CooperativeDetection/PaperReview 标 🕸️；**+ ppt-master 采纳（Plan A/ADR-030）**：FIELDBOOK→`fieldbook` brand/deck 模板 + AnthropicPPT 降级 + memory 83→84/project 58→59、ADR ~029→~030（ppt-master = 第三方 vendored 不计活跃项目）；上批 2026-06-15 FieldKit 派生（ADR-027/028）；页面总数不变 107，projects/ 导航卡不计入 content 页）
+> 页面总数：108
 
 ## Concepts（概念页）
 
@@ -74,7 +74,7 @@
 - [research-map](topics/research-map.md) — 研究全景地图，展示10个研究方向的层次结构和交叉关系
 - [ecosystem-dashboard](topics/ecosystem-dashboard.md) — 跨仓状态快照面板：项目状态 / Hub 规模 / Hooks 状态 / Promote 队列（2026-05-24 新建，非实时）
 - [harness-resources](topics/harness-resources.md) — Claude Code Harness 全景索引（Hooks 8 + Skills 90+ + Rules + Agents + 6 MCP），加载层次决策树（2026-06-09 三模板来源口径同步）
-- [memory-index](topics/memory-index.md) — `~/.claude/projects/D--Claude/memory/` 85 条 auto-memory 按类型 + 主题聚合索引（2026-05-24 新建）
+- [memory-index](topics/memory-index.md) — `~/.claude/projects/D--Claude/memory/` 86 条 auto-memory 按类型 + 主题聚合索引（2026-05-24 新建）
 - [core-update-queue](topics/core-update-queue.md) — Hub → core 待下沉候选队列（pending + history + 评估标准 + 反例），目标路径指向 `template-*`（2026-06-09 同步）
 
 ## Explorations（探索页）
@@ -118,6 +118,7 @@
 - [yangyang-2026-uwa-otfs-nonuniform-doppler](source-summaries/yangyang-2026-uwa-otfs-nonuniform-doppler.md) — UWA-OTFS 非均匀多普勒建模 + OG-BSOMP-MLE 块稀疏信道估计（Yang/Ma 哈工程, IEEE JOE 2026），南海 5.5 km 海试
 - [zhengtonghui-2025-dd-mmse-teq](source-summaries/zhengtonghui-2025-dd-mmse-teq.md) — SC 水声 DD 域 MMSE Turbo 均衡（Zheng/He/Jing/Yan, 西工大, IEEE JOE 2025），丹江口湖试 4.076 kbps/2 km/8 通道/BER<10⁻⁴
 - [mermaid-js-mermaid](source-summaries/mermaid-js-mermaid.md) — Mermaid 图表渲染器（Knut Sveidqvist 2014+，MIT，v11.14.0），文本 DSL → SVG，27 图类型，diagram-as-code 事实标准，FlowGen 项目参考仓
+- [lixiang-lunzheng-report-template](source-summaries/lixiang-lunzheng-report-template.md) — 立项论证报告（综合论证报告）模板结构（脱敏），18 节骨架 + 建设方案"总—分 / 是什么-有什么-怎么建" + 经费概算 8 类（软件按 4 号文）；DocProcess 方案类项目复用
 - [uwacomm-otfs-pilot-tradeoff](source-summaries/uwacomm-otfs-pilot-tradeoff.md) — UWAcomm OTFS 三方案（Impulse/ZC/Superimposed）PAPR-NMSE-复杂度 tradeoff（2026-04-14 实测），OTFS 恢复时直接调用
 - [matlab-pitfalls](source-summaries/matlab-pitfalls.md) — MATLAB 跨项目 pitfalls 集合（生长性），起点：`inf` 字面量触发"double→struct"转换错误的 path 污染陷阱
 - [anthropic-2026-founders-playbook](source-summaries/anthropic-2026-founders-playbook.md) — Anthropic 2026 v3 AI-Native 创业方法论（36 页），四阶段（Idea/MVP/Launch/Scale）+ 三表面（Chat/Cowork/Code）+ CLAUDE.md as architectural memory + 5 条工程方法论可迁移

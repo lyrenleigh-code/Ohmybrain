@@ -3,6 +3,26 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-06-25] new-project | UWCombatPlatform 派生（水下作战试验平台建设方案 + 报价，DocProcess 🔒）
+
+承接甲方（水下作战信息实验室，含大型水池）**水下作战试验平台建设方案 + 报价**投标（初稿 2026-06-26 截稿），按 `template-document` SOP 派生 DocProcess 第 11 个子项目 `UWCombatPlatform`（`D:\Claude\DocProcess\UWCombatPlatform`，git 本地 main 无远程，🔒 手动模式）。全链条 6 模块：UUV论证仿真 / 硬件国产化 / 感知通信 / 水池半实物 / 智能对抗集群 / 应用验证；总成本不低于 5000 万。DEPENDS_ON=UWAcomm / SonarSim / USBL（已有仿真基础）+ Pricing（4 号文报价口径）。
+
+**脚手架**：copy template-document + 占位符填充（CLAUDE/README）+ SPEC-001（建设方案 + 报价大纲，按 `lixiang-lunzheng-report-template` 结构）+ git init（73 文件暂存）+ 甲方原始模板 docx 复制到 `raw/notes/`（**涉密，已 gitignore `raw/notes/*.docx`，不入 git**）。
+
+**Hub 登记面（派生当日全量，吸取连续 7 轮「部分登记」教训）**：root/Hub/DocProcess CLAUDE.md ×3 + `projects/uwcombatplatform/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + [[architecture/system-overview]] 实例表 + [[architecture/decision-log]] **ADR-032** + [[architecture/roadmap]] 里程碑 + [[topics/memory-index]] 组 + auto-memory `project_uwcombatplatform_init` + MEMORY.md 指针 + 本 log。**CANON 级联**：活跃项目 21→22 / DocProcess×10→×11（system-overview）+ memory 85→86 / project 60→61（hub-as-brain / conventions §0 / dashboard 规模快照 / memory-index / anti-patterns / three-tier / index）+ ADR range ~031→~032（6 文件）。
+
+**顺修**：dashboard DocProcess 表 UWAcommTrial 行尾混入 PaperTrans 路径单元格的表结构 bug（UWAcommTrial 轮 old_string 匹配中段所致，lint/--check 不查表结构故漏）已修正。
+
+memory `project_uwcombatplatform_init`。spec `UWCombatPlatform/specs/active/2026-06-25-uuv-combat-platform-proposal.md`。本批未 commit（git 待授权）。
+
+---
+## [2026-06-25] ingest | 立项论证报告（综合论证报告）模板结构摄入（脱敏）
+
+`raw/repos/综合论证报告模板.docx`（某科研院所设施建设项目立项论证模板，180KB）摄入 source-summaries。**仅摄入可复用结构**：18 节立项论证骨架 + 建设方案「总—分 / 是什么-有什么-怎么建」+ 建设内容清单表（硬件/软件/环境）+ 经费概算 8 类费用（软件按 4 号文 / 50万+ 设备查重 + 预估使用率 / 利旧 / 中咨评估价）。**脱敏**：原 docx 顶部夹带的具体涉密项目背景（甲方单位 / 装备方向 / 真实报价 / 模块拆分）**未摄入**，不入公开 Hub。
+
+新页 `source-summaries/lixiang-lunzheng-report-template.md`；wiki 内容页 107→108 / source-summaries 31→32 / wiki 总文件 109→110（CANON 级联：index / hub-as-brain / conventions / ecosystem-dashboard / system-overview）。供 DocProcess 方案类项目（UWAprojDoc / DigitalTwinGuide / Pricing / 即将派生的 UUV 建设方案项目）复用。
+
+---
 ## [2026-06-25] new-project | 入会自检（七）：UWAcommTrial 补登（「部分登记」反模式连续第 7 轮复发）
 
 ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第七轮），4 维并行 workflow 审计（A 登记面完整性 / B 计数级联定位 / C git-HEAD↔dashboard 对账 / D audit6 遗留复查）+ 逐缺口对抗验证（18 agent / 14 confirmed / **0 假阴性**）+ 主会话逐条复核代写。

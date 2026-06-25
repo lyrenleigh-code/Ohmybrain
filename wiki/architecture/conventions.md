@@ -10,7 +10,7 @@ tags: [约定, conventions, 跨项目]
 命名 / 目录 / commit / PR / 工作流 / worktree / 私人项目 等跨项目共享约定。**事实源 = `~/.claude/rules/common/*.md`**（全局规则），本页是 Hub wiki 的索引 + 项目级扩展。
 
 > [!note] 全局资源规模（@2026-06-25）
-> `~/.claude/` 当前承载：**auto-memory 85 个**（user 1 / feedback 21 / project 60 / reference 3，`MEMORY.md` 索引 86 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
+> `~/.claude/` 当前承载：**auto-memory 86 个**（user 1 / feedback 21 / project 61 / reference 3，`MEMORY.md` 索引 87 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
 
 ## 1. 命名约定
 
@@ -38,7 +38,7 @@ tags: [约定, conventions, 跨项目]
 | `output/` | 交付物（如适用） | 通常不 commit binary（除 demo） |
 | `.claude/` | harness | rules / skills / hooks / agents / settings.json |
 
-> Hub wiki 当前共 **109 个 .md**：根 `index.md` + `log.md` 2 个 + 107 个内容页（architecture 12 / agents 1 / workflows 1 / concepts 20 / entities 8 / explorations 4 / mcp-entities 25 / source-summaries 31 / topics 5 / comparisons 0）。计数随写入变化，以 `index.md` 同步值为准。
+> Hub wiki 当前共 **110 个 .md**：根 `index.md` + `log.md` 2 个 + 108 个内容页（architecture 12 / agents 1 / workflows 1 / concepts 20 / entities 8 / explorations 4 / mcp-entities 25 / source-summaries 32 / topics 5 / comparisons 0）。计数随写入变化，以 `index.md` 同步值为准。
 
 ## 3. Wiki 写作约定
 
@@ -53,7 +53,7 @@ tags: [约定, conventions, 跨项目]
 | 矛盾标注 | 用 `> [!warning]` 不静默覆盖 |
 | 摘要密度 | source-summary ≤ 200 行；详情页可更长但用层级分割 |
 | 提炼 vs 搬运 | wiki 是**提炼**，不是 raw/ 的复制 |
-| ADR 引用 | ADR 以章节形式（ADR-001 ~ ADR-031）存放在 [[decision-log]] 内，**引用一律写 `[[decision-log]]`**，不要写 `[[ADR-002]]` 这种悬空链接 |
+| ADR 引用 | ADR 以章节形式（ADR-001 ~ ADR-032）存放在 [[decision-log]] 内，**引用一律写 `[[decision-log]]`**，不要写 `[[ADR-002]]` 这种悬空链接 |
 
 ## 4. 反模式约定（don't do）
 
@@ -138,6 +138,7 @@ Type: `feat` / `fix` / `refactor` / `docs` / `test` / `chore` / `perf` / `ci`
 | `DocProcess/CooperativeASW` 🔒 | 私人（编队协同探潜分系统方案） | 私有 |
 | `DocProcess/PaperTrans` 🔒 | 私人（外文论文英译中翻译工作区） | 私有，无远程 |
 | `DocProcess/UWAcommTrial` 🔒 | 私人（多模通信机通信距离湖上试验大纲） | **无 git** |
+| `DocProcess/UWCombatPlatform` 🔒 | 私人（水下作战平台建设方案+报价，涉密） | 本地 main，涉密 docx gitignore |
 | `TechReq/UWAcomm_usbl` 🔒 | **内网 Internal**（UWAcomm+USBL 联合仿真） | 私有，不公开 |
 | `TechReq/SonarSim` 🔒 | 私人（主动声呐界面仿真） | 私有 |
 | `TechReq/USBL_hw` 🔒 | 私人（USBL 硬件设计，engineering-hardware） | 内网 gitlab |
@@ -192,7 +193,7 @@ UWAcomm_usbl-design baseline：`dd0f7af`（落地 5/8–5/11 设计方案 V1.1 +
 
 - [[hub-as-brain]] — 大脑功能定位（本页是其中之一）
 - [[dual-loop]] — 双闭环工作流约定的源头
-- [[decision-log]] — 架构决策记录（ADR-001 ~ ADR-031 章节）
+- [[decision-log]] — 架构决策记录（ADR-001 ~ ADR-032 章节）
 - [[../concepts/anti-patterns]] — 反模式约定（don't do）
 - [[../topics/harness-resources]] — harness 资源规模 + Hooks 约定来源
 - [[document-protocol]] — 项目文档结构协议（骨架 / 状态归属 / 迁移级别）

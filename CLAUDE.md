@@ -58,6 +58,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | papers 🔒 | 私人，不公开 | `D:\Claude\DocProcess\papers` |
 | PaperTrans 🔒 | 私人，不公开（当前无远程） | `D:\Claude\DocProcess\PaperTrans` |
 | UWAcommTrial 🔒 | 私人，不公开（当前无远程） | `D:\Claude\DocProcess\UWAcommTrial` |
+| UWCombatPlatform 🔒 | 私人，不公开（当前无远程） | `D:\Claude\DocProcess\UWCombatPlatform` |
 | FlowGen | 私人，不公开 | `D:\Claude\Tools\FlowGen` |
 | IconForge | 私人，不公开 | `D:\Claude\Tools\IconForge` |
 | AnthropicPPT | 私人，不公开（2026-06-24 降级=FIELDBOOK 设计源+归档，ADR-030）| `D:\Claude\Tools\AnthropicPPT` |
