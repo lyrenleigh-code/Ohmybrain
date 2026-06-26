@@ -3,6 +3,21 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-06-26] maintenance | 入会自检（十）：新 session git-HEAD sweep — 收口 UWCombatPlatform 重启 + Hub 自身行自指滞后 2 处 dimension-C 漂移
+
+ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第十轮）。承 入会自检（九，**同日 earlier session**）已 commit（`4c822ff`，工作树干净，领先 gitlab/main 1 待 push）。本 session 为今日新开，机检集（`dashboard_snapshot.py --check` 静默 / `lint_wiki` 过 / `sync_index` 108）全一致——CANON 计数零漂移。按 round-3/8 纪律（上批已 commit、Hub 内无新操作时用针对性核验替代全量 workflow），聚焦 `--check` 唯一盲区 **dimension C（git-HEAD 对账）**：新 session 期间其他项目 session 可能在 session 间隙推进各仓 HEAD。
+
+**全仓 git-HEAD sweep**（28 仓含 worktrees）对照 dashboard 18 个「当前焦点」pin：16 个精确 match（branch + hash 全一致），抓到 **2 处漂移**；2-agent 对抗 workflow 独立重扫确认（drift 集恰 = {UWCombatPlatform, Hub 自身行}，**0 漏 / 0 误**，证 main-session sweep 完整）：
+
+1. **UWCombatPlatform `30e428d`(06-25 暂停)→`3ce4928`(06-26 +3 commit)**：self-check 9 今晨标「暂停待续命名/结构改造」，当日午后即重启 +3 commit（`18c9cbe` 六环节重构命名定稿 +「作战世界模型」术语锁定 + `specs/platform-tech-routes` 187 行 6 平台技术路线 + 交接 Codex；`0a8f794` Codex 6 平台嵌高保真 AUV 应用场景图入 roadmap.vsdx；`3ce4928` 全文 UUV→AUV 统一 + SLATE 配色）。**「审计后窗口」教训第 3 次应验**（[[feedback_ohmybrain_self_improvement]] 八/九）——派生项目审计当日午后仍高速迭代，快照随即过期。状态翻「暂停」→「活跃迭代」（对抗验证判 accurate / not overstated），**但补 WIP caveat**：draft-v2 主稿仅②核心引擎样章成稿，①③④⑤⑥ 子平台正文 + 经费概算/进度/风险章待铺开，勿读作「方案已成稿」（验证者精度补充，防反向夸大）。
+
+2. **Hub 自身行 `7408107`→`4c822ff`**：dashboard 行写「HEAD 7408107（自检八）/ 自检九未 commit」——**自指滞后**（self-check 9 写 dashboard 时尚未提交自身，提交后 commit 含该行故无法自名 future hash，round 9 同型）。刷新为自检九已提交 `4c822ff`（领先 gitlab 1 待 push）+ 标注本 session 自检十 in-flight。
+
+**附带 surface（本仓外，未实装）**：UWCombatPlatform `3ce4928` 改动了**全局 skill** `flowgen-roadmap` / `flowgen-archposter`（`~/.claude/skills/`，SLATE 配色 + YaHei + 圆角 + APPLICATION_IMAGE 渲染，各留 `.bak.20260626`）。skill **count 不变（32，改非增）故无 CANON 级联**；但「项目 session 改共享全局 skill」是跨项目事件，[[ecosystem-dashboard|FlowGen]] 项目宜知会（其概念归属 flowgen* 族）。本轮不动（用户/Codex 已带备份刻意改），仅记录待用户裁决。
+
+本批仅文件改动（`ecosystem-dashboard.md` 2 行 + header note + 本 log），**未 commit**（git 待授权）。**不新建 audit memory**（轻量 dimension-C 核验型自检，避免 memory 86→87 触发全 CANON 级联，仅演化 [[feedback_ohmybrain_self_improvement]] 第十轮，详情留本 entry）。
+
+---
 ## [2026-06-26] maintenance | 入会自检（九）：dimension C 全清 + DigitalTwin1plusN 跨阈 🕸️ + `--check` 实装项目登记机检（根治 7 轮盲区）
 
 ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第九轮）。承 入会自检（八，2026-06-25）已 commit（`7408107`，工作树干净，`--check` 静默），今日无新 Hub 操作 → 机检集 + 登记面均干净，本轮聚焦 `--check` 盲区三类（git-HEAD 对账 / stale 重算 / 项目登记计数）。主会话三维直接核对 + 实测 + 亲核 hub-as-brain CANON 表；另发起 3 并行验证者对抗 workflow（dimension C 全清 refute / dimension S 完整性 / `--check` 覆盖完整性）交叉复核。
