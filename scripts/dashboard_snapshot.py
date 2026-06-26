@@ -59,6 +59,16 @@ PREFERRED_ORDER = [
 # memory 文件名前缀 → 类型标签
 MEMORY_PREFIXES = ["user", "feedback", "project", "reference"]
 
+# projects/ 下不计入「活跃项目数」的导航卡（母仓 + 归档 dry-run 导航，非独立业务项目）。
+# 派生方式：活跃项目数 = projects/ 导航卡总数 − 本集合中实际存在者。
+# 安全性：本集合若过期（未来新增一个非项目导航卡），活跃数会被**高报** →
+# --check 报「页面写 N，实跑应为 N+1」LOUD 失配，提示人工把新卡加进本集合；
+# 不会像硬编码白名单漏项那样静默**漏算**（与 audit-3 WIKI_SUBDIRS 静默低报相反，方向安全）。
+NON_PROJECT_NAV = {
+    "ohmybrain-core",  # 母仓 / 模板源，单列「母仓 / Hub」段，不计业务活跃项目
+    "usbl-s1",         # USBL S1 autonomous dry-run 归档性质导航页（非独立项目）
+}
+
 
 def find_hub_root(start: Path) -> Path | None:
     """从 start 向上查找含 wiki/ 与 scripts/ 的 Ohmybrain 仓根。"""
@@ -148,6 +158,36 @@ def count_memory(claude_root: Path) -> tuple[dict[str, int], int]:
     return counts, total
 
 
+def count_nav_cards(hub_root: Path) -> int:
+    """projects/ 下导航卡（子目录）总数。"""
+    proj = hub_root / "projects"
+    if not proj.is_dir():
+        return 0
+    return sum(1 for d in proj.iterdir() if d.is_dir())
+
+
+def count_active_projects(hub_root: Path) -> int:
+    """活跃项目数 = projects/ 导航卡 − NON_PROJECT_NAV 中实际存在者。
+    （papers 无导航卡故天然不计；第三方 vendored ppt-master 无导航卡亦不计。）"""
+    proj = hub_root / "projects"
+    if not proj.is_dir():
+        return 0
+    return sum(
+        1 for d in proj.iterdir() if d.is_dir() and d.name not in NON_PROJECT_NAV
+    )
+
+
+def count_docprocess_projects(hub_root: Path) -> int:
+    """DocProcess 子项目数 = conventions §9 私人项目表中 `| `DocProcess/...` 行数。
+    conventions §9 是 DocProcess 项目的权威枚举（每个登记项目一行），用作 ground-truth
+    校验 system-overview「DocProcess×N」token。简单行前缀计数，格式变则返回 0 → --check
+    失配 LOUD（不静默）。"""
+    f = hub_root / "wiki" / "architecture" / "conventions.md"
+    if not f.is_file():
+        return 0
+    return len(re.findall(r"(?m)^\| `DocProcess/", f.read_text(encoding="utf-8")))
+
+
 def render(hub_root: Path, claude_root: Path) -> str:
     per_dir, content_total, root_files, wiki_total, subdirs = count_wiki(hub_root)
     scripts_n = count_glob(hub_root / "scripts", "*.py")
@@ -220,6 +260,13 @@ CANON_CHECKS: list[tuple[str, str, str, str]] = [
     ("wiki/architecture/conventions.md", r"rules (\d+) 个目录", "rules", "rules 目录数"),
     ("wiki/topics/ecosystem-dashboard.md", r"全局 skill（本地） \| \*\*(\d+)\*\*", "skills_local", "本地 skill 数"),
     ("wiki/architecture/conventions.md", r"skills 本地 (\d+) 个", "skills_local", "本地 skill 数"),
+    # --- 项目登记数（活跃项目 / DocProcess）---
+    # 「部分登记」反模式连续 7 轮主犯：新项目派生后「活跃项目数 / DocProcess×N」
+    # 只 bump 部分 canon 页。此前 CANON_CHECKS 不机检项目登记面（self-check 7/8 surface
+    # 未根治），靠人工 grep 兜底。ground-truth：活跃数=导航卡−非项目卡；DocProcess 数=
+    # conventions §9 行数（见 count_active_projects / count_docprocess_projects）。
+    ("wiki/architecture/system-overview.md", r"\| \*\*活跃项目数\*\* \| (\d+) \|", "active_projects", "活跃项目数"),
+    ("wiki/architecture/system-overview.md", r"DocProcess×(\d+)", "docprocess_projects", "DocProcess 项目数"),
 ]
 
 
@@ -237,6 +284,8 @@ def compute_ground_truth(hub_root: Path, claude_root: Path) -> dict[str, int]:
         "agents": count_agents(claude_root),
         "rules": count_rules(claude_root),
         "skills_local": skill_with_md,
+        "active_projects": count_active_projects(hub_root),
+        "docprocess_projects": count_docprocess_projects(hub_root),
     }
 
 
@@ -295,7 +344,8 @@ def main() -> int:
                 f"[CANON-check] {len(issues)} 处 CANON 计数不一致 / 失配"
                 f"（实跑：memory {gt['mem_total']} / project {gt['mem_project']} · "
                 f"scripts {gt['scripts']} · wiki 内容页 {gt['wiki_content']}/{gt['wiki_total']} · "
-                f"agents {gt['agents']} · rules {gt['rules']} · skills {gt['skills_local']}）："
+                f"agents {gt['agents']} · rules {gt['rules']} · skills {gt['skills_local']} · "
+                f"活跃项目 {gt['active_projects']} / DocProcess {gt['docprocess_projects']}）："
             )
             for line in issues:
                 print(f"  - {line}")

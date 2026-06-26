@@ -3,6 +3,26 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-06-26] maintenance | 入会自检（九）：dimension C 全清 + DigitalTwin1plusN 跨阈 🕸️ + `--check` 实装项目登记机检（根治 7 轮盲区）
+
+ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第九轮）。承 入会自检（八，2026-06-25）已 commit（`7408107`，工作树干净，`--check` 静默），今日无新 Hub 操作 → 机检集 + 登记面均干净，本轮聚焦 `--check` 盲区三类（git-HEAD 对账 / stale 重算 / 项目登记计数）。主会话三维直接核对 + 实测 + 亲核 hub-as-brain CANON 表；另发起 3 并行验证者对抗 workflow（dimension C 全清 refute / dimension S 完整性 / `--check` 覆盖完整性）交叉复核。
+
+**① dimension C（git-HEAD↔dashboard 锚点对账）**：14 个主项目「当前焦点」git HEAD pin 全 match 实际 HEAD（UWAcomm `ba03e8a` / USBL `accc52a` / UWAcomm_usbl main `73cf223` / USBL_hw `293f241` / UWAprojDoc `eed5374` / DigitalTwin1plusN `c866bb7` / CooperativeASW `5da5de1` / PaperTrans `ed1a7ad` / FlowGen `385072e` / FieldKit `5a9d75b` / AnthropicPPT `438c57e` / IconForge `a6b361a` / CooperativeDetection `6113b96` / PaperReview `b3568f6`；惯犯 USBL_hw 自检七刚对齐 `293f241`，本轮无新 Codex commit）。**但对抗 workflow（V1）证伪我初判「全清 / 无漂移」措辞过宽——主会话 git sweep 漏扫 worktree 次级锚点 + 状态叙事**，抓到 3 处修正（均主会话独立复核确认，4/4 真 / 0 refuted）：(a) UWAcomm_usbl calibration **worktree** HEAD `c8adb32`(06-08) 落后 dashboard pin `c6d608e`(06-05) 2 commit（GCC 加权变体 + GCC-TDOA vs CBF，本地未 push）→ 锚点刷新；(b) UWCombatPlatform 状态叙事「初稿 06-26 截稿」与实况 `30e428d`「v1 草稿归档 + 框架决策（暂停待重构）」漂移（**audit-8「审计后窗口」教训应验**：06-25 派生当日 17:51 即转暂停）→ 状态修正 + 补 pin；(c) Hub 自身行「最近动态」pin `7b7fa9d`(06-09) 落后 HEAD `7408107` 18 commit → 刷新为自检四~九维护叙事。**教训**：git-HEAD 对账须含 `worktrees/*` 与 Hub 自身行，不止主仓 path；对抗验证再次抓到主会话盲点（[[feedback_single_root_cause_audit]] 逆向——agent 也复核主会话）。
+
+**② dimension S（stale 🕸️ @2026-06-26 重算）**：DigitalTwin1plusN（锚点 05-25，交付后 32 天；audit6 @06-24 时恰 30 天未标）本轮**新跨 30 天阈值标 🕸️ 待回访**；3 项已标 🕸️ 刷天数（CooperativeDetection/PaperReview 46→48 / DigitalTwinGuide 42→44）；新增 dashboard **旗舰 carve-out** 文档：UWAcomm(05-16)/USBL(05-25) 虽 anchor >30 天但持续迭代、memory 仅待回填非遗忘，维持 🟢（🕸️ 专用于「交付后/停滞、待回访确认状态」的一次性/文档型项目）。frontmatter 顺修去重 `updated` 键（原 `2026-06-14`+`2026-06-24` 两个 → 单一 `2026-06-26`）。
+
+**③ dimension R（根因——`dashboard_snapshot.py --check` 实装项目登记机检）**：连续 7 轮「部分登记」主犯 =「活跃项目数 / DocProcess×N」新项目派生后只 bump 部分 canon 页；自检七+八两轮 surface「`CANON_CHECKS` 不含项目登记面」未根治，本轮落地两条 check：
+- **活跃项目数**：ground-truth = `projects/` 导航卡(24) − {`ohmybrain-core` 母仓, `usbl-s1` 归档导航}(=22)，对照 `system-overview.md` `| **活跃项目数** | 22 |`。
+- **DocProcess 数**：ground-truth = `conventions.md` §9 私人项目表 `` | `DocProcess/ `` 行数(=11)，对照同页 `DocProcess×11` token。
+派生方向**安全**（集合若过期 → 活跃数高报 → LOUD 失配提示补集合，**非 audit-3 式静默漏算**）。实测：silent on correct(22/11) + 模拟漂移(23/12) 两 token 都正确捕获；`--check` 仍静默 / lint 过 / scripts 仍 24（编辑既有脚本未新增）。
+
+**覆盖完整性（主会话亲核）**：`system-overview` 规模表是活跃/DocProcess 计数的**唯一稳定现态机检 home**；hub-as-brain「CANON 权威计数」表（"所有跨页计数以此为准"）**按设计只收全局资源计数**（memory/skills/agents/rules/wiki/scripts，皆文件系统可派生），不含项目计数；index/log 现态 token 为叙述性；conventions §9 是 DocProcess 枚举(=gt 源)。故 `CANON_CHECKS` 覆盖完整、无遗漏现态 home。
+
+**未变 surface**（audit6/七 6 项待用户裁决）：papers 部分登记 / 13 仓缺 AGENTS.md / promote 脱敏 step / MCP graph 停 05-12 / 三仓 upstream gone / 4 项目 memory 回填。**新 surface**（V3 对抗验证提出，本轮未实装）：① `--check` 仅覆盖 system-overview 规模表的数字 token，未覆盖 4 处**平行枚举之家**（root `CLAUDE.md` 主项目表 DocProcess 段——log.md 实证曾 stale 10→11，最强盲区，且在 wiki 外 / Hub `CLAUDE.md` 映射表 / dashboard 状态总览 🟢 枚举 / conventions §9 本身既是 DocProcess gt 又是人工现态页，与 token 一起漏改会"同时 stale 仍互相 match"骗过 check）——可加「枚举 cardinality 派生比对」根治，但跨 wiki 外文件 + 行计数较脆，留议；② hub-as-brain「CANON 权威计数」表是否纳入项目计数（当前按"全局资源计数"范围排除，可议）。
+
+本批仅文件改动（`ecosystem-dashboard.md` + `scripts/dashboard_snapshot.py`），**未 commit**（git 待授权）。**不新建 audit memory**（轻量计数核验型自检，避免 memory 86→87 触发全 CANON 级联，仅演化 [[feedback_ohmybrain_self_improvement]] 第九轮，详情留本 entry）。
+
+---
 ## [2026-06-25] maintenance | 入会自检（八）：审计后两笔操作 CANON 复核 + 4 处真 stale 收口
 
 ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第八轮）。**动因**：今日 入会自检（七）后又新增两笔操作（ingest 立项论证模板 + UWCombatPlatform 派生），落在 `dashboard_snapshot.py --check` 盲区（活跃项目数 / DocProcess×N / projects 卡数 + 各页现态计数不机检）的「部分登记」高发窗口。16 页 canonical 并行抽取 workflow（19 agent = Extract 16 + Verify 3）+ 逐疑点对抗验证（3 旗标全 isReal=true）+ 主会话独立复核（含 1 处 workflow 假阴性补捕）。
