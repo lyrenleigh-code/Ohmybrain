@@ -3,6 +3,23 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-06-27] maintenance | 入会自检（十一）：新日期 git-HEAD sweep 18 pin 全 match + PPT 评审 raw note 归档
+
+ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第十一轮）。承 入会自检（十，2026-06-26）已 commit（`6f1bce1`，工作树仅遗留物，领先 gitlab/main 2 待 push）。今日新日期新 session → 按 round-3/8/10 纪律用针对性核验替代全量 workflow，聚焦 `dashboard_snapshot.py --check` 唯一盲区 **dimension C（git-HEAD 对账）**（其他项目 session 可能在 session 间隙推进各仓 HEAD）。
+
+**机检三件套全绿**：`--check` 静默 / `lint_wiki` 过 / `sync_index` 108（顺带把 `index.md` 头注「最后更新」06-26→06-27，纯日期戳无内容变化）。
+
+**全仓 git-HEAD sweep**（27 仓含 4 worktree）对照 dashboard 18 个 hash pin：**全部精确 match**——UWAcomm `ba03e8a` / USBL `accc52a` / UWAcomm_usbl main `73cf223` / USBL_hw `293f241` / calibration worktree `c8adb32` / design worktree `dc39589` / UWCombatPlatform `3ce4928` / DigitalTwin1plusN `c866bb7` / CooperativeASW `5da5de1` / PaperTrans `ed1a7ad` / UWAprojDoc `eed5374` / FlowGen `385072e` / FieldKit `5a9d75b` / AnthropicPPT `438c57e` / IconForge `a6b361a` / CoopDetection `6113b96` / PaperReview `b3568f6`；无 hash pin 项（DigitalTwinGuide dirty=65 / VisioForge dirty=15 / UWAcommTrial 无 git）状态亦符。**无其他项目 session 在 session 间隙推进 HEAD**——dimension C 本轮最干净一轮。唯一漂移 = **Hub 自身行自指滞后** `4c822ff`(自检九)→`6f1bce1`(自检十已 commit)：dashboard 写自身行时尚未提交本身，提交后 commit 含该行故无法自名 future hash（round 9/10 同型结构性必然）→ 已刷新为 `6f1bce1`/领先 gitlab 2。
+
+**附带（识别第三类遗留）**：工作树有 1 个 untracked raw note `raw/notes/CC算法开发-v10-PPT修改建议.md`（06-26 17:01），是上个 session 对 Hub 方法论 PPT `draft/CC算法开发-v10.pptx` 的评审材料。draft 时间线证实其价值已被消费——v10(06-25 22:17) → 评审 note(06-26 17:01) → **v11(06-26 17:27) → v12(06-26 17:50)** 两轮迭代已基于它产出。`draft/*.pptx` 被 gitignore（大二进制不进 git，正确）；该 note 与其余 30 个已跟踪 `raw/notes/*.md` 同属版本控制范畴，应纳入。**「session 产出的 raw 文本材料未 commit」是区别于「部分登记」「审计后窗口」的第三类遗留**——非计数/登记问题，而是工作树卫生，入会 git status 须顺带核。
+
+**本轮无新项目派生 / 新 wiki 页 / 新 memory → CANON 计数零变动（108 / memory 86 / 活跃 22）**，故 **不新建 audit memory**（避免 86→87 触发全 CANON 级联，仅演化 [[feedback_ohmybrain_self_improvement]] 第十一轮，详情留本 entry）。
+
+**Surface 用户**：① Hub 方法论 PPT v12 是否需继续迭代（评审 note 6 条主线建议——总论点页强化 / 闭环地图前移 / 压缩重复「挑战→解药」/ CASE 01 证据图修正 / 放大数据证据页 / 工具清单转附录——部分已被 v11/v12 消费，「主线 25-30 页 + 附录工具箱」分层重排是否落地待确认）——属业务，自检不主动接；② audit6/七 6 项历史 surface 未变（papers 部分登记 / 13 仓缺 AGENTS.md / promote 脱敏 step / MCP graph 停 05-12 / 三仓 upstream gone / 4 项目 memory 回填）。
+
+本批仅文件改动（`ecosystem-dashboard.md` Hub 行 + 上次同步块 + frontmatter / `index.md` 日期戳 / 本 log / raw note 纳入版本控制），**未 commit**（git 待授权）。
+
+---
 ## [2026-06-26] maintenance | 入会自检（十）：新 session git-HEAD sweep — 收口 UWCombatPlatform 重启 + Hub 自身行自指滞后 2 处 dimension-C 漂移
 
 ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第十轮）。承 入会自检（九，**同日 earlier session**）已 commit（`4c822ff`，工作树干净，领先 gitlab/main 1 待 push）。本 session 为今日新开，机检集（`dashboard_snapshot.py --check` 静默 / `lint_wiki` 过 / `sync_index` 108）全一致——CANON 计数零漂移。按 round-3/8 纪律（上批已 commit、Hub 内无新操作时用针对性核验替代全量 workflow），聚焦 `--check` 唯一盲区 **dimension C（git-HEAD 对账）**：新 session 期间其他项目 session 可能在 session 间隙推进各仓 HEAD。
