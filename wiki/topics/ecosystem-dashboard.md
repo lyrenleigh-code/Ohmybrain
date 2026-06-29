@@ -67,7 +67,7 @@ tags: [dashboard, 生态, 状态, 实时]
 
 | 仓 | 状态 | 最近动态 | 路径 |
 |---|------|------|------|
-| **Ohmybrain** (本仓 = Hub) | 🟢 活跃 | 持续入会自检维护（自检四~十三，2026-06-10~29，每轮 dimension 对账 + CANON 级联 + 反模式收口）；**HEAD `7c82655`（自检十一，2026-06-27 已提交）**，自检十二（memory 86→87 CANON 级联 + 新 memory 登记 + `--check` +7 检加固）+ 自检十三（收尾：calibration worktree pin `eae7080`→`c8adb32` 修 conventions:180/memory + surface ③ code-vs-narrative reconcile + dimension C 16 pin 全 match）**两轮成果同批未 commit**；**gitlab/main even / 领先 github/origin 3 待 push**；架构史锚：2026-06-09 协作协议层（`7b7fa9d`，**ADR-024**）+ 计数 67→77 | `D:\Claude\Ohmybrain` |
+| **Ohmybrain** (本仓 = Hub) | 🟢 活跃 | 持续入会自检维护（自检四~十三，2026-06-10~29，每轮 dimension 对账 + CANON 级联 + 反模式收口）；**HEAD `3a5b9db`（自检十二+十三合并提交，2026-06-29）**承 `7c82655`（自检十一）：自检十二（memory 86→87 CANON 级联 + 新 memory 登记 + `--check` +7 检加固）+ 自检十三（收尾：calibration worktree pin `eae7080`→`c8adb32` 修 conventions:180/根 CLAUDE.md/memory + surface ③ code-vs-narrative reconcile + dimension C 16 pin 全 match）；**push 后 gitlab/github 两 remote even**（self-row refresh 本 commit 自指滞后 round 9-13 同型）；架构史锚：2026-06-09 协作协议层（`7b7fa9d`，**ADR-024**）+ 计数 67→77 | `D:\Claude\Ohmybrain` |
 | **ohmybrain-core** (母仓) | 🟢 活跃 | 三模板就位；候选下沉队列见 [[core-update-queue]] | `D:\Claude\ohmybrain-core` |
 
 ## Hub 内部规模快照（2026-06-29）

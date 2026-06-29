@@ -19,7 +19,7 @@ ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第十三轮）
 
 **Surface 用户**：① **未登记 worktree** `worktrees/UWAcomm-pooltest`（`ba03e8a` pooltest-work-20260513，UWAcomm 主 HEAD 上测试树，dashboard/conventions 均未列）——清理 / 登记；② **SonarSim** 有 dashboard 行（🟢 活跃）但**无 hash pin**（`2a0ebf3`，dimension C 无可对账项）——是否补 pin；③ 自检十二三项 surface（未登记 repo `MetalDinoForge`/`ObsidianStyleLab` / dimension S 新跨阈 UWAprojDoc·IconForge / --check 源头表盲区——③ 已确认实装根治）；④ 根 `CLAUDE.md:58` calibration pin `eae7080`→`c8adb32` 待授权。
 
-本批文件改动（自检十二 10 文件 + 本轮 `conventions.md:180` worktree pin 修 + surface ③ reconcile 3 处 + 本 log 十三 entry + dashboard self-row + 2 memory 文件 edit），**未 commit**（git 待授权）。
+本批文件改动（自检十二 10 文件 + 本轮 `conventions.md:180` worktree pin 修 + surface ③ reconcile 3 处 + 本 log 十三 entry + dashboard self-row + 2 memory 文件 edit + 根 `CLAUDE.md:58` pin 修）：Ohmybrain 仓 10 文件**已合并提交 `3a5b9db`**（自检十二+十三）+ self-row refresh follow-up，**push gitlab + github 两 remote**（用户授权）；根 CLAUDE.md / memory 不在本仓为就地保存。
 
 ---
 ## [2026-06-29] maintenance | 入会自检（十二）：memory 86→87 CANON 级联收口（「审计后窗口」第 4 次）+ 新 memory 登记 + dimension C/S + 33-agent 对抗验证仲裁
