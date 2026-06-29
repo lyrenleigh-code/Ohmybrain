@@ -240,10 +240,21 @@ CANON_CHECKS: list[tuple[str, str, str, str]] = [
     ("wiki/index.md", r"(\d+) 条 auto-memory", "mem_total", "memory 总数"),
     ("wiki/architecture/three-tier-architecture.md", r"恒久（(\d+) 条）", "mem_total", "memory 总数"),
     ("wiki/topics/ecosystem-dashboard.md", r"Memory 条目 \| \*\*(\d+)\*\*", "mem_total", "memory 总数"),
+    # self-check 12：CANON 源头表 hub-as-brain「所有跨页计数以此为准」+ memory-index 计数口径
+    # 此前不在机检 → 本轮（feedback-inplace-edit「审计后窗口」）源头表自己静默 drift 到 86 未被抓
+    ("wiki/architecture/hub-as-brain.md", r"\*\*auto-memory 文件\*\* \| (\d+) 个", "mem_total", "memory 总数"),
+    ("wiki/topics/memory-index.md", r"auto-memory 共 \*\*(\d+) 个\*\*", "mem_total", "memory 总数"),
     # --- memory project 子计数 ---
     ("wiki/architecture/conventions.md", r"project (\d+) / reference", "mem_project", "memory project 子数"),
     ("wiki/concepts/anti-patterns.md", r"project (\d+) / reference", "mem_project", "memory project 子数"),
     ("wiki/topics/ecosystem-dashboard.md", r"project (\d+) / reference", "mem_project", "memory project 子数"),
+    # --- memory feedback 子计数（self-check 12：本轮 feedback 21→22 drift 此前无任何机检漏过；
+    # mem_feedback gt 早在 compute_ground_truth 就有，却一直无 CANON_CHECK 引用）---
+    ("wiki/architecture/conventions.md", r"feedback (\d+) / project", "mem_feedback", "memory feedback 子数"),
+    ("wiki/concepts/anti-patterns.md", r"feedback (\d+) / project", "mem_feedback", "memory feedback 子数"),
+    ("wiki/architecture/hub-as-brain.md", r"feedback (\d+) / project", "mem_feedback", "memory feedback 子数"),
+    ("wiki/topics/ecosystem-dashboard.md", r"feedback (\d+) / project", "mem_feedback", "memory feedback 子数"),
+    ("wiki/topics/memory-index.md", r"feedback \*\*(\d+)\*\*", "mem_feedback", "memory feedback 子数"),
     # --- scripts ---
     ("wiki/architecture/conventions.md", r"Hub 当前 (\d+) 个 \.py", "scripts", "scripts 数"),
     ("wiki/topics/ecosystem-dashboard.md", r"自动化脚本 \| \*\*(\d+)\*\*", "scripts", "scripts 数"),

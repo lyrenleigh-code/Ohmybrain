@@ -12,7 +12,7 @@ tags: [memory, 索引, auto-memory]
 
 > 不复制 memory 完整内容（避免双写），本页只索引 + 简短描述 + link 到 memory 文件。
 
-> **计数口径（@2026-06-25）**：auto-memory 共 **86 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 87 个 `.md`）。分布：user **1** / feedback **21** / project **61** / reference **3**。下方各类型标题计数与此严格一致。
+> **计数口径（@2026-06-29）**：auto-memory 共 **87 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 88 个 `.md`）。分布：user **1** / feedback **22** / project **61** / reference **3**。下方各类型标题计数与此严格一致。
 >
 > 注：`MEMORY.md` 索引行中「flowgen-vsdx M5 升级」一条指向 `~/.claude/skills/flowgen-vsdx/SKILL.md`（skill 文件，**非 memory 条目**），不计入总数。
 
@@ -22,7 +22,7 @@ tags: [memory, 索引, auto-memory]
 
 - [user_profile](../../../../../zazn/.claude/projects/D--Claude/memory/user_profile.md) — UWA 研究者 / MATLAB 主力 / Windows+bash / 中文 / 专家主导 / 并行优先
 
-### feedback（行为指导 · 21 条）
+### feedback（行为指导 · 22 条）
 
 按主题分组：
 
@@ -52,12 +52,13 @@ tags: [memory, 索引, auto-memory]
 - `feedback_project_local_agent_not_invocable` — 项目 .claude/agents/*.md 不在 subagent_type 列表
 - `feedback_subagent_write_permission` — 后台 subagent Write/Bash 常被拒，主会话代写
 
-**Ohmybrain / 文档工作流（5）**
+**Ohmybrain / 文档工作流（6）**
 - `feedback_ohmybrain_workflow` — 硬工序 `specs→plans→discussion→code`
 - `feedback_ohmybrain_self_improvement` — 进入 Ohmybrain 项目第一件事 = 完善自己（2026-05-24 新增）
 - `feedback_sync_to_core_lessons` — /sync-to-core 首次实战：queue 须先 diff 再决定（2026-05-24 新增）
 - `feedback_doc_visual_diversification` — 流程图不能统一布局换数据
 - `feedback_doc_flowgen_only` — 方案 / 方法论文档图必走 flowgen-* skill
+- `feedback_inplace_edit_no_version` — 迭代 PPT/文档/图等产物就地改当前文件，不另存递增版本号（2026-06-27 新增）
 
 ### project（项目状态 · 61 条）
 
@@ -260,7 +261,7 @@ UWAcomm_usbl calibration 分支 poolData/ 实测数据 DOA 估计与阵列校准
 - memory 是**主动**沉淀（每会话产生新条目）
 - Hub wiki 是**被动**索引（季度更新本页同步）
 - 不双向同步 — memory 是事实源，wiki 是索引视图
-- **last-sync: 2026-06-25**（计数已对齐 CANON：feedback 21 / project 61 / reference 3 / user 1 / 总 86）
+- **last-sync: 2026-06-29**（计数已对齐 CANON：feedback 22 / project 61 / reference 3 / user 1 / 总 87）
 
 ## 相关页面
 

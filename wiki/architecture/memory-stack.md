@@ -186,7 +186,7 @@ context 被压缩或新开会话时，按这个顺序快速进入状态：
 - **Layer 1** `~/.claude/CLAUDE.md` — 用户画像 + 偏好
 - **Layer 1** `~/.claude/rules/{common,zh,web}/` — 编码 / 测试 / 安全 / Git / Agent 规则
 - **Layer 2** `D:\Claude\CLAUDE.md`（如在此目录打开）— 项目清单 + Hub 导航
-- **Layer 3** `MEMORY.md` 索引 —— auto-memory 86 条一行描述（`MEMORY.md` 索引 87 行，含 1 行指向全局 skill）
+- **Layer 3** `MEMORY.md` 索引 —— auto-memory 87 条一行描述（`MEMORY.md` 索引 88 行，含 1 行指向全局 skill）
 
 ### 按任务类型触发读取
 

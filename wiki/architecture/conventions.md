@@ -9,8 +9,8 @@ tags: [约定, conventions, 跨项目]
 
 命名 / 目录 / commit / PR / 工作流 / worktree / 私人项目 等跨项目共享约定。**事实源 = `~/.claude/rules/common/*.md`**（全局规则），本页是 Hub wiki 的索引 + 项目级扩展。
 
-> [!note] 全局资源规模（@2026-06-25）
-> `~/.claude/` 当前承载：**auto-memory 86 个**（user 1 / feedback 21 / project 61 / reference 3，`MEMORY.md` 索引 87 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
+> [!note] 全局资源规模（@2026-06-29）
+> `~/.claude/` 当前承载：**auto-memory 87 个**（user 1 / feedback 22 / project 61 / reference 3，`MEMORY.md` 索引 88 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
 
 ## 1. 命名约定
 
@@ -177,7 +177,7 @@ UWAcomm 与 UWAcomm_usbl 采用 git worktree 隔离协作。来源：memory `fee
 | `worktrees/UWAcomm-claude` | `claude-uwacomm-work-*` | claude 工作树（**自主迭代，允许代跑 MATLAB + 决策迭代**，保留"不代下结论"边界） | claude 自由读写自己分支 |
 | `TechReq/UWAcomm_usbl` | `main` | **原窗口**：V0.x 大纲 / wiki / STATUS / _extracted / raw / git push | 仅原窗口改 |
 | `worktrees/UWAcomm_usbl-design` | `design/v1.x` | **design 修订窗口**：仅 `docs/design-plan/` 13 章 | 仅 design 窗口改该目录 |
-| `worktrees/UWAcomm_usbl-calibration` | `calibration/v1.x` | **calibration 窗口**：CAGE5 阵元位置 LS 校准算法（留分支瞄 12 月国产化，HEAD `eae7080` 未 push） | 仅 calibration 窗口改该算法 |
+| `worktrees/UWAcomm_usbl-calibration` | `calibration/v1.x` | **calibration 窗口**：CAGE5 阵元位置 LS 校准 + poolData CBF/GCC/DOA 验证（留分支瞄 12 月国产化，HEAD `c8adb32` 未 push；自检十三修：旧 pin `eae7080` 落后 7 commit） | 仅 calibration 窗口改该算法 |
 
 UWAcomm_usbl-design baseline：`dd0f7af`（落地 5/8–5/11 设计方案 V1.1 + V0.4 水池大纲）。
 

@@ -3,6 +3,50 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-06-29] maintenance | 入会自检（十三）：收尾自检十二未提交批次 + 对抗 workflow 抓 calibration worktree pin 跨 3 anchor stale（eae7080→c8adb32）+ surface ③ code-vs-narrative reconcile
+
+ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第十三轮）。**动因 = 收尾 入会自检（十二，同日 earlier session）未 commit 的批次**——HEAD 仍 `7c82655`（自检十一，2026-06-27），工作树 10 文件 = 自检十二成果（memory 86→87 CANON 级联 + 新 memory 登记 + `--check` 加固）躺着未提交（git 待授权）。
+
+**机检集全绿**：`dashboard_snapshot.py --check` 静默 / `lint_wiki` 过 / `sync_index` 108。独立 CANON 重算 **0 stragglers**：memory 87 = user 1 + feedback 22 + project 61 + reference 3 全 match，自检十二 86→87 / feedback 21→22 级联完整（所有现态 token 已 87/22，残留「86」/「feedback 21」皆冻结历史记录）。
+
+**dimension C（全仓 git-HEAD sweep，对抗 workflow 独立枚举 41 仓）**：15 外部 hash pin + Hub = **16 全精确 match**（自检十二 earlier→now 同日无他 session 间隙推进 HEAD）；Hub remote github/origin 落后 3 / gitlab even（符 dashboard）。
+
+**3-agent 对抗 workflow（git 全仓枚举 / CANON 重算 / blanket 断言证伪）两大 catch（均主会话独立复核确认）**：
+1. **真 stale（印证 round-12 checklist ④「对抗须复核主会话 blanket 措辞」+ round-9 worktree 次级锚点教训）**：我初判「4 worktree 全 match」**过宽**——实际只 2/4 有 hash pin（claude `3d6d0b5` / calibration），且 **calibration worktree pin canon 内部自相矛盾**：dashboard 写 `c8adb32`(=live)，但 `conventions.md:180` + 根 `CLAUDE.md:58` + worktree-ownership memory 仍写 `eae7080`（`merge-base` 验证落后 live **7 commit** = 06-03~04 poolData CBF/GCC/DOA）。**根因 = round-9 更新 dashboard calibration pin 却漏传其余 3 处 anchor = 「worktree pin 部分登记」**（「部分登记」反模式在 worktree HEAD 维度的新子型）。已修 `conventions.md:180` + worktree-ownership memory；根 `CLAUDE.md:58` 待授权（根文件改动须授权，log:410 先例）。
+2. **新教训 = 未提交批次的 narrative 可能 undersell 代码实情**：自检十二代码实际已**实装** surface ③（`dashboard_snapshot.py` +7 条 CANON_CHECKS——hub-as-brain:35 源头表 + memory-index 计数口径 + feedback 子计数 ×5），却在 log/dashboard/checklist 三处把它写成「待裁是否实装」。本 session 验证 7 检 fire 正常（模拟 feedback 22→21 被 `--check` 抓）+ reconcile 三处 narrative。
+
+**不新建 audit memory**（仅演化 [[feedback_ohmybrain_self_improvement]] 第 13 轮 + worktree-ownership memory `eae7080`→`c8adb32`，两者均编辑不增文件 → memory 计数不变 0 级联，符 round-8/12 纪律）。
+
+**Surface 用户**：① **未登记 worktree** `worktrees/UWAcomm-pooltest`（`ba03e8a` pooltest-work-20260513，UWAcomm 主 HEAD 上测试树，dashboard/conventions 均未列）——清理 / 登记；② **SonarSim** 有 dashboard 行（🟢 活跃）但**无 hash pin**（`2a0ebf3`，dimension C 无可对账项）——是否补 pin；③ 自检十二三项 surface（未登记 repo `MetalDinoForge`/`ObsidianStyleLab` / dimension S 新跨阈 UWAprojDoc·IconForge / --check 源头表盲区——③ 已确认实装根治）；④ 根 `CLAUDE.md:58` calibration pin `eae7080`→`c8adb32` 待授权。
+
+本批文件改动（自检十二 10 文件 + 本轮 `conventions.md:180` worktree pin 修 + surface ③ reconcile 3 处 + 本 log 十三 entry + dashboard self-row + 2 memory 文件 edit），**未 commit**（git 待授权）。
+
+---
+## [2026-06-29] maintenance | 入会自检（十二）：memory 86→87 CANON 级联收口（「审计后窗口」第 4 次）+ 新 memory 登记 + dimension C/S + 33-agent 对抗验证仲裁
+
+ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第十二轮）。承 入会自检（十一，2026-06-27）已 commit（`7c82655`，工作树净）。新日期新 session，按 round-3/8/10/11 纪律先跑机检集——**但本轮非干净轮**：`dashboard_snapshot.py --check` 直接抓到 **6 处 memory 计数 stale（页面 86 / 实跑 87）**。
+
+**根因 =「审计后窗口」反模式第 4 次复发**：自检十一（06-27）当时快照「memory 86」正确，但同 session 随后的 **PPT 业务**新增了 1 条 feedback memory `feedback-inplace-edit-no-version`（06-27 16:30，"迭代产物就地改不留版本号"），**当日漏级联 CANON 计数 + 漏登记**——与 audit 八/九/十「审计后窗口」「新增 memory 漏传 CANON」同源。
+
+**① CANON 级联收口（memory 86→87 / feedback 21→22 / MEMORY.md 索引 87→88 行）**，8 文件 ~20 处现态 token：
+- `--check` 覆盖的 6 处：conventions:13（@日期戳 bump 06-25→06-29）/ anti-patterns:10,120 / index:8,77 / three-tier:88 / ecosystem-dashboard:87,147。
+- `--check` **不覆盖**的现态 token（主会话手动收）：hub-as-brain:20,26,**35（CANON「所有跨页计数以此为准」源头表）**,101 + memory-stack:189 + memory-index:15,25,263 +「MEMORY.md 索引 87→88 行」5 处（conventions/hub-as-brain×2/memory-stack/memory-index）。修后 `--check` 静默 + 残留 token 扫描空。
+
+**② 新 memory 全登记面补登**（「部分登记」新 memory 子型）：MEMORY.md 指针（doc-工作流区，87→88 行）+ memory-index feedback 组「Ohmybrain/文档工作流」(5)→(6) + ecosystem-dashboard:87 括注 + 补 memory 文件 frontmatter `updated: 2026-06-27`。
+
+**③ dimension C（全仓 git-HEAD sweep，35 仓含 4 worktree）**：17 项目 pin 全精确 match（06-27→29 无其他 session 间隙推进 HEAD）；唯一漂移 = **Hub 自身行 `6f1bce1`→`7c82655` 自指滞后**（round 9/10/11/12 **第 4 次结构性必然**，机械刷新）；**远程实况更新**——gitlab/main 已 **even**（自检九~十一三 commit 此前已 push，dashboard 旧称「领先 gitlab 2 待 push」已 stale）、github/origin 落后 3。
+
+**④ dimension S（🕸️ @2026-06-29 重算）**：4 项已标 🕸️ 刷天数（CooperativeDetection/PaperReview 51 / DigitalTwinGuide 47 / DigitalTwin1plusN 35）；**新跨 30 天阈候选 surface 不擅标**：UWAprojDoc(05-29→31d，🟢 活跃)/IconForge(05-29→31d，🟡 未实装)——旗舰 carve-out 或标 🕸️ 待用户裁。
+
+**⑤ 33-agent 对抗验证 workflow（5 sweep + 逐 finding refute + 独立 git 重扫）关键方法教训**：验证者跑 Haiku，**系统性把「`@last-sync` 计数戳」误判为「冻结历史快照」而过度 refute**（claim「带 @date 不可改」），甚至**同一行 hub-as-brain:35 内部自相矛盾**（refute memory 总数却 confirm 索引行数）。**主会话据两重仲裁器逐条裁定**（[[feedback_single_root_cause_audit]]「agent 审计必主会话复核」）：(a) `--check` 确定性输出（audit九 设计：CANON_CHECKS 只收现态页排除 log/历史，故它 flag 的按定义即现态）；(b) 亲核 hub-as-brain「所有跨页计数以此为准」源头表 +「当前承载」+「下方计数与此严格一致」措辞——证「last-sync 戳 = 活值 + 上次对账日，本就该 bump」≠「冻结历史」。真历史快照（log / roadmap:79「2026-06-09…memory 78」/ decision-log:33「ADR-032 memory 85→86」）逐字不动，**拒绝所有「加(保留不改)注解」提案**（噪声）。对抗 workflow 反向**补主会话 2 处 finder 漏**（three-tier:88 / hub-as-brain:101，双向复核）。
+
+**不新建 audit memory**（本轮 cascade 已 86→87，再建会 87→88 重级联自相矛盾；仅演化 [[feedback_ohmybrain_self_improvement]] 第 12 轮，详情留本 entry）。
+
+**Surface 用户**：① **未登记 git 仓** `Tools/MetalDinoForge`（main 空无 commit）+ `Tools/ObsidianStyleLab`（活跃，"Obsidian visual workflow styles"，未在 dashboard/CLAUDE.md）——登记为项目 / 或属 scratch；② **dimension S 新跨阈** UWAprojDoc / IconForge 是否标 🕸️（UWAprojDoc 🟢 活跃旗舰待定）；③ **`--check` 结构盲区**：CANON 源头表 hub-as-brain:35 +「所有跨页计数以此为准」+ memory-index:15 计数口径 **不在 CANON_CHECKS**——本轮源头表自己静默 drift 到 86 未被机检，根治 = 加注册项（**本轮代码即实装** dashboard_snapshot.py +7 条 CANON_CHECKS：hub-as-brain:35 源头表 + memory-index 计数口径 + feedback 子计数 ×5；narrative 当时误标「待裁」，自检十三验证 fire 正常并 reconcile，见下条 [2026-06-29] 自检十三 entry）；④ audit6/七 6 项历史 surface 未变；Hub PPT v12 续迭代属业务。
+
+本批文件改动（8 wiki 现态页 + index/dashboard 头注 + 本 log + MEMORY.md + memory-index + 2 memory 文件），**未 commit**（git 待授权）。
+
+---
 ## [2026-06-27] maintenance | 入会自检（十一）：新日期 git-HEAD sweep 18 pin 全 match + PPT 评审 raw note 归档
 
 ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第十一轮）。承 入会自检（十，2026-06-26）已 commit（`6f1bce1`，工作树仅遗留物，领先 gitlab/main 2 待 push）。今日新日期新 session → 按 round-3/8/10 纪律用针对性核验替代全量 workflow，聚焦 `dashboard_snapshot.py --check` 唯一盲区 **dimension C（git-HEAD 对账）**（其他项目 session 可能在 session 间隙推进各仓 HEAD）。
