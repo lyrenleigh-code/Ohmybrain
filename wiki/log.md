@@ -11,6 +11,8 @@
 
 **CANON 级联**：活跃项目 22→24 / DocProcess×11→×13 / ADR range ~032→~034（现态 token 9 处：decision-log:14 / conventions:56,196 / dashboard:90,149 / harness-resources:250 / workflow-glossary:137,147 / hub-as-brain:23,43）。**存量债（不在本次范围）**：memory CANON 87→9x（8 页 ~17 处）+ memory-index 两 init memory 指针，留下轮入会自检统一收口。
 
+**同日续（F-1 设计 + commit 授权）**：需求明确（月尺度高精度预报数据 × 作战保障，3000 万）→ 设计 workflow（9 agent：3 摸底 + 3 视角方案 + 3 评委）综合稿落项目 `wiki/topics/F-1-arch-design.md`（五作战场景 / 六分系统 / 四阶段两期 M1-M6 / 经费双口径），🟡 待用户决断 D1-D5。用户授权 commit：项目仓 **git init -b main + 2 commit**（`7424fc0` 脚手架 / `22f9aa0` F-1），Hub 登记批 `de89d95`（顺带收纳 PPT v15/v16 归档 log 遗留 + index 日期戳）；各登记面「git 未 init」锚点同步刷新为「本地 main（HEAD `22f9aa0`）」（dashboard 行 / conventions §9 / Hub CLAUDE.md / 导航卡 / ADR-034 后果注）。`raw/PPT/`（404.6 MB 第三方 pptx）保持未跟踪，gitignore 或移出待用户裁定。
+
 ---
 ## [2026-07-02~04] draft | CC算法开发 PPT v15/v16 定稿归档：内网章 + 案例全面实证化（63 页）
 

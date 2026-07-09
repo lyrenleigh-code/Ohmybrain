@@ -60,7 +60,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | UWAcommTrial 🔒 | 私人，不公开（当前无远程） | `D:\Claude\DocProcess\UWAcommTrial` |
 | UWCombatPlatform 🔒 | 私人，不公开（当前无远程） | `D:\Claude\DocProcess\UWCombatPlatform` |
 | CommSimSupport 🔒 | 私人，不公开（当前无远程） | `D:\Claude\DocProcess\CommSimSupport` |
-| OceanEnvSupport 🔒 | 私人，不公开（当前无远程，git 未 init） | `D:\Claude\DocProcess\OceanEnvSupport` |
+| OceanEnvSupport 🔒 | 私人，不公开（本地 main，无远程） | `D:\Claude\DocProcess\OceanEnvSupport` |
 | FlowGen | 私人，不公开 | `D:\Claude\Tools\FlowGen` |
 | IconForge | 私人，不公开 | `D:\Claude\Tools\IconForge` |
 | AnthropicPPT | 私人，不公开（2026-06-24 降级=FIELDBOOK 设计源+归档，ADR-030）| `D:\Claude\Tools\AnthropicPPT` |

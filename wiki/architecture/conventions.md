@@ -140,7 +140,7 @@ Type: `feat` / `fix` / `refactor` / `docs` / `test` / `chore` / `perf` / `ci`
 | `DocProcess/UWAcommTrial` 🔒 | 私人（多模通信机通信距离湖上试验大纲） | **无 git** |
 | `DocProcess/UWCombatPlatform` 🔒 | 私人（水下作战平台建设方案+报价，涉密） | 本地 main，涉密 docx gitignore |
 | `DocProcess/CommSimSupport` 🔒 | 私人（通信机仿真使用支持立项申报书） | **无 git**，无远程 |
-| `DocProcess/OceanEnvSupport` 🔒 | 私人（海洋环境数据作战保障方案文档） | **无 git**，无远程 |
+| `DocProcess/OceanEnvSupport` 🔒 | 私人（海洋环境数据作战保障方案文档） | 本地 main，无远程 |
 | `TechReq/UWAcomm_usbl` 🔒 | **内网 Internal**（UWAcomm+USBL 联合仿真） | 私有，不公开 |
 | `TechReq/SonarSim` 🔒 | 私人（主动声呐界面仿真） | 私有 |
 | `TechReq/USBL_hw` 🔒 | 私人（USBL 硬件设计，engineering-hardware） | 内网 gitlab |

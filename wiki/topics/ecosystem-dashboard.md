@@ -46,7 +46,7 @@ tags: [dashboard, 生态, 状态, 实时]
 | **UWAcommTrial** 🔒 | 🟢 活跃 | UWAcomm 多模通信机通信距离性能湖上试验大纲（2026-06-24 派生，template-document，依赖 UWAcomm）；完善既有大纲（补目的 / 依据 / 对象 / 判据 / 组织 / 安全 / 数据归档）+ 13 张记录表逐表分页附件；**v1 已交付归档，SPEC-001 已 archive，源仓无 git** | `D:\Claude\DocProcess\UWAcommTrial` |
 | **UWCombatPlatform** 🔒 | 🟢 活跃 | 水下作战试验平台建设方案 + 报价（2026-06-25 派生，template-document，全链路六环节：AUV论证仿真 / 硬件国产化 / 感知通信 / 水池半实物 / 智能对抗集群 / 应用验证；依赖 UWAcomm/SonarSim/USBL）；**2026-06-26 重启活跃迭代**（HEAD `3ce4928`，+3 commit）：六环节重构命名定稿（「作战世界模型」术语锁定）+ 6 平台技术路线（specs 187 行）/per-platform roadmap.vsdx 嵌高保真 AUV 应用场景图 + 全文 UUV→AUV 统一 + 交接 Codex；**draft-v2 主稿仍 WIP**（仅②核心引擎样章成稿，①③④⑤⑥ 子平台正文 + 经费概算/进度/风险章待铺开，**勿读作"方案已成稿"**）；🔒 本地无远程，涉密 docx gitignore | `D:\Claude\DocProcess\UWCombatPlatform` |
 | **CommSimSupport** 🔒 | 🟡 脚手架 | 通信机仿真使用支持（项目/课题立项）申报书（2026-07-01 派生，template-document，依赖 UWAcomm）；SPEC-001 临时骨架就位（申报书通用结构，待官方模板放 `raw/` 并 `/ingest` 对齐必填项后起草）；**撰写未启动，git 未 init 无远程**（登记面 2026-07-09 追溯补齐，ADR-033） | `D:\Claude\DocProcess\CommSimSupport` |
-| **OceanEnvSupport** 🔒 | 🟡 脚手架 | 海洋环境数据作战保障方案文档（2026-07-09 派生，template-document，依赖 UWAprojDoc/CooperativeDetection）；主交付物待定（建设方案 / 论证申报 / 技术方案三选，待需求材料 `/ingest` 后立 SPEC-001 定章节骨架）；**撰写未启动，git 未 init 无远程**（ADR-034） | `D:\Claude\DocProcess\OceanEnvSupport` |
+| **OceanEnvSupport** 🔒 | 🟡 设计待决 | 海洋环境数据作战保障方案文档（2026-07-09 派生，template-document，依赖 UWAprojDoc/CooperativeDetection，ADR-034）；核心资产=月尺度高精度预报数据，规模 3000 万；**同日 F-1 架构设计落 wiki/topics**（五场景/六分系统/四阶段两期/经费双口径，设计 workflow 9 agent），🟡 等用户决断 D1-D5（D2 核心资产口径最关键）→ SPEC-001；撰写未启动；本地 main 无远程（HEAD `22f9aa0`，2 commit） | `D:\Claude\DocProcess\OceanEnvSupport` |
 
 ### Tools / 跨项目工具
 

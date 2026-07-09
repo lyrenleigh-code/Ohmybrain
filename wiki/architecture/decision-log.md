@@ -36,7 +36,7 @@ tags: [ADR, 决策, log]
 ### 后果
 
 - ✓ 海洋环境数据作战保障文档有受管工作区；SPEC-001 推迟到需求材料 `/ingest` 后立（与 CommSimSupport「临时骨架先立」做法不同，推迟理由已写入项目 CLAUDE.md）。
-- ⚠ git 未 init：待用户授权后 `git init -b main` + 首 commit。
+- ⚠ git 未 init：待用户授权后 `git init -b main` + 首 commit。〔07-09 当日已授权并完成：init + 2 commit（`7424fc0` 脚手架 / `22f9aa0` F-1 架构设计草案）〕
 - ⚠ memory CANON（87→9x）存量债 + memory-index 指针不在本次范围，留下轮入会自检统一收口。
 
 > memory `project_oceanenvsupport_init`。关联 ADR-033（CommSimSupport，同批补登）。
