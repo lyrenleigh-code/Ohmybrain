@@ -13,6 +13,8 @@ tags: [roadmap, 演化, 里程碑]
 
 | 日期 | 里程碑 | 类型 |
 |------|--------|------|
+| **2026-07-09** | OceanEnvSupport 项目派生（海洋环境数据作战保障方案文档，template-document，主交付物待定先搭架子；DEPENDS_ON=UWAprojDoc/CooperativeDetection，git 未 init）+ 补登 CommSimSupport 漏登面（「部分登记」第 8 轮收口） | DocProcess (ADR-034) |
+| **2026-07-01** | CommSimSupport 项目派生（通信机仿真使用支持立项申报书，template-document，依赖 UWAcomm；SPEC-001 临时骨架就位，待官方模板 ingest）；2026-07-09 追溯补登 | DocProcess (ADR-033) |
 | **2026-06-24** | 采纳 ppt-master（30.8k★ MIT，agent 手写 SVG→原生 DrawingML）作通用 PPT deck 引擎 + FIELDBOOK 迁 `fieldbook` brand/deck 模板 + AnthropicPPT 降级（Plan A；ppt-master = 第三方 vendored 不计活跃项目）| Tools 第三方 (ADR-030) |
 | **2026-06-24** | UWAcommTrial 项目派生（UWAcomm 多模通信机通信距离性能湖上试验大纲，template-document，依赖 UWAcomm；完善既有大纲 + 13 张记录表逐表分页附件，v1 已交付归档）；2026-06-25 入会自检（七）追溯补登 | DocProcess (ADR-031) |
 | **2026-06-25** | UWCombatPlatform 项目派生（水下作战试验平台建设方案 + 报价，template-document，全链条 6 模块；DEPENDS_ON=UWAcomm/SonarSim/USBL）+ 同日 ingest 立项论证报告模板脱敏（`lixiang-lunzheng-report-template`）| DocProcess (ADR-032) |

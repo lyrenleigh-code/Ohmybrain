@@ -3,6 +3,24 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-07-09] 派生登记 | OceanEnvSupport 派生 + CommSimSupport 漏登面补齐（活跃 22→24）
+
+派生 **OceanEnvSupport** 🔒（`D:\Claude\DocProcess\OceanEnvSupport`，template-document，海洋环境数据作战保障方案文档；主交付物待定先搭架子，依赖 UWAprojDoc/CooperativeDetection，**git 未 init** 待用户授权）：SOP §1 派生（robocopy 42 目录/73 文件）+ CLAUDE.md/README.md 占位符全清（README 三图留 ⚠️ 模板占位待 SPEC-001）+ SOP §6 验证全过；对抗验证 workflow（3 agent：scaffold 0 / registration 1 low / completeness 7 findings）抓出登记级联遗漏后本批收口。
+
+**登记面（本次动）**：root/Hub/DocProcess CLAUDE.md + `projects/oceanenvsupport/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 ×2 + [[architecture/system-overview]] 实例表 + [[architecture/conventions]] §9 两行 + [[architecture/decision-log]] ADR-033/034 + [[architecture/roadmap]] 里程碑 ×2 + 本 log + auto-memory `project_oceanenvsupport_init`。**并补登 07-01 CommSimSupport 派生当日漏登面**（当日仅登 Hub CLAUDE.md 映射 + 导航卡，「部分登记」反模式第 8 轮复发，本批收口）。
+
+**CANON 级联**：活跃项目 22→24 / DocProcess×11→×13 / ADR range ~032→~034（现态 token 9 处：decision-log:14 / conventions:56,196 / dashboard:90,149 / harness-resources:250 / workflow-glossary:137,147 / hub-as-brain:23,43）。**存量债（不在本次范围）**：memory CANON 87→9x（8 页 ~17 处）+ memory-index 两 init memory 指针，留下轮入会自检统一收口。
+
+---
+## [2026-07-02~04] draft | CC算法开发 PPT v15/v16 定稿归档：内网章 + 案例全面实证化（63 页）
+
+三个 session 把方法论 PPT 从「叙事版」51 页迭代到 **v16 63 页定稿**（用户终审含手动修订），产物在 `draft/`（gitignore 不入库）：`叙事版.pptx` 51 页（案例集中）→ `v15.pptx` 58 页（+内网章 §06：中安智能平台底座/映射/案例墙×2/实测图证，源自 `raw/PPT/中安智能大模型及智能应用平台介绍.pptx` 36 页提炼；封面去编号；术语速查页 24→27 条）→ `v16.pptx` 63 页（案例穿插进工序讲解 + 全面实证化）。
+
+**v16 主要增量（相对 v15）**：① 案例前置穿插——fix 收益/CASE01/资产墙/CASE02 从成果章拆入 §02/§03 对应工序后；② 6 页干工序页嵌「可读摘录卡」（真实 spec/交接单/AGENTS/memory/源摘要原文 + 路径标头，替代不可读缩略图）；③ **工作现场页**——PrintWindow/前台化程序抓拍 Claude Code 终端（自指：画面即本会话）+ Codex + MATLAB 三窗同刻；④ **测试实录页**——08_Sync README 断言表 25 条渲染 + 当日 `matlab -batch` 现跑 3 单测（α 双 LFM 9/9 PASS / 16-QAM / 时变信道 NMSE）；⑤ **α 补偿演进三代页**（wiki/comparisons before/mvp/after 同尺三图）；⑥ **USBL_hw 硬件设计图证页**（最终版说明书抽图：系统架构五板总图/J1-J4 接口图/耐压舱 3D 机箱结构/换能器工程图）；⑦ **UWAprojDoc 场景图证页**（C1/C2/C5/C6）；⑧ TAKEAWAY 黑条全册统一、图墙白框装裱、术语页（agent/RCA/RAG/反模式/benchmark/反向 audit 等 27 条）。
+
+**方法沉淀**：md→pandoc→Edge headless 截图管线（GitHub 风渲染真实文件）；docx media 直抽原图（v1.12/说明书 22 图）；PrintWindow+全屏坐标 all_screens 抓多屏窗口（敏感误抓已删）；PPT 锁冲突→旁路文件+轮询换入（跨盘用 copy 非 os.replace）；克隆页版式复用（成果一览 wall / 三命令 3 卡 / 六坑 2×3）。遗留：中安 PPT 未 /ingest 进 wiki；v15/v16 并存由用户取舍。工具链：ppt-master fieldbook 底 + python-pptx 后编辑（孤儿 slide33 部件曾致单根因页丢失，已 zip 手术修复并清孤儿 rels）。
+
+---
 ## [2026-06-29] maintenance | 入会自检（十三）：收尾自检十二未提交批次 + 对抗 workflow 抓 calibration worktree pin 跨 3 anchor stale（eae7080→c8adb32）+ surface ③ code-vs-narrative reconcile
 
 ultracode 入会自检（[[feedback_ohmybrain_self_improvement]] 第十三轮）。**动因 = 收尾 入会自检（十二，同日 earlier session）未 commit 的批次**——HEAD 仍 `7c82655`（自检十一，2026-06-27），工作树 10 文件 = 自检十二成果（memory 86→87 CANON 级联 + 新 memory 登记 + `--check` 加固）躺着未提交（git 待授权）。

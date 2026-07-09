@@ -11,9 +11,59 @@ tags: [ADR, 决策, log]
 
 最新在上。
 
-> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-032（含 ADR-031/032 追溯）。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-034（含 ADR-031/032/033 追溯）。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
 >
 > **编号约定**：ADR 编号为 **append-only 稳定 ID**（按登记顺序递增、不复用、不重排）；表按**事件日期降序**排列。绝大多数情况下编号降序 == 日期降序，但 retroactive 追溯条目（如 ADR-025 事件 2026-06-04、2026-06-09 登记）会出现编号与位置不严格对应——这是为避免重编号引发跨页引用级联失效（教训见 [[../log]] 2026-05-29）而做的取舍。
+
+---
+
+## ADR-034 · 2026-07-09 · OceanEnvSupport 项目派生（DocProcess，海洋环境数据作战保障方案文档）
+
+### 触发
+
+用户提出新文档项目主题「海洋环境数据作战保障」（水文 / 气象 / 声学环境 / 海底地形底质等环境数据的采集 → 处理 → 产品 → 战场应用保障链路），需独立工作区承接；主交付物类型（建设方案 / 论证申报 / 技术方案）尚未确定，先搭架子。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/OceanEnvSupport` 🔒（**git 未 init**——用户未授权 git 操作，同 CommSimSupport 先例；无远程，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=UWAprojDoc（方案文档体系 / 模板 / build pipeline 参照）+ CooperativeDetection（协同探测论证素材参照）。DocProcess 第 13 个正式登记子项目。
+
+### 实现
+
+- SOP §1 派生（robocopy 42 目录 / 73 文件）+ CLAUDE.md / README.md 占位符全清（README 三图留 ⚠️ 模板占位，待 SPEC-001 重绘）+ SOP §6 验证全过（dirs / placeholders / lint / validate / sync_index 0 页）。
+- 登记面（派生当日全量）：root / Hub / DocProcess CLAUDE.md + `projects/oceanenvsupport/` 导航卡 + dashboard 状态行 + system-overview 实例表 + conventions §9 + 本 ADR + roadmap 里程碑 + auto-memory `project_oceanenvsupport_init` + log；CANON 级联 **活跃 22→24 / DocProcess×11→×13 / ADR range ~032→~034**（含 ADR-033 CommSimSupport 追溯补登）。
+- 对抗验证 workflow（3 agent：scaffold 0 issue / registration 1 low / completeness 7 findings）驱动本次级联收口。
+
+### 后果
+
+- ✓ 海洋环境数据作战保障文档有受管工作区；SPEC-001 推迟到需求材料 `/ingest` 后立（与 CommSimSupport「临时骨架先立」做法不同，推迟理由已写入项目 CLAUDE.md）。
+- ⚠ git 未 init：待用户授权后 `git init -b main` + 首 commit。
+- ⚠ memory CANON（87→9x）存量债 + memory-index 指针不在本次范围，留下轮入会自检统一收口。
+
+> memory `project_oceanenvsupport_init`。关联 ADR-033（CommSimSupport，同批补登）。
+
+---
+
+## ADR-033 · 2026-07-01 · CommSimSupport 项目派生（DocProcess，通信机仿真使用支持立项申报书）〔2026-07-09 追溯补登〕
+
+### 触发
+
+需要以 UWAcomm 多体制水声通信仿真为「使用支持」能力底座，撰写可送审的项目/课题立项申报书。07-01 派生当日仅登 Hub CLAUDE.md 映射 + projects 导航卡（Hub commit `4121506`），其余登记面漏——「部分登记」反模式**第 8 轮复发**；本条为 2026-07-09 OceanEnvSupport 派生对抗验证时追溯补登。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/CommSimSupport` 🔒（git 未 init，无远程，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=UWAcomm。DocProcess 第 12 个正式登记子项目。
+
+### 实现
+
+- 脚手架派生 + SPEC-001 临时骨架（申报书通用结构，待官方模板放入 `raw/` 并 `/ingest` 对齐必填项）+ auto-memory `project_commsimsupport_init`。
+- 2026-07-09 补登面：dashboard 状态行 + system-overview 实例表 + conventions §9 + 本 ADR + roadmap 里程碑 + log。
+
+### 后果
+
+- ✓ 申报书撰写有受管工作区；待官方立项申报书模板 ingest 后启动起草。
+- ⚠ 派生当日「部分登记」复发（第 8 轮），本批收口；后续派生须按 ADR-032「派生当日全量登记」执行。
+
+> memory `project_commsimsupport_init`。关联 ADR-034（OceanEnvSupport）。
 
 ---
 
