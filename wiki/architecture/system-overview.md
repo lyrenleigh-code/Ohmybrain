@@ -62,6 +62,8 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 🔒 | `UWAcomm_usbl` | `D:\Claude\TechReq\UWAcomm_usbl` | 派生 2026-04-25，内网 Internal（UWAcomm+USBL 联合仿真） |
 | 项目仓 🔒 | `SonarSim` | `D:\Claude\TechReq\SonarSim` | 派生 2026-06-03（主动声呐界面仿真，MATLAB App Designer，手动模式） |
 | 项目仓 🔒 | `USBL_hw` | `D:\Claude\TechReq\USBL_hw` | 派生 2026-06-10（USBL 硬件设计，engineering-hardware 子型首例；声学基阵 / 收发电路 / 结构 / 接口） |
+| 项目仓 🔒 | `SonarFOM` | `D:\Claude\TechReq\SonarFOM` | 派生 2026-07-21（声呐效能 FOM 品质因数表计算，MATLAB，DEPENDS_ON=SonarSim 🔒，本地 main 无远程） |
+| 项目仓 🔒 | `EnvDataClassify` | `D:\Claude\TechReq\EnvDataClassify` | 派生 2026-07-23（环境数据分类：声速剖面/水文自动分类，MATLAB/Python，DEPENDS_ON=SonarFOM 🔒，本地 main 无远程） |
 | **DocProcess/** 🔒 | | | **文档处理工作区，全部私人项目** |
 | 项目仓 🔒 | `Pricing` | `D:\Claude\DocProcess\Pricing` | 活跃（军用软件四号文报价） |
 | 项目仓 🔒 | `UWAprojDoc` | `D:\Claude\DocProcess\UWAprojDoc` | 派生 2026-04-28（水声专项方案技术文档撰写） |
@@ -74,6 +76,11 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 🔒 | `PaperTrans` | `D:\Claude\DocProcess\PaperTrans` | 派生 2026-06-15（外文论文英译中翻译工作区，template-document，一篇=一spec=一译稿，手动模式 🔒） |
 | 项目仓 🔒 | `UWAcommTrial` | `D:\Claude\DocProcess\UWAcommTrial` | 派生 2026-06-24（UWAcomm 多模通信机通信距离湖上试验大纲，template-document，DEPENDS_ON=UWAcomm 🔒，v1 已交付归档，源仓无 git） |
 | 项目仓 🔒 | `UWCombatPlatform` | `D:\Claude\DocProcess\UWCombatPlatform` | 派生 2026-06-25（水下作战试验平台建设方案+报价，template-document，全链条 6 模块，DEPENDS_ON=UWAcomm/SonarSim/USBL 🔒，初稿 6/26） |
+| 项目仓 🔒 | `CommSimSupport` | `D:\Claude\DocProcess\CommSimSupport` | 派生 2026-07-01（通信机仿真使用支持立项申报书，template-document，DEPENDS_ON=UWAcomm 🔒，git 未 init；本行 2026-07-18 补登——07-09 commit 仅更计数行漏实例表） |
+| 项目仓 🔒 | `OceanEnvSupport` | `D:\Claude\DocProcess\OceanEnvSupport` | 派生 2026-07-09（海洋环境数据作战保障方案文档，template-document，DEPENDS_ON=UWAprojDoc/CooperativeDetection 🔒，本地 main `22f9aa0`；本行 2026-07-18 补登——同上） |
+| 项目仓 🔒 | `ImgSonarTwin` | `D:\Claude\DocProcess\ImgSonarTwin` | 派生 2026-07-18（图像声呐数字孪生方案文档，template-document，DEPENDS_ON=DigitalTwinGuide/DigitalTwin1plusN 🔒，本地 main 无远程） |
+| 项目仓 🔒 | `AUVProposal` | `D:\Claude\DocProcess\AUVProposal` | 派生 2026-07-24（AUV 项目立项论证，template-document，主交付物《AUV 项目建议书》docx，DEPENDS_ON=AUVSurvey 🔒，本地 main `5045bb3` 无远程） |
+| 项目仓 🔒 | `AUVSurvey` | `D:\Claude\DocProcess\AUVSurvey` | 派生 2026-07-24（AUV 广泛调研：国内外型谱/技术/应用，template-document，主交付物《AUV 调研报告》docx，无依赖、下游 AUVProposal，本地 main `544bc38` 无远程） |
 | **Tools/** | | | **跨项目工具** |
 | 项目仓 | `FlowGen` | `D:\Claude\Tools\FlowGen` | 派生 2026-04-23（自然语言→Visio/Mermaid 出图工具族；flowgen-* Visio skill 活跃，Mermaid 主入口未实装） |
 | 项目仓 | `IconForge` | `D:\Claude\Tools\IconForge` | 派生 2026-05-29（自然语言→图标 SVG，未实装） |
@@ -146,13 +153,15 @@ project-*/
 Ohmybrain/
 ├── CLAUDE.md                      # Hub 入口
 ├── TODO.md                        # 观察期配置试点等
-├── projects/                      # 📍 项目导航（24 个 README 子目录）
+├── projects/                      # 📍 项目导航（31 个 README 子目录）
 │   ├── uwacomm/README.md          #   TechReq/
 │   ├── usbl/README.md
 │   ├── uwanet/README.md
 │   ├── uwacomm_usbl/README.md     #   TechReq/ 🔒
 │   ├── sonarsim/README.md         #   TechReq/ 🔒
 │   ├── usbl_hw/README.md          #   TechReq/ 🔒
+│   ├── sonarfom/README.md         #   TechReq/ 🔒
+│   ├── envdataclassify/README.md  #   TechReq/ 🔒
 │   ├── pricing/README.md          #   DocProcess/ 🔒
 │   ├── uwaprojdoc/README.md       #   DocProcess/ 🔒
 │   ├── CooperativeDetection/README.md
@@ -164,6 +173,11 @@ Ohmybrain/
 │   ├── papertrans/README.md       #   DocProcess/ 🔒
 │   ├── uwacommtrial/README.md     #   DocProcess/ 🔒
 │   ├── uwcombatplatform/README.md #   DocProcess/ 🔒
+│   ├── commsimsupport/README.md   #   DocProcess/ 🔒
+│   ├── oceanenvsupport/README.md  #   DocProcess/ 🔒
+│   ├── imgsonartwin/README.md     #   DocProcess/ 🔒
+│   ├── auvproposal/README.md      #   DocProcess/ 🔒
+│   ├── auvsurvey/README.md        #   DocProcess/ 🔒
 │   ├── flowgen/README.md          #   Tools/
 │   ├── iconforge/README.md
 │   ├── anthropicppt/README.md
@@ -305,7 +319,7 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 | 指标 | 数值 | 说明 |
 |------|------|------|
 | **Hub wiki 页数** | 108 | concepts 20 + entities 8 + source-summaries 32 + mcp-entities 25 + explorations 4 + topics 5 + architecture 12 + agents 1 + workflows 1 + comparisons 0（详见 `wiki/index.md`） |
-| **活跃项目数** | 24 | TechReq×6（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒 / USBL_hw🔒）+ DocProcess×13（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / DigitalTwin1plusN / VisioForge / CooperativeASW / PaperTrans / UWAcommTrial / UWCombatPlatform / CommSimSupport / OceanEnvSupport，全 🔒）+ Tools×4（FlowGen / IconForge / AnthropicPPT / FieldKit）+ Patents🔒（papers 未正式登记，见 [[../topics/core-update-queue]] / decision-log 待裁）；**第三方 vendored 不计**：ppt-master（`Tools/ppt-master`，ADR-030）|
+| **活跃项目数** | 29 | TechReq×8（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒 / USBL_hw🔒 / SonarFOM🔒 / EnvDataClassify🔒）+ DocProcess×16（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / DigitalTwin1plusN / VisioForge / CooperativeASW / PaperTrans / UWAcommTrial / UWCombatPlatform / CommSimSupport / OceanEnvSupport / ImgSonarTwin / AUVProposal / AUVSurvey，全 🔒）+ Tools×4（FlowGen / IconForge / AnthropicPPT / FieldKit）+ Patents🔒（papers 未正式登记，见 [[../topics/core-update-queue]] / decision-log 待裁）；**第三方 vendored 不计**：ppt-master（`Tools/ppt-master`，ADR-030）|
 | **模板 skill 数** | 5 | ingest/plan/implement/lint/promote-answer（core + 下游继承） |
 | **全局 skill（Hub 用）** | 1 | `llm-wiki`（`paths: wiki/**` 自动激活） |
 | **wiki-ingester agent** | 2 副本 | 全局 `~/.claude/agents/`（invocable，2026-05-12 起）+ 项目本地（契约源头 + git 跟踪） |

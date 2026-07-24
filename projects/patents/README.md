@@ -5,7 +5,7 @@
 - **工作区**：`D:\Claude\Patents`
 - **类别**：🔒 私密项目（禁止公开发布 / 禁止推送公开远程）
 - **状态**：候选维护中
-- **派生自**：不从 ohmybrain-core 模板派生；无 git
+- **派生自**：不从 ohmybrain-core 模板派生；本地 git（2026-06-29 init `53bd96d`，仅本地无远程）
 - **启动模式**：手动
 
 ## 当前候选
@@ -13,6 +13,9 @@
 - `iusbl-jacobian`
 - `otfs-spread-pilot`
 - `usbl-cage5-3d-hybrid-doa`
+- `turbo-vamp-warmstart` — 04 跨帧后验概率传递热启动 Turbo-VAMP 时变稀疏信道估计
+- `wideband-digital-direct-drive` — 05 宽带数字直驱发射
+- `no-oracle-multimode-blind-rx` — 06 无先验多模盲接收
 
 ## 约束
 

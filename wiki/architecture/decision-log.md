@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-06-25
+updated: 2026-07-24
 tags: [ADR, 决策, log]
 ---
 
@@ -11,9 +11,131 @@ tags: [ADR, 决策, log]
 
 最新在上。
 
-> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-034（含 ADR-031/032/033 追溯）。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-039（含 ADR-031/032/033 追溯）。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
 >
 > **编号约定**：ADR 编号为 **append-only 稳定 ID**（按登记顺序递增、不复用、不重排）；表按**事件日期降序**排列。绝大多数情况下编号降序 == 日期降序，但 retroactive 追溯条目（如 ADR-025 事件 2026-06-04、2026-06-09 登记）会出现编号与位置不严格对应——这是为避免重编号引发跨页引用级联失效（教训见 [[../log]] 2026-05-29）而做的取舍。
+
+---
+
+## ADR-039 · 2026-07-24 · AUVSurvey 项目派生（DocProcess，AUV 广泛调研）+ AUVProposal 依赖联动
+
+### 触发
+
+AUVProposal（ADR-038，同日）派生后，用户提出**先建独立调研项目做广泛 AUV 调研**，调研结论作建议书素材底座。经确认：项目名 AUVSurvey，主交付物**调研报告**（docx），AUVProposal 依赖同步改为 AUVSurvey。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/AUVSurvey` 🔒（git 未 init 待授权，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=无、下游=AUVProposal。**AUVProposal DEPENDS_ON 无→AUVSurvey** 同批联动刷新（项目仓 CLAUDE.md/README + 各 Hub 登记面）。DocProcess 第 16 个正式登记子项目。
+
+### 实现
+
+- SOP §1 派生（robocopy template-document）+ CLAUDE.md/README.md 占位符全清（README 三图留模板占位待 SPEC-001）+ SOP §6 验证全过（placeholders / dirs / lint / validate / sync_index 0 页）。
+- 登记面（派生当日全量）：root / Hub / DocProcess CLAUDE.md + `projects/auvsurvey/` 导航卡 + dashboard 状态行 + system-overview 实例表/projects 树 + conventions §9 + 本 ADR + roadmap 里程碑 + auto-memory `project_auvsurvey_init` + log；CANON 级联 **活跃 28→29 / DocProcess×15→×16 / ADR range ~038→~039**。
+
+### 后果
+
+- ✓ AUV 调研有受管工作区；素材流向确立：AUVSurvey（调研）→ AUVProposal（建议书），避免论证与调研素材混仓。
+- ✓ 同日推进：SPEC-001 confirmed（D1-D4）+ 首轮 6 路并行调研落 wiki 6 专题页 + Codex 交接单；同日用户授权两仓 git init 首 commit（AUVSurvey `544bc38` / AUVProposal `5045bb3`，本地 main 无远程）。
+- ⚠ memory CANON 债 +1（`project_auvsurvey_init`）留下轮入会自检统一收口。
+
+> memory `project_auvsurvey_init`。关联 ADR-038（AUVProposal）。
+
+---
+
+## ADR-038 · 2026-07-24 · AUVProposal 项目派生（DocProcess，AUV 项目立项论证）
+
+### 触发
+
+用户提出新建 DocProcess 项目，论证一个 AUV 项目。经确认：项目名 AUVProposal，主交付物**项目建议书**（docx），无依赖（独立论证）。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/AUVProposal` 🔒（git 未 init 待授权，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=无。DocProcess 第 15 个正式登记子项目。
+
+### 实现
+
+- SOP §1 派生（robocopy template-document）+ CLAUDE.md/README.md 占位符全清（README 三图留模板占位待 SPEC-001）+ SOP §6 验证全过（placeholders / dirs / lint / validate / sync_index 0 页）。
+- 登记面（派生当日全量）：root / Hub / DocProcess CLAUDE.md + `projects/auvproposal/` 导航卡 + dashboard 状态行 + system-overview 实例表/projects 树 + conventions §9 + 本 ADR + roadmap 里程碑 + auto-memory `project_auvproposal_init` + log；CANON 级联 **活跃 27→28 / DocProcess×14→×15 / ADR range ~037→~038**。
+
+### 后果
+
+- ✓ AUV 立项论证有受管工作区。同日推进：三轮讨论 SPEC-001 confirmed + 02-draft 初稿七章（§6 占位）+ Codex 交接单；同日用户授权 git init 首 commit `5045bb3`（本地 main 无远程）。
+- ⚠ memory CANON 债 +1（`project_auvproposal_init`）不在本次范围，连同既往挂账留下轮入会自检统一收口。
+- ⚠ 同日更新：DEPENDS_ON 无→**AUVSurvey**（用户随即决定先建广泛调研项目，见 ADR-039，各登记面已联动刷新）。
+
+> memory `project_auvproposal_init`。关联 ADR-032（UWCombatPlatform 含 AUV 论证仿真模块，口径可参照但无依赖）、ADR-039（AUVSurvey）。
+
+---
+
+## ADR-037 · 2026-07-23 · EnvDataClassify 项目派生（TechReq，环境数据分类）
+
+### 触发
+
+用户提出新项目「数据分类」，澄清为**环境数据分类**（海洋环境数据：声速剖面/水文条件等的自动分类）。与 SonarFOM 本 session 刚落地的水文五档分类（`classifyHydrology`）高度相关，需独立工作区承接更通用的环境数据分类。
+
+### 决策
+
+独立 TechReq 子项目 `TechReq/EnvDataClassify` 🔒（本地 main 无远程，手动模式），按 `template-engineering` SOP 派生，DEPENDS_ON=SonarFOM 🔒（水文五档分类判据经验参考，引用不复制）。TechReq 第 8 个正式登记子项目。
+
+### 实现
+
+- SOP §1 派生（robocopy template-engineering）+ CLAUDE.md/README.md 占位符全清 + SOP §6 验证全过（placeholders / dirs / lint / validate / sync_index 0 页）+ §3 git init -b main 首 commit `a7de7b2`（用户授权）。
+- 登记面（派生当日全量）：root / Hub CLAUDE.md + `projects/envdataclassify/` 导航卡 + dashboard 状态行 + system-overview 实例表/projects 树 + conventions §9 + 本 ADR + roadmap 里程碑 + auto-memory `project_envdataclassify_init` + log；CANON 级联 **活跃 26→27 / TechReq×7→×8 / ADR range ~036→~037**。
+
+### 后果
+
+- ✓ 环境数据分类有受管工作区；分类实现未启动，待 SPEC-001（分类对象/特征/方法）。
+- ⚠ memory CANON 债 +1（`project_envdataclassify_init`）不在本次范围，连同既往挂账留下轮入会自检统一收口（同 ADR-036 先例）。
+
+> memory `project_envdataclassify_init`。关联 ADR-036（SonarFOM）。
+
+---
+
+## ADR-036 · 2026-07-21 · SonarFOM 项目派生（TechReq，声呐效能 FOM 品质因数表计算）
+
+### 触发
+
+用户提出新计算任务「声呐效能 FORM 表计算」（经确认 FORM = FOM 品质因数），需独立工作区承接声呐方程逐项计算 + 作用距离预报表的 MATLAB 实现。
+
+### 决策
+
+独立 TechReq 子项目 `TechReq/SonarFOM` 🔒（本地 main 无远程，手动模式），按 `template-engineering` SOP 派生，DEPENDS_ON=SonarSim 🔒（主动声呐探测链路与场景参数口径参考，引用不复制）。TechReq 第 7 个正式登记子项目。
+
+### 实现
+
+- SOP §1 派生（robocopy template-engineering，72 文件）+ CLAUDE.md / README.md 占位符全清（README 三图留模板占位，待 SPEC-001 重绘）+ SOP §6 验证全过（placeholders / dirs / lint / validate / sync_index 0 页）+ §3 git init -b main 首 commit `fb00819`（用户已授权）。
+- 登记面（派生当日全量）：root / Hub CLAUDE.md + `projects/sonarfom/` 导航卡 + dashboard 状态行 + system-overview 实例表 + projects 树 + conventions §9 + 本 ADR + roadmap 里程碑 + auto-memory `project_sonarfom_init` + log；CANON 级联 **活跃 25→26 / TechReq×6→×7 / ADR range ~035→~036**。
+
+### 后果
+
+- ✓ 声呐效能 FOM 计算有受管工作区；计算实现未启动，待 SPEC-001（FOM 参数口径 + 表格式）。
+- ⚠ memory CANON 债 +1（`project_sonarfom_init`）不在本次范围，连同 07-18 已挂账的 95→98 级联留下轮入会自检统一收口（同 ADR-035 先例）。
+
+> memory `project_sonarfom_init`。关联 ADR-022（SonarSim）。
+
+---
+
+## ADR-035 · 2026-07-18 · ImgSonarTwin 项目派生（DocProcess，图像声呐数字孪生方案文档）
+
+### 触发
+
+用户提出新文档项目主题「图像声呐数字孪生」，需独立工作区承接方案文档撰写；主交付物 docx（定稿名待定）。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/ImgSonarTwin` 🔒（本地 main 无远程，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=DigitalTwinGuide（数字孪生实施指南方法论）+ DigitalTwin1plusN（水下集群数字孪生体系方案参照）。DocProcess 第 14 个正式登记子项目。
+
+### 实现
+
+- SOP §1 派生（robocopy 42 目录 / 73 文件）+ CLAUDE.md / README.md 占位符全清（README 三图留模板占位，待 SPEC-001 重绘）+ SOP §6 验证全过（placeholders / lint / validate / sync_index 0 页）。
+- 登记面（派生当日全量）：root / Hub / DocProcess CLAUDE.md + `projects/imgsonartwin/` 导航卡 + dashboard 状态行 + system-overview 实例表 + conventions §9 + 本 ADR + roadmap 里程碑 + auto-memory `project_imgsonartwin_init` + log；CANON 级联 **活跃 24→25 / DocProcess×13→×14 / ADR range ~034→~035**。
+
+### 后果
+
+- ✓ 图像声呐数字孪生方案文档有受管工作区；撰写未启动，待 raw/ 资料摄入 + SPEC-001 章节大纲。
+- ⚠ memory CANON（95→98，含进场前已欠的 07-13/07-15 两条 UWAcomm session memory）级联 + memory-index 3 条指针不在本次范围，留下轮入会自检统一收口（同 ADR-034 先例）。
+
+> memory `project_imgsonartwin_init`。关联 ADR-015（DigitalTwinGuide）/ ADR-019（DigitalTwin1plusN）。
 
 ---
 

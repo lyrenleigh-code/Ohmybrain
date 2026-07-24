@@ -1,8 +1,8 @@
 ---
 type: topic
 created: 2026-05-24
-updated: 2026-06-24
-last-sync: 2026-06-24
+updated: 2026-07-11
+last-sync: 2026-07-11
 tags: [memory, 索引, auto-memory]
 ---
 
@@ -12,7 +12,7 @@ tags: [memory, 索引, auto-memory]
 
 > 不复制 memory 完整内容（避免双写），本页只索引 + 简短描述 + link 到 memory 文件。
 
-> **计数口径（@2026-06-29）**：auto-memory 共 **87 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 88 个 `.md`）。分布：user **1** / feedback **22** / project **61** / reference **3**。下方各类型标题计数与此严格一致。
+> **计数口径（@2026-07-11）**：auto-memory 共 **95 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 96 个 `.md`）。分布：user **1** / feedback **24** / project **67** / reference **3**。下方各类型标题计数与此严格一致。
 >
 > 注：`MEMORY.md` 索引行中「flowgen-vsdx M5 升级」一条指向 `~/.claude/skills/flowgen-vsdx/SKILL.md`（skill 文件，**非 memory 条目**），不计入总数。
 
@@ -22,7 +22,7 @@ tags: [memory, 索引, auto-memory]
 
 - [user_profile](../../../../../zazn/.claude/projects/D--Claude/memory/user_profile.md) — UWA 研究者 / MATLAB 主力 / Windows+bash / 中文 / 专家主导 / 并行优先
 
-### feedback（行为指导 · 22 条）
+### feedback（行为指导 · 24 条）
 
 按主题分组：
 
@@ -52,19 +52,21 @@ tags: [memory, 索引, auto-memory]
 - `feedback_project_local_agent_not_invocable` — 项目 .claude/agents/*.md 不在 subagent_type 列表
 - `feedback_subagent_write_permission` — 后台 subagent Write/Bash 常被拒，主会话代写
 
-**Ohmybrain / 文档工作流（6）**
+**Ohmybrain / 文档工作流（8）**
 - `feedback_ohmybrain_workflow` — 硬工序 `specs→plans→discussion→code`
 - `feedback_ohmybrain_self_improvement` — 进入 Ohmybrain 项目第一件事 = 完善自己（2026-05-24 新增）
 - `feedback_sync_to_core_lessons` — /sync-to-core 首次实战：queue 须先 diff 再决定（2026-05-24 新增）
 - `feedback_doc_visual_diversification` — 流程图不能统一布局换数据
 - `feedback_doc_flowgen_only` — 方案 / 方法论文档图必走 flowgen-* skill
 - `feedback_inplace_edit_no_version` — 迭代 PPT/文档/图等产物就地改当前文件，不另存递增版本号（2026-06-27 新增）
+- `feedback_flowgen_palette_full_persist` — flowgen 默认配色更新需 4 处完整固化：.py 默认 + SKILL 正文 + frontmatter + 项目副本（2026-07 新增）
+- `feedback_visio_headless_orphan_lock` — flowgen 渲染 SaveAs 报 [只读] = headless COM 孤儿进程占锁，仅杀无窗口标题者再重渲（2026-07 新增）
 
-### project（项目状态 · 61 条）
+### project（项目状态 · 67 条）
 
 按项目分组：
 
-**UWAcomm（18）**
+**UWAcomm（19）**
 - `project_uwacomm` — 6-scheme UWA sim 稳定画像（路径 / 模块 / 工作流 / wiki）
 - `project_uwacomm_2026-04-23_session` — 14 commit 收尾
 - `project_uwacomm_2026-04-24_session` — SC-TDE V5.4 / DSSS V1.2 audit / SC-FDE sps+GAMP
@@ -83,6 +85,7 @@ tags: [memory, 索引, auto-memory]
 - `project_uwacomm_alpha_refinement` — α 补偿改造
 - `project_uwacomm_sctde_cfo_rca` — SC-TDE+DSSS CFO RCA 闭环
 - `project_uwacomm_scfde_phase3b2` — SC-FDE Phase 3b.2 归档
+- `project_uwacomm_linux_engineering_audit` — Linux 工程化四路核验（唯一硬阻塞 = 18 个 PoolTest 硬路径 + 三线分岔盘点，交接单已给 Codex，2026-07-09 新增）
 
 **UWAcomm_usbl（13）**
 - `project_uwacomm_usbl_init` — 项目初始化
@@ -133,6 +136,18 @@ tags: [memory, 索引, auto-memory]
 **DocProcess / UWCombatPlatform（1）**
 - `project_uwcombatplatform_init` — UWCombatPlatform 派生（水下作战试验平台建设方案+报价，template-document，全链条 6 模块，依赖 UWAcomm/SonarSim/USBL，🔒 本地无远程，涉密 docx gitignore，2026-06-25 派生，初稿 6/26）
 
+**DocProcess / CommSimSupport（1）**
+- `project_commsimsupport_init` — CommSimSupport 派生（通信机仿真使用支持申报书，template-document，依赖 UWAcomm，脚手架就位撰写未启动，git 未 init，2026-07-01 派生）
+
+**DocProcess / OceanEnvSupport（1）**
+- `project_oceanenvsupport_init` — OceanEnvSupport 派生（海洋环境数据作战保障方案，月尺度预报核心资产，F-1 六分系统架构落 wiki/topics，等 D1-D5 决断，2026-07-09 派生）
+
+**Patents（1）**
+- `project_patents_2026-06-29` — 4 候选模板化重构 + 首次本地 git init（53bd96d 仅本地无远程；07-11 检阅时实际已 6 候选目录）
+
+**个人 / HR（1）**
+- `project_halfyear_summary_2026h1` — 2026 上半年个人工作总结成稿（算法组自评，D:\文档，4 项重点 + 声载荷负责人口径 + docx 构建管线，2026-07-11 新增）
+
 **TechReq / SonarSim（1）**
 - `project_sonarsim_init` — 主动声呐界面仿真 MATLAB（SPEC-001 跑通单发同频干扰混响强度图 + 接声呐方程，2026-06-03 新增）
 
@@ -146,15 +161,16 @@ tags: [memory, 索引, auto-memory]
 - `project_iconforge_init` — IconForge 初始化（自然语言→图标 SVG，派生后暂停，2026-05-29）
 - `project_ppt_master_adoption_2026-06-24` — 采纳 ppt-master(30.8k★ MIT)作通用 PPT 引擎 + FIELDBOOK 迁 brand/deck 模板 + AnthropicPPT 降级（Plan A，ADR-030，**第三方 vendored 不计活跃项目**，2026-06-24 新增）
 
-**Ohmybrain Hub（6）**
+**Ohmybrain Hub（7）**
 - `project_ohmybrain_ecosystem` — 三仓架构 + Obsidian vault + 关键约定
 - `project_ohmybrain_uwa_doppler_ingest` — 6 篇 UWA Doppler 论文 ingest
 - `project_ohmybrain_2026-05-24_session` — PPT V4 + AnthropicPPT 派生 + 13 dedicated 页 + 三模板 + /sync-to-core 实战 + 三仓 push（2026-05-24 新增）
 - `project_ohmybrain_agent_collab_protocol` — Claude+Codex 协作协议层（3 wiki 页 + 根 AGENTS.md + specs/plans/handoff/wiki 文件接口，ADR-024，2026-06-09 新增）
 - `project_ohmybrain_2026-06-10_audit4` — 入会自检（四）：queue 收口（high 清空）+ uwaprojdoc 导航补建 + 5 日期 log 补登全清 + 审计误报 3 例（2026-06-10 新增）
 - `project_ohmybrain_2026-06-24_audit6` — 入会自检（六）：5 维 workflow 审计（44 agent / 33 confirmed / 1 refuted）+ PaperTrans 补登（dashboard/system-overview/memory-index/ADR-029）+ USBL_hw 进展刷新（→c7c07da/71 commit）+ CANON 级联（skills 31→32 / memory 81→83）+ CooperativeDetection/PaperReview 标 🕸️（2026-06-24 新增）
+- `project_ohmybrain_ccppt_v16` — CC 方法论 PPT v16 定稿（63 页终版，内网章 + 案例实证化，md→Edge 截图管线 / docx 抽图 / 锁冲突旁路换入，2026-07-04 新增）
 
-> 注：`project_uwacomm`（含 13 条 session 条）+ `project_uwacomm_usbl`（含 13 条）+ `project_uwaprojdoc`（含 3 条）等高频项目的多日 session 条目均计入上方分组，加 Tools 系 7 + VisioForge/CooperativeASW/SonarSim/USBL_hw/PaperTrans/UWAcommTrial/UWCombatPlatform 各 1 + Ohmybrain Hub session 3 条（2026-06-09 / 2026-06-10 / 2026-06-24）+ Tools 系 +1 FieldKit +1 ppt-master，合计 61。
+> 注：`project_uwacomm`（含 13 条 session 条）+ `project_uwacomm_usbl`（含 13 条）+ `project_uwaprojdoc`（含 3 条）等高频项目的多日 session 条目均计入上方分组，加 Tools 系 7 + VisioForge/CooperativeASW/SonarSim/USBL_hw/PaperTrans/UWAcommTrial/UWCombatPlatform 各 1 + Ohmybrain Hub session 3 条（2026-06-09 / 2026-06-10 / 2026-06-24）+ Tools 系 +1 FieldKit +1 ppt-master，加 2026-07 批次 +6（UWAcomm Linux 核验 / Hub ccppt_v16 / CommSimSupport / OceanEnvSupport / Patents 06-29 / 2026H1 个人总结），合计 67。
 
 ### reference（参考 · 3 条）
 
@@ -261,7 +277,7 @@ UWAcomm_usbl calibration 分支 poolData/ 实测数据 DOA 估计与阵列校准
 - memory 是**主动**沉淀（每会话产生新条目）
 - Hub wiki 是**被动**索引（季度更新本页同步）
 - 不双向同步 — memory 是事实源，wiki 是索引视图
-- **last-sync: 2026-06-29**（计数已对齐 CANON：feedback 22 / project 61 / reference 3 / user 1 / 总 87）
+- **last-sync: 2026-07-11**（计数已对齐 CANON：feedback 24 / project 67 / reference 3 / user 1 / 总 95）
 
 ## 相关页面
 

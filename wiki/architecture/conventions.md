@@ -10,7 +10,7 @@ tags: [约定, conventions, 跨项目]
 命名 / 目录 / commit / PR / 工作流 / worktree / 私人项目 等跨项目共享约定。**事实源 = `~/.claude/rules/common/*.md`**（全局规则），本页是 Hub wiki 的索引 + 项目级扩展。
 
 > [!note] 全局资源规模（@2026-06-29）
-> `~/.claude/` 当前承载：**auto-memory 87 个**（user 1 / feedback 22 / project 61 / reference 3，`MEMORY.md` 索引 88 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
+> `~/.claude/` 当前承载：**auto-memory 95 个**（user 1 / feedback 24 / project 67 / reference 3，`MEMORY.md` 索引 96 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
 
 ## 1. 命名约定
 
@@ -141,9 +141,14 @@ Type: `feat` / `fix` / `refactor` / `docs` / `test` / `chore` / `perf` / `ci`
 | `DocProcess/UWCombatPlatform` 🔒 | 私人（水下作战平台建设方案+报价，涉密） | 本地 main，涉密 docx gitignore |
 | `DocProcess/CommSimSupport` 🔒 | 私人（通信机仿真使用支持立项申报书） | **无 git**，无远程 |
 | `DocProcess/OceanEnvSupport` 🔒 | 私人（海洋环境数据作战保障方案文档） | 本地 main，无远程 |
+| `DocProcess/ImgSonarTwin` 🔒 | 私人（图像声呐数字孪生方案文档） | 本地 main，无远程 |
+| `DocProcess/AUVProposal` 🔒 | 私人（AUV 项目立项论证） | 本地 main，无远程 |
+| `DocProcess/AUVSurvey` 🔒 | 私人（AUV 广泛调研） | 本地 main，无远程 |
 | `TechReq/UWAcomm_usbl` 🔒 | **内网 Internal**（UWAcomm+USBL 联合仿真） | 私有，不公开 |
 | `TechReq/SonarSim` 🔒 | 私人（主动声呐界面仿真） | 私有 |
 | `TechReq/USBL_hw` 🔒 | 私人（USBL 硬件设计，engineering-hardware） | 内网 gitlab |
+| `TechReq/SonarFOM` 🔒 | 私人（声呐效能 FOM 品质因数表计算） | 本地 main，无远程 |
+| `TechReq/EnvDataClassify` 🔒 | 私人（环境数据分类：声速剖面/水文自动分类） | 本地 main，无远程 |
 | `Patents` 🔒 | 私密专利交底书 | **无 git** |
 
 ### 红线

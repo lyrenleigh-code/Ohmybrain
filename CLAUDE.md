@@ -46,6 +46,8 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | USBL_hw 🔒 | 私人，不公开（当前无远程） | `D:\Claude\TechReq\USBL_hw` |
 | UWAcomm_usbl 🔒 | 私人，不公开 | `D:\Claude\TechReq\UWAcomm_usbl` |
 | SonarSim 🔒 | 私人，不公开 | `D:\Claude\TechReq\SonarSim` |
+| SonarFOM 🔒 | 私人，不公开（本地 main，无远程） | `D:\Claude\TechReq\SonarFOM` |
+| EnvDataClassify 🔒 | 私人，不公开（本地 main，无远程） | `D:\Claude\TechReq\EnvDataClassify` |
 | ohmybrain-core | github.com/lyrenleigh-code/ohmybrain-core | `D:\Claude\ohmybrain-core` |
 | Pricing 🔒 | 私人，不公开 | `D:\Claude\DocProcess\Pricing` |
 | UWAprojDoc 🔒 | 私人，不公开 | `D:\Claude\DocProcess\UWAprojDoc` |
@@ -61,12 +63,15 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | UWCombatPlatform 🔒 | 私人，不公开（当前无远程） | `D:\Claude\DocProcess\UWCombatPlatform` |
 | CommSimSupport 🔒 | 私人，不公开（当前无远程） | `D:\Claude\DocProcess\CommSimSupport` |
 | OceanEnvSupport 🔒 | 私人，不公开（本地 main，无远程） | `D:\Claude\DocProcess\OceanEnvSupport` |
+| ImgSonarTwin 🔒 | 私人，不公开（本地 main，无远程） | `D:\Claude\DocProcess\ImgSonarTwin` |
+| AUVProposal 🔒 | 私人，不公开（本地 main，无远程） | `D:\Claude\DocProcess\AUVProposal` |
+| AUVSurvey 🔒 | 私人，不公开（本地 main，无远程） | `D:\Claude\DocProcess\AUVSurvey` |
 | FlowGen | 私人，不公开 | `D:\Claude\Tools\FlowGen` |
 | IconForge | 私人，不公开 | `D:\Claude\Tools\IconForge` |
 | AnthropicPPT | 私人，不公开（2026-06-24 降级=FIELDBOOK 设计源+归档，ADR-030）| `D:\Claude\Tools\AnthropicPPT` |
 | FieldKit | 私人，不公开（内网 gitlab lilin/FieldKit） | `D:\Claude\Tools\FieldKit` |
 | ppt-master 🔌 | 第三方 vendored（hugohe3/ppt-master 30.8k★ MIT，非派生不计活跃项目，ADR-030）| `D:\Claude\Tools\ppt-master` |
-| Patents 🔒 | 私人，不公开（**无 git**） | `D:\Claude\Patents` |
+| Patents 🔒 | 私人，不公开（**本地 git**，仅本地无远程） | `D:\Claude\Patents` |
 
 ## 知识闭环
 

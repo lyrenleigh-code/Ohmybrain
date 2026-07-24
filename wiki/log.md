@@ -3,6 +3,64 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-07-24] 派生登记 | AUVSurvey 派生（活跃 28→29，DocProcess×15→×16）+ AUVProposal 依赖联动
+
+同 session 续（AUVProposal 派生后，用户提出先建独立调研项目）：派生 **AUVSurvey** 🔒（`D:\Claude\DocProcess\AUVSurvey`，template-document，AUV 广泛调研：国内外 AUV 型谱/技术/应用扫描；主交付物《AUV 调研报告》docx，无依赖、下游 AUVProposal）：SOP §1 派生（robocopy）+ CLAUDE.md/README.md 占位符全清（README 三图留模板占位待 SPEC-001）+ SOP §6 验证全过（placeholders / dirs / lint / validate / sync_index 0 页）。**git 未 init**（待用户授权）。用户已确认：项目名 AUVSurvey / 主交付物=调研报告 docx / AUVProposal 依赖同步改为 AUVSurvey。调研未启动，待 SPEC-001（调研范围/维度/资料源）+ raw/ 摄入。
+
+**AUVProposal 依赖联动**：DEPENDS_ON 无→**AUVSurvey**（调研结论作建议书素材底座）——项目仓 CLAUDE.md/README + root/DocProcess CLAUDE.md 行 + 导航卡 + dashboard 状态行 + system-overview 实例表行 + ADR-038 后果注 + roadmap 行同步刷新（本 session 未提交批次内就地改，07-24 早前 log 条目保持原文）。
+
+**登记面（派生当日全量）**：root/Hub/DocProcess CLAUDE.md + `projects/auvsurvey/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头（改写为双派生）+ [[architecture/system-overview]] 实例表 + projects 树（30→31）+ [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-039 + [[architecture/roadmap]] 里程碑 + 本 log + auto-memory `project_auvsurvey_init`。
+
+**CANON 级联**：活跃项目 28→29 / DocProcess×15→×16 / ADR range ~038→~039。**存量债（不在本次范围）**：memory CANON 债 +1（本条 `project_auvsurvey_init`，本 session 累计 +2），连同既往挂账留下轮入会自检统一收口。
+
+**同日续（双项目推进 + commit 授权）**：① AUVSurvey：SPEC-001 全决转 confirmed（D1-D4：全谱/15~25 型/联网检索/精干 30~50 页）→ 6 路并行调研 agent 落 wiki/topics 6 专题页（国外/国内型谱各 16 型 + 声呐/能源/导航控制/总体设计，lint/sync 6 页 ✓）→ Codex 交接单（核验+起草，门槛=型谱清单 32→15~25 用户增删）。② AUVProposal：三轮讨论 SPEC-001 confirmed（协同探测型 1 t×3 艘 / 2000 m / ≥10 km / ≥24 h / 四分系统 / 主被动结合 / dock 回收不充电 / 组网算法出本期 / 申报书体 10 页 / 不设经费章 / 一年周期 / **一体化设计硬约束**）→ 02-draft 初稿七章（§6 研究基础用户指示占位不写，5 图占位）→ Codex 交接单（审校）。③ 用户授权本地 commit：两仓 git init -b main 首 commit（AUVSurvey `544bc38` / AUVProposal `5045bb3`，均本地 main 无远程）+ 本 Hub 登记批 commit（含 07-18/21/23 三派生未提交登记面一并收纳；`raw/PPT/` 保持未跟踪待用户裁定）；各登记面「git 未 init」锚点刷新为 hash pin（Hub/conventions/system-overview/dashboard/导航卡×2/ADR-038/039/roadmap）。
+
+## [2026-07-24] 派生登记 | AUVProposal 派生（活跃 27→28，DocProcess×14→×15）
+
+派生 **AUVProposal** 🔒（`D:\Claude\DocProcess\AUVProposal`，template-document，AUV 项目立项论证；主交付物《AUV 项目建议书》docx，无依赖独立论证）：SOP §1 派生（robocopy）+ CLAUDE.md/README.md 占位符全清（README 三图留模板占位待 SPEC-001）+ SOP §6 验证全过（placeholders / dirs / lint / validate / sync_index 0 页）。**git 未 init**（待用户授权，同 OceanEnvSupport 先例）。用户已确认：项目名 AUVProposal / 主交付物=项目建议书 / 无依赖。撰写未启动，待 raw/ 资料摄入 + SPEC-001（AUV 对象/论证口径/章节大纲）。
+
+**登记面（派生当日全量）**：root/Hub/DocProcess CLAUDE.md + `projects/auvproposal/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + projects 树（29→30）+ [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-038 + [[architecture/roadmap]] 里程碑 + 本 log + auto-memory `project_auvproposal_init`。
+
+**CANON 级联**：活跃项目 27→28 / DocProcess×14→×15 / ADR range ~037→~038。**存量债（不在本次范围）**：memory CANON 债 +1（本条 `project_auvproposal_init`），连同既往挂账留下轮入会自检统一收口。
+
+## [2026-07-23] 派生登记 | EnvDataClassify 派生（活跃 26→27，TechReq×7→×8）+ SonarFOM 状态刷新
+
+派生 **EnvDataClassify** 🔒（`D:\Claude\TechReq\EnvDataClassify`，template-engineering，环境数据分类：海洋环境数据声速剖面/水文条件等自动分类，MATLAB/Python；依赖 SonarFOM 🔒 水文五档分类经验，引用不复制）：SOP §1 派生（robocopy）+ CLAUDE.md/README.md 占位符全清 + SOP §6 验证全过（placeholders / dirs / lint / validate / sync_index 0 页）+ §3 git init -b main 首 commit `a7de7b2`（用户授权）。用户初提「数据分类」，澄清为「环境数据分类」。分类实现未启动，待 SPEC-001（分类对象/特征/方法）。
+
+**登记面（派生当日全量）**：root/Hub CLAUDE.md + `projects/envdataclassify/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + projects 树（28→29）+ [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-037 + [[architecture/roadmap]] 里程碑 + 本 log + auto-memory `project_envdataclassify_init`。
+
+**同批 SonarFOM 状态行刷新**：🔴 刚派生 → 🟢 活跃——07-22-23 本 session 推进水文五档分类 `classifyHydrology`（会聚区/表面声道/中等/强跃层/浅海，单测 7/7 + 真实 nc 对拍 Python 9/9，commit `7bbfadd`）+ SPEC-002 BELLHOP TL(R) 传播链路（复用 raw AcousticModel，单点+批量五档跑通；诊断出**深海会聚区需 ±40° 声线角度，±18° 默认漏 CZ 声线致上层假声影**）。
+
+**CANON 级联**：活跃项目 26→27 / TechReq×7→×8 / ADR range ~036→~037。**存量债（不在本次范围）**：memory CANON 债 +1（本条 `project_envdataclassify_init`），连同既往挂账留下轮入会自检统一收口。
+
+## [2026-07-21] 派生登记 | SonarFOM 派生（活跃 25→26，TechReq×6→×7）
+
+派生 **SonarFOM** 🔒（`D:\Claude\TechReq\SonarFOM`，template-engineering，声呐效能 FOM 品质因数表计算：声呐方程逐项计算 + 作用距离预报表，MATLAB；依赖 SonarSim 🔒 探测链路参数口径，引用不复制）：SOP §1 派生（robocopy 72 文件）+ CLAUDE.md/README.md 占位符全清（README 三图留模板占位待 SPEC-001）+ SOP §6 验证全过（placeholders / dirs / lint / validate / sync_index 0 页）+ §3 git init -b main 首 commit `fb00819`（用户授权）。用户已确认 FORM=FOM 品质因数、位置 TechReq、手动模式。计算实现未启动，待 SPEC-001（FOM 参数口径 + 表格式）。
+
+**登记面（派生当日全量）**：root/Hub CLAUDE.md（TechReq 无目录级 CLAUDE.md）+ `projects/sonarfom/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + projects 树 + [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-036 + [[architecture/roadmap]] 里程碑 + 本 log + auto-memory `project_sonarfom_init`。
+
+**顺带修正**：system-overview projects 树头注「24 个 README 子目录」已 stale（实为 27，近 3 次派生未 bump），随本次 +1 修为 28。
+
+**CANON 级联**：活跃项目 25→26 / TechReq×6→×7 / ADR range ~035→~036（`--check` 实跑活跃 26 / DocProcess 14 零失配）。**存量债（不在本次范围）**：memory CANON 债 +1（本条 `project_sonarfom_init`，连同 07-18 已挂账级联 + memory-index 指针；`--check` 实跑 memory **100** / project 71 / feedback 25，16 处 stale token 已列——较 07-18 预估 98 又多 2，含间隙新增），留下轮入会自检统一收口（同 07-09 / 07-18 先例）。
+
+## [2026-07-18] 派生登记 | ImgSonarTwin 派生（活跃 24→25）+ 补登 CommSimSupport/OceanEnvSupport 实例表漏登行
+
+派生 **ImgSonarTwin** 🔒（`D:\Claude\DocProcess\ImgSonarTwin`，template-document，图像声呐数字孪生方案文档；主交付物《图像声呐数字孪生方案》docx 待定稿名，依赖 DigitalTwinGuide/DigitalTwin1plusN）：SOP §1 派生（robocopy 42 目录/73 文件）+ CLAUDE.md/README.md 占位符全清（README 三图留模板占位待 SPEC-001）+ SOP §6 验证全过（lint / validate / sync_index 0 页）。撰写未启动，待 raw/ 资料摄入 + SPEC-001 章节大纲。
+
+**登记面（派生当日全量）**：root/Hub/DocProcess CLAUDE.md + `projects/imgsonartwin/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + projects 树 + [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-035 + [[architecture/roadmap]] 里程碑 + 本 log + auto-memory `project_imgsonartwin_init`。
+
+**顺带补登（真漏登发现）**：07-09 commit `de89d95` 声称更新 system-overview「实例表」但实际仅动计数行（:308），**CommSimSupport / OceanEnvSupport 实例表行 + projects 树 2 行实缺**（「部分登记」反模式第 9 例）——本批补 实例表 3 行（含 ImgSonarTwin）+ projects 树 3 行。
+
+**CANON 级联**：活跃项目 24→25 / DocProcess×13→×14 / ADR range ~034→~035（`--check` 实跑活跃 25 / DocProcess 14 零失配）。**存量债（不在本次范围）**：memory CANON 95→**98** / project 67→70——含进场前已欠的 07-13 / 07-15 两条 UWAcomm session memory + 本条 `project_imgsonartwin_init`（`--check` 已列 11 处 stale token：conventions / anti-patterns×2 / index / three-tier / dashboard×2 / hub-as-brain / memory-index + project 子数 3 处），连同 memory-index 3 条指针补登，留下轮入会自检统一收口（同 07-09 先例）。
+
+## [2026-07-11] maintenance | 入会检阅（十四）：memory CANON 87→95 级联收口 + Patents 状态刷新
+
+**CANON 级联**（07-09 log 挂账的存量债清零）：memory 总数 87→95 / feedback 22→24 / project 61→67 / `MEMORY.md` 索引 88→96 行——8 页 16 处现态 token（conventions / anti-patterns×2 / index×2 / three-tier / dashboard×2 / hub-as-brain×4 / memory-index×4）+ [[topics/memory-index]] 补登 8 条：feedback +2（flowgen-palette-full-persist / visio-headless-orphan-lock）、project +6（uwacomm-linux-engineering-audit / ohmybrain-ccppt-v16 / commsimsupport-init / oceanenvsupport-init / patents-2026-06-29 / halfyear-summary-2026h1，新增 CommSimSupport / OceanEnvSupport / Patents / 个人 4 个分组）。
+
+**Patents 状态刷新**：「无 git，禁 git init」已 stale——2026-06-29 用户已本地 git init（`53bd96d`，仅本地无远程），且候选 3→6（+04 跨帧后验热启动 Turbo-VAMP 时变稀疏信道估计 / 05 宽带数字直驱 / 06 无先验多模盲收）；刷新 根 CLAUDE.md / Hub CLAUDE.md / [[topics/ecosystem-dashboard]] / projects/patents 导航卡 / auto-memory MEMORY.md 五面。
+
+**其余核验**：lint ✓ / check_memory_log_gap 静默 / 工作树仅 `raw/PPT/` 未跟踪（待用户处置：/ingest 或 commit）。不新建 audit memory（演化 [[feedback_ohmybrain_self_improvement]] 第 14 轮）。
+
 ## [2026-07-09] 派生登记 | OceanEnvSupport 派生 + CommSimSupport 漏登面补齐（活跃 22→24）
 
 派生 **OceanEnvSupport** 🔒（`D:\Claude\DocProcess\OceanEnvSupport`，template-document，海洋环境数据作战保障方案文档；主交付物待定先搭架子，依赖 UWAprojDoc/CooperativeDetection，**git 未 init** 待用户授权）：SOP §1 派生（robocopy 42 目录/73 文件）+ CLAUDE.md/README.md 占位符全清（README 三图留 ⚠️ 模板占位待 SPEC-001）+ SOP §6 验证全过；对抗验证 workflow（3 agent：scaffold 0 / registration 1 low / completeness 7 findings）抓出登记级联遗漏后本批收口。

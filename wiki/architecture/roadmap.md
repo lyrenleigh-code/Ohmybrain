@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-06-14
+updated: 2026-07-24
 tags: [roadmap, 演化, 里程碑]
 ---
 
@@ -13,6 +13,11 @@ tags: [roadmap, 演化, 里程碑]
 
 | 日期 | 里程碑 | 类型 |
 |------|--------|------|
+| **2026-07-24** | AUVSurvey 项目派生（AUV 广泛调研：国内外型谱/技术/应用，template-document，主交付物《AUV 调研报告》docx；无依赖、下游 AUVProposal）+ AUVProposal 依赖联动（无→AUVSurvey）；同日 SPEC-001 confirmed + 首轮 6 专题页调研落盘 + git init `544bc38` | DocProcess (ADR-039) |
+| **2026-07-24** | AUVProposal 项目派生（AUV 项目立项论证，template-document，主交付物《AUV 项目建议书》docx；DEPENDS_ON=AUVSurvey（同日 ADR-039 联动，派生时无依赖））；同日 SPEC-001 confirmed + 02-draft 初稿七章 + git init `5045bb3` | DocProcess (ADR-038) |
+| **2026-07-23** | EnvDataClassify 项目派生（环境数据分类：声速剖面/水文自动分类，MATLAB/Python，template-engineering；DEPENDS_ON=SonarFOM 🔒，git init `a7de7b2` 本地 main 无远程） | TechReq (ADR-037) |
+| **2026-07-21** | SonarFOM 项目派生（声呐效能 FOM 品质因数表计算，MATLAB，template-engineering；DEPENDS_ON=SonarSim 🔒，git init `fb00819` 本地 main 无远程） | TechReq (ADR-036) |
+| **2026-07-18** | ImgSonarTwin 项目派生（图像声呐数字孪生方案文档，template-document，主交付物《图像声呐数字孪生方案》docx 待定稿名；DEPENDS_ON=DigitalTwinGuide/DigitalTwin1plusN）+ 补登 CommSimSupport/OceanEnvSupport system-overview 实例表漏登行（07-09 commit 仅更计数行） | DocProcess (ADR-035) |
 | **2026-07-09** | OceanEnvSupport 项目派生（海洋环境数据作战保障方案文档，template-document，主交付物待定先搭架子；DEPENDS_ON=UWAprojDoc/CooperativeDetection，git 未 init）+ 补登 CommSimSupport 漏登面（「部分登记」第 8 轮收口） | DocProcess (ADR-034) |
 | **2026-07-01** | CommSimSupport 项目派生（通信机仿真使用支持立项申报书，template-document，依赖 UWAcomm；SPEC-001 临时骨架就位，待官方模板 ingest）；2026-07-09 追溯补登 | DocProcess (ADR-033) |
 | **2026-06-24** | 采纳 ppt-master（30.8k★ MIT，agent 手写 SVG→原生 DrawingML）作通用 PPT deck 引擎 + FIELDBOOK 迁 `fieldbook` brand/deck 模板 + AnthropicPPT 降级（Plan A；ppt-master = 第三方 vendored 不计活跃项目）| Tools 第三方 (ADR-030) |
