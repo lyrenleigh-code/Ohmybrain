@@ -12,7 +12,7 @@ tags: [memory, 索引, auto-memory]
 
 > 不复制 memory 完整内容（避免双写），本页只索引 + 简短描述 + link 到 memory 文件。
 
-> **计数口径（@2026-08-18）**：auto-memory 共 **108 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 109 个 `.md`）。分布：user **1** / feedback **28** / project **76** / reference **3**。下方各类型标题计数与此严格一致。
+> **计数口径（@2026-08-18）**：auto-memory 共 **97 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 98 个 `.md`）。分布：user **1** / feedback **28** / project **65** / reference **3**。下方各类型标题计数与此严格一致。
 >
 > 注：`MEMORY.md` 索引行中「flowgen-vsdx M5 升级」一条指向 `~/.claude/skills/flowgen-vsdx/SKILL.md`（skill 文件，**非 memory 条目**），不计入总数。
 
@@ -66,24 +66,13 @@ tags: [memory, 索引, auto-memory]
 - `feedback_flowgen_palette_full_persist` — flowgen 默认配色更新需 4 处完整固化：.py 默认 + SKILL 正文 + frontmatter + 项目副本（2026-07 新增）
 - `feedback_visio_headless_orphan_lock` — flowgen 渲染 SaveAs 报 [只读] = headless COM 孤儿进程占锁，仅杀无窗口标题者再重渲（2026-07 新增）
 
-### project（项目状态 · 76 条）
+### project（项目状态 · 65 条）
 
 按项目分组：
 
-**UWAcomm（22）**
+**UWAcomm（11）**
 - `project_uwacomm` — 6-scheme UWA sim 稳定画像（路径 / 模块 / 工作流 / wiki）
-- `project_uwacomm_2026-04-23_session` — 14 commit 收尾
-- `project_uwacomm_2026-04-24_session` — SC-TDE V5.4 / DSSS V1.2 audit / SC-FDE sps+GAMP
-- `project_uwacomm_2026-04-25_session` — V5.5 fd=1Hz / V5.6 HFM calibration
-- `project_uwacomm_2026-04-26_session` — SC-FDE Phase 4+5 突破 14×
-- `project_uwacomm_2026-04-27_session` — OTFS 重启移植 + P4 routing
-- `project_uwacomm_2026-04-28_session` — P4 UI ↔ codex 对齐
-- `project_uwacomm_2026-05-01_session` — P4 UI 稳定性 + V3.0 解耦
-- `project_uwacomm_2026-05-03_session` — UI 50% RCA + Phase 2 bench fix
-- `project_uwacomm_2026-05-04_session` — simple UI v2.0 / jakes V2.0 / OTFS K×2 / SC-FDE V4.1
-- `project_uwacomm_2026-05-06_session` — OTFS 4-27 漏登 + Phase 4 BER FAIL 归档
-- `project_uwacomm_2026-05-12_session` — claude+codex 175 文件吸收
-- `project_uwacomm_2026-05-16_session` — rx_stream_p4 接口移植 + 双回归 RCA
+- `project_uwacomm_chronicle_2026H1` — 04-23~05-16 十二 session 合并编年（2026-08-18 蒸馏：可复用结论落 Hub 四 concept 页「实战结论」节，逐日细节见 UWAcomm 仓 git/wiki）
 - `project_uwacomm_e2e_benchmark` — E2E benchmark S1 完成
 - `project_uwacomm_p3_ui` — P3 UI 遗留
 - `project_uwacomm_alpha_refinement` — α 补偿改造
@@ -196,7 +185,7 @@ tags: [memory, 索引, auto-memory]
 - `project_ohmybrain_2026-06-24_audit6` — 入会自检（六）：5 维 workflow 审计（44 agent / 33 confirmed / 1 refuted）+ PaperTrans 补登（dashboard/system-overview/memory-index/ADR-029）+ USBL_hw 进展刷新（→c7c07da/71 commit）+ CANON 级联（skills 31→32 / memory 81→83）+ CooperativeDetection/PaperReview 标 🕸️（2026-06-24 新增）
 - `project_ohmybrain_ccppt_v16` — CC 方法论 PPT v16 定稿（63 页终版，内网章 + 案例实证化，md→Edge 截图管线 / docx 抽图 / 锁冲突旁路换入，2026-07-04 新增）
 
-> 注：各分组小计（@2026-08-18）：UWAcomm 22 + UWAcomm_usbl 13 + USBL 2 + UWAprojDoc 4 + PaperReview/DigitalTwinGuide/DigitalTwin1plusN(退役)/VisioForge/CooperativeASW/PaperTrans/UWAcommTrial/UWCombatPlatform/CommSimSupport/OceanEnvSupport/ImgSonarTwin/AUVProposal/AUVSurvey/CoupledMultiOrder 各 1（计 14）+ Patents 1 + 个人/HR 1 + SonarSim/SonarFOM/EnvDataClassify 各 1（计 3）+ Tools 系 9 + Ohmybrain Hub 7 = **76**。
+> 注：各分组小计（@2026-08-18）：UWAcomm 11 + UWAcomm_usbl 13 + USBL 2 + UWAprojDoc 4 + PaperReview/DigitalTwinGuide/DigitalTwin1plusN(退役)/VisioForge/CooperativeASW/PaperTrans/UWAcommTrial/UWCombatPlatform/CommSimSupport/OceanEnvSupport/ImgSonarTwin/AUVProposal/AUVSurvey/CoupledMultiOrder 各 1（计 14）+ Patents 1 + 个人/HR 1 + SonarSim/SonarFOM/EnvDataClassify 各 1（计 3）+ Tools 系 9 + Ohmybrain Hub 7 = **65**。
 
 ### reference（参考 · 3 条）
 
@@ -215,10 +204,6 @@ UWA 通信各体制（SC-TDE / DSSS / SC-FDE / OTFS）跨 session 的版本迭�
 - `project_uwacomm_alpha_refinement` — 双 LFM + 迭代 refinement + 4 体制推广（起点）
 - `project_uwacomm_sctde_cfo_rca` — SC-TDE V5.4 + DSSS V1.2 CFO RCA 闭环
 - `project_uwacomm_scfde_phase3b2` — SC-FDE Phase 3b.2 BEM 判决反馈
-- `project_uwacomm_2026-04-26_session` — SC-FDE Phase 4+5 pilot=128 突破 14×
-- `project_uwacomm_2026-04-27_session` — OTFS 重启移植（rx_otfs / spread-pilot / clip-PAPR）
-- `project_uwacomm_2026-05-04_session` — SC-FDE V4.1 高 SNR 修复（117×）+ jakes V2.0
-- `project_uwacomm_2026-05-06_session` — OTFS 漏登补登 + Phase 4 BER FAIL 归档
 - `reference_otfs_pilot_tradeoff` — OTFS 导频 3 方案物理参考
 - `feedback_uwacomm_skip_otfs` — OTFS 重启决策
 
@@ -228,8 +213,6 @@ UWA 通信各体制（SC-TDE / DSSS / SC-FDE / OTFS）跨 session 的版本迭�
 - `feedback_uwacomm_claude_branch_autonomous`
 - `feedback_uwacomm_codex_compare_method`
 - `feedback_uwacomm_usbl_worktree_ownership`
-- `project_uwacomm_2026-05-12_session`（175 文件吸收案例）
-- `project_uwacomm_2026-05-16_session`（双回归 RCA）
 
 ### 算法 RCA 方法论
 
@@ -303,7 +286,7 @@ UWAcomm_usbl calibration 分支 poolData/ 实测数据 DOA 估计与阵列校准
 - memory 是**主动**沉淀（每会话产生新条目）
 - Hub wiki 是**被动**索引（季度更新本页同步）
 - 不双向同步 — memory 是事实源，wiki 是索引视图
-- **last-sync: 2026-08-18**（计数已对齐 CANON：feedback 28 / project 76 / reference 3 / user 1 / 总 108；本轮补登 14 条漏列指针：feedback +4 / project +10 含 fieldkit 漏列 bullet）
+- **last-sync: 2026-08-18（第二轮·蒸馏）**（计数已对齐 CANON：feedback 28 / project 65 / reference 3 / user 1 / 总 97；同日第一轮补登 14 指针后，第二轮首次 memory→wiki 蒸馏：UWAcomm 12 条逐日 session 并入 `project_uwacomm_chronicle_2026H1`，可复用结论落 4 concept 页「实战结论」节）
 
 ## 相关页面
 

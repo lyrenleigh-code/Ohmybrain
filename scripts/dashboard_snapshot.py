@@ -32,7 +32,9 @@ from __future__ import annotations
 import argparse
 import io
 import re
+import subprocess
 import sys
+from datetime import date, datetime
 from pathlib import Path
 
 # Windows 控制台默认 gbk，wiki 文本含非 gbk 字符 / 输出含符号——统一 UTF-8 stdout，
@@ -323,6 +325,112 @@ def run_check(hub_root: Path, claude_root: Path) -> tuple[list[str], list[str], 
     return issues, oks, gt
 
 
+# ---------------------------------------------------------------------------
+# 全仓 git 快照生成（--gen）
+# ---------------------------------------------------------------------------
+# 「部分登记」的另一半根因：dashboard 状态行的 git 锚点（hash / dirty / 天数）靠
+# 手写，项目 session 推进后 Hub 侧不回流 → 每轮审计 8+ 处漂移（2026-08-18 审计十五
+# 实测）。本模式把 git 事实层从手写面剥离：仓库清单**自动发现**（不新增手维护注册
+# 表），快照写入 ecosystem-dashboard.md 的标记区块，手写行只保留业务叙事。
+# 审计 / 派生后跑一次 `--gen` 即刷新；手写行的 hash 从此仅是叙事锚点，git 现实以
+# 本区块为准。
+
+AUTO_START = "<!-- AUTO-GIT-SNAPSHOT:START -->"
+AUTO_END = "<!-- AUTO-GIT-SNAPSHOT:END -->"
+
+# 工作区扫描面：区目录（下一级子目录逐个探测）+ 根级单仓。External / Archive /
+# worktrees 不扫（第三方 fork / 归档 / 分身，git 状态属各主仓业务面）。
+SCAN_AREAS = ["TechReq", "DocProcess", "Tools"]
+SCAN_SINGLES = ["Patents", "Ohmybrain", "ohmybrain-core"]
+
+
+def _git(repo: Path, *args: str) -> str:
+    """跑 git 命令，失败返回空串（不抛异常，NO-GIT 仓静默处理）。"""
+    try:
+        r = subprocess.run(
+            ["git", "-C", str(repo), *args],
+            capture_output=True, text=True, encoding="utf-8", errors="replace",
+            timeout=20,
+        )
+        return r.stdout.strip() if r.returncode == 0 else ""
+    except (OSError, subprocess.TimeoutExpired):
+        return ""
+
+
+def discover_repos(workspace: Path) -> list[tuple[str, Path]]:
+    repos: list[tuple[str, Path]] = []
+    for area in SCAN_AREAS:
+        base = workspace / area
+        if not base.is_dir():
+            continue
+        for child in sorted(base.iterdir(), key=lambda p: p.name.lower()):
+            if child.is_dir() and not child.name.startswith("."):
+                repos.append((f"{area}/{child.name}", child))
+    for name in SCAN_SINGLES:
+        p = workspace / name
+        if p.is_dir():
+            repos.append((name, p))
+    return repos
+
+
+def snapshot_repo(label: str, repo: Path) -> str:
+    """单仓一行 markdown。无 git → 标注行；无 commit → 标注行。"""
+    if not _git(repo, "rev-parse", "--git-dir"):
+        return f"| `{label}` | — | 无 git | — | — | — |"
+    head = _git(repo, "log", "-1", "--format=%h|%cs")
+    branch = _git(repo, "rev-parse", "--abbrev-ref", "HEAD") or "?"
+    dirty = _git(repo, "status", "--porcelain")
+    dirty_n = len(dirty.splitlines()) if dirty else 0
+    if not head:
+        return f"| `{label}` | `{branch}` | **0 commit** | — | {dirty_n} | — |"
+    h, cs = head.split("|", 1)
+    try:
+        idle = (date.today() - date.fromisoformat(cs)).days
+    except ValueError:
+        idle = -1
+    idle_s = f"{idle}d" + ("  🕸️?" if idle > 30 else "")
+    remotes = _git(repo, "remote").splitlines()
+    if not remotes:
+        remote_s = "**无远程**"
+    else:
+        parts = []
+        for rname in remotes:
+            ahead = _git(repo, "rev-list", "--count", f"{rname}/{branch}..HEAD")
+            parts.append(f"{rname}" + (f"+{ahead}" if ahead and ahead != "0" else "✓"))
+        remote_s = " / ".join(parts)
+    return f"| `{label}` | `{branch}` | `{h}` {cs} | {idle_s} | {dirty_n} | {remote_s} |"
+
+
+def gen_snapshot_block(workspace: Path) -> str:
+    stamp = datetime.now().strftime("%Y-%m-%d %H:%M")
+    lines = [
+        AUTO_START,
+        f"> 脚本生成 @{stamp}（`python scripts/dashboard_snapshot.py --gen`），**git 事实以本表为准**；上方手写行只承担业务叙事。远程列：`名✓`=已同步 / `名+N`=本地领先 N / **无远程**=单点风险。",
+        "",
+        "| 仓库 | 分支 | HEAD | 静默 | dirty | 远程 |",
+        "|------|------|------|------|-------|------|",
+    ]
+    for label, repo in discover_repos(workspace):
+        lines.append(snapshot_repo(label, repo))
+    lines.append(AUTO_END)
+    return "\n".join(lines)
+
+
+def run_gen(hub_root: Path) -> int:
+    dashboard = hub_root / "wiki" / "topics" / "ecosystem-dashboard.md"
+    text = dashboard.read_text(encoding="utf-8")
+    if AUTO_START not in text or AUTO_END not in text:
+        print(f"ERROR: {dashboard} 缺少标记区块 {AUTO_START} … {AUTO_END}", file=sys.stderr)
+        return 1
+    block = gen_snapshot_block(hub_root.parent)
+    pre = text.split(AUTO_START)[0]
+    post = text.split(AUTO_END)[1]
+    dashboard.write_text(pre + block + post, encoding="utf-8", newline="\n")
+    n = len(discover_repos(hub_root.parent))
+    print(f"[gen] ✓ {n} 仓 git 快照已写入 {dashboard.name} 标记区块")
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Ohmybrain 生态规模快照 / CANON 计数一致性校验"
@@ -334,6 +442,10 @@ def main() -> int:
     parser.add_argument(
         "-v", "--verbose", action="store_true", help="--check 时打印每条检查（含通过项）",
     )
+    parser.add_argument(
+        "--gen", action="store_true",
+        help="全仓 git 快照生成，写入 ecosystem-dashboard.md 的 AUTO-GIT-SNAPSHOT 标记区块",
+    )
     args = parser.parse_args()
 
     hub_root = find_hub_root(Path(__file__).resolve().parent)
@@ -344,6 +456,9 @@ def main() -> int:
         return 1
 
     claude_root = Path.home() / ".claude"
+
+    if args.gen:
+        return run_gen(hub_root)
 
     if args.check:
         issues, oks, gt = run_check(hub_root, claude_root)

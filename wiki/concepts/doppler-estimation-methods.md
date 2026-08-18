@@ -87,6 +87,13 @@ tags: [多普勒估计, 水声通信, 时变参数跟踪, 宽带Doppler, α估�
 - [[mathematical-optimization]] — MLE、LS、稀疏恢复、二次拟合是估计理论工具
 - [[mimo-and-array-processing]] — 多信标并行跟踪、空时联合估计的扩展形态
 
+## 实战结论（memory 蒸馏 @2026-08-18，源=UWAcomm 2026-04~05 session 簇）
+
+- **α 估计器精度到顶后的二级手段=解码打分邻域精化**：双 LFM/HFM 单次估计 σ≈1e-5，BER 仍高时在 ±2e-5 邻域扫 11 候选重解码取最优（refinement after decode），比继续磨估计器划算。— UWAcomm 04-28
+- **α 必须设物理上限 gate**：Jakes 衰落会让检测器假报大 α（α≈7.5e-2 conf=0.68 的假峰），|α| 上限（如 1e-2）一道门挡掉 50% 灾难。— UWAcomm 05-03
+- **补偿域约定是高发 bug 源**：passband 重采样 time-scaling 等效同时反载波相位；baseband 只反时间、需手动补 exp(-j2πfc·α·t)——跨域移植补偿代码必查此约定（另见 memory `feedback_comp_resample_carrier_phase`，正负号约定 V6→V7 变更同坑）。— UWAcomm 05-01/04-28
+- Jakes 仿真链路自身也有域坑：baseband 实现的 down/up-convert 双重损失会毁掉 HFM 峰（passband-native 重写后同步偏差改善 916×）。— UWAcomm 05-04
+
 ## 来源
 
 - 2026-04-22 批量摄入 UWA 多普勒 6 篇论文后抽取的方法学集合概念

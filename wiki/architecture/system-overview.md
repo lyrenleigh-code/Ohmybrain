@@ -1,9 +1,8 @@
 ---
 type: architecture
 created: 2026-04-12
-updated: 2026-06-15
+updated: 2026-08-18
 tags: [架构, 三仓, Hub, 模板, 闭环, harness]
-updated: 2026-06-24
 ---
 
 # 系统架构总览
@@ -56,7 +55,7 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 母仓 | `ohmybrain-core` | `D:\Claude\ohmybrain-core` | 活跃 |
 | Hub | `ohmybrain`（本仓） | `D:\Claude\Ohmybrain` | 活跃 |
 | **TechReq/** | | | **水声通信算法仿真** |
-| 项目仓 | `UWAcomm` | `D:\Claude\TechReq\UWAcomm` | 活跃开发（MATLAB 6 体制） |
+| 项目仓 | `UWAcomm` | `D:\Claude\TechReq\UWAcomm` | 活跃开发（MATLAB 7 体制，2026-07-15 S2C 接入） |
 | 项目仓 | `USBL` | `D:\Claude\TechReq\USBL` | 活跃开发 |
 | 项目仓 | `UWAnet` | `D:\Claude\TechReq\UWAnet` | 前期调研 |
 | 项目仓 🔒 | `UWAcomm_usbl` | `D:\Claude\TechReq\UWAcomm_usbl` | 派生 2026-04-25，内网 Internal（UWAcomm+USBL 联合仿真） |
@@ -80,7 +79,7 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 🔒 | `ImgSonarTwin` | `D:\Claude\DocProcess\ImgSonarTwin` | 派生 2026-07-18（图像声呐数字孪生方案文档，template-document，DEPENDS_ON=DigitalTwinGuide/DigitalTwin1plusN 🔒（后者 2026-08-18 已退役，ADR-041），本地 main 无远程） |
 | 项目仓 🔒 | `AUVProposal` | `D:\Claude\DocProcess\AUVProposal` | 派生 2026-07-24（AUV 项目立项论证，template-document，主交付物《AUV 项目建议书》docx，DEPENDS_ON=AUVSurvey 🔒，本地 main `5045bb3` 无远程） |
 | 项目仓 🔒 | `AUVSurvey` | `D:\Claude\DocProcess\AUVSurvey` | 派生 2026-07-24（AUV 广泛调研：国内外型谱/技术/应用，template-document，主交付物《AUV 调研报告》docx，无依赖、下游 AUVProposal，本地 main `544bc38` 无远程） |
-| 项目仓 🔒 | `CoupledMultiOrder` | `D:\Claude\DocProcess\CoupledMultiOrder` | 派生 2026-08-05（多阶耦合方案文档，template-document，主交付物 docx 待定名，无依赖、方向待细化，**git 未 init**） |
+| 项目仓 🔒 | `CoupledMultiOrder` | `D:\Claude\DocProcess\CoupledMultiOrder` | 派生 2026-08-05（多阶耦合智能艇群阶跃式协控汇报，template-document，主交付物=汇报 PPT 59 页+解说词+补充说明 docx，无依赖，本地 main `401b4b4` 无远程） |
 | **Tools/** | | | **跨项目工具** |
 | 项目仓 | `FlowGen` | `D:\Claude\Tools\FlowGen` | 派生 2026-04-23（自然语言→Visio/Mermaid 出图工具族；flowgen-* Visio skill 活跃，Mermaid 主入口未实装） |
 | 项目仓 | `IconForge` | `D:\Claude\Tools\IconForge` | 派生 2026-05-29（自然语言→图标 SVG，未实装） |
@@ -88,7 +87,7 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 | `FieldKit` | `D:\Claude\Tools\FieldKit` | 派生 2026-06-15（Calibration Field/校准场 图风系统，template-tool SOP，HEAD `5a9d75b`，已建内网 gitlab 远程；skill `calibration-field` 已注册） |
 | 第三方 🔌 | `ppt-master` | `D:\Claude\Tools\ppt-master` | vendored（hugohe3/ppt-master 30.8k★ MIT）通用 PPT deck 引擎（SVG→原生 DrawingML）；FIELDBOOK 迁 `fieldbook` brand/deck 模板（ADR-030，2026-06-24）；**非派生，不计活跃项目数** |
 | **Patents/** 🔒 | | | **专利交底书工作区（无 git）** |
-| 项目仓 🔒 | `Patents` | `D:\Claude\Patents` | 3 候选交底书（iusbl-jacobian / otfs-spread-pilot / usbl-cage5-3d-hybrid-doa） |
+| 项目仓 🔒 | `Patents` | `D:\Claude\Patents` | 6 候选交底书（iusbl-jacobian / otfs-spread-pilot / usbl-cage5-3d-hybrid-doa / turbo-vamp-warmstart / wideband-digital-direct-drive / no-oracle-multimode-blind-rx），2026-06-29 本地 git init `53bd96d` |
 | **导航占位** | | | |
 | Hub 占位 | `usbl-s1` | `projects/usbl-s1/` 仅 | dry-run 子项目（autonomous-new-project-workflow P2 实测，无对应主仓） |
 
@@ -318,7 +317,7 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 
 | 指标 | 数值 | 说明 |
 |------|------|------|
-| **Hub wiki 页数** | 109 | concepts 20 + entities 8 + source-summaries 33 + mcp-entities 25 + explorations 4 + topics 5 + architecture 12 + agents 1 + workflows 1 + comparisons 0（详见 `wiki/index.md`） |
+| **Hub wiki 页数** | 110 | concepts 20 + entities 8 + source-summaries 34 + mcp-entities 25 + explorations 4 + topics 5 + architecture 12 + agents 1 + workflows 1 + comparisons 0（详见 `wiki/index.md`） |
 | **活跃项目数** | 29 | TechReq×8（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒 / USBL_hw🔒 / SonarFOM🔒 / EnvDataClassify🔒）+ DocProcess×16（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / VisioForge / CooperativeASW / PaperTrans / UWAcommTrial / UWCombatPlatform / CommSimSupport / OceanEnvSupport / ImgSonarTwin / AUVProposal / AUVSurvey / CoupledMultiOrder，全 🔒）+ Tools×4（FlowGen / IconForge / AnthropicPPT / FieldKit）+ Patents🔒（papers 未正式登记，见 [[../topics/core-update-queue]] / decision-log 待裁）；**第三方 vendored 不计**：ppt-master（`Tools/ppt-master`，ADR-030）；**已退役**：DigitalTwin1plusN（2026-08-18 用户删除工作区，ADR-041）|
 | **模板 skill 数** | 5 | ingest/plan/implement/lint/promote-answer（core + 下游继承） |
 | **全局 skill（Hub 用）** | 1 | `llm-wiki`（`paths: wiki/**` 自动激活） |

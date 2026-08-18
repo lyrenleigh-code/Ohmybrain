@@ -52,6 +52,13 @@ OFDM（正交频分复用）和 OTFS（正交时频空间）是两种多载波�
 - [[message-passing-algorithms]] — OTFS 检测中的消息传递方法
 - [[mobile-communication]] — OFDM 技术源自移动通信
 
+## 实战结论（memory 蒸馏 @2026-08-18，源=UWAcomm OTFS 2026-04~05 实测）
+
+- **OTFS pilot 三方案 tradeoff 实测**：superimposed 的优势只有 PAPR（16.8→8.9 dB）和数据率（+10%），BER 不优于 impulse——按链路预算瓶颈选，不按论文默认选（另见 memory `reference_otfs_pilot_tradeoff`）。— UWAcomm 04-27/05-06
+- **OTFS 脉冲成形 hann 全线退化**（static 0%→11%，各 fading 一致变差），维持 rect；「更平滑的窗」直觉在 DD 域不成立。— UWAcomm 05-06 Phase 4 FAIL 归档
+- **OTFS 对连续谱 Jakes 同样灾难**（fd=5Hz 33-44%），与 SC-FDE 同构，DD 域表征不豁免连续谱问题——见 [[time-varying-channel]] 实战结论。— UWAcomm 04-27
+- JSON 序列化会把 1×2 行向量还原成 2×1 列（`jsondecode`），OTFS meta 维度必须显式校正——跨语言/跨进程传参数矩阵的通用坑。— UWAcomm 05-04
+
 ## 来源
 
 - Zotero 论文库分析 (2026-04-12)

@@ -57,6 +57,13 @@ fd=10Hz (doppler_rate=8.33e-4) + oracle alpha 补偿后：
 - BEM(DCT) 在 5dB 达到最优点（1.15%），之后随 SNR 升高反而恶化
 - **结论：fd=10Hz 是当前系统架构（BEM+LMMSE-IC）的硬天花板，改善需要更根本的方法（如 OTFS DD 域处理）**
 
+## 实战结论（memory 蒸馏 @2026-08-18，源=UWAcomm 2026-04~05 session 簇）
+
+- **连续谱 Jakes 是体制无关的灾难分界**：离散多普勒/hybrid-K 场景 6 体制 BER 全 0%，同参数连续谱 Jakes 下 SC-FDE fd=1Hz 47%、OTFS fd=5Hz 33-44%、SC-TDE fd=1Hz 非单调——解法都在**协议层**（pilot/training 结构），不是估计器调参。— UWAcomm 04-26/04-27
+- **软符号-BEM 判决反馈存在鸡蛋耦合**：静态 PASS 掩盖不了时变下「软符号错→BEM 错→更错」正反馈（fd=1Hz 50% 灾难）；破局=**独立干净观测**（pilot 段 pre-Turbo BEM），且存在硬阈值 pilot≥CP 长度（吞吐 -50% 是物理代价，由 max_tau/blk_fft 比决定）。— UWAcomm 04-24/04-26
+- **迭代精化的前提是误差随迭代衰减**：fd=1Hz Jakes 下估计器 deterministic bias 不衰减，iter refinement 把 bias 逐轮翻倍（反向收敛）——deterministic bias 场景应 iter=0 + 一次性 calibration。— UWAcomm 04-25
+- **HFM 并非 Doppler-invariant，但其 deterministic 残差可当信道指纹用**（dtau_diff 唯一值触发 fd-specific calibration）。— UWAcomm 04-25 V5.6
+
 ## 来源
 
 - Zotero 论文库分析 (2026-04-12)

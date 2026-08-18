@@ -61,6 +61,13 @@ tags: [信道估计, 均衡, 多普勒, 叠加导频, 接收机]
 - **fd=10Hz 确认 ICI 极限**：oracle 在高 SNR 非单调反弹（0.73%→3.28%→3.65%），是系统级极限
 - **BEM(DCT) 在有真实 Doppler 条件下仍然最优**，全面优于 CE-BEM 和 DD-BEM
 
+## 实战结论（memory 蒸馏 @2026-08-18，源=UWAcomm 2026-04~05 session 簇）
+
+- **高 SNR 反而灾难是消息传递类算法的固有风险**：GAMP nv_post→0 时 LLR 极端化数值发散 + BEM 在极低噪声底过拟合（50%→0.43%，117×）——**噪声方差下限 clamp 是必需护栏**，不是可选优化。— UWAcomm 05-04 V4.1
+- **先进估计算法必须配保守 fallback**：GAMP + divergence guard + LS Tikhonov fallback（灾难率 10%→0）；且 clamp 与 fallback 的 trigger 条件会**三方耦合失效**（V4.1 clamp 让 LS fallback 永不触发→零噪 baseband 回归），合并两个「各自正确」的修复时必须回归全场景。— UWAcomm 04-23/05-16
+- **纯 NDA 盲定时在多径 ISI + 中低 SNR 必失败**（功率最大化/QPSK 四次方等教科书方法 4 连败，AWGN 假设在色散信道失效）→ training preamble 是正解，别再试盲。— UWAcomm 04-23/04-24
+- 单一根因锁定方法论见 [[anti-patterns]] / memory `feedback_single_root_cause_audit`（D9/D10 toggle + 跨 runner audit）。
+
 ## 来源
 
 - Zotero 论文库分析 (2026-04-12)

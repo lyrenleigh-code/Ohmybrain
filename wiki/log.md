@@ -3,6 +3,40 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-08-18] 大脑激活 | 首次 memory→wiki 蒸馏（4 concept 页「实战结论」+ UWAcomm 12 并 1）+ 查询解放 + 一行 promote 标准（审计十五优化项 5 落地）
+
+审计（十五）同日续 3。针对「wiki 是登记册多于大脑」结构性问题（根因：知识零摩擦流向 memory / query 协议锁死在 llm-wiki skill 的 wiki 路径触发里 / promote 摩擦高），三管齐下：
+
+**① 首次 memory→wiki 蒸馏**（供给侧，机制=消费 `diff_memory_log.py` 既有分类报告）：
+- 细读 UWAcomm 2026-04-23~05-16 十二条逐日 session memory，跨项目可复用结论蒸馏至 4 个 concept 页新增「实战结论」节（每条一行：结论+来源+日期）：[[concepts/time-varying-channel]]（连续谱 Jakes 体制无关灾难分界 / 软符号-BEM 鸡蛋耦合 / 迭代反向收敛 / HFM 指纹）、[[concepts/channel-estimation-and-equalization]]（高 SNR 灾难与 nv clamp 护栏 / fallback 三方耦合 / NDA 盲定时必败）、[[concepts/doppler-estimation-methods]]（解码打分邻域精化 / α 物理 gate / 补偿域约定坑）、[[concepts/ofdm-and-otfs]]（pilot tradeoff / hann FAIL / 连续谱同构 / jsondecode 维度坑）。
+- 12 条逐日 memory 合并为 `project_uwacomm_chronicle_2026H1` 编年条（HEAD 链 + 遗留项保留，细节让位 git/wiki）；**memory 108→97 / project 76→65 / MEMORY.md 109→98 行**（工作记忆瘦身首刀），memory-index + 6 页 CANON token 同步，`--check` 静默。
+**② 查询解放**（需求侧）：三层 query 协议从 llm-wiki skill（仅 wiki/** 路径触发的结构性死锁）抽升至全局 `~/.claude/CLAUDE.md` 新增「Hub 查询与回流」节——领域问题先读 Hub index 三层渐进，所有项目会话生效。
+**③ 一行 promote 标准**（摩擦侧）：最小单位=concept 页「实战结论」节 append 一行，非敏感不走脱敏五步；固化于 conventions §6 + llm-wiki SKILL Promote 节（Hub 侧对应机制=审计蒸馏惯例同步入 conventions）。
+**验收口径**：下下轮审计数 log 中 query/promote 条目，仍为零则接受降级（Hub 定位收缩为导航+摘要）。
+
+## [2026-08-18] 基建 | dashboard `--gen` git 快照生成化 + 本地单点仓双轨备份（审计十五优化项 1+3 落地）
+
+审计（十五）同日续。用户采纳审计建议第 1、3 项：
+
+**① dashboard git 事实层脚本化**（`dashboard_snapshot.py` +`--gen`）：全仓**自动发现**（TechReq/DocProcess/Tools 区目录 + Patents/Ohmybrain/ohmybrain-core，不新增手维护注册表）→ 每仓 分支/HEAD/静默天数(>30d 标 🕸️?)/dirty/远程同步状态 → 写入 [[topics/ecosystem-dashboard]] 新增 `AUTO-GIT-SNAPSHOT` 标记区块（36 仓）。**手写状态行从此只承担业务叙事，git 现实以脚本区块为准**——「部分登记」中 git 锚点漂移一类（审计十五 8 处）根治。首跑即产出新事实：UWAcomm 当前停在 `codex/p6-closure-20260803` 分支非 main；SonarSim/Pricing 实际已有 gitlab 远程（此前口径漏记）。
+
+**② 本地单点仓双轨备份**（DigitalTwin1plusN 删目录丢 12 commit 教训的根治，新脚本 `backup_push.py`，scripts 24→25）：
+- **入库**：DigitalTwinGuide 首 commit `4d9746e`（65 文件，init 起悬空 97 天清零）+ VisioForge 首 commit `07f40cd`（15 文件）——两个 0-commit 仓收口。
+- **在线轨**：16 仓预配内网 gitlab remote（`lilin/<Name>.git`：SonarFOM/EnvDataClassify/AUVProposal/AUVSurvey/CooperativeASW/CooperativeDetection/CoupledMultiOrder/DigitalTwinGuide/ImgSonarTwin/OceanEnvSupport/PaperReview/PaperTrans/UWAprojDoc/UWCombatPlatform/VisioForge/IconForge）；**本次内网不可达未 push**——回内网跑 `python scripts/backup_push.py --push`（自带连通性探测 + dry-run 模式）。
+- **离线轨**：17 仓 git bundle 全 refs 快照落 `Archive/git-backups/`（684MB，含 Patents/Ohmybrain）；`--bundle` 模式可重复跑（同日覆盖），「配 remote 但从未 push」不算已备份（远程 ref 存在性校验）。
+- **边界**：脚本不做 commit（工作树未提交内容属各项目业务面）；Patents **禁远程**（红线更新：仅本地 git + bundle 轨，conventions §4 stale「无 git」口径同步修正）。
+
+**③ 登记面收缩**（优化项 1 的配套）：conventions §9 加「git 状态列只记性质，实时事实以 AUTO-GIT-SNAPSHOT 为准」注，本表不再逐行手追 git；README 规模表 31→34/24→25 + 项目表标「历史节选非全量」指向 dashboard + DigitalTwin1plusN 退役注（README 是审计十五漏扫的第 13 个登记面，本轮补收）。
+
+## [2026-08-18] ingest | deepseek-ai/deepseek-harness（dsh）+ harness-engineering 空页填充（内容页 109→110）
+
+审计（十五）同日续。用户问「dsh 是不是和我们做的很像」→ 调研（gh api：README + docs/architecture.md + 45 子系统清单 + skills.md 细读）→ 用户确认落 Hub。
+
+- **新增** [[source-summaries/deepseek-ai-deepseek-harness]]：DeepSeek 开源 agent harness（2026-08-13 创建，5 天 151k star，MIT，developer preview）。「一切皆插件」Cordis 插件树 / profile-bundle 分层 patch / turn-step 事件流 / session log 单一事实源（model-visible means logged）/ capability seam / 分层 skill registry。**结论：Claude Code 概念面的开源镜像，但定位差一层——它造 harness 引擎，本体系是引擎之上的知识与工序层**；与 [[source-summaries/zhongan-llm-platform-ppt]] 双向互链成「内网 AI 底座对标」组（自建 vs 采购路线），关联 UWAcomm_usbl 十二月国产化线。其 `.agents/notes/`（archived/implemented 开发笔记）+ AGENTS.md dogfood 工序与本体系 specs/active→archive 神似，可作工序对标样本。
+- **顺带修复**：[[concepts/harness-engineering]] 自 2026-04-13 起为 **0 字节空页**（index 有条目、lint 未察觉的盲区）——实质填充：造 harness / 用 harness 两层定义 + 跨引擎设计模式对照表（分层覆盖 / hook / subagent / 单一事实源 / 按需指令）+ 3 组相关页互链。
+- **同批小修**：system-overview 实例表 CoupledMultiOrder 行刷新（同 dashboard 口径）+ Patents 行 3→6 候选 + UWAcomm 行 6→7 体制 + frontmatter 重复 `updated` 键去重。
+- **计数**：内容页 109→110 / source-summaries 33→34 / 总文件 111→112（index/dashboard/conventions/system-overview 四处同步）。
+
 ## [2026-08-18] 入会审计（十五）| DigitalTwin1plusN 退役（ADR-041 首例，活跃 30→29）+ 8 处 dimension-C 漂移收口 + CANON 95→108 级联 + ingest 中安智能 PPT
 
 距上轮检阅（十四，07-18）**31 天最长间隙**，用户显式要求审计（「应该很久没有更新 ohmybrain 了」）。机检起点：lint 过 / `--check` 报 16 处 CANON stale。

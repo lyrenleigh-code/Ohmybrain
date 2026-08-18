@@ -15,6 +15,51 @@ tags: [dashboard, 生态, 状态, 实时]
 >
 > **stale 标记约定**：项目「当前焦点」session 日期距今 **> 30 天** 视为 stale（标 🕸️），需要主动回访确认状态；@2026-08-18（入会审计十五重算）标 🕸️ 者：CooperativeDetection（05-09，101 天）/ PaperReview（05-09，101 天，dirty=7 或在评中）/ DigitalTwinGuide（init 起 master 无 commit，约 97 天）/ UWAnet（05-25，85 天，前期调研无 session）/ **UWAprojDoc（05-29，81 天，本轮新标）** / **SonarSim（06-04，75 天，本轮新标）** / **CooperativeASW（06-04，75 天，本轮新标）** / **PaperTrans（06-16，63 天，本轮新标）** / **UWCombatPlatform（06-26，53 天，本轮新标）**；DigitalTwin1plusN 已退役（🗑️ ADR-041）不再计；**旗舰 carve-out**：UWAcomm（08-03 活跃）/ USBL / UWAcomm_usbl / USBL_hw 算法-硬件主线维持 🟢；**阻塞非遗忘不标**：CommSimSupport（等官方模板 48 天）/ OceanEnvSupport（等 D1-D5 决断 40 天）/ EnvDataClassify（刚派生 26 天待 SPEC-001）；**工具族 SHIPPED 稳态不标**：FieldKit / FlowGen / AnthropicPPT（06-15 交付态）/ IconForge（🟡 未实装）；Patents 🟡 候选但 dirty=93 待回访 commit。
 
+## 仓库 git 快照（脚本生成）
+
+<!-- AUTO-GIT-SNAPSHOT:START -->
+> 脚本生成 @2026-08-18 11:41（`python scripts/dashboard_snapshot.py --gen`），**git 事实以本表为准**；上方手写行只承担业务叙事。远程列：`名✓`=已同步 / `名+N`=本地领先 N / **无远程**=单点风险。
+
+| 仓库 | 分支 | HEAD | 静默 | dirty | 远程 |
+|------|------|------|------|-------|------|
+| `TechReq/EnvDataClassify` | `main` | `a7de7b2` 2026-07-23 | 26d | 1 | gitlab✓ |
+| `TechReq/SonarFOM` | `main` | `9456931` 2026-08-12 | 6d | 0 | gitlab✓ |
+| `TechReq/SonarSim` | `main` | `2a0ebf3` 2026-06-04 | 75d  🕸️? | 0 | gitlab✓ |
+| `TechReq/USBL` | `main` | `accc52a` 2026-05-25 | 85d  🕸️? | 3 | gitlab✓ / origin✓ |
+| `TechReq/USBL_hw` | `main` | `eb7252a` 2026-07-17 | 32d  🕸️? | 6 | gitlab+6 |
+| `TechReq/UWAcomm` | `codex/p6-closure-20260803` | `5df75c8` 2026-08-03 | 15d | 0 | gitlab✓ / origin✓ |
+| `TechReq/UWAcomm_usbl` | `main` | `73cf223` 2026-06-09 | 70d  🕸️? | 22 | gitlab✓ |
+| `TechReq/UWAnet` | `main` | `e3b45c5` 2026-05-25 | 85d  🕸️? | 2 | gitlab✓ / origin✓ |
+| `DocProcess/AUVProposal` | `main` | `58c44b8` 2026-08-16 | 2d | 12 | gitlab✓ |
+| `DocProcess/AUVSurvey` | `main` | `6a79e02` 2026-07-25 | 24d | 10 | gitlab✓ |
+| `DocProcess/CommSimSupport` | — | 无 git | — | — | — |
+| `DocProcess/CooperativeASW` | `main` | `5da5de1` 2026-06-04 | 75d  🕸️? | 0 | gitlab✓ |
+| `DocProcess/CooperativeDetection` | `master` | `6113b96` 2026-05-09 | 101d  🕸️? | 0 | gitlab✓ |
+| `DocProcess/CoupledMultiOrder` | `main` | `401b4b4` 2026-08-07 | 11d | 0 | gitlab✓ |
+| `DocProcess/DigitalTwinGuide` | `master` | `4d9746e` 2026-08-18 | 0d | 0 | gitlab✓ |
+| `DocProcess/ImgSonarTwin` | `main` | `5300532` 2026-07-20 | 29d | 1 | gitlab✓ |
+| `DocProcess/OceanEnvSupport` | `main` | `15833b0` 2026-07-09 | 40d  🕸️? | 0 | gitlab✓ |
+| `DocProcess/PaperReview` | `master` | `b3568f6` 2026-05-09 | 101d  🕸️? | 7 | gitlab✓ |
+| `DocProcess/papers` | `?` | **0 commit** | — | 19 | — |
+| `DocProcess/PaperTrans` | `main` | `ed1a7ad` 2026-06-16 | 63d  🕸️? | 0 | gitlab✓ |
+| `DocProcess/Pricing` | `main` | `fef4f28` 2026-05-25 | 85d  🕸️? | 15 | gitlab✓ |
+| `DocProcess/UWAcommTrial` | — | 无 git | — | — | — |
+| `DocProcess/UWAprojDoc` | `master` | `eed5374` 2026-05-29 | 81d  🕸️? | 2 | gitlab✓ |
+| `DocProcess/UWCombatPlatform` | `main` | `3ce4928` 2026-06-26 | 53d  🕸️? | 0 | gitlab✓ |
+| `DocProcess/VisioForge` | `main` | `07f40cd` 2026-08-18 | 0d | 0 | gitlab✓ |
+| `Tools/AnthropicPPT` | `main` | `438c57e` 2026-06-15 | 64d  🕸️? | 14 | gitlab✓ |
+| `Tools/FieldKit` | `main` | `5a9d75b` 2026-06-15 | 64d  🕸️? | 0 | gitlab✓ |
+| `Tools/FlowGen` | `main` | `385072e` 2026-06-15 | 64d  🕸️? | 10 | gitlab✓ |
+| `Tools/IconForge` | `main` | `a6b361a` 2026-05-29 | 81d  🕸️? | 0 | gitlab✓ |
+| `Tools/MetalDinoForge` | `?` | **0 commit** | — | 24 | — |
+| `Tools/ObsidianStyleLab` | `main` | `e48dabf` 2026-06-16 | 63d  🕸️? | 16 | **无远程** |
+| `Tools/ppt-master` | `main` | `54ef7c7` 2026-06-23 | 56d  🕸️? | 6 | origin✓ |
+| `Tools/SlotForge` | — | 无 git | — | — | — |
+| `Patents` | `master` | `53bd96d` 2026-06-29 | 50d  🕸️? | 93 | **无远程** |
+| `Ohmybrain` | `main` | `4898937` 2026-08-18 | 0d | 11 | gitlab+5 / origin+5 |
+| `ohmybrain-core` | `main` | `844ee8c` 2026-05-25 | 85d  🕸️? | 20 | gitlab✓ / origin✓ |
+<!-- AUTO-GIT-SNAPSHOT:END -->
+
 ## 仓 / 项目状态总览
 
 ### TechReq / 水声通信算法仿真
@@ -84,15 +129,15 @@ tags: [dashboard, 生态, 状态, 实时]
 
 | 指标 | 数值 | 说明 |
 |------|------|------|
-| wiki 内容页 | **109** | 20 concepts + 8 entities + 12 architecture + 1 agents + 1 workflows + 5 topics + 4 explorations + 33 source-summaries + 25 mcp-entities + 0 comparisons |
-| wiki 总文件 | **111** | 109 内容页 + 根 `index.md` + `log.md` |
-| 自动化脚本 | **24** | `scripts/*.py` 全量（含 dashboard_snapshot.py；2026-06-10 +2 工作区级 hook 脚本） |
+| wiki 内容页 | **110** | 20 concepts + 8 entities + 12 architecture + 1 agents + 1 workflows + 5 topics + 4 explorations + 34 source-summaries + 25 mcp-entities + 0 comparisons |
+| wiki 总文件 | **112** | 110 内容页 + 根 `index.md` + `log.md` |
+| 自动化脚本 | **25** | `scripts/*.py` 全量（含 dashboard_snapshot.py `--gen`；2026-08-18 +backup_push.py 双轨备份） |
 | Hooks | **8 + 2** | Hub 8（3 阻断 + 4 提醒 + 1 注入，见下表）+ 工作区级 2（见表下注） |
 | 全局 skill（本地） | **32** | `~/.claude/skills/` 含 SKILL.md 的目录（34 个目录中 32 个有 SKILL.md） |
 | 全局 skill（注入后可见） | **90+** | 本地 32 叠加 `ecc:*` plugin / marketplace 注入后；裸写 90+ 会掩盖本地真实规模，故两层并列 |
 | 全局 agent | **55** | `~/.claude/agents/*.md` |
 | rules 目录 | **15** | common / zh / web + 12 语言（cpp/csharp/dart/golang/java/kotlin/perl/php/python/rust/swift/typescript） |
-| Memory 条目 | **108** | 4 类：user 1 / feedback 28 / project 76 / reference 3（见 [[memory-index]]；最新含 SonarFOM / EnvDataClassify / AUVProposal / AUVSurvey / CoupledMultiOrder init + UWAcomm 07-13/15/21 session + PPT autofit / docx 容器 feedback 条目） |
+| Memory 条目 | **97** | 4 类：user 1 / feedback 28 / project 65 / reference 3（见 [[memory-index]]；最新含 SonarFOM / EnvDataClassify / AUVProposal / AUVSurvey / CoupledMultiOrder init + UWAcomm 07-13/15/21 session + PPT autofit / docx 容器 feedback 条目） |
 | MCP servers | **6** | context7 / exa / github / memory / playwright / sequential-thinking |
 
 > ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~035）。
@@ -152,6 +197,6 @@ tags: [dashboard, 生态, 状态, 实时]
 - [[system-overview]] — 系统架构总览（含规模表）
 - [[hub-as-brain]] — 大脑功能定位
 - [[harness-resources]] — Hooks / Skills / Rules 全景
-- [[memory-index]] — auto-memory 108 条目索引（本页 session 锚点来源）
+- [[memory-index]] — auto-memory 97 条目索引（本页 session 锚点来源）
 - [[core-update-queue]] — Hub → core 下沉候选队列
 - [[decision-log]] — ADR-001~034 决策记录

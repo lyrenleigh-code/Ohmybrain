@@ -10,7 +10,7 @@ tags: [约定, conventions, 跨项目]
 命名 / 目录 / commit / PR / 工作流 / worktree / 私人项目 等跨项目共享约定。**事实源 = `~/.claude/rules/common/*.md`**（全局规则），本页是 Hub wiki 的索引 + 项目级扩展。
 
 > [!note] 全局资源规模（@2026-06-29）
-> `~/.claude/` 当前承载：**auto-memory 108 个**（user 1 / feedback 28 / project 76 / reference 3，`MEMORY.md` 索引 109 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
+> `~/.claude/` 当前承载：**auto-memory 97 个**（user 1 / feedback 28 / project 65 / reference 3，`MEMORY.md` 索引 98 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
 
 ## 1. 命名约定
 
@@ -34,11 +34,11 @@ tags: [约定, conventions, 跨项目]
 | `plans/archive/` | 已归档计划 | 与 spec 归档节奏保持一致 |
 | `handoff/active/` | Agent / 跨会话交接单 | Claude Code 与 Codex 串行或并行交接时使用 |
 | `handoff/archive/` | 已关闭交接单 | 交接完成后归档 |
-| `scripts/` | 自动化 | hooks + utilities（Hub 当前 24 个 .py，2026-06-10 +2 工作区级 hook） |
+| `scripts/` | 自动化 | hooks + utilities（Hub 当前 25 个 .py，2026-08-18 +backup_push.py 双轨备份） |
 | `output/` | 交付物（如适用） | 通常不 commit binary（除 demo） |
 | `.claude/` | harness | rules / skills / hooks / agents / settings.json |
 
-> Hub wiki 当前共 **111 个 .md**：根 `index.md` + `log.md` 2 个 + 109 个内容页（architecture 12 / agents 1 / workflows 1 / concepts 20 / entities 8 / explorations 4 / mcp-entities 25 / source-summaries 33 / topics 5 / comparisons 0）。计数随写入变化，以 `index.md` 同步值为准。
+> Hub wiki 当前共 **112 个 .md**：根 `index.md` + `log.md` 2 个 + 110 个内容页（architecture 12 / agents 1 / workflows 1 / concepts 20 / entities 8 / explorations 4 / mcp-entities 25 / source-summaries 34 / topics 5 / comparisons 0）。计数随写入变化，以 `index.md` 同步值为准。
 
 ## 3. Wiki 写作约定
 
@@ -102,6 +102,8 @@ Type: `feat` / `fix` / `refactor` / `docs` / `test` / `chore` / `perf` / `ci`
 
 - **knowledge 闭环**: ingest → query → promote → review
 - **engineering 闭环**: spec → plan → implement → validate
+- **一行 promote 标准（2026-08-18 起）**：promote 最小单位 = 向既有 concept 页「实战结论」节 **append 一行**（结论 + 来源项目/日期），不要求新页、不要求成文；非敏感结论不触发脱敏五步。一行也算回流。
+- **memory→wiki 蒸馏（审计惯例）**：每轮入会审计跑 `diff_memory_log.py` 并**消费**其 promote-candidate 分类；逐日 session memory 结论落 wiki 后合并为项目编年条（memory=容量有限的工作记忆，wiki=按需检索的长期记忆）。首例：2026-08-18 UWAcomm 12 条并 1 + 4 concept 页蒸馏。
 - 硬工序：`specs/active/<slug>.md` → `plans/active/<slug>.md`（如复杂）→ code → archive；跨 Agent / 跨会话时补 `handoff/active/<slug>.md`
 
 ## 7. 跨项目反向工程约定
@@ -124,7 +126,8 @@ Type: `feat` / `fix` / `refactor` / `docs` / `test` / `chore` / `perf` / `ci`
 
 ## 9. 私人项目约定
 
-🔒 标记的项目均为**私人 / 内网项目**，不公开。范围（见 `D:\Claude\CLAUDE.md` 项目清单）：
+🔒 标记的项目均为**私人 / 内网项目**，不公开。范围（见 `D:\Claude\CLAUDE.md` 项目清单）。
+**「git 状态」列只记性质口径（私人/内网/涉密/禁远程）**；hash / dirty / 远程同步的**实时事实以 [[../topics/ecosystem-dashboard]] 的 AUTO-GIT-SNAPSHOT 脚本区块为准**（2026-08-18 起，本表不再逐行手追 git 状态）。2026-08-18 起本地单点仓逐步预配内网 gitlab 远程作备份轨（`backup_push.py`）：
 
 | 项目 | 性质 | git 状态 |
 |------|------|---------|
@@ -149,13 +152,13 @@ Type: `feat` / `fix` / `refactor` / `docs` / `test` / `chore` / `perf` / `ci`
 | `TechReq/USBL_hw` 🔒 | 私人（USBL 硬件设计，engineering-hardware） | 内网 gitlab |
 | `TechReq/SonarFOM` 🔒 | 私人（声呐效能 FOM 品质因数表计算） | 本地 main，无远程 |
 | `TechReq/EnvDataClassify` 🔒 | 私人（环境数据分类：声速剖面/水文自动分类） | 本地 main，无远程 |
-| `Patents` 🔒 | 私密专利交底书 | **无 git** |
+| `Patents` 🔒 | 私密专利交底书 | 本地 git `53bd96d`，**禁远程** |
 
 ### 红线
 
 - ❌ 禁止 push 到任何公开远程仓库
 - ❌ 禁止 `/promote-answer` 把原文回流到 Hub 公开 wiki
-- ❌ `Patents/` 无 git：禁止 `git init` / 引入版本追踪（避免泄露草稿历史）
+- ❌ `Patents/` 仅限**本地** git（2026-06-29 用户授权 init `53bd96d`，此前「无 git」红线随之更新）：禁止配置任何远程 / push（含内网 gitlab，避免泄露交底书草稿历史；备份走本地 bundle 轨 `backup_push.py --bundle`）
 - ✓ `<private>` 标签强制拦截（`check_private_tags.py`）
 
 ### 脱敏 promote 的具体步骤

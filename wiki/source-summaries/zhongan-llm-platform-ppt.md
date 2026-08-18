@@ -46,3 +46,4 @@ source_type: slides
 
 - 其「辅助开发 + RAG + 工作流 + Agent」四能力与本 Hub 的 Claude Code 体系（[[../agents/claude-codex-collaboration]]）同构，可作**内网国产化替代方案的对标参照**（昇腾 910B + 国产开源模型 vs 外网 Claude）。
 - 水下任务场景（目标定位解算 / 区域探测 / 协同处置）与 [[../concepts/underwater-acoustic-communication]]、UWAcomm_usbl / CooperativeDetection 项目方向重叠——潜在竞对或合作方画像。
+- 同组对标：[[deepseek-ai-deepseek-harness]]（开源 agent harness，内网国产化底座的「自建」路线 vs 本方案的「采购」路线）。

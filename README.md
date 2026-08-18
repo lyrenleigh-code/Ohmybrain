@@ -45,8 +45,8 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | MCP Entities（MCP 图谱投影） | 25 | `wiki/mcp-entities/` |
 | Topics（专题页） | **5** | `wiki/topics/`（含 ecosystem-dashboard / harness-resources / memory-index / core-update-queue / research-map） |
 | Explorations（探索页） | 4 | `wiki/explorations/` |
-| Source Summaries（资料摘要） | 31 | `wiki/source-summaries/` |
-| 自动化脚本 | 24 | `scripts/` |
+| Source Summaries（资料摘要） | 34 | `wiki/source-summaries/` |
+| 自动化脚本 | 25 | `scripts/` |
 
 ---
 
@@ -90,7 +90,8 @@ ohmybrain（本仓库 = 知识库 + Hub）
 
 ### DocProcess 私人文档项目（非 git 仓库）
 
-托管于本地 `D:\Claude\DocProcess\`，不入 git/远端：
+托管于本地 `D:\Claude\DocProcess\`（2026-08-18 起逐步预配内网 gitlab 远程作备份轨）。
+**本表为历史节选，非全量**——项目现状以 [[wiki/topics/ecosystem-dashboard]]（含脚本生成 git 快照区块）为准：
 
 | 项目 | 派生 | 焦点 |
 |------|------|------|
@@ -98,7 +99,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | **CooperativeDetection** 🔒 | 2026-05-08 | 水下分布式协同探测 4 专题 12 课题（≈ 2400 万元）|
 | **PaperReview** 🔒 | 2026-05-09 | 学位论文外审（中文论文中文评审意见）|
 | **DigitalTwinGuide** 🔒 | 2026-05-13 | 数字孪生实施指南方法论（首份种子=20 吨级 AUV 课题指南）|
-| **DigitalTwin1plusN** 🔒 | 2026-05-25 | 「1+N」水下集群数字孪生体系方案（1 百吨大 U + 24 一吨小 U，双层孪生）|
+| **DigitalTwin1plusN** 🔒 | 2026-05-25 | 「1+N」水下集群数字孪生体系方案——**2026-08-18 用户删除工作区已退役（ADR-041）** |
 | **VisioForge** 🔒 | 2026-06-02 | 通用 Visio 出图工作区（为各项目按需产 .vsdx，复用 flowgen-* 8 skill）|
 | **CooperativeASW** 🔒 | 2026-06-03 | UWAprojDoc「编队协同探潜配置仿真与效能评估分系统」单列细化 docx（17 章 223k 字 / 24 图 / 969KB，DEPENDS_ON=UWAprojDoc）|
 
