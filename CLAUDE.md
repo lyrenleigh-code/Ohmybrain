@@ -54,7 +54,6 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | CooperativeDetection 🔒 | 私人，不公开 | `D:\Claude\DocProcess\CooperativeDetection` |
 | PaperReview 🔒 | 私人，不公开 | `D:\Claude\DocProcess\PaperReview` |
 | DigitalTwinGuide 🔒 | 私人，不公开 | `D:\Claude\DocProcess\DigitalTwinGuide` |
-| DigitalTwin1plusN 🔒 | 私人，不公开 | `D:\Claude\DocProcess\DigitalTwin1plusN` |
 | VisioForge 🔒 | 私人，不公开 | `D:\Claude\DocProcess\VisioForge` |
 | CooperativeASW 🔒 | 私人，不公开 | `D:\Claude\DocProcess\CooperativeASW` |
 | papers 🔒 | 私人，不公开 | `D:\Claude\DocProcess\papers` |
@@ -66,6 +65,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | ImgSonarTwin 🔒 | 私人，不公开（本地 main，无远程） | `D:\Claude\DocProcess\ImgSonarTwin` |
 | AUVProposal 🔒 | 私人，不公开（本地 main，无远程） | `D:\Claude\DocProcess\AUVProposal` |
 | AUVSurvey 🔒 | 私人，不公开（本地 main，无远程） | `D:\Claude\DocProcess\AUVSurvey` |
+| CoupledMultiOrder 🔒 | 私人，不公开（本地 main `401b4b4`，无远程） | `D:\Claude\DocProcess\CoupledMultiOrder` |
 | FlowGen | 私人，不公开 | `D:\Claude\Tools\FlowGen` |
 | IconForge | 私人，不公开 | `D:\Claude\Tools\IconForge` |
 | AnthropicPPT | 私人，不公开（2026-06-24 降级=FIELDBOOK 设计源+归档，ADR-030）| `D:\Claude\Tools\AnthropicPPT` |

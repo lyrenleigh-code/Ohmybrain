@@ -3,6 +3,32 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-08-18] 入会审计（十五）| DigitalTwin1plusN 退役（ADR-041 首例，活跃 30→29）+ 8 处 dimension-C 漂移收口 + CANON 95→108 级联 + ingest 中安智能 PPT
+
+距上轮检阅（十四，07-18）**31 天最长间隙**，用户显式要求审计（「应该很久没有更新 ohmybrain 了」）。机检起点：lint 过 / `--check` 报 16 处 CANON stale。
+
+**① DigitalTwin1plusN 退役登记（ADR-041，体系首例）**：dimension-C 全仓 git-HEAD sweep（32 仓）发现 `DocProcess/DigitalTwin1plusN` 目录整体消失（Archive/ 无踪、全盘无匹配；本地 git 12 commit 无远程随之移除）。**用户确认系本人删除**（「这个项目删除了，去掉就可以」）。收口：root/Hub/DocProcess CLAUDE.md 行删除 + `projects/digitaltwin1plusn/` 导航卡删除（32→31）+ dashboard 🗑️ 墓碑行 + system-overview 实例表删行/活跃行加「已退役」注/projects 树 32→31 + conventions §9 删行 + ImgSonarTwin/VisioForge 依赖括注 + memory `project_digitaltwin1plusn_init` 退役注（文件保留计数不变）+ MEMORY.md 行刷新。**历史记录逐字不动**（ADR-019 / roadmap 05-25 行 / log 历史条目）。CANON 级联 **活跃 30→29 / DocProcess×17→×16**。
+
+**② 8 处 dimension-C 漂移收口**（07-18 后 5 次派生间隙各项目自行推进）：UWAcomm `ba03e8a`(05-16 口径)→`5df75c8`(08-03，7 体制 + S2C Phase 1 + 07-13/15/21 三 session + streaming P5 修复) / USBL_hw `293f241`→`eb7252a`(07-17 两批快照归档，dirty=6) / SonarFOM +`9456931`(08-12 通信信道场计算) / AUVProposal `5045b3`→`58c44b8`(08-16 SPEC-021~026 重迭代 + 0816 修订版成稿，dirty=8；08-17 汉江构型六舱段 session) / AUVSurvey `544bc38`→`6a79e02`(07-25 SPEC-002 + 15 PDF，dirty=10) / **CoupledMultiOrder 整行口径翻新**（「git 未 init/方向待细化/撰写未启动」→ 08-07 init `401b4b4` + 方向定为**智能艇群阶跃式协控** + 汇报 PPT 59 页 V5→V10 + 解说词管线 + SPEC-001~004；root/Hub/DocProcess CLAUDE.md + conventions + 导航卡 + roadmap 后续注全刷）/ ImgSonarTwin 🔴 刚派生→🟢（`5300532` 07-20：初稿→成品化→Codex 复审收口）/ OceanEnvSupport `22f9aa0`→`15833b0`(07-09 同日 +1)。
+
+**③ CANON 级联收口**（07-21~08-05 五次派生「memory CANON 债」+ 间隙 memory 增量一次清）：**memory 95→108 / feedback 24→28 / project 67→76**，16 处 stale token（conventions / anti-patterns×2 / index / three-tier / dashboard / hub-as-brain×2 / memory-index，`MEMORY.md` 索引 96→109 行）+ [[topics/memory-index]] **14 指针补登**（feedback +4：verify_state / never_overwrite / ppt_autofit / docx_container；project +10：sonarfom / envdataclassify / imgsonartwin / auvproposal / auvsurvey / coupledmultiorder init + UWAcomm 07-13/15/21 session + **fieldkit 计数已含 bullet 漏列补列**）+ 新分组 6 个 + 分组小计注重写 + last-sync @2026-08-18。
+
+**④ dimension S 重算 @2026-08-18**：新标 🕸️ 5 项——UWAprojDoc（81d）/ SonarSim（75d）/ CooperativeASW（75d）/ PaperTrans（63d）/ UWCombatPlatform（53d，Codex 交接后停滞）；天数刷新 CooperativeDetection/PaperReview 101d / DigitalTwinGuide 97d；Patents dirty=93 待回访 commit 注；「阻塞非遗忘」注 CommSimSupport（等官方模板 48d）/ OceanEnvSupport（等 D1-D5 40d）；工具族 SHIPPED 稳态不标；旗舰 carve-out UWAcomm/USBL/UWAcomm_usbl/USBL_hw 维持。
+
+**⑤ ingest**：`raw/PPT/中安智能大模型及智能应用平台介绍.pptx`（36 页，07-18 挂账至今）→ [[source-summaries/zhongan-llm-platform-ppt]]——水下任务场景四层平台 + 四核心能力 + 内网 2×8 卡昇腾 910B 部署与国产模型选型（内网国产化对标参照）。**内容页 108→109 / source-summaries 32→33**。
+
+**Surface（待用户裁）**：① 未登记 repo ×3：`Tools/MetalDinoForge`（无 git，22 文件）/ `Tools/ObsidianStyleLab`（`e48dabf` 06-16）/ **`Tools/SlotForge`（新出现，无 git，18 文件）**；② Hub 两 remote（gitlab/github）均停 `3908359`（06-29），本地领先 4 commit + 本轮批次，待 push 授权；③ 多仓工作树未提交（USBL 3 / UWAnet 2 / UWAcomm_usbl 22 / Pricing 15 / VisioForge 15 / FlowGen 10 / AnthropicPPT 14 / ohmybrain-core 20，业务面属各项目）。**不新建 audit memory**（演化 [[feedback_ohmybrain_self_improvement]] 第 15 轮）。
+
+## [2026-08-05] 派生登记 | CoupledMultiOrder 派生（活跃 29→30，DocProcess×16→×17）
+
+派生 **CoupledMultiOrder** 🔒（`D:\Claude\DocProcess\CoupledMultiOrder`，template-document，多阶耦合方案文档；主交付物 docx 待定名，无依赖）：SOP §1 派生（robocopy template-document）+ CLAUDE.md/README.md 占位符全清（README 三图 + 章节表留模板占位待 SPEC-001）+ SOP §6 验证全过（placeholders / dirs / lint / validate / sync_index 0 页）。**git 未 init**（待用户授权，同 OceanEnvSupport / AUVProposal 先例）。
+
+用户已确认：项目类型 document / 英文目录名 CoupledMultiOrder / 无依赖。**业务方向未细化**——用户仅给出项目名「多阶耦合」，未说明耦合对象与文档口径；沿用 OceanEnvSupport（ADR-034）「主交付物待定也先搭架子」先例，工作区先建，方向明确后再落 SPEC-001 并回刷各登记面的占位口径。撰写未启动。
+
+**登记面（派生当日全量）**：root/Hub/DocProcess CLAUDE.md + `projects/coupledmultiorder/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + projects 树（31→32）+ 活跃项目数行 + [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-040 + [[architecture/roadmap]] 里程碑 + 本 log + auto-memory `project_coupledmultiorder_init`。
+
+**CANON 级联**：活跃项目 29→30 / DocProcess×16→×17 / ADR range ~039→~040。**存量债（不在本次范围）**：memory CANON 债 +1（本条 `project_coupledmultiorder_init`），连同既往挂账留下轮入会自检统一收口。
+
 ## [2026-07-24] 派生登记 | AUVSurvey 派生（活跃 28→29，DocProcess×15→×16）+ AUVProposal 依赖联动
 
 同 session 续（AUVProposal 派生后，用户提出先建独立调研项目）：派生 **AUVSurvey** 🔒（`D:\Claude\DocProcess\AUVSurvey`，template-document，AUV 广泛调研：国内外 AUV 型谱/技术/应用扫描；主交付物《AUV 调研报告》docx，无依赖、下游 AUVProposal）：SOP §1 派生（robocopy）+ CLAUDE.md/README.md 占位符全清（README 三图留模板占位待 SPEC-001）+ SOP §6 验证全过（placeholders / dirs / lint / validate / sync_index 0 页）。**git 未 init**（待用户授权）。用户已确认：项目名 AUVSurvey / 主交付物=调研报告 docx / AUVProposal 依赖同步改为 AUVSurvey。调研未启动，待 SPEC-001（调研范围/维度/资料源）+ raw/ 摄入。

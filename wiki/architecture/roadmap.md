@@ -13,6 +13,8 @@ tags: [roadmap, 演化, 里程碑]
 
 | 日期 | 里程碑 | 类型 |
 |------|--------|------|
+| **2026-08-18** | DigitalTwin1plusN 项目退役（用户删除工作区，体系首例退役登记；活跃 30→29 / DocProcess×17→×16） | DocProcess (ADR-041) |
+| **2026-08-05** | CoupledMultiOrder 项目派生（多阶耦合方案文档，template-document，主交付物 docx 待定名；无依赖，方向待用户细化；git 未 init 待授权）；后续：方向定为智能艇群阶跃式协控汇报，08-07 git init `401b4b4`，汇报 PPT 59 页 V5→V10 迭代 | DocProcess (ADR-040) |
 | **2026-07-24** | AUVSurvey 项目派生（AUV 广泛调研：国内外型谱/技术/应用，template-document，主交付物《AUV 调研报告》docx；无依赖、下游 AUVProposal）+ AUVProposal 依赖联动（无→AUVSurvey）；同日 SPEC-001 confirmed + 首轮 6 专题页调研落盘 + git init `544bc38` | DocProcess (ADR-039) |
 | **2026-07-24** | AUVProposal 项目派生（AUV 项目立项论证，template-document，主交付物《AUV 项目建议书》docx；DEPENDS_ON=AUVSurvey（同日 ADR-039 联动，派生时无依赖））；同日 SPEC-001 confirmed + 02-draft 初稿七章 + git init `5045bb3` | DocProcess (ADR-038) |
 | **2026-07-23** | EnvDataClassify 项目派生（环境数据分类：声速剖面/水文自动分类，MATLAB/Python，template-engineering；DEPENDS_ON=SonarFOM 🔒，git init `a7de7b2` 本地 main 无远程） | TechReq (ADR-037) |

@@ -70,7 +70,6 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 🔒 | `CooperativeDetection` | `D:\Claude\DocProcess\CooperativeDetection` | 派生 2026-05-08（水下分布式协同探测 4 专题 12 课题） |
 | 项目仓 🔒 | `PaperReview` | `D:\Claude\DocProcess\PaperReview` | 派生 2026-05-09（学位论文外审） |
 | 项目仓 🔒 | `DigitalTwinGuide` | `D:\Claude\DocProcess\DigitalTwinGuide` | 派生 2026-05-13（数字孪生项目实施指南方法论） |
-| 项目仓 🔒 | `DigitalTwin1plusN` | `D:\Claude\DocProcess\DigitalTwin1plusN` | 派生 2026-05-25（「1+N」集群数字孪生体系） |
 | 项目仓 🔒 | `VisioForge` | `D:\Claude\DocProcess\VisioForge` | 派生 2026-06-02（通用 Visio 出图工作区，复用 flowgen-* 8 skill） |
 | 项目仓 🔒 | `CooperativeASW` | `D:\Claude\DocProcess\CooperativeASW` | 派生 2026-06-03（UWAprojDoc 编队协同探潜分系统单列细化 docx，DEPENDS_ON=UWAprojDoc） |
 | 项目仓 🔒 | `PaperTrans` | `D:\Claude\DocProcess\PaperTrans` | 派生 2026-06-15（外文论文英译中翻译工作区，template-document，一篇=一spec=一译稿，手动模式 🔒） |
@@ -78,9 +77,10 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 🔒 | `UWCombatPlatform` | `D:\Claude\DocProcess\UWCombatPlatform` | 派生 2026-06-25（水下作战试验平台建设方案+报价，template-document，全链条 6 模块，DEPENDS_ON=UWAcomm/SonarSim/USBL 🔒，初稿 6/26） |
 | 项目仓 🔒 | `CommSimSupport` | `D:\Claude\DocProcess\CommSimSupport` | 派生 2026-07-01（通信机仿真使用支持立项申报书，template-document，DEPENDS_ON=UWAcomm 🔒，git 未 init；本行 2026-07-18 补登——07-09 commit 仅更计数行漏实例表） |
 | 项目仓 🔒 | `OceanEnvSupport` | `D:\Claude\DocProcess\OceanEnvSupport` | 派生 2026-07-09（海洋环境数据作战保障方案文档，template-document，DEPENDS_ON=UWAprojDoc/CooperativeDetection 🔒，本地 main `22f9aa0`；本行 2026-07-18 补登——同上） |
-| 项目仓 🔒 | `ImgSonarTwin` | `D:\Claude\DocProcess\ImgSonarTwin` | 派生 2026-07-18（图像声呐数字孪生方案文档，template-document，DEPENDS_ON=DigitalTwinGuide/DigitalTwin1plusN 🔒，本地 main 无远程） |
+| 项目仓 🔒 | `ImgSonarTwin` | `D:\Claude\DocProcess\ImgSonarTwin` | 派生 2026-07-18（图像声呐数字孪生方案文档，template-document，DEPENDS_ON=DigitalTwinGuide/DigitalTwin1plusN 🔒（后者 2026-08-18 已退役，ADR-041），本地 main 无远程） |
 | 项目仓 🔒 | `AUVProposal` | `D:\Claude\DocProcess\AUVProposal` | 派生 2026-07-24（AUV 项目立项论证，template-document，主交付物《AUV 项目建议书》docx，DEPENDS_ON=AUVSurvey 🔒，本地 main `5045bb3` 无远程） |
 | 项目仓 🔒 | `AUVSurvey` | `D:\Claude\DocProcess\AUVSurvey` | 派生 2026-07-24（AUV 广泛调研：国内外型谱/技术/应用，template-document，主交付物《AUV 调研报告》docx，无依赖、下游 AUVProposal，本地 main `544bc38` 无远程） |
+| 项目仓 🔒 | `CoupledMultiOrder` | `D:\Claude\DocProcess\CoupledMultiOrder` | 派生 2026-08-05（多阶耦合方案文档，template-document，主交付物 docx 待定名，无依赖、方向待细化，**git 未 init**） |
 | **Tools/** | | | **跨项目工具** |
 | 项目仓 | `FlowGen` | `D:\Claude\Tools\FlowGen` | 派生 2026-04-23（自然语言→Visio/Mermaid 出图工具族；flowgen-* Visio skill 活跃，Mermaid 主入口未实装） |
 | 项目仓 | `IconForge` | `D:\Claude\Tools\IconForge` | 派生 2026-05-29（自然语言→图标 SVG，未实装） |
@@ -318,8 +318,8 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 
 | 指标 | 数值 | 说明 |
 |------|------|------|
-| **Hub wiki 页数** | 108 | concepts 20 + entities 8 + source-summaries 32 + mcp-entities 25 + explorations 4 + topics 5 + architecture 12 + agents 1 + workflows 1 + comparisons 0（详见 `wiki/index.md`） |
-| **活跃项目数** | 29 | TechReq×8（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒 / USBL_hw🔒 / SonarFOM🔒 / EnvDataClassify🔒）+ DocProcess×16（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / DigitalTwin1plusN / VisioForge / CooperativeASW / PaperTrans / UWAcommTrial / UWCombatPlatform / CommSimSupport / OceanEnvSupport / ImgSonarTwin / AUVProposal / AUVSurvey，全 🔒）+ Tools×4（FlowGen / IconForge / AnthropicPPT / FieldKit）+ Patents🔒（papers 未正式登记，见 [[../topics/core-update-queue]] / decision-log 待裁）；**第三方 vendored 不计**：ppt-master（`Tools/ppt-master`，ADR-030）|
+| **Hub wiki 页数** | 109 | concepts 20 + entities 8 + source-summaries 33 + mcp-entities 25 + explorations 4 + topics 5 + architecture 12 + agents 1 + workflows 1 + comparisons 0（详见 `wiki/index.md`） |
+| **活跃项目数** | 29 | TechReq×8（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒 / USBL_hw🔒 / SonarFOM🔒 / EnvDataClassify🔒）+ DocProcess×16（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / VisioForge / CooperativeASW / PaperTrans / UWAcommTrial / UWCombatPlatform / CommSimSupport / OceanEnvSupport / ImgSonarTwin / AUVProposal / AUVSurvey / CoupledMultiOrder，全 🔒）+ Tools×4（FlowGen / IconForge / AnthropicPPT / FieldKit）+ Patents🔒（papers 未正式登记，见 [[../topics/core-update-queue]] / decision-log 待裁）；**第三方 vendored 不计**：ppt-master（`Tools/ppt-master`，ADR-030）；**已退役**：DigitalTwin1plusN（2026-08-18 用户删除工作区，ADR-041）|
 | **模板 skill 数** | 5 | ingest/plan/implement/lint/promote-answer（core + 下游继承） |
 | **全局 skill（Hub 用）** | 1 | `llm-wiki`（`paths: wiki/**` 自动激活） |
 | **wiki-ingester agent** | 2 副本 | 全局 `~/.claude/agents/`（invocable，2026-05-12 起）+ 项目本地（契约源头 + git 跟踪） |

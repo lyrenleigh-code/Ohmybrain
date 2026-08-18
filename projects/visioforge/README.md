@@ -33,7 +33,7 @@
 
 ## 关联
 
-- 同目录其他子项目：`Pricing` / `UWAprojDoc` / `CooperativeDetection` / `PaperReview` / `DigitalTwinGuide` / `DigitalTwin1plusN`
+- 同目录其他子项目：`Pricing` / `UWAprojDoc` / `CooperativeDetection` / `PaperReview` / `DigitalTwinGuide` / `DigitalTwin1plusN`（已退役 2026-08-18）
 - 下游消费方：任何需要 Visio 图件的项目（UWAcomm_usbl / UWAprojDoc / DigitalTwin* 等）
 - 详见：`D:\Claude\DocProcess\CLAUDE.md`
 

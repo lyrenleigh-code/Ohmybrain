@@ -12,7 +12,7 @@ tags: [memory, 索引, auto-memory]
 
 > 不复制 memory 完整内容（避免双写），本页只索引 + 简短描述 + link 到 memory 文件。
 
-> **计数口径（@2026-07-11）**：auto-memory 共 **95 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 96 个 `.md`）。分布：user **1** / feedback **24** / project **67** / reference **3**。下方各类型标题计数与此严格一致。
+> **计数口径（@2026-08-18）**：auto-memory 共 **108 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 109 个 `.md`）。分布：user **1** / feedback **28** / project **76** / reference **3**。下方各类型标题计数与此严格一致。
 >
 > 注：`MEMORY.md` 索引行中「flowgen-vsdx M5 升级」一条指向 `~/.claude/skills/flowgen-vsdx/SKILL.md`（skill 文件，**非 memory 条目**），不计入总数。
 
@@ -22,7 +22,7 @@ tags: [memory, 索引, auto-memory]
 
 - [user_profile](../../../../../zazn/.claude/projects/D--Claude/memory/user_profile.md) — UWA 研究者 / MATLAB 主力 / Windows+bash / 中文 / 专家主导 / 并行优先
 
-### feedback（行为指导 · 24 条）
+### feedback（行为指导 · 28 条）
 
 按主题分组：
 
@@ -52,8 +52,12 @@ tags: [memory, 索引, auto-memory]
 - `feedback_project_local_agent_not_invocable` — 项目 .claude/agents/*.md 不在 subagent_type 列表
 - `feedback_subagent_write_permission` — 后台 subagent Write/Bash 常被拒，主会话代写
 
-**Ohmybrain / 文档工作流（8）**
+**Ohmybrain / 文档工作流（12）**
 - `feedback_ohmybrain_workflow` — 硬工序 `specs→plans→discussion→code`
+- `feedback_verify_state_before_citing` — 引用状态前先核验仓库（不引用交接单等快照文档的过时数字）
+- `feedback_never_overwrite_user_edits` — **强约束**：用户手改产物不可覆盖，生成前必检 mtime（AUVProposal 两次覆盖教训，2026-07 新增）
+- `feedback_ppt_autofit_growth` — PPT autofit 框会长高压人：改文案判据看「长高后底边净距」，收尾跑逐行 diff（2026-08 新增）
+- `feedback_docx_container_rebuild` — Word 报损坏但包结构无缺失＝容器问题，移植 python-docx 干净容器可救（2026-08 新增）
 - `feedback_ohmybrain_self_improvement` — 进入 Ohmybrain 项目第一件事 = 完善自己（2026-05-24 新增）
 - `feedback_sync_to_core_lessons` — /sync-to-core 首次实战：queue 须先 diff 再决定（2026-05-24 新增）
 - `feedback_doc_visual_diversification` — 流程图不能统一布局换数据
@@ -62,11 +66,11 @@ tags: [memory, 索引, auto-memory]
 - `feedback_flowgen_palette_full_persist` — flowgen 默认配色更新需 4 处完整固化：.py 默认 + SKILL 正文 + frontmatter + 项目副本（2026-07 新增）
 - `feedback_visio_headless_orphan_lock` — flowgen 渲染 SaveAs 报 [只读] = headless COM 孤儿进程占锁，仅杀无窗口标题者再重渲（2026-07 新增）
 
-### project（项目状态 · 67 条）
+### project（项目状态 · 76 条）
 
 按项目分组：
 
-**UWAcomm（19）**
+**UWAcomm（22）**
 - `project_uwacomm` — 6-scheme UWA sim 稳定画像（路径 / 模块 / 工作流 / wiki）
 - `project_uwacomm_2026-04-23_session` — 14 commit 收尾
 - `project_uwacomm_2026-04-24_session` — SC-TDE V5.4 / DSSS V1.2 audit / SC-FDE sps+GAMP
@@ -86,6 +90,9 @@ tags: [memory, 索引, auto-memory]
 - `project_uwacomm_sctde_cfo_rca` — SC-TDE+DSSS CFO RCA 闭环
 - `project_uwacomm_scfde_phase3b2` — SC-FDE Phase 3b.2 归档
 - `project_uwacomm_linux_engineering_audit` — Linux 工程化四路核验（唯一硬阻塞 = 18 个 PoolTest 硬路径 + 三线分岔盘点，交接单已给 Codex，2026-07-09 新增）
+- `project_uwacomm_2026-07-13_session` — 逐模块校验战役（01-03 收口）+ ChannelDemo 演示+外发包（2026-07-13 新增）
+- `project_uwacomm_2026-07-15_session` — S2C 第 7 体制 Phase 1 全通 + OTFS 公共链接入（2026-07-15 新增）
+- `project_uwacomm_2026-07-21_session` — Codex 版本三路审查（0 CRIT/HIGH）+ Jakes 基准逐 seed 复现，项目暂停待办 5 项（2026-07-21 新增）
 
 **UWAcomm_usbl（13）**
 - `project_uwacomm_usbl_init` — 项目初始化
@@ -118,8 +125,8 @@ tags: [memory, 索引, auto-memory]
 **DocProcess / DigitalTwinGuide（1）**
 - `project_digitaltwinguide` — DigitalTwinGuide 初始化（数字孪生方法论文档）
 
-**DocProcess / DigitalTwin1plusN（1）**
-- `project_digitaltwin1plusn_init` — 「1+N」水下集群数字孪生体系（1 大 U + 24 小 U，双层孪生，P1-P11 决议，7 commit，2026-05-25 新增）
+**DocProcess / DigitalTwin1plusN（1，项目已退役）**
+- `project_digitaltwin1plusn_init` — 「1+N」水下集群数字孪生体系（1 大 U + 24 小 U，双层孪生，P1-P11 决议，2026-05-25 新增；**项目工作区 2026-08-18 用户确认删除退役**）
 
 **DocProcess / VisioForge（1）**
 - `project_visioforge_init` — 通用 Visio 出图工作区（复用 flowgen-* 8 skill，6 张 SN 效能预报图 1:1 复刻 + replica_lib2.py，2026-06-02 新增）
@@ -142,6 +149,18 @@ tags: [memory, 索引, auto-memory]
 **DocProcess / OceanEnvSupport（1）**
 - `project_oceanenvsupport_init` — OceanEnvSupport 派生（海洋环境数据作战保障方案，月尺度预报核心资产，F-1 六分系统架构落 wiki/topics，等 D1-D5 决断，2026-07-09 派生）
 
+**DocProcess / ImgSonarTwin（1）**
+- `project_imgsonartwin_init` — ImgSonarTwin 派生（图像声呐数字孪生方案，ADR-035；07-18 全文初稿 → 07-19 成品化 build_docx 管线，剩 Codex 审计 + 用户全文审，2026-07-18 派生）
+
+**DocProcess / AUVProposal（1）**
+- `project_auvproposal_init` — AUVProposal 派生（AUV 项目立项论证《AUV 项目建议书》docx，依赖 AUVSurvey，ADR-038；08-17 汉江构型舱段重划 SPEC-026 六舱段定案，2026-07-24 派生）
+
+**DocProcess / AUVSurvey（1）**
+- `project_auvsurvey_init` — AUVSurvey 派生（AUV 广泛调研，下游 AUVProposal，ADR-039；SPEC-001+6 专题页 + SPEC-002 型制深化 + 15 PDF 入库，门槛=型谱清单用户增删，2026-07-24 派生）
+
+**DocProcess / CoupledMultiOrder（1）**
+- `project_coupledmultiorder_init` — CoupledMultiOrder 派生（多阶耦合智能艇群阶跃式协控，ADR-040；主交付物=汇报 PPT 59 页 V5→V6 克制修订 + 解说词 + 补充说明 docx，2026-08-05 派生）
+
 **Patents（1）**
 - `project_patents_2026-06-29` — 4 候选模板化重构 + 首次本地 git init（53bd96d 仅本地无远程；07-11 检阅时实际已 6 候选目录）
 
@@ -150,6 +169,12 @@ tags: [memory, 索引, auto-memory]
 
 **TechReq / SonarSim（1）**
 - `project_sonarsim_init` — 主动声呐界面仿真 MATLAB（SPEC-001 跑通单发同频干扰混响强度图 + 接声呐方程，2026-06-03 新增）
+
+**TechReq / SonarFOM（1）**
+- `project_sonarfom_init` — SonarFOM 派生（声呐效能 FOM 品质因数表计算，依赖 SonarSim，ADR-036，git init `fb00819`，2026-07-21 派生）
+
+**TechReq / EnvDataClassify（1）**
+- `project_envdataclassify_init` — EnvDataClassify 派生（海洋环境数据分类：声速剖面/水文，依赖 SonarFOM，ADR-037，git init `a7de7b2`，2026-07-23 派生）
 
 **Tools 系（9）**
 - `project_flowgen_init` — FlowGen 初始化
@@ -160,6 +185,7 @@ tags: [memory, 索引, auto-memory]
 - `project_anthropic_ppt_init` — AnthropicPPT 初始化（2026-05-23）
 - `project_iconforge_init` — IconForge 初始化（自然语言→图标 SVG，派生后暂停，2026-05-29）
 - `project_ppt_master_adoption_2026-06-24` — 采纳 ppt-master(30.8k★ MIT)作通用 PPT 引擎 + FIELDBOOK 迁 brand/deck 模板 + AnthropicPPT 降级（Plan A，ADR-030，**第三方 vendored 不计活跃项目**，2026-06-24 新增）
+- `project_fieldkit_init` — FieldKit 派生（校准场/Calibration Field 图示风格系统，共享 kit + HTML 生成器 v1 + styled_diagram v2，ADR-027/028，2026-06-15 新增；此前计数已含、bullet 漏列，2026-08-18 补列）
 
 **Ohmybrain Hub（7）**
 - `project_ohmybrain_ecosystem` — 三仓架构 + Obsidian vault + 关键约定
@@ -170,7 +196,7 @@ tags: [memory, 索引, auto-memory]
 - `project_ohmybrain_2026-06-24_audit6` — 入会自检（六）：5 维 workflow 审计（44 agent / 33 confirmed / 1 refuted）+ PaperTrans 补登（dashboard/system-overview/memory-index/ADR-029）+ USBL_hw 进展刷新（→c7c07da/71 commit）+ CANON 级联（skills 31→32 / memory 81→83）+ CooperativeDetection/PaperReview 标 🕸️（2026-06-24 新增）
 - `project_ohmybrain_ccppt_v16` — CC 方法论 PPT v16 定稿（63 页终版，内网章 + 案例实证化，md→Edge 截图管线 / docx 抽图 / 锁冲突旁路换入，2026-07-04 新增）
 
-> 注：`project_uwacomm`（含 13 条 session 条）+ `project_uwacomm_usbl`（含 13 条）+ `project_uwaprojdoc`（含 3 条）等高频项目的多日 session 条目均计入上方分组，加 Tools 系 7 + VisioForge/CooperativeASW/SonarSim/USBL_hw/PaperTrans/UWAcommTrial/UWCombatPlatform 各 1 + Ohmybrain Hub session 3 条（2026-06-09 / 2026-06-10 / 2026-06-24）+ Tools 系 +1 FieldKit +1 ppt-master，加 2026-07 批次 +6（UWAcomm Linux 核验 / Hub ccppt_v16 / CommSimSupport / OceanEnvSupport / Patents 06-29 / 2026H1 个人总结），合计 67。
+> 注：各分组小计（@2026-08-18）：UWAcomm 22 + UWAcomm_usbl 13 + USBL 2 + UWAprojDoc 4 + PaperReview/DigitalTwinGuide/DigitalTwin1plusN(退役)/VisioForge/CooperativeASW/PaperTrans/UWAcommTrial/UWCombatPlatform/CommSimSupport/OceanEnvSupport/ImgSonarTwin/AUVProposal/AUVSurvey/CoupledMultiOrder 各 1（计 14）+ Patents 1 + 个人/HR 1 + SonarSim/SonarFOM/EnvDataClassify 各 1（计 3）+ Tools 系 9 + Ohmybrain Hub 7 = **76**。
 
 ### reference（参考 · 3 条）
 
@@ -277,7 +303,7 @@ UWAcomm_usbl calibration 分支 poolData/ 实测数据 DOA 估计与阵列校准
 - memory 是**主动**沉淀（每会话产生新条目）
 - Hub wiki 是**被动**索引（季度更新本页同步）
 - 不双向同步 — memory 是事实源，wiki 是索引视图
-- **last-sync: 2026-07-11**（计数已对齐 CANON：feedback 24 / project 67 / reference 3 / user 1 / 总 95）
+- **last-sync: 2026-08-18**（计数已对齐 CANON：feedback 28 / project 76 / reference 3 / user 1 / 总 108；本轮补登 14 条漏列指针：feedback +4 / project +10 含 fieldkit 漏列 bullet）
 
 ## 相关页面
 

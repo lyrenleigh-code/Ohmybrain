@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-07-24
+updated: 2026-08-05
 tags: [ADR, 决策, log]
 ---
 
@@ -11,9 +11,54 @@ tags: [ADR, 决策, log]
 
 最新在上。
 
-> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-039（含 ADR-031/032/033 追溯）。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
+> **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-041（含 ADR-031/032/033 追溯）。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
 >
 > **编号约定**：ADR 编号为 **append-only 稳定 ID**（按登记顺序递增、不复用、不重排）；表按**事件日期降序**排列。绝大多数情况下编号降序 == 日期降序，但 retroactive 追溯条目（如 ADR-025 事件 2026-06-04、2026-06-09 登记）会出现编号与位置不严格对应——这是为避免重编号引发跨页引用级联失效（教训见 [[../log]] 2026-05-29）而做的取舍。
+
+---
+
+## ADR-041 · 2026-08-18 · DigitalTwin1plusN 项目退役（体系首例项目退役登记）
+
+### 触发
+
+入会审计（十五）dimension-C 全仓 git-HEAD sweep 发现 `D:\Claude\DocProcess\DigitalTwin1plusN` 目录已不存在（Archive/ 无踪、全盘无匹配）。**用户确认系本人删除**（「这个项目删除了，去掉就可以」）。该仓为本地 git 无远程（12 commit，v0-v5 可研报告 docx 已于 2026-05-25 交付），删除即历史一并移除。
+
+### 决策
+
+**退役登记**（体系首例）：从活跃项目清单移除（活跃 30→29 / DocProcess×17→×16），登记面全量去除或加退役注：root/Hub/DocProcess CLAUDE.md 行删除、`projects/digitaltwin1plusn/` 导航卡删除、dashboard 状态行改 🗑️ 退役墓碑、system-overview 实例表行删除 + 活跃项目数行加「已退役」注、conventions §9 行删除。**历史记录逐字不动**（ADR-019 派生记录 / roadmap 里程碑 / log 历史条目保留）；auto-memory `project_digitaltwin1plusn_init` 保留并加退役注（memory 计数不变）。
+
+下游依赖注记：ImgSonarTwin DEPENDS_ON 含 DigitalTwin1plusN（方案参照）——各登记面依赖括注「已退役」，ImgSonarTwin 自身不受阻（参照性依赖，成稿已完成）。
+
+### 后果
+
+- ✓ 登记面与磁盘现实一致；活跃 29 与机检 ground-truth（导航卡 31−2）对齐。
+- ⚠ 该项目 12 commit 本地历史随目录删除不可恢复（交付物 docx 若用户另存则在 git 外）。
+- ⚠ 体系新增「退役」生命周期状态先例：退役 = 移出活跃计数 + 墓碑行保留追溯，与「归档」（Archive/ 保留目录）区分。
+
+---
+
+## ADR-040 · 2026-08-05 · CoupledMultiOrder 项目派生（DocProcess，多阶耦合方案文档）
+
+### 触发
+
+用户提出新建项目「多阶耦合」。经确认：主交付物为 docx 方案/报告（document 类）、英文目录名 `CoupledMultiOrder`、无依赖。**具体业务方向（多阶耦合指向哪类对象/问题）用户尚未细化**，本轮只建受管工作区。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/CoupledMultiOrder` 🔒（**git 未 init 待授权**，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=无。DocProcess 第 17 个正式登记子项目。
+
+沿用 OceanEnvSupport（ADR-034）先例：**主交付物待定也先搭架子**，方向明确后再落 SPEC-001，不因方向未定推迟工作区建立。
+
+### 实现
+
+- SOP §1 派生（robocopy template-document）+ CLAUDE.md/README.md 占位符全清（README 三图 + 章节表留模板占位待 SPEC-001）+ SOP §6 验证全过（placeholders / dirs / lint / validate / sync_index 0 页）。
+- 登记面（派生当日全量）：root / Hub / DocProcess CLAUDE.md + `projects/coupledmultiorder/` 导航卡 + dashboard 状态行 + system-overview 实例表/projects 树 + conventions §9 + 本 ADR + roadmap 里程碑 + auto-memory `project_coupledmultiorder_init` + log；CANON 级联 **活跃 29→30 / DocProcess×16→×17 / ADR range ~039→~040**。
+
+### 后果
+
+- ✓ 「多阶耦合」有受管工作区，raw/ 可即刻投料，wiki/topics 可承接方向议题。
+- ⚠ 项目描述当前为占位口径（「方向待细化」），用户明确后需回刷各登记面（同 OceanEnvSupport「主交付物待定」先例）。
+- ⚠ git 未 init（待用户授权）；memory CANON 债 +1（`project_coupledmultiorder_init`）留下轮入会自检收口。
 
 ---
 
