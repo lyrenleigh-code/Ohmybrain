@@ -3,6 +3,33 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-08-24] 入会审计（十六）| dimension-C 漂移收口 2+2 + dimension S 重算（新踩阈 3 项判阻塞注记）——机检零 CANON 债
+
+距十五 6 天，用户显式要求审计（符合 06-30 降级为「按需」的纪律）。本轮机检基线全绿：`--check` 静默 / memory 97（user 1 + feedback 28 + project 65 + reference 3）与 CANON 全一致，**无计数级联债**——问题集中在 dimension C/S。AUTO 快照 `--gen` 重打见同日「基建」条（本 session 执行，另 session 已代登记）。
+
+**dimension C（git 漂移收口，dashboard 手写行）**：
+- **UWAcomm**：`5df75c8`（08-03，codex/p6-closure 分支口径）→ **main `b66c918`（08-23）**——三体制服务工程化收官：DSSS/FH-MFSK/S2C 服务 L1-L4 + C1-C5 校验 + 收官文档，spec/plan 归档（用户终审通过），分支回 main，dirty=0；新事实 origin 落后 23（gitlab 已同步）。
+- **AUVProposal**：`58c44b8`（08-16）→ **`15f3dba`（08-23）**，+5 commit：SPEC-027（壁 C/E 非水密+时统归平台+能源终裁，12 号图 0820 贯通版）/ SPEC-028（0821-0822 走线图重出+附件重排四件+面阵 37 元同步）/ SPEC-030（布置大挪移全链）/ SPEC-031（物料清单核对版）/ 0823 晚 W40 重号收口+术语统一+图族字号提档；dirty=10（SPEC-032 项目全生命周期文档管理规范 + 0824 交付材料包 + 仓库文档模板未提交）。
+- **手写行 stale ×2**：DigitalTwinGuide「无 commit dirty=65」/ VisioForge「首 commit 未提交」——08-18 backup_push 首 commit（`4d9746e`/`07f40cd`）后 auto 表与 index 叙事已新、**dashboard 手写行漏刷**（「部分登记」同型小例，本轮收口；DigitalTwinGuide 停滞口径改为「业务自 05-13 约 103 天」）。
+- **Hub 自身行**：自指滞后刷新 `4898937`→`6acc657`（round 9~16 结构性惯例，机械刷新）。
+
+**dimension S（@08-24 重算）**：既有 🕸️ 9 项天数 +6d；新踩 30d 阈 3 项均判「**阻塞在用户非遗忘**」入注记不标——ImgSonarTwin（07-20，35d，等用户全文审+xlsx 裁决）/ AUVSurvey（07-25，30d，等用户增删型谱清单 32→15~25）/ EnvDataClassify（07-23，32d，待 SPEC-001 讨论）。
+
+**Surface（待用户裁）**：① worktree `UWAcomm-pooltest`（`ba03e8a` 05-16，6 体制水池验证 5 实测 BER=0 已归档）未登记根 CLAUDE.md worktree 表（自检十三已 surface，仍未决）；② `D:\Claude\_impeccable_samples`（`e5927af` 06-15，疑似 FieldKit 参照样例第三方仓）未登记；③ `DocProcess/papers` 登记口径不一致（DocProcess CLAUDE.md 有列，根 CLAUDE.md 与 dashboard 状态表均无，0 commit dirty=19）；④ 存量：MetalDinoForge（无 commit dirty=24）/ SlotForge（无 git）/ ObsidianStyleLab（无远程 dirty=16）；⑤ **push 授权**：Hub 两远程 +6（停 `3908359` 06-29）/ USBL_hw gitlab+6。
+
+计数：页面总数不变 110；不新建 audit memory（第 16 轮，同 14/15 轮纪律不 append 演化条）。附带：用户问 Cowork vs Claude Code 分工——结论「hooks-harness / git 工作流 / pywin32 出图链路三硬依赖 → 主力留 Claude Code；Cowork 仅无 harness 依赖的轻量办公旁路，产物需手动归档回项目」。
+
+---
+## [2026-08-24] 基建 | dashboard git 快照例行刷新
+
+`dashboard_snapshot.py --gen` @2026-08-24 15:08 重生成 [[topics/ecosystem-dashboard]] 的
+AUTO-GIT-SNAPSHOT 区块（36 仓 HEAD/静默天数/dirty/远程列刷新）。主要变化：
+UWAcomm 分支回 `main`（`b66c918` 08-23，origin+23）/ AUVProposal→`15f3dba`（08-23，dirty 10）/
+EnvDataClassify 静默 32d 新跨阈 🕸️?。手写业务叙事行未动，页面总数不变 110。
+（AUVProposal 本日会话另有 SPEC-032 全生命周期文档管理体系落地，属项目内 wiki，
+详见该项目 `wiki/log.md`，不占 Hub 页。）
+
+---
 ## [2026-08-18] 大脑激活 | 首次 memory→wiki 蒸馏（4 concept 页「实战结论」+ UWAcomm 12 并 1）+ 查询解放 + 一行 promote 标准（审计十五优化项 5 落地）
 
 审计（十五）同日续 3。针对「wiki 是登记册多于大脑」结构性问题（根因：知识零摩擦流向 memory / query 协议锁死在 llm-wiki skill 的 wiki 路径触发里 / promote 摩擦高），三管齐下：
