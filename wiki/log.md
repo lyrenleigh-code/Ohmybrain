@@ -3,6 +3,19 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-08-29] 同日续 | 跨引擎 skill 复用最小验证通过（Claude skill 被 Codex 直接加载）
+
+承 [[source-summaries/openai-codex-harness]] 待观察第 1 条，用户批准后即办。**结论：Claude Code 的 skill 无需改写即可被 Codex 加载；单一事实源成立。**
+
+- **路径事实与文档不符**：官方文档写 `.agents/skills` 三级扫描；本机 codex-cli **0.144.0-alpha.4** 用户 skill 目录实际是 `~/.codex/skills/`（内置 6 个在 `.system/` 下），`~/.agents` 不存在。**迁移前必须现场确认路径**——文档口径不可直接采信。
+- **做法**：Windows 目录联接 `mklink /J`（免管理员；符号链接需管理员或开发者模式），把 `~/.claude/skills/tech-requirements` 挂到 `~/.codex/skills/`。选此 skill 因其 frontmatter 仅 `name`+`description`、结构为 `SKILL.md`+`assets/`+`references/`、零 Claude 专有字段。
+- **验证手段（确定性，不发模型请求）**：`codex debug prompt-input` 渲染模型可见 prompt 为 JSON，前后对比 —— 注入 skill 条目 **11 → 12**，唯一增量即 `tech-requirements`，无条目消失。
+- **关键证据**：注入行形态 `- <name>: <description> (file: <绝对路径>)`，路径显示为 `C:/Users/zazn/.claude/skills/...` 而非 `.codex` 路径 → **穿透联接读原文件，非副本**，一处维护两处生效。注入只含 name+description、正文按需加载，与 Claude Code 渐进披露同构。
+- **边界（如实）**：仅验证「被加载」，**未验证「被正确执行」**（没跑真实 MATLAB 生成任务）；`paths:` 自动触发是 Claude 扩展字段，开放标准未收录，`llm-wiki` 跨引擎必失效；flowgen 家族的 pywin32+Visio 依赖与引擎无关但其 Claude 专有调用约定未测；本次只联接 1 个，其余 31 个未逐一体检。
+
+意义：32 个 skill 资产**在「可加载」层面已从单引擎解绑**，对 [[agents/claude-codex-collaboration]] 的双 agent 分工是结构性变化——Codex 侧不再只能用它自己的内置能力。页面总数不变 112。
+
+---
 ## [2026-08-29] 入会审计（十七）| CANON 级联 14 处（审计后窗口第 5 次复发）+ dimension-C 收口 2 + 十五轮验收口径交卷（query/promote 破零）
 
 距十六 5 天，用户显式要求审计。触发面新增：本 session 装入第三方 skill `archify` + 08-26 AUVProposal session 遗留 memory 债。

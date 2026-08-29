@@ -71,10 +71,39 @@ my-skill/
 
 ## 待观察 / 下一步
 
-- **跨引擎 skill 复用实测**：取 1 个无 Claude 专有依赖的 skill（如 `tech-requirements`）软链到 `$HOME/.agents/skills` 验证 Codex 能否加载——这是把 32 skill 资产从单引擎解绑的最小验证。
+- ~~跨引擎 skill 复用实测~~ → **已验证（2026-08-29，见下节）**。
 - `worktree` / `agent-roles` / `collaboration-mode-templates` 三 crate 的实现，对照本体系交接单 + 写权互斥协议是否有可借鉴的固化方式。
 - SDK（`sdk/`）可否作为 UWAcomm 类长流程仿真的批处理编排入口（对照现有 MATLAB runner 工序）。
 - 高频迭代（当日仍在推），架构结论需定期回访。
+
+## 跨引擎 skill 复用实测（2026-08-29，本机）
+
+**结论：Claude Code 的 skill 可被 Codex 直接加载，无需改写。** 但路径与官方文档有出入，迁移前须现场确认。
+
+**路径事实**：文档写扫描 `.agents/skills` 三级；本机 codex-cli **0.144.0-alpha.4** 的用户 skill 目录实际是 **`~/.codex/skills/`**（内置 6 个在 `~/.codex/skills/.system/`：imagegen / openai-docs / plugin-creator / review-agent / skill-creator / skill-installer），`~/.agents` 不存在。**版本差异明显。**
+
+**做法**：Windows 目录联接（`mklink /J`，免管理员；符号链接需管理员或开发者模式）——
+
+```
+mklink /J "C:\Users\zazn\.codex\skills\tech-requirements" "C:\Users\zazn\.claude\skills\tech-requirements"
+```
+
+**验证手段（确定性，不发模型请求）**：`codex debug prompt-input` 把模型可见 prompt 渲染为 JSON，前后对比——
+
+| | 注入 skill 条目数 | tech-requirements |
+|---|---|---|
+| 建联接前 | 11 | 不在 |
+| 建联接后 | **12** | **在** |
+
+唯一增量即 `tech-requirements`，无条目消失。注入形态为 `- <name>: <description> (file: <绝对路径>)`，且**路径显示为 `C:/Users/zazn/.claude/skills/...` 而非 `.codex` 路径**——证明穿透联接读原文件，**单一事实源成立，非副本**。注入只含 name + description，正文按需加载——与 Claude Code 渐进披露同构。
+
+**候选条件**（本次一次通过）：frontmatter 仅 `name` + `description`；目录为 `SKILL.md` + `assets/` + `references/`；无 Claude 专有字段。
+
+**尚未验证 / 已知不可迁**：
+- 仅验证「**被加载**」，未验证「**被正确执行**」（未跑真实 MATLAB 生成任务）。
+- `paths:` 自动触发是 Claude Code 扩展字段，开放标准未收录——`llm-wiki` 跨引擎必失效。
+- flowgen 家族依赖 pywin32 + 本机 Visio COM，与引擎无关，但 SKILL.md 内的 Claude 专有调用约定未测。
+- 本次只联接 1 个，其余 31 个未逐一体检。
 
 ## 相关页面
 
