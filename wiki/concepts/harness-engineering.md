@@ -24,6 +24,10 @@ tags: [harness, agent, 工程实践, Claude Code]
 | 单一事实源 | transcript | append-only session log（model-visible means logged） | wiki index/log + CANON 机检 |
 | 按需加载指令 | skills（paths/触发词） | skill 工具 + 分层 registry | 32 全局 skill + llm-wiki paths 触发 |
 
+## 实战结论（一行 promote）
+
+- **Codex 引擎开源 = 第三个可对照 harness 数据点**：openai/codex（Rust，Apache-2.0，119.6k★）2026-08-20 起把 **app-server / exec / SDK** 一并开源，`codex-rs/` 下含 `hooks` `skills` `memories` `worktree` `agent-roles` `plugin` `sandboxing` 等 crate，与 Claude Code、[[../source-summaries/deepseek-ai-deepseek-harness]] 构成三方对照；**其 skill 走 agentskills.io 开放标准**（`SKILL.md` + `name`/`description` frontmatter，扫描 `$CWD/.agents/skills` → `$REPO_ROOT/.agents/skills` → `$HOME/.agents/skills`），与本工作区 `~/.claude/skills/` 33 个结构同构，**存在跨引擎复用可能**（archify 即同时声明支持 Claude Code 与 Codex）。— 源=openai/codex 仓树 + developers.openai.com/codex/skills，2026-08-29
+
 ## 相关页面
 
 - [[subagents-orchestration]] / [[skills-vs-commands]] / [[claude-hooks-architecture]] — Claude Code 侧机制细节

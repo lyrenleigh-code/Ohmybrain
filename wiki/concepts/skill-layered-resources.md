@@ -77,6 +77,10 @@ Ohmybrain 当前 `~/.claude/skills/llm-wiki/SKILL.md` **把所有 wiki 操作协
 - **vs Command 的动态注入**：Command 的 `` !`bash cmd` `` 可在触发时注入上下文；references 则是**Skill 自己决策加载哪个**——两种机制互补。
 - **vs 主 CLAUDE.md**：CLAUDE.md 是**仓库级**背景（永远加载），SKILL.md 是**技能级**入口（触发时加载），references 是**场景级**细节（按需加载）。三层对应三个粒度。
 
+## 实战结论（一行 promote）
+
+- **「≥2 个正交维度（风格 × 类型）才值得分层」判据获同血统实证**：[[cocoon-ai-architecture-diagram]]（1 图型 · 1 风格 · 2 文件不分层）的续作 `archify`（tt-a1i，MIT，27.6k★，v2.16）长到 **5 图型 × 4 视觉预设**后，确实分裂为 `SKILL.md` + `references/` + `schemas/` + `renderers/` 四层；同作者血统、同功能域的前后对照，比跨项目对照更强。— 源=archify 仓 `SKILL.md` frontmatter `based_on: Cocoon-AI/architecture-diagram-generator (MIT, v1.0)`，2026-08-29
+
 ## 相关概念
 
 - [[skills-vs-commands]] — Skill/Command/Agent 三机制对比（本概念是 Skill 内部的组织模式）

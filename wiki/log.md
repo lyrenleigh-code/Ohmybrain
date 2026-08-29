@@ -3,6 +3,41 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-08-29] 入会审计（十七）| CANON 级联 14 处（审计后窗口第 5 次复发）+ dimension-C 收口 2 + 十五轮验收口径交卷（query/promote 破零）
+
+距十六 5 天，用户显式要求审计。触发面新增：本 session 装入第三方 skill `archify` + 08-26 AUVProposal session 遗留 memory 债。
+
+**CANON 级联收口（14 处替换 / 8 页）**——「审计后窗口」反模式**第 5 次复发**（前 4 次：06-27 / 07-09 / 07-21 / 08-05 派生后当日漏级联）：
+- 触发源 ①：08-26 AUVProposal session 当日新增 2 条 feedback memory（`feedback_bash_heredoc_backslash` / `feedback_path_form_vs_location`）未级联 → memory 97→99 / feedback 28→30。
+- 触发源 ②：本 session 装 `archify` → 本地 skills 32→33（目录 34→35）。
+- 收口页：conventions / anti-patterns ×2 / index / three-tier / dashboard / hub-as-brain ×3 / memory-index ×2；含**非机检维度** `MEMORY.md` 索引 98→101 行、skills 目录数、memory-index 计数口径戳 @08-29。`--check` 修后静默。
+- memory-index **2 指针补登**：Claude Code Harness 组（2）→（3）、Ohmybrain/文档工作流组（12）→（13）。
+
+**dimension C（git 漂移收口，dashboard 手写行）**：
+- **AUVProposal**：`15f3dba`（08-23）→ **`b7d0921`（08-28）**，+4 commit：`4a676a2` 齐套文件目录落 `ProjectManagement/` + 已完成材料归档 66 文件 / `fe90405` SPEC-034 换能器技术规格书 V0.2 + SPEC-035 整艇软件工作流程 V0.1 / `8015dd5` raw 归档（两份换能器测试报告 + 应用场景笔记 + 声纳工作流程 V1.3） / `5280ef4` 0827 批次舱段重排 + 能源口径同步（SPEC-036）全套出图 + 过程性文件归位规则 / `c2322f8` SPEC-037 软件体系架构 + 软件流程 V0.4 + 平台板卡按方案乙回归 / `b7d0921` SPEC-038 v4 架构图改基线口径入方案 + 能源章补全 + 图源 Visio 化；dirty 10→4。
+- **Hub 自身行**：自指滞后刷新 `6acc657`→`4de5ee8`（round 9~17 结构性惯例）。
+- AUTO-GIT-SNAPSHOT `--gen` 重打 @2026-08-29 10:46（36 仓）。
+
+**dimension S（@08-29 重算）**：既有 🕸️ 天数 +5d；AUVSurvey 07-25→35d 新跨 30d 阈，**同十六轮判「阻塞在用户非遗忘」入注记不标**（门槛=用户增删型谱清单 32→15~25）；ImgSonarTwin 40d / EnvDataClassify 37d 同判维持。
+
+**新 skill `archify` 登记**：`~/.claude/skills/archify`（6.8 MB，从 main tarball 抽 `archify/` 子目录装入，未用 `npx skills add` 以免引入第三方 CLI）。JSON IR + JSON Schema → Node 渲染自包含交互 HTML（architecture / workflow / sequence / dataflow / lifecycle 五型 × classic·signal-flow·blueprint·editorial 四预设）。本轮实测（中文 UWAcomm 收发链路 10 节点）：`validate` 9/9 showcase 0 error 0 warning → `deliver` 原子交付 + spec/artifact 双 SHA-256 收据 → `visual-check` 四视口零溢出 + 明暗截图，中文与 `locale: zh-CN` Viewer UI 正常。登记面：harness-resources 分组行 + 完整清单 32→33 + 冲突标注；conventions / dashboard skills 计数。工作台落 `draft/archify/`（spec + preview.cmd + build.cmd，未跟踪）。
+
+**审计十五验收口径交卷（本轮到期，结论：Hub 定位不降级）**：十五轮立「下下轮审计数 query/promote 条目，为零则降级 Hub 定位」，十六轮为 0。**本轮破零**——回答 archify 评估前实走三层 query（[[concepts/harness-engineering]] + [[source-summaries/cocoon-ai-architecture-diagram]]），命中非平凡关联「archify 即 cocoon v1.0 同血统续作」（archify SKILL.md frontmatter `based_on` 自证），该关联直接回答了 cocoon 页 04-17 留下的悬案；随即**一行 promote ×2**：
+- [[concepts/skill-layered-resources]] +「实战结论」节——「≥2 个正交维度才值得分层」判据获**同血统前后对照**实证（1 型 1 风格 2 文件 → 5 型 4 预设 4 层）。
+- [[concepts/harness-engineering]] +「实战结论」节——**Codex 引擎 2026-08-20 开源**（openai/codex，Rust，Apache-2.0，119.6k★，app-server/exec/SDK 齐出，`codex-rs/` 含 hooks·skills·memories·worktree·agent-roles·plugin·sandboxing crate），与 Claude Code、[[source-summaries/deepseek-ai-deepseek-harness]] 成三方对照；其 skill 走 **agentskills.io 开放标准**（`SKILL.md` + name/description，扫 `.agents/skills` 三级），与本工作区 33 skill 结构同构，存在跨引擎复用可能。
+
+**Surface（仍待用户裁）**——①②③ 已于同轮办结（见下「同轮续办」）：④ `raw/PPT/` 中安智能 pptx 仍未跟踪（`draft/archify/` 工作台已被 `.gitignore:66 draft/` 覆盖，非待裁项）；⑤ 前轮存量 5 项全未决（UWAcomm-pooltest worktree / `_impeccable_samples` / `DocProcess/papers` 口径 / MetalDinoForge·SlotForge·ObsidianStyleLab / **push 授权**：Hub 两远程 +8，停 `3908359` 06-29）。
+
+**同轮续办（用户批准 b/c/d 后即办，原 surface ①②③ 转已办）**：
+
+- **(b) skill 同域冲突已裁**：`architecture-diagram` 从 `~/.claude/skills/` 退役——原件完整留存 Hub `raw/architecture-diagram-generator/`（含 `.zip`）可随时复装，故非破坏性。由 `archify` 取代（严格超集）。CANON 二次级联 skills **33→32**（目录 35→34）：conventions ×2 / dashboard / harness-resources 分组行 + 完整清单；并给 [[source-summaries/cocoon-ai-architecture-diagram]] 加**继任注**（退役事实 + 判据仍成立且已被正向实证），frontmatter `updated` 同步。
+- **(c) 机检盲区第 2 例已根治**：`dashboard_snapshot.py` `CANON_CHECKS` +1 条 —— `("wiki/topics/harness-resources.md", r"本地 (\d+) 个 SKILL.md 完整清单", "skills_local", ...)`，注释标注触发史（archify 装入 / architecture-diagram 退役两次变动均靠人工抓）。`--check -v` 验证 `[OK] wiki/topics/harness-resources.md ::本地 skill 数=32（1 处）` fire 正常。同 self-check 12「CANON 源头表补检」先例。
+- **(d) Codex harness 正式 ingest 完成**：新建 [[source-summaries/openai-codex-harness]] —— crate 分域架构表（引擎/扩展/多 agent/会话记忆/隔离安全/工程面六域）+ **skills 走 agentskills.io 开放标准**（`.agents/skills` 三级扫描，与本工作区 32 skill 结构同构，跨引擎复用可能）+ 三引擎对照表（Claude Code 闭源 / dsh MIT TypeScript / Codex Apache-2.0 Rust）+ 待观察四条（跨引擎 skill 复用最小验证 / worktree·agent-roles crate 借鉴 / SDK 作批处理编排 / 定期回访）；**口径声明**：star·许可证·crate·skills 格式已亲核，ARC-AGI-3 分数一说仅见转载稿故不作结论。
+- **顺带**：新建 [[source-summaries/tt-a1i-archify]] —— 因 codex 页正文引用它作「跨引擎活证据」形成悬挂链接，且 archify 已成常驻 harness 组件、其上游页刚退役，故补全；内容 = 血统（`based_on` 自证闭合 cocoon 04-17 悬案）+ 四机制可移植清单（schema-first IR·原子交付双 SHA-256·visual-check 恒 pending·2 轮修复终止）+ 本机实测回执 + 与 flowgen/FieldKit 定位边界。
+
+计数：内容页 **110→112**（source-summaries 34→36）/ wiki 总文件 112→114；skills **32→33→32**；三件套复核全绿（lint 过 / `--check` 静默 / sync_index 112）；不新建 audit memory（第 17 轮，同 14/15/16 轮纪律）。
+
+---
 ## [2026-08-24] 入会审计（十六）| dimension-C 漂移收口 2+2 + dimension S 重算（新踩阈 3 项判阻塞注记）——机检零 CANON 债
 
 距十五 6 天，用户显式要求审计（符合 06-30 降级为「按需」的纪律）。本轮机检基线全绿：`--check` 静默 / memory 97（user 1 + feedback 28 + project 65 + reference 3）与 CANON 全一致，**无计数级联债**——问题集中在 dimension C/S。AUTO 快照 `--gen` 重打见同日「基建」条（本 session 执行，另 session 已代登记）。

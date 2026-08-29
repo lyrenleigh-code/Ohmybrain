@@ -273,6 +273,9 @@ CANON_CHECKS: list[tuple[str, str, str, str]] = [
     ("wiki/architecture/conventions.md", r"rules (\d+) 个目录", "rules", "rules 目录数"),
     ("wiki/topics/ecosystem-dashboard.md", r"全局 skill（本地） \| \*\*(\d+)\*\*", "skills_local", "本地 skill 数"),
     ("wiki/architecture/conventions.md", r"skills 本地 (\d+) 个", "skills_local", "本地 skill 数"),
+    # self-check 17：harness-resources「完整清单」行此前不在机检 → archify 装入 / architecture-diagram
+    # 退役两次变动均靠人工 grep 抓（机检盲区第 2 例，同 self-check 12 源头表同型）
+    ("wiki/topics/harness-resources.md", r"本地 (\d+) 个 SKILL.md 完整清单", "skills_local", "本地 skill 数"),
     # --- 项目登记数（活跃项目 / DocProcess）---
     # 「部分登记」反模式连续 7 轮主犯：新项目派生后「活跃项目数 / DocProcess×N」
     # 只 bump 部分 canon 页。此前 CANON_CHECKS 不机检项目登记面（self-check 7/8 surface

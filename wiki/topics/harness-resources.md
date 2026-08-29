@@ -77,7 +77,7 @@ Skills 是 harness 中**最易误判计数**的一层，必须区分两层：
 
 **前端 / 视觉（6）**：
 - `frontend-design`（生产级前端界面）/ `web-artifacts-builder`（React+Tailwind+shadcn 复杂 artifact）/ `webapp-testing`（Playwright 测试）
-- `architecture-diagram`（暗色架构图 HTML/SVG）/ `canvas-design`（.png/.pdf 平面设计）/ `algorithmic-art`（p5.js 生成艺术）
+- `archify`（JSON IR → 可交互自包含 HTML 图，5 类型 × 4 预设 / schema 校验 / 原子交付 + 双 SHA-256 收据，2026-08-29 装入）——**取代已退役的 `architecture-diagram`**（后者即其上游 Cocoon v1.0，archify 为严格超集；原件留存 `raw/architecture-diagram-generator/` 可复装）/ `canvas-design`（.png/.pdf 平面设计）/ `algorithmic-art`（p5.js 生成艺术）
 
 **品牌 / 风格（3）**：
 - `brand-guidelines`（Anthropic 品牌色/字体）/ `theme-factory`（10 套预设主题）/ `slack-gif-creator`（Slack 动图）
@@ -91,7 +91,7 @@ Skills 是 harness 中**最易误判计数**的一层，必须区分两层：
 **其他（3）**：
 - `mcp-builder`（构建 MCP server）/ `internal-comms`（内部沟通文档）/ `llm-wiki`（wiki ingest/query/lint/promote 协议，路径触发 `wiki/**`）
 
-> 本地 32 个 SKILL.md 完整清单：algorithmic-art · anthropic-ppt · architecture-diagram · brand-guidelines · calibration-field · canvas-design · continuous-learning · continuous-learning-v2 · doc-coauthoring · docx · flowgen · flowgen-archposter · flowgen-composition · flowgen-layered · flowgen-replica · flowgen-roadmap · flowgen-sequence · flowgen-vsdx · frontend-design · internal-comms · jy-pricing · llm-wiki · mcp-builder · pdf · pptx · skill-creator · slack-gif-creator · tech-requirements · theme-factory · web-artifacts-builder · webapp-testing · xlsx。
+> 本地 32 个 SKILL.md 完整清单：algorithmic-art · anthropic-ppt · archify · brand-guidelines · calibration-field · canvas-design · continuous-learning · continuous-learning-v2 · doc-coauthoring · docx · flowgen · flowgen-archposter · flowgen-composition · flowgen-layered · flowgen-replica · flowgen-roadmap · flowgen-sequence · flowgen-vsdx · frontend-design · internal-comms · jy-pricing · llm-wiki · mcp-builder · pdf · pptx · skill-creator · slack-gif-creator · tech-requirements · theme-factory · web-artifacts-builder · webapp-testing · xlsx。
 > 另 2 个无 SKILL.md 的工件目录：`jy-pricing-workspace`（jy-pricing 运行工作区）/ `learned`（continuous-learning 沉淀输出）。
 
 ### 2.2 注入层 `ecc:*` Skills（90+）

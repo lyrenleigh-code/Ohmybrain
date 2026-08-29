@@ -1,7 +1,7 @@
 ---
 type: source-summary
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-08-29
 tags: [Claude-Code, Skill, SVG, 架构图, 设计系统, 极简-Skill]
 source_type: repo
 ---
@@ -16,6 +16,8 @@ source_type: repo
 - **规模**：**极简**——整个 skill 仅 2 个核心文件（`SKILL.md` 163 行 + `assets/template.html` 319 行） + `.zip` 分发包 + 3 个 HTML 示例
 - **分发形态**：Claude.ai 网页版 `.zip` 上传 / Claude Code CLI `~/.claude/skills/` 解压 / 项目本地 `./.claude/skills/`
 - **定位**：**单用途 skill**——只画系统架构图（云/微服务/Web App），输出单文件自包含 HTML（内联 SVG + CSS + Google Fonts）
+
+> **继任提示（2026-08-29）**：本 skill 已于 2026-08-29 从 `~/.claude/skills/` **退役**，由其同血统续作 [[tt-a1i-archify]] 取代（archify SKILL.md frontmatter 自证 `based_on: Cocoon-AI/architecture-diagram-generator (MIT, v1.0)`，功能为严格超集）。原件留存 `raw/architecture-diagram-generator/` 可复装。**本页下文「极简反例」判据仍成立且已被 archify 正向实证**——维度长到 5 图型 × 4 预设后确实分层，见 [[../concepts/skill-layered-resources]] 实战结论。
 
 ## 核心观点
 
