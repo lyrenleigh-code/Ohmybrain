@@ -10,7 +10,7 @@ tags: [约定, conventions, 跨项目]
 命名 / 目录 / commit / PR / 工作流 / worktree / 私人项目 等跨项目共享约定。**事实源 = `~/.claude/rules/common/*.md`**（全局规则），本页是 Hub wiki 的索引 + 项目级扩展。
 
 > [!note] 全局资源规模（@2026-06-29）
-> `~/.claude/` 当前承载：**auto-memory 99 个**（user 1 / feedback 30 / project 65 / reference 3，`MEMORY.md` 索引 101 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
+> `~/.claude/` 当前承载：**auto-memory 100 个**（user 1 / feedback 31 / project 65 / reference 3，`MEMORY.md` 索引 101 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
 
 ## 1. 命名约定
 
@@ -34,7 +34,7 @@ tags: [约定, conventions, 跨项目]
 | `plans/archive/` | 已归档计划 | 与 spec 归档节奏保持一致 |
 | `handoff/active/` | Agent / 跨会话交接单 | Claude Code 与 Codex 串行或并行交接时使用 |
 | `handoff/archive/` | 已关闭交接单 | 交接完成后归档 |
-| `scripts/` | 自动化 | hooks + utilities（Hub 当前 25 个 .py，2026-08-18 +backup_push.py 双轨备份） |
+| `scripts/` | 自动化 | hooks + utilities（Hub 当前 28 个 .py，2026-08-30 +log_wiki_read / wiki_usage / retire_memory 读取日志与退役冷层；2026-08-18 +backup_push.py 双轨备份） |
 | `output/` | 交付物（如适用） | 通常不 commit binary（除 demo） |
 | `.claude/` | harness | rules / skills / hooks / agents / settings.json |
 
@@ -104,6 +104,8 @@ Type: `feat` / `fix` / `refactor` / `docs` / `test` / `chore` / `perf` / `ci`
 - **engineering 闭环**: spec → plan → implement → validate
 - **一行 promote 标准（2026-08-18 起）**：promote 最小单位 = 向既有 concept 页「实战结论」节 **append 一行**（结论 + 来源项目/日期），不要求新页、不要求成文；非敏感结论不触发脱敏五步。一行也算回流。
 - **memory→wiki 蒸馏（审计惯例）**：每轮入会审计跑 `diff_memory_log.py` 并**消费**其 promote-candidate 分类；逐日 session memory 结论落 wiki 后合并为项目编年条（memory=容量有限的工作记忆，wiki=按需检索的长期记忆）。首例：2026-08-18 UWAcomm 12 条并 1 + 4 concept 页蒸馏。
+- **读取即投票（2026-08-30 起）**：hook `log_wiki_read.py` 把 wiki 页读取事件 append 到 `.usage/wiki_reads.jsonl`（gitignored 冷层）；入会审计跑 `python scripts/wiki_usage.py` 看「查询入口数 / 页 top-N / 从未被读页」，裁 🕸️ 与去索引候选时以此替代只看 mtime。来源：[[../source-summaries/ai-memory-system-design-framework]] I4。
+- **memory 退役 = 去索引不销毁（2026-08-30 起）**：auto-memory 过期 / 已蒸馏 / 错误条目不直接 rm，用 `python scripts/retire_memory.py <name> --reason ...` 移入 Hub `raw/memory-retired/`（git 跟踪）+ MEMORY.md 去行 + INDEX.md 登记；退役后级联 CANON memory 计数。来源：同上 I1；memory `feedback_memory_retire_deindex`。
 - 硬工序：`specs/active/<slug>.md` → `plans/active/<slug>.md`（如复杂）→ code → archive；跨 Agent / 跨会话时补 `handoff/active/<slug>.md`
 
 ## 7. 跨项目反向工程约定
@@ -122,7 +124,7 @@ Type: `feat` / `fix` / `refactor` / `docs` / `test` / `chore` / `perf` / `ci`
 | **1** | 非阻断错误 | 显示给用户，继续 |
 | **2** | 阻断错误 | 喂回 Claude 处理，阻止工具调用 |
 
-设计原则：宽松优先，阻断谨慎，提醒用 0 + stdout，Windows Terminal 慎用非 0。
+设计原则：宽松优先，阻断谨慎，提醒用 0 + stdout，Windows Terminal 慎用非 0；**记录型 hook**（`log_wiki_read.py`）恒 exit 0 且无 stdout，落盘失败静默。
 
 ## 9. 私人项目约定
 

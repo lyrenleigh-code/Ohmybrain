@@ -15,11 +15,11 @@ Claude Code harness 资源全景：**Hooks + Skills + Rules + Agents + MCP**。�
 
 ## 1. Hooks
 
-### Hub Hooks (8 个)
+### Hub Hooks (9 个)
 
 详见 [[ecosystem-dashboard]] § Hub Hooks 表 + [[../architecture/system-overview]] § Hub hooks。
 
-3 阻断 + 5 提醒/注入：
+3 阻断 + 5 提醒/注入 + 1 记录（2026-08-30 +`log_wiki_read.py`）：
 
 | Hook | 类型 | 触发时机 |
 |------|------|---------|
@@ -28,6 +28,7 @@ Claude Code harness 资源全景：**Hooks + Skills + Rules + Agents + MCP**。�
 | `check_index_log_sync.py` | 🔴 阻断 | Stop |
 | `post_wiki_write.py` | 🟡 提醒 | PostToolUse Edit/Write |
 | `raw_ingest_reminder.py` | 🟡 提醒 | PostToolUse Bash |
+| `log_wiki_read.py` | ⚪ 记录 | PostToolUse Read/Bash（wiki 页读取事件 → `.usage/wiki_reads.jsonl`，`wiki_usage.py` 聚合；I4 读取即投票） |
 | `commit_reminder.py` | 🟡 提醒 | Stop |
 | `check_memory_log_gap.py` | 🟡 提醒 | Stop |
 | `session_context.py` | 🟢 注入 | SessionStart |

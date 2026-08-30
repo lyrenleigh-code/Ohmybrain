@@ -19,7 +19,7 @@ tags: [harness, agent, 工程实践, Claude Code]
 | 模式 | Claude Code | dsh | 本体系应用 |
 |---|---|---|---|
 | 分层覆盖 | 项目级覆盖全局级 | per-scope 层胜出 host 层 | rules common→zh→语言特定 |
-| 生命周期 hook | Pre/PostToolUse/Stop | hook bridges + waterfall 事件 | Hub 8 hook + 工作区 guard |
+| 生命周期 hook | Pre/PostToolUse/Stop | hook bridges + waterfall 事件 | Hub 9 hook + 工作区 guard |
 | 子代理隔离 | subagent_type | subagent capability seam | agents 池 + 交接单 |
 | 单一事实源 | transcript | append-only session log（model-visible means logged） | wiki index/log + CANON 机检 |
 | 按需加载指令 | skills（paths/触发词） | skill 工具 + 分层 registry | 32 全局 skill + llm-wiki paths 触发 |

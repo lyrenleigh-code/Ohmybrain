@@ -12,7 +12,7 @@ tags: [memory, 索引, auto-memory]
 
 > 不复制 memory 完整内容（避免双写），本页只索引 + 简短描述 + link 到 memory 文件。
 
-> **计数口径（@2026-08-29）**：auto-memory 共 **99 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 100 个 `.md`）。分布：user **1** / feedback **30** / project **65** / reference **3**。下方各类型标题计数与此严格一致。
+> **计数口径（@2026-08-30）**：auto-memory 共 **100 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 100 个 `.md`）。分布：user **1** / feedback **31** / project **65** / reference **3**。下方各类型标题计数与此严格一致。
 >
 > 注：`MEMORY.md` 索引行中「flowgen-vsdx M5 升级」一条指向 `~/.claude/skills/flowgen-vsdx/SKILL.md`（skill 文件，**非 memory 条目**），不计入总数。
 
@@ -22,7 +22,7 @@ tags: [memory, 索引, auto-memory]
 
 - [user_profile](../../../../../zazn/.claude/projects/D--Claude/memory/user_profile.md) — UWA 研究者 / MATLAB 主力 / Windows+bash / 中文 / 专家主导 / 并行优先
 
-### feedback（行为指导 · 30 条）
+### feedback（行为指导 · 31 条）
 
 按主题分组：
 
@@ -62,6 +62,7 @@ tags: [memory, 索引, auto-memory]
 - `feedback_path_form_vs_location` — 用户给路径样例说「写成这样的形式」= 改文档里的路径写法，不是迁目录树；移整树前先问（AUVProposal 误迁 78 文件教训，2026-08-26 新增）
 - `feedback_ohmybrain_self_improvement` — 进入 Ohmybrain 项目第一件事 = 完善自己（2026-05-24 新增）
 - `feedback_sync_to_core_lessons` — /sync-to-core 首次实战：queue 须先 diff 再决定（2026-05-24 新增）
+- `feedback_memory_retire_deindex` — memory 退役=去索引不销毁（`retire_memory.py` → Hub `raw/memory-retired/`，不直接 rm）
 - `feedback_doc_visual_diversification` — 流程图不能统一布局换数据
 - `feedback_doc_flowgen_only` — 方案 / 方法论文档图必走 flowgen-* skill
 - `feedback_inplace_edit_no_version` — 迭代 PPT/文档/图等产物就地改当前文件，不另存递增版本号（2026-06-27 新增）

@@ -213,6 +213,7 @@ context 被压缩或新开会话时，按这个顺序快速进入状态：
 | **会话内** | Claude 自主写 auto-memory；用户明确要求时 `/promote-answer` 到 wiki |
 | **会话后** | 回顾是否有新 feedback 值得记；wiki 页改动需同步 `index.md` + `log.md` |
 | **每周** | 清理 auto-memory 过期 `project_*` 条目（TODO 完结的）；整合重复 feedback |
+| **每轮入会审计** | 跑 `scripts/wiki_usage.py` 消费读取日志（I4 读取即投票，裁 🕸️/去索引候选）；过期 memory 用 `scripts/retire_memory.py` 退役到 Hub `raw/memory-retired/`（I1 去索引不销毁），不直接删 |
 | **每月** | MCP graph 大扫除：删除失效关系、合并重复实体 |
 | **每季度** | 审视 Layer 1（全局 CLAUDE.md）是否漂移出"真正跨项目"边界，把项目专属内容下沉到 Layer 2 |
 
@@ -237,3 +238,4 @@ context 被压缩或新开会话时，按这个顺序快速进入状态：
 
 - 2026-04-23：首次创建。场景：用户问"如何建立长期记忆"，系统清点后识别已有 5 层；同步清理 auto-memory 3 条过期/误分类条目，建全局 CLAUDE.md，首次建 MCP 图谱，此页作第 4 步文档化收口。
 - 2026-08-30：ingest [[ai-memory-system-design-framework]]，新增理论对照面；两条笨版本改进候选（wiki 页 `last_used` 读取计数 / auto-memory 退役改去索引）留待用户裁。
+- 2026-08-30 续：两条笨版本落地——hook `log_wiki_read.py` + `wiki_usage.py`（读取侧记录，补 I4）/ `retire_memory.py` + `raw/memory-retired/`（退役去索引，对齐 I1）；维护节奏表 +1 行。

@@ -117,6 +117,7 @@ raw/ → ingest → wiki/ → query → promote → wiki/
 | 🔴 阻断 | `check_index_log_sync.py` | Stop | wiki/ 变更但 index/log 未同步 |
 | 🟡 提醒 | `post_wiki_write.py` | PostToolUse Edit/Write | 写入 wiki 后自动 lint |
 | 🟡 提醒 | `raw_ingest_reminder.py` | PostToolUse Bash | Bash 触及 raw/ 时提醒 `/ingest` |
+| ⚪ 记录 | `log_wiki_read.py` | PostToolUse Read/Bash | wiki 页读取事件 → `.usage/wiki_reads.jsonl`（审计用 `wiki_usage.py` 聚合） |
 | 🟡 提醒 | `commit_reminder.py` | Stop | wiki 未 commit 提醒 |
 | 🟡 提醒 | `check_memory_log_gap.py` | Stop | memory 日期 vs wiki/log.md 缺口（2026-05-12 新增） |
 | 🟢 注入 | `session_context.py` | SessionStart | 载入会话上下文 |

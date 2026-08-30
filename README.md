@@ -46,7 +46,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | Topics（专题页） | **5** | `wiki/topics/`（含 ecosystem-dashboard / harness-resources / memory-index / core-update-queue / research-map） |
 | Explorations（探索页） | 4 | `wiki/explorations/` |
 | Source Summaries（资料摘要） | 34 | `wiki/source-summaries/` |
-| 自动化脚本 | 25 | `scripts/` |
+| 自动化脚本 | 28 | `scripts/` |
 
 ---
 
@@ -148,6 +148,8 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | `python scripts/dashboard_snapshot.py` | 生成 Hub 规模快照表（粘贴到 ecosystem-dashboard） | 纯标准库 |
 | `python scripts/dashboard_snapshot.py --check` | 校验 wiki / README 各处 CANON 计数与实跑值一致 | Stop hook；不一致才提醒 |
 | `python scripts/sync_index.py` | 同步 wiki/index.md 页面计数 | log.md 配套 |
+| `python scripts/wiki_usage.py` | wiki 读取报表（查询入口数 / 页 top-N / 从未被读页），审计裁 🕸️ 用 | 数据源 hook `log_wiki_read.py` → `.usage/`（gitignored） |
+| `python scripts/retire_memory.py <name> --reason ...` | auto-memory 退役 → `raw/memory-retired/`（去索引不销毁）+ MEMORY.md 去行 + INDEX 登记 | 退役后跑 `--check` 级联 |
 | `python scripts/transcribe.py <文件>` | Whisper 音视频转录 → raw/ | 需 whisper + ffmpeg |
 | `python scripts/scrape.py <URL>` | Firecrawl 网页抓取 → raw/ | 需 FIRECRAWL_API_KEY |
 | `python scripts/import-zotero.py` | Zotero 论文批量导入 → raw/papers/ | |
@@ -179,6 +181,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
   - `check_private_tags.py` — 拦截 `<private>` 标签外泄到公开 wiki
   - `check_index_log_sync.py` — 拦截 wiki 写入未同步 index/log
 - **提醒用 0**：非致命的"顺手提示"用 `exit 0` + stdout（如 `raw_ingest_reminder.py`）
+- **记录用 0 + 无输出**：纯落盘的观测型 hook（如 `log_wiki_read.py` 记 wiki 读取事件）恒 `exit 0`、不打印
 - **Windows Terminal 注意**：大量非 0 exit 可能导致 tab 累积；副作用 hook 默认用 exit 0 + stdout
 
 ---

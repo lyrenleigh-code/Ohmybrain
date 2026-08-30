@@ -3,6 +3,18 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-08-30] 同日续 2 | I4/I1 两条笨版本落地：wiki 读取日志 hook + 用量报表 / memory 退役冷层脚本
+
+承 [[source-summaries/ai-memory-system-design-framework]] 对照表的两条改进候选，用户批准后即办（"先用笨版本吃掉七八成价值"）：
+
+- **I4 读取即投票**：新 hook `scripts/log_wiki_read.py`（PostToolUse `Read|Bash`，恒 exit 0 无输出）把 wiki 页读取事件 append 到 Hub `.usage/wiki_reads.jsonl`（gitignored，append-only 冷层）——Read 取 file_path、Bash 从命令串正则抓 `wiki/<sub>/<slug>.md`，`verb=write` 区分写作触碰（python/tee/sed -i/重定向）；覆盖 D:/Claude 下全部项目 wiki（`project` 字段）。聚合器 `scripts/wiki_usage.py`：同 session 同页只算 1 票、「查询入口」= index.md 被读 session 数（直接量化审计十五~十七的 query 口径）、页 top-N、「从未被读」内容页清单（去索引候选，mcp-entities 投影页不计）。工作区级 `D:/Claude/.claude/settings.json` + Hub `.claude/settings.json` 双注册。
+- **I1 去索引不销毁**：`scripts/retire_memory.py <name> --reason ...` 把 auto-memory 移入 Hub `raw/memory-retired/`（git 跟踪、backup_push 一并备份；移出 memory 目录同时脱离 recall 检索面）+ MEMORY.md 去行 + `INDEX.md` 登记（日期/文件/原描述/原因）；`--dry-run` / `--list` / `--mem-dir` / `--dest`。今日撤回的 14 条不补登（源目录原件即冷层）。
+- **测试**：三脚本单测（hook 6 事件含反斜杠路径 / 跨项目 / 去重 / write 分类；报表断言；退役 dry→real→INDEX→不存在 exit 1→缺 reason exit 2）全过。
+- **登记面级联**：hook 8→9（harness-resources / dashboard ×2 / system-overview / Hub CLAUDE.md / hub-as-brain / harness-engineering / index）；scripts 25→28（conventions / dashboard / README）；conventions §6 +2 条约定 + §8 记录型 hook 一句；memory-stack 维护节奏 +1 行 + 修订记录；README 脚本表 +2 行 + hook 原则 +1；`.gitignore` +`.usage/`。
+- **新 memory** `feedback_memory_retire_deindex`（memory 99→100 / feedback 30→31，memory-index 指针补登 + 计数口径戳 @08-30）——**本轮不留「审计后窗口」债**。
+- 页面总数不变 113。**验收**：下轮入会审计首次跑 `python scripts/wiki_usage.py`，用真实读取数替代 query/promote 计数口径。
+
+---
 ## [2026-08-30] 同日续 | 14 条 4 月旧 memory 误回流 D--Claude：撤回前一行 promote ×8 落三 concept 页（对齐 I1「去索引优于删除」）
 
 承上条 ingest 后 `dashboard_snapshot.py --check` 报 **memory 99→113 / project 65→68 / feedback 30→40**（08-29 审计后静默 → 今日红）。溯源：`~/.claude/projects/D--Claude/memory/` 在 **08-29 17:00**（审计十七之后）一次性新增 14 文件 + `MEMORY.md` 17:04 追加 14 行——全部为 2026-04-09~04-11 UWAcomm 旧路径时期条目，**9 个逐字复制自 `D--TechReq-UWAcomm/memory/`、5 个逐字复制自 `C--Users-zazn/memory/`**（`cmp` 逐一核实）。触发者未查明（`find ~/.claude` 全盘扫描超时；若再次出现即可判为 Claude Code 自动合并，需在审计口径中登记）。

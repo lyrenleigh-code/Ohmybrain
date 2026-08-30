@@ -36,6 +36,15 @@
             "command": "python \"$CLAUDE_PROJECT_DIR/scripts/raw_ingest_reminder.py\""
           }
         ]
+      },
+      {
+        "matcher": "Read|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/scripts/log_wiki_read.py\""
+          }
+        ]
       }
     ],
     "SessionStart": [

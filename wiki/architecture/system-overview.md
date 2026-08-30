@@ -277,6 +277,7 @@ Claude Code 通过 `.claude/` + 全局 `~/.claude/` 共同保障行为一致：
 | **PreToolUse**（Edit/Write）| `check_private_tags.py` | 🔴 阻断 | `<private>` 标签写入拦截 |
 | **PostToolUse**（Edit/Write）| `post_wiki_write.py` | 🟡 提醒 | 写入 wiki 后自动 lint |
 | **PostToolUse**（Bash）| `raw_ingest_reminder.py` | 🟡 提醒 | Bash 触及 raw/ 时提醒 `/ingest` |
+| **PostToolUse**（Read/Bash）| `log_wiki_read.py` | ⚪ 记录 | wiki 页读取事件落 `.usage/wiki_reads.jsonl`（读取即投票，`wiki_usage.py` 聚合） |
 | **SessionStart** | `session_context.py` | 🟢 注入 | 载入会话上下文 |
 | **Stop** | `check_index_log_sync.py` | 🔴 阻断 | wiki/ 变更但 index/log 未同步 |
 | **Stop** | `commit_reminder.py` | 🟡 提醒 | wiki 未 commit 提醒 |

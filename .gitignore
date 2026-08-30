@@ -64,3 +64,6 @@ credentials.*
 
 # === 临时草稿（diff_memory_log.py 等脚本生成的 draft） ===
 draft/
+
+# === wiki 读取日志（log_wiki_read.py 落盘的 append-only 冷层，本地事实，报表由 wiki_usage.py 聚合后入 wiki） ===
+.usage/
