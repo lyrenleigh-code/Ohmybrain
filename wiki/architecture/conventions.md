@@ -38,7 +38,7 @@ tags: [约定, conventions, 跨项目]
 | `output/` | 交付物（如适用） | 通常不 commit binary（除 demo） |
 | `.claude/` | harness | rules / skills / hooks / agents / settings.json |
 
-> Hub wiki 当前共 **114 个 .md**：根 `index.md` + `log.md` 2 个 + 112 个内容页（architecture 12 / agents 1 / workflows 1 / concepts 20 / entities 8 / explorations 4 / mcp-entities 25 / source-summaries 36 / topics 5 / comparisons 0）。计数随写入变化，以 `index.md` 同步值为准。
+> Hub wiki 当前共 **115 个 .md**：根 `index.md` + `log.md` 2 个 + 113 个内容页（architecture 12 / agents 1 / workflows 1 / concepts 20 / entities 8 / explorations 4 / mcp-entities 25 / source-summaries 37 / topics 5 / comparisons 0）。计数随写入变化，以 `index.md` 同步值为准。
 
 ## 3. Wiki 写作约定
 

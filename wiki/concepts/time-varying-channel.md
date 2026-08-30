@@ -63,6 +63,8 @@ fd=10Hz (doppler_rate=8.33e-4) + oracle alpha 补偿后：
 - **软符号-BEM 判决反馈存在鸡蛋耦合**：静态 PASS 掩盖不了时变下「软符号错→BEM 错→更错」正反馈（fd=1Hz 50% 灾难）；破局=**独立干净观测**（pilot 段 pre-Turbo BEM），且存在硬阈值 pilot≥CP 长度（吞吐 -50% 是物理代价，由 max_tau/blk_fft 比决定）。— UWAcomm 04-24/04-26
 - **迭代精化的前提是误差随迭代衰减**：fd=1Hz Jakes 下估计器 deterministic bias 不衰减，iter refinement 把 bias 逐轮翻倍（反向收敛）——deterministic bias 场景应 iter=0 + 一次性 calibration。— UWAcomm 04-25
 - **HFM 并非 Doppler-invariant，但其 deterministic 残差可当信道指纹用**（dtau_diff 唯一值触发 fd-specific calibration）。— UWAcomm 04-25 V5.6
+- **DSSS 时变路径必须 DBPSK + DCD 差分检测，相干 Rake 必败**：残余 CFO 1.08Hz@fd=1Hz 在 5s 帧上累积 35+ rad，训练段 h_est 到数据段失效（Rake-MRC BER~47%）；符号率 ~194 sym/s 相位跟踪不可行。TX 参考符号 + XOR 预编码（多 1 符号），RX Rake 解扩后相邻符号相位差判决，软 LLR = −real(diff_corr)/nv_diff 送 Viterbi；代价 ~3dB 由 14.9dB 扩频增益承担，fd=1Hz coded 0%@0dB+。— UWAcomm 2026-04-11 旧 memory `feedback_dsss_dcd`（08-29 误回流副本，撤回前蒸馏 @2026-08-30）
+- **2026-04-11 六体制 Jakes 基线矩阵（static / fd=1Hz / fd=5Hz）**：SC-FDE V4.0 0% / 0.20%@5dB / 50%；OFDM V4.3 0%@5dB+ / ~1%@15dB+ / 50%；SC-TDE V5.1 0%@10dB+ / 0.76%@15dB / ~45%；DSSS V1.0 0%@−15dB+ / 0%@0dB+ / ~36%；FH-MFSK V1.0 0%@10dB+ / 0%@5dB+ / **0%@0dB+**（唯一 Jakes fd=5Hz 全通，非相干代价 750bps）；OTFS V2.0 ~5.4kbps 0%@10dB+ ×3（fd=5Hz 仅离散 Doppler / Rician K≥5，Jakes ~50%）。SC-FDE V4.0 两级分离帧 `[HFM+|HFM-|LFM1|LFM2|data]` oracle fd=5Hz 0.24%@5dB 证链路本身正确，瓶颈全在盲 α 估计。— UWAcomm 2026-04-11 旧 memory `project_v4v5_conversion / project_sync_refactor`（08-29 误回流副本，撤回前蒸馏 @2026-08-30）
 
 ## 来源
 

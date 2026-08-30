@@ -231,7 +231,9 @@ context 被压缩或新开会话时，按这个顺序快速进入状态：
 - [[skills-vs-commands]] — Skill/Command/Agent 三机制（llm-wiki skill 属 Layer 1）
 - [[subagents-orchestration]] — Subagent 编排（Layer 3 的 feedback "subagent Write 受限"来源）
 - [[anthropic-2026-founders-playbook]] — Anthropic 官方 founder 方法论 v3（CLAUDE.md as architectural memory，对 L2 层的独立 validation）
+- [[ai-memory-system-design-framework]] — AI 记忆系统设计框架笔记：六模块 / 四不变量（存索分离 / provenance / 两道门 / 读取即投票）对本五层栈的逐层对照，指出 I4「读取即投票」为最大缺口、auto-memory「错了就删」部分违反 I1（2026-08-30 ingest）
 
 ## 修订记录
 
 - 2026-04-23：首次创建。场景：用户问"如何建立长期记忆"，系统清点后识别已有 5 层；同步清理 auto-memory 3 条过期/误分类条目，建全局 CLAUDE.md，首次建 MCP 图谱，此页作第 4 步文档化收口。
+- 2026-08-30：ingest [[ai-memory-system-design-framework]]，新增理论对照面；两条笨版本改进候选（wiki 页 `last_used` 读取计数 / auto-memory 退役改去索引）留待用户裁。

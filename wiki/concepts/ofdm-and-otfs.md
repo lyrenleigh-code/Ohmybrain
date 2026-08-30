@@ -58,6 +58,10 @@ OFDM（正交频分复用）和 OTFS（正交时频空间）是两种多载波�
 - **OTFS 脉冲成形 hann 全线退化**（static 0%→11%，各 fading 一致变差），维持 rect；「更平滑的窗」直觉在 DD 域不成立。— UWAcomm 05-06 Phase 4 FAIL 归档
 - **OTFS 对连续谱 Jakes 同样灾难**（fd=5Hz 33-44%），与 SC-FDE 同构，DD 域表征不豁免连续谱问题——见 [[time-varying-channel]] 实战结论。— UWAcomm 04-27
 - JSON 序列化会把 1×2 行向量还原成 2×1 列（`jsondecode`），OTFS meta 维度必须显式校正——跨语言/跨进程传参数矩阵的通用坑。— UWAcomm 05-04
+- **OTFS DD 域实现五硬约束**：x_dd 第二维必须是时延索引（modulate 行 FFT / demodulate 行 IFFT，否则信道延迟只表现为相位旋转）；CP 必须 per-sub-block 而非帧级（帧级 CP 引入跨子块 β=exp(-j2πk/N)，BCCB 模型失效）；LMMSE 输出送 LLR 的必须是原始 x_mmse 而非星座解映射值（否则 coded BER > uncoded）；Turbo 先验方差 guard/data 统一（guard 设 1e-6 会拉低全局 v_x 过度正则化）；LMMSE 内部 SIC 只 1 轮，多轮交外层 Turbo（无 Onsager 修正低 SNR 发散）。旧规则仍有效：不用 RRC（ISI 破坏 DD 关系）/ 导频 boost √N_data / cp_len 留余量（8→32 静态 BER 2.64%→1.35%）。— UWAcomm 2026-04-11 旧 memory `feedback_otfs_pitfalls`（08-29 误回流副本，撤回前蒸馏 @2026-08-30）
+- **DD 网格 M 是 fd 上限与均衡质量的折中，减 M 不一定改善**：BCCB 要求子块内信道恒定 fd·T_sub≪1（M=64@fs=6k → T_sub=10.67ms，fd=5Hz 已 19° 相位变化）；M 减半频率 bin 减半 → 信道零点比例翻倍 → LMMSE 更差。oracle 不一定优于估计：fd=5Hz 全 guard 响应给出 ~80 径 LMMSE/MP 都处理不了，自适应阈值估计（static <10% 用 3σ / 时变 >10% 用 1σ，guard 区 median 估噪底）反而更好。— UWAcomm 2026-04-11 旧 memory `feedback_otfs_pitfalls`（08-29 误回流副本，撤回前蒸馏 @2026-08-30）
+- **UAMP 对 BCCB 结构无优势**：LMMSE per-frequency 权重 D*/(|D|²+λ) 已最优，UAMP uniform 权重更粗糙，单次 ≈ LMMSE 且 Turbo 集成不稳定（内部 5 轮迭代放大先验误差）——坚持 LMMSE。**通带 interpft 整帧上采样触发 Gibbs 振铃**（子块边界不连续 → sinc 振铃尖刺），修复 = 逐子块独立 interpft + 升余弦过渡。— UWAcomm 2026-04-11 旧 memory `feedback_otfs_pitfalls`（08-29 误回流副本，撤回前蒸馏 @2026-08-30）
+- **OFDM 均衡必须逐子载波 MMSE-IC 且 nv_k 用 nv_post 兜底**：标量 mu 的 `eq_mmse_ic_fde` 对频选信道不适用；高 SNR 时好子载波 nv_k→0 使 scale_k→∞、LLR 过度自信（fd=1Hz@25dB 3.81%），须用 CP 已知符号实测残差方差 nv_post 作 nv_k 下限；OFDM 比 SC-FDE 标量 MMSE-IC 更敏感（后者天然平均了子载波差异）。信道估计高 SNR 用 OMP 不用 GAMP（tau_s 发散，static@15dB+ 46%）。— UWAcomm 2026-04-11 旧 memory `feedback_ofdm_equalizer`（08-29 误回流副本，撤回前蒸馏 @2026-08-30）
 
 ## 来源
 

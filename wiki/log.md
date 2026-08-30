@@ -3,6 +3,30 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-08-30] 同日续 | 14 条 4 月旧 memory 误回流 D--Claude：撤回前一行 promote ×8 落三 concept 页（对齐 I1「去索引优于删除」）
+
+承上条 ingest 后 `dashboard_snapshot.py --check` 报 **memory 99→113 / project 65→68 / feedback 30→40**（08-29 审计后静默 → 今日红）。溯源：`~/.claude/projects/D--Claude/memory/` 在 **08-29 17:00**（审计十七之后）一次性新增 14 文件 + `MEMORY.md` 17:04 追加 14 行——全部为 2026-04-09~04-11 UWAcomm 旧路径时期条目，**9 个逐字复制自 `D--TechReq-UWAcomm/memory/`、5 个逐字复制自 `C--Users-zazn/memory/`**（`cmp` 逐一核实）。触发者未查明（`find ~/.claude` 全盘扫描超时；若再次出现即可判为 Claude Code 自动合并，需在审计口径中登记）。
+
+用户裁 C（先蒸馏再撤回）：
+- **一行 promote ×8**（每行标 `旧 memory 名 + 撤回前蒸馏 @08-30`）：[[concepts/ofdm-and-otfs]] +4（OTFS DD 域五硬约束 / DD 网格 M 折中与 oracle 不优于估计 / UAMP 无优势 + interpft Gibbs 振铃 / OFDM 逐子载波 MMSE-IC nv_post 兜底）；[[concepts/doppler-estimation-methods]] +2（LFM 标称峰值窗口禁全局 max / fd=5Hz 盲 α 十方案败案清单与物理根因）；[[concepts/time-varying-channel]] +2（DSSS DBPSK+DCD 必需性 / 04-11 六体制 Jakes 基线矩阵 + SC-FDE V4.0 oracle 证链路）。
+- **不蒸馏 6+1**：工序类 feedback（e2e 可视化 / 新建测试文件 / 存 txt / 同步 README+Obsidian / 分支工作流 / 默认启动目录）属 UWAcomm 项目级且已被项目 CLAUDE.md 或后续 memory 取代；`project_dochub` 已由 Ohmybrain 取代（[[architecture/decision-log]] 既有登记）。
+- **撤回**：删 D--Claude 下 14 副本 + `MEMORY.md` 去 14 行（115→101 行，回到审计十七口径）；源目录原件不动 = 去索引非销毁，与 [[source-summaries/ai-memory-system-design-framework]] I1 对齐。memory 回 **99 / project 65 / feedback 30**，CANON 页数无需级联。
+- 页面总数不变 113。
+
+---
+## [2026-08-30] ingest | AI 记忆系统设计框架笔记（助理型 Agent 写入策略）→ 五层记忆栈理论对照面
+
+用户按建议摄入 `raw/notes/AI记忆系统设计框架.md`（08-29 16:18 落盘，124 行 ≈ 4k 字，短文走 inline 路径）→ 新建 [[source-summaries/ai-memory-system-design-framework]]。
+
+- **核心命题**：开放任务的开放性 = 任务描述与执行者上下文之差；人没有长上下文，有的是终身开放的**写入通道**——问题是"学出写入策略"而非"塞满窗口"。
+- **理论**：压缩先定目标 Y；**写入看惊讶、留存看效用**（两判据两时刻）；重复流坍缩为"规则 + 例外表"（MDL）；遗忘是功能。生物对照：LLM = 只有新皮层，缺海马体（快速写入）与杏仁核（写入门控）。
+- **四不变量**：I1 存索分离（原始 append-only，遗忘 = 去索引，压缩可反悔）/ I2 provenance / I3 两道门分离 / I4 读取即投票。
+- **六模块**：装配器 / 显著性门 / 情景库 / 巩固进程 / 语义库 / 程序库，每个都有笨版本；难点在**错误复利**与**评估回路极长**；**记错比记不住伤害大**。
+- **与本体系对照**（页内表）：语义库 ≈ `feedback_*`/`user_*` memory（Why ≈ provenance）；巩固 ≈ 入会审计 memory→wiki 蒸馏（08-18 首刀即"规则+例外表"实例，但无"重压"）；装配器 ≈ SessionStart 注入 + 三层渐进查询；**I4 读取即投票缺失**——审计十五~十七的 query/promote 计数只是粗替身，与 08-24 "写多读少"诊断同症；**I1 部分违反**——auto-memory "错了就删"、退役页物理删。
+- **两条笨版本改进候选（待用户裁，不自动实施）**：① wiki 页 frontmatter 记 `last_used`/读取计数，审计裁 🕸️ 时用它替代 mtime；② auto-memory 退役改"移出 MEMORY.md 索引、文件留存"。
+- 交叉引用：[[architecture/memory-stack]]（相关页面 + 修订记录）/ [[concepts/harness-engineering]]（相关页面）。**内容页 112→113 / source-summaries 36→37**，dashboard 计数行同步。
+
+---
 ## [2026-08-29] 同日续 | 跨引擎 skill 复用最小验证通过（Claude skill 被 Codex 直接加载）
 
 承 [[source-summaries/openai-codex-harness]] 待观察第 1 条，用户批准后即办。**结论：Claude Code 的 skill 无需改写即可被 Codex 加载；单一事实源成立。**

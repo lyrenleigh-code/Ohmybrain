@@ -93,6 +93,8 @@ tags: [多普勒估计, 水声通信, 时变参数跟踪, 宽带Doppler, α估�
 - **α 必须设物理上限 gate**：Jakes 衰落会让检测器假报大 α（α≈7.5e-2 conf=0.68 的假峰），|α| 上限（如 1e-2）一道门挡掉 50% 灾难。— UWAcomm 05-03
 - **补偿域约定是高发 bug 源**：passband 重采样 time-scaling 等效同时反载波相位；baseband 只反时间、需手动补 exp(-j2πfc·α·t)——跨域移植补偿代码必查此约定（另见 memory `feedback_comp_resample_carrier_phase`，正负号约定 V6→V7 变更同坑）。— UWAcomm 05-01/04-28
 - Jakes 仿真链路自身也有域坑：baseband 实现的 down/up-convert 双重损失会毁掉 HFM 峰（passband-native 重写后同步偏差改善 916×）。— UWAcomm 05-04
+- **LFM 同步检测必须用标称峰值窗口，禁全局 max**：HFM- 与 LFM 同频段扫频互相关很高，`max(corr(1:lfm1_end))` 会锁到 HFM- 峰（LFM1 搜索须从 HFM 区之后起跳）；LFM1/LFM2 幅度近似相等，紧邻搜索会选到 LFM1 尾部——按帧结构定义 `lfm1_peak_nom`/`lfm2_peak_nom` ± margin 两个不重叠窗口。SC-TDE V5.0 static@5dB 50%→1.95%（lfm_pos 偏 3200 样本 = 一个 LFM+guard 间距）。— UWAcomm 2026-04-11 旧 memory `feedback_lfm_detection`（08-29 误回流副本，撤回前蒸馏 @2026-08-30）
+- **fd=5Hz Jakes 下盲 α 估计十方案全败的根因是物理不可分**：α·fc=5Hz 完全落在 Jakes 衰落谱 [−5,+5]Hz 内、50ms 前导码分辨率不足。败案清单：双 HFM 偏置对消（bookend / 串联）/ CAF 2D 搜索（HFM Doppler 不变性抹掉 α 维）/ HFM-·LFM 差异化偏置 / LFM 相位+CP / CP 迭代（ISI 污染 70% CP，每轮仅修 1.3e-5）/ Turbo 内 VV-CFO（BEM 吸收 92.5% CFO）/ DA 差分（违规且 ISI 噪底 4e-3≫α）/ SAGE 0.2s 前导（α_est 仅达真值 37.5%，方向对量不够）/ SAGE+VV。后续离散 Doppler 对比证实瓶颈来自 Jakes 模型而非估计器——见 [[time-varying-channel]] 实战结论首条。— UWAcomm 2026-04-09 旧 memory `session_20260409_scfde_v4`（08-29 误回流副本，撤回前蒸馏 @2026-08-30）
 
 ## 来源
 

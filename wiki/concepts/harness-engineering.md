@@ -33,3 +33,4 @@ tags: [harness, agent, 工程实践, Claude Code]
 - [[subagents-orchestration]] / [[skills-vs-commands]] / [[claude-hooks-architecture]] — Claude Code 侧机制细节
 - [[../source-summaries/thedotmack-claude-mem]] — hook exit-code 契约借鉴源
 - [[../source-summaries/zhongan-llm-platform-ppt]] — 内网商用平台对标（与 dsh 同属国产化底座候选组）
+- [[../source-summaries/ai-memory-system-design-framework]] — 记忆 seam 的设计原则（惊讶写入 / 效用留存 / 规则+例外表 / 六模块），与 dsh session log、claude-mem 三层检索互为理论与实现（2026-08-30 ingest）
