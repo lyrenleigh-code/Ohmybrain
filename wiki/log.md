@@ -3,6 +3,16 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-09-13] CANON 级联收口 | memory 106→108 / feedback 33→35 + 四批派生登记 commit
+
+用户进场指令「先收口计数债，再 commit 四批登记」。进场 `--check` 报 13 处不一致（memory 总数 106→108 ×8 / feedback 子数 33→35 ×5）——09-09 AUVProposal session（`feedback_open_newline_truncation`）与 09-10 AUVSlopeMCM session（`feedback_doc_figure_plain_style`）各新增 1 条 feedback memory 当日漏级联，「审计后窗口」反模式**第 7 次复发**。
+
+- **CANON 13 处收口**：conventions / anti-patterns ×3 / index / three-tier / dashboard / hub-as-brain 源头表 / memory-index 计数口径（戳 @09-13）；非机检维度同步：`MEMORY.md` 索引 107→109 行（conventions + hub-as-brain）；`--check` 修后静默
+- **memory-index 指针补登 4**：Harness 组 3→4（`open_newline_truncation`）/ Ohmybrain·文档工作流组 13→16（`pptx_endparaRPr_run_order` 09-01 / `pptx_com_render_check` 09-03 / `doc_figure_plain_style` 09-10）——前两条 09-04 级联时计数已含（31→33）但指针漏登，「部分登记」小例；feedback 段指针行 31→35 与标题计数对齐
+- **Hub CLAUDE.md 项目映射表补 AUVSlopeMCM 行**：09-04 log / ADR-045 称「root / Hub / DocProcess CLAUDE.md」全登，实测 Hub 表无此行（root / DocProcess 有）——「部分登记」真漏登，本轮补（锚点取当前 HEAD `82b78b8` 09-11，工作树 dirty=24 属项目业务面）
+- **commit 两笔**：① 四批派生登记 ADR-042~045（`9122519`，08-30~09-04 四个 session 压主工作树 13 文件 + 4 导航卡，原样合入）② 本轮收口；`raw/PPT/` 中安智能 pptx 与 `.claude/worktrees/memory-todo`（08-29 建、分支 `memory-system-todo` `67a238e`，未登记、未 gitignore）保持未跟踪待裁；push 未授权
+- 页面总数不变 113。不新建 audit memory（非审计轮，沿用 14~17 轮纪律）
+---
 ## [2026-09-04] 派生登记 | AUVSlopeMCM 派生（活跃 32→33，DocProcess×19→×20，ADR-045）
 
 用户要求新建文档撰写类项目「AUV坡上扫雷」。AskUserQuestion 四项裁定：目录名 **AUVSlopeMCM**（MCM = Mine Countermeasures）/ 主交付物**待定先搭架子** / **无依赖** / **git init + 首 commit**。

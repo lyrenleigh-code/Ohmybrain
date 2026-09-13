@@ -1,8 +1,8 @@
 ---
 type: topic
 created: 2026-05-24
-updated: 2026-07-11
-last-sync: 2026-07-11
+updated: 2026-09-13
+last-sync: 2026-09-13
 tags: [memory, 索引, auto-memory]
 ---
 
@@ -12,7 +12,7 @@ tags: [memory, 索引, auto-memory]
 
 > 不复制 memory 完整内容（避免双写），本页只索引 + 简短描述 + link 到 memory 文件。
 
-> **计数口径（@2026-09-04）**：auto-memory 共 **106 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 107 个 `.md`）。分布：user **1** / feedback **33** / project **69** / reference **3**。下方各类型标题计数与此严格一致。
+> **计数口径（@2026-09-13）**：auto-memory 共 **108 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 109 个 `.md`）。分布：user **1** / feedback **35** / project **69** / reference **3**。下方各类型标题计数与此严格一致。
 >
 > 注：`MEMORY.md` 索引行中「flowgen-vsdx M5 升级」一条指向 `~/.claude/skills/flowgen-vsdx/SKILL.md`（skill 文件，**非 memory 条目**），不计入总数。
 
@@ -22,7 +22,7 @@ tags: [memory, 索引, auto-memory]
 
 - [user_profile](../../../../../zazn/.claude/projects/D--Claude/memory/user_profile.md) — UWA 研究者 / MATLAB 主力 / Windows+bash / 中文 / 专家主导 / 并行优先
 
-### feedback（行为指导 · 33 条）
+### feedback（行为指导 · 35 条）
 
 按主题分组：
 
@@ -48,16 +48,20 @@ tags: [memory, 索引, auto-memory]
 - `feedback_comp_resample_carrier_phase` — passband 时间伸缩等效反载波相位 / baseband 需手动补
 - `feedback_matlab_interactive_figs` — 出图用 `matlab -r` 桌面会话弹交互窗（非 -batch 存 PNG）；绘图写成 poolData/ 可复用函数（view_td/view_analysis）（2026-06-05 新增）
 
-**Claude Code Harness（3）**
+**Claude Code Harness（4）**
 - `feedback_project_local_agent_not_invocable` — 项目 .claude/agents/*.md 不在 subagent_type 列表
 - `feedback_subagent_write_permission` — 后台 subagent Write/Bash 常被拒，主会话代写
 - `feedback_bash_heredoc_backslash` — Bash 工具把 heredoc 里反斜杠折叠、Python 内联把控制符变 NUL；含反斜杠路径改用 Edit/Write（2026-08-26 新增）
+- `feedback_open_newline_truncation` — Python `open(p, 'w', newline=坏值)` 先截断文件再抛 ValueError，脚本曾被清成 0 字节；写回一律 `newline=chr(10)`，补丁前 cp 备份（2026-09-09 新增）
 
-**Ohmybrain / 文档工作流（13）**
+**Ohmybrain / 文档工作流（16）**
 - `feedback_ohmybrain_workflow` — 硬工序 `specs→plans→discussion→code`
 - `feedback_verify_state_before_citing` — 引用状态前先核验仓库（不引用交接单等快照文档的过时数字）
 - `feedback_never_overwrite_user_edits` — **强约束**：用户手改产物不可覆盖，生成前必检 mtime（AUVProposal 两次覆盖教训，2026-07 新增）
 - `feedback_ppt_autofit_growth` — PPT autofit 框会长高压人：改文案判据看「长高后底边净距」，收尾跑逐行 diff（2026-08 新增）
+- `feedback_pptx_endparaRPr_run_order` — XML 级插 run 落到 `endParaRPr` 之后会被 PowerPoint 静默丢弃；QA 必须扫元素次序（2026-09-01 新增，09-04 计数已含、指针本轮补登）
+- `feedback_pptx_com_render_check` — PPT 改完用本机 PowerPoint COM 导 PNG 自查，别再说无渲染；断言查不出溢出/折行（2026-09-03 新增，09-04 计数已含、指针本轮补登）
+- `feedback_doc_figure_plain_style` — 方案/建设类 docx 配图默认工程素样式：白底黑线直角框、宋体正文/黑体标题、字号 ≤ 正文；雅黑加粗+圆角+灰底+阴影 = AI 感，整套图风格一致（2026-09-10 新增）
 - `feedback_docx_container_rebuild` — Word 报损坏但包结构无缺失＝容器问题，移植 python-docx 干净容器可救（2026-08 新增）
 - `feedback_path_form_vs_location` — 用户给路径样例说「写成这样的形式」= 改文档里的路径写法，不是迁目录树；移整树前先问（AUVProposal 误迁 78 文件教训，2026-08-26 新增）
 - `feedback_ohmybrain_self_improvement` — 进入 Ohmybrain 项目第一件事 = 完善自己（2026-05-24 新增）

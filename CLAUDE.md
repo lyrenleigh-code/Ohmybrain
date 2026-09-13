@@ -69,6 +69,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | DeepSeaIndustry 🔒 | 私人，不公开（本地 main `97fa2c3`，无远程） | `D:\Claude\DocProcess\DeepSeaIndustry` |
 | XiaojingLaunch 🔒 | 私人，不公开（本地 main `2ee3f7d`，无远程） | `D:\Claude\DocProcess\XiaojingLaunch` |
 | AcousticLiteracy 🔒 | 私人，不公开（本地 main `88a7379`，无远程） | `D:\Claude\DocProcess\AcousticLiteracy` |
+| AUVSlopeMCM 🔒 | 私人，不公开（本地 main `82b78b8`，无远程） | `D:\Claude\DocProcess\AUVSlopeMCM` |
 | FlowGen | 私人，不公开 | `D:\Claude\Tools\FlowGen` |
 | IconForge | 私人，不公开 | `D:\Claude\Tools\IconForge` |
 | AnthropicPPT | 私人，不公开（2026-06-24 降级=FIELDBOOK 设计源+归档，ADR-030）| `D:\Claude\Tools\AnthropicPPT` |
