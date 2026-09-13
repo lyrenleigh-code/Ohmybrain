@@ -12,7 +12,7 @@ tags: [memory, 索引, auto-memory]
 
 > 不复制 memory 完整内容（避免双写），本页只索引 + 简短描述 + link 到 memory 文件。
 
-> **计数口径（@2026-08-30）**：auto-memory 共 **100 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 100 个 `.md`）。分布：user **1** / feedback **31** / project **65** / reference **3**。下方各类型标题计数与此严格一致。
+> **计数口径（@2026-09-04）**：auto-memory 共 **106 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 107 个 `.md`）。分布：user **1** / feedback **33** / project **69** / reference **3**。下方各类型标题计数与此严格一致。
 >
 > 注：`MEMORY.md` 索引行中「flowgen-vsdx M5 升级」一条指向 `~/.claude/skills/flowgen-vsdx/SKILL.md`（skill 文件，**非 memory 条目**），不计入总数。
 
@@ -22,7 +22,7 @@ tags: [memory, 索引, auto-memory]
 
 - [user_profile](../../../../../zazn/.claude/projects/D--Claude/memory/user_profile.md) — UWA 研究者 / MATLAB 主力 / Windows+bash / 中文 / 专家主导 / 并行优先
 
-### feedback（行为指导 · 31 条）
+### feedback（行为指导 · 33 条）
 
 按主题分组：
 
@@ -69,7 +69,7 @@ tags: [memory, 索引, auto-memory]
 - `feedback_flowgen_palette_full_persist` — flowgen 默认配色更新需 4 处完整固化：.py 默认 + SKILL 正文 + frontmatter + 项目副本（2026-07 新增）
 - `feedback_visio_headless_orphan_lock` — flowgen 渲染 SaveAs 报 [只读] = headless COM 孤儿进程占锁，仅杀无窗口标题者再重渲（2026-07 新增）
 
-### project（项目状态 · 65 条）
+### project（项目状态 · 69 条）
 
 按项目分组：
 
@@ -152,6 +152,18 @@ tags: [memory, 索引, auto-memory]
 
 **DocProcess / CoupledMultiOrder（1）**
 - `project_coupledmultiorder_init` — CoupledMultiOrder 派生（多阶耦合智能艇群阶跃式协控，ADR-040；主交付物=汇报 PPT 59 页 V5→V6 克制修订 + 解说词 + 补充说明 docx，2026-08-05 派生）
+
+**DocProcess / DeepSeaIndustry（1）**
+- `project_deepseaindustry_init` — DeepSeaIndustry 派生（深海技术产业促进申报书，ADR-042；申报口径待定先搭架子，git `97fa2c3`）
+
+**DocProcess / XiaojingLaunch（1）**
+- `project_xiaojinglaunch_init` — XiaojingLaunch 小鲸100 V3.0 发布会材料（ADR-043；派生当日 SPEC-001 交付：解说词微调版 + PPT 框架 17 页，git `2ee3f7d`）
+
+**DocProcess / AUVSlopeMCM（1）**
+- `project_auvslopemcm_init` — AUVSlopeMCM 派生（AUV 坡上扫雷，ADR-045；主交付物形态/任务口径待讨论先搭架子，无依赖，git `723d2fb`）
+
+**DocProcess / AcousticLiteracy（1）**
+- `project_acousticliteracy_init` — AcousticLiteracy 派生（声学素养提升项目，ADR-044；口径待讨论先搭架子，git `88a7379`）
 
 **Patents（1）**
 - `project_patents_2026-06-29` — 4 候选模板化重构 + 首次本地 git init（53bd96d 仅本地无远程；07-11 检阅时实际已 6 候选目录）

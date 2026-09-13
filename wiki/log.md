@@ -3,6 +3,55 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-09-04] 派生登记 | AUVSlopeMCM 派生（活跃 32→33，DocProcess×19→×20，ADR-045）
+
+用户要求新建文档撰写类项目「AUV坡上扫雷」。AskUserQuestion 四项裁定：目录名 **AUVSlopeMCM**（MCM = Mine Countermeasures）/ 主交付物**待定先搭架子** / **无依赖** / **git init + 首 commit**。
+
+- SOP §1 派生（robocopy template-document，42 目录 / 73 文件）→ CLAUDE.md / README.md 占位符全清 + 「当前状态」段（待办：讨论主交付物形态与任务口径 → wiki/topics 议题 → raw/ 摄入 → SPEC-001）；README 三图 + 章节产出物清单留模板占位并加注
+- SOP §6 验证全过；git init -b main：`723d2fb` 单 commit（占位符替换在 commit 前用 Edit 工具完成，沿用 ADR-043 规避 heredoc 反斜杠折叠）
+- **依赖判定**：AUVSurvey / AUVProposal 可查询复用但按「查询不构成依赖」口径记为无依赖——AUV 族三项目并列而非上下游
+- **登记面（派生当日全量）**：root / Hub / DocProcess CLAUDE.md + `projects/auvslopemcm/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + 活跃项目数行 + [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-045 + [[architecture/roadmap]] + 本 log + auto-memory `project_auvslopemcm_init` + [[topics/memory-index]] 指针
+- **CANON 级联当日收口**：活跃 32→33 / DocProcess×19→×20 / ADR ~044→~045 / memory 103→106 / feedback 31→33 / project 68→69；`--check` 修后静默
+- **同批清进场存量债**：进场时 `--check` 已报 13 处不一致（09-02~03 session 的 memory 增量漏级联），属「审计后窗口」反模式**第 6 次复发**，本轮与派生级联一并收口，不留债给下轮入会审计
+- **过程记录**：后台会话隔离 guard 拦下 Hub 仓内 Write/Edit（主工作树尚压着 ADR-042/043/044 三批未提交登记，进 worktree 会与之分叉），经用户裁定关闭该仓 `bgIsolation` 并在主工作树线性叠加
+- AUTO-GIT-SNAPSHOT `--gen` 重打 @2026-09-04（39→40 仓，新仓 `DocProcess/AUVSlopeMCM` `723d2fb` 入自动表）
+- 页面总数不变 113。**下一步**：与用户讨论主交付物形态 / 受众 / 任务口径 → SPEC-001
+
+---
+## [2026-08-31] 同日续 2 | 派生登记 | AcousticLiteracy 派生（活跃 31→32，DocProcess×18→×19，ADR-044）
+
+用户要求新建文本项目「声学素养提升项目」，先出模板后讨论口径。AskUserQuestion 两项裁定：目录名 **AcousticLiteracy** / **git init + 首 commit**；主交付物与依赖按「先搭架子待讨论」处理（沿用 ADR-034/040/042/043 先例，素养提升/知识建设类 DocProcess 首例）。
+
+- SOP §1 派生（robocopy template-document）→ CLAUDE.md / README.md 占位符全清 + 「当前状态」段（待办：讨论定形态/受众/范围 → wiki/topics 议题 → SPEC-001）；README 三图 + 章节表留模板占位并加注
+- SOP §6 验证全过；git init -b main：`88a7379` 单 commit
+- **登记面（派生当日全量）**：root / Hub / DocProcess CLAUDE.md + `projects/acousticliteracy/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + 活跃项目数行 + [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-044 + [[architecture/roadmap]] + 本 log + auto-memory `project_acousticliteracy_init` + [[topics/memory-index]] 指针 + AUTO-GIT-SNAPSHOT `--gen` 重打（38→39 仓）
+- **CANON 级联当日收口**：活跃 31→32 / DocProcess×18→×19 / ADR ~043→~044 / memory 102→103 / project 67→68；`--check` 静默
+- **同日附带**：XiaojingLaunch SPEC-001 当日交付（`2ee3f7d`）——dashboard 状态行 🟡→🟢 刷新，root/Hub/DocProcess CLAUDE.md 行 hash 刷新，memory + memory-index 指针刷新
+- 页面总数不变 113。**下一步**：与用户讨论主交付物形态 / 受众 / 范围 → SPEC-001
+
+---
+## [2026-08-31] 派生登记 | XiaojingLaunch 派生（活跃 30→31，DocProcess×17→×18，ADR-043）
+
+用户要求新建文档项目「小鲸发布会材料」。AskUserQuestion 四项裁定：目录名 **XiaojingLaunch** / 主交付物 = **发布会 PPT + 演讲稿/串词**（口径先搭架子待定）/ **无依赖** / **git init + 首 commit**。
+
+- SOP §1 派生（robocopy template-document）→ CLAUDE.md / README.md 占位符全清 + CLAUDE.md 新增「当前状态」段（待办：「小鲸」产品资料 / 发布会需求入 raw/ → /ingest → SPEC-001）；README 三图 + 章节表留模板占位并加注
+- SOP §6 验证全过；git init -b main：`a94cf00` 单 commit（73 文件；替换在 commit 前完成——吸取 DeepSeaIndustry heredoc 反斜杠教训改用 Edit 工具，无需补 commit）
+- **登记面（派生当日全量）**：root / Hub / DocProcess CLAUDE.md + `projects/xiaojinglaunch/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + 活跃项目数行 + [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-043 + [[architecture/roadmap]] + 本 log + auto-memory `project_xiaojinglaunch_init` + [[topics/memory-index]] 指针 + AUTO-GIT-SNAPSHOT `--gen` 重打（37→38 仓）
+- **CANON 级联当日收口**（不留审计后窗口债）：活跃 30→31 / DocProcess×17→×18 / ADR ~042→~043 / memory 101→102 / project 66→67；`--check` 静默
+- 页面总数不变 113（导航卡不计内容页）。**下一步**：用户提供「小鲸」产品资料 / 发布会需求 → SPEC-001
+
+---
+## [2026-08-30] 同日续 3 | 派生登记 | DeepSeaIndustry 派生（活跃 29→30，DocProcess×16→×17，ADR-042）
+
+用户要求依据文档类模板新建项目撰写「深海技术产业促进申报书」。AskUserQuestion 四项裁定：目录名 **DeepSeaIndustry** / 主交付物口径**暂不确定先搭架子** / **无依赖** / **git init + 首 commit**。
+
+- SOP §1 派生（cp template-document，73 文件）→ CLAUDE.md / README.md 占位符全清 + CLAUDE.md 新增「当前状态」段（待办：申报通知 / 模板 / 指南入 raw/ → /ingest → SPEC-001）；README 三图 + 章节表留模板占位并加注
+- SOP §6 验证全过；git init -b main：`fa4a663` → `97fa2c3`（README 替换首 commit 时因 Bash heredoc 反斜杠折叠未命中，补 commit 不 amend）
+- **登记面（派生当日全量）**：root / Hub / DocProcess CLAUDE.md + `projects/deepseaindustry/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + 活跃项目数行 + [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-042 + [[architecture/roadmap]] + 本 log + auto-memory `project_deepseaindustry_init` + [[topics/memory-index]] 指针 + AUTO-GIT-SNAPSHOT `--gen` 重打（36→37 仓）
+- **CANON 级联当日收口**（不留审计后窗口债）：活跃 29→30 / DocProcess×16→×17 / ADR ~041→~042 / memory 100→101 / project 65→66；`--check` 静默
+- 页面总数不变 113（导航卡不计内容页）。**下一步**：用户提供官方申报材料 → SPEC-001
+
+---
 ## [2026-08-30] 同日续 2 | I4/I1 两条笨版本落地：wiki 读取日志 hook + 用量报表 / memory 退役冷层脚本
 
 承 [[source-summaries/ai-memory-system-design-framework]] 对照表的两条改进候选，用户批准后即办（"先用笨版本吃掉七八成价值"）：

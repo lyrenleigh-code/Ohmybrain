@@ -17,6 +17,113 @@ tags: [ADR, 决策, log]
 
 ---
 
+## ADR-045 · 2026-09-04 · AUVSlopeMCM 项目派生（DocProcess，AUV 坡上扫雷）
+
+### 触发
+
+用户提出新建文档撰写类项目「AUV坡上扫雷」。经确认（AskUserQuestion 四项）：目录名 `AUVSlopeMCM`（MCM = Mine Countermeasures，与 AUVSurvey / AUVProposal 同族前缀）、主交付物**待定先搭架子**、无依赖、派生后 git init + 首 commit。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/AUVSlopeMCM` 🔒（本地 main，无远程，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=无。DocProcess 第 20 个正式登记子项目，活跃项目 32→33。
+
+沿用「主交付物待定也先搭架子」先例（ADR-034/040/042/043/044）：任务口径（坡度范围 / 雷型 / AUV 平台 / 探测-识别-处置链路边界）与交付形态（方案 docx / 汇报 PPT / 双交付）到位后再落 SPEC-001。
+
+**依赖判定**：AUV 平台调研（AUVSurvey）与整艇架构口径（AUVProposal）可复用，但按 conventions「查询不构成依赖」口径，DEPENDS_ON 记为无——三者是同域并列项目而非上下游。
+
+### 实现
+
+- SOP §1 派生（robocopy template-document，42 目录 / 73 文件）+ CLAUDE.md / README.md 占位符全清（README 三图 + 章节产出物清单留模板占位并加「待 SPEC-001 重写」注）+ CLAUDE.md「当前状态」段
+- SOP §6 验证全过（dirs / placeholders / lint / validate / sync_index 0 页）
+- git init -b main：`723d2fb` 首 commit（单 commit；占位符替换在 commit 前用 Edit 工具完成，沿用 ADR-043 规避 heredoc 反斜杠折叠的做法）
+- 登记面（派生当日全量）：root / Hub / DocProcess CLAUDE.md + `projects/auvslopemcm/` 导航卡 + dashboard 状态行 + 上次同步头 + system-overview 实例表 + 活跃项目数行 + conventions §9 + 本 ADR + roadmap + log/index + auto-memory `project_auvslopemcm_init` + memory-index 指针；**CANON 级联当日收口**（活跃 32→33 / DocProcess×19→×20 / ADR ~044→~045 / memory 103→106 / feedback 31→33 / project 68→69），并**一并清掉进场时已存在的 13 处机检债**（09-02~03 session 漏级联，「审计后窗口」第 6 次复发）
+
+### 后果
+
+- 项目进入 🟡 待口径：下一步与用户讨论主交付物形态 + 任务口径，议题落 wiki/topics，随后 SPEC-001
+- AUV 族三项目并列（AUVSurvey 调研 / AUVProposal 立项论证 / AUVSlopeMCM 作战使用），后续若出现真实上下游关系需回改 DEPENDS_ON
+- 反水雷（MCM）为 DocProcess 首例任务域
+
+---
+
+## ADR-044 · 2026-08-31 · AcousticLiteracy 项目派生（DocProcess，声学素养提升项目）
+
+### 触发
+
+用户提出新建文本项目「声学素养提升项目」，要求先出项目模板、随后讨论具体口径。经确认（AskUserQuestion 两项）：目录名 `AcousticLiteracy`、派生后 git init + 首 commit；主交付物形态 / 受众 / 范围留待讨论。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/AcousticLiteracy` 🔒（本地 main，无远程，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=无（待讨论后定）。DocProcess 第 19 个正式登记子项目，活跃项目 31→32。
+
+沿用「主交付物待定也先搭架子」先例（ADR-034/040/042/043）；与既有项目差异：本项目为**素养提升 / 知识建设类**（候选形态：教材 / 讲义 / 课程 PPT / 系列科普文档），DocProcess 内首例，口径讨论走 wiki/topics F-N 议题 → decision-N → SPEC-001。
+
+### 实现
+
+- SOP §1 派生（robocopy template-document）+ CLAUDE.md / README.md 占位符全清（README 三图 + 章节表留模板占位并加注）+ CLAUDE.md「当前状态」段
+- SOP §6 验证全过（dirs / placeholders / lint / validate / sync_index 0 页）
+- git init -b main：`88a7379` 首 commit（单 commit）
+- 登记面（派生当日全量）：root / Hub / DocProcess CLAUDE.md + `projects/acousticliteracy/` 导航卡 + dashboard 状态行 + 上次同步头 + system-overview 实例表 + 活跃项目数行 + conventions §9 + 本 ADR + roadmap + log/index + auto-memory `project_acousticliteracy_init` + memory-index 指针；**CANON 级联当日收口**（活跃 31→32 / DocProcess×18→×19 / ADR ~043→~044 / memory 102→103 / project 67→68），不留审计后窗口债
+
+### 后果
+
+- 项目进入 🟡 待讨论：下一步与用户讨论主交付物形态 / 受众 / 范围，议题落 wiki/topics，随后 SPEC-001
+- 领域知识底座：Hub wiki 水声 / 声学 concept 页组可复用（查询不构成依赖）
+
+---
+
+## ADR-043 · 2026-08-31 · XiaojingLaunch 项目派生（DocProcess，小鲸发布会材料）
+
+### 触发
+
+用户提出新建文档项目「小鲸发布会材料」。经确认（AskUserQuestion 四项）：目录名 `XiaojingLaunch`、主交付物 = **发布会 PPT + 演讲稿/串词**（具体口径先搭架子）、无依赖、派生后 git init + 首 commit。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/XiaojingLaunch` 🔒（本地 main，无远程，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=无。DocProcess 第 18 个正式登记子项目，活跃项目 30→31。
+
+沿用 OceanEnvSupport（ADR-034）/ CoupledMultiOrder（ADR-040）/ DeepSeaIndustry（ADR-042）先例：**主交付物待定也先搭架子**——发布会主题 / 产品资料到位后再落 SPEC-001。主交付物含 PPT：产出候选走 `Tools/ppt-master` 引擎（ADR-030；先例 CoupledMultiOrder 汇报 PPT）。
+
+### 实现
+
+- SOP §1 派生（robocopy template-document）+ CLAUDE.md / README.md 占位符全清（README 三图 + 章节表留模板占位并加「待 SPEC-001 重写」注）+ CLAUDE.md 新增「当前状态」段
+- SOP §6 验证全过（dirs / placeholders / lint / validate / sync_index 0 页）
+- git init -b main：`a94cf00` 首 commit（73 文件；占位符替换在 commit 前完成，单 commit——吸取 ADR-042 heredoc 反斜杠教训改用 Edit 工具）
+- 登记面（派生当日全量）：root / Hub / DocProcess CLAUDE.md + `projects/xiaojinglaunch/` 导航卡 + dashboard 状态行 + 上次同步头 + system-overview 实例表 + 活跃项目数行 + conventions §9 + 本 ADR + roadmap + log/index + auto-memory `project_xiaojinglaunch_init` + memory-index 指针；**CANON 级联当日收口**（活跃 30→31 / DocProcess×17→×18 / ADR ~042→~043 / memory 101→102 / project 66→67），不留审计后窗口债
+
+### 后果
+
+- 项目进入 🟡 待口径：下一步由用户提供「小鲸」产品资料 / 发布会需求（定位、卖点、日程、受众），摄入后写 SPEC-001 发布会材料大纲
+- 发布会/宣传类为 DocProcess 首例；PPT 先例 CoupledMultiOrder（汇报 PPT 59 页，ppt-master 管线）
+
+---
+
+## ADR-042 · 2026-08-30 · DeepSeaIndustry 项目派生（DocProcess，深海技术产业促进申报书）
+
+### 触发
+
+用户提出依据文档类项目模板新建项目，撰写「深海技术产业促进申报书」。经确认（AskUserQuestion 四项）：英文目录名 `DeepSeaIndustry`、主交付物口径**暂不确定先搭架子**、无依赖、派生后 git init + 首 commit。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/DeepSeaIndustry` 🔒（本地 main，无远程，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=无。DocProcess 第 17 个正式登记子项目，活跃项目 29→30。
+
+沿用 OceanEnvSupport（ADR-034）/ CoupledMultiOrder（ADR-040）先例：**主交付物待定也先搭架子**——申报类别 / 主管部门 / 官方模板到位后再落 SPEC-001，不因口径未定推迟工作区建立。
+
+### 实现
+
+- SOP §1 派生（cp template-document，73 文件）+ CLAUDE.md / README.md 占位符全清（README 三图 + 章节表留模板占位并加「待 SPEC-001 重写」注）+ CLAUDE.md 新增「当前状态」段（待办：官方材料入 raw/ → /ingest → SPEC-001）
+- SOP §6 验证全过（dirs / placeholders / lint / validate / sync_index 0 页）
+- git init -b main：`fa4a663` init（73 文件）→ `97fa2c3` README 占位符填充（首 commit 时 README 替换因 Bash heredoc 反斜杠折叠未命中，补 commit 而非 amend）
+- 登记面（派生当日全量）：root / Hub / DocProcess CLAUDE.md + `projects/deepseaindustry/` 导航卡 + dashboard 状态行 + 上次同步头 + system-overview 实例表 + 活跃项目数行 + conventions §9 + 本 ADR + roadmap + log/index + auto-memory `project_deepseaindustry_init` + memory-index 指针；**CANON 级联当日收口**（活跃 29→30 / DocProcess×16→×17 / ADR ~041→~042 / memory 100→101 / project 65→66），不留审计后窗口债
+
+### 后果
+
+- 项目进入 🟡 待口径：下一步由用户提供申报通知 / 模板 / 指南，摄入后写 SPEC-001 申报书大纲
+- 申报书类先例：CommSimSupport（立项申报书）；骨架参考 [[../source-summaries/lixiang-lunzheng-report-template]]
+
+---
+
 ## ADR-041 · 2026-08-18 · DigitalTwin1plusN 项目退役（体系首例项目退役登记）
 
 ### 触发

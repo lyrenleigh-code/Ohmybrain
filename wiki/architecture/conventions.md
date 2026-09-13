@@ -10,7 +10,7 @@ tags: [约定, conventions, 跨项目]
 命名 / 目录 / commit / PR / 工作流 / worktree / 私人项目 等跨项目共享约定。**事实源 = `~/.claude/rules/common/*.md`**（全局规则），本页是 Hub wiki 的索引 + 项目级扩展。
 
 > [!note] 全局资源规模（@2026-06-29）
-> `~/.claude/` 当前承载：**auto-memory 100 个**（user 1 / feedback 31 / project 65 / reference 3，`MEMORY.md` 索引 101 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
+> `~/.claude/` 当前承载：**auto-memory 106 个**（user 1 / feedback 33 / project 69 / reference 3，`MEMORY.md` 索引 107 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
 
 ## 1. 命名约定
 
@@ -149,6 +149,10 @@ Type: `feat` / `fix` / `refactor` / `docs` / `test` / `chore` / `perf` / `ci`
 | `DocProcess/AUVProposal` 🔒 | 私人（AUV 项目立项论证） | 本地 main，无远程 |
 | `DocProcess/AUVSurvey` 🔒 | 私人（AUV 广泛调研） | 本地 main，无远程 |
 | `DocProcess/CoupledMultiOrder` 🔒 | 私人（多阶耦合智能艇群阶跃式协控汇报） | 本地 main `401b4b4`，无远程 |
+| `DocProcess/DeepSeaIndustry` 🔒 | 私人（深海技术产业促进申报书，申报口径待定） | 本地 main `97fa2c3`，无远程 |
+| `DocProcess/XiaojingLaunch` 🔒 | 私人（小鲸发布会材料，口径待定） | 本地 main `a94cf00`，无远程 |
+| `DocProcess/AcousticLiteracy` 🔒 | 私人（声学素养提升项目，口径待讨论） | 本地 main `88a7379`，无远程 |
+| `DocProcess/AUVSlopeMCM` 🔒 | 私人（AUV 坡上扫雷，口径待讨论） | 本地 main `723d2fb`，无远程 |
 | `TechReq/UWAcomm_usbl` 🔒 | **内网 Internal**（UWAcomm+USBL 联合仿真） | 私有，不公开 |
 | `TechReq/SonarSim` 🔒 | 私人（主动声呐界面仿真） | 私有 |
 | `TechReq/USBL_hw` 🔒 | 私人（USBL 硬件设计，engineering-hardware） | 内网 gitlab |
