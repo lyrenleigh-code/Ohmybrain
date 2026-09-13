@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-08-05
+updated: 2026-09-13
 tags: [ADR, 决策, log]
 ---
 
@@ -14,6 +14,64 @@ tags: [ADR, 决策, log]
 > **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-041（含 ADR-031/032/033 追溯）。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
 >
 > **编号约定**：ADR 编号为 **append-only 稳定 ID**（按登记顺序递增、不复用、不重排）；表按**事件日期降序**排列。绝大多数情况下编号降序 == 日期降序，但 retroactive 追溯条目（如 ADR-025 事件 2026-06-04、2026-06-09 登记）会出现编号与位置不严格对应——这是为避免重编号引发跨页引用级联失效（教训见 [[../log]] 2026-05-29）而做的取舍。
+
+---
+
+## ADR-047 · 2026-09-13 · SoSCommSupport 项目派生（DocProcess，体系通信保障）
+
+### 触发
+
+用户提出「新建一个项目，项目名称为体系通信保障」（后台会话，用户不在线）。四项未走 AskUserQuestion、按 ADR-046 推荐口径直取：目录名 `SoSCommSupport`（SoS = System-of-Systems 体系 / Comm 通信 / Support 保障，与 OceanEnvSupport / CommSimSupport 命名风格一致；系代拟，用户如另有偏好可改名并同步登记面）、主交付物**待定先搭架子**、无依赖、派生后 git init + 首 commit。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/SoSCommSupport` 🔒（本地 main，无远程，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=无。DocProcess 第 22 个正式登记子项目，活跃项目 34→35。
+
+沿用「主交付物待定也先搭架子」先例（ADR-034/040/042~046）：主交付物形态（保障方案 docx / 论证报告 / 申报书·立项书 / 汇报 PPT）与口径（「体系」边界——纳入的平台 / 节点 / 链路；保障层次——通信体制 × 组网协议 × 频谱与信道资源 × 抗干扰 × 中继接力 × 海洋环境适配 × 保障组织流程；受众）到位后再落 SPEC-001。
+
+**依赖判定**：UWAcomm（通信体制）/ UWAnet（组网协议）/ UWAprojDoc、CooperativeDetection（体系方案模板与口径）/ OceanEnvSupport（作战保障口径）/ UUVCommSwarmSim（通信组网仿真）均可查询复用，按 conventions「查询不构成依赖」口径记为无——本项目是文档工作区，不以任何仓的代码或仿真结果为构建输入。
+
+### 实现
+
+- SOP §1 派生（PowerShell robocopy template-document）+ CLAUDE.md / README.md 占位符全清（README 三图 + 章节产出物清单留模板占位并加「待 SPEC-001 重写」注；prompts/ 闭环套件占位符按惯例保留）+ CLAUDE.md「当前状态」段（含目录名代拟提示）
+- SOP §6 验证全过（dirs / placeholders / lint / validate / sync_index 0 页）
+- git init -b main：`d3831e3` 首 commit（72 文件，工作树干净）
+- 登记面（派生当日全量）：root / Hub / DocProcess CLAUDE.md + `projects/soscommsupport/` 导航卡 + dashboard 状态行 + 上次同步头 + system-overview 实例表 + 活跃项目数行 + conventions §9 + 本 ADR + roadmap + log/index + auto-memory `project_soscommsupport_init` + memory-index 指针；CANON 级联当日收口（活跃 34→35 / DocProcess×21→×22 / ADR ~046→~047 / memory 109→110 / project 70→71）
+- 复用 ADR-046 派生 scratchpad 脚本（scaffold / register）改参数直跑，register 先全量校验锚点再一次性落盘
+
+### 后果
+
+- 项目进入 🟡 待口径：下一步先确认目录名，再与用户讨论主交付物形态 + 口径，议题落 wiki/topics，随后 SPEC-001
+- 与同日派生的 UUVCommSwarmSim（通信组网 + 集群控制仿真软件）题域相邻：一个是仿真软件文档、一个是体系级保障方案，口径讨论时一并划清边界；若后续以 UWAcomm / UWAnet 仿真结果为直接输入，需回改 DEPENDS_ON（同 CommSimSupport 先例）
+- 目录名若改名：同步 3 处 CLAUDE.md + Hub 登记面 8 页 + 导航卡目录 + auto-memory 文件名与 MEMORY.md 指针
+
+---
+
+## ADR-046 · 2026-09-13 · UUVCommSwarmSim 项目派生（DocProcess，UUV 通信组网与集群控制一体化仿真软件）
+
+### 触发
+
+用户提出按文档模板新建项目《UUV通信组网与集群控制一体化仿真软件》。经确认（AskUserQuestion 四项）：目录名 `UUVCommSwarmSim`（UUV + Comm 通信组网 + Swarm 集群控制 + Sim 仿真软件，与 UWAcomm / SonarSim 命名风格一致）、主交付物**待定先搭架子**、无依赖、派生后 git init + 首 commit——四项均取推荐项。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/UUVCommSwarmSim` 🔒（本地 main，无远程，手动模式），按 `template-document` SOP 派生，DEPENDS_ON=无。DocProcess 第 21 个正式登记子项目，活跃项目 33→34。
+
+沿用「主交付物待定也先搭架子」先例（ADR-034/040/042~045）：主交付物形态（软件研制方案 docx / 申报书·立项书 / 需求规格说明书 / 汇报 PPT）与口径（通信体制 × 组网协议 × 集群控制三域如何一体化、仿真粒度、受众）到位后再落 SPEC-001。
+
+**依赖判定**：通信体制仿真（UWAcomm）、组网协议仿真（UWAnet）、集群协控口径（CoupledMultiOrder）均可复用，但按 conventions「查询不构成依赖」口径记为无——本项目是文档工作区，不以三仓代码或仿真结果为构建输入。
+
+### 实现
+
+- SOP §1 派生（PowerShell robocopy template-document，41 目录 / 73 文件；Git Bash 直跑 robocopy 会把 `/E` 等开关做 MSYS 路径转换、只打印用法）+ CLAUDE.md / README.md 占位符全清（README 三图 + 章节产出物清单留模板占位并加「待 SPEC-001 重写」注；prompts/ 闭环套件占位符按惯例保留）+ CLAUDE.md「当前状态」段
+- SOP §6 验证全过（dirs / placeholders / lint / validate / sync_index 0 页）
+- git init -b main：`d06f8f4` 首 commit（72 文件；占位符替换用脚本文件 + chr(92) 拼路径规避 heredoc 反斜杠折叠；含 commit 的命令避开 `-n` 字样以免触发 block-no-verify hook）
+- 登记面（派生当日全量）：root / Hub / DocProcess CLAUDE.md + `projects/uuvcommswarmsim/` 导航卡 + dashboard 状态行 + 上次同步头 + system-overview 实例表 + 活跃项目数行 + conventions §9 + 本 ADR + roadmap + log/index + auto-memory `project_uuvcommswarmsim_init` + memory-index 指针；CANON 级联当日收口（活跃 33→34 / DocProcess×20→×21 / ADR ~045→~046 / memory 108→109 / project 69→70）
+
+### 后果
+
+- 项目进入 🟡 待口径：下一步与用户讨论主交付物形态 + 口径，议题落 wiki/topics，随后 SPEC-001
+- 通信 / 组网 / 集群三域在 DocProcess 首次合为一个仿真软件文档口径；若后续文档以 UWAcomm / UWAnet 仿真结果为直接输入，需回改 DEPENDS_ON（同 CommSimSupport 依赖 UWAcomm 先例）
 
 ---
 

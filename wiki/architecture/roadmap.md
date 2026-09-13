@@ -13,6 +13,8 @@ tags: [roadmap, 演化, 里程碑]
 
 | 日期 | 里程碑 | 类型 |
 |------|--------|------|
+| **2026-09-13** | SoSCommSupport 项目派生（体系通信保障，template-document，主交付物形态/受众/口径待讨论先搭架子；无依赖，git init `d3831e3` 本地 main 无远程） | DocProcess (ADR-047) |
+| **2026-09-13** | UUVCommSwarmSim 项目派生（UUV 通信组网与集群控制一体化仿真软件，template-document，主交付物形态/受众/口径待讨论先搭架子；无依赖，git init `d06f8f4` 本地 main 无远程） | DocProcess (ADR-046) |
 | **2026-09-04** | AUVSlopeMCM 项目派生（AUV 坡上扫雷，template-document，主交付物形态/受众/任务口径待讨论先搭架子；无依赖，git init `723d2fb` 本地 main 无远程） | DocProcess (ADR-045) |
 | **2026-08-31** | AcousticLiteracy 项目派生（声学素养提升项目，template-document，主交付物形态/受众/范围待讨论先搭架子；无依赖，git init `88a7379` 本地 main 无远程） | DocProcess (ADR-044) |
 | **2026-08-31** | XiaojingLaunch 项目派生（小鲸发布会材料，template-document，主交付物=发布会 PPT + 演讲稿/串词；无依赖，git init `a94cf00` 本地 main 无远程）；同日 SPEC-001 首轮+二轮交付（解说词微调版 + PPT 框架 17 页，`2ee3f7d`） | DocProcess (ADR-043) |

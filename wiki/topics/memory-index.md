@@ -12,7 +12,7 @@ tags: [memory, 索引, auto-memory]
 
 > 不复制 memory 完整内容（避免双写），本页只索引 + 简短描述 + link 到 memory 文件。
 
-> **计数口径（@2026-09-13）**：auto-memory 共 **108 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 109 个 `.md`）。分布：user **1** / feedback **35** / project **69** / reference **3**。下方各类型标题计数与此严格一致。
+> **计数口径（@2026-09-13）**：auto-memory 共 **110 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 111 个 `.md`）。分布：user **1** / feedback **35** / project **71** / reference **3**。下方各类型标题计数与此严格一致。
 >
 > 注：`MEMORY.md` 索引行中「flowgen-vsdx M5 升级」一条指向 `~/.claude/skills/flowgen-vsdx/SKILL.md`（skill 文件，**非 memory 条目**），不计入总数。
 
@@ -73,7 +73,7 @@ tags: [memory, 索引, auto-memory]
 - `feedback_flowgen_palette_full_persist` — flowgen 默认配色更新需 4 处完整固化：.py 默认 + SKILL 正文 + frontmatter + 项目副本（2026-07 新增）
 - `feedback_visio_headless_orphan_lock` — flowgen 渲染 SaveAs 报 [只读] = headless COM 孤儿进程占锁，仅杀无窗口标题者再重渲（2026-07 新增）
 
-### project（项目状态 · 69 条）
+### project（项目状态 · 71 条）
 
 按项目分组：
 
@@ -165,6 +165,12 @@ tags: [memory, 索引, auto-memory]
 
 **DocProcess / AUVSlopeMCM（1）**
 - `project_auvslopemcm_init` — AUVSlopeMCM 派生（AUV 坡上扫雷，ADR-045；主交付物形态/任务口径待讨论先搭架子，无依赖，git `723d2fb`）
+
+**DocProcess / UUVCommSwarmSim（1）**
+- `project_uuvcommswarmsim_init` — UUVCommSwarmSim 派生（UUV 通信组网与集群控制一体化仿真软件，ADR-046；主交付物形态/受众/口径待讨论先搭架子，无依赖，git `d06f8f4`）
+
+**DocProcess / SoSCommSupport（1）**
+- `project_soscommsupport_init` — SoSCommSupport 派生（体系通信保障，ADR-047；目录名代拟可改；主交付物形态/受众/口径待讨论先搭架子，无依赖，git `d3831e3`）
 
 **DocProcess / AcousticLiteracy（1）**
 - `project_acousticliteracy_init` — AcousticLiteracy 派生（声学素养提升项目，ADR-044；口径待讨论先搭架子，git `88a7379`）

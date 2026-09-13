@@ -3,6 +3,33 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-09-13] 同日续 2 | 派生登记 | SoSCommSupport 派生（活跃 34→35，DocProcess×21→×22，ADR-047）
+
+用户（后台会话，不在线）要求「新建一个项目，项目名称为体系通信保障」。四项按 ADR-046 推荐口径直取、未 AskUserQuestion：目录名 **SoSCommSupport**（SoS = System-of-Systems 体系 / Comm 通信 / Support 保障，代拟，用户可改名重登记）/ 主交付物**待定先搭架子** / **无依赖** / **git init + 首 commit**。
+
+- SOP §1 派生（PowerShell robocopy template-document）→ CLAUDE.md / README.md 占位符全清 + 「当前状态」段（含目录名代拟提示；待办：确认目录名 → 讨论主交付物形态与口径 → wiki/topics 议题 → raw/ 摄入 → SPEC-001）；README 三图 + 章节产出物清单留模板占位并加注；prompts/ 闭环套件占位符按惯例保留
+- SOP §6 验证全过；git init -b main：`d3831e3` 单 commit（72 文件，工作树干净）
+- **依赖判定**：UWAcomm（通信体制）/ UWAnet（组网协议）/ UWAprojDoc、CooperativeDetection（体系方案模板与口径）/ OceanEnvSupport（作战保障口径）/ UUVCommSwarmSim（通信组网仿真）可查询复用，按「查询不构成依赖」口径记为无依赖
+- **登记面（派生当日全量）**：root / Hub / DocProcess CLAUDE.md + `projects/soscommsupport/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + 活跃项目数行 + [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-047 + [[architecture/roadmap]] + 本 log + auto-memory `project_soscommsupport_init` + [[topics/memory-index]] 指针
+- **CANON 级联当日收口**：活跃 34→35 / DocProcess×21→×22 / ADR ~046→~047 / memory 109→110 / project 70→71 / `MEMORY.md` 索引 110→111 行
+- 复用 ADR-046 派生的 scratchpad 脚本（scaffold / register）改参数直跑：脚本零反斜杠 + chr(92) 拼路径、含 commit 的命令避 `-n` 字样、register 先全量校验锚点再一次性落盘；Bash 工具大段 heredoc 再次报 `unexpected EOF while looking for matching quote`（无反斜杠仍触发，约 14 KB）→ Write 工具落盘 + 极简 Bash 执行
+- AUTO-GIT-SNAPSHOT `--gen` 重打 @2026-09-13（41→42 仓，新仓 `DocProcess/SoSCommSupport` `d3831e3` 入自动表）
+- 页面总数不变 113。**下一步**：确认目录名 → 与用户讨论主交付物形态 / 受众 / 口径 → SPEC-001（与同日派生 UUVCommSwarmSim 的口径边界一并划清）
+
+---
+## [2026-09-13] 同日续 | 派生登记 | UUVCommSwarmSim 派生（活跃 33→34，DocProcess×20→×21，ADR-046）
+
+用户要求「按照文档模板新建一个项目，内容是《UUV通信组网与集群控制一体化仿真软件》」。AskUserQuestion 四项裁定：目录名 **UUVCommSwarmSim** / 主交付物**待定先搭架子** / **无依赖** / **git init + 首 commit**（均取推荐项）。
+
+- SOP §1 派生（PowerShell robocopy template-document，41 目录 / 73 文件——Git Bash 直跑 robocopy 会把 `/E` 等开关做 MSYS 路径转换、只打印用法）→ CLAUDE.md / README.md 占位符全清 + 「当前状态」段（待办：讨论主交付物形态与口径 → wiki/topics 议题 → raw/ 摄入 → SPEC-001）；README 三图 + 章节产出物清单留模板占位并加注；prompts/ 闭环套件占位符按惯例保留
+- SOP §6 验证全过；git init -b main：`d06f8f4` 单 commit（72 文件；占位符替换用脚本文件 + chr(92) 拼路径）
+- **依赖判定**：UWAcomm（通信体制）/ UWAnet（组网协议）/ CoupledMultiOrder（集群协控）可查询复用，按「查询不构成依赖」口径记为无依赖
+- **登记面（派生当日全量）**：root / Hub / DocProcess CLAUDE.md + `projects/uuvcommswarmsim/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + 活跃项目数行 + [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-046 + [[architecture/roadmap]] + 本 log + auto-memory `project_uuvcommswarmsim_init` + [[topics/memory-index]] 指针
+- **CANON 级联当日收口**：活跃 33→34 / DocProcess×20→×21 / ADR ~045→~046 / memory 108→109 / project 69→70 / `MEMORY.md` 索引 109→110 行；`--check` 修后静默
+- **过程坑 ×3**：① 含 `git commit` 的命令里有 `sed -n`，被 `block-no-verify` hook 当 `git commit -n` 拦下（09-09 AUVProposal 同型）——整条含 commit 的命令避开 `-n` 字样 ② 被拦命令里 heredoc 写的脚本也随之未落盘，需整条重发 ③ Bash 工具大段 heredoc 两次报 `unexpected EOF while looking for matching quote`（行号指向 heredoc 起始行，定位不到具体字符）——改 Write 工具落盘脚本 + 极简 Bash 执行
+- AUTO-GIT-SNAPSHOT `--gen` 重打 @2026-09-13（40→41 仓，新仓 `DocProcess/UUVCommSwarmSim` `d06f8f4` 入自动表）
+- 页面总数不变 113。**下一步**：与用户讨论主交付物形态 / 受众 / 口径 → SPEC-001
+---
 ## [2026-09-13] CANON 级联收口 | memory 106→108 / feedback 33→35 + 四批派生登记 commit
 
 用户进场指令「先收口计数债，再 commit 四批登记」。进场 `--check` 报 13 处不一致（memory 总数 106→108 ×8 / feedback 子数 33→35 ×5）——09-09 AUVProposal session（`feedback_open_newline_truncation`）与 09-10 AUVSlopeMCM session（`feedback_doc_figure_plain_style`）各新增 1 条 feedback memory 当日漏级联，「审计后窗口」反模式**第 7 次复发**。
