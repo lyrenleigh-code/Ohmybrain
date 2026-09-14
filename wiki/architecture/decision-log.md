@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-09-13
+updated: 2026-09-14
 tags: [ADR, 决策, log]
 ---
 
@@ -14,6 +14,37 @@ tags: [ADR, 决策, log]
 > **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-041（含 ADR-031/032/033 追溯）。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
 >
 > **编号约定**：ADR 编号为 **append-only 稳定 ID**（按登记顺序递增、不复用、不重排）；表按**事件日期降序**排列。绝大多数情况下编号降序 == 日期降序，但 retroactive 追溯条目（如 ADR-025 事件 2026-06-04、2026-06-09 登记）会出现编号与位置不严格对应——这是为避免重编号引发跨页引用级联失效（教训见 [[../log]] 2026-05-29）而做的取舍。
+
+---
+
+## ADR-048 · 2026-09-14 · AUVNetCoop 项目派生（DocProcess，协同探测型 AUV 组网协同系统）
+
+### 触发
+
+用户提出「根据 AUVProposal 项目，写一个组网协同相关的，要把我们这个 U 用上，先出一个项目框架」。两路探查（AUVProposal 平台事实 + 兄弟项目组网协同口径）后在 `Ohmybrain/draft/` 起草项目框架 v0，用户回「你帮我搭建项目吧」；AskUserQuestion 三项：首 commit 授权 / D1~D9 全按推荐 / Hub 一并 commit——均取推荐项。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/AUVNetCoop` 🔒（本地 main，无远程，手动模式），按 `template-document` SOP 派生，**DEPENDS_ON = AUVProposal**（平台基线《技术要求》2026-09-04 版 + 五论证 + 研制技术协议体例 + docx 构建管线均为直接输入）。DocProcess 第 23 个正式登记子项目，活跃项目 35→36。
+
+**口径**：装备 / 工程实现口径，AUV 平台侧。以 AUVProposal 的 1 t 级 / 2000 m 三艇协同探测型 AUV 为底座、硬件零改动，承接研制技术协议 §2.2「后续可扩展」5 项（信息增益编队 / 多艇协同定位融合 / 多基地几何优化 / 动态时隙与自主协商 / 角色重构救援）+ wiki G8「U 间组网协议只有物理层」缺口；论证侧硬约束直接继承（三艇以上时分不码分 / 1000 s 超帧 S1~S5 / 单向互定位 O(N) 占声呐预算 20% / 横队并排同向 / 艇间收 30 km 余量 6.94 dB）。主交付物 《协同探测型AUV组网协同系统研制技术协议》（6 章，同单艇协议体例）。
+
+**划界**（与四个兄弟项目）：不写一体化仿真软件设计（UUVCommSwarmSim，仅作验证工具引用）/ 不做四化五层平台与辅助决策（SoSCommSupport）/ 不用「多阶 · 阶跃 · 耦合度」术语、不做消息价值与语义压缩（CoupledMultiOrder）/ 不做专题课题式拆分（CooperativeDetection 专题二）。Hub 层面「AUV 组网协同」为知识空白（`concepts/uwa-networking` 至今未建），私人项目禁 promote。
+
+**D1~D9 终裁（同日）**：目录名 AUVNetCoop / 研制技术协议体例 / 实装 3 艇 + 1 母艇、协议 ≤8 节点、仿真 ≥10 节点 / 母艇作网关节点 / 研究内容全量（含协同探测与任务闭环）/ 硬件零改动 / UUVCommSwarmSim 仅引用 / 先做论证 1（组网时隙与能量）、2（中继覆盖）/ 独立工作区。
+
+### 实现
+
+- 框架先行：`Ohmybrain/draft/AUVNetCoop/项目框架-v0.md` → 派生后转正为 `specs/active/2026-09-14-SPEC-001-project-framework.md`（定位 / 平台继承 / 立项抓手 / 边界 / 6 分系统研究内容 / 指标初拟 / 6 章大纲 / 10 图件 / 4 前置论证 / D1~D9）+ `wiki/topics/decision-001-framework-ruling.md`（项目 wiki 页面 0→1）
+- SOP §1 派生（PowerShell robocopy template-document，42 目录 / 73 文件）+ CLAUDE.md / README.md 占位符全清（README 三图留模板占位加注）+ CLAUDE.md「当前状态」段（含「平台事实基线一律取 09-04 版、禁引 08-03 旧口径」硬规则）；模板 wiki/index.md / log.md 为 CRLF，脚本内先归一 LF 再锚点替换
+- SOP §6 验证全过；git init -b main：`5a6bbfc` 首 commit（74 文件）
+- 登记面（派生当日全量）：root / Hub / DocProcess CLAUDE.md + `projects/auvnetcoop/` 导航卡 + dashboard 状态行 + 上次同步头 + system-overview 实例表 + 活跃项目数行 + conventions §9 + 本 ADR + roadmap + log/index + auto-memory `project_auvnetcoop_init` + memory-index 指针；CANON 级联当日收口（活跃 35→36 / DocProcess×22→×23 / ADR ~047→~048 / memory 110→111 / project 71→72）
+
+### 后果
+
+- 项目进入 🟢 框架终裁：下一步 PLAN-001 → AUVProposal 关键源入 raw/ → 论证 1、2 → 章节 draft
+- AUVProposal 首次出现下游派生项目（此前仅 AUVSurvey → AUVProposal 单向）；AUVProposal 基线若再变（技术要求版本升级），本项目 SPEC-001 §1 平台继承表须同步
+- 组网协同口径在 DocProcess 内现有四个近邻项目，本 ADR 划界表为后续同域派生的避让参照
 
 ---
 

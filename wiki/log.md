@@ -3,6 +3,25 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-09-14] 同日续 | 派生登记 | AUVNetCoop 派生（活跃 35→36，DocProcess×22→×23，ADR-048）
+
+用户要求「根据 AUVProposal 项目，写一个组网协同相关的，要把我们这个 U 用上，先出一个项目框架」，框架出后回「你帮我搭建项目吧」。AskUserQuestion 三项（首 commit 授权 / D1~D9 全按推荐 / Hub 一并 commit）均取推荐项。
+
+- **框架先行**：两路 Explore agent 并行（AUVProposal 平台事实——首次因 API SSL 错误失败重拉；兄弟项目组网协同口径）→ `Ohmybrain/draft/AUVNetCoop/项目框架-v0.md`（gitignored 暂存）→ 派生后转正 `specs/active/2026-09-14-SPEC-001-project-framework.md`。关键发现：① AUVProposal 研制技术协议 §2.2 明确「多艇协同算法不纳入本期」+ 5 项后续可扩展 + wiki G8 组网缺口 = 立项抓手 ② 平台事实须取 **09-04 新基线**（六舱段 / 艏 37 元 / 每舷 32 基元 / 39.6 kWh / 单一 VPX），`整艇简要框图说明.md` / `交付基线清单.md` 仍是 08-03 旧口径 ③ 四个近邻项目（UUVCommSwarmSim / SoSCommSupport / CoupledMultiOrder / CooperativeDetection）口径已占，空位 = AUV 平台侧组网协同工程实现
+- SOP §1 派生（robocopy template-document，42 目录 / 73 文件）→ CLAUDE.md / README.md 占位符全清 + 「当前状态」段（DEPENDS_ON = AUVProposal；平台基线硬规则）；模板 `wiki/index.md` / `log.md` 为 **CRLF**，首轮锚点替换失败，脚本内先归一 LF 再替换
+- 用户同日终裁 D1~D9 全按推荐 → SPEC-001 🟡→🟢 + `wiki/topics/decision-001-framework-ruling.md`（项目页面 0→1）；SOP §6 验证全过；git init -b main：`5a6bbfc`（74 文件）
+- **依赖判定**：AUVProposal 为真依赖（平台基线 + 五论证 + 协议体例 + 构建管线均为直接输入）；AUVSurvey / UWAnet / UUVCommSwarmSim / CoupledMultiOrder 查询复用不构成依赖
+- **登记面（派生当日全量）**：root / Hub / DocProcess CLAUDE.md + `projects/auvnetcoop/` 导航卡 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + 活跃项目数行 + [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-048 + [[architecture/roadmap]] + 本 log + auto-memory `project_auvnetcoop_init` + [[topics/memory-index]] 指针
+- **CANON 级联当日收口**：活跃 35→36 / DocProcess×22→×23 / ADR ~047→~048 / memory 110→111 / project 71→72 / `MEMORY.md` 索引 111→112 行
+- AUTO-GIT-SNAPSHOT `--gen` 重打 @2026-09-14（42→43 仓，新仓 `DocProcess/AUVNetCoop` `5a6bbfc` 入自动表）
+- 页面总数不变 113。**下一步**：PLAN-001 → AUVProposal 关键源入 raw/ → 论证 1（组网时隙与能量）、2（中继覆盖）→ 章节 draft
+---
+## [2026-09-14] 状态刷新 | UUVCommSwarmSim 第 4 章成稿 + 丰富化 | 导航页 / 项目表 / dashboard 同步
+
+- 项目侧事实：09-13 第 4 章「总体技术设计方案」成稿 + 五轮终审回改 commit `84fe9c9`（36 文件）；09-14 用户「参考 SoSCommSupport 总体框架设计写丰富些」→ 扩为 9 图 16 表 32 页约 2.34 万字（三级组成 F1~F34 / 技术·部署·数据架构 / 子流程·时序图·工况 / 接口分类约定），假设 B1~B5 待裁，未 commit。详见项目 `specs/active/2026-09-13-SPEC-001-overall-framework.md` §8.1~8.7
+- Hub 同步：`projects/uuvcommswarmsim/README.md` 状态 🟡→🟢、当前焦点重写、hash `d06f8f4`→`84fe9c9`；根 `CLAUDE.md` 项目表 hash 同步；dashboard 手写行 110 + 「上次同步」行刷新
+- 观察：dashboard `AUTO-GIT-SNAPSHOT` 块由另一会话（AcousticLiteracy，`47d49a4`）于 09:09 `--gen` 重生成，未随附 index/log 条目，本条一并补登；CANON 计数无变化
+---
 ## [2026-09-13] 同日续 2 | 派生登记 | SoSCommSupport 派生（活跃 34→35，DocProcess×21→×22，ADR-047）
 
 用户（后台会话，不在线）要求「新建一个项目，项目名称为体系通信保障」。四项按 ADR-046 推荐口径直取、未 AskUserQuestion：目录名 **SoSCommSupport**（SoS = System-of-Systems 体系 / Comm 通信 / Support 保障，代拟，用户可改名重登记）/ 主交付物**待定先搭架子** / **无依赖** / **git init + 首 commit**。

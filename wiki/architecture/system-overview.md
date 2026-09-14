@@ -86,6 +86,7 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 🔒 | `AUVSlopeMCM` | `D:\Claude\DocProcess\AUVSlopeMCM` | 派生 2026-09-04（AUV 坡上扫雷，template-document，主交付物形态/受众/任务口径待讨论先搭架子，无依赖，本地 main `723d2fb` 无远程） |
 | 项目仓 🔒 | `UUVCommSwarmSim` | `D:\Claude\DocProcess\UUVCommSwarmSim` | 派生 2026-09-13（UUV 通信组网与集群控制一体化仿真软件，template-document，主交付物形态/受众/口径待讨论先搭架子，无依赖，本地 main `d06f8f4` 无远程） |
 | 项目仓 🔒 | `SoSCommSupport` | `D:\Claude\DocProcess\SoSCommSupport` | 派生 2026-09-13（体系通信保障，template-document，主交付物形态/受众/口径待讨论先搭架子，无依赖，本地 main `d3831e3` 无远程） |
+| 项目仓 🔒 | `AUVNetCoop` | `D:\Claude\DocProcess\AUVNetCoop` | 派生 2026-09-14（协同探测型 AUV 组网协同系统，template-document，主交付物《协同探测型AUV组网协同系统研制技术协议》，依赖 AUVProposal，SPEC-001 框架同日终裁，本地 main `5a6bbfc` 无远程） |
 | **Tools/** | | | **跨项目工具** |
 | 项目仓 | `FlowGen` | `D:\Claude\Tools\FlowGen` | 派生 2026-04-23（自然语言→Visio/Mermaid 出图工具族；flowgen-* Visio skill 活跃，Mermaid 主入口未实装） |
 | 项目仓 | `IconForge` | `D:\Claude\Tools\IconForge` | 派生 2026-05-29（自然语言→图标 SVG，未实装） |
@@ -325,7 +326,7 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 | 指标 | 数值 | 说明 |
 |------|------|------|
 | **Hub wiki 页数** | 110 | concepts 20 + entities 8 + source-summaries 34 + mcp-entities 25 + explorations 4 + topics 5 + architecture 12 + agents 1 + workflows 1 + comparisons 0（详见 `wiki/index.md`） |
-| **活跃项目数** | 35 | TechReq×8（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒 / USBL_hw🔒 / SonarFOM🔒 / EnvDataClassify🔒）+ DocProcess×22（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / VisioForge / CooperativeASW / PaperTrans / UWAcommTrial / UWCombatPlatform / CommSimSupport / OceanEnvSupport / ImgSonarTwin / AUVProposal / AUVSurvey / CoupledMultiOrder / DeepSeaIndustry / XiaojingLaunch / AcousticLiteracy / AUVSlopeMCM / UUVCommSwarmSim / SoSCommSupport，全 🔒）+ Tools×4（FlowGen / IconForge / AnthropicPPT / FieldKit）+ Patents🔒（papers 未正式登记，见 [[../topics/core-update-queue]] / decision-log 待裁）；**第三方 vendored 不计**：ppt-master（`Tools/ppt-master`，ADR-030）；**已退役**：DigitalTwin1plusN（2026-08-18 用户删除工作区，ADR-041）|
+| **活跃项目数** | 36 | TechReq×8（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒 / USBL_hw🔒 / SonarFOM🔒 / EnvDataClassify🔒）+ DocProcess×23（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / VisioForge / CooperativeASW / PaperTrans / UWAcommTrial / UWCombatPlatform / CommSimSupport / OceanEnvSupport / ImgSonarTwin / AUVProposal / AUVSurvey / CoupledMultiOrder / DeepSeaIndustry / XiaojingLaunch / AcousticLiteracy / AUVSlopeMCM / UUVCommSwarmSim / SoSCommSupport / AUVNetCoop，全 🔒）+ Tools×4（FlowGen / IconForge / AnthropicPPT / FieldKit）+ Patents🔒（papers 未正式登记，见 [[../topics/core-update-queue]] / decision-log 待裁）；**第三方 vendored 不计**：ppt-master（`Tools/ppt-master`，ADR-030）；**已退役**：DigitalTwin1plusN（2026-08-18 用户删除工作区，ADR-041）|
 | **模板 skill 数** | 5 | ingest/plan/implement/lint/promote-answer（core + 下游继承） |
 | **全局 skill（Hub 用）** | 1 | `llm-wiki`（`paths: wiki/**` 自动激活） |
 | **wiki-ingester agent** | 2 副本 | 全局 `~/.claude/agents/`（invocable，2026-05-12 起）+ 项目本地（契约源头 + git 跟踪） |
