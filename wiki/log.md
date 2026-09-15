@@ -3,6 +3,21 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-09-15] 派生登记 | ProductPortfolio 派生（活跃 36→37，DocProcess×23→×24，ADR-049）
+
+用户要求「新建一个项目，用于公司产品体系梳理，可引用 xiaojinglaunch 那个项目」。AskUserQuestion 四项（目录名 ProductPortfolio / 主交付物《公司产品体系梳理》docx / 种子复制入 raw/materials / 首 commit + Hub 登记 commit）均取推荐项。
+
+- **上下文拉齐**：读 XiaojingLaunch CLAUDE.md「当前状态」+ `wiki/decisions/2026-09-08-sanhe-koujing.md`（三核固定口径表）+ raw 清单 + auto-memory（产品架构 deck 四产品线：海星100 / 海涛100 / 小鲸100 / 海若10）；Hub `raw/PPT/中安智能大模型及智能应用平台介绍.pptx`（07-03 落盘未摄入）识别为第五条线种子
+- SOP §1 派生（robocopy template-document，42 目录 / 73 文件）→ 种子 4 份入 `raw/materials/`（deck V3 202 MB / 修改意见 docx / 公司总体介绍 17 MB / 大模型平台介绍 424 MB；pptx .gitignore 不入库）→ CLAUDE.md / README.md 占位符全清 + 「当前状态」段 + 硬规则（口径以 09-08 决策为准 / 引用不改源 / 素样式图件 / 复用 docx 管线）；模板 wiki/index.md / log.md 为 CRLF，脚本内归一 LF 后整页重写
+- 项目 wiki 页面 0→1：`topics/product-system-baseline.md`（`<private>` 四产品线 + 小鲸三核固定口径 + 沿革 V1→V2→V3→决策 + D1~D6 指针）；SPEC-001（6 章 + 附 A/B / 图件 F1~F3 / 验收点 / D1~D6）+ PLAN-001（M0 摄入 → M1 裁决 → M2 谱系表先行 → M3 章节 2→3→1→4→5→6 → M4 图件 → M5 build → M6 终审）
+- SOP §6 验证全过；git init -b main：`2a0a591`（76 文件）
+- **依赖判定**：XiaojingLaunch 为真依赖（deck V3 + 口径决策 + 公司介绍均为直接输入）；AUVNetCoop / UWAprojDoc 仅复用构建管线不构成依赖
+- **登记面（派生当日全量）**：root / Hub / DocProcess CLAUDE.md + `projects/productportfolio/` 导航卡 + XiaojingLaunch 导航卡「下游派生」行（顺手刷新其 stale 现态：a94cf00→0b30cd3、🟡→🟢 SPEC-002 已交付，@今日核验工作树干净）+ [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + 活跃项目数行 + [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-049 + [[architecture/roadmap]] + 本 log + auto-memory `project_productportfolio_init` + [[topics/memory-index]] 指针
+- **CANON 级联当日收口**：活跃 36→37 / DocProcess×23→×24 / ADR ~048→~049 / memory 111→112 / project 72→73 / `MEMORY.md` 索引 112→113 行（8 页 CANON token 同步，`--check` 静默）
+- AUTO-GIT-SNAPSHOT `--gen` 重打 @2026-09-15（43→44 仓，新仓 `DocProcess/ProductPortfolio` `2a0a591` 入自动表）
+- 页面总数不变 113。**已知未处理漂移**（本轮不动，待用户裁）：AUVNetCoop 现态 Hub 记 `5a6bbfc`，实为 `6f8a381`（交付物改裁为建设方案 v1.8，SPEC-001~012 + L1/L2，dirty 170）；dashboard XiaojingLaunch 状态行仍记 `2ee3f7d`
+- **下一步**：用户裁 D1~D6 → M0 `/ingest` 4 种子 → M2 谱系总表
+---
 ## [2026-09-14] 同日续 | 派生登记 | AUVNetCoop 派生（活跃 35→36，DocProcess×22→×23，ADR-048）
 
 用户要求「根据 AUVProposal 项目，写一个组网协同相关的，要把我们这个 U 用上，先出一个项目框架」，框架出后回「你帮我搭建项目吧」。AskUserQuestion 三项（首 commit 授权 / D1~D9 全按推荐 / Hub 一并 commit）均取推荐项。

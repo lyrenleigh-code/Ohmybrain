@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-06-09
+updated: 2026-09-15
 tags: [约定, conventions, 跨项目]
 ---
 
@@ -10,7 +10,7 @@ tags: [约定, conventions, 跨项目]
 命名 / 目录 / commit / PR / 工作流 / worktree / 私人项目 等跨项目共享约定。**事实源 = `~/.claude/rules/common/*.md`**（全局规则），本页是 Hub wiki 的索引 + 项目级扩展。
 
 > [!note] 全局资源规模（@2026-06-29）
-> `~/.claude/` 当前承载：**auto-memory 111 个**（user 1 / feedback 35 / project 72 / reference 3，`MEMORY.md` 索引 112 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
+> `~/.claude/` 当前承载：**auto-memory 112 个**（user 1 / feedback 35 / project 73 / reference 3，`MEMORY.md` 索引 112 行）、**rules 15 个目录**（common / zh / web + 12 语言：cpp / csharp / dart / golang / java / kotlin / perl / php / python / rust / swift / typescript）、**agents 55 个 .md**、**skills 本地 32 个**（34 个目录、其中 32 含 `SKILL.md`；叠加 `ecc:*` plugin / marketplace 注入后约 90+，**两层须区分**，不可裸写 90+）。详见 [[../topics/harness-resources]]。
 
 ## 1. 命名约定
 
@@ -156,6 +156,7 @@ Type: `feat` / `fix` / `refactor` / `docs` / `test` / `chore` / `perf` / `ci`
 | `DocProcess/UUVCommSwarmSim` 🔒 | 私人（UUV 通信组网与集群控制一体化仿真软件，口径待讨论） | 本地 main `d06f8f4`，无远程 |
 | `DocProcess/SoSCommSupport` 🔒 | 私人（体系通信保障，口径待讨论） | 本地 main `d3831e3`，无远程 |
 | `DocProcess/AUVNetCoop` 🔒 | 私人（协同探测型 AUV 组网协同系统，依赖 AUVProposal） | 本地 main `5a6bbfc`，无远程 |
+| `DocProcess/ProductPortfolio` 🔒 | 私人（公司产品体系梳理，依赖 XiaojingLaunch） | 本地 main `2a0a591`，无远程 |
 | `TechReq/UWAcomm_usbl` 🔒 | **内网 Internal**（UWAcomm+USBL 联合仿真） | 私有，不公开 |
 | `TechReq/SonarSim` 🔒 | 私人（主动声呐界面仿真） | 私有 |
 | `TechReq/USBL_hw` 🔒 | 私人（USBL 硬件设计，engineering-hardware） | 内网 gitlab |

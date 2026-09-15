@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-09-14
+updated: 2026-09-15
 tags: [ADR, 决策, log]
 ---
 
@@ -14,6 +14,37 @@ tags: [ADR, 决策, log]
 > **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-041（含 ADR-031/032/033 追溯）。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
 >
 > **编号约定**：ADR 编号为 **append-only 稳定 ID**（按登记顺序递增、不复用、不重排）；表按**事件日期降序**排列。绝大多数情况下编号降序 == 日期降序，但 retroactive 追溯条目（如 ADR-025 事件 2026-06-04、2026-06-09 登记）会出现编号与位置不严格对应——这是为避免重编号引发跨页引用级联失效（教训见 [[../log]] 2026-05-29）而做的取舍。
+
+---
+
+## ADR-049 · 2026-09-15 · ProductPortfolio 项目派生（DocProcess，公司产品体系梳理）
+
+### 触发
+
+用户提出「新建一个项目，用于公司产品体系梳理，可引用 xiaojinglaunch 那个项目」。AskUserQuestion 四项——目录名 ProductPortfolio / 主交付物《公司产品体系梳理》docx / 种子复制入 raw/materials / 项目首 commit + Hub 登记 commit——均取推荐项。
+
+### 决策
+
+独立 DocProcess 子项目 `DocProcess/ProductPortfolio` 🔒（本地 main，无远程，手动模式），按 `template-document` SOP 派生，**DEPENDS_ON = XiaojingLaunch**（产品架构 deck V3 + 2026-09-08「三核独立 · 一体协同」口径决策 + 公司总体介绍 PPT 均为直接输入）。DocProcess 第 24 个正式登记子项目，活跃项目 36→37。
+
+**口径**：公司级产品体系（非单产品）——把海星100（环境数据）/ 海涛100（声学仿真「算、仿、评」）/ 小鲸100（海洋无人平台智控 · 声学 · 能源三核产品族，「装、用、集成」）/ 海若10（开发运维底座）/ 大模型及智能应用平台统一到一张体系架构图 + 一套产品谱系表 + 一致口径（术语沿革 V1→V2→V3→决策）。主交付物《公司产品体系梳理》docx：6 章（总览 / 谱系 / 协同关系 / 共性底座 / 场景映射 / 术语口径）+ 附 A 谱系总表 + 附 B 来源；图件 F1 分层体系图（archmap L 族）/ F2 各线组成图（composition）/ F3 协同关系图（archmap I 族），素样式 Visio OLE，复用 AUVNetCoop 构建管线。
+
+**硬规则**：同一事实以 XiaojingLaunch 09-08 三核决策为准（晚于 deck V3 09-07）；引用不改源；pptx 种子大件（17~424 MB）.gitignore 不入库。
+
+**待裁 D1~D6**：受众 / 产品线范围（大模型平台与在研是否列）/ 口径基准 / 成熟度分级（在研 · 样机 · 可交付 · 已交付）/ 图件形态 / PPT 汇报版。
+
+### 实现
+
+- SOP §1 派生（robocopy template-document，42 目录 / 73 文件）+ 种子 4 份（XiaojingLaunch raw ×3 + Hub `raw/PPT/` 大模型平台介绍 ×1）→ `raw/materials/`
+- CLAUDE.md / README.md 占位符全清 + 「当前状态」段 + 硬规则；`wiki/topics/product-system-baseline.md`（`<private>` 抄录固定口径 + 四产品线 + 沿革，项目页面 0→1）+ SPEC-001 + PLAN-001（M0~M6）
+- SOP §6 验证全过（dirs / placeholders / lint_wiki / validate_task / sync_index / index-log sync）；git init -b main：`2a0a591` 首 commit（76 文件，pptx 未入）
+- 登记面（派生当日全量）：root / Hub / DocProcess CLAUDE.md + `projects/productportfolio/` 导航卡 + XiaojingLaunch 导航卡下游派生行（顺手刷新其现态 a94cf00→0b30cd3）+ dashboard 状态行 + 上次同步头 + system-overview 实例表 + 活跃项目数行 + conventions §9 + 本 ADR + roadmap + log/index + auto-memory `project_productportfolio_init` + memory-index 指针；CANON 级联当日收口（活跃 36→37 / DocProcess×23→×24 / ADR ~048→~049 / memory 111→112 / project 72→73）
+
+### 后果
+
+- 项目进入 🟡 待裁：下一步用户裁 D1~D6 → M0 `/ingest` 4 种子 → M2 谱系总表 → 章节 draft
+- XiaojingLaunch 首次出现下游派生项目；其 09-08 口径若再变，本项目 baseline 页与第 6 章沿革须同步
+- 公司产品体系口径此后以本项目为单一来源；XiaojingLaunch 等对外材料项目应回引本项目谱系表（回流由用户手动裁决，私人项目禁 promote）
 
 ---
 

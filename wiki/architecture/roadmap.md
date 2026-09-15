@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-07-24
+updated: 2026-09-15
 tags: [roadmap, 演化, 里程碑]
 ---
 
@@ -13,6 +13,7 @@ tags: [roadmap, 演化, 里程碑]
 
 | 日期 | 里程碑 | 类型 |
 |------|--------|------|
+| **2026-09-15** | ProductPortfolio 项目派生（公司产品体系梳理，template-document，主交付物《公司产品体系梳理》docx，以 XiaojingLaunch 产品架构 deck V3 + 三核口径为起点，SPEC-001 D1~D6 待裁；依赖 XiaojingLaunch，git init `2a0a591` 本地 main 无远程） | DocProcess (ADR-049) |
 | **2026-09-14** | AUVNetCoop 项目派生（协同探测型 AUV 组网协同系统，template-document，主交付物《协同探测型AUV组网协同系统研制技术协议》；框架先行 SPEC-001 同日终裁 D1~D9；依赖 AUVProposal，git init `5a6bbfc` 本地 main 无远程） | DocProcess (ADR-048) |
 | **2026-09-13** | SoSCommSupport 项目派生（体系通信保障，template-document，主交付物形态/受众/口径待讨论先搭架子；无依赖，git init `d3831e3` 本地 main 无远程） | DocProcess (ADR-047) |
 | **2026-09-13** | UUVCommSwarmSim 项目派生（UUV 通信组网与集群控制一体化仿真软件，template-document，主交付物形态/受众/口径待讨论先搭架子；无依赖，git init `d06f8f4` 本地 main 无远程） | DocProcess (ADR-046) |
