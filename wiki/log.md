@@ -3,6 +3,15 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-09-15] 同日续 | 状态刷新 | ProductPortfolio 收窄为海涛线（decision-001/002 + SPEC-002，HEAD 2b735bc）
+
+- 派生后同日 9 轮（详见项目 wiki/log.md）：用户放 `raw/slides/` 5 份新料（产品架构_20260914简化版 → 现行主口径源 S6；产品谱系单页 v3；小鲸发布会 v15.3 = 老板认可叙事骨架；海星新稿 ×2）→ python-pptx 抽全文 → SPEC-001 输入表 S6~S11 + D7/D8
+- **decision-001 海涛定位**（F-1 → 用户逐项裁）：主线 A 论证 / 研制单位；海涛出仿真引擎、小鲸仿真试验 = 海涛引擎 + 小鲸接口；「声学载荷支撑」弃用；训练口径参照 AcousticLiteracy sxsy 二期（学练考复盘、四科目判读、考核只出数据），红蓝对抗全套弃用；sxsy 画成海涛线下应用实例；定位「一套引擎 · 三级仿真 · 两条闭环」+ 价值「效果先算清 · 方案再选定 · 训练有数据」+ 一句话展开；Q5 海星边界暂缓
+- **decision-002 小鲸口径（D7）**（F-2 → 用户裁）：两级口径——族级小鲸100 三核 + 口号升族级；产品级小鲸智控 = 发布会 v15.3 原样（一套架构 · 一个底座 · 两条闭环）；能力开发留智控基于海若底座（部分覆盖 XiaojingLaunch 09-08 决策 2，上游不回改）；谱系单页定位改族级；能源「在研」列入
+- **范围收窄**：用户「不管海星，专门做海涛」+ 交付物「小鲸版式的 PPT」+ 其他线只作关系背景 → SPEC-002 海涛100 产品线页面 6 页（需求 ← v15.3 P4 / 定位 ← v15.3 P6 / 特性×3 ← 海星特性页 / 应用与交付 ← 海星交付页）+ PLAN-002；SPEC-001 ⏸ / PLAN-001 归档；A1~A4 用户同意；**M1 文案 v1** `specs/active/haitao-copy-v1.md` 待审
+- 登记面刷新：root / Hub / DocProcess CLAUDE.md 行（主交付物 + hash）+ 导航卡状态 / 焦点 / git + dashboard 头 + 状态行 + system-overview 行 + roadmap 行 + ADR-049 后果补一条 + conventions §9 hash + auto-memory `project_productportfolio_init` 现态 + AUTO-GIT-SNAPSHOT `--gen`；AcousticLiteracy 记为参照项目（口径来源，只读引用，不改依赖计数）；项目 commit 7 个（`2b735bc` 后文案 v1 未 commit）
+- 页面总数不变 113；CANON 计数不变
+---
 ## [2026-09-15] 派生登记 | ProductPortfolio 派生（活跃 36→37，DocProcess×23→×24，ADR-049）
 
 用户要求「新建一个项目，用于公司产品体系梳理，可引用 xiaojinglaunch 那个项目」。AskUserQuestion 四项（目录名 ProductPortfolio / 主交付物《公司产品体系梳理》docx / 种子复制入 raw/materials / 首 commit + Hub 登记 commit）均取推荐项。

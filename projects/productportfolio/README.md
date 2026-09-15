@@ -4,13 +4,15 @@
 
 - **仓库**：`D:\Claude\DocProcess\ProductPortfolio`
 - **类型**：document（`template-document` 派生，2026-09-15，ADR-049）
-- **状态**：🟡 待裁 D1~D6（SPEC-001 大纲已立，撰写未启动）
+- **状态**：🟢 海涛线 M1 文案 v1 待审（09-15 同日：范围收窄为海涛100 产品线，交付物改小鲸版式 PPT 6 页，SPEC-002；SPEC-001 体系 docx 挂起）
 - **依赖**：[[../xiaojinglaunch/README|XiaojingLaunch]]（产品架构 deck V3 + 2026-09-08「三核独立 · 一体协同」口径决策 + 公司总体介绍 PPT，均为直接输入）；查询复用不构成依赖：[[../auvnetcoop/README|AUVNetCoop]] / [[../uwaprojdoc/README|UWAprojDoc]]（素样式 docx + Visio OLE 构建管线）
-- **git**：本地 `main` `2a0a591`，无远程（🔒 私人，禁 push 公开仓）
+- **git**：本地 `main` `2b735bc`（7 commit），无远程（🔒 私人，禁 push 公开仓）
 
 ## 当前焦点
 
-派生当日（2026-09-15）：种子 4 份入 `raw/materials/`（产品架构 deck V3 202 MB / 修改意见 docx / 公司总体介绍 17 MB / 大模型平台介绍 424 MB，pptx 不入库）+ 口径基线抄录 `wiki/topics/product-system-baseline.md`（四产品线 + 小鲸三核固定口径表 + 沿革）+ `specs/active/2026-09-15-SPEC-001-product-portfolio-doc.md`（6 章 + 附 A 谱系总表 / 图件 F1~F3 / 验收点 / D1~D6）+ `plans/active/PLAN-001`（M0~M6）。待办：
+**2026-09-15 同日续（派生后 9 轮）**：raw/slides 用户新放 5 份（09-14 简化版 = 现行主口径源 / 谱系单页 v3 / 小鲸发布会 v15.3 = 老板认可骨架 / 海星新稿 ×2）抽文字 → F-1 海涛定位讨论 → **decision-001**（主线 A 论证研制 / 海涛出引擎、小鲸仿真试验 = 海涛引擎 + 小鲸接口 / 删「声学载荷支撑」/ 训练参照 AcousticLiteracy sxsy 二期、删红蓝对抗 / sxsy 作海涛应用实例 / 定位「一套引擎 · 三级仿真 · 两条闭环」+ 价值「效果先算清 · 方案再选定 · 训练有数据」）→ F-2 → **decision-002**（小鲸两级口径：族级三核 + 智控级 v15.3 原样，能力开发留智控）→ 用户收窄「只做海涛，小鲸版式 PPT」→ SPEC-002（6 页：需求 / 定位 / 特性×3 / 应用与交付）+ PLAN-002 + **M1 文案 v1**（`specs/active/haitao-copy-v1.md`）待审。海星边界 Q5 暂缓。
+
+**派生当日原计划（已挂起）**：派生当日（2026-09-15）：种子 4 份入 `raw/materials/`（产品架构 deck V3 202 MB / 修改意见 docx / 公司总体介绍 17 MB / 大模型平台介绍 424 MB，pptx 不入库）+ 口径基线抄录 `wiki/topics/product-system-baseline.md`（四产品线 + 小鲸三核固定口径表 + 沿革）+ `specs/active/2026-09-15-SPEC-001-product-portfolio-doc.md`（6 章 + 附 A 谱系总表 / 图件 F1~F3 / 验收点 / D1~D6）+ `plans/active/PLAN-001`（M0~M6）。待办：
 
 1. 用户裁 D1~D6（受众 / 产品线范围含大模型平台与在研 / 口径基准 / 成熟度分级 / 图件形态 / PPT 汇报版）
 2. M0 `/ingest` 4 种子（大 pptx 先 python-pptx 抽文字到 .tmp/）→ 修订基线页

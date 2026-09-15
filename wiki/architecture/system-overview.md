@@ -87,7 +87,7 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 🔒 | `UUVCommSwarmSim` | `D:\Claude\DocProcess\UUVCommSwarmSim` | 派生 2026-09-13（UUV 通信组网与集群控制一体化仿真软件，template-document，主交付物形态/受众/口径待讨论先搭架子，无依赖，本地 main `d06f8f4` 无远程） |
 | 项目仓 🔒 | `SoSCommSupport` | `D:\Claude\DocProcess\SoSCommSupport` | 派生 2026-09-13（体系通信保障，template-document，主交付物形态/受众/口径待讨论先搭架子，无依赖，本地 main `d3831e3` 无远程） |
 | 项目仓 🔒 | `AUVNetCoop` | `D:\Claude\DocProcess\AUVNetCoop` | 派生 2026-09-14（协同探测型 AUV 组网协同系统，template-document，主交付物《协同探测型AUV组网协同系统研制技术协议》，依赖 AUVProposal，SPEC-001 框架同日终裁，本地 main `5a6bbfc` 无远程） |
-| 项目仓 🔒 | `ProductPortfolio` | `D:\Claude\DocProcess\ProductPortfolio` | 派生 2026-09-15（公司产品体系梳理，template-document，主交付物《公司产品体系梳理》docx，依赖 XiaojingLaunch，SPEC-001 D1~D6 待裁，本地 main `2a0a591` 无远程） |
+| 项目仓 🔒 | `ProductPortfolio` | `D:\Claude\DocProcess\ProductPortfolio` | 派生 2026-09-15（公司产品体系梳理，template-document，同日收窄为海涛100 产品线：主交付物海涛线 6 页小鲸版式 PPT（SPEC-002），体系 docx SPEC-001 挂起；依赖 XiaojingLaunch，参照 AcousticLiteracy；本地 main `2b735bc` 无远程） |
 | **Tools/** | | | **跨项目工具** |
 | 项目仓 | `FlowGen` | `D:\Claude\Tools\FlowGen` | 派生 2026-04-23（自然语言→Visio/Mermaid 出图工具族；flowgen-* Visio skill 活跃，Mermaid 主入口未实装） |
 | 项目仓 | `IconForge` | `D:\Claude\Tools\IconForge` | 派生 2026-05-29（自然语言→图标 SVG，未实装） |
