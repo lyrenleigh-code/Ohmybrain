@@ -156,7 +156,7 @@ Type: `feat` / `fix` / `refactor` / `docs` / `test` / `chore` / `perf` / `ci`
 | `DocProcess/UUVCommSwarmSim` 🔒 | 私人（UUV 通信组网与集群控制一体化仿真软件，口径待讨论） | 本地 main `d06f8f4`，无远程 |
 | `DocProcess/SoSCommSupport` 🔒 | 私人（体系通信保障，口径待讨论） | 本地 main `d3831e3`，无远程 |
 | `DocProcess/AUVNetCoop` 🔒 | 私人（协同探测型 AUV 组网协同系统，依赖 AUVProposal） | 本地 main `5a6bbfc`，无远程 |
-| `DocProcess/ProductPortfolio` 🔒 | 私人（公司产品体系梳理，本期海涛线 PPT，依赖 XiaojingLaunch） | 本地 main `2b735bc`，无远程 |
+| `DocProcess/ProductPortfolio` 🔒 | 私人（公司产品体系梳理，本期海涛线 PPT，依赖 XiaojingLaunch） | 本地 main `a4696f9`，无远程 |
 | `TechReq/UWAcomm_usbl` 🔒 | **内网 Internal**（UWAcomm+USBL 联合仿真） | 私有，不公开 |
 | `TechReq/SonarSim` 🔒 | 私人（主动声呐界面仿真） | 私有 |
 | `TechReq/USBL_hw` 🔒 | 私人（USBL 硬件设计，engineering-hardware） | 内网 gitlab |

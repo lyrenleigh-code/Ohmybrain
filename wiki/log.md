@@ -3,6 +3,13 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-09-16] 状态刷新 | ProductPortfolio 收尾修订版待终审（HEAD a4696f9）
+
+- 09-15 夜~09-16 凌晨（详见项目 wiki/log.md）：用户「我希望生成一个完整版本的，gpt 生成了一个可以参考」→ Codex 16 页 `output/海涛100_产品发布会_完整版.pptx`（.mjs）与 Claude 20 页 `…_claude.pptx`（`scripts/build_haitao_launch_full.py`：v15.3 精简副本保留 10 类页 → 克隆 → 填槽 → 原生架构图；首轮 176 MB 因旧 gif 关系残留，清理后 12.9 MB）并存
+- Codex 审阅：清单 A~D + 案例深化稿 + V3 实际 P14 两张原图 → Claude 实施审阅修订版（P11 整页换通信原理验证案例 / P9 原生表格 + 脚注 / P13 现有 vs 拟扩展 + 原生二期设计示意 / P7 支撑线 + 引擎直连训练 / P17 闭环原生重画带返回线 / P15 第五条「溯」→「评」/ P19 删联系方式）→ 第二轮 R1~R6 → `output/海涛100_产品发布会_完整版_claude_收尾修订版.pptx`；每轮另存、原稿保留、as-built 文案 v1/v2/v3
+- 登记面刷新：root / Hub / DocProcess CLAUDE.md hash + 导航卡 + dashboard 头与状态行 + system-overview + conventions + roadmap + ADR-049 后果 + auto-memory + `--gen`；CANON 计数不变；页面总数不变 113
+- 用户「没有新的意见了，就先这样吧」→ 项目停在收尾修订版待终审；待用户给海涛线联系人 / 二期截图 / 封面措辞
+---
 ## [2026-09-15] 同日续 | 状态刷新 | ProductPortfolio 收窄为海涛线（decision-001/002 + SPEC-002，HEAD 2b735bc）
 
 - 派生后同日 9 轮（详见项目 wiki/log.md）：用户放 `raw/slides/` 5 份新料（产品架构_20260914简化版 → 现行主口径源 S6；产品谱系单页 v3；小鲸发布会 v15.3 = 老板认可叙事骨架；海星新稿 ×2）→ python-pptx 抽全文 → SPEC-001 输入表 S6~S11 + D7/D8

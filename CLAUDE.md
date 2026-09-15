@@ -73,7 +73,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | UUVCommSwarmSim 🔒 | 私人，不公开（本地 main `84fe9c9`，无远程） | `D:\Claude\DocProcess\UUVCommSwarmSim` |
 | SoSCommSupport 🔒 | 私人，不公开（本地 main `d3831e3`，无远程） | `D:\Claude\DocProcess\SoSCommSupport` |
 | AUVNetCoop 🔒 | 私人，不公开（本地 main `5a6bbfc`，无远程） | `D:\Claude\DocProcess\AUVNetCoop` |
-| ProductPortfolio 🔒 | 私人，不公开（本地 main `2b735bc`，无远程） | `D:\Claude\DocProcess\ProductPortfolio` |
+| ProductPortfolio 🔒 | 私人，不公开（本地 main `a4696f9`，无远程） | `D:\Claude\DocProcess\ProductPortfolio` |
 | FlowGen | 私人，不公开 | `D:\Claude\Tools\FlowGen` |
 | IconForge | 私人，不公开 | `D:\Claude\Tools\IconForge` |
 | AnthropicPPT | 私人，不公开（2026-06-24 降级=FIELDBOOK 设计源+归档，ADR-030）| `D:\Claude\Tools\AnthropicPPT` |
