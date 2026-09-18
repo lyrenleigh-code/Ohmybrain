@@ -1,7 +1,7 @@
 ---
 type: topic
 created: 2026-05-24
-updated: 2026-09-15
+updated: 2026-09-18
 last-sync: 2026-09-15
 tags: [memory, 索引, auto-memory]
 ---
@@ -12,7 +12,7 @@ tags: [memory, 索引, auto-memory]
 
 > 不复制 memory 完整内容（避免双写），本页只索引 + 简短描述 + link 到 memory 文件。
 
-> **计数口径（@2026-09-15）**：auto-memory 共 **112 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 113 个 `.md`）。分布：user **1** / feedback **35** / project **73** / reference **3**。下方各类型标题计数与此严格一致。
+> **计数口径（@2026-09-18）**：auto-memory 共 **115 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 116 个 `.md`）。分布：user **1** / feedback **37** / project **74** / reference **3**。下方各类型标题计数与此严格一致。
 >
 > 注：`MEMORY.md` 索引行中「flowgen-vsdx M5 升级」一条指向 `~/.claude/skills/flowgen-vsdx/SKILL.md`（skill 文件，**非 memory 条目**），不计入总数。
 
@@ -22,7 +22,7 @@ tags: [memory, 索引, auto-memory]
 
 - [user_profile](../../../../../zazn/.claude/projects/D--Claude/memory/user_profile.md) — UWA 研究者 / MATLAB 主力 / Windows+bash / 中文 / 专家主导 / 并行优先
 
-### feedback（行为指导 · 35 条）
+### feedback（行为指导 · 37 条）
 
 按主题分组：
 
@@ -72,8 +72,10 @@ tags: [memory, 索引, auto-memory]
 - `feedback_inplace_edit_no_version` — 迭代 PPT/文档/图等产物就地改当前文件，不另存递增版本号（2026-06-27 新增）
 - `feedback_flowgen_palette_full_persist` — flowgen 默认配色更新需 4 处完整固化：.py 默认 + SKILL 正文 + frontmatter + 项目副本（2026-07 新增）
 - `feedback_visio_headless_orphan_lock` — flowgen 渲染 SaveAs 报 [只读] = headless COM 孤儿进程占锁，仅杀无窗口标题者再重渲（2026-07 新增）
+- `feedback_powershell_remove_item_hook_tokens` — 含 `Remove-Item` 的 PowerShell 命令里出现 `*` / `/` / 通配 / 正则会被系统路径保护 hook 误拦；测量与删除拆两条命令（2026-09-18 新增，指针本轮补）
+- `feedback_elevated_powershell_script_pitfalls` — 提权 PowerShell 脚本四坑：RunAs 用 `-File` 包装；PS5.1 中文脚本须 UTF-8 BOM；robocopy 用 `/L` 退出码判一致；`*>` 日志是 UTF-16（2026-09-18 新增，指针本轮补）
 
-### project（项目状态 · 73 条）
+### project（项目状态 · 74 条）
 
 按项目分组：
 
@@ -195,6 +197,9 @@ tags: [memory, 索引, auto-memory]
 
 **TechReq / EnvDataClassify（1）**
 - `project_envdataclassify_init` — EnvDataClassify 派生（海洋环境数据分类：声速剖面/水文，依赖 SonarFOM，ADR-037，git init `a7de7b2`，2026-07-23 派生）
+
+**TechReq / AUVNetModem（1）**
+- `project_auvnetmodem_init` — AUVNetModem 派生（面向五U 组网条件的水声通信机详细设计，A 算法 + B 硬件，engineering-hardware 子型，依赖 AUVNetCoop / UWAcomm / AUVProposal，ADR-050，git init `c37e2ce`，SPEC-001 框架 v0 待裁 D1~D10，2026-09-18 派生）
 
 **Tools 系（9）**
 - `project_flowgen_init` — FlowGen 初始化

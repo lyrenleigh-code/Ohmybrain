@@ -6,6 +6,7 @@
 - **类型**：document（`template-document` 派生，2026-09-14，ADR-048）
 - **状态**：🟢 框架终裁（SPEC-001 D1~D9 全按推荐）
 - **依赖**：[[../auvproposal/README|AUVProposal]]（平台基线《技术要求》09-04 版 + 五论证 + 研制技术协议体例 + docx 构建管线）；查询复用不构成依赖：[[../auvsurvey/README|AUVSurvey]] / [[../uwanet/README|UWAnet]] / [[../uuvcommswarmsim/README|UUVCommSwarmSim]]（仅作验证工具引用）/ [[../coupledmultiorder/README|CoupledMultiOrder]]（术语避让）
+- **下游派生**：[[../auvnetmodem/README|AUVNetModem]]（2026-09-18，ADR-050）——通信机详细设计（算法 + 硬件）单列；本项目只保留「物理层模型接口」，由其回物理层模型参数包；两段链路目标或 MAC 约束若变更须同步其 SPEC-001 §1
 - **git**：本地 `main` `5a6bbfc`，无远程（🔒 私人，禁 push 公开仓）
 
 ## 当前焦点

@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-09-15
+updated: 2026-09-18
 tags: [ADR, 决策, log]
 ---
 
@@ -14,6 +14,42 @@ tags: [ADR, 决策, log]
 > **起点声明**：**2026-04-12 为 Ohmybrain 体系起点（ADR-001），此前无历史 ADR**。本页对每个 [[roadmap]] 里程碑追溯一条 ADR，编号 ADR-001 ~ ADR-041（含 ADR-031/032/033 追溯）。早于体系初版的工作（各 project 仓库自身的历史）不在本累积记录范围内。
 >
 > **编号约定**：ADR 编号为 **append-only 稳定 ID**（按登记顺序递增、不复用、不重排）；表按**事件日期降序**排列。绝大多数情况下编号降序 == 日期降序，但 retroactive 追溯条目（如 ADR-025 事件 2026-06-04、2026-06-09 登记）会出现编号与位置不严格对应——这是为避免重编号引发跨页引用级联失效（教训见 [[../log]] 2026-05-29）而做的取舍。
+
+---
+
+## ADR-050 · 2026-09-18 · AUVNetModem 项目派生（TechReq，面向五U 组网条件的水声通信机详细设计）
+
+### 触发
+
+用户在 AUVNetCoop 会话中提出「需要针对这个组网条件下的水声通信机进行详细的设计，单独做一个项目还是怎么弄比较好」。Claude 建议单独立项并给出范围二选一（A 算法 / B 含硬件）；用户裁「A 和 B 都要包含，可以放在 TechReq 下面」。项目名 `AUVNetModem` 为 Claude 代拟（对齐 AUVNetCoop 命名），用户未反对、可改。
+
+### 决策
+
+独立 TechReq 子项目 `TechReq/AUVNetModem` 🔒（本地 main，无远程，手动模式），按 `template-engineering` + 硬件目录扩展派生（**engineering-hardware 子型第二例**，首例 USBL_hw / ADR-026）。**DEPENDS_ON = AUVNetCoop（需求源）/ UWAcomm（算法底座）/ AUVProposal（平台基线 09-04）**。TechReq 第 9 个正式登记项目，活跃项目 37→38。
+
+**不并入 AUVNetCoop 的理由**：AUVNetCoop 为文档类项目（不写代码），建设方案 v1.8 把通信机限定为「物理层模型接口」、本期取消实物集成；详细设计并入会破坏其「仅软件与数字仿真」划界。**不并入 UWAcomm 的理由**：通用算法公开仓（暂停中、写入权 Codex、三 worktree 归属约束），场景专用设计属其应用；先例 UWAcomm_usbl / USBL_hw / UWAcommTrial 均单独派生依赖 UWAcomm。
+
+**接口（双向、只交换文档）**：AUVNetCoop → 本项目 = 两段链路目标（下层 3–9 kHz / 5–10 km / ≥300 bit/s；上层 15–25 kHz / ≤1 km / ≥1 kbit/s；单次误包率 ≤10%）+ MAC 侧约束（TDMA 保护与恢复时间、≤64 B ALOHA 短报文、≥2 路 FDMA 并发接收、中大型 AUV 两段交替收发、单向到达时间测时）；本项目 → AUVNetCoop = 物理层模型参数包 R1~R8（信噪比–误包率关系、完整帧时长、前导检测与测时、恢复时间与多径裕量、子带与隔离度、功率档与能耗、群时延）。
+
+**硬规则**：平台事实只取 AUVProposal《技术要求》09-04 版；需求事实只取 AUVNetCoop v1.8 / SPEC-012，其旧 SPEC-L1 / L2 算例不作五U 结论；UWAcomm / USBL 为公开仓，本项目资料不回流；沿用「用户主导结论」（不代跑单测、不代下结论、逐 checkpoint 停）。
+
+**待裁 D1~D10**：项目名 / 硬件设计对象范围（推荐：新研 = 中大型 AUV 两段通信机 + 中继型 AUV 上层通信机，探测型 AUV 沿用平台湿端与 VPX）/ 下层发射带宽口径（平台 3～6 kHz ↔ 五U 3–9 kHz）/ 探测型 AUV 接收形态 / 首轮体制候选池 / UWAcomm 复用方式 / 五U 信道输入 / A·B 推进顺序 / 写入权与分工 / 对 AUVNetCoop 的回写。
+
+### 实现
+
+- SOP §1 + §1.5 派生（robocopy template-engineering + 11 个硬件目录 + `src/`）；CLAUDE.md / README.md 占位符全清 + 「项目边界」「当前状态」段；`.gitignore` 补 Office 锁文件（`~$*`）与 MATLAB 自动保存规则（AUVNetCoop 同日入库时暴露的坑）
+- 两路只读采集 agent → 项目 wiki 0→2 页：`source-summaries/upstream-inputs-five-u-phy`（v1.8 物理层约束 C1~C14 + 探测型 AUV 平台基线 A1~A11 + 旧通信指标论证 B1~B9 + 两型 U 硬件空白 + 20 条输入缺口；TR 关键条款经主会话回源核对）+ `source-summaries/reusable-assets-inventory`（UWAcomm 7 体制 14 模块 / USBL_hw 收发链与平台 / 哈工程实物通信机；**全部 8–16 kHz、fc = 12 kHz 口径**；可直接引用 / 需适配 / 空白三栏）
+- SPEC-001 项目框架 v0（需求输入 / 平台输入 / 上游不一致 U1~U4 / 既有资产 / 边界 / 工作包 A1~A6 + B1~B7 + C1 / 指标初拟不预填无依据数值 / 交付物 / 里程碑 M0~M6 / 风险 K1~K6 / 待裁 D1~D10）
+- SOP §6 验证全过（dirs / placeholders / lint_wiki / index-log sync / validate_task）；git init -b main：`c37e2ce` 首 commit（87 文件）
+- 登记面（派生当日全量）：root / Hub CLAUDE.md + `projects/auvnetmodem/` 导航卡 + AUVNetCoop / AUVProposal 导航卡「下游派生」行 + dashboard 状态行 + 上次同步头 + system-overview 实例表 + 活跃项目数行 + conventions §9 + 本 ADR + roadmap + log/index + auto-memory `project_auvnetmodem_init` + memory-index 指针；CANON 级联当日收口（活跃 37→38 / TechReq×8→×9 / ADR ~049→~050 / memory 112→115：project 73→74，另补登 09-18 上一会话两条 PowerShell feedback 35→37 / `MEMORY.md` 索引 →116 行），`--check` 静默
+- **登记方式**：后台会话受隔离护栏约束，Hub 登记落在 worktree 分支 `reg/auvnetmodem`（基于 main `efa0b24`），待用户 `git merge --ff-only reg/auvnetmodem`
+
+### 后果
+
+- 项目进入 🟡 待裁：下一步用户裁 D1~D10 → PLAN-001（资料拉齐 + WP 顺序）→ M1 需求基线与接口约定
+- AUVNetCoop 首次出现下游派生项目；其两段链路目标或 MAC 约束若变更，须同步本项目 SPEC-001 §1；对 AUVNetCoop 仓内的回写（`CLAUDE.md` 关联项目行 + 接口指针页）须另起明确任务（D10）
+- 上游口径出入已显式登记：平台通信发射 3～6 kHz（TR:243）↔ 五U 下层 3–9 kHz；功放 6 kW / 2.5%（TR）↔ 5000 W / ≤2%（论证）；脉冲储能 TR:32 与 TR:93 相反——均待用户或 AUVProposal 侧裁定
+- **已知未处理漂移**（本轮不动）：AUVNetCoop 导航卡 / dashboard / Hub CLAUDE.md 仍记「研制技术协议 / `5a6bbfc`」，实为建设方案 v1.8、HEAD `de9ee3a`（09-18 同会话经用户授权入库 `c6fce1a` + `de9ee3a`）
 
 ---
 

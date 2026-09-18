@@ -3,6 +3,23 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-09-18] 派生登记 | AUVNetModem 派生（活跃 37→38，TechReq×8→×9，ADR-050）
+
+用户在 AUVNetCoop 会话提出「针对这个组网条件下的水声通信机进行详细的设计，单独做一个项目还是怎么弄」→ Claude 建议单列 → 用户裁「A 和 B 都要包含，可以放在 TechReq 下面」。项目名 `AUVNetModem` 为 Claude 代拟，可改。
+
+- **同会话前序**：进入 AUVNetCoop 核验现态（建设方案 v1.8 待审，v1.x 由 Codex 迭代全部未 commit）→ 用户授权入库：`c6fce1a`（docs，555 文件）+ `de9ee3a`（chore，Codex 配置）；3 个 Word `~$` 孤儿锁文件未入库未删除
+- SOP §1 + §1.5 派生（template-engineering + 11 个硬件目录 + `src/`，engineering-hardware 子型第二例）→ CLAUDE.md / README.md 占位符全清 + 项目边界 + 当前状态；`.gitignore` 补 `~$*` 与 MATLAB 自动保存规则
+- **两路只读采集**（general-purpose agent，内联回报、主会话代写）：① 上游输入——v1.8 对物理层的约束 C1~C14、探测型 AUV 平台基线（SL ≥205 dB / 6 kW·2.5% D 类功放 / 通信 3～6 kHz 发 2～9 kHz 收 / 每舷 32 基元 / 单一 3U-VPX / 硬线秒脉冲）、旧通信指标论证数字（三艇场景，非五U 结论）、中大型与中继型 AUV 无任何硬件事实、20 条输入缺口；② 既有资产——UWAcomm 7 体制 14 模块、USBL_hw 收发链、哈工程实物通信机**全部 8–16 kHz / fc = 12 kHz 口径**，短报文前导检测 / 多子带并发接收 / 误包率口径曲线 / BELLHOP 信道接入均为空白。TR 条款 77 / 111 / 233 / 235 / 241 / 243 / 247 / 289 主会话回源核对一致
+- 项目 wiki 0→2 页；SPEC-001 项目框架 v0（工作包 A1~A6 + B1~B7 + C1、里程碑 M0~M6、风险 K1~K6、待裁 D1~D10；指标表不预填无依据数值）
+- SOP §6 验证全过；git init -b main：`c37e2ce`（87 文件）
+- **依赖判定**：AUVNetCoop（需求源）/ UWAcomm（算法底座）/ AUVProposal（平台基线）为真依赖；USBL_hw / UWAcomm_usbl / UWAnet / UWAcommTrial 仅查询复用
+- **登记面（派生当日全量）**：root / Hub CLAUDE.md + `projects/auvnetmodem/` 导航卡 + AUVNetCoop / AUVProposal 导航卡「下游派生」行 + [[topics/ecosystem-dashboard]] 状态行 + 上次同步头 + [[architecture/system-overview]] 实例表 + 活跃项目数行 + [[architecture/conventions]] §9 + [[architecture/decision-log]] ADR-050 + [[architecture/roadmap]] + 本 log + auto-memory `project_auvnetmodem_init` + [[topics/memory-index]] 指针
+- **CANON 级联当日收口**：活跃 37→38 / TechReq×8→×9 / ADR ~049→~050 / memory 112→115（project 73→74；另补登 09-18 上一会话两条 PowerShell feedback 35→37 及其 memory-index 指针）/ `MEMORY.md` 索引 →116 行；`--check` 静默
+- AUTO-GIT-SNAPSHOT `--gen` 重打 @2026-09-18（新仓 `TechReq/AUVNetModem` `c37e2ce` 入自动表；worktree 内 `hub_root.parent` 指向错误，改以工作区根 `D:/Claude` 显式调用 `gen_snapshot_block`）
+- **登记方式**：后台会话受隔离护栏约束，全部 Hub 改动落在 worktree 分支 `reg/auvnetmodem`（基于 main `efa0b24`），待用户 `git merge --ff-only reg/auvnetmodem`
+- 页面总数不变 113。**已知未处理漂移**（本轮不动，待用户裁）：AUVNetCoop 登记面仍记「研制技术协议 / `5a6bbfc`」，实为建设方案 v1.8、HEAD `de9ee3a`
+- **下一步**：用户裁 D1~D10 → PLAN-001 → M1 需求基线与接口约定
+---
 ## [2026-09-16] 状态刷新 | ProductPortfolio 收尾修订版待终审（HEAD a4696f9）
 
 - 09-15 夜~09-16 凌晨（详见项目 wiki/log.md）：用户「我希望生成一个完整版本的，gpt 生成了一个可以参考」→ Codex 16 页 `output/海涛100_产品发布会_完整版.pptx`（.mjs）与 Claude 20 页 `…_claude.pptx`（`scripts/build_haitao_launch_full.py`：v15.3 精简副本保留 10 类页 → 克隆 → 填槽 → 原生架构图；首轮 176 MB 因旧 gif 关系残留，清理后 12.9 MB）并存

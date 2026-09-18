@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-06-09
+updated: 2026-09-18
 tags: [架构, 三仓, 哲学, Hub, 大脑]
 ---
 
@@ -85,7 +85,7 @@ ohmybrain-core/
 ├── rules/zh/*           → 同上（中文版本）
 ├── skills/*             → 关键词 / 路径触发，所有项目共享
 ├── agents/*             → 主会话可委托（如 wiki-ingester）
-├── projects/.../memory/ → auto-memory 跨会话恒久（112 条）
+├── projects/.../memory/ → auto-memory 跨会话恒久（115 条）
 └── settings.json        → 全局 hooks / 配置
 ```
 

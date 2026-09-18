@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-04-12
-updated: 2026-09-15
+updated: 2026-09-18
 tags: [架构, 三仓, Hub, 模板, 闭环, harness]
 ---
 
@@ -63,6 +63,7 @@ Ohmybrain 体系采用**三仓架构**：**Hub (大脑 · 主动)** + **project-
 | 项目仓 🔒 | `USBL_hw` | `D:\Claude\TechReq\USBL_hw` | 派生 2026-06-10（USBL 硬件设计，engineering-hardware 子型首例；声学基阵 / 收发电路 / 结构 / 接口） |
 | 项目仓 🔒 | `SonarFOM` | `D:\Claude\TechReq\SonarFOM` | 派生 2026-07-21（声呐效能 FOM 品质因数表计算，MATLAB，DEPENDS_ON=SonarSim 🔒，本地 main 无远程） |
 | 项目仓 🔒 | `EnvDataClassify` | `D:\Claude\TechReq\EnvDataClassify` | 派生 2026-07-23（环境数据分类：声速剖面/水文自动分类，MATLAB/Python，DEPENDS_ON=SonarFOM 🔒，本地 main 无远程） |
+| 项目仓 🔒 | `AUVNetModem` | `D:\Claude\TechReq\AUVNetModem` | 派生 2026-09-18（面向五U 组网条件的水声通信机详细设计，engineering-hardware 子型，A 算法 + B 硬件，DEPENDS_ON=AUVNetCoop 🔒 / UWAcomm / AUVProposal 🔒，SPEC-001 框架 v0 待裁，本地 main `c37e2ce` 无远程） |
 | **DocProcess/** 🔒 | | | **文档处理工作区，全部私人项目** |
 | 项目仓 🔒 | `Pricing` | `D:\Claude\DocProcess\Pricing` | 活跃（军用软件四号文报价） |
 | 项目仓 🔒 | `UWAprojDoc` | `D:\Claude\DocProcess\UWAprojDoc` | 派生 2026-04-28（水声专项方案技术文档撰写） |
@@ -327,7 +328,7 @@ YouTube/视频     →       [[firecrawl]]     →   raw/videos/
 | 指标 | 数值 | 说明 |
 |------|------|------|
 | **Hub wiki 页数** | 110 | concepts 20 + entities 8 + source-summaries 34 + mcp-entities 25 + explorations 4 + topics 5 + architecture 12 + agents 1 + workflows 1 + comparisons 0（详见 `wiki/index.md`） |
-| **活跃项目数** | 37 | TechReq×8（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒 / USBL_hw🔒 / SonarFOM🔒 / EnvDataClassify🔒）+ DocProcess×24（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / VisioForge / CooperativeASW / PaperTrans / UWAcommTrial / UWCombatPlatform / CommSimSupport / OceanEnvSupport / ImgSonarTwin / AUVProposal / AUVSurvey / CoupledMultiOrder / DeepSeaIndustry / XiaojingLaunch / AcousticLiteracy / AUVSlopeMCM / UUVCommSwarmSim / SoSCommSupport / AUVNetCoop / ProductPortfolio，全 🔒）+ Tools×4（FlowGen / IconForge / AnthropicPPT / FieldKit）+ Patents🔒（papers 未正式登记，见 [[../topics/core-update-queue]] / decision-log 待裁）；**第三方 vendored 不计**：ppt-master（`Tools/ppt-master`，ADR-030）；**已退役**：DigitalTwin1plusN（2026-08-18 用户删除工作区，ADR-041）|
+| **活跃项目数** | 38 | TechReq×9（UWAcomm / USBL / UWAnet / UWAcomm_usbl🔒 / SonarSim🔒 / USBL_hw🔒 / SonarFOM🔒 / EnvDataClassify🔒 / AUVNetModem🔒）+ DocProcess×24（Pricing / UWAprojDoc / CooperativeDetection / PaperReview / DigitalTwinGuide / VisioForge / CooperativeASW / PaperTrans / UWAcommTrial / UWCombatPlatform / CommSimSupport / OceanEnvSupport / ImgSonarTwin / AUVProposal / AUVSurvey / CoupledMultiOrder / DeepSeaIndustry / XiaojingLaunch / AcousticLiteracy / AUVSlopeMCM / UUVCommSwarmSim / SoSCommSupport / AUVNetCoop / ProductPortfolio，全 🔒）+ Tools×4（FlowGen / IconForge / AnthropicPPT / FieldKit）+ Patents🔒（papers 未正式登记，见 [[../topics/core-update-queue]] / decision-log 待裁）；**第三方 vendored 不计**：ppt-master（`Tools/ppt-master`，ADR-030）；**已退役**：DigitalTwin1plusN（2026-08-18 用户删除工作区，ADR-041）|
 | **模板 skill 数** | 5 | ingest/plan/implement/lint/promote-answer（core + 下游继承） |
 | **全局 skill（Hub 用）** | 1 | `llm-wiki`（`paths: wiki/**` 自动激活） |
 | **wiki-ingester agent** | 2 副本 | 全局 `~/.claude/agents/`（invocable，2026-05-12 起）+ 项目本地（契约源头 + git 跟踪） |

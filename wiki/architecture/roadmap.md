@@ -1,7 +1,7 @@
 ---
 type: architecture
 created: 2026-05-24
-updated: 2026-09-15
+updated: 2026-09-18
 tags: [roadmap, 演化, 里程碑]
 ---
 
@@ -13,6 +13,7 @@ tags: [roadmap, 演化, 里程碑]
 
 | 日期 | 里程碑 | 类型 |
 |------|--------|------|
+| **2026-09-18** | AUVNetModem 项目派生（面向五U 组网条件的水声通信机详细设计，template-engineering + 硬件目录扩展 = engineering-hardware 子型第二例；A 算法 + B 硬件；框架先行 SPEC-001 v0 待裁 D1~D10；依赖 AUVNetCoop / UWAcomm / AUVProposal，git init `c37e2ce` 本地 main 无远程） | TechReq (ADR-050) |
 | **2026-09-15** | ProductPortfolio 项目派生（公司产品体系梳理，template-document，主交付物《公司产品体系梳理》docx，以 XiaojingLaunch 产品架构 deck V3 + 三核口径为起点，SPEC-001 D1~D6 待裁；依赖 XiaojingLaunch，git init `2a0a591` 本地 main 无远程）；**同日收窄为海涛100 产品线**（交付物改 6 页小鲸版式 PPT，SPEC-002；decision-001 海涛定位 + decision-002 小鲸两级口径；HEAD `2b735bc`）；**09-16 完整版**：Codex 16 页 + Claude 20 页并存 → 两轮审阅清单实施 → 收尾修订版待终审（HEAD `a4696f9`） | DocProcess (ADR-049) |
 | **2026-09-14** | AUVNetCoop 项目派生（协同探测型 AUV 组网协同系统，template-document，主交付物《协同探测型AUV组网协同系统研制技术协议》；框架先行 SPEC-001 同日终裁 D1~D9；依赖 AUVProposal，git init `5a6bbfc` 本地 main 无远程） | DocProcess (ADR-048) |
 | **2026-09-13** | SoSCommSupport 项目派生（体系通信保障，template-document，主交付物形态/受众/口径待讨论先搭架子；无依赖，git init `d3831e3` 本地 main 无远程） | DocProcess (ADR-047) |

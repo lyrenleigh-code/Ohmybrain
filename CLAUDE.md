@@ -48,6 +48,7 @@ ohmybrain（本仓库 = 知识库 + Hub）
 | SonarSim 🔒 | 私人，不公开 | `D:\Claude\TechReq\SonarSim` |
 | SonarFOM 🔒 | 私人，不公开（本地 main，无远程） | `D:\Claude\TechReq\SonarFOM` |
 | EnvDataClassify 🔒 | 私人，不公开（本地 main，无远程） | `D:\Claude\TechReq\EnvDataClassify` |
+| AUVNetModem 🔒 | 私人，不公开（本地 main `c37e2ce`，无远程） | `D:\Claude\TechReq\AUVNetModem` |
 | ohmybrain-core | github.com/lyrenleigh-code/ohmybrain-core | `D:\Claude\ohmybrain-core` |
 | Pricing 🔒 | 私人，不公开 | `D:\Claude\DocProcess\Pricing` |
 | UWAprojDoc 🔒 | 私人，不公开 | `D:\Claude\DocProcess\UWAprojDoc` |

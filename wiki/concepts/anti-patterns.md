@@ -1,13 +1,13 @@
 ---
 type: concept
 created: 2026-05-24
-updated: 2026-05-29
+updated: 2026-09-18
 tags: [反模式, 经验, 教训, anti-pattern]
 ---
 
 # 跨项目反模式合集
 
-提炼自 `~/.claude/projects/D--Claude/memory/feedback_*.md`（feedback 类 35 条 / memory 共 112 个：user 1 / feedback 35 / project 73 / reference 3）+ 各项目 wiki/debug-logs/ + 项目复盘。本页是 single source of truth，memory 是触发源。
+提炼自 `~/.claude/projects/D--Claude/memory/feedback_*.md`（feedback 类 37 条 / memory 共 115 个：user 1 / feedback 37 / project 74 / reference 3）+ 各项目 wiki/debug-logs/ + 项目复盘。本页是 single source of truth，memory 是触发源。
 
 > **「首次触发事件」列**记录该反模式第一次被踩中并沉淀为 feedback 的 session / 项目 / 日期。无法从对应 memory 确证日期或来源的，标「来源待补」，不臆测。
 
@@ -117,4 +117,4 @@ V4 PPT `CC算法开发-v4.pptx` S35 把这里的反模式合并为 8 行 × 3 �
 - [[workflow-glossary]] — RCA / validate 等术语定义
 - [[matlab-pitfalls]] — MATLAB 陷阱清单（inf 字面量等）
 - [[thedotmack-claude-mem]] — 3 层渐进披露启发源
-- [[memory-index]] — memory 条目索引（feedback 类 35 条 / 共 112 个原始源）
+- [[memory-index]] — memory 条目索引（feedback 类 37 条 / 共 115 个原始源）
