@@ -3,6 +3,23 @@
 > 记录每次对 wiki 的操作，最新的在最上面。
 
 ---
+## [2026-09-19] 审计 | 记忆系统：MEMORY.md 超 25KB 截断修复 + 会话记录扫描补登 feedback 45 条 + 08-29 悬案结案
+
+用户要求审计 Hub（会话根 `C:\Users\zazn`，Hub hook 未加载，全程手动跑校验脚本）。
+
+- **前序**：Hub `main` 19 提交 push 到 GitHub `origin`（`efa0b24`，仓库为 PUBLIC；内网 GitLab 未连未同步）；`reg/auvnetmodem` 快进合并（`0a784a8`），CANON `--check` 16 处 stale 随之清零
+- **关键发现（claude-code-guide 查官方文档 + WebFetch 原文核实）**：MEMORY.md 读取上限 = 前 200 行或 25KB 先到者，超出部分会话启动时不加载。主库 MEMORY.md 26,495 B → 末尾 ProductPortfolio（半条）+ 两条 PowerShell feedback 在 `D:\Claude` 会话里从未被读到。memory 目录按 git 仓定位，各项目独立 git 仓 → 在子项目启动的会话读空库；官方提供 `autoMemoryDirectory` 可统一
+- **记忆库 git**：08-29 首提交后无人提交，积压 37 处 → 快照 `5f84ed0`
+- **索引瘦身** `3b0d645`：按 user/feedback → reference → project 分组（行为规则置前，截断时先丢项目状态）；改写 54 条 hook；正文覆盖率 <85% 的 30 条把原 hook 追加进正文「索引原文」节（去索引不销毁）；user/feedback 行加创建日期 `(MM-DD)`（放 hook 开头以兼容 `diff_memory_log.py` 的 `^- \[` 解析）；压缩中丢的 14 处 `YYYY-MM-DD` 补回，带日期条目维持 36；26.5KB → 19.3KB
+- **漏记 feedback 补登** `2dc2d07`：用户指出「一直在用但没有新 feedback」——实测 8 月 65 个会话仅新增 7 条。抽取 101 个会话记录的用户发言（36 万字，8 批），4 路并行 agent 扫描 → 原始 91 条 → 合并 9 主题 45 条（引用抽查 12/12 逐字命中），用户全收：新增 7 个主题 feedback（讨论节奏 / 汇报清晰 / 正式文档写作 / 口径与依据 / docx 版式 / Visio 自检 / 仿真工程交付）+ 出图细则 9 条并入 `feedback_doc_figure_plain_style`。根因：写 feedback 全靠会话中自觉、无 hook；纠正多落在项目 CLAUDE.md 与 skill；子项目会话写进零散库
+- **4 处冲突用户改裁**：K1 图内字号「不是宁小勿大，要考虑可以看清」；K2「保留版本号，完成归档后整理历史版本」（取代 06-27「就地改不留版本号」）；K3「初步先做简化，然后根据用户要求去细化」；K4「根据用户要求去做测试」（同步改全局 `~/.claude/CLAUDE.md`「用户主导结论」）
+- **转他处**：UWAcomm 工程化只做 S2C/DSSS/FH-MFSK → `project_uwacomm`；四号文每组 35–40 功能点 → `jy-pricing` skill；声纳方程算接收 SNR → [[concepts/underwater-acoustic-communication]] 新建「实战结论」节一行
+- **零散库**：AcousticLiteracy 3 条复制入主库（加类型前缀）；`C--Users-zazn`、`D--TechReq-UWAcomm` 按 08-30 决定留作冷层
+- **08-29 悬案结案**：08-30 条目「14 条 4 月旧 memory 误回流、触发者未查明」——触发者是 08-29 `memory-system-todo` worktree 会话执行的「第 2 步合流」（记忆库 git `50a9573`），其记录只在未合并分支的 TODO.md 里，08-30 会话看不到 → 两会话决定相反。非 Claude Code 自动合并。教训：跨会话的决定不能只落在未合并分支
+- **未完成**：`autoMemoryDirectory` 写入 `~/.claude/settings.json` 被权限 classifier 拦截（Self-Modification），交用户执行；在 `.claude/worktrees/` 建 worktree 同样被拦，本轮 Hub 改动改在普通分支 `hub/memory-audit-0919`
+- **CANON 级联**：memory 115→125 / feedback 37→45 / project 74→76（7 页 16 处 + memory-index 计数口径与分类标题）；`--check` 静默；[[topics/memory-index]] 补 10 个指针、改 4 条描述
+- `TODO.md` 重写记忆系统改造现状（取代 `memory-system-todo` 分支）；页面总数不变 113。**下一步**：用户加 `autoMemoryDirectory` 并验证 → 索引容量（21.4KB/25KB）靠退役已完结 project 条目腾挪
+---
 ## [2026-09-18] 派生登记 | AUVNetModem 派生（活跃 37→38，TechReq×8→×9，ADR-050）
 
 用户在 AUVNetCoop 会话提出「针对这个组网条件下的水声通信机进行详细的设计，单独做一个项目还是怎么弄」→ Claude 建议单列 → 用户裁「A 和 B 都要包含，可以放在 TechReq 下面」。项目名 `AUVNetModem` 为 Claude 代拟，可改。

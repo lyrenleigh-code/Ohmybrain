@@ -32,7 +32,7 @@ tags: [大脑, Hub, 元架构, single-source-of-truth]
 
 | 资源 | 权威值 | 拆解 |
 |------|--------|------|
-| **auto-memory 文件** | 115 个 | user 1 / feedback 37 / project 74 / reference 3（`MEMORY.md` 索引 116 行，含 1 行指向全局 skill 非 memory 文件） |
+| **auto-memory 文件** | 125 个 | user 1 / feedback 45 / project 74 / reference 3（`MEMORY.md` 索引 116 行，含 1 行指向全局 skill 非 memory 文件） |
 | **本地 skills** | 34 目录，其中 32 含 SKILL.md | `~/.claude/skills/` |
 | **可见 skills（注入后）** | **90+** | 本地 32 叠加 `ecc:*` plugin / marketplace 注入；**必须区分"本地 32 vs 注入 90+"两层，不可裸写 90+** |
 | **全局 agents** | 55 个 `.md` | `~/.claude/agents/` |

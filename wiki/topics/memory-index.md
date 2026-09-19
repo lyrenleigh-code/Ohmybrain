@@ -12,7 +12,7 @@ tags: [memory, 索引, auto-memory]
 
 > 不复制 memory 完整内容（避免双写），本页只索引 + 简短描述 + link 到 memory 文件。
 
-> **计数口径（@2026-09-18）**：auto-memory 共 **115 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 116 个 `.md`）。分布：user **1** / feedback **37** / project **74** / reference **3**。下方各类型标题计数与此严格一致。
+> **计数口径（@2026-09-19）**：auto-memory 共 **125 个**条目文件（外加 `MEMORY.md` 索引本身 = 目录 126 个 `.md`）。分布：user **1** / feedback **45** / project **76** / reference **3**。下方各类型标题计数与此严格一致。
 >
 > 注：`MEMORY.md` 索引行中「flowgen-vsdx M5 升级」一条指向 `~/.claude/skills/flowgen-vsdx/SKILL.md`（skill 文件，**非 memory 条目**），不计入总数。
 
@@ -22,7 +22,7 @@ tags: [memory, 索引, auto-memory]
 
 - [user_profile](../../../../../zazn/.claude/projects/D--Claude/memory/user_profile.md) — UWA 研究者 / MATLAB 主力 / Windows+bash / 中文 / 专家主导 / 并行优先
 
-### feedback（行为指导 · 37 条）
+### feedback（行为指导 · 45 条）
 
 按主题分组：
 
@@ -31,7 +31,7 @@ tags: [memory, 索引, auto-memory]
 - `feedback_pat_after_exposure` — PAT 暴露后用一次即停
 
 **UWAcomm 算法工作流（7）**
-- `feedback_uwacomm_testing_boundary` — 不代跑单元测试 / 不代下结论 / 每 checkpoint 停
+- `feedback_uwacomm_testing_boundary` — 测试跑不跑按用户当次要求 / 不代下结论 / 每 checkpoint 停（2026-09-19 改裁）
 - `feedback_uwacomm_path` — `D:\Claude\TechReq\UWAcomm` 不是 `D:\TechReq`
 - `feedback_uwacomm_worktree_ownership` — main/codex/claude 三路边界
 - `feedback_uwacomm_claude_branch_autonomous` — claude 分支允许代跑 + 代决策
@@ -61,7 +61,7 @@ tags: [memory, 索引, auto-memory]
 - `feedback_ppt_autofit_growth` — PPT autofit 框会长高压人：改文案判据看「长高后底边净距」，收尾跑逐行 diff（2026-08 新增）
 - `feedback_pptx_endparaRPr_run_order` — XML 级插 run 落到 `endParaRPr` 之后会被 PowerPoint 静默丢弃；QA 必须扫元素次序（2026-09-01 新增，09-04 计数已含、指针本轮补登）
 - `feedback_pptx_com_render_check` — PPT 改完用本机 PowerPoint COM 导 PNG 自查，别再说无渲染；断言查不出溢出/折行（2026-09-03 新增，09-04 计数已含、指针本轮补登）
-- `feedback_doc_figure_plain_style` — 方案/建设类 docx 配图默认工程素样式：白底黑线直角框、宋体正文/黑体标题、字号 ≤ 正文；雅黑加粗+圆角+灰底+阴影 = AI 感，整套图风格一致（2026-09-10 新增）
+- `feedback_doc_figure_plain_style` — 方案/建设类 docx 配图默认工程素样式：白底黑线直角框、宋体正文/黑体标题、字号以嵌入后看得清为准；雅黑加粗+圆角+灰底+阴影 = AI 感，整套图风格一致（2026-09-10 新增；09-19 改裁字号 + 并入出图细则 9 条）
 - `feedback_docx_container_rebuild` — Word 报损坏但包结构无缺失＝容器问题，移植 python-docx 干净容器可救（2026-08 新增）
 - `feedback_path_form_vs_location` — 用户给路径样例说「写成这样的形式」= 改文档里的路径写法，不是迁目录树；移整树前先问（AUVProposal 误迁 78 文件教训，2026-08-26 新增）
 - `feedback_ohmybrain_self_improvement` — 进入 Ohmybrain 项目第一件事 = 完善自己（2026-05-24 新增）
@@ -69,13 +69,21 @@ tags: [memory, 索引, auto-memory]
 - `feedback_memory_retire_deindex` — memory 退役=去索引不销毁（`retire_memory.py` → Hub `raw/memory-retired/`，不直接 rm）
 - `feedback_doc_visual_diversification` — 流程图不能统一布局换数据
 - `feedback_doc_flowgen_only` — 方案 / 方法论文档图必走 flowgen-* skill
-- `feedback_inplace_edit_no_version` — 迭代 PPT/文档/图等产物就地改当前文件，不另存递增版本号（2026-06-27 新增）
+- `feedback_inplace_edit_no_version` — 修订保留版本号、不覆盖上一版，交付归档后再整理历史版本（2026-06-27 新增；09-19 用户改裁，取代原「就地改不留版本号」）
 - `feedback_flowgen_palette_full_persist` — flowgen 默认配色更新需 4 处完整固化：.py 默认 + SKILL 正文 + frontmatter + 项目副本（2026-07 新增）
 - `feedback_visio_headless_orphan_lock` — flowgen 渲染 SaveAs 报 [只读] = headless COM 孤儿进程占锁，仅杀无窗口标题者再重渲（2026-07 新增）
 - `feedback_powershell_remove_item_hook_tokens` — 含 `Remove-Item` 的 PowerShell 命令里出现 `*` / `/` / 通配 / 正则会被系统路径保护 hook 误拦；测量与删除拆两条命令（2026-09-18 新增，指针本轮补）
 - `feedback_elevated_powershell_script_pitfalls` — 提权 PowerShell 脚本四坑：RunAs 用 `-File` 包装；PS5.1 中文脚本须 UTF-8 BOM；robocopy 用 `/L` 退出码判一致；`*>` 日志是 UTF-16（2026-09-18 新增，指针本轮补）
+- `feedback_discussion_rhythm` — 讨论与确认节奏：「先讨论」时不动文件、先图后文、待裁项编号+推荐、commit=只提交不续做（2026-09-19 会话记录扫描补登）
+- `feedback_reporting_clarity` — 汇报清晰：交付首行给绝对路径、不用自创代号、说完成前列已做/未做、要文字就在对话里给（2026-09-19 补登）
+- `feedback_formal_doc_writing` — 正式文档写作：书面公文体独立成文、关键技术写论证链、指标不用概率、公式可编辑符号全定义（2026-09-19 补登）
+- `feedback_consistency_and_sources` — 口径与依据：分清底稿和参考、改一处口径全链同步、依据有出处推断要标注、先取自有项目口径（2026-09-19 补登）
+- `feedback_docx_format` — docx 版式与交付：沿用用户样式、宋体小四三线表、交付前冻结域去批注不压图、外审稿用修订模式（2026-09-19 补登）
+- `feedback_visio_layout_selfcheck` — Visio 连线图交付前整版几何自检 + 源数据核验；用户手调先回灌脚本再重渲（2026-09-19 补登）
+- `feedback_sim_engineering_delivery` — 仿真与工程交付：本项目实际参数、反直觉先查设置、附 run_all / VS Code 命令、可配置有拓扑（2026-09-19 补登）
+- `feedback_archify_dataflow_dense_layout` — archify 详细流程图改用 dataflow 类型的版式经验（2026-09-02 写于 AcousticLiteracy 零散库，09-19 收入主库）
 
-### project（项目状态 · 74 条）
+### project（项目状态 · 76 条）
 
 按项目分组：
 
@@ -91,6 +99,8 @@ tags: [memory, 索引, auto-memory]
 - `project_uwacomm_2026-07-13_session` — 逐模块校验战役（01-03 收口）+ ChannelDemo 演示+外发包（2026-07-13 新增）
 - `project_uwacomm_2026-07-15_session` — S2C 第 7 体制 Phase 1 全通 + OTFS 公共链接入（2026-07-15 新增）
 - `project_uwacomm_2026-07-21_session` — Codex 版本三路审查（0 CRIT/HIGH）+ Jakes 基准逐 seed 复现，项目暂停待办 5 项（2026-07-21 新增）
+- `project_uwacomm_three_scheme_timevarying_diagrams` — 三体制抗时变梳理 + archify 图（UWAcomm main `53e41e7`，2026-09-02 写于 AcousticLiteracy 零散库，09-19 收入主库）
+- `project_uwacomm_cport_d3000m_latency` — cport 在飞腾 D3000M 卡顿三层成因与整改（`e4c22af`，2026-09-04 写于 AcousticLiteracy 零散库，09-19 收入主库）
 
 **UWAcomm_usbl（13）**
 - `project_uwacomm_usbl_init` — 项目初始化
@@ -255,7 +265,7 @@ UWA 通信各体制（SC-TDE / DSSS / SC-FDE / OTFS）跨 session 的版本迭�
 MATLAB 算法 root-cause-analysis 的工具 + 边界：
 
 - `feedback_single_root_cause_audit` — D9/D10 toggle + 跨 runner audit（核心方法）
-- `feedback_uwacomm_testing_boundary` — 写完停下等用户跑，不代下结论
+- `feedback_uwacomm_testing_boundary` — 测试跑不跑按用户当次要求，不代下结论
 - `feedback_uwacomm_ui_ber_diagnose_order` — UI BER 异常先验直接链路
 - `feedback_comp_resample_carrier_phase` — passband/baseband 载波相位差异
 - `feedback_matlab_inf_bug` — inf 字面量 struct 转换坑

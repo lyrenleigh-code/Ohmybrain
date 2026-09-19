@@ -155,7 +155,7 @@ tags: [dashboard, 生态, 状态, 实时]
 | 全局 skill（注入后可见） | **90+** | 本地 32 叠加 `ecc:*` plugin / marketplace 注入后；裸写 90+ 会掩盖本地真实规模，故两层并列 |
 | 全局 agent | **55** | `~/.claude/agents/*.md` |
 | rules 目录 | **15** | common / zh / web + 12 语言（cpp/csharp/dart/golang/java/kotlin/perl/php/python/rust/swift/typescript） |
-| Memory 条目 | **115** | 4 类：user 1 / feedback 37 / project 74 / reference 3（见 [[memory-index]]；最新含 DeepSeaIndustry / XiaojingLaunch / AcousticLiteracy / AUVSlopeMCM / UUVCommSwarmSim / SoSCommSupport / AUVNetCoop / ProductPortfolio / AUVNetModem init + PPT autofit / pptx COM 导图 / endParaRPr 次序 / open-newline 截断 / docx 配图素样式 feedback 条目） |
+| Memory 条目 | **125** | 4 类：user 1 / feedback 45 / project 76 / reference 3（见 [[memory-index]]；最新含 DeepSeaIndustry / XiaojingLaunch / AcousticLiteracy / AUVSlopeMCM / UUVCommSwarmSim / SoSCommSupport / AUVNetCoop / ProductPortfolio / AUVNetModem init + PPT autofit / pptx COM 导图 / endParaRPr 次序 / open-newline 截断 / docx 配图素样式 feedback 条目） |
 | MCP servers | **6** | context7 / exa / github / memory / playwright / sequential-thinking |
 
 > ADR 不是独立文件，集中存放在 [[decision-log]]（章节形式 ADR-001~035）。
