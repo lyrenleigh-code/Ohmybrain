@@ -25,7 +25,7 @@
 - [ ] **D. feedback 捕获机制**：8 月 65 个会话仅新增 7 条 feedback；考虑 Stop hook 提醒「本会话用户纠正过什么」，或定期重跑本次的会话记录扫描（脚本思路见 09-19 log）
 - [ ] **E. 规则坍缩（原第 5 步）**：09-19 已按主题合并新增部分；存量 feedback 的族内合并（覆盖用户产物族 / worktree 归属族 / flowgen 族）待做
 - [ ] **F. 设计方案默认六章**同步进 `ohmybrain-core` 的 `template-document`（走 /sync-to-core）
-- [ ] 旧分支 `memory-system-todo` 及其 worktree `.claude/worktrees/memory-todo` 待用户同意后删除
+- [x] 旧分支 `memory-system-todo` 及其 worktree 已删除（2026-09-19，用户同意）
 
 ### 其他
 
